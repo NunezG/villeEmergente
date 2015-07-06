@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{803DCA17-1D0E-4261-A528-955DACF512CE}" SchemaVersion="69">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{803DCA17-1D0E-4261-A528-955DACF512CE}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="3D Objects" ID="{B188C367-D96A-41F9-845B-C4D0F6846F2A}" ShortID="962803135">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AttachableMixerInput">
+							<Custom>
+								<Effect Name="AstoundSound RTI (Attached)" ID="{B8461FE4-74FA-4929-8284-FFA830C44EFF}" ShortID="1031067732" PluginName="AttachableMixerInput" CompanyID="260" PluginID="4" PluginType="3">
+									<PropertyList>
+										<Property Name="Azimuth" Type="Real32" Value="150"/>
+										<Property Name="Elevation" Type="Real32" Value="18"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Basic_Attenuation" ID="{0A9ED54C-E6F0-4A3D-9679-7A80232D5699}" WorkUnitID="{A0522A40-0140-4C51-AC7E-B311121F8BF5}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Binaural" ID="{A16B6AA4-AC3E-4790-AD88-8887F2D7E076}" WorkUnitID="{B6A8ED51-6B17-4ADB-B7FD-13589EF794B6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="dripping on water light fast 02" ID="{E58A3986-508E-436B-9F66-B2C7B9E2CDD8}" ShortID="929995594" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{765AEBB9-FCFA-46B4-B45D-58008D90865E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B6A8ED51-6B17-4ADB-B7FD-13589EF794B6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="dripping on water light fast 02" ID="{4181BF7E-CBA7-4235-B910-6FE99F24264E}" ShortID="381049184">
+									<Language>SFX</Language>
+									<AudioFile>dripping on water light fast 02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="dripping on water light fast 02" ID="{4181BF7E-CBA7-4235-B910-6FE99F24264E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
