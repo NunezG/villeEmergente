@@ -1,0 +1,37 @@
+version {
+  major: 0
+  minor: 3
+  patch: 0
+}
+name: "VilleLife"
+builder: "mlv::toolset::simulation::impl::SimProjectBuilder"
+folder {
+  name: "decision"
+  file {
+    name: "promeneur.mlbt"
+    location: "decision/promeneur.mlbt"
+  }
+}
+folder {
+  name: "entity"
+}
+folder {
+  name: "implementation"
+}
+folder {
+  name: "knowledge"
+}
+folder {
+  name: "navigation"
+}
+folder {
+  name: "prototypes"
+  file {
+    name: "promeneur.mlent"
+    location: "prototypes/promeneur.mlent"
+  }
+}
+file {
+  name: "VilleLife.mlsim"
+  location: "VilleLife.mlsim"
+}

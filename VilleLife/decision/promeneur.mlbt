@@ -1,0 +1,54 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{a10a0729-d7a4-49e0-8dda-89654c2b65f3}"
+name: "promeneur"
+description: ""
+children {
+  type: Node
+  name: "26606832-3bdc-496a-95ca-7774f8b0cebd"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "4c5a7269-9581-49e9-8934-eb8f90a98f4d"
+      presentation {
+        itemTemplate: "BTActionNode.qml"
+        position {
+          x: 5267.5
+          y: 2720.5
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: ActionNode
+          isActivated: true
+          [mlv.toolset.proto.ActionNode.extension] {
+            actionName: "debug"
+            parameters {
+              type: StringType
+              name: "outputMessage"
+              kbSelection: plainValue
+              stringValue: "Hello FUCKINGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG World"
+            }
+          }
+        }
+      }
+    }
+  }
+}
