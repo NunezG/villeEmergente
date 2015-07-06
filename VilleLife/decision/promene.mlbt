@@ -4,12 +4,12 @@ version {
   patch: 0
 }
 type: BehaviorTree
-uuid: "{a10a0729-d7a4-49e0-8dda-89654c2b65f3}"
-name: "promeneur"
+uuid: "{e848c55a-b83e-4afc-85a7-d91bf26f6d61}"
+name: "promene"
 description: ""
 children {
   type: Node
-  name: "26606832-3bdc-496a-95ca-7774f8b0cebd"
+  name: "eb6934f1-e808-41cd-919a-dacaffddfcb4"
   presentation {
     itemTemplate: "MLV_USE_NO_TEMPLATE"
     position {
@@ -24,12 +24,12 @@ children {
   [mlv.toolset.proto.Node.extension] {
     children {
       type: Node
-      name: "4c5a7269-9581-49e9-8934-eb8f90a98f4d"
+      name: "45bc8d39-4a74-4fa3-8ca9-f01c501c5fbd"
       presentation {
         itemTemplate: "BTActionNode.qml"
         position {
-          x: 5267.5
-          y: 2720.5
+          x: 5265
+          y: 2740
           z: 0
         }
       }
@@ -44,7 +44,7 @@ children {
               type: StringType
               name: "outputMessage"
               kbSelection: plainValue
-              stringValue: "Hello FUCKINGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG World"
+              stringValue: "FUCKKKKKKKKKKKK"
             }
           }
         }

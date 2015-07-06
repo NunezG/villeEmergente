@@ -32,7 +32,7 @@ component {
   content {
     type: Decision
     [mlv.toolset.simulation.proto.PrototypeDecision.extension] {
-      behavior: "decision/promeneur.mlbt"
+      behavior: "decision/promene.mlbt"
     }
   }
 }

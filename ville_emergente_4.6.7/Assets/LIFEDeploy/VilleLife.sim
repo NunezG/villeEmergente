@@ -8,7 +8,7 @@ knowledge {
 action {
 }
 decision {
-  btFile: "decision/promeneur.bt"
+  btFile: "decision/promene.bt"
 }
 update {
   numThreads: 1

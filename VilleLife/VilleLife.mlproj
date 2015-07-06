@@ -8,8 +8,8 @@ builder: "mlv::toolset::simulation::impl::SimProjectBuilder"
 folder {
   name: "decision"
   file {
-    name: "promeneur.mlbt"
-    location: "decision/promeneur.mlbt"
+    name: "promene.mlbt"
+    location: "decision/promene.mlbt"
   }
 }
 folder {
