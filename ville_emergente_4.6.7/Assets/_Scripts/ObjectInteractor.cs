@@ -1,0 +1,92 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class ObjectInteractor : MonoBehaviour {
+
+    public GameObject hitObject,inHandPosition,inHandObject;
+    public bool handsFull = false;
+
+
+
+
+	// Use this for initialization
+	void Start () {
+	}
+	
+	// Update is called once per frame
+	void Update () {
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            RaycastHit hit;
+            //if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 2, 1 << 8))
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2,0)), out hit, 2, 1 << 8))
+            {
+                //print("Input.mousePosition : " + Input.mousePosition);
+                hitObject = hit.collider.gameObject; // on recupere l'objet vise
+                InteractibleObject interacObj = hitObject.GetComponent<InteractibleObject>(); // on recupere sa composante InteractibleObject
+
+                if (handsFull && interacObj.type == InteractibleType.NPC) // si on a un objet en main et qu'on vise un NPC
+                {
+                    //ajout de l'objet en main a l'objet vise
+                    interacObj.OnAddingFragment(inHandObject);
+                    AddingFragment();
+                }
+                else if (!handsFull && interacObj.type == InteractibleType.Fragment) // si on a rien en main et qu'on vise un objet rammassable
+                {
+                    //on ramasse l'objet
+                    PickUpObject(hitObject);
+                }
+                else if (!handsFull && interacObj.type == InteractibleType.SettingPiece) // si on a rien en main et qu'on vise un element de decor
+                {
+                    //on declenche l'interaction avec cet objet
+                    interacObj.OnInteract();
+                }
+                else if (handsFull) // sinon, si on a juste un objet en main et qu'on ne vise pas un NPC
+                {
+                    //on laisse tomber l'objet en main
+                    DropInHandObject();
+                }
+            }
+            else
+            {
+                if (inHandObject != null)
+                {
+                    // on laisse tomber l'objet en main
+                    DropInHandObject();
+                }
+            }
+        }
+    }
+
+
+    public void PickUpObject(GameObject toPickUp)
+    {
+        inHandObject = toPickUp;
+        inHandObject.transform.parent = inHandPosition.transform;
+        inHandObject.transform.position = inHandPosition.transform.position;
+        inHandObject.transform.rotation = inHandPosition.transform.rotation;
+        inHandObject.rigidbody.isKinematic = true;
+        handsFull = true;
+
+    }
+
+    public void DropInHandObject()
+    {
+        if (inHandObject != null)
+        {
+            inHandObject.rigidbody.isKinematic = false;
+            handsFull = false;
+            inHandObject.transform.parent = null;
+            inHandObject = null;
+        }
+    }
+
+    public void AddingFragment()
+    {
+        inHandObject.rigidbody.isKinematic = false;
+        handsFull = false;
+        inHandObject.transform.parent = null;
+        Destroy(inHandObject);
+    }
+}

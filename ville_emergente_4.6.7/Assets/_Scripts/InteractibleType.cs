@@ -1,0 +1,1 @@
+﻿public enum InteractibleType { Fragment, NPC, SettingPiece };
