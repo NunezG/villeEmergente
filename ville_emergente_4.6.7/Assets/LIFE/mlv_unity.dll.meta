@@ -4,10 +4,7 @@ MonoAssemblyImporter:
   serializedVersion: 1
   iconMap: {}
   executionOrder:
-    mlv.CollectionSDB: -98
     mlv.Entity: -96
-    mlv.MetadataSDB: -95
-    mlv.ObjectSDB: -97
     mlv.Simulation: -100
     mlv.SpatialDB: -99
     mlv.SpatialDBCollection: -98
