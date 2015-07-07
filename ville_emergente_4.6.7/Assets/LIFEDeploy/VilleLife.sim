@@ -1,0 +1,16 @@
+version {
+  major: 0
+  minor: 5
+  patch: 0
+}
+knowledge {
+}
+action {
+}
+decision {
+  btFile: "decision/promene.bt"
+}
+update {
+  numThreads: 1
+}
+entityLibrary: "/VilleLife.protos"

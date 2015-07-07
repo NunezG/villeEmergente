@@ -1,0 +1,54 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{e848c55a-b83e-4afc-85a7-d91bf26f6d61}"
+name: "promene"
+description: ""
+children {
+  type: Node
+  name: "eb6934f1-e808-41cd-919a-dacaffddfcb4"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "45bc8d39-4a74-4fa3-8ca9-f01c501c5fbd"
+      presentation {
+        itemTemplate: "BTActionNode.qml"
+        position {
+          x: 5265
+          y: 2740
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: ActionNode
+          isActivated: true
+          [mlv.toolset.proto.ActionNode.extension] {
+            actionName: "debug"
+            parameters {
+              type: StringType
+              name: "outputMessage"
+              kbSelection: plainValue
+              stringValue: "FUCKKKKKKKKKKKK"
+            }
+          }
+        }
+      }
+    }
+  }
+}
