@@ -17,6 +17,18 @@ folder {
 }
 folder {
   name: "implementation"
+  file {
+    name: "LifeScene_Lib.mllib"
+    location: "implementation/LifeScene_Lib.mllib"
+  }
+  file {
+    name: "lifeSceneLib_vc100-mt-gd.dll"
+    location: "implementation/lifeSceneLib_vc100-mt-gd.dll"
+  }
+  file {
+    name: "lifeSceneLib_vc100-mt.dll"
+    location: "implementation/lifeSceneLib_vc100-mt.dll"
+  }
 }
 folder {
   name: "knowledge"

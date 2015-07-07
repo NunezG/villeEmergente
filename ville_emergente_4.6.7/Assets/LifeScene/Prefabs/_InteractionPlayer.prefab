@@ -1,0 +1,359 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 135: {fileID: 13500000}
+  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: _InteractionPlayer
+  m_TagString: LifeScene
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -52, y: -25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1796e88e8d7ccba4e807d5a090b53727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LSname: _InteractionPlayer
+  Priority: 0
+  Exit: 0
+  Behavior: none
+  size: 0
+  roleParameters:
+    Roles:
+    - Default
+    RolesType:
+    - Ambient
+    follow: 00
+  behaviorParameters:
+    Behaviors:
+    - mlv:Speak.bt
+    Roles:
+    - Default
+  triggerParameters:
+    type: 0
+    conditionsBool: []
+    conditionsInt: []
+    Places: []
+    SO: []
+    begining: 0
+    behavior: none
+    entity: {fileID: 0}
+    repetition: 0
+    ExcluedRole: none
+    repetitionTime: 0
+    Place: {fileID: 0}
+    duration: -1
+  stopParameters:
+    conditionsBool: []
+    conditionsInt: []
+    Places: []
+    SO: []
+    duration: -1
+  placeParameters:
+    UnityPlaces: []
+    Number: 0
+  Formation: 0
+  Formations:
+    TypeForm: 0
+    ConcernedRole: none
+    GenerationOfPlace: 0
+    PlaceGeneration:
+      Position: {fileID: 0}
+      PlaceNumber: 0
+      Alignment: 0
+      LeaderDistance: 0
+      AgentDistance: 0
+      AgentOrientation: 0
+      alignNumber: 0
+    UnityPlace: 1
+    UnityPlaces: []
+    fullBehavior: none
+    number: 0
+  Placements:
+    Formations: []
+    distanceAmbient: 1
+  motivationParameters:
+    Motivations: []
+  entityRolesParameters:
+    Entities:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    EntitiesAff:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    newEntity: {fileID: 0}
+    entitySize: 67
+    buttonText: Lock Inspector and Select Characters
+  Temporary: 0
+  timeLine:
+    mainTimeline:
+      roleName: none
+      sequence:
+      - interuptible: 0
+        loopable: 0
+        isRandom: 1
+        _kind: 0
+        _syncID: 6909e6c9-db55-4a80-a6ae-5fb5c672465d
+        behavior:
+          uriBT: 
+          interuptible: 0
+          loopable: 0
+          probability: 1
+        behaviors: []
+      - interuptible: 0
+        loopable: 0
+        isRandom: 1
+        _kind: 3
+        _syncID: 
+        behavior:
+          uriBT: 
+          interuptible: 0
+          loopable: 0
+          probability: 1
+        behaviors: []
+      - interuptible: 0
+        loopable: 0
+        isRandom: 1
+        _kind: 0
+        _syncID: cb146257-a1fb-4dda-89cc-ddae6326421b
+        behavior:
+          uriBT: 
+          interuptible: 0
+          loopable: 0
+          probability: 1
+        behaviors: []
+    timeLineForRoles:
+    - roleName: Default
+      sequence:
+      - interuptible: 0
+        loopable: 0
+        isRandom: 1
+        _kind: 0
+        _syncID: 6909e6c9-db55-4a80-a6ae-5fb5c672465d
+        behavior:
+          uriBT: 
+          interuptible: 0
+          loopable: 0
+          probability: 1
+        behaviors: []
+      - interuptible: 0
+        loopable: 0
+        isRandom: 1
+        _kind: 1
+        _syncID: 
+        behavior:
+          uriBT: mlv:Speak.bt
+          interuptible: 0
+          loopable: 0
+          probability: 1
+        behaviors: []
+      - interuptible: 0
+        loopable: 0
+        isRandom: 1
+        _kind: 0
+        _syncID: cb146257-a1fb-4dda-89cc-ddae6326421b
+        behavior:
+          uriBT: 
+          interuptible: 0
+          loopable: 0
+          probability: 1
+        behaviors: []
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1944808733, guid: 510e6f1b462e2c54a91d13c52a5f2315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prototype: LifeScene
+  entityKnowledge: {fileID: 0}
+  knowledge:
+    flat: []
+    freeIndexes: 
+    copied: 1
+--- !u!135 &13500000
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.14440918e-05
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

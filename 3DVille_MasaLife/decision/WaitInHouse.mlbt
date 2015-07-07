@@ -1,0 +1,54 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{df75177e-ccd6-4b4d-92a0-9572e0621f20}"
+name: "WaitInHouse"
+description: ""
+children {
+  type: Node
+  name: "61869b17-35ba-473b-8259-79570d106cc7"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "e911258d-124c-4197-b004-923f1e67aa93"
+      presentation {
+        itemTemplate: "BTActionNode.qml"
+        position {
+          x: 5398.5
+          y: 2720.5
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: ActionNode
+          isActivated: true
+          [mlv.toolset.proto.ActionNode.extension] {
+            actionName: "wait"
+            parameters {
+              type: IntType
+              name: "time"
+              kbSelection: plainValue
+              intValue: 20
+            }
+          }
+        }
+      }
+    }
+  }
+}

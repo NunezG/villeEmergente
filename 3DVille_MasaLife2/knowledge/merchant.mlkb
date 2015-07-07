@@ -1,0 +1,28 @@
+version {
+  major: 0
+  minor: 4
+  patch: 0
+}
+root {
+  type: Object
+  objectValue {
+    key: "IP"
+    value {
+      type: Object
+      objectValue {
+        key: "inIP"
+        value {
+          type: Int
+          intValue: 0
+        }
+      }
+    }
+  }
+  objectValue {
+    key: "Type"
+    value {
+      type: String
+      stringValue: "Merchant"
+    }
+  }
+}

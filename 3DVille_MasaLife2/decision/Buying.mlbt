@@ -1,0 +1,142 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{63c383ac-914c-4f08-807f-cf45cbc2ae8c}"
+name: "Buying"
+description: ""
+children {
+  type: Node
+  name: "5c89707f-5565-4a03-9399-8af307557c7d"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "0a4e20ef-e207-4190-a47d-2c10554356ed"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5628
+          y: 2669
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "eb647367-ac77-4109-ab63-a2e2637cc90f"
+          presentation {
+            itemTemplate: "BTCustomNode.qml"
+            position {
+              x: -112.5
+              y: 155.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: BTCustomNode
+              isActivated: true
+              [mlv.toolset.proto.BTCustomNode.extension] {
+                typeName: "sendInteraction"
+                parameters {
+                  type: StringType
+                  name: "message"
+                  kbSelection: plainValue
+                  stringValue: "begin"
+                }
+                parameters {
+                  type: StringType
+                  name: "type"
+                  kbSelection: plainValue
+                  stringValue: "Interacting"
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "fc147a06-cb6e-40e8-a618-c07c17c26eee"
+          presentation {
+            itemTemplate: "BTEmbeddedNode.qml"
+            position {
+              x: 3.5
+              y: 157.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: BTEmbeddedBehaviorNode
+              isActivated: true
+              [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                behaviorName {
+                  type: StringType
+                  name: ""
+                  kbSelection: plainValue
+                  stringValue: "decision/Conversation.mlbt"
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "6a2e56cf-1caa-4de8-9ea1-28273f04ea21"
+          presentation {
+            itemTemplate: "BTCustomNode.qml"
+            position {
+              x: 137.5
+              y: 158.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: BTCustomNode
+              isActivated: true
+              [mlv.toolset.proto.BTCustomNode.extension] {
+                typeName: "sendInteraction"
+                parameters {
+                  type: StringType
+                  name: "message"
+                  kbSelection: plainValue
+                  stringValue: "end"
+                }
+                parameters {
+                  type: StringType
+                  name: "type"
+                  kbSelection: plainValue
+                  stringValue: "Interacting"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{92c606ff-8466-47fd-9670-b2a634cdc628}"
+name: "ColorWhite"
+description: ""
+children {
+  type: Node
+  name: "fd422eb8-e5d7-4bac-8417-14530d2a6d55"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "f4a70c02-0d35-4d58-b4fc-600a731103bf"
+      presentation {
+        itemTemplate: "BTActionNode.qml"
+        position {
+          x: 5421.5
+          y: 2714.5
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: ActionNode
+          isActivated: true
+          [mlv.toolset.proto.ActionNode.extension] {
+            actionName: "ChangeColor"
+            parameters {
+              type: IntType
+              name: "b"
+              kbSelection: plainValue
+              intValue: 1
+            }
+            parameters {
+              type: IntType
+              name: "g"
+              kbSelection: plainValue
+              intValue: 1
+            }
+            parameters {
+              type: IntType
+              name: "r"
+              kbSelection: plainValue
+              intValue: 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

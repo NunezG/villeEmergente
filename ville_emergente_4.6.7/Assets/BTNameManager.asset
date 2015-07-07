@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9a6ac2c60cc4045a38f878c5a5e3d9, type: 3}
+  m_Name: BTNameManager
+  m_EditorClassIdentifier: 
+  BTNames:
+  - mlv:3DV-Bench.bt
+  - mlv:AppoachShow.bt
+  - mlv:BehavioralSequence.bt
+  - mlv:ColorBlue.bt
+  - mlv:ColorGreen.bt
+  - mlv:ColorRed.bt
+  - mlv:ColorWhite.bt
+  - mlv:Conversation.bt
+  - mlv:EndShow.bt
+  - mlv:FollowColor.bt
+  - mlv:IgnoreScene.bt
+  - mlv:Interact.bt
+  - mlv:LookingAtDistance.bt
+  - mlv:Phoning.bt
+  - mlv:Positioning.bt
+  - mlv:ReactionShow.bt
+  - mlv:Shopping.bt
+  - mlv:Show.bt
+  - mlv:ShowOffStart.bt
+  - mlv:ShowOffStop.bt
+  - mlv:SimpleDebug.bt
+  - mlv:SitBench.bt
+  - mlv:Speak.bt
+  - mlv:StartShow.bt
+  - mlv:StopParticipate.bt
+  - mlv:WaitInHouse.bt
+  - mlv:Wander.bt
+  - mlv:WatchAd.bt
+  - mlv:WatchShow.bt
+  - mlv:Journal.bt
+  - mlv:Cinema.bt
+  - mlv:Louche.bt
+  - mlv:Pestacle1.bt
+  - mlv:Pestacle2.bt
+  - mlv:Pestacle3.bt
+  - mlv:Pestacteur1.bt
+  - mlv:Pestacteur2.bt
+  - mlv:Pestacteur3.bt
+  - mlv:Pestacteur4.bt

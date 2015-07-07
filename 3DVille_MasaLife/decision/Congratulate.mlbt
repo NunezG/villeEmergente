@@ -1,0 +1,65 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{3244b7be-b471-4ac4-a483-6aca297028c3}"
+name: "Congratulate"
+description: ""
+children {
+  type: Node
+  name: "7c8ea999-cd67-4ddb-b503-94e3b935b2bb"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "48420468-26b3-4f3a-b6c2-1dc3ecda69c8"
+      presentation {
+        itemTemplate: "BTEmbeddedNode.qml"
+        position {
+          x: 5476
+          y: 2827
+          z: nan
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: BTEmbeddedBehaviorNode
+          isActivated: true
+          [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+            behaviorName {
+              type: StringType
+              name: ""
+              kbSelection: plainValue
+              stringValue: "decision/LifeScene/Talking.mlbt"
+            }
+            parameters {
+              type: StringType
+              name: "caption"
+              kbSelection: plainValue
+              stringValue: "Congratulate"
+            }
+            parameters {
+              type: IntType
+              name: "duration"
+              kbSelection: plainValue
+              intValue: 3
+            }
+          }
+        }
+      }
+    }
+  }
+}

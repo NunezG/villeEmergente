@@ -1,0 +1,54 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{df0eeee3-c6f7-4b51-b92e-3ac0b236906d}"
+name: "SimpleDebug"
+description: ""
+children {
+  type: Node
+  name: "862852d3-2ea6-497d-8d2a-f3e5d7bb95bf"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "055f3fbe-2bb0-473b-bafc-a80f08ecd2f8"
+      presentation {
+        itemTemplate: "BTActionNode.qml"
+        position {
+          x: 5336.86
+          y: 2612.18
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: ActionNode
+          isActivated: true
+          [mlv.toolset.proto.ActionNode.extension] {
+            actionName: "debug"
+            parameters {
+              type: StringType
+              name: "outputMessage"
+              kbSelection: plainValue
+              stringValue: "\"Un debug Simple\""
+            }
+          }
+        }
+      }
+    }
+  }
+}

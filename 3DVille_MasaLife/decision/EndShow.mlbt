@@ -1,0 +1,119 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{d15d44e2-b592-4983-b88b-3e0f42a9bdf0}"
+name: "EndShow"
+description: ""
+children {
+  type: Node
+  name: "4090710d-36a1-4198-830f-a9bcca21990b"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "afdf7c91-8a2e-4453-b30d-54192878931c"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5125
+          y: 2482
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "9d4d0e49-0182-48b7-9029-4d2ec04a7b67"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -108.63999999999942
+              y: 150.45999999999958
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "Salutation"
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "4599455d-0b6d-4e78-a7c3-ae1c7338f10a"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -2.6199999999998909
+              y: 151.69999999999982
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "wait"
+                parameters {
+                  type: IntType
+                  name: "time"
+                  kbSelection: plainValue
+                  intValue: 1
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "1eddc0c5-9bcc-46ba-99b4-b48598593024"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 95.340000000000146
+              y: 151.07999999999993
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "Wave"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

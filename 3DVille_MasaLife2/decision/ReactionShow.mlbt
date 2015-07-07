@@ -1,0 +1,75 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{440e0113-a42a-4780-b245-0c0004c04cb6}"
+name: "ReactionShow"
+description: ""
+children {
+  type: Node
+  name: "b593afe2-76bf-49f0-8e83-baca340aad5c"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "d1bbc14d-a41c-45ff-9a45-950766c97608"
+      presentation {
+        itemTemplate: "BTSelectorRandom.qml"
+        position {
+          x: 5296
+          y: 2642
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SelectorNodeRandom
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "f0eadf57-a484-4b76-9275-b7090697fd01"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -3.5
+              y: 128.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "Applaud"
+                parameters {
+                  type: IntType
+                  name: "duration"
+                  kbSelection: plainValue
+                  intValue: 5
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

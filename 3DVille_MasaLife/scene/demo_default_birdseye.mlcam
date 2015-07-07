@@ -1,0 +1,8 @@
+{
+    "type": "birdsEye",
+    "bottomTilt": 90.0,
+    "topTilt": 0.0,
+    "fov": 120.0,
+    "near": 10.0,
+    "far": 800.0
+}

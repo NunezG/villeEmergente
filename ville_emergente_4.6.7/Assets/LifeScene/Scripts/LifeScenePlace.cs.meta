@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 4b17c757897b8ab4ca948ab8bfd6cf7f
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - lifeSceneRoleNames: {fileID: 11400000, guid: 46be1ce86cfdd7b48b33ceeef3e096de,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

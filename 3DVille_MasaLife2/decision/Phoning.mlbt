@@ -1,0 +1,119 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{863ee76f-4467-4dab-8147-11fa22fdaa32}"
+name: "Phoning"
+description: ""
+children {
+  type: Node
+  name: "321d78cf-9ffb-4ab6-b72d-e8f1b469fd85"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "1317d5d4-726f-437b-98ec-d325068a3f57"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5492.5
+          y: 2594.5
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "d5ab482b-1d59-44b3-b25b-cf6c78f87529"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -122
+              y: 121
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "PhoneIn"
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "bc1e384f-5fc8-422e-90d3-ff9ac9adfca2"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -5
+              y: 146
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "wait"
+                parameters {
+                  type: IntType
+                  name: "time"
+                  kbSelection: plainValue
+                  intValue: 10
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "79ed23d7-8cad-4519-b7df-aa91e74599f3"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 119
+              y: 129
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "PhoneOut"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

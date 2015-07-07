@@ -1,0 +1,88 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{5ed0b7d2-16fe-489d-8b4e-1ceedbc9f99f}"
+name: "Merchant"
+description: ""
+children {
+  type: Node
+  name: "18d936b3-79a2-42c2-bb78-6aee681bb136"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "314025fb-3a88-4df2-85af-a1b70d829908"
+      presentation {
+        itemTemplate: "BTConditionNode.qml"
+        position {
+          x: 5832
+          y: 1795.5
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: ConditionNodeGeneric
+          isActivated: true
+          [mlv.toolset.proto.ConditionNodeGeneric.extension] {
+            operator: Equal
+            leftOperand {
+              source: selectLocalKB
+              key: "Interacting.negociate"
+            }
+            rightOperand {
+              source: plainValue
+              value {
+                type: boolean
+                booleanValue: true
+              }
+            }
+          }
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "b56f5bfd-ac28-4770-b6a7-07d63d58c4d1"
+          presentation {
+            itemTemplate: "BTEmbeddedNode.qml"
+            position {
+              x: 3.5
+              y: 139
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: BTEmbeddedBehaviorNode
+              isActivated: true
+              [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                behaviorName {
+                  type: StringType
+                  name: ""
+                  kbSelection: plainValue
+                  stringValue: "decision/Conversation.mlbt"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

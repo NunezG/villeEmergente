@@ -1,0 +1,48 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{02c23eaa-f780-4d13-ad0d-a86090b81878}"
+name: "FollowColor"
+description: ""
+children {
+  type: Node
+  name: "4c7a5c72-ac9f-49f7-b50d-8b3f6cbac5d9"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "c4c53448-56af-4ba8-a297-66806be49c3e"
+      presentation {
+        itemTemplate: "BTActionNode.qml"
+        position {
+          x: 5430
+          y: 2766
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: ActionNode
+          isActivated: true
+          [mlv.toolset.proto.ActionNode.extension] {
+            actionName: "FollowColor"
+          }
+        }
+      }
+    }
+  }
+}

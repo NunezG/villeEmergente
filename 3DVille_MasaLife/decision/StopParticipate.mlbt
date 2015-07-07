@@ -1,0 +1,48 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{b7d8466d-63ea-4510-9b32-63cbeed2f11c}"
+name: "StopParticipate"
+description: ""
+children {
+  type: Node
+  name: "5d49b616-7168-4bb8-b065-c9964edf5c81"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "38066153-3bda-4af6-9a30-fed877e94b20"
+      presentation {
+        itemTemplate: "BTActionNode.qml"
+        position {
+          x: 5556.5
+          y: 2846.5
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: ActionNode
+          isActivated: true
+          [mlv.toolset.proto.ActionNode.extension] {
+            actionName: "stopParticipate"
+          }
+        }
+      }
+    }
+  }
+}

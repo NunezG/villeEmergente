@@ -1,0 +1,65 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{00769637-70c6-4845-bebe-7b3a214dd2c3}"
+name: "Juggle"
+description: ""
+children {
+  type: Node
+  name: "adba3d2b-2e4a-432a-aa61-142d9fe5d9c4"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "268c0ef1-0c0f-4aa4-b64d-87758339071f"
+      presentation {
+        itemTemplate: "BTEmbeddedNode.qml"
+        position {
+          x: 5670.5
+          y: 2884
+          z: nan
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: BTEmbeddedBehaviorNode
+          isActivated: true
+          [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+            behaviorName {
+              type: StringType
+              name: ""
+              kbSelection: plainValue
+              stringValue: "decision/LifeScene/Talking.mlbt"
+            }
+            parameters {
+              type: StringType
+              name: "caption"
+              kbSelection: plainValue
+              stringValue: "Juggle"
+            }
+            parameters {
+              type: IntType
+              name: "duration"
+              kbSelection: plainValue
+              intValue: 5
+            }
+          }
+        }
+      }
+    }
+  }
+}

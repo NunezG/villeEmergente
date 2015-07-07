@@ -1,0 +1,141 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{7ef3539b-bb10-4f60-a136-d99e49ad4455}"
+name: "Leaving"
+description: ""
+children {
+  type: Node
+  name: "488d00f9-36e3-4d80-8d67-ea9e9361c6c3"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "9bc17d0b-91e3-4375-a3f5-976bf9e78522"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5363
+          y: 2692
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "14d2a57c-86c5-4a02-bb0f-1029905e38aa"
+          presentation {
+            itemTemplate: "BTEmbeddedNode.qml"
+            position {
+              x: -108
+              y: 173
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: BTEmbeddedBehaviorNode
+              isActivated: true
+              [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                behaviorName {
+                  type: StringType
+                  name: ""
+                  kbSelection: plainValue
+                  stringValue: "GotoWithAnimation"
+                }
+                parameters {
+                  type: StringType
+                  name: "Point"
+                  kbSelection: selectLocalKB
+                  stringValue: "Navigation.gotopos"
+                }
+                parameters {
+                  type: IntType
+                  name: "threshold"
+                  kbSelection: plainValue
+                  intValue: 2
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "5ab91ba5-babf-479c-88c7-403ac228a447"
+          presentation {
+            itemTemplate: "BTEmbeddedNode.qml"
+            position {
+              x: 14
+              y: 174.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: BTEmbeddedBehaviorNode
+              isActivated: true
+              [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                behaviorName {
+                  type: StringType
+                  name: ""
+                  kbSelection: plainValue
+                  stringValue: "decision/OnPlace.mlbt"
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "af1cd5ea-fe20-4440-858d-a3a29c282474"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 129.5
+              y: 172.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "wait"
+                parameters {
+                  type: IntType
+                  name: "time"
+                  kbSelection: plainValue
+                  intValue: 10
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

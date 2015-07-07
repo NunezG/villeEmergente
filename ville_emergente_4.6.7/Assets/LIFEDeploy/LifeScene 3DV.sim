@@ -1,0 +1,82 @@
+version {
+  major: 0
+  minor: 5
+  patch: 0
+}
+knowledge {
+  knowledgeFile: "knowledge/AbstractKnowledge.mlkb"
+  knowledgeFile: "knowledge/global.mlkb"
+  knowledgeFile: "knowledge/3D-Ville/SpectacleKnowledge.mlkb"
+}
+action {
+}
+decision {
+  btFile: "decision/Actions/3D-Ville/3DV-Bench.bt"
+  btFile: "decision/Actions/3D-Ville/AppoachShow.bt"
+  btFile: "decision/Actions/3D-Ville/EndShow.bt"
+  btFile: "decision/Actions/3D-Ville/IgnoreScene.bt"
+  btFile: "decision/Actions/3D-Ville/Interact.bt"
+  btFile: "decision/Actions/3D-Ville/LookingAtDistance.bt"
+  btFile: "decision/Actions/3D-Ville/Phoning.bt"
+  btFile: "decision/Actions/3D-Ville/PickRandomDuration.bt"
+  btFile: "decision/Actions/3D-Ville/ReactionShow.bt"
+  btFile: "decision/Actions/3D-Ville/Shopping.bt"
+  btFile: "decision/Actions/3D-Ville/Show.bt"
+  btFile: "decision/Actions/3D-Ville/Speak.bt"
+  btFile: "decision/Actions/3D-Ville/StartShow.bt"
+  btFile: "decision/Actions/3D-Ville/WaitInHouse.bt"
+  btFile: "decision/Actions/3D-Ville/WatchAd.bt"
+  btFile: "decision/Actions/3D-Ville/WatchShow.bt"
+  btFile: "decision/Actions/Atelier/Cinema.bt"
+  btFile: "decision/Actions/Atelier/DisplayBubble.bt"
+  btFile: "decision/Actions/Atelier/Journal.bt"
+  btFile: "decision/Actions/Atelier/Louche.bt"
+  btFile: "decision/Actions/Atelier/Pestacle1.bt"
+  btFile: "decision/Actions/Atelier/Pestacle2.bt"
+  btFile: "decision/Actions/Atelier/Pestacle3.bt"
+  btFile: "decision/Actions/Atelier/Pestacteur1.bt"
+  btFile: "decision/Actions/Atelier/Pestacteur2.bt"
+  btFile: "decision/Actions/Atelier/Pestacteur3.bt"
+  btFile: "decision/Actions/Atelier/Pestacteur4.bt"
+  btFile: "decision/Actions/TestAbstrait/ColorBlue.bt"
+  btFile: "decision/Actions/TestAbstrait/ColorGreen.bt"
+  btFile: "decision/Actions/TestAbstrait/ColorRed.bt"
+  btFile: "decision/Actions/TestAbstrait/ColorWhite.bt"
+  btFile: "decision/Actions/TestAbstrait/FollowColor.bt"
+  btFile: "decision/Actions/TestAbstrait/ShowOffStart.bt"
+  btFile: "decision/Actions/TestAbstrait/ShowOffStop.bt"
+  btFile: "decision/Actions/Nothing.bt"
+  btFile: "decision/Actions/SimpleDebug.bt"
+  btFile: "decision/LifeScene/BehavioralSequence.bt"
+  btFile: "decision/LifeScene/BubbleSpeech.bt"
+  btFile: "decision/LifeScene/Conversation.bt"
+  btFile: "decision/LifeScene/GotoWithAnimation.bt"
+  btFile: "decision/LifeScene/InteractionPlayer.bt"
+  btFile: "decision/LifeScene/IPwalking.bt"
+  btFile: "decision/LifeScene/LifeScene.bt"
+  btFile: "decision/LifeScene/Merchant.bt"
+  btFile: "decision/LifeScene/NotDefined.bt"
+  btFile: "decision/LifeScene/ParticipateEvent.bt"
+  btFile: "decision/LifeScene/ParticipateIP.bt"
+  btFile: "decision/LifeScene/Positioning.bt"
+  btFile: "decision/LifeScene/Salutation.bt"
+  btFile: "decision/LifeScene/StopParticipate.bt"
+  btFile: "decision/LifeScene/Talking.bt"
+  btFile: "decision/LifeScene/TriggerEvent.bt"
+  btFile: "decision/LifeScene/Waiting.bt"
+}
+update {
+  fixedUpdateTimeDelta: 99
+  numThreads: 1
+}
+implementationLibrary {
+  config {
+    platform: win_vc100_x86
+    pluginFile: "implementation/lifeSceneLib_vc100-mt.dll"
+  }
+  config {
+    platform: win_vc100_x86_d
+    pluginFile: "implementation/lifeSceneLib_vc100-mt-gd.dll"
+  }
+}
+entityLibrary: "/LifeScene 3DV.protos"
