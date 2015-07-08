@@ -3,9 +3,6 @@ version {
   minor: 0
   patch: 0
 }
-exclude: "/navigation"
-exclude: "/sandbox"
-exclude: "/Scene"
 updateDelta: 99
 knowledge: "/knowledge/AbstractKnowledge.mlkb"
 knowledge: "/knowledge/global.mlkb"
