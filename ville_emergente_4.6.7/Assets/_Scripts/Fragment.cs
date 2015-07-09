@@ -6,6 +6,7 @@ public class Fragment : MonoBehaviour{
 
     public Material material;
     public AudioSource audioSource;
+    public AudioClip defaultClip;
 	// Use this for initialization
     public void Awake()
     {
@@ -15,6 +16,7 @@ public class Fragment : MonoBehaviour{
     public void Start()
     {
         print("FragmentStart");
+        audioSource.clip = defaultClip;
         this.renderer.material = material;
 	}
 	
