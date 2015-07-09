@@ -11,9 +11,13 @@ public class NPC : MonoBehaviour{
     public AudioClip defaultClip;
     //public List<Fragment> fragments = new List<Fragment>();
     public Fragment fragment = null;
+
+    public static GameObject[] targets=null;
     public void Awake()
     {
        tag = "NPC";
+        if(targets==null)
+            targets = GameObject.FindGameObjectsWithTag("NavigationTarget");
     }
 
 	// Use this for initialization
