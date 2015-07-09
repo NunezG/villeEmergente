@@ -26,24 +26,31 @@ public class ObjectInteractor : MonoBehaviour {
                 hitObject = hit.collider.gameObject; // on recupere l'objet vise
                 InteractibleObject interacObj = hitObject.GetComponent<InteractibleObject>(); // on recupere sa composante InteractibleObject
 
-                if (handsFull && interacObj.type == InteractibleType.NPC) // si on a un objet en main et qu'on vise un NPC
+                if (handsFull && (interacObj.type == InteractibleType.NPC // si on a un objet en main et qu'on vise un NPC
+                    || ( interacObj.type == InteractibleType.SettingPiece && !interacObj.HasFragment() ) ) ) // ou un batiment vide
                 {
                     //ajout de l'objet en main a l'objet vise
-                    interacObj.OnAddingFragment(inHandObject);
+                    print("ajout de l'objet en main a l'objet vise");
+                    interacObj.OnAddingFragment(inHandObject.GetComponent<Fragment>());
                     AddingFragment();
                 }
-                else if (!handsFull && interacObj.type == InteractibleType.Fragment) // si on a rien en main et qu'on vise un objet rammassable
+                else if (!handsFull && (interacObj.type == InteractibleType.Fragment // si on a rien en main et qu'on vise un objet rammassable
+                    || (interacObj.type == InteractibleType.SettingPiece && interacObj.HasFragment()))) // ou un batiment avec un fragment
                 {
+                    print("on ramasse l'objet");
                     //on ramasse l'objet
-                    PickUpObject(hitObject);
+                    PickUpObject(interacObj.OnPickUp());
                 }
-                else if (!handsFull && interacObj.type == InteractibleType.SettingPiece) // si on a rien en main et qu'on vise un element de decor
+                else if (!handsFull && (interacObj.type == InteractibleType.SettingPiece && !interacObj.HasFragment())) // si on a rien en main et qu'on vise un element de decor vide
                 {
+                    print("on declenche l'interaction avec cet objet");
+                    //print("(!handsFull && interacObj.type == InteractibleType.SettingPiece)");
                     //on declenche l'interaction avec cet objet
                     interacObj.OnInteract();
                 }
                 else if (handsFull) // sinon, si on a juste un objet en main et qu'on ne vise pas un NPC
                 {
+                    print("on laisse tomber l'objet en main");
                     //on laisse tomber l'objet en main
                     DropInHandObject();
                 }
@@ -62,6 +69,7 @@ public class ObjectInteractor : MonoBehaviour {
 
     public void PickUpObject(GameObject toPickUp)
     {
+        print("Interactor:PickUpObject");
         inHandObject = toPickUp;
         inHandObject.transform.parent = inHandPosition.transform;
         inHandObject.transform.position = inHandPosition.transform.position;
@@ -73,20 +81,26 @@ public class ObjectInteractor : MonoBehaviour {
 
     public void DropInHandObject()
     {
+        print("Interactor:DropInHandObject");
         if (inHandObject != null)
         {
+            inHandObject.GetComponent<Fragment>().audioSource.Play();
             inHandObject.rigidbody.isKinematic = false;
             handsFull = false;
             inHandObject.transform.parent = null;
             inHandObject = null;
+
         }
     }
 
     public void AddingFragment()
     {
+        print("Interactor:AddingFragment");
         inHandObject.rigidbody.isKinematic = false;
         handsFull = false;
         inHandObject.transform.parent = null;
-        Destroy(inHandObject);
+        SettingPiece.fragmentsOfZeWorld.Remove(inHandObject.GetComponent<Fragment>());
+        //Destroy(inHandObject);
+        inHandObject.SetActive(false);
     }
 }

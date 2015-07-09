@@ -2,23 +2,31 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class NPC : InteractibleObject {
+public class NPC : MonoBehaviour{
 
-    public float timer = 0, maxTimer = 15, endTimer;
+    public float timer = 0,minEndTimer=10, maxEndTimer = 15, endTimer;
 
-
-    public List<InteractibleObject> fragments = new List<InteractibleObject>();
+    public Material material;
+    public AudioSource audioSource;
+    public AudioClip defaultClip;
+    //public List<Fragment> fragments = new List<Fragment>();
+    public Fragment fragment = null;
+    public void Awake()
+    {
+       tag = "NPC";
+    }
 
 	// Use this for initialization
     public void Start()
     {
-        endTimer = (int)Random.Range(0, 15);
+        endTimer = (int)Random.Range(minEndTimer, maxEndTimer);
+
+        this.renderer.material = material;
 	}
 	
 	// Update is called once per frame
     public void Update()
     {
-
         if (timer < endTimer)
         {
             timer = timer + Time.deltaTime;
@@ -26,14 +34,17 @@ public class NPC : InteractibleObject {
         else
         {
             timer = 0;
-            endTimer = (int)Random.Range(0, 15);
-            //audioSource.Play();
+            endTimer = (int)Random.Range(minEndTimer, maxEndTimer);
+            audioSource.Play();
         }
 	}
     
-    public void OnAddingFragment(GameObject fragment)
+    public void OnAddingFragment(Fragment fragment)
     {
-        fragments.Add(fragment.GetComponent<InteractibleObject>());
+        print("NPC:OnAddingFragment");
+        this.fragment = fragment;
+        
+        this.renderer.material = fragment.material;
+        this.audioSource.clip = fragment.audioSource.clip;
     }
-
 }
