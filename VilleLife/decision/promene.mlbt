@@ -28,8 +28,8 @@ children {
       presentation {
         itemTemplate: "BTActionNode.qml"
         position {
-          x: 5265
-          y: 2740
+          x: 5399.9
+          y: 2735.7
           z: 0
         }
       }

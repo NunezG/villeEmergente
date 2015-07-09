@@ -1,0 +1,42 @@
+version {
+  major: 1
+  minor: 1
+  patch: 0
+}
+type: "mlv.toolset.launch.remote"
+attribute {
+  key: "3dSettings.numberOfPrototypes"
+  value: "1"
+}
+attribute {
+  key: "3dSettings.prototypes[0].color"
+  value: "\"220;170;0;255\""
+}
+attribute {
+  key: "3dSettings.prototypes[0].enabled"
+  value: "true"
+}
+attribute {
+  key: "3dSettings.prototypes[0].mesh"
+  value: "impostor.mesh"
+}
+attribute {
+  key: "3dSettings.prototypes[0].name"
+  value: "\\a default \\a"
+}
+attribute {
+  key: "3dSettings.prototypes[0].orientation"
+  value: "\"0;0;0\""
+}
+attribute {
+  key: "3dSettings.prototypes[0].scale"
+  value: "\"0.35;1.7;0.35\""
+}
+attribute {
+  key: "project"
+  value: "VilleLife"
+}
+attribute {
+  key: "scene"
+  value: "scene/LifeTestScene.mlscene"
+}

@@ -1,0 +1,77 @@
+{
+    "version": [
+        1,
+        0,
+        0
+    ]
+}
+{
+    "type": "root",
+    "children": [
+        {
+            "type": "geometry",
+            "label": "villeLifeTest",
+            "enable": true,
+            "color": "#c39b9b",
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "source": "villeLifeTest.obj"
+        },
+        {
+            "type": "camera",
+            "enable": true,
+            "translation": [
+                -16.397817716872666,
+                24.991324862781124,
+                -11.812833103916084
+            ],
+            "rotation": [
+                -0.043347247308694957,
+                -0.90497640781904531,
+                -0.41242150974172198,
+                0.0951168531021446
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "source": "default_free.mlcam"
+        },
+        {
+            "type": "camera",
+            "enable": false,
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "source": "default_birds_eye.mlcam"
+        }
+    ]
+}

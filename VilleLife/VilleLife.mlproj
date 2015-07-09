@@ -43,6 +43,17 @@ folder {
     location: "prototypes/promeneur.mlent"
   }
 }
+folder {
+  name: "scene"
+  file {
+    name: "LifeTestScene.mlscene"
+    location: "scene/LifeTestScene.mlscene"
+  }
+}
+file {
+  name: "villeLife.launch"
+  location: "villeLife.launch"
+}
 file {
   name: "VilleLife.mlsim"
   location: "VilleLife.mlsim"

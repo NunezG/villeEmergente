@@ -315,6 +315,18 @@ folder {
 }
 folder {
   name: "Scene"
+  file {
+    name: "atelierNEW.mlscene"
+    location: "scene/atelierNEW.mlscene"
+  }
+  file {
+    name: "demo.mlscene"
+    location: "scene/demo.mlscene"
+  }
+}
+file {
+  name: "atelier.launch"
+  location: "atelier.launch"
 }
 file {
   name: "LifeScene 3DV.mlsim"
