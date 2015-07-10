@@ -5,7 +5,7 @@ public class Fragment : MonoBehaviour{
 
 
     public Material material;
-    public AudioSource audioSource;
+    public  AudioSource audioSource;
     public AudioClip defaultClip;
 	// Use this for initialization
     public void Awake()
@@ -25,6 +25,16 @@ public class Fragment : MonoBehaviour{
     {
 	
 	}
+
+    public void Play()
+    {
+        audioSource.Play();
+    }
+
+    public AudioClip GetClip()
+    {
+        return audioSource.clip;
+    }
 
     public void AnswerTheCall()
     {
