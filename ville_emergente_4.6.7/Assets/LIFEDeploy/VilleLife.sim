@@ -8,9 +8,29 @@ knowledge {
 action {
 }
 decision {
+  btFile: "decision/BehavioralSequence.bt"
+  btFile: "decision/Cinema.bt"
+  btFile: "decision/DisplayBubble.bt"
+  btFile: "decision/GotoWithAnimation.bt"
+  btFile: "decision/InteractionPlayer.bt"
+  btFile: "decision/IPwalking.bt"
+  btFile: "decision/LifeScene.bt"
+  btFile: "decision/ParticipateEvent.bt"
+  btFile: "decision/ParticipateIP.bt"
+  btFile: "decision/Pestacle1.bt"
+  btFile: "decision/Pestacle2.bt"
+  btFile: "decision/Pestacle3.bt"
+  btFile: "decision/Pestacteur1.bt"
+  btFile: "decision/Pestacteur2.bt"
+  btFile: "decision/Pestacteur3.bt"
+  btFile: "decision/Pestacteur4.bt"
+  btFile: "decision/Positioning.bt"
   btFile: "decision/promene.bt"
+  btFile: "decision/Salutation.bt"
+  btFile: "decision/TriggerEvent.bt"
 }
 update {
+  fixedUpdateTimeDelta: 99
   numThreads: 1
 }
 implementationLibrary {

@@ -1,0 +1,65 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{2e3c5e95-9159-421b-b463-c1d94e70b42b}"
+name: "Pestacteur1"
+description: ""
+children {
+  type: Node
+  name: "98599621-45dd-4b09-836f-868550500e18"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "11679358-42a8-4116-8fcd-a832c1817ee0"
+      presentation {
+        itemTemplate: "BTEmbeddedNode.qml"
+        position {
+          x: 5626.5
+          y: 2868.5
+          z: nan
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: BTEmbeddedBehaviorNode
+          isActivated: true
+          [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+            behaviorName {
+              type: StringType
+              name: ""
+              kbSelection: plainValue
+              stringValue: "decision/Actions/Atelier/DisplayBubble.mlbt"
+            }
+            parameters {
+              type: StringType
+              name: "caption"
+              kbSelection: plainValue
+              stringValue: "Qu\'est ce qui se passe ?"
+            }
+            parameters {
+              type: IntType
+              name: "duration"
+              kbSelection: plainValue
+              intValue: 2
+            }
+          }
+        }
+      }
+    }
+  }
+}

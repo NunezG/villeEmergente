@@ -1,0 +1,65 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{5fef1114-d3d9-471d-93ad-92146eae1e3d}"
+name: "Pestacle2"
+description: ""
+children {
+  type: Node
+  name: "2e742526-3597-477b-9be6-2b795379a209"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "1b880fb9-926a-4d8d-b941-2c0648bedb16"
+      presentation {
+        itemTemplate: "BTEmbeddedNode.qml"
+        position {
+          x: 5541.5
+          y: 2775.5
+          z: nan
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: BTEmbeddedBehaviorNode
+          isActivated: true
+          [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+            behaviorName {
+              type: StringType
+              name: ""
+              kbSelection: plainValue
+              stringValue: "decision/Actions/Atelier/DisplayBubble.mlbt"
+            }
+            parameters {
+              type: StringType
+              name: "caption"
+              kbSelection: plainValue
+              stringValue: "Fait quelque chose de tres interessant"
+            }
+            parameters {
+              type: IntType
+              name: "duration"
+              kbSelection: plainValue
+              intValue: 10
+            }
+          }
+        }
+      }
+    }
+  }
+}

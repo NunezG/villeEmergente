@@ -24,6 +24,7 @@ public class AlignAction : mlv.Action<AlignParam, StaticObject>
 
     public override Status start(EntityKnowledgeFacade entity, UInt32 request, AlignParam parameters, StaticObject paramsOut)
 	{
+		Debug.Log ("ALIGN FUCKING ACTIONNNN");
 		// just call the update function as all the code is in it
 		entity.entity.SendMessage("AlignStart", parameters.orientation, SendMessageOptions.DontRequireReceiver);
         return update(entity, request, parameters, paramsOut, 0f);
@@ -31,11 +32,14 @@ public class AlignAction : mlv.Action<AlignParam, StaticObject>
 
     public override Status update(EntityKnowledgeFacade entity, UInt32 request, AlignParam parameters, StaticObject paramsOut, float dt)
 	{ 
-	
+		Debug.Log ("ALIGN FUCKING ACTIONNNN UPDAZTEEEEEEEEE");
+
 		Quaternion actual = entity.entity.transform.rotation;
 		float dif = Mathf.Abs( Mathf.DeltaAngle( actual.eulerAngles.y , parameters.orientation) );
 		if( dif <= parameters.threshold)
 		{
+			Debug.Log ("ALIGN FUCKING ACTIONNNN EEEEEEEEEEEEENNNNNNNNNNNDDDDDDDDDDDD");
+
 			entity.entity.SendMessage("AlignStop", SendMessageOptions.DontRequireReceiver);
 			return Status.succeeded;
 		}
@@ -47,6 +51,8 @@ public class AlignAction : mlv.Action<AlignParam, StaticObject>
 	// nothing special to do
     public override Status cancel(EntityKnowledgeFacade entity, UInt32 request, AlignParam parameters, float dt)
 	{
+		Debug.Log ("ALIGN FUCKING ACTIONNNN CANCEEELLLL");
+
 		if( entity.entity == null )
 			return Status.canceled;
 		entity.entity.SendMessage("AlignStop", SendMessageOptions.DontRequireReceiver);		

@@ -1,0 +1,236 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{0b26d29c-d8d7-4e26-9089-d494cf563b92}"
+name: "InteractionPlayer"
+description: ""
+children {
+  type: Node
+  name: "102e56ac-3859-415b-b8da-77799e0f4ce8"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "903a056c-70aa-492e-b0bb-7bf1b03f3d34"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5662.9364733855737
+          y: 2998.1800000000003
+          z: nan
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "6b0a74bc-0159-4269-b444-8fab311c9cf4"
+          presentation {
+            itemTemplate: "BTConditionNode.qml"
+            position {
+              x: -256.59647338557625
+              y: 171.13999999999851
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ConditionNodeGeneric
+              isActivated: true
+              [mlv.toolset.proto.ConditionNodeGeneric.extension] {
+                operator: Equal
+                leftOperand {
+                  source: selectLocalKB
+                  key: "Interacting.activePlayer"
+                }
+                rightOperand {
+                  source: plainValue
+                  value {
+                    type: integer
+                    integerValue: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "883d8a5b-d243-4fe9-8e20-f057d088da0b"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -135.11739011278405
+              y: 170.02093149104007
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "faceEntity"
+                parameters {
+                  type: StringType
+                  name: "targetID"
+                  kbSelection: selectLocalKB
+                  stringValue: "Interacting.indexPlayer"
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "c2277d6a-b9af-485e-bdb5-45dec1970797"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -36.536473385574936
+              y: 171.91999999999916
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: false
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "Speak"
+                parameters {
+                  type: IntType
+                  name: "duration"
+                  kbSelection: plainValue
+                  intValue: 3
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "c6725727-e7f8-4c32-ab24-ced452966dc2"
+          presentation {
+            itemTemplate: "BTEmbeddedNode.qml"
+            position {
+              x: 56.963526614425064
+              y: 171.91999999999916
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: BTEmbeddedBehaviorNode
+              isActivated: true
+              [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                behaviorName {
+                  type: StringType
+                  name: ""
+                  kbSelection: selectLocalKB
+                  stringValue: "Interacting.InteractionPlayer"
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "0dc68e9e-9937-46bd-9982-ab559995ecdd"
+          presentation {
+            itemTemplate: "BTEmbeddedNode.qml"
+            position {
+              x: 149.46352661442506
+              y: 168.41999999999939
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: BTEmbeddedBehaviorNode
+              isActivated: false
+              [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                behaviorName {
+                  type: StringType
+                  name: ""
+                  kbSelection: plainValue
+                  stringValue: "decision/LifeScene/Talking.mlbt"
+                }
+                parameters {
+                  type: StringType
+                  name: "caption"
+                  kbSelection: selectLocalKB
+                  stringValue: "Interacting.say"
+                }
+                parameters {
+                  type: IntType
+                  name: "duration"
+                  kbSelection: plainValue
+                  intValue: 2
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "2db52001-59ab-4c35-bcfd-9155c02a1e3f"
+          presentation {
+            itemTemplate: "BTCustomNode.qml"
+            position {
+              x: 248.46352661442506
+              y: 172.91999999999894
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: BTCustomNode
+              isActivated: true
+              [mlv.toolset.proto.BTCustomNode.extension] {
+                typeName: "SetState"
+                parameters {
+                  type: IntType
+                  name: "Interacting.activePlayer"
+                  kbSelection: plainValue
+                  intValue: 1
+                }
+                parameters {
+                  type: StringType
+                  name: "Navigation.walking"
+                  kbSelection: plainValue
+                  stringValue: "yes"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

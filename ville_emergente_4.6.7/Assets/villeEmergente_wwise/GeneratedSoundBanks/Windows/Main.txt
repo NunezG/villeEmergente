@@ -1,0 +1,16 @@
+Event	ID	Name			Wwise Object Path	Notes
+	193498114	water_3DObject_play			\Default Work Unit\water_3DObject_play	
+	812837510	rain_2DObject_play			\Default Work Unit\rain_2DObject_play	
+	836511068	water_3DObject_stop			\Default Work Unit\water_3DObject_stop	
+	2622262392	rain_2DObject_stop			\Default Work Unit\rain_2DObject_stop	
+
+Effect plug-ins	ID	Name	Type				Notes
+	761516531	Cymbal	Wwise Convolution Reverb			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	165344794	soft rain - brown noise - human activities - drops reverb - 02	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\WwiseProject\villeEmergente_wwise\.cache\Windows\SFX\soft rain - brown noise - human activities - drops reverb - 02_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\2D Objects\soft rain - brown noise - human activities - drops reverb - 02		4233867
+	943957025	paddle light freely 01	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\WwiseProject\villeEmergente_wwise\.cache\Windows\SFX\paddle light freely 01_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\3D Objects\paddle light freely 01		971997
+
+Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
+	1038465850	Cymbal	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\WwiseProject\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\cymbal_reverb_10CA7B1B.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Cymbal		704656
+

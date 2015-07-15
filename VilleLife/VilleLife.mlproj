@@ -8,12 +8,88 @@ builder: "mlv::toolset::simulation::impl::SimProjectBuilder"
 folder {
   name: "decision"
   file {
+    name: "BehavioralSequence.mlbt"
+    location: "decision/BehavioralSequence.mlbt"
+  }
+  file {
+    name: "DisplayBubble.mlbt"
+    location: "decision/DisplayBubble.mlbt"
+  }
+  file {
+    name: "GotoWithAnimation.mlbt"
+    location: "decision/GotoWithAnimation.mlbt"
+  }
+  file {
+    name: "InteractionPlayer.mlbt"
+    location: "decision/InteractionPlayer.mlbt"
+  }
+  file {
+    name: "IPwalking.mlbt"
+    location: "decision/IPwalking.mlbt"
+  }
+  file {
+    name: "LifeScene.mlbt"
+    location: "decision/LifeScene.mlbt"
+  }
+  file {
+    name: "ParticipateEvent.mlbt"
+    location: "decision/ParticipateEvent.mlbt"
+  }
+  file {
+    name: "ParticipateIP.mlbt"
+    location: "decision/ParticipateIP.mlbt"
+  }
+  file {
+    name: "Pestacle1.mlbt"
+    location: "decision/Pestacle1.mlbt"
+  }
+  file {
+    name: "Pestacle2.mlbt"
+    location: "decision/Pestacle2.mlbt"
+  }
+  file {
+    name: "Pestacle3.mlbt"
+    location: "decision/Pestacle3.mlbt"
+  }
+  file {
+    name: "Pestacteur1.mlbt"
+    location: "decision/Pestacteur1.mlbt"
+  }
+  file {
+    name: "Pestacteur2.mlbt"
+    location: "decision/Pestacteur2.mlbt"
+  }
+  file {
+    name: "Pestacteur3.mlbt"
+    location: "decision/Pestacteur3.mlbt"
+  }
+  file {
+    name: "Pestacteur4.mlbt"
+    location: "decision/Pestacteur4.mlbt"
+  }
+  file {
+    name: "Positioning.mlbt"
+    location: "decision/Positioning.mlbt"
+  }
+  file {
     name: "promene.mlbt"
     location: "decision/promene.mlbt"
+  }
+  file {
+    name: "Salutation.mlbt"
+    location: "decision/Salutation.mlbt"
+  }
+  file {
+    name: "TriggerEvent.mlbt"
+    location: "decision/TriggerEvent.mlbt"
   }
 }
 folder {
   name: "entity"
+  file {
+    name: "lemecquipromene.mlent"
+    location: "prototypes/lemecquipromene.mlent"
+  }
 }
 folder {
   name: "implementation"
@@ -32,12 +108,36 @@ folder {
 }
 folder {
   name: "knowledge"
+  file {
+    name: "entity.mlkb"
+    location: "knowledge/entity.mlkb"
+  }
+  file {
+    name: "global.mlkb"
+    location: "knowledge/global.mlkb"
+  }
+  file {
+    name: "LifeScene.mlkb"
+    location: "knowledge/LifeScene.mlkb"
+  }
+  file {
+    name: "lifesceneKnowledge.mlkb"
+    location: "knowledge/lifesceneKnowledge.mlkb"
+  }
+  file {
+    name: "ShowReactionKnowledge.mlkb"
+    location: "knowledge/ShowReactionKnowledge.mlkb"
+  }
 }
 folder {
   name: "navigation"
 }
 folder {
   name: "prototypes"
+  file {
+    name: "LifeScene.mlent"
+    location: "prototypes/LifeScene.mlent"
+  }
   file {
     name: "promeneur.mlent"
     location: "prototypes/promeneur.mlent"
