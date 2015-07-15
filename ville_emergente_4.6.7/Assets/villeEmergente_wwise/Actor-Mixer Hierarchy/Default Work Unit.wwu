@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CDD3F08A-5173-45B5-B121-6E12477068A8}" SchemaVersion="69">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{CDD3F08A-5173-45B5-B121-6E12477068A8}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="3D Objects" ID="{CFB662AF-C053-4B86-BF35-67DD3452BC2E}" ShortID="550476142">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="paddle light freely 01" ID="{A62974B8-044C-4A5B-B306-109558698C82}" ShortID="1014944115" Type="SoundFX">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+									<ObjectRef Name="Cymbal" ID="{13E491C6-6232-4A6E-BEAD-E027043BB0C2}" WorkUnitID="{CA38D7B3-D42A-4DEC-815D-F72878400F95}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="paddle light freely 01" ID="{93527C28-ABC1-4E36-B9F9-5753A8C3DE6A}" ShortID="943957025">
+									<Language>SFX</Language>
+									<AudioFile>paddle light freely 01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="paddle light freely 01" ID="{93527C28-ABC1-4E36-B9F9-5753A8C3DE6A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="2D Objects" ID="{862222BE-2BB2-4A14-AF6F-07F4BA86224C}" ShortID="177123117">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Others" ID="{CECFFADC-8E7D-4D9B-BADB-DC94CDCB5FB6}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="soft rain - brown noise - human activities - drops reverb - 02" ID="{3092068A-9D32-4C0B-AE05-F754F305539D}" ShortID="921880951" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="soft rain - brown noise - human activities - drops reverb - 02" ID="{9CF93674-9608-4850-8163-2796060FA291}" ShortID="165344794">
+									<Language>SFX</Language>
+									<AudioFile>soft rain - brown noise - human activities - drops reverb - 02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="soft rain - brown noise - human activities - drops reverb - 02" ID="{9CF93674-9608-4850-8163-2796060FA291}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

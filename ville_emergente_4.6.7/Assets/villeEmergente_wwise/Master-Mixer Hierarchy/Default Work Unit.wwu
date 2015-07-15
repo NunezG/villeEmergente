@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}" SchemaVersion="69">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ChildrenList>
+						<Bus Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}">
+							<ReferenceList>
+								<Reference Name="Mixer">
+									<Custom>
+										<Effect Name="AstoundSound RTI (Custom)" ID="{C512BDA1-5FE2-40F3-B2B1-E667887265C8}" ShortID="780565931" PluginName="AstoundSound RTI" CompanyID="260" PluginID="3" PluginType="6">
+											<PropertyList>
+												<Property Name="Enable reverb" Type="bool" Value="False"/>
+												<Property Name="Get direction from game object" Type="bool" Value="True"/>
+												<Property Name="Get distance from game object" Type="bool" Value="True"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+						</Bus>
+						<Bus Name="Others" ID="{CECFFADC-8E7D-4D9B-BADB-DC94CDCB5FB6}"/>
+					</ChildrenList>
+				</Bus>
+				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>
+				<MotionBus Name="Master Motion Bus" ID="{20A630BA-3398-4676-B927-1004DFE41FD8}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>
