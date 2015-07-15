@@ -4,12 +4,12 @@ version {
   patch: 0
 }
 type: BehaviorTree
-uuid: "{e848c55a-b83e-4afc-85a7-d91bf26f6d61}"
-name: "promene"
+uuid: "{32fc2df4-6a14-4e71-ad81-45f8186c6cf9}"
+name: "Nothing"
 description: ""
 children {
   type: Node
-  name: "eb6934f1-e808-41cd-919a-dacaffddfcb4"
+  name: "471c50fc-20a5-4caa-894a-4d534aeabd51"
   presentation {
     itemTemplate: "MLV_USE_NO_TEMPLATE"
     position {
@@ -24,13 +24,13 @@ children {
   [mlv.toolset.proto.Node.extension] {
     children {
       type: Node
-      name: "98af283d-2b81-4f0e-a194-fa7516fa2ed2"
+      name: "0fbf26a5-c38d-4565-b99e-803463419e57"
       presentation {
         itemTemplate: "BTActionNode.qml"
         position {
-          x: 5438
-          y: 2789.5
-          z: 0
+          x: 5467
+          y: 2764.5
+          z: nan
         }
       }
       properties {
@@ -39,12 +39,12 @@ children {
           type: ActionNode
           isActivated: true
           [mlv.toolset.proto.ActionNode.extension] {
-            actionName: "debug"
+            actionName: "wait"
             parameters {
-              type: StringType
-              name: "outputMessage"
+              type: DoubleType
+              name: "time"
               kbSelection: plainValue
-              stringValue: "FUCKKKKKKKKKKKK"
+              doubleValue: 0.1
             }
           }
         }
