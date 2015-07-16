@@ -2,7 +2,18 @@
 using System.Collections;
 using System.Collections.Generic;
 
+using RAIN.Core;
+using RAIN.Navigation.Targets;
+using RAIN.Minds;
+using RAIN.Serialization;
+using RAIN.Motion;
+
 public class NPC : MonoBehaviour{
+
+
+    public RAIN.Memory.BasicMemory tMemory;
+
+
 
     public float timer = 0,minEndTimer=10, maxEndTimer = 15, endTimer;
 
@@ -23,6 +34,11 @@ public class NPC : MonoBehaviour{
 	// Use this for initialization
     public void Start()
     {
+
+        AIRig aiRig = GetComponentInChildren<AIRig>();
+        tMemory = aiRig.AI.WorkingMemory as RAIN.Memory.BasicMemory;
+
+
         endTimer = (int)Random.Range(minEndTimer, maxEndTimer);
 
         this.renderer.material = material;
@@ -50,5 +66,19 @@ public class NPC : MonoBehaviour{
         
         this.renderer.material = fragment.material;
         this.audioSource.clip = fragment.GetClip();
+    }
+
+    public void EmitSound()
+    {
+        print("Emit Sound");
+    }
+
+    public void SetPlayerIsInRange(bool boolean)
+    {
+        tMemory.SetItem<bool>("playerIsInRange", boolean);
+    }
+    public void SetTargetLookAt(GameObject lookAtTarget)
+    {
+        tMemory.SetItem<GameObject>("lookAtTarget", lookAtTarget);
     }
 }
