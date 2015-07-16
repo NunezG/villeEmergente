@@ -7,6 +7,9 @@
 }
 [
     {
+        "name": "buildingEntity"
+    },
+    {
         "name": "lemecquipromene",
         "knowledge": {
             "knowledge": null

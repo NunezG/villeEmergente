@@ -9,12 +9,16 @@ action {
 }
 decision {
   btFile: "decision/BehavioralSequence.bt"
+  btFile: "decision/buildingBehavior.bt"
   btFile: "decision/Cinema.bt"
   btFile: "decision/DisplayBubble.bt"
   btFile: "decision/GotoWithAnimation.bt"
   btFile: "decision/InteractionPlayer.bt"
   btFile: "decision/IPwalking.bt"
+  btFile: "decision/Journal.bt"
   btFile: "decision/LifeScene.bt"
+  btFile: "decision/Louche.bt"
+  btFile: "decision/Nothing.bt"
   btFile: "decision/ParticipateEvent.bt"
   btFile: "decision/ParticipateIP.bt"
   btFile: "decision/Pestacle1.bt"

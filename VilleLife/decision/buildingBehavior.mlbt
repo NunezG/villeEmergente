@@ -4,12 +4,12 @@ version {
   patch: 0
 }
 type: BehaviorTree
-uuid: "{e848c55a-b83e-4afc-85a7-d91bf26f6d61}"
-name: "promene"
+uuid: "{6bb07a5b-d378-4560-b937-c76663af95db}"
+name: "buildingBehavior"
 description: ""
 children {
   type: Node
-  name: "eb6934f1-e808-41cd-919a-dacaffddfcb4"
+  name: "6a89c936-0cc6-43f7-b85e-60fe684b1fca"
   presentation {
     itemTemplate: "MLV_USE_NO_TEMPLATE"
     position {
@@ -24,12 +24,12 @@ children {
   [mlv.toolset.proto.Node.extension] {
     children {
       type: Node
-      name: "98af283d-2b81-4f0e-a194-fa7516fa2ed2"
+      name: "199b07ea-6cb4-4467-93fe-fbe1579b2df4"
       presentation {
         itemTemplate: "BTActionNode.qml"
         position {
-          x: 5438
-          y: 2789.5
+          x: 5321.5
+          y: 2780.5
           z: 0
         }
       }

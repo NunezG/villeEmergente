@@ -12,6 +12,14 @@ folder {
     location: "decision/BehavioralSequence.mlbt"
   }
   file {
+    name: "buildingBehavior.mlbt"
+    location: "decision/buildingBehavior.mlbt"
+  }
+  file {
+    name: "Cinema.mlbt"
+    location: "decision/Cinema.mlbt"
+  }
+  file {
     name: "DisplayBubble.mlbt"
     location: "decision/DisplayBubble.mlbt"
   }
@@ -28,8 +36,20 @@ folder {
     location: "decision/IPwalking.mlbt"
   }
   file {
+    name: "Journal.mlbt"
+    location: "decision/Journal.mlbt"
+  }
+  file {
     name: "LifeScene.mlbt"
     location: "decision/LifeScene.mlbt"
+  }
+  file {
+    name: "Louche.mlbt"
+    location: "decision/Louche.mlbt"
+  }
+  file {
+    name: "Nothing.mlbt"
+    location: "decision/Nothing.mlbt"
   }
   file {
     name: "ParticipateEvent.mlbt"
@@ -87,6 +107,10 @@ folder {
 folder {
   name: "entity"
   file {
+    name: "buildingEntity.mlent"
+    location: "prototypes/buildingEntity.mlent"
+  }
+  file {
     name: "lemecquipromene.mlent"
     location: "prototypes/lemecquipromene.mlent"
   }
@@ -108,6 +132,10 @@ folder {
 }
 folder {
   name: "knowledge"
+  file {
+    name: "buildingKnowledge.mlkb"
+    location: "knowledge/buildingKnowledge.mlkb"
+  }
   file {
     name: "entity.mlkb"
     location: "knowledge/entity.mlkb"
