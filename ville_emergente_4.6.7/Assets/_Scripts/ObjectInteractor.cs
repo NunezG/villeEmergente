@@ -5,7 +5,7 @@ public class ObjectInteractor : MonoBehaviour {
 
     public GameObject hitObject,inHandPosition,inHandObject;
     public bool handsFull = false;
-
+    public float range;
 
 
 
@@ -20,7 +20,7 @@ public class ObjectInteractor : MonoBehaviour {
         {
             RaycastHit hit;
             //if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 2, 1 << 8))
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2,0)), out hit, 2, 1 << 8))
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0)), out hit, range, 1 << 8))
             {
                 //print("Input.mousePosition : " + Input.mousePosition);
                 hitObject = hit.collider.gameObject; // on recupere l'objet vise
@@ -84,7 +84,7 @@ public class ObjectInteractor : MonoBehaviour {
         print("Interactor:DropInHandObject");
         if (inHandObject != null)
         {
-            inHandObject.GetComponent<Fragment>().audioSource.Play();
+            inHandObject.GetComponent<Fragment>().Play();
             inHandObject.rigidbody.isKinematic = false;
             handsFull = false;
             inHandObject.transform.parent = null;

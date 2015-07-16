@@ -49,6 +49,6 @@ public class NPC : MonoBehaviour{
         this.fragment = fragment;
         
         this.renderer.material = fragment.material;
-        this.audioSource.clip = fragment.audioSource.clip;
+        this.audioSource.clip = fragment.GetClip();
     }
 }
