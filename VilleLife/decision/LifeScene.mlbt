@@ -1,0 +1,458 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{f0642ce0-a005-4dfa-98ef-8633e3fee299}"
+name: "LifeScene"
+description: ""
+children {
+  type: Node
+  name: "ddf51abb-f2ff-4672-95e7-5ce63b23d196"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "9c085308-a413-4ecc-9edd-74f5e0eea48b"
+      presentation {
+        itemTemplate: "BTSelectorPrio.qml"
+        position {
+          x: 5045
+          y: 1434
+          z: 0
+        }
+        label: "Root"
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SelectorNodePriority
+          isActivated: true
+          [mlv.toolset.proto.SelectorNodePriority.extension] {
+            usesActivePropagation: true
+          }
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "01b86f89-7dce-41e5-981e-6bef6c49f113"
+          presentation {
+            itemTemplate: "BTConditionNode.qml"
+            position {
+              x: -480.62504831445221
+              y: 165.162516600951
+              z: nan
+            }
+            label: "Trigger Event"
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ConditionNodeGeneric
+              isActivated: true
+              [mlv.toolset.proto.ConditionNodeGeneric.extension] {
+                operator: Equal
+                leftOperand {
+                  source: selectLocalKB
+                  key: "Events.trigger"
+                }
+                rightOperand {
+                  source: plainValue
+                  value {
+                    type: boolean
+                    booleanValue: true
+                  }
+                }
+              }
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "ebb5fdea-f5db-4b43-85c2-7551d0ee75fc"
+              presentation {
+                itemTemplate: "BTEmbeddedNode.qml"
+                position {
+                  x: -2.87141294553021
+                  y: 146.44206022206049
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: BTEmbeddedBehaviorNode
+                  isActivated: true
+                  [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                    behaviorName {
+                      type: StringType
+                      name: ""
+                      kbSelection: plainValue
+                      stringValue: "decision/TriggerEvent.mlbt"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "d151df87-6e40-4a65-adbe-6e067e84912b"
+          presentation {
+            itemTemplate: "BTConditionNode.qml"
+            position {
+              x: -338.64503390577374
+              y: 165.26279706507717
+              z: nan
+            }
+            label: "Event Participation"
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ConditionNodeGeneric
+              isActivated: true
+              [mlv.toolset.proto.ConditionNodeGeneric.extension] {
+                operator: Equal
+                leftOperand {
+                  source: selectLocalKB
+                  key: "Events.started"
+                }
+                rightOperand {
+                  source: plainValue
+                  value {
+                    type: boolean
+                    booleanValue: true
+                  }
+                }
+              }
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "5b448d1e-c289-4387-8682-b7d6956b622a"
+              presentation {
+                itemTemplate: "BTEmbeddedNode.qml"
+                position {
+                  x: 11.683697549352473
+                  y: 142.98442212340774
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: BTEmbeddedBehaviorNode
+                  isActivated: true
+                  [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                    behaviorName {
+                      type: StringType
+                      name: ""
+                      kbSelection: plainValue
+                      stringValue: "decision/ParticipateEvent.mlbt"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "eb6fae02-2470-4afa-88ac-94a0ffde27de"
+          presentation {
+            itemTemplate: "BTConditionNode.qml"
+            position {
+              x: -172.54018150201773
+              y: 167.59136976232617
+              z: nan
+            }
+            label: "Ambient Behavior"
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ConditionNodeGeneric
+              isActivated: true
+              [mlv.toolset.proto.ConditionNodeGeneric.extension] {
+                operator: Equal
+                leftOperand {
+                  source: selectLocalKB
+                  key: "IP.inIP"
+                }
+                rightOperand {
+                  source: plainValue
+                  value {
+                    type: integer
+                    integerValue: 0
+                  }
+                }
+              }
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "f53a31f2-9081-44a4-8bff-4e427bd15e52"
+              presentation {
+                itemTemplate: "BTEmbeddedNode.qml"
+                position {
+                  x: 0.61127193466381868
+                  y: 145.4827204498979
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: BTEmbeddedBehaviorNode
+                  isActivated: true
+                  [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                    behaviorName {
+                      type: StringType
+                      name: ""
+                      kbSelection: plainValue
+                      stringValue: "decision/ParticipateIP.mlbt"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "c5cc9157-ee2a-46ee-a31c-ac4224cd970e"
+          presentation {
+            itemTemplate: "BTConditionNode.qml"
+            position {
+              x: -2.0562240593517345
+              y: 167.07679189797136
+              z: nan
+            }
+            label: "NPC Interaction"
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ConditionNodeGeneric
+              isActivated: true
+              [mlv.toolset.proto.ConditionNodeGeneric.extension] {
+                operator: Equal
+                leftOperand {
+                  source: selectLocalKB
+                  key: "Interacting.nearPlayer"
+                }
+                rightOperand {
+                  source: plainValue
+                  value {
+                    type: boolean
+                    booleanValue: true
+                  }
+                }
+              }
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "00f55c33-8e25-4096-8edc-6916fdfe8ebe"
+              presentation {
+                itemTemplate: "BTEmbeddedNode.qml"
+                position {
+                  x: 1.2946828723297585
+                  y: 143.98216609741189
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: BTEmbeddedBehaviorNode
+                  isActivated: true
+                  [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                    behaviorName {
+                      type: StringType
+                      name: ""
+                      kbSelection: plainValue
+                      stringValue: "decision/InteractionPlayer.mlbt"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "213f1fde-afb5-4275-b55c-026d6d4ed449"
+          presentation {
+            itemTemplate: "BTConditionNode.qml"
+            position {
+              x: 152.90637101071843
+              y: 166.54336080782264
+              z: nan
+            }
+            label: "Player Interaction"
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ConditionNodeGeneric
+              isActivated: true
+              [mlv.toolset.proto.ConditionNodeGeneric.extension] {
+                operator: Equal
+                leftOperand {
+                  source: selectLocalKB
+                  key: "Interacting.nearEntity"
+                }
+                rightOperand {
+                  source: plainValue
+                  value {
+                    type: boolean
+                    booleanValue: true
+                  }
+                }
+              }
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "fdbd785c-60b1-413c-918e-3390a9ba0195"
+              presentation {
+                itemTemplate: "BTEmbeddedNode.qml"
+                position {
+                  x: 1.2946828723297585
+                  y: 143.98216609741189
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: BTEmbeddedBehaviorNode
+                  isActivated: true
+                  [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                    behaviorName {
+                      type: StringType
+                      name: ""
+                      kbSelection: plainValue
+                      stringValue: "decision/Salutation.mlbt"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "02661837-78a8-41a4-823c-f016cf84f4c4"
+          presentation {
+            itemTemplate: "BTConditionNode.qml"
+            position {
+              x: 326.38910636722176
+              y: 165.82231234308665
+              z: nan
+            }
+            label: "World Zone Behavior"
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ConditionNodeGeneric
+              isActivated: true
+              [mlv.toolset.proto.ConditionNodeGeneric.extension] {
+                operator: HigherOrEqualThan
+                leftOperand {
+                  source: selectLocalKB
+                  key: "SmartZones.nbrActiveSZ"
+                }
+                rightOperand {
+                  source: plainValue
+                  value {
+                    type: integer
+                    integerValue: 1
+                  }
+                }
+              }
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "5f754aa0-b2c7-4a9e-aeae-87334d73d511"
+              presentation {
+                itemTemplate: "BTEmbeddedNode.qml"
+                position {
+                  x: 0.656954514989593
+                  y: 141.09422039853303
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: BTEmbeddedBehaviorNode
+                  isActivated: true
+                  [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                    behaviorName {
+                      type: StringType
+                      name: ""
+                      kbSelection: plainValue
+                      stringValue: "decision/IPwalking.mlbt"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "80a817ed-bb03-41bd-92c6-c77b5301bd4d"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 474.03891822222249
+              y: 165.82231234308665
+              z: nan
+            }
+            label: "Default"
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "wait"
+                parameters {
+                  type: DoubleType
+                  name: "time"
+                  kbSelection: plainValue
+                  doubleValue: 0.5
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

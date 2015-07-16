@@ -24,12 +24,12 @@ children {
   [mlv.toolset.proto.Node.extension] {
     children {
       type: Node
-      name: "45bc8d39-4a74-4fa3-8ca9-f01c501c5fbd"
+      name: "98af283d-2b81-4f0e-a194-fa7516fa2ed2"
       presentation {
         itemTemplate: "BTActionNode.qml"
         position {
-          x: 5399.9
-          y: 2735.7
+          x: 5438
+          y: 2789.5
           z: 0
         }
       }

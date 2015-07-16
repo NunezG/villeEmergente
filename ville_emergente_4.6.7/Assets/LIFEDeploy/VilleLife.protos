@@ -7,9 +7,93 @@
 }
 [
     {
-        "name": "promeneur",
+        "name": "buildingEntity"
+    },
+    {
+        "name": "lemecquipromene",
+        "knowledge": {
+            "knowledge": null
+        },
         "decision": {
             "behavior": "mlv:promene.bt"
         }
+    },
+    {
+        "name": "LifeScene",
+        "knowledge": {
+            "knowledge": {
+                "Type": "LifeScene"
+            }
+        },
+        "component": [
+            "53f69480-d2b7-4756-a1bc-86323e3f96a1",
+            "a8171874-5953-49ec-bb5e-b68090f6ad5f",
+            "2d82c1ba-f4fc-4943-9f04-fc548482c210",
+            "89de83bd-0f44-48a4-9f0e-0716c717e288",
+            "72edfdae-fb43-4084-9102-ef54255e150b"
+        ]
+    },
+    {
+        "name": "promeneur",
+        "knowledge": {
+            "knowledge": {
+                "BehaviorSequence": {
+                    "begin": true,
+                    "state": -1
+                },
+                "Events": {
+                    "inEvent": -1,
+                    "started": false,
+                    "trigger": false
+                },
+                "IP": {
+                    "inIP": -1,
+                    "waiting": {
+                        "sentence1": "none",
+                        "sentence2": "none",
+                        "sentence3": "none",
+                        "timeBegin": 0,
+                        "timeEnd": 0,
+                        "timeWait": 0
+                    }
+                },
+                "Interacting": {
+                    "nearEntity": false,
+                    "nearPlayer": false
+                },
+                "Navigation": {
+                    "goal": "null",
+                    "gotopos": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "location": "null",
+                    "useExternalTrigger": true,
+                    "walking": "no"
+                },
+                "Pedestrian": {
+                    "started": true
+                },
+                "SmartZones": {
+                    "nbrActiveSZ": 0,
+                    "worldZone": true
+                },
+                "Type": "Pedestrian",
+                "lifeScene": "none",
+                "nextActionDuration": 0.0
+            }
+        },
+        "decision": {
+            "behavior": "mlv:LifeScene.bt"
+        },
+        "component": [
+            "53f69480-d2b7-4756-a1bc-86323e3f96a1",
+            "89de83bd-0f44-48a4-9f0e-0716c717e288",
+            "2d82c1ba-f4fc-4943-9f04-fc548482c210",
+            "a8171874-5953-49ec-bb5e-b68090f6ad5f",
+            "ead3810e-cc6b-4f20-9a44-27f5b9cba834",
+            "72edfdae-fb43-4084-9102-ef54255e150b"
+        ]
     }
 ]

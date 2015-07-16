@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}" SchemaVersion="69">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="water_3DObject_play" ID="{98CFAB79-EBF2-4331-9FB6-CE8AEC825AA1}">
+					<ChildrenList>
+						<Action Name="Play" ID="{C9EE2EA3-9655-4C64-93BB-724B597AF301}" ShortID="75760037" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{41A7EA38-B31A-4BF1-AC6E-13614FD99927}" Global="false">
+									<ObjectRef Name="paddle light freely 01" ID="{A62974B8-044C-4A5B-B306-109558698C82}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="water_3DObject_stop" ID="{64055E43-D268-4D58-9526-0EF4B79003C8}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{CFE44D95-36B4-4F10-A5BF-B0B6E0E39A88}" ShortID="398368050" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{F637679F-38CF-423F-93E6-9C1D0ACB47BD}" Global="false">
+									<ObjectRef Name="paddle light freely 01" ID="{A62974B8-044C-4A5B-B306-109558698C82}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="rain_2DObject_play" ID="{118E1B11-7F00-4361-93FF-063409B548AA}">
+					<ChildrenList>
+						<Action Name="Play" ID="{D70DB12E-0218-43B3-9C70-25B2670B2C82}" ShortID="1071922767" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{D2EB770F-5975-4831-91BD-D047A07E39AE}" Global="false">
+									<ObjectRef Name="soft rain - brown noise - human activities - drops reverb - 02" ID="{3092068A-9D32-4C0B-AE05-F754F305539D}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="rain_2DObject_stop" ID="{B7D313CB-C663-4E1A-9E6F-E84937B1B5CA}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{7127782D-5F3C-404C-A37A-714A0E163281}" ShortID="392852271" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{5C3F4BC7-A3B4-4E57-AC3E-CBF9AEE06D40}" Global="false">
+									<ObjectRef Name="soft rain - brown noise - human activities - drops reverb - 02" ID="{3092068A-9D32-4C0B-AE05-F754F305539D}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

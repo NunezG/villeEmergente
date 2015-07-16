@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CBFE8E6E-4D3A-4F4E-8007-3A330B030B6C}" SchemaVersion="69">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{CBFE8E6E-4D3A-4F4E-8007-3A330B030B6C}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{8BCBA813-CEE9-401D-A1AE-57D196FCA6C9}">
+					<ObjectInclusionList>
+						<ObjectRef Name="rain_2DObject_play" ID="{118E1B11-7F00-4361-93FF-063409B548AA}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="water_3DObject_stop" ID="{64055E43-D268-4D58-9526-0EF4B79003C8}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="water_3DObject_play" ID="{98CFAB79-EBF2-4331-9FB6-CE8AEC825AA1}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="rain_2DObject_stop" ID="{B7D313CB-C663-4E1A-9E6F-E84937B1B5CA}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

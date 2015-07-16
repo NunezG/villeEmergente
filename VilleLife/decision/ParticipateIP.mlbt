@@ -1,0 +1,352 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{d0bb84e2-cbd7-4d08-8aff-3670eeb527ba}"
+name: "ParticipateIP"
+description: ""
+children {
+  type: Node
+  name: "cd4338e8-117f-4862-9877-ba5c589174f5"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "989b9322-017a-4f75-9a9d-3e903f39e7fb"
+      presentation {
+        itemTemplate: "BTConditionNode.qml"
+        position {
+          x: 5854.9035197763224
+          y: 2939.3902183776991
+          z: nan
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: ConditionNodeGeneric
+          isActivated: true
+          [mlv.toolset.proto.ConditionNodeGeneric.extension] {
+            operator: Equal
+            leftOperand {
+              source: selectLocalKB
+              key: "IP.activated"
+            }
+            rightOperand {
+              source: plainValue
+              value {
+                type: boolean
+                booleanValue: true
+              }
+            }
+          }
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "4ba3dde9-84a0-4904-a44c-54810c7afeb1"
+          presentation {
+            itemTemplate: "BTSequenceNode.qml"
+            position {
+              x: 0.89284012572534266
+              y: 174.9966646421085
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: SequenceNode
+              isActivated: true
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "f979bd55-cf4e-4dba-918b-bce8735c2fd3"
+              presentation {
+                itemTemplate: "BTCustomNode.qml"
+                position {
+                  x: -88.3825418626111
+                  y: 153.0897168712122
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: BTCustomNode
+                  isActivated: true
+                  [mlv.toolset.proto.BTCustomNode.extension] {
+                    typeName: "SetState"
+                    parameters {
+                      type: StringType
+                      name: "lifeScene"
+                      kbSelection: plainValue
+                      stringValue: "IP.name"
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "9529793b-dbbd-42d7-8678-fa1bf4cc1ac1"
+              presentation {
+                itemTemplate: "BTEmbeddedNode.qml"
+                position {
+                  x: 18.042657166280151
+                  y: 157.13819808900098
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: BTEmbeddedBehaviorNode
+                  isActivated: true
+                  [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                    behaviorName {
+                      type: StringType
+                      name: ""
+                      kbSelection: selectLocalKB
+                      stringValue: "IP.behavior"
+                    }
+                  }
+                }
+              }
+            }
+            children {
+              type: Node
+              name: "7f4354eb-c163-4742-b34a-f26ae6651b23"
+              presentation {
+                itemTemplate: "BTCustomNode.qml"
+                position {
+                  x: 126.17856320654846
+                  y: 157.93920480041083
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: BTCustomNode
+                  isActivated: true
+                  [mlv.toolset.proto.BTCustomNode.extension] {
+                    typeName: "SetState"
+                    parameters {
+                      type: IntType
+                      name: "IP.inIP"
+                      kbSelection: plainValue
+                      intValue: 1
+                    }
+                    parameters {
+                      type: IntType
+                      name: "Navigation.inZone"
+                      kbSelection: plainValue
+                      intValue: 1
+                    }
+                    parameters {
+                      type: StringType
+                      name: "lifeScene"
+                      kbSelection: plainValue
+                      stringValue: "none"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    children {
+      type: Node
+      name: "ceec5d9e-2041-41bb-8169-b509da4e70f2"
+      presentation {
+        itemTemplate: "BTSelectorPrio.qml"
+        position {
+          x: 5702.2119774229932
+          y: 2823
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SelectorNodePriority
+          isActivated: false
+          [mlv.toolset.proto.SelectorNodePriority.extension] {
+            usesActivePropagation: false
+          }
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "f8a71495-3c95-49a7-a535-53ab03f5005c"
+          presentation {
+            itemTemplate: "BTConditionNode.qml"
+            position {
+              x: -182.80816726451667
+              y: 128.51462722106635
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ConditionNodeGeneric
+              isActivated: true
+              [mlv.toolset.proto.ConditionNodeGeneric.extension] {
+                operator: Equal
+                leftOperand {
+                  source: selectLocalKB
+                  key: "IP.arrived"
+                }
+                rightOperand {
+                  source: plainValue
+                  value {
+                    type: boolean
+                    booleanValue: false
+                  }
+                }
+              }
+            }
+          }
+          [mlv.toolset.proto.Node.extension] {
+            children {
+              type: Node
+              name: "21286ad7-276e-4993-9e75-ac036635b6d9"
+              presentation {
+                itemTemplate: "BTSequenceNode.qml"
+                position {
+                  x: -3.9340232724698581
+                  y: 169.46089978123473
+                  z: nan
+                }
+              }
+              properties {
+                type: BTNodeProperties
+                [mlv.toolset.proto.BTNodeProperties.extension] {
+                  type: SequenceNode
+                  isActivated: true
+                }
+              }
+              [mlv.toolset.proto.Node.extension] {
+                children {
+                  type: Node
+                  name: "841aab33-1a1d-451e-8f6c-afc74716d07c"
+                  presentation {
+                    itemTemplate: "BTCustomNode.qml"
+                    position {
+                      x: -132.46978688600666
+                      y: 166.52447299769869
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: BTCustomNode
+                      isActivated: false
+                      [mlv.toolset.proto.BTCustomNode.extension] {
+                        typeName: "SetState"
+                        parameters {
+                          type: IntType
+                          name: "Interacting.activated"
+                          kbSelection: plainValue
+                          intValue: -1
+                        }
+                      }
+                    }
+                  }
+                }
+                children {
+                  type: Node
+                  name: "5c92b007-a473-4205-84a2-361853d0fc7c"
+                  presentation {
+                    itemTemplate: "BTEmbeddedNode.qml"
+                    position {
+                      x: -0.50420487622704968
+                      y: 163.67542094631654
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: BTEmbeddedBehaviorNode
+                      isActivated: false
+                      [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                        behaviorName {
+                          type: StringType
+                          name: ""
+                          kbSelection: plainValue
+                          stringValue: "GotoWithAnimation"
+                        }
+                        parameters {
+                          type: StringType
+                          name: "Point"
+                          kbSelection: selectLocalKB
+                          stringValue: "Navigation.gotopos"
+                        }
+                        parameters {
+                          type: StringType
+                          name: "threshold"
+                          kbSelection: selectLocalKB
+                          stringValue: "IP.ambientDist"
+                        }
+                      }
+                    }
+                  }
+                }
+                children {
+                  type: Node
+                  name: "fd4698af-ae4b-4c39-b8b9-11d7a8d78268"
+                  presentation {
+                    itemTemplate: "BTCustomNode.qml"
+                    position {
+                      x: 114.53021311399334
+                      y: 167.52447299769892
+                      z: nan
+                    }
+                  }
+                  properties {
+                    type: BTNodeProperties
+                    [mlv.toolset.proto.BTNodeProperties.extension] {
+                      type: BTCustomNode
+                      isActivated: true
+                      [mlv.toolset.proto.BTCustomNode.extension] {
+                        typeName: "SetState"
+                        parameters {
+                          type: BoolType
+                          name: "IP.arrived"
+                          kbSelection: plainValue
+                          boolValue: true
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

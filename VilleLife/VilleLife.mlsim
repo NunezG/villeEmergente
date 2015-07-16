@@ -3,3 +3,5 @@ version {
   minor: 0
   patch: 0
 }
+updateDelta: 99
+manifest: "/implementation/LifeScene_Lib.mllib"

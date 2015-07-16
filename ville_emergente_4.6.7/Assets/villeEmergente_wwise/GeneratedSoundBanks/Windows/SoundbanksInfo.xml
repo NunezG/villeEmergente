@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" SchemaVersion="10" SoundbankVersion="112">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\WwiseProject\villeEmergente_wwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\WwiseProject\villeEmergente_wwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\WwiseProject\villeEmergente_wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\WwiseProject\villeEmergente_wwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="812837510" Name="rain_2DObject_play"/>
+				<Event Id="2622262392" Name="rain_2DObject_stop" MaxAttenuation="0.000000"/>
+				<Event Id="193498114" Name="water_3DObject_play" MaxAttenuation="30.000000"/>
+				<Event Id="836511068" Name="water_3DObject_stop" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="165344794" Language="SFX">
+					<ShortName>soft rain - brown noise - human activities - drops reverb - 02.wav</ShortName>
+					<Path>SFX\soft rain - brown noise - human activities - drops reverb - 02_950FF8F3.wem</Path>
+				</File>
+				<File Id="943957025" Language="SFX">
+					<ShortName>paddle light freely 01.wav</ShortName>
+					<Path>SFX\paddle light freely 01_950FF8F3.wem</Path>
+				</File>
+				<File Id="1038465850" Language="SFX">
+					<ShortName>cymbal_reverb.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\cymbal_reverb_10CA7B1B.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
