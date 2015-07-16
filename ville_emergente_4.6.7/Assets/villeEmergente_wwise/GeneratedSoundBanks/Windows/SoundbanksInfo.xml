@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" SchemaVersion="10" SoundbankVersion="112">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\WwiseProject\villeEmergente_wwise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\WwiseProject\villeEmergente_wwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\WwiseProject\villeEmergente_wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\WwiseProject\villeEmergente_wwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -18,24 +18,58 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2385628198" Name="footsteps" MaxAttenuation="25.000000"/>
+				<Event Id="2535466649" Name="lacher_morceau" MaxAttenuation="25.000000"/>
+				<Event Id="3679869857" Name="linker_morceau" MaxAttenuation="25.000000"/>
+				<Event Id="2138522384" Name="prendre_morceau" MaxAttenuation="25.000000"/>
 				<Event Id="812837510" Name="rain_2DObject_play"/>
 				<Event Id="2622262392" Name="rain_2DObject_stop" MaxAttenuation="0.000000"/>
-				<Event Id="193498114" Name="water_3DObject_play" MaxAttenuation="30.000000"/>
+				<Event Id="2896867782" Name="toucher_element" MaxAttenuation="25.000000"/>
+				<Event Id="3115394940" Name="ville_calme"/>
+				<Event Id="193498114" Name="water_3DObject_play" MaxAttenuation="25.000000"/>
 				<Event Id="836511068" Name="water_3DObject_stop" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="22416358" Language="SFX">
+					<ShortName>sfx_pas_mere_chambre_02.wav</ShortName>
+					<Path>SFX\sfx_pas_mere_chambre_02_950FF8F3.wem</Path>
+				</File>
 				<File Id="165344794" Language="SFX">
 					<ShortName>soft rain - brown noise - human activities - drops reverb - 02.wav</ShortName>
-					<Path>SFX\soft rain - brown noise - human activities - drops reverb - 02_950FF8F3.wem</Path>
+					<Path>SFX\soft rain - brown noise - human activities - drops reverb - 02_8AC08B01.wem</Path>
+				</File>
+				<File Id="364965466" Language="SFX">
+					<ShortName>sfx_pas_mere_chambre_07.wav</ShortName>
+					<Path>SFX\sfx_pas_mere_chambre_07_950FF8F3.wem</Path>
+				</File>
+				<File Id="506845639" Language="SFX">
+					<ShortName>sfx_pas_mere_chambre_03.wav</ShortName>
+					<Path>SFX\sfx_pas_mere_chambre_03_950FF8F3.wem</Path>
+				</File>
+				<File Id="526131746" Language="SFX">
+					<ShortName>sfx_pas_mere_chambre_01.wav</ShortName>
+					<Path>SFX\sfx_pas_mere_chambre_01_950FF8F3.wem</Path>
+				</File>
+				<File Id="592176391" Language="SFX">
+					<ShortName>sfx_pas_mere_chambre_04.wav</ShortName>
+					<Path>SFX\sfx_pas_mere_chambre_04_950FF8F3.wem</Path>
 				</File>
 				<File Id="943957025" Language="SFX">
 					<ShortName>paddle light freely 01.wav</ShortName>
-					<Path>SFX\paddle light freely 01_950FF8F3.wem</Path>
+					<Path>SFX\paddle light freely 01_27F05A3C.wem</Path>
 				</File>
 				<File Id="1038465850" Language="SFX">
 					<ShortName>cymbal_reverb.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\cymbal_reverb_10CA7B1B.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\cymbal_reverb_ABED5F63.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="1053272547" Language="SFX">
+					<ShortName>sfx_pas_mere_chambre_08.wav</ShortName>
+					<Path>SFX\sfx_pas_mere_chambre_08_950FF8F3.wem</Path>
+				</File>
+				<File Id="1071818968" Language="SFX">
+					<ShortName>sfx_pas_mere_chambre_05.wav</ShortName>
+					<Path>SFX\sfx_pas_mere_chambre_05_950FF8F3.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
