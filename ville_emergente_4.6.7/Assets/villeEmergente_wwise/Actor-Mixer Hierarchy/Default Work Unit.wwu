@@ -290,6 +290,18 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_donner_lampe" ID="{B0158168-1233-4285-9B61-9A04183AEAD2}" ShortID="759217420">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="0.760100738593867"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_donner_lampe.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_donner_lampe" ID="{B0158168-1233-4285-9B61-9A04183AEAD2}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Lâcher morceau" ID="{A2438C7F-1EC1-4963-A35B-145021C0F71D}" ShortID="597809145" Type="SoundFX">
 									<ReferenceList>
