@@ -44,7 +44,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135232}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 9.13000011, z: 8.80000305}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 435234}
@@ -186,8 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 7d8ed4dceee7b8843bfabb139a93e312, type: 2}
-  audioSource: {fileID: 8235232}
-  defaultClip: {fileID: 8300000, guid: 728a2b7899242b7458e6b645aed0d51c, type: 3}
+  audioEventName: prendre_morceau
 --- !u!135 &13535232
 SphereCollider:
   m_ObjectHideFlags: 1

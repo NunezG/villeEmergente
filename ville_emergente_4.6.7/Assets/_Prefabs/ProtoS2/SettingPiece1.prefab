@@ -214,9 +214,9 @@ MonoBehaviour:
   fragmentsCallRadius: 25
   defaultMaterial: {fileID: 2100000, guid: 3ecdd15e4fefd4a499b119c21d40796d, type: 2}
   activatedMaterial: {fileID: 2100000, guid: fc56dd6b8d19fc342b7c6c17af78eb5b, type: 2}
-  audioSource: {fileID: 8262930}
-  defaultClip: {fileID: 8300000, guid: f3bfc63084cb8cc48aa10b161e83ecd6, type: 3}
+  defaultAudioEventName: prendre_morceau
   fragment: {fileID: 0}
+  isPlayingInteract: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

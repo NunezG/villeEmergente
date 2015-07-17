@@ -114,9 +114,9 @@ MonoBehaviour:
   fragmentsCallRadius: 25
   defaultMaterial: {fileID: 0}
   activatedMaterial: {fileID: 0}
-  audioSource: {fileID: 0}
-  defaultClip: {fileID: 0}
+  defaultAudioEventName: prendre_morceau
   fragment: {fileID: 0}
+  isPlayingInteract: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

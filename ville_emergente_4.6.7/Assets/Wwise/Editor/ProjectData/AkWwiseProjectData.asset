@@ -190,9 +190,7 @@ MonoBehaviour:
   - /villeEmergente_wwise
   - /villeEmergente_wwise/Events
   - /villeEmergente_wwise/Events/Default Work Unit
-  - /villeEmergente_wwise/Events/Default Work Unit/Ambiances
-  - /villeEmergente_wwise/SoundBanks
-  - /villeEmergente_wwise/SoundBanks/Default Work Unit
+  - /villeEmergente_wwise/Events/Default Work Unit/Joueur
   m_lastPopulateTimePsrt1: -614022116
   m_lastPopulateTimePart2: -1999467024
   autoPopulateEnabled: 1

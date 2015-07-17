@@ -12,22 +12,46 @@ public class MusicController : WwiseAudioManager {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Keypad0))
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            PlayEvent("water_3DObject_play",tabGobs[0]);
+            PlayLoopEvent("water_3DObject_play", tabGobs[0]);
         }
-        if (Input.GetKeyDown(KeyCode.Keypad1))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
-            PlayEvent("water_3DObject_stop", tabGobs[0]);
+            PlayLoopEvent("water_3DObject_stop", tabGobs[0]);
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            PlayLoopEvent("water_3DObject_play", tabGobs[1]);
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            PlayLoopEvent("water_3DObject_stop", tabGobs[1]);
+        }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            PlayLoopEvent("water_3DObject_play", tabGobs[2]);
+        }
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            PlayLoopEvent("water_3DObject_stop", tabGobs[2]);
+        }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            AkSoundEngine.PostEvent("prendre_morceau", tabGobs[0], (uint)AkCallbackType.AK_EndOfEvent, MyCallbackFunction, tabGobs[0]);
+        }
 
-        }
-        if (Input.GetKeyDown(KeyCode.Keypad2))
-        {
-
-        }
-        if (Input.GetKeyDown(KeyCode.Keypad3))
-        {
-
-        }
 	}
+    void MyCallbackFunction(object in_cookie, AkCallbackType in_type, object in_info)
+    {
+
+        if (in_type == AkCallbackType.AK_EndOfEvent)
+        {
+            //AkEventCallbackInfo info = (AkEventCallbackInfo)in_info; //Then do stuff.
+            print("CALLBACK");
+        }
+    }
+
+
+
 }
