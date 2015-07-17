@@ -15,7 +15,7 @@ public class ProtoSelectTarget : RAINAction
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
-        int targetIndex = Random.Range(0, NPC.targets.Length );
+        int targetIndex = Random.Range(0, NPC.targets.Length-1 );
         //Debug.Log("targetIndex :" + targetIndex);
         //Debug.Log("NPC.targets.Length :" + NPC.targets.Length);
 
