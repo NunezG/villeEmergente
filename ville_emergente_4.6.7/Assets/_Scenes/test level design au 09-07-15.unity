@@ -1729,7 +1729,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 932615476}
-  - {fileID: 2008935654}
   m_Father: {fileID: 0}
   m_RootOrder: 5
 --- !u!136 &533631216
@@ -1802,8 +1801,8 @@ MonoBehaviour:
       id="_ai" /></fields><references><reference type="RAIN.Core.AI" refcount="1"
       id="0"><field value="True" type="System.Boolean" id="_isActive" /><field type="UnityEngine.GameObject"
       id="_body" gameobject="0" /><field type="RAIN.Memory.BasicMemory" reference="1"
-      id="_workingMemory" childrenvisible="True" /><field type="RAIN.Minds.BasicMind"
-      reference="2" id="_mind" childrenvisible="False" /><field type="RAIN.Motion.BasicMotor"
+      id="_workingMemory" childrenvisible="False" /><field type="RAIN.Minds.BasicMind"
+      reference="2" id="_mind" childrenvisible="True" /><field type="RAIN.Motion.BasicMotor"
       reference="3" id="_motor" childrenvisible="False" /><field type="RAIN.Animation.BasicAnimator"
       reference="4" id="_animator" childrenvisible="False" /><field type="RAIN.Navigation.BasicNavigator"
       reference="5" id="_navigator" childrenvisible="False" /><field type="RAIN.Perception.BasicSenses"
@@ -1811,9 +1810,7 @@ MonoBehaviour:
       id="_customElements" elementtype="RAIN.Core.CustomAIElement" childrenvisible="False"
       /></reference><reference type="RAIN.Memory.BasicMemory" refcount="1" id="1"><field
       type="System.Collections.Generic.List" id="_memoryItems" elementtype="RAIN.Memory.BasicMemory+MemoryItem"><field
-      type="RAIN.Memory.BasicMemory+MemoryItem" reference="7" id="element0" /><field
-      type="RAIN.Memory.BasicMemory+MemoryItem" reference="8" id="element1" /><field
-      type="RAIN.Memory.BasicMemory+MemoryItem" reference="9" id="element2" /></field></reference><reference
+      type="RAIN.Memory.BasicMemory+MemoryItem" reference="7" id="element0" /></field></reference><reference
       type="RAIN.Minds.BasicMind" refcount="1" id="2"><field type="RAIN.BehaviorTrees.BTAsset"
       id="_behaviorTreeAsset" gameobject="1" /><field type="System.Collections.Generic.List"
       id="_behaviorTreeBindings" elementtype="RAIN.BehaviorTrees.BTAssetBinding" /></reference><reference
@@ -1837,16 +1834,10 @@ MonoBehaviour:
       elementtype="RAIN.Perception.Sensors.RAINSensor" /></reference><reference type="RAIN.Memory.BasicMemory+MemoryItem"
       refcount="1" id="7"><field value="target" type="System.String" id="Key" /><field
       value="UnityEngine.GameObject" type="System.Type" id="ValueType" /><field value=""
-      type="System.Object" id="Value" /></reference><reference type="RAIN.Memory.BasicMemory+MemoryItem"
-      refcount="1" id="8"><field value="lookAtTarget" type="System.String" id="Key"
-      /><field value="UnityEngine.GameObject" type="System.Type" id="ValueType" /><field
-      value="" type="System.Object" id="Value" /></reference><reference type="RAIN.Memory.BasicMemory+MemoryItem"
-      refcount="1" id="9"><field value="playerIsInRange" type="System.String" id="Key"
-      /><field value="System.Boolean" type="System.Type" id="ValueType" /><field value="False"
-      type="System.Boolean" id="Value" /></reference></references></component>
+      type="System.Object" id="Value" /></reference></references></component>
     _serializedGameObjects:
     - {fileID: 533631214}
-    - {fileID: 11400000, guid: 1c9ce22b2fddf5644b7a132e17ecbb50, type: 2}
+    - {fileID: 11400000, guid: 71a53b835a1519b4595cef8c083f4ac8, type: 2}
     _serializedCustomData: []
 --- !u!114 &533631220
 MonoBehaviour:
@@ -7116,92 +7107,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1760537855}
   m_GameObject: {fileID: 2001200958}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2008935653
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 119876, guid: 96a36f37dd1a8c940b438b3952296cf1, type: 2}
-  m_PrefabInternal: {fileID: 1354459445}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2008935654}
-  - 33: {fileID: 2008935658}
-  - 135: {fileID: 2008935657}
-  - 23: {fileID: 2008935656}
-  - 114: {fileID: 2008935655}
-  m_Layer: 0
-  m_Name: playerDetectingSphere
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2008935654
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 419876, guid: 96a36f37dd1a8c940b438b3952296cf1, type: 2}
-  m_PrefabInternal: {fileID: 1354459445}
-  m_GameObject: {fileID: 2008935653}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 533631215}
-  m_RootOrder: 1
---- !u!114 &2008935655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11419876, guid: 96a36f37dd1a8c940b438b3952296cf1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1354459445}
-  m_GameObject: {fileID: 2008935653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53d1331ac52b26045b9207bbb5ac3b0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  npc: {fileID: 533631217}
---- !u!23 &2008935656
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2319876, guid: 96a36f37dd1a8c940b438b3952296cf1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1354459445}
-  m_GameObject: {fileID: 2008935653}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!135 &2008935657
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13519876, guid: 96a36f37dd1a8c940b438b3952296cf1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1354459445}
-  m_GameObject: {fileID: 2008935653}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 4
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &2008935658
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3319876, guid: 96a36f37dd1a8c940b438b3952296cf1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1354459445}
-  m_GameObject: {fileID: 2008935653}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2016286151
 GameObject:
   m_ObjectHideFlags: 0
