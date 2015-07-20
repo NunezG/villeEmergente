@@ -18,8 +18,10 @@ public class NPC : MonoBehaviour{
     public float timer = 0,minEndTimer=10, maxEndTimer = 15, endTimer;
 
     public Material material;
-    public AudioSource audioSource;
-    public AudioClip defaultClip;
+    //public AudioSource audioSource;
+    //public AudioClip defaultClip;
+    private string audioEventName = "";
+    public string defaultAudioEventName="";
     //public List<Fragment> fragments = new List<Fragment>();
     public Fragment fragment = null;
 
@@ -34,6 +36,7 @@ public class NPC : MonoBehaviour{
 	// Use this for initialization
     public void Start()
     {
+        audioEventName = defaultAudioEventName;
 
         AIRig aiRig = GetComponentInChildren<AIRig>();
         tMemory = aiRig.AI.WorkingMemory as RAIN.Memory.BasicMemory;
@@ -55,7 +58,7 @@ public class NPC : MonoBehaviour{
         {
             timer = 0;
             endTimer = (int)Random.Range(minEndTimer, maxEndTimer);
-            audioSource.Play();
+            EmitSound();
         }
 	}
     
@@ -65,11 +68,13 @@ public class NPC : MonoBehaviour{
         this.fragment = fragment;
         
         this.renderer.material = fragment.material;
-        this.audioSource.clip = fragment.GetClip();
+        //this.audioSource.clip = fragment.GetClip();
+        this.audioEventName = fragment.audioEventName;
     }
 
     public void EmitSound()
     {
+        WwiseAudioManager.instance.PlayFiniteEvent(audioEventName, this.gameObject);
         print("Emit Sound");
     }
 

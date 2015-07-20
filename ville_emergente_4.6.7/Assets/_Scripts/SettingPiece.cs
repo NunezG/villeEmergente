@@ -8,9 +8,13 @@ public class SettingPiece : MonoBehaviour{
     public float fragmentsCallRadius = 25;
 
     public Material defaultMaterial, activatedMaterial;
-    public AudioSource audioSource;
-    public AudioClip defaultClip;
+    //public AudioSource audioSource;
+   // public AudioClip defaultClip;
+    private string audioEventName = "";
+    public string defaultAudioEventName = "";
     public Fragment fragment;
+    public bool isPlayingInteract = false;
+
 
 	// Use this for initialization
     public void Awake()
@@ -19,7 +23,7 @@ public class SettingPiece : MonoBehaviour{
     }
     public void Start()
     {
-        audioSource.clip = defaultClip;
+        audioEventName = defaultAudioEventName;
         this.renderer.material = defaultMaterial;
         if (fragmentsOfZeWorld.Count == 0)
         {
@@ -34,7 +38,7 @@ public class SettingPiece : MonoBehaviour{
 	// Update is called once per frame
     public void Update()
     {
-        if (hasBeenActivated && !audioSource.isPlaying) // si le decor a ete active, et que son son n'est plus en en train de jouer, 
+        if (hasBeenActivated && !isPlayingInteract) // si le decor a ete active, et que son son n'est plus en en train de jouer, 
         {
 
             print("has been activated and finished playing");
@@ -55,10 +59,21 @@ public class SettingPiece : MonoBehaviour{
     public void OnInteract()
     {
         print("SettingPiece:OnInteract ");
-        audioSource.Play();
+        isPlayingInteract = true;
+        WwiseAudioManager.instance.PlayFiniteEvent(audioEventName,this.gameObject, OnInteractCallBack);
         hasBeenActivated = true;
 
         this.renderer.material = activatedMaterial;
+    }
+
+    void OnInteractCallBack(object in_cookie, AkCallbackType in_type, object in_info)
+    {
+
+        if (in_type == AkCallbackType.AK_EndOfEvent)
+        {
+            isPlayingInteract = false;
+            print("OnInteractCallBack");
+        }
     }
 
     public void OnAddingFragment(Fragment fragment)
@@ -67,7 +82,8 @@ public class SettingPiece : MonoBehaviour{
         this.fragment = fragment;
         //activatedMaterial = fragment.material;
         this.renderer.material = fragment.material;
-        this.audioSource.clip = fragment.GetClip();
+        //this.audioSource.clip = fragment.GetClip();
+        this.audioEventName = fragment.audioEventName;
     }
 
     public GameObject OnPickUp()
@@ -75,7 +91,8 @@ public class SettingPiece : MonoBehaviour{
         GameObject fragPicked =fragment.OnPickUp();
         fragment = null;
         this.renderer.material = activatedMaterial;
-        audioSource.clip = defaultClip;
+        //audioSource.clip = defaultClip;
+        audioEventName = defaultAudioEventName;
         return fragPicked;
     }
 }

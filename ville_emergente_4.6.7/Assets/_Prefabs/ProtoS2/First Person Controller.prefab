@@ -12,7 +12,7 @@ GameObject:
   - 92: {fileID: 9279608}
   - 124: {fileID: 12479608}
   - 114: {fileID: 11479608}
-  - 81: {fileID: 8179608}
+  - 114: {fileID: 11424404}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -33,9 +33,10 @@ GameObject:
   - 114: {fileID: 11479612}
   - 114: {fileID: 11479610}
   - 114: {fileID: 11479616}
+  - 114: {fileID: 11424406}
   m_Layer: 0
   m_Name: First Person Controller
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,7 +96,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.39999771, y: 10.499999, z: 2.09999847}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 479614}
@@ -212,13 +213,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179614}
   m_Mesh: {fileID: 10205, guid: 0000000000000000e000000000000000, type: 0}
---- !u!81 &8179608
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 179608}
-  m_Enabled: 1
 --- !u!92 &9279608
 Behaviour:
   m_ObjectHideFlags: 1
@@ -226,6 +220,29 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179608}
   m_Enabled: 1
+--- !u!114 &11424404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f105089d4e850a42a493d83fafc7494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listenerId: 0
+--- !u!114 &11424406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4baa183b89375e84894379bacfc0540f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11479608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -343,7 +360,7 @@ MonoBehaviour:
   inHandPosition: {fileID: 179612}
   inHandObject: {fileID: 0}
   handsFull: 0
-  range: 0
+  range: 4
 --- !u!124 &12479608
 Behaviour:
   m_ObjectHideFlags: 1

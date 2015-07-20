@@ -5,8 +5,9 @@ public class Fragment : MonoBehaviour{
 
 
     public Material material;
-    public  AudioSource audioSource;
-    public AudioClip defaultClip;
+    //public  AudioSource audioSource;
+    //public AudioClip defaultClip;
+    public string audioEventName;
 	// Use this for initialization
     public void Awake()
     {
@@ -16,7 +17,7 @@ public class Fragment : MonoBehaviour{
     public void Start()
     {
         print("FragmentStart");
-        audioSource.clip = defaultClip;
+        //audioSource.clip = defaultClip;
         this.renderer.material = material;
 	}
 	
@@ -28,25 +29,22 @@ public class Fragment : MonoBehaviour{
 
     public void Play()
     {
-        audioSource.Play();
+        //audioSource.Play();
+        WwiseAudioManager.instance.PlayFiniteEvent(audioEventName, this.gameObject);
     }
 
-    public AudioClip GetClip()
-    {
-        return audioSource.clip;
-    }
 
     public void AnswerTheCall()
     {
         print("Fragment:AnswerTheCall");
-        audioSource.Play();
+        Play();
     }
 
     public GameObject OnPickUp()
     {
         print("Fragment:OnPickUp");
         this.gameObject.SetActive(true);
-        audioSource.Play();
+        Play();
         return this.gameObject;
     }
 

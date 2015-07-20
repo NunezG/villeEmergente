@@ -3,11 +3,17 @@ using System.Collections;
 
 public class WwiseAudioManager : MonoBehaviour {
 
-    public static WwiseAudioManager wwiseAudioManager;
+    public static WwiseAudioManager instance;
     uint bankID;
 	// Use this for initialization
+
+    public void Start()
+    {
+        instance = this;
+        LoadBank();
+    }
+
 	public void LoadBank () {
-        wwiseAudioManager = this;
         AkSoundEngine.LoadBank("Main", AkSoundEngine.AK_DEFAULT_POOL_ID, out bankID);
 	}
 	
@@ -15,12 +21,26 @@ public class WwiseAudioManager : MonoBehaviour {
 	void Update () {
 	
 	}
+    
+    public void PlayLoopEvent(string eventName, GameObject gObject)
+    {
+        AkSoundEngine.PostEvent(eventName+"_play", gObject);
+    }
 
+    public void StopLoopEvent(string eventName, GameObject gObject)
+    {
+        AkSoundEngine.PostEvent(eventName+"_stop", gObject);
+    }
 
-    public void PlayEvent(string eventName, GameObject gObject)
+    public void PlayFiniteEvent(string eventName, GameObject gObject, AkCallbackManager.EventCallback callBackFunction )
+    {
+        AkSoundEngine.PostEvent(eventName, gObject, (uint)AkCallbackType.AK_EndOfEvent, callBackFunction, gObject);
+    }
+    public void PlayFiniteEvent(string eventName, GameObject gObject)
     {
         AkSoundEngine.PostEvent(eventName, gObject);
     }
+    /*
     public void StopEvent(string eventName, GameObject gObject, int fadeout)
     {
         uint eventID = AkSoundEngine.GetIDFromString(eventName);
@@ -35,5 +55,5 @@ public class WwiseAudioManager : MonoBehaviour {
     {
         uint eventID = AkSoundEngine.GetIDFromString(eventName);
         AkSoundEngine.ExecuteActionOnEvent(eventID, AkActionOnEventType.AkActionOnEventType_Resume, gObject, fadeout * 1000, AkCurveInterpolation.AkCurveInterpolation_Sine);
-    }
+    }*/
 }
