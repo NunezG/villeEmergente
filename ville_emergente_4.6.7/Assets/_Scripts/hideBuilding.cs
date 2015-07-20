@@ -29,25 +29,25 @@ public class hideBuilding : MonoBehaviour {
 	void OnMouseDown()
 	{
 		if (lastPos == 0)
-			down ();
+			Down ();
 		else
-			up ();
+			Up ();
 	}
 
 
-	public void down()
+	public void Down()
 	{
 		StopAllCoroutines ();
-		StartCoroutine ("buildingDown");
+		StartCoroutine ("BuildingDown");
 	}
 
-	public void up()
+	public void Up()
 	{
 		StopAllCoroutines ();
-		StartCoroutine ("buildingUp");
+		StartCoroutine ("BuildingUp");
 	}
 
-	private IEnumerator buildingDown()
+	private IEnumerator BuildingDown()
 	{
 		
 		
@@ -64,7 +64,7 @@ public class hideBuilding : MonoBehaviour {
 	}
 
 
-	private IEnumerator buildingUp()
+	private IEnumerator BuildingUp()
 	{
 		
 		

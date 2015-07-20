@@ -31,6 +31,7 @@ public class ObjectInteractor : MonoBehaviour {
                 {
                     //ajout de l'objet en main a l'objet vise
                     print("ajout de l'objet en main a l'objet vise");
+                    WwiseAudioManager.instance.PlayFiniteEvent("linker_morceau", this.gameObject);
                     interacObj.OnAddingFragment(inHandObject.GetComponent<Fragment>());
                     AddingFragment();
                 }
@@ -40,10 +41,12 @@ public class ObjectInteractor : MonoBehaviour {
                     print("on ramasse l'objet");
                     //on ramasse l'objet
                     PickUpObject(interacObj.OnPickUp());
+                    WwiseAudioManager.instance.PlayFiniteEvent("prendre_morceau", this.gameObject);
                 }
                 else if (!handsFull && (interacObj.type == InteractibleType.SettingPiece && !interacObj.HasFragment())) // si on a rien en main et qu'on vise un element de decor vide
                 {
                     print("on declenche l'interaction avec cet objet");
+                    WwiseAudioManager.instance.PlayFiniteEvent("toucher_element", this.gameObject);
                     //print("(!handsFull && interacObj.type == InteractibleType.SettingPiece)");
                     //on declenche l'interaction avec cet objet
                     interacObj.OnInteract();
@@ -61,6 +64,7 @@ public class ObjectInteractor : MonoBehaviour {
                 {
                     // on laisse tomber l'objet en main
                     DropInHandObject();
+                    WwiseAudioManager.instance.PlayFiniteEvent("lacher_morceau", this.gameObject);
                 }
             }
         }
@@ -84,6 +88,8 @@ public class ObjectInteractor : MonoBehaviour {
         print("Interactor:DropInHandObject");
         if (inHandObject != null)
         {
+
+
             inHandObject.GetComponent<Fragment>().Play();
             inHandObject.rigidbody.isKinematic = false;
             handsFull = false;
