@@ -54,9 +54,13 @@
 					<ShortName>sfx_pas_mere_chambre_04.wav</ShortName>
 					<Path>SFX\sfx_pas_mere_chambre_04_950FF8F3.wem</Path>
 				</File>
+				<File Id="759217420" Language="SFX">
+					<ShortName>sfx_donner_lampe.wav</ShortName>
+					<Path>SFX\sfx_donner_lampe_3DEC88C6.wem</Path>
+				</File>
 				<File Id="943957025" Language="SFX">
 					<ShortName>paddle light freely 01.wav</ShortName>
-					<Path>SFX\paddle light freely 01_27F05A3C.wem</Path>
+					<Path>SFX\paddle light freely 01_C7E637FB.wem</Path>
 				</File>
 				<File Id="1038465850" Language="SFX">
 					<ShortName>cymbal_reverb.wav</ShortName>

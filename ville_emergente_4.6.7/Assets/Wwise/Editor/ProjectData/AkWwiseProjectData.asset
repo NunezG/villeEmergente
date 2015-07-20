@@ -188,8 +188,13 @@ MonoBehaviour:
       Guid: 13a8cb8be9ce1d40a1ae57d196fca6c9
   ExpandedItems:
   - /villeEmergente_wwise
-  m_lastPopulateTimePsrt1: -1330858146
-  m_lastPopulateTimePart2: -1999467025
+  - /villeEmergente_wwise/Events
+  - /villeEmergente_wwise/Events/Default Work Unit
+  - /villeEmergente_wwise/Events/Default Work Unit/Ambiances
+  - /villeEmergente_wwise/SoundBanks
+  - /villeEmergente_wwise/SoundBanks/Default Work Unit
+  m_lastPopulateTimePsrt1: -614022116
+  m_lastPopulateTimePart2: -1999467024
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)
