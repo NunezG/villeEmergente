@@ -12,8 +12,9 @@ GameObject:
   - 23: {fileID: 2317352}
   - 95: {fileID: 9517352}
   - 114: {fileID: 11459040}
-  - 114: {fileID: 11459042}
   - 65: {fileID: 6559042}
+  - 65: {fileID: 6578610}
+  - 114: {fileID: 11420718}
   m_Layer: 0
   m_Name: SettingPiece4
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117352}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: 14.5, y: -0, z: -24.1000004}
+  m_LocalPosition: {x: 14.5, y: -.0199999996, z: -24.1000004}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
@@ -71,8 +72,20 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.37795269, y: .787401736, z: 2.71845269}
-  m_Center: {x: 0, y: 0, z: 1.35922635}
+  m_Size: {x: .800000012, y: .787401736, z: .930000007}
+  m_Center: {x: -.310000002, y: 0, z: .449999988}
+--- !u!65 &6578610
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117352}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .800000012, y: .787401736, z: 2.71845269}
+  m_Center: {x: .289999992, y: 0, z: 1.35922635}
 --- !u!95 &9517352
 Animator:
   serializedVersion: 3
@@ -88,6 +101,23 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11420718
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf639b5b544970c4a9573561a39b8f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragmentsCallRadius: 25
+  defaultMaterial: {fileID: 2100000, guid: 599ad750992ab164db995c8fd814ea43, type: 2}
+  activatedMaterial: {fileID: 2100000, guid: fc56dd6b8d19fc342b7c6c17af78eb5b, type: 2}
+  audioSource: {fileID: 8292470, guid: ef4eea481a1b8a94fb0c87b0474eabbc, type: 2}
+  defaultClip: {fileID: 8300000, guid: f3bfc63084cb8cc48aa10b161e83ecd6, type: 3}
+  fragment: {fileID: 0}
 --- !u!114 &11459040
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -100,23 +130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
---- !u!114 &11459042
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 117352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf639b5b544970c4a9573561a39b8f79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fragmentsCallRadius: 25
-  defaultMaterial: {fileID: 0}
-  activatedMaterial: {fileID: 0}
-  defaultAudioEventName: prendre_morceau
-  fragment: {fileID: 0}
-  isPlayingInteract: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

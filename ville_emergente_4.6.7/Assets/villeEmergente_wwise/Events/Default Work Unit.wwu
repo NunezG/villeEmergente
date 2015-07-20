@@ -59,7 +59,7 @@
 				</Folder>
 				<Folder Name="Joueur" ID="{F55CC90F-815F-40E7-A48F-F1943AE3F147}" ShortID="401780988">
 					<ChildrenList>
-						<Event Name="footsteps" ID="{DCFD4CDB-4E11-4016-80E2-1ADCD1CC4389}">
+						<Event Name="footsteps_play" ID="{DCFD4CDB-4E11-4016-80E2-1ADCD1CC4389}">
 							<ChildrenList>
 								<Action Name="Play" ID="{7B5C0CBA-50FF-4BF1-AA86-569272C436C7}" ShortID="570994649" Type="Play" Scope="One" Global="false">
 									<ElementList>
@@ -109,6 +109,21 @@
 									<ElementList>
 										<Element ID="{C286675A-1CBE-49F7-B0C1-EC62C8513262}" Global="false">
 											<ObjectRef Name="Toucher élément" ID="{8C0EE57C-46CC-4653-98D5-432112F38E4D}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="footsteps_stop" ID="{490E5D52-C3C9-483D-9038-053E1F03D1A6}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{B592B8C3-491B-4E66-8AA2-31CD95D3E11A}" ShortID="62316562" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{99457DEA-2CED-4321-A4F9-A28CE930725B}" Global="false">
+											<ObjectRef Name="Defaut" ID="{F54CA89B-A7E1-4820-B89C-793882C44C24}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 										</Element>
 									</ElementList>
 								</Action>

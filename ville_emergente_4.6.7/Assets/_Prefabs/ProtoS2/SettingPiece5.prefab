@@ -12,9 +12,9 @@ GameObject:
   - 23: {fileID: 2355844}
   - 95: {fileID: 9555844}
   - 114: {fileID: 11480398}
-  - 114: {fileID: 11480400}
   - 65: {fileID: 6580400}
   - 65: {fileID: 6563338}
+  - 114: {fileID: 11424622}
   m_Layer: 0
   m_Name: SettingPiece5
   m_TagString: Untagged
@@ -101,6 +101,23 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11424622
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf639b5b544970c4a9573561a39b8f79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fragmentsCallRadius: 25
+  defaultMaterial: {fileID: 2100000, guid: 599ad750992ab164db995c8fd814ea43, type: 2}
+  activatedMaterial: {fileID: 2100000, guid: fc56dd6b8d19fc342b7c6c17af78eb5b, type: 2}
+  audioSource: {fileID: 8292470, guid: ef4eea481a1b8a94fb0c87b0474eabbc, type: 2}
+  defaultClip: {fileID: 8300000, guid: f3bfc63084cb8cc48aa10b161e83ecd6, type: 3}
+  fragment: {fileID: 0}
 --- !u!114 &11480398
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -113,23 +130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
---- !u!114 &11480400
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf639b5b544970c4a9573561a39b8f79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fragmentsCallRadius: 25
-  defaultMaterial: {fileID: 0}
-  activatedMaterial: {fileID: 0}
-  audioSource: {fileID: 0}
-  defaultClip: {fileID: 0}
-  fragment: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

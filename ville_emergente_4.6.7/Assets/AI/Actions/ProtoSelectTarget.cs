@@ -11,20 +11,27 @@ public class ProtoSelectTarget : RAINAction
     public override void Start(RAIN.Core.AI ai)
     {
         base.Start(ai);
+		target = ai.WorkingMemory.GetItem<GameObject> ("target");
     }
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
-        int targetIndex = Random.Range(0, NPC.targets.Length-1 );
-        //Debug.Log("targetIndex :" + targetIndex);
-        //Debug.Log("NPC.targets.Length :" + NPC.targets.Length);
 
-        if (ai.WorkingMemory.GetItem<GameObject>("target") == NPC.targets[targetIndex])
-        {
-            if (targetIndex >= 0 && targetIndex < NPC.targets.Length && NPC.targets.Length > 0) targetIndex++;
-            else if (targetIndex == NPC.targets.Length && NPC.targets.Length > 0) targetIndex--;
-        }
-        target = NPC.targets[targetIndex];
+		if (target == null) {
+			int targetIndex = Random.Range (0, NPC.targets.Length - 1);
+			//Debug.Log("targetIndex :" + targetIndex);
+			//Debug.Log("NPC.targets.Length :" + NPC.targets.Length);
+
+			target = NPC.targets [targetIndex];
+
+		} else {
+			int targetIndex = Random.Range (0, target.GetComponent<navigationScript>().targets.Count - 1);
+
+			target = target.GetComponent<navigationScript>().targets [targetIndex];
+			 
+		}
+
+
 
         return ActionResult.SUCCESS;
     }

@@ -2,13 +2,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	193498114	water_3DObject_play			\Default Work Unit\Tests Wwise Pierre\water_3DObject_play	
 	812837510	rain_2DObject_play			\Default Work Unit\Tests Wwise Pierre\rain_2DObject_play	
 	836511068	water_3DObject_stop			\Default Work Unit\Tests Wwise Pierre\water_3DObject_stop	
+	1198733287	footsteps_play			\Default Work Unit\Joueur\footsteps_play	
 	2138522384	prendre_morceau			\Default Work Unit\Joueur\prendre_morceau	
-	2385628198	footsteps			\Default Work Unit\Joueur\footsteps	
 	2535466649	lacher_morceau			\Default Work Unit\Joueur\lacher_morceau	
 	2622262392	rain_2DObject_stop			\Default Work Unit\Tests Wwise Pierre\rain_2DObject_stop	
 	2896867782	toucher_element			\Default Work Unit\Joueur\toucher_element	
 	3115394940	ville_calme			\Default Work Unit\Ambiances\ville_calme	
 	3679869857	linker_morceau			\Default Work Unit\Joueur\linker_morceau	
+	4187365685	footsteps_stop			\Default Work Unit\Joueur\footsteps_stop	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	3865314626	Material			\Default Work Unit\Material	
@@ -23,7 +24,6 @@ Effect plug-ins	ID	Name	Type				Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	22416358	sfx_pas_default_02	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_02_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_02		21444
 	165344794	soft rain - brown noise - human activities - drops reverb - 02	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\soft rain - brown noise - human activities - drops reverb - 02_8AC08B01.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\soft rain - brown noise - human activities - drops reverb - 02		4233873
-	364965466	sfx_pas_default_06	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_07_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_06		9108
 	506845639	sfx_pas_default_03	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_03_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_03		23006
 	526131746	sfx_pas_default_01	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_01_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_01		19745
 	592176391	sfx_pas_default_04	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_04_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_04		18021
