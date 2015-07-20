@@ -25,18 +25,23 @@ public class Musicien : MonoBehaviour{
     //public List<Fragment> fragments = new List<Fragment>();
     public Fragment fragment = null;
 
-    public static GameObject[] targets=null;
+    public GameObject[] targets=null;
 
 	public GameObject previousTarget = null;
 
-	public static hideBuilding[] buildings=null;
+	public GameObject[] buildings;
+
+	public bool done=false;
 	
 	public void Awake()
     {
        tag = "NPC";
-        if(targets==null)
+       // if(targets==null)
+		Debug.Log ("START MUSICIENN");
             targets = GameObject.FindGameObjectsWithTag("NavigationTarget");
-    }
+			Debug.Log ("FINISH MUSICIENN");
+
+	}
 
 	// Use this for initialization
     public void Start()
@@ -65,6 +70,15 @@ public class Musicien : MonoBehaviour{
             endTimer = (int)Random.Range(minEndTimer, maxEndTimer);
             EmitSound();
         }
+
+		if (done) {
+
+			for (int i=0; i<buildings.Length ; i++ )
+			{
+				buildings[i].GetComponent<hideBuilding>().down();
+			}
+
+		}
 	}
     
     public void OnAddingFragment(Fragment fragment)

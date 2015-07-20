@@ -15,7 +15,7 @@ public class navigationScript : MonoBehaviour {
 		GameObject[] targetList = GameObject.FindGameObjectsWithTag("NavigationTarget");
 		int i = 0;
 
-		while (i< 3)
+		while (i< 2)
 		{
 			int rand = Random.Range(0,targetList.Length-1);
 
@@ -27,6 +27,7 @@ public class navigationScript : MonoBehaviour {
 			}
 
 		}
+
 	}
 	
 	// Update is called once per frame
