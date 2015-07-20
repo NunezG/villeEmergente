@@ -52,7 +52,7 @@ public class hideBuilding : MonoBehaviour {
 		
 		
 		while (lastPos < GetComponent<Collider> ().bounds.size.y) {
-			transform.Translate (new Vector3 (0, -0.015f, 0));
+			transform.Translate (new Vector3 (0, 0, -0.015f));
 			//transform.position.z
 			lastPos += 0.015f;
 			
@@ -69,7 +69,7 @@ public class hideBuilding : MonoBehaviour {
 		
 		
 		while (lastPos > 0) {
-			transform.Translate (new Vector3 (0, +0.015f, 0));
+			transform.Translate (new Vector3 (0, 0, -0.015f));
 			//transform.position.z
 			lastPos -= 0.015f;
 			yield return true;
