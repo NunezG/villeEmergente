@@ -18,7 +18,8 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2385628198" Name="footsteps" MaxAttenuation="25.000000"/>
+				<Event Id="1198733287" Name="footsteps_play" MaxAttenuation="25.000000"/>
+				<Event Id="4187365685" Name="footsteps_stop" MaxAttenuation="0.000000"/>
 				<Event Id="2535466649" Name="lacher_morceau" MaxAttenuation="25.000000"/>
 				<Event Id="3679869857" Name="linker_morceau" MaxAttenuation="25.000000"/>
 				<Event Id="2138522384" Name="prendre_morceau" MaxAttenuation="25.000000"/>

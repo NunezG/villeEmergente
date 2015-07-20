@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1E962B57-6486-44A3-BA8D-7B872C0E9989}" SchemaVersion="69">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{1E962B57-6486-44A3-BA8D-7B872C0E9989}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1E962B57-6486-44A3-BA8D-7B872C0E9989}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Bruits de pas" ID="{E2454CB6-6EAD-468A-AE42-0B20371C4B0E}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="footsteps_play" ID="{DCFD4CDB-4E11-4016-80E2-1ADCD1CC4389}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="footsteps_stop" ID="{490E5D52-C3C9-483D-9038-053E1F03D1A6}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Concrete" ID="{42CEC38C-5153-4D39-B808-3CDB613BA801}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
