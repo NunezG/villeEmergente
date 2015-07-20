@@ -26,11 +26,14 @@ public class FootStepManager : MonoBehaviour {
         }
         if (startWalking)
         {
+            print("start walking");
             WwiseAudioManager.instance.PlayLoopEvent("footsteps", this.gameObject);
             startWalking = false;
         }
         if(stoppedWalking)
         {
+            stoppedWalking = false;
+            print("stopped walking");
             WwiseAudioManager.instance.StopLoopEvent("footsteps", this.gameObject);
         }
 	}
