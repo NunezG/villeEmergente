@@ -45,7 +45,7 @@ public class InteractibleObject : MonoBehaviour {
     {
         if (type == InteractibleType.NPC)
         {
-            this.GetComponent<NPC>().OnAddingFragment(fragment);
+			this.GetComponent<Musicien>().OnAddingFragment(fragment);
         }
         else if (type == InteractibleType.SettingPiece)
         {

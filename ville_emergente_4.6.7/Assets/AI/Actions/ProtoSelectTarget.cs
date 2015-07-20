@@ -19,9 +19,9 @@ public class ProtoSelectTarget : RAINAction
 
 		if (target == null) {
 			//Debut de la partie
-			int targetIndex = Random.Range (0, NPC.targets.Length - 1);
+			int targetIndex = Random.Range (0, Musicien.targets.Length - 1);
 
-			target = NPC.targets [targetIndex];
+			target = Musicien.targets [targetIndex];
 
 		} else {
 			//pourcentage pour retour au target précédent
@@ -31,11 +31,11 @@ public class ProtoSelectTarget : RAINAction
 			int targetIndex = Random.Range (0, target.GetComponent<navigationScript>().targets.Count - 1);
 
 			//si le target choisi est le précédent, on a un 75% de probabilités de recommencer cette action
-			if (ai.Body.GetComponent<NPC>().previousTarget == target.GetComponent<navigationScript>().targets[targetIndex] &&  percent < 75)
+			if (ai.Body.GetComponent<Musicien>().previousTarget == target.GetComponent<navigationScript>().targets[targetIndex] &&  percent < 75)
 				return ActionResult.RUNNING;
 
 			//set le target précédent
-			ai.Body.GetComponent<NPC>().previousTarget = target;
+			ai.Body.GetComponent<Musicien>().previousTarget = target;
 
 			//set le target actuel
 			target = target.GetComponent<navigationScript>().targets [targetIndex];

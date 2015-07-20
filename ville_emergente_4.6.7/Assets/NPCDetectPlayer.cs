@@ -3,7 +3,7 @@ using System.Collections;
 
 public class NPCDetectPlayer : MonoBehaviour {
 
-    public NPC npc;
+	public Musicien npc;
 
 	// Use this for initialization
 	void Start () {

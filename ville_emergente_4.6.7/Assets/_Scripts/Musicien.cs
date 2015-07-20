@@ -8,7 +8,7 @@ using RAIN.Minds;
 using RAIN.Serialization;
 using RAIN.Motion;
 
-public class NPC : MonoBehaviour{
+public class Musicien : MonoBehaviour{
 
 
     public RAIN.Memory.BasicMemory tMemory;
@@ -26,7 +26,12 @@ public class NPC : MonoBehaviour{
     public Fragment fragment = null;
 
     public static GameObject[] targets=null;
-    public void Awake()
+
+	public GameObject previousTarget = null;
+
+	public static hideBuilding[] buildings=null;
+	
+	public void Awake()
     {
        tag = "NPC";
         if(targets==null)
