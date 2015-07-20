@@ -75,7 +75,7 @@ public class Musicien : MonoBehaviour{
 
 			for (int i=0; i<buildings.Length ; i++ )
 			{
-				buildings[i].GetComponent<hideBuilding>().down();
+				buildings[i].GetComponent<hideBuilding>().Down();
 			}
 
 		}

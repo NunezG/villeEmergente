@@ -15,7 +15,7 @@ public class navigationScript : MonoBehaviour {
 		GameObject[] targetList = GameObject.FindGameObjectsWithTag("NavigationTarget");
 		int i = 0;
 
-		while (i< 3)
+		while (i< targetList.Length)
 		{
 			int rand = Random.Range(0,targetList.Length-1);
 
