@@ -6,9 +6,9 @@ public class MusicController : WwiseAudioManager {
     public GameObject[] tabGobs;
 
 	// Use this for initialization
-	void Start () {
+	/*void Start () {
         LoadBank();
-	}
+	}*/
 	
 	// Update is called once per frame
 	void Update () {
