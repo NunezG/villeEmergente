@@ -7,6 +7,13 @@ public class Building : InteractibleObject {
 
 	public float collapsingSpeed = 10.0f;
 
+	public void Start()
+	{
+		type = InteractibleType.SettingPiece;
+		base.Start ();
+	}
+
+
 	void OnMouseDown()
 	{
 		if (lastPos == 0)
