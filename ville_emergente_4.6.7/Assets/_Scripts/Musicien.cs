@@ -90,7 +90,7 @@ public class Musicien : MonoBehaviour{
             isFragmentComplete = false;
 			for (int i=0; i<buildings.Length ; i++ )
 			{
-				buildings[i].GetComponent<hideBuilding>().Down();
+				buildings[i].GetComponent<Building>().Down();
 			}
 
 		}

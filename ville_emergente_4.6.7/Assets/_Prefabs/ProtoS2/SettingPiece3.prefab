@@ -27,10 +27,10 @@ GameObject:
   - 33: {fileID: 3392470}
   - 23: {fileID: 2392470}
   - 95: {fileID: 9592470}
-  - 114: {fileID: 11492472}
   - 114: {fileID: 11492470}
-  - 64: {fileID: 6492470}
   - 65: {fileID: 6505146}
+  - 114: {fileID: 11479858}
+  - 64: {fileID: 6492470}
   m_Layer: 0
   m_Name: SettingPiece3
   m_TagString: Untagged
@@ -92,7 +92,7 @@ MeshFilter:
   m_Mesh: {fileID: 4300000, guid: 85cd168ec5a4f37439f1fd09d1adfffc, type: 3}
 --- !u!64 &6492470
 MeshCollider:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 192472}
@@ -188,6 +188,18 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11479858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9657b458081836b419512ffebd4262ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
 --- !u!114 &11492470
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -205,18 +217,6 @@ MonoBehaviour:
   defaultAudioEventName: prendre_morceau
   fragment: {fileID: 0}
   isPlayingInteract: 0
---- !u!114 &11492472
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdc7d4d9e1e52144d9bfd6640a3062f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
