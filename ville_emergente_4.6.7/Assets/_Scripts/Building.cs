@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class hideBuilding : MonoBehaviour {
+public class Building : InteractibleObject {
 
 	private float lastPos = 0;
 
+	public float collapsingSpeed = 10.0f;
 	 
 
 
@@ -50,11 +51,10 @@ public class hideBuilding : MonoBehaviour {
 	private IEnumerator BuildingDown()
 	{
 		
-		
 		while (lastPos < GetComponent<Collider> ().bounds.size.y) {
-			transform.Translate (new Vector3 (0, 0, -0.015f));
+			transform.Translate (new Vector3 (0, 0, -collapsingSpeed*Time.deltaTime));
 			//transform.position.z
-			lastPos += 0.015f;
+			lastPos += collapsingSpeed*Time.deltaTime;
 			
 			yield return true;
 		}
@@ -69,9 +69,9 @@ public class hideBuilding : MonoBehaviour {
 		
 		
 		while (lastPos > 0) {
-			transform.Translate (new Vector3 (0, 0, -0.015f));
+			transform.Translate (new Vector3 (0, 0, collapsingSpeed*Time.deltaTime));
 			//transform.position.z
-			lastPos -= 0.015f;
+			lastPos -= collapsingSpeed*Time.deltaTime;
 			yield return true;
 			
 		}
