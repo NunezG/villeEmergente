@@ -13,47 +13,127 @@
 		<SoundBank Id="1355168291" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<ExcludedMemoryFiles>
+				<File Id="8472028" Language="SFX">
+					<ShortName>ri_marseilles.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_marseilles_AA5D0D94.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="141266967" Language="SFX">
+					<ShortName>ri_shevannai.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_shevannai_F1A59D96.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="640771282" Language="SFX">
+					<ShortName>ri_sylenth.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_sylenth_F1482EAF.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="758536210" Language="SFX">
+					<ShortName>ri_skanner_pad.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_skanner_pad_0308A06B.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="971457556" Language="SFX">
+					<ShortName>ri_suriya.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_suriya_F0D73493.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+			</ExcludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="3161908922" Language="SFX">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1198733287" Name="footsteps_play" MaxAttenuation="25.000000"/>
+				<Event Id="1588676051" Name="busy_street_convolver" MaxAttenuation="25.000000"/>
+				<Event Id="3246200785" Name="busy_street_play" MaxAttenuation="25.000000"/>
+				<Event Id="202648455" Name="busy_street_stop" MaxAttenuation="0.000000"/>
+				<Event Id="804981421" Name="drops_cardboard_convolver" MaxAttenuation="25.000000"/>
+				<Event Id="2865765803" Name="drops_cardboard_play" MaxAttenuation="25.000000"/>
+				<Event Id="1688429121" Name="drops_cardboard_stop" MaxAttenuation="0.000000"/>
+				<Event Id="2244334851" Name="electric_buzz_convolver" MaxAttenuation="25.000000"/>
+				<Event Id="4207081409" Name="electric_buzz_play" MaxAttenuation="25.000000"/>
+				<Event Id="2232073879" Name="electric_buzz_stop" MaxAttenuation="0.000000"/>
+				<Event Id="1198733287" Name="footsteps_play"/>
 				<Event Id="4187365685" Name="footsteps_stop" MaxAttenuation="0.000000"/>
 				<Event Id="2535466649" Name="lacher_morceau" MaxAttenuation="25.000000"/>
 				<Event Id="3679869857" Name="linker_morceau" MaxAttenuation="25.000000"/>
 				<Event Id="2138522384" Name="prendre_morceau" MaxAttenuation="25.000000"/>
 				<Event Id="812837510" Name="rain_2DObject_play"/>
 				<Event Id="2622262392" Name="rain_2DObject_stop" MaxAttenuation="0.000000"/>
+				<Event Id="3879033897" Name="soft_rain_convolver"/>
+				<Event Id="425145631" Name="soft_rain_play"/>
+				<Event Id="4252794685" Name="soft_rain_stop" MaxAttenuation="0.000000"/>
+				<Event Id="3545498770" Name="switch_bat1" MaxAttenuation="0.000000"/>
+				<Event Id="3545498769" Name="switch_bat2" MaxAttenuation="0.000000"/>
+				<Event Id="3545498768" Name="switch_bat3" MaxAttenuation="0.000000"/>
+				<Event Id="3545498775" Name="switch_bat4" MaxAttenuation="0.000000"/>
+				<Event Id="3545498774" Name="switch_bat5" MaxAttenuation="0.000000"/>
+				<Event Id="3545498773" Name="switch_bat6" MaxAttenuation="0.000000"/>
+				<Event Id="3545498772" Name="switch_bat7" MaxAttenuation="0.000000"/>
 				<Event Id="2896867782" Name="toucher_element" MaxAttenuation="25.000000"/>
+				<Event Id="307225475" Name="traffic_by_convolver" MaxAttenuation="25.000000"/>
+				<Event Id="2129545025" Name="traffic_by_play" MaxAttenuation="25.000000"/>
+				<Event Id="154537495" Name="traffic_by_stop" MaxAttenuation="0.000000"/>
 				<Event Id="3115394940" Name="ville_calme"/>
 				<Event Id="193498114" Name="water_3DObject_play" MaxAttenuation="25.000000"/>
 				<Event Id="836511068" Name="water_3DObject_stop" MaxAttenuation="0.000000"/>
+				<Event Id="2243180791" Name="water_splash_convolver" MaxAttenuation="25.000000"/>
+				<Event Id="191715533" Name="water_splash_play" MaxAttenuation="25.000000"/>
+				<Event Id="1308909595" Name="water_splash_stop" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="22416358" Language="SFX">
 					<ShortName>sfx_pas_mere_chambre_02.wav</ShortName>
-					<Path>SFX\sfx_pas_mere_chambre_02_950FF8F3.wem</Path>
+					<Path>SFX\sfx_pas_mere_chambre_02_597F6127.wem</Path>
 				</File>
 				<File Id="165344794" Language="SFX">
 					<ShortName>soft rain - brown noise - human activities - drops reverb - 02.wav</ShortName>
 					<Path>SFX\soft rain - brown noise - human activities - drops reverb - 02_8AC08B01.wem</Path>
 				</File>
+				<File Id="364965466" Language="SFX">
+					<ShortName>sfx_pas_mere_chambre_07.wav</ShortName>
+					<Path>SFX\sfx_pas_mere_chambre_07_950FF8F3.wem</Path>
+				</File>
+				<File Id="434967323" Language="SFX">
+					<ShortName>sfx_traffic_by.wav</ShortName>
+					<Path>SFX\sfx_traffic_by_D64AECDA.wem</Path>
+				</File>
 				<File Id="506845639" Language="SFX">
 					<ShortName>sfx_pas_mere_chambre_03.wav</ShortName>
-					<Path>SFX\sfx_pas_mere_chambre_03_950FF8F3.wem</Path>
+					<Path>SFX\sfx_pas_mere_chambre_03_C34D06FC.wem</Path>
 				</File>
 				<File Id="526131746" Language="SFX">
 					<ShortName>sfx_pas_mere_chambre_01.wav</ShortName>
-					<Path>SFX\sfx_pas_mere_chambre_01_950FF8F3.wem</Path>
+					<Path>SFX\sfx_pas_mere_chambre_01_A6FDDFC4.wem</Path>
 				</File>
 				<File Id="592176391" Language="SFX">
 					<ShortName>sfx_pas_mere_chambre_04.wav</ShortName>
-					<Path>SFX\sfx_pas_mere_chambre_04_950FF8F3.wem</Path>
+					<Path>SFX\sfx_pas_mere_chambre_04_89C402CC.wem</Path>
+				</File>
+				<File Id="638620715" Language="SFX">
+					<ShortName>sfx_electric_buzz.wav</ShortName>
+					<Path>SFX\sfx_electric_buzz_BFE6AB60.wem</Path>
+				</File>
+				<File Id="718304696" Language="SFX">
+					<ShortName>sfx_soft_rain.wav</ShortName>
+					<Path>SFX\sfx_soft_rain_BFE6AB60.wem</Path>
 				</File>
 				<File Id="759217420" Language="SFX">
 					<ShortName>sfx_donner_lampe.wav</ShortName>
 					<Path>SFX\sfx_donner_lampe_3DEC88C6.wem</Path>
+				</File>
+				<File Id="864713684" Language="SFX">
+					<ShortName>sfx_drops_carboard.wav</ShortName>
+					<Path>SFX\sfx_drops_carboard_BFE6AB60.wem</Path>
+				</File>
+				<File Id="925339519" Language="SFX">
+					<ShortName>sfx_water_splash.wav</ShortName>
+					<Path>SFX\sfx_water_splash_7AC5595F.wem</Path>
+				</File>
+				<File Id="940668402" Language="SFX">
+					<ShortName>sfx_busy_street.wav</ShortName>
+					<Path>SFX\sfx_busy_street_BFE6AB60.wem</Path>
 				</File>
 				<File Id="943957025" Language="SFX">
 					<ShortName>paddle light freely 01.wav</ShortName>
@@ -66,11 +146,11 @@
 				</File>
 				<File Id="1053272547" Language="SFX">
 					<ShortName>sfx_pas_mere_chambre_08.wav</ShortName>
-					<Path>SFX\sfx_pas_mere_chambre_08_950FF8F3.wem</Path>
+					<Path>SFX\sfx_pas_mere_chambre_08_6E826BD3.wem</Path>
 				</File>
 				<File Id="1071818968" Language="SFX">
 					<ShortName>sfx_pas_mere_chambre_05.wav</ShortName>
-					<Path>SFX\sfx_pas_mere_chambre_05_950FF8F3.wem</Path>
+					<Path>SFX\sfx_pas_mere_chambre_05_587E026D.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

@@ -13,6 +13,15 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BUSY_STREET_CONVOLVER = 1588676051U;
+        static const AkUniqueID BUSY_STREET_PLAY = 3246200785U;
+        static const AkUniqueID BUSY_STREET_STOP = 202648455U;
+        static const AkUniqueID DROPS_CARDBOARD_CONVOLVER = 804981421U;
+        static const AkUniqueID DROPS_CARDBOARD_PLAY = 2865765803U;
+        static const AkUniqueID DROPS_CARDBOARD_STOP = 1688429121U;
+        static const AkUniqueID ELECTRIC_BUZZ_CONVOLVER = 2244334851U;
+        static const AkUniqueID ELECTRIC_BUZZ_PLAY = 4207081409U;
+        static const AkUniqueID ELECTRIC_BUZZ_STOP = 2232073879U;
         static const AkUniqueID FOOTSTEPS_PLAY = 1198733287U;
         static const AkUniqueID FOOTSTEPS_STOP = 4187365685U;
         static const AkUniqueID LACHER_MORCEAU = 2535466649U;
@@ -20,14 +29,46 @@ namespace AK
         static const AkUniqueID PRENDRE_MORCEAU = 2138522384U;
         static const AkUniqueID RAIN_2DOBJECT_PLAY = 812837510U;
         static const AkUniqueID RAIN_2DOBJECT_STOP = 2622262392U;
+        static const AkUniqueID SOFT_RAIN_CONVOLVER = 3879033897U;
+        static const AkUniqueID SOFT_RAIN_PLAY = 425145631U;
+        static const AkUniqueID SOFT_RAIN_STOP = 4252794685U;
+        static const AkUniqueID SWITCH_BAT1 = 3545498770U;
+        static const AkUniqueID SWITCH_BAT2 = 3545498769U;
+        static const AkUniqueID SWITCH_BAT3 = 3545498768U;
+        static const AkUniqueID SWITCH_BAT4 = 3545498775U;
+        static const AkUniqueID SWITCH_BAT5 = 3545498774U;
+        static const AkUniqueID SWITCH_BAT6 = 3545498773U;
+        static const AkUniqueID SWITCH_BAT7 = 3545498772U;
         static const AkUniqueID TOUCHER_ELEMENT = 2896867782U;
+        static const AkUniqueID TRAFFIC_BY_CONVOLVER = 307225475U;
+        static const AkUniqueID TRAFFIC_BY_PLAY = 2129545025U;
+        static const AkUniqueID TRAFFIC_BY_STOP = 154537495U;
         static const AkUniqueID VILLE_CALME = 3115394940U;
         static const AkUniqueID WATER_3DOBJECT_PLAY = 193498114U;
         static const AkUniqueID WATER_3DOBJECT_STOP = 836511068U;
+        static const AkUniqueID WATER_SPLASH_CONVOLVER = 2243180791U;
+        static const AkUniqueID WATER_SPLASH_PLAY = 191715533U;
+        static const AkUniqueID WATER_SPLASH_STOP = 1308909595U;
     } // namespace EVENTS
 
     namespace SWITCHES
     {
+        namespace ELEMENTS_DECOR
+        {
+            static const AkUniqueID GROUP = 575849320U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BATIMENT_1 = 784145683U;
+                static const AkUniqueID BATIMENT_2 = 784145680U;
+                static const AkUniqueID BATIMENT_3 = 784145681U;
+                static const AkUniqueID BATIMENT_4 = 784145686U;
+                static const AkUniqueID BATIMENT_5 = 784145687U;
+                static const AkUniqueID BATIMENT_6 = 784145684U;
+                static const AkUniqueID BATIMENT_7 = 784145685U;
+            } // namespace SWITCH
+        } // namespace ELEMENTS_DECOR
+
         namespace MATERIAL
         {
             static const AkUniqueID GROUP = 3865314626U;
@@ -41,6 +82,11 @@ namespace AK
 
     } // namespace SWITCHES
 
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID BINAURAL_TO_CONVOLVER = 296257622U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
@@ -49,11 +95,23 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID AMBIANCES = 1404066300U;
+        static const AkUniqueID ATMOSPHERIC = 259010940U;
         static const AkUniqueID BINAURAL = 52442795U;
+        static const AkUniqueID CONVOLUTIONS = 579757428U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MASTER_SECONDARY_BUS = 805203703U;
-        static const AkUniqueID OTHERS = 3042021448U;
+        static const AkUniqueID RI_MARSEILLES = 3891660296U;
+        static const AkUniqueID RI_SHEVANNAI = 2362353244U;
+        static const AkUniqueID RI_SKANNER_PAD = 2654963775U;
+        static const AkUniqueID RI_SURIYA = 3711219716U;
+        static const AkUniqueID RI_SYLENTH = 3909810158U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID BINAURAL_SEND = 4028308920U;
+    } // namespace AUX_BUSSES
 
 }// namespace AK
 

@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{251EFA80-DDFA-4B9C-830B-ED20F09F1955}" SchemaVersion="69">
 	<Presets>
-		<WorkUnit Name="Default Work Unit" ID="{251EFA80-DDFA-4B9C-830B-ED20F09F1955}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{251EFA80-DDFA-4B9C-830B-ED20F09F1955}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Wwise convolution user preset" ID="{BDB913F2-591E-4492-8D4E-988C4767ADBE}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+					<PropertyList>
+						<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+						<Property Name="IRConvolutionThreshold" Type="Real32" Value="-60"/>
+					</PropertyList>
+					<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{EA7D3D3A-52A2-4EFD-8E63-17448C62101F}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Presets>
 </WwiseDocument>

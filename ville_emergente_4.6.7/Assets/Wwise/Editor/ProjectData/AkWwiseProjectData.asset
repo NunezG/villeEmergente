@@ -16,18 +16,30 @@ MonoBehaviour:
     ParentPhysicalPath: 
     Guid: '{7F93A25F-2979-462E-8B53-8DECAD100DFF}'
     List:
-    - Name: footsteps
-      Path: Default Work Unit\Joueur\footsteps
+    - Name: footsteps_play
+      Path: Default Work Unit\Joueur\footsteps_play
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Joueur
         ObjectType: 4
-      - ElementName: footsteps
+      - ElementName: footsteps_play
         ObjectType: 3
-      ID: -1909339098
+      ID: 1198733287
       Guid: db4cfddc114e164080e21adcd1cc4389
-      maxAttenuation: 25
+      maxAttenuation: 0
+    - Name: footsteps_stop
+      Path: Default Work Unit\Joueur\footsteps_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Joueur
+        ObjectType: 4
+      - ElementName: footsteps_stop
+        ObjectType: 3
+      ID: -107601611
+      Guid: 525d0e49c9c33d489038053e1f03d1a6
+      maxAttenuation: 0
     - Name: lacher_morceau
       Path: Default Work Unit\Joueur\lacher_morceau
       PathAndIcons:
@@ -191,8 +203,8 @@ MonoBehaviour:
   - /villeEmergente_wwise/Events
   - /villeEmergente_wwise/Events/Default Work Unit
   - /villeEmergente_wwise/Events/Default Work Unit/Joueur
-  m_lastPopulateTimePsrt1: -614022116
-  m_lastPopulateTimePart2: -1999467024
+  m_lastPopulateTimePsrt1: 180783041
+  m_lastPopulateTimePart2: -1999466235
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)
