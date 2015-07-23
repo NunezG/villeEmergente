@@ -11,16 +11,17 @@ public class ProtoSelectTarget : RAINAction
     public override void Start(RAIN.Core.AI ai)
     {
         base.Start(ai);
-		target = ai.WorkingMemory.GetItem<GameObject> ("target");
+        target = ai.WorkingMemory.GetItem<GameObject>("target");
+        Debug.Log("SELECT TARGET ");
     }
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
-		Debug.Log ("SELECTTARG");
+		//Debug.Log ("SELECTTARG");
 		if (target == null) {
 			//Debut de la partie
-			int targetIndex = Random.Range (0, ai.Body.GetComponent<Musicien>().targets.Length - 1);
-
+			int targetIndex = Random.Range (0, ai.Body.GetComponent<Musicien>().targets.Count - 1);
+            Debug.Log("targetIndex : " + targetIndex);
 			target = ai.Body.GetComponent<Musicien>().targets [targetIndex];
 
 		} else {
@@ -40,7 +41,7 @@ public class ProtoSelectTarget : RAINAction
 			//set le target actuel
 			target = target.GetComponent<navigationScript>().targets [targetIndex];
 		}
-	
+        ai.WorkingMemory.SetItem<bool>("destinationReached", false);
         return ActionResult.SUCCESS;
     }
 

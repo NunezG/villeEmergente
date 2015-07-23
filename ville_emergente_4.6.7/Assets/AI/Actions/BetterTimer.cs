@@ -3,17 +3,29 @@ using System.Collections;
 using System.Collections.Generic;
 using RAIN.Action;
 using RAIN.Core;
+using RAIN.Representation;
 
 [RAINAction]
 public class BetterTimer : RAINAction
 {
     public float timeToWait;
     public System.DateTime startingTime, currentTime;
+    public Expression minRangeExp = new Expression();
+    public Expression maxRangeExp = new Expression();
+
 
     public override void Start(RAIN.Core.AI ai)
     {
         startingTime = System.DateTime.Now;
-        timeToWait = Random.Range(5, 10);
+
+        if ((minRangeExp != null) && (minRangeExp.IsValid) && (maxRangeExp != null) && (maxRangeExp.IsValid))
+        {
+            float minRange = minRangeExp.Evaluate<float>(ai.DeltaTime, ai.WorkingMemory);
+            float maxRange = maxRangeExp.Evaluate<float>(ai.DeltaTime, ai.WorkingMemory);
+            timeToWait = Random.Range(minRange, maxRange);
+        }
+
+
 
         Debug.Log("Start Timer");
 

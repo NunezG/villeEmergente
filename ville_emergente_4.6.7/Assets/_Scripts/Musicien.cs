@@ -15,7 +15,7 @@ public class Musicien : MonoBehaviour{
 
 
 
-    public float timer = 0,minEndTimer=10, maxEndTimer = 15, endTimer;
+    public float soundTimer = 0,minEndSoundTimer=10, maxEndSoundTimer = 15, endSoundTimer,waitTimer=0,minEndWaitTimer=10, maxEndWaitTimer = 15, endWaitTimer;
 
     public Material material;
     //public AudioSource audioSource;
@@ -25,21 +25,34 @@ public class Musicien : MonoBehaviour{
     //public List<Fragment> fragments = new List<Fragment>();
     public Fragment fragment = null;
 
-    public GameObject[] targets=null;
-
+    public static GameObject[] allNavTargets=null;
+    public List<GameObject> targets = new List<GameObject>();
 	public GameObject previousTarget = null;
 
 	public GameObject[] buildings;
 
-	public bool done=false;
+	public bool isFragmentComplete=false;
 	
 	public void Awake()
     {
        tag = "NPC";
        // if(targets==null)
-		Debug.Log ("START MUSICIENN");
-            targets = GameObject.FindGameObjectsWithTag("NavigationTarget");
-			Debug.Log ("FINISH MUSICIENN");
+       //Debug.Log ("START MUSICIENN");
+       int matriculeMusicien = int.Parse(this.gameObject.name.Substring(8));
+
+
+        if (allNavTargets==null)
+            allNavTargets = GameObject.FindGameObjectsWithTag("NavigationTarget");
+        foreach (GameObject gObject in allNavTargets)
+       {
+           if (gObject.name == "Navigation Target " + matriculeMusicien)
+           {
+               targets.Add(gObject);
+           }
+        }
+       //targets = GameObject.FindGame
+
+		//Debug.Log ("FINISH MUSICIENN");
 
 	}
 
@@ -48,11 +61,13 @@ public class Musicien : MonoBehaviour{
     {
         audioEventName = defaultAudioEventName;
 
+        //print("number : " + this.gameObject.name.Substring(8));
         AIRig aiRig = GetComponentInChildren<AIRig>();
         tMemory = aiRig.AI.WorkingMemory as RAIN.Memory.BasicMemory;
 
 
-        endTimer = (int)Random.Range(minEndTimer, maxEndTimer);
+        endSoundTimer = (int)Random.Range(minEndSoundTimer, maxEndSoundTimer);
+        endWaitTimer = (int)Random.Range(minEndWaitTimer, maxEndWaitTimer);
 
         this.renderer.material = material;
 	}
@@ -60,41 +75,89 @@ public class Musicien : MonoBehaviour{
 	// Update is called once per frame
     public void Update()
     {
-        if (timer < endTimer)
+        
+        if (soundTimer < endSoundTimer && !tMemory.GetItem<bool>("soundTimerHasEnded"))
         {
-            timer = timer + Time.deltaTime;
+            soundTimer = soundTimer + Time.deltaTime;
         }
-        else
+        else if (!tMemory.GetItem<bool>("soundTimerHasEnded"))
         {
-            timer = 0;
-            endTimer = (int)Random.Range(minEndTimer, maxEndTimer);
-            EmitSound();
+            tMemory.SetItem<bool>("soundTimerHasEnded", true);
+        }
+        if (soundTimer != 0 && tMemory.GetItem<bool>("soundTimerHasEnded"))
+        {
+            soundTimer = 0;
+            endSoundTimer = (int)Random.Range(minEndSoundTimer, maxEndSoundTimer);
+        }
+        //----------------------
+        if (tMemory.GetItem<bool>("destinationReached"))
+        {
+            if (waitTimer < endWaitTimer && !tMemory.GetItem<bool>("waitTimerHasEnded"))
+            {
+                waitTimer = waitTimer + Time.deltaTime;
+            }
+            else if (!tMemory.GetItem<bool>("waitTimerHasEnded"))
+            {
+                tMemory.SetItem<bool>("waitTimerHasEnded", true);
+            }
+            if (waitTimer != 0 && tMemory.GetItem<bool>("waitTimerHasEnded"))
+            {
+                waitTimer = 0;
+                endWaitTimer = (int)Random.Range(minEndWaitTimer, maxEndWaitTimer);
+            }
         }
 
-		if (done) {
 
-			for (int i=0; i<buildings.Length ; i++ )
-			{
-				buildings[i].GetComponent<Building>().Down();
-			}
+        /*
+        if (isFragmentComplete)
+        {
+            isFragmentComplete = false;
 
-		}
+            for (int i = 0; i < buildings.Length; i++)
+            {
+                buildings[i].GetComponent<Building>().Down();
+            }
+		}*/
 	}
+
+    public void OpenTheWay()
+    {
+        for (int i = 0; i < buildings.Length; i++)
+        {
+            buildings[i].GetComponent<Building>().Down();
+        }
+    }
     
     public void OnAddingFragment(Fragment fragment)
     {
         print("NPC:OnAddingFragment");
+
+        //SetIsFragmentComplete(true);
+        SetJustReceivedFragmentComplete(true);
         this.fragment = fragment;
         
         this.renderer.material = fragment.material;
         //this.audioSource.clip = fragment.GetClip();
         this.audioEventName = fragment.audioEventName;
+
+
     }
 
     public void EmitSound()
     {
         WwiseAudioManager.instance.PlayFiniteEvent(audioEventName, this.gameObject);
         print("Emit Sound");
+    }
+
+    public void SetJustReceivedFragmentComplete(bool boolean)
+    {
+        isFragmentComplete = boolean;
+        tMemory.SetItem<bool>("justReceivedFragment", boolean);
+    }
+    public void SetIsFragmentComplete(bool boolean)
+    {
+        isFragmentComplete = boolean;
+        tMemory.SetItem<bool>("isFragmentComplete", boolean);
     }
 
     public void SetPlayerIsInRange(bool boolean)
