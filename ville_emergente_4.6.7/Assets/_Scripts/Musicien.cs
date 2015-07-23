@@ -25,21 +25,34 @@ public class Musicien : MonoBehaviour{
     //public List<Fragment> fragments = new List<Fragment>();
     public Fragment fragment = null;
 
-    public GameObject[] targets=null;
-
+    public static GameObject[] allNavTargets=null;
+    public List<GameObject> targets = new List<GameObject>();
 	public GameObject previousTarget = null;
 
 	public GameObject[] buildings;
 
-	public bool done=false;
+	public bool isFragmentComplete=false;
 	
 	public void Awake()
     {
        tag = "NPC";
        // if(targets==null)
-		Debug.Log ("START MUSICIENN");
-            targets = GameObject.FindGameObjectsWithTag("NavigationTarget");
-			Debug.Log ("FINISH MUSICIENN");
+       //Debug.Log ("START MUSICIENN");
+       int matriculeMusicien = int.Parse(this.gameObject.name.Substring(8));
+
+
+        if (allNavTargets==null)
+            allNavTargets = GameObject.FindGameObjectsWithTag("NavigationTarget");
+        foreach (GameObject gObject in allNavTargets)
+       {
+           if (gObject.name == "Navigation Target " + matriculeMusicien)
+           {
+               targets.Add(gObject);
+           }
+        }
+       //targets = GameObject.FindGame
+
+		//Debug.Log ("FINISH MUSICIENN");
 
 	}
 
@@ -48,6 +61,7 @@ public class Musicien : MonoBehaviour{
     {
         audioEventName = defaultAudioEventName;
 
+        //print("number : " + this.gameObject.name.Substring(8));
         AIRig aiRig = GetComponentInChildren<AIRig>();
         tMemory = aiRig.AI.WorkingMemory as RAIN.Memory.BasicMemory;
 
@@ -71,11 +85,12 @@ public class Musicien : MonoBehaviour{
             EmitSound();
         }
 
-		if (done) {
-
+        if (isFragmentComplete)
+        {
+            isFragmentComplete = false;
 			for (int i=0; i<buildings.Length ; i++ )
 			{
-				buildings[i].GetComponent<hideBuilding>().Down();
+				buildings[i].GetComponent<Building>().Down();
 			}
 
 		}
@@ -84,17 +99,28 @@ public class Musicien : MonoBehaviour{
     public void OnAddingFragment(Fragment fragment)
     {
         print("NPC:OnAddingFragment");
+
+        SetIsFragmentComplete(true);
+
         this.fragment = fragment;
         
         this.renderer.material = fragment.material;
         //this.audioSource.clip = fragment.GetClip();
         this.audioEventName = fragment.audioEventName;
+
+
     }
 
     public void EmitSound()
     {
         WwiseAudioManager.instance.PlayFiniteEvent(audioEventName, this.gameObject);
         print("Emit Sound");
+    }
+
+    public void SetIsFragmentComplete(bool boolean)
+    {
+        isFragmentComplete = boolean;
+        tMemory.SetItem<bool>("isFragmentComplete", boolean);
     }
 
     public void SetPlayerIsInRange(bool boolean)

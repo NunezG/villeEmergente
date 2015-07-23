@@ -1,9 +1,27 @@
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	296257622	binaural_to_convolver			\Default Work Unit\binaural_to_convolver	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	52442795	Binaural			\Default Work Unit\Master Audio Bus\Binaural	
+	259010940	Atmospheric			\Default Work Unit\Master Audio Bus\Convolutions\Atmospheric	
+	579757428	Convolutions			\Default Work Unit\Master Audio Bus\Convolutions	
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
-	3042021448	Others			\Default Work Unit\Master Audio Bus\Others	
+	1404066300	Ambiances			\Default Work Unit\Master Audio Bus\Ambiances	
+	2362353244	ri_shevannai			\Default Work Unit\Master Audio Bus\Convolutions\Atmospheric\ri_shevannai	
+	2654963775	ri_skanner_pad			\Default Work Unit\Master Audio Bus\Convolutions\Atmospheric\ri_skanner_pad	
+	3711219716	ri_suriya			\Default Work Unit\Master Audio Bus\Convolutions\Atmospheric\ri_suriya	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3891660296	ri_marseilles			\Default Work Unit\Master Audio Bus\Convolutions\Atmospheric\ri_marseilles	
+	3909810158	ri_sylenth			\Default Work Unit\Master Audio Bus\Convolutions\Atmospheric\ri_sylenth	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	4028308920	binaural_send			\Default Work Unit\Master Audio Bus\Binaural\binaural_send	
 
 Effect plug-ins	ID	Name	Type				Notes
+	588083490	Default (Custom)	Wwise Convolution Reverb			
+	656682112	Wwise Convolution Reverb (Custom)	Wwise Convolution Reverb			
+	663026688	Wwise Convolution Reverb (Custom)	Wwise Convolution Reverb			
 	780565931	AstoundSound RTI (Custom)	AstoundSound RTI			
+	903187691	Wwise Convolution Reverb (Custom)	Wwise Convolution Reverb			
+	996732645	Wwise Convolution Reverb (Custom)	Wwise Convolution Reverb			
 

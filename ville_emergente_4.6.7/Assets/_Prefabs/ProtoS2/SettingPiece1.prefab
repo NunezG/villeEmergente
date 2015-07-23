@@ -11,10 +11,9 @@ GameObject:
   - 33: {fileID: 3362930}
   - 23: {fileID: 2362930}
   - 95: {fileID: 9562930}
-  - 114: {fileID: 11462928}
   - 114: {fileID: 11462930}
-  - 64: {fileID: 6462930}
   - 65: {fileID: 6512382}
+  - 114: {fileID: 11479858}
   m_Layer: 0
   m_Name: SettingPiece1
   m_TagString: Untagged
@@ -89,19 +88,6 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162928}
-  m_Mesh: {fileID: 4300000, guid: 2d91023f2b839e343af1e7998a827a93, type: 3}
---- !u!64 &6462930
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 162928}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 2d91023f2b839e343af1e7998a827a93, type: 3}
 --- !u!65 &6512382
 BoxCollider:
@@ -188,18 +174,6 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11462928
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 162928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdc7d4d9e1e52144d9bfd6640a3062f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 2
 --- !u!114 &11462930
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -217,6 +191,18 @@ MonoBehaviour:
   defaultAudioEventName: prendre_morceau
   fragment: {fileID: 0}
   isPlayingInteract: 0
+--- !u!114 &11479858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9657b458081836b419512ffebd4262ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
