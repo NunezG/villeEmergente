@@ -82,9 +82,9 @@ public class Musicien : MonoBehaviour{
         {
             timer = 0;
             endTimer = (int)Random.Range(minEndTimer, maxEndTimer);
-            //EmitSound();
+            EmitSound();
         }
-        /*
+
         if (isFragmentComplete)
         {
             isFragmentComplete = false;
@@ -93,7 +93,7 @@ public class Musicien : MonoBehaviour{
 				buildings[i].GetComponent<Building>().Down();
 			}
 
-		}*/
+		}
 	}
     
     public void OnAddingFragment(Fragment fragment)
@@ -109,14 +109,6 @@ public class Musicien : MonoBehaviour{
         this.audioEventName = fragment.audioEventName;
 
 
-    }
-
-    public void OpenTheWay()
-    {
-        for (int i = 0; i < buildings.Length; i++)
-        {
-            buildings[i].GetComponent<Building>().Down();
-        }
     }
 
     public void EmitSound()
