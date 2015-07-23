@@ -22,8 +22,8 @@ MonoBehaviour:
       name=&quot;Changement&quot; debugbreak=&quot;False&quot;&gt;&lt;expression returnvalue=&quot;evaluate&quot;
       repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;Reception du morceau&quot;
       expression=&quot;justReceivedFragment==true&quot; debugbreak=&quot;False&quot;
-      /&gt;&lt;expression returnvalue=&quot;evaluate&quot; repeatuntil=&quot;&quot;
-      priority=&quot;&quot; name=&quot;rester condition&quot; expression=&quot;justReceivedFragment=false&quot;
+      /&gt;&lt;expression returnvalue=&quot;success&quot; repeatuntil=&quot;&quot;
+      priority=&quot;&quot; name=&quot;reset condition&quot; expression=&quot;justReceivedFragment=false&quot;
       debugbreak=&quot;False&quot; /&gt;&lt;sequencer usepriorities=&quot;False&quot;
       repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;Changement d'etat&quot;
       debugbreak=&quot;False&quot;&gt;&lt;expression returnvalue=&quot;evaluate&quot;
@@ -38,7 +38,7 @@ MonoBehaviour:
       priority=&quot;&quot; name=&quot;son emis&quot; debugbreak=&quot;False&quot;&gt;&lt;expression
       returnvalue=&quot;evaluate&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
       name=&quot;soundTimerHasEnded&quot; expression=&quot;soundTimerHasEnded==true&quot;
-      debugbreak=&quot;False&quot; /&gt;&lt;expression returnvalue=&quot;evaluate&quot;
+      debugbreak=&quot;False&quot; /&gt;&lt;expression returnvalue=&quot;success&quot;
       repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;reset condition&quot;
       expression=&quot;soundTimerHasEnded=false&quot; debugbreak=&quot;False&quot;
       /&gt;&lt;selector usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
@@ -81,9 +81,12 @@ MonoBehaviour:
       debugbreak=&quot;False&quot;&gt;&lt;expression returnvalue=&quot;evaluate&quot;
       repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;waitTimerHasEnded&quot;
       expression=&quot;waitTimerHasEnded==true&quot; debugbreak=&quot;False&quot;
-      /&gt;&lt;expression returnvalue=&quot;evaluate&quot; repeatuntil=&quot;&quot;
+      /&gt;&lt;expression returnvalue=&quot;success&quot; repeatuntil=&quot;&quot;
       priority=&quot;&quot; name=&quot;reset waitTimer&quot; expression=&quot;waitTimerHasEnded=false&quot;
       debugbreak=&quot;False&quot; /&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot;
+      parametervalues=&quot;UExPTks=&quot; parameters=&quot;dG9QcmludEV4cA==&quot;
+      namespace=&quot;&quot; name=&quot;action&quot; debugbreak=&quot;False&quot;
+      classname=&quot;AiPrint&quot; /&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot;
       parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;&quot;
       name=&quot;definir nouvelle destination&quot; debugbreak=&quot;False&quot; classname=&quot;ProtoSelectTarget&quot;
       /&gt;&lt;/sequencer&gt;&lt;/sequencer&gt;&lt;/selector&gt;&lt;/behaviortree&gt;\"
