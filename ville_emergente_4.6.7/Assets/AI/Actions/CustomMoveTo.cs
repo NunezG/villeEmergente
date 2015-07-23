@@ -10,18 +10,35 @@ public class CustomMoveTo : RAINAction
 {
     public override void Start(RAIN.Core.AI ai)
     {
+		ai.WorkingMemory.SetItem<bool> ("moving", true);
         base.Start(ai);
     }
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
-		ai.Body.GetComponent<NavMeshAgent> ().SetDestination(ai.WorkingMemory.GetItem<GameObject> ("target").transform.position);
+		NavMeshAgent agent = ai.Body.GetComponent<NavMeshAgent>();
+		//NavMeshPath navPath = new NavMeshPath();
+		//ai.Body.GetComponent<NavMeshAgent> ().Move
+		//ai.Body.GetComponent<NavMeshAgent> ().SamplePathPosition ();
+		//ai.Body.GetComponent<NavMeshAgent> ().CalculatePath (ai.WorkingMemory.GetItem<GameObject> ("target").transform.position, navPath);
+		
+		//navPath.corners[0];
+		//ai.Body.GetComponent<NavMeshAgent> ().Move (ai.Body.GetComponent<NavMeshAgent> ().nextPosition);
 		//ai.Body.GetComponent<NavMeshAgent> ().Resume ();
-		//ai.WorkingMemory.SetItem<bool> ("OnMyWay", true);
+
+		if (!ai.WorkingMemory.GetItem<bool> ("moving"))
+		{
+			if (agent.enabled)
+			{
+				agent.Stop();
+				agent.ResetPath();
+			}
+			return ActionResult.FAILURE;
+		}
 		
 		if (ai.Body.transform.position.x == ai.WorkingMemory.GetItem<GameObject> ("target").transform.position.x
-			&& ai.Body.transform.position.z == ai.WorkingMemory.GetItem<GameObject> ("target").transform.position.z) {
-				
+			&& ai.Body.transform.position.z == ai.WorkingMemory.GetItem<GameObject> ("target").transform.position.z) 
+		{
 			//private void RotateTowards (Transform target) {
 			Vector3 direction = (ai.WorkingMemory.GetItem<GameObject> ("target").transform.position - ai.Body.transform.position).normalized;
 			Quaternion lookRotation = Quaternion.LookRotation(direction);
@@ -30,7 +47,9 @@ public class CustomMoveTo : RAINAction
 			return ActionResult.SUCCESS;
 
 		}
-		
+
+		agent.SetDestination(ai.WorkingMemory.GetItem<GameObject> ("target").transform.position);
+
         return ActionResult.RUNNING;
     }
 

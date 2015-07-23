@@ -13,26 +13,19 @@ public class CustomStopMovement : RAINAction
     }
 
     public override ActionResult Execute(RAIN.Core.AI ai)
-    {
-
-		NavMeshAgent Agent = ai.Body.GetComponent<NavMeshAgent>();
+    {		
+		NavMeshAgent agent = ai.Body.GetComponent<NavMeshAgent>();
 			
-		StopMoving(Agent);
+		if (agent.enabled)
+		{
+			agent.Stop();
+			agent.ResetPath();
+		}
+
 		//ai.WorkingMemory.SetItem<bool> ("OnMyWay", false);
         return ActionResult.SUCCESS;
     }
-
-
 	
-	
-	public void StopMoving(NavMeshAgent p_agent)
-	{			
-		if (p_agent.enabled)
-		{
-			p_agent.Stop();
-			p_agent.ResetPath();
-		}
-	}
 
 
     public override void Stop(RAIN.Core.AI ai)
