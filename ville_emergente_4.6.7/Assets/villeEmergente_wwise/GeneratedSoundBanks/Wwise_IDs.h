@@ -102,10 +102,12 @@ namespace AK
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MASTER_SECONDARY_BUS = 805203703U;
         static const AkUniqueID RI_MARSEILLES = 3891660296U;
+        static const AkUniqueID RI_REVLIGHT = 3309417244U;
         static const AkUniqueID RI_SHEVANNAI = 2362353244U;
         static const AkUniqueID RI_SKANNER_PAD = 2654963775U;
         static const AkUniqueID RI_SURIYA = 3711219716U;
         static const AkUniqueID RI_SYLENTH = 3909810158U;
+        static const AkUniqueID RI_SYMPHOBIA = 2623519623U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

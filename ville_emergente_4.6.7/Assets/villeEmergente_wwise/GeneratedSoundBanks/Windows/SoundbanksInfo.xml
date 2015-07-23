@@ -24,6 +24,11 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_shevannai_F1A59D96.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="212197897" Language="SFX">
+					<ShortName>ri_symphobia.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_symphobia_1022339C.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="640771282" Language="SFX">
 					<ShortName>ri_sylenth.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_sylenth_F1482EAF.wem</Path>
@@ -32,6 +37,11 @@
 				<File Id="758536210" Language="SFX">
 					<ShortName>ri_skanner_pad.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_skanner_pad_0308A06B.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="763805354" Language="SFX">
+					<ShortName>ri_rev_light.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_rev_light_F843A9A4.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="971457556" Language="SFX">
@@ -87,6 +97,10 @@
 					<ShortName>sfx_pas_mere_chambre_02.wav</ShortName>
 					<Path>SFX\sfx_pas_mere_chambre_02_597F6127.wem</Path>
 				</File>
+				<File Id="133497567" Language="SFX">
+					<ShortName>sfx_busy_street.wav</ShortName>
+					<Path>SFX\sfx_busy_street_D64AECDA.wem</Path>
+				</File>
 				<File Id="165344794" Language="SFX">
 					<ShortName>soft rain - brown noise - human activities - drops reverb - 02.wav</ShortName>
 					<Path>SFX\soft rain - brown noise - human activities - drops reverb - 02_8AC08B01.wem</Path>
@@ -103,41 +117,37 @@
 					<ShortName>sfx_pas_mere_chambre_03.wav</ShortName>
 					<Path>SFX\sfx_pas_mere_chambre_03_C34D06FC.wem</Path>
 				</File>
+				<File Id="523768018" Language="SFX">
+					<ShortName>sfx_drops_carboard.wav</ShortName>
+					<Path>SFX\sfx_drops_carboard_D64AECDA.wem</Path>
+				</File>
 				<File Id="526131746" Language="SFX">
 					<ShortName>sfx_pas_mere_chambre_01.wav</ShortName>
 					<Path>SFX\sfx_pas_mere_chambre_01_A6FDDFC4.wem</Path>
+				</File>
+				<File Id="554074608" Language="SFX">
+					<ShortName>sfx_soft_rain.wav</ShortName>
+					<Path>SFX\sfx_soft_rain_D64AECDA.wem</Path>
 				</File>
 				<File Id="592176391" Language="SFX">
 					<ShortName>sfx_pas_mere_chambre_04.wav</ShortName>
 					<Path>SFX\sfx_pas_mere_chambre_04_89C402CC.wem</Path>
 				</File>
-				<File Id="638620715" Language="SFX">
-					<ShortName>sfx_electric_buzz.wav</ShortName>
-					<Path>SFX\sfx_electric_buzz_BFE6AB60.wem</Path>
-				</File>
-				<File Id="718304696" Language="SFX">
-					<ShortName>sfx_soft_rain.wav</ShortName>
-					<Path>SFX\sfx_soft_rain_BFE6AB60.wem</Path>
-				</File>
 				<File Id="759217420" Language="SFX">
 					<ShortName>sfx_donner_lampe.wav</ShortName>
 					<Path>SFX\sfx_donner_lampe_3DEC88C6.wem</Path>
-				</File>
-				<File Id="864713684" Language="SFX">
-					<ShortName>sfx_drops_carboard.wav</ShortName>
-					<Path>SFX\sfx_drops_carboard_BFE6AB60.wem</Path>
 				</File>
 				<File Id="925339519" Language="SFX">
 					<ShortName>sfx_water_splash.wav</ShortName>
 					<Path>SFX\sfx_water_splash_7AC5595F.wem</Path>
 				</File>
-				<File Id="940668402" Language="SFX">
-					<ShortName>sfx_busy_street.wav</ShortName>
-					<Path>SFX\sfx_busy_street_BFE6AB60.wem</Path>
-				</File>
 				<File Id="943957025" Language="SFX">
 					<ShortName>paddle light freely 01.wav</ShortName>
 					<Path>SFX\paddle light freely 01_C7E637FB.wem</Path>
+				</File>
+				<File Id="1004131313" Language="SFX">
+					<ShortName>sfx_electric_buzz.wav</ShortName>
+					<Path>SFX\sfx_electric_buzz_D64AECDA.wem</Path>
 				</File>
 				<File Id="1038465850" Language="SFX">
 					<ShortName>cymbal_reverb.wav</ShortName>

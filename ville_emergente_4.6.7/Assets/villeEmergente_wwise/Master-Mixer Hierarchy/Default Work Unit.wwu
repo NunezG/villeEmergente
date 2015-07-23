@@ -544,6 +544,182 @@
 												</Reference>
 											</ReferenceList>
 										</Bus>
+										<Bus Name="ri_revlight" ID="{0E0F6521-7C0B-4E26-8D0E-853BCA55A12D}">
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Convolution Reverb (Custom)" ID="{B10D6C7F-D90D-4D79-A0AE-E741C847CD47}" ShortID="1056604666" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+															<PropertyList>
+																<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																<Property Name="IRConvolutionStop" Type="Real64" Value="1.93510416666667"/>
+																<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																<Property Name="IRStretch" Type="Real32" Value="200"/>
+																<Property Name="WetLevel" Type="Real32" Value="-12"/>
+															</PropertyList>
+															<ChildrenList>
+																<PluginMediaSource Name="ri_rev_light" ID="{7B0E17D3-D112-46ED-AA15-CE14A0557BB3}" ShortID="763805354">
+																	<ParentPluginID>8323075</ParentPluginID>
+																	<PropertyList>
+																		<Property Name="DataFileName" Type="string" Value="ri_rev_light.wav"/>
+																	</PropertyList>
+																</PluginMediaSource>
+															</ChildrenList>
+															<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{C1E88D0A-0AB6-4C6C-B14F-B3AAA78A16E6}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{37E2F426-F50E-4CF7-A4F2-B16FEAFA2BA6}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.93510416666667</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{0FE9F38E-E2CC-459E-BA1E-2671D2153FA8}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.93510416666667</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+										</Bus>
+										<Bus Name="ri_symphobia" ID="{CF673215-420F-43AD-9863-10CA083CBF51}">
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Convolution Reverb (Custom)" ID="{F684D795-BAD6-431F-B76B-48C05F4B4BA0}" ShortID="292044210" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+															<PropertyList>
+																<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																<Property Name="IRConvolutionStop" Type="Real64" Value="1.72385416666667"/>
+																<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																<Property Name="IRStretch" Type="Real32" Value="200"/>
+																<Property Name="WetLevel" Type="Real32" Value="-20"/>
+															</PropertyList>
+															<ChildrenList>
+																<PluginMediaSource Name="ri_symphobia" ID="{781D07F5-B40A-45F6-AB01-967FA494DE32}" ShortID="212197897">
+																	<ParentPluginID>8323075</ParentPluginID>
+																	<PropertyList>
+																		<Property Name="DataFileName" Type="string" Value="ri_symphobia.wav"/>
+																	</PropertyList>
+																</PluginMediaSource>
+															</ChildrenList>
+															<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{A216F5D7-E200-4B48-8638-9C8AD97D7EE9}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{C8E2B5F3-FE5D-4B0B-A5CD-96E845882BE1}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.72385416666667</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{638EE04B-7254-4A0B-ADB2-725C7F20C9F1}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.72385416666667</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+										</Bus>
 									</ChildrenList>
 								</Bus>
 							</ChildrenList>
