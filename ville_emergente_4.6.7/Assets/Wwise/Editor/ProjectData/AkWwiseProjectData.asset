@@ -16,18 +16,30 @@ MonoBehaviour:
     ParentPhysicalPath: 
     Guid: '{7F93A25F-2979-462E-8B53-8DECAD100DFF}'
     List:
-    - Name: footsteps
-      Path: Default Work Unit\Joueur\footsteps
+    - Name: footsteps_play
+      Path: Default Work Unit\Joueur\footsteps_play
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Joueur
         ObjectType: 4
-      - ElementName: footsteps
+      - ElementName: footsteps_play
         ObjectType: 3
-      ID: -1909339098
+      ID: 1198733287
       Guid: db4cfddc114e164080e21adcd1cc4389
-      maxAttenuation: 25
+      maxAttenuation: 0
+    - Name: footsteps_stop
+      Path: Default Work Unit\Joueur\footsteps_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Joueur
+        ObjectType: 4
+      - ElementName: footsteps_stop
+        ObjectType: 3
+      ID: -107601611
+      Guid: 525d0e49c9c33d489038053e1f03d1a6
+      maxAttenuation: 0
     - Name: lacher_morceau
       Path: Default Work Unit\Joueur\lacher_morceau
       PathAndIcons:
@@ -39,7 +51,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1759500647
       Guid: 0829f1ece930964faa3bd51c90e42f61
-      maxAttenuation: 25
+      maxAttenuation: 0
     - Name: linker_morceau
       Path: Default Work Unit\Joueur\linker_morceau
       PathAndIcons:
@@ -51,7 +63,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -615097439
       Guid: fe6a447c6ea03542a46bc95890394549
-      maxAttenuation: 25
+      maxAttenuation: 0
     - Name: prendre_morceau
       Path: Default Work Unit\Joueur\prendre_morceau
       PathAndIcons:
@@ -63,7 +75,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 2138522384
       Guid: c36c4d293c1a974f84c14d54963c81bb
-      maxAttenuation: 25
+      maxAttenuation: 0
     - Name: rain_2DObject_play
       Path: Default Work Unit\Tests Wwise Pierre\rain_2DObject_play
       PathAndIcons:
@@ -99,7 +111,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1398099514
       Guid: a64fd120264ccf4d92ea696661c9a73c
-      maxAttenuation: 25
+      maxAttenuation: 0
     - Name: ville_calme
       Path: Default Work Unit\Ambiances\ville_calme
       PathAndIcons:
@@ -123,7 +135,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 193498114
       Guid: 79abcf98f2eb31439fb6ce8aec825aa1
-      maxAttenuation: 25
+      maxAttenuation: 0
     - Name: water_3DObject_stop
       Path: Default Work Unit\Tests Wwise Pierre\water_3DObject_stop
       PathAndIcons:
@@ -191,12 +203,12 @@ MonoBehaviour:
   - /villeEmergente_wwise/Events
   - /villeEmergente_wwise/Events/Default Work Unit
   - /villeEmergente_wwise/Events/Default Work Unit/Joueur
-  m_lastPopulateTimePsrt1: -614022116
-  m_lastPopulateTimePart2: -1999467024
+  m_lastPopulateTimePsrt1: 1119603149
+  m_lastPopulateTimePart2: -1999466210
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)
   defaultPoolSize: 4096
-  lowerPoolSize: 2048
+  lowerPoolSize: 4096
   streamingPoolSize: 1024
   memoryCutoffThreshold: .949999988

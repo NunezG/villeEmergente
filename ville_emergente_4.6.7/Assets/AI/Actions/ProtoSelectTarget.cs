@@ -16,11 +16,11 @@ public class ProtoSelectTarget : RAINAction
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
-		Debug.Log ("SELECTTARG");
+		//Debug.Log ("SELECTTARG");
 		if (target == null) {
 			//Debut de la partie
-			int targetIndex = Random.Range (0, ai.Body.GetComponent<Musicien>().targets.Length - 1);
-
+			int targetIndex = Random.Range (0, ai.Body.GetComponent<Musicien>().targets.Count - 1);
+            Debug.Log("targetIndex : " + targetIndex);
 			target = ai.Body.GetComponent<Musicien>().targets [targetIndex];
 
 		} else {
