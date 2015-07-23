@@ -16,6 +16,132 @@ MonoBehaviour:
     ParentPhysicalPath: 
     Guid: '{7F93A25F-2979-462E-8B53-8DECAD100DFF}'
     List:
+    - Name: busy_street_convolver
+      Path: Default Work Unit\Fragments\Sfx busy street\busy_street_convolver
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Sfx busy street
+        ObjectType: 4
+      - ElementName: busy_street_convolver
+        ObjectType: 3
+      ID: 1588676051
+      Guid: 9cc141fd574f65408cd4e550e25bc4cd
+      maxAttenuation: 25
+    - Name: busy_street_play
+      Path: Default Work Unit\Fragments\Sfx busy street\busy_street_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Sfx busy street
+        ObjectType: 4
+      - ElementName: busy_street_play
+        ObjectType: 3
+      ID: -1048766511
+      Guid: 4762f2e5f4ed634d9ac498b587c5d947
+      maxAttenuation: 25
+    - Name: busy_street_stop
+      Path: Default Work Unit\Fragments\Sfx busy street\busy_street_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Sfx busy street
+        ObjectType: 4
+      - ElementName: busy_street_stop
+        ObjectType: 3
+      ID: 202648455
+      Guid: 4b8e53719b17fb42a43254679c2b72bd
+      maxAttenuation: 0
+    - Name: drops_cardboard_convolver
+      Path: Default Work Unit\Fragments\Sfx drops cardboard\drops_cardboard_convolver
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Sfx drops cardboard
+        ObjectType: 4
+      - ElementName: drops_cardboard_convolver
+        ObjectType: 3
+      ID: 804981421
+      Guid: 585324df86f9734da0b7dd36238ac25f
+      maxAttenuation: 25
+    - Name: drops_cardboard_play
+      Path: Default Work Unit\Fragments\Sfx drops cardboard\drops_cardboard_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Sfx drops cardboard
+        ObjectType: 4
+      - ElementName: drops_cardboard_play
+        ObjectType: 3
+      ID: -1429201493
+      Guid: d06c9440cdf4f24da2d4350ab8080ef0
+      maxAttenuation: 25
+    - Name: drops_cardboard_stop
+      Path: Default Work Unit\Fragments\Sfx drops cardboard\drops_cardboard_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Sfx drops cardboard
+        ObjectType: 4
+      - ElementName: drops_cardboard_stop
+        ObjectType: 3
+      ID: 1688429121
+      Guid: 81c3c30be1b93f47a4b1422199d66cbc
+      maxAttenuation: 0
+    - Name: electric_buzz_convolver
+      Path: Default Work Unit\Fragments\Sfx electric buzz\electric_buzz_convolver
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Sfx electric buzz
+        ObjectType: 4
+      - ElementName: electric_buzz_convolver
+        ObjectType: 3
+      ID: -2050632445
+      Guid: 67483b8120948449ac8c30b90e264a26
+      maxAttenuation: 25
+    - Name: electric_buzz_play
+      Path: Default Work Unit\Fragments\Sfx electric buzz\electric_buzz_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Sfx electric buzz
+        ObjectType: 4
+      - ElementName: electric_buzz_play
+        ObjectType: 3
+      ID: -87885887
+      Guid: d286b7e26f627849b38d7f784a6d0868
+      maxAttenuation: 25
+    - Name: electric_buzz_stop
+      Path: Default Work Unit\Fragments\Sfx electric buzz\electric_buzz_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Sfx electric buzz
+        ObjectType: 4
+      - ElementName: electric_buzz_stop
+        ObjectType: 3
+      ID: -2062893417
+      Guid: 91f73d9157436f479e44619adc4b40f0
+      maxAttenuation: 0
     - Name: footsteps_play
       Path: Default Work Unit\Joueur\footsteps_play
       PathAndIcons:
@@ -51,7 +177,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1759500647
       Guid: 0829f1ece930964faa3bd51c90e42f61
-      maxAttenuation: 0
+      maxAttenuation: 25
     - Name: linker_morceau
       Path: Default Work Unit\Joueur\linker_morceau
       PathAndIcons:
@@ -63,7 +189,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -615097439
       Guid: fe6a447c6ea03542a46bc95890394549
-      maxAttenuation: 0
+      maxAttenuation: 25
     - Name: prendre_morceau
       Path: Default Work Unit\Joueur\prendre_morceau
       PathAndIcons:
@@ -75,13 +201,13 @@ MonoBehaviour:
         ObjectType: 3
       ID: 2138522384
       Guid: c36c4d293c1a974f84c14d54963c81bb
-      maxAttenuation: 0
+      maxAttenuation: 25
     - Name: rain_2DObject_play
-      Path: Default Work Unit\Tests Wwise Pierre\rain_2DObject_play
+      Path: Default Work Unit\Tests Wwise Pierre & Guillermo\rain_2DObject_play
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Tests Wwise Pierre
+      - ElementName: Tests Wwise Pierre & Guillermo
         ObjectType: 4
       - ElementName: rain_2DObject_play
         ObjectType: 3
@@ -89,16 +215,142 @@ MonoBehaviour:
       Guid: 111b8e11007f614393ff063409b548aa
       maxAttenuation: 0
     - Name: rain_2DObject_stop
-      Path: Default Work Unit\Tests Wwise Pierre\rain_2DObject_stop
+      Path: Default Work Unit\Tests Wwise Pierre & Guillermo\rain_2DObject_stop
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Tests Wwise Pierre
+      - ElementName: Tests Wwise Pierre & Guillermo
         ObjectType: 4
       - ElementName: rain_2DObject_stop
         ObjectType: 3
       ID: -1672704904
       Guid: cb13d3b763c61a4e9e6fe84937b1b5ca
+      maxAttenuation: 0
+    - Name: soft_rain_convolver
+      Path: Default Work Unit\Fragments\Sfx soft rain\soft_rain_convolver
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Sfx soft rain
+        ObjectType: 4
+      - ElementName: soft_rain_convolver
+        ObjectType: 3
+      ID: -415933399
+      Guid: 3fd0cb10a4c49f47a6fa3302ff2e3c0b
+      maxAttenuation: 0
+    - Name: soft_rain_play
+      Path: Default Work Unit\Fragments\Sfx soft rain\soft_rain_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Sfx soft rain
+        ObjectType: 4
+      - ElementName: soft_rain_play
+        ObjectType: 3
+      ID: 425145631
+      Guid: 88cc4cd877305348ac683c96d1e9097a
+      maxAttenuation: 0
+    - Name: soft_rain_stop
+      Path: Default Work Unit\Fragments\Sfx soft rain\soft_rain_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Sfx soft rain
+        ObjectType: 4
+      - ElementName: soft_rain_stop
+        ObjectType: 3
+      ID: -42172611
+      Guid: 9c4c73e14c21794a82f952cc2301fe1e
+      maxAttenuation: 0
+    - Name: switch_bat1
+      Path: Default Work Unit\Batiments\switch_bat1
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: switch_bat1
+        ObjectType: 3
+      ID: -749468526
+      Guid: f684ab60dda73d4d8896cbb1fda57298
+      maxAttenuation: 0
+    - Name: switch_bat2
+      Path: Default Work Unit\Batiments\switch_bat2
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: switch_bat2
+        ObjectType: 3
+      ID: -749468527
+      Guid: f617b6d945d4ba41859cd6001f927507
+      maxAttenuation: 0
+    - Name: switch_bat3
+      Path: Default Work Unit\Batiments\switch_bat3
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: switch_bat3
+        ObjectType: 3
+      ID: -749468528
+      Guid: 9a3903579d3dcc459d5c91060aa1d684
+      maxAttenuation: 0
+    - Name: switch_bat4
+      Path: Default Work Unit\Batiments\switch_bat4
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: switch_bat4
+        ObjectType: 3
+      ID: -749468521
+      Guid: 5c8c711417b36542890589400edbab53
+      maxAttenuation: 0
+    - Name: switch_bat5
+      Path: Default Work Unit\Batiments\switch_bat5
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: switch_bat5
+        ObjectType: 3
+      ID: -749468522
+      Guid: b7be160e13b4554ba33a8e7551bd81f3
+      maxAttenuation: 0
+    - Name: switch_bat6
+      Path: Default Work Unit\Batiments\switch_bat6
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: switch_bat6
+        ObjectType: 3
+      ID: -749468523
+      Guid: 1d327f8d2353ee4f9f8d5e14a3d2ccbb
+      maxAttenuation: 0
+    - Name: switch_bat7
+      Path: Default Work Unit\Batiments\switch_bat7
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: switch_bat7
+        ObjectType: 3
+      ID: -749468524
+      Guid: b5d72531e064584c8347fa17e7576771
       maxAttenuation: 0
     - Name: toucher_element
       Path: Default Work Unit\Joueur\toucher_element
@@ -111,6 +363,48 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1398099514
       Guid: a64fd120264ccf4d92ea696661c9a73c
+      maxAttenuation: 25
+    - Name: traffic_by_convolver
+      Path: Default Work Unit\Fragments\Sfx traffic by\traffic_by_convolver
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Sfx traffic by
+        ObjectType: 4
+      - ElementName: traffic_by_convolver
+        ObjectType: 3
+      ID: 307225475
+      Guid: eafa6760607f0844a5c0a285c03d4c65
+      maxAttenuation: 25
+    - Name: traffic_by_play
+      Path: Default Work Unit\Fragments\Sfx traffic by\traffic_by_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Sfx traffic by
+        ObjectType: 4
+      - ElementName: traffic_by_play
+        ObjectType: 3
+      ID: 2129545025
+      Guid: 3eaca14df8a27145ae189b72db1cb7e5
+      maxAttenuation: 25
+    - Name: traffic_by_stop
+      Path: Default Work Unit\Fragments\Sfx traffic by\traffic_by_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Sfx traffic by
+        ObjectType: 4
+      - ElementName: traffic_by_stop
+        ObjectType: 3
+      ID: 154537495
+      Guid: 23edb3b1abb13d419545339d03345f0a
       maxAttenuation: 0
     - Name: ville_calme
       Path: Default Work Unit\Ambiances\ville_calme
@@ -125,34 +419,89 @@ MonoBehaviour:
       Guid: 46fe2dd25209e6458f793470d16b7937
       maxAttenuation: 0
     - Name: water_3DObject_play
-      Path: Default Work Unit\Tests Wwise Pierre\water_3DObject_play
+      Path: Default Work Unit\Tests Wwise Pierre & Guillermo\water_3DObject_play
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Tests Wwise Pierre
+      - ElementName: Tests Wwise Pierre & Guillermo
         ObjectType: 4
       - ElementName: water_3DObject_play
         ObjectType: 3
       ID: 193498114
       Guid: 79abcf98f2eb31439fb6ce8aec825aa1
-      maxAttenuation: 0
+      maxAttenuation: 25
     - Name: water_3DObject_stop
-      Path: Default Work Unit\Tests Wwise Pierre\water_3DObject_stop
+      Path: Default Work Unit\Tests Wwise Pierre & Guillermo\water_3DObject_stop
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Tests Wwise Pierre
+      - ElementName: Tests Wwise Pierre & Guillermo
         ObjectType: 4
       - ElementName: water_3DObject_stop
         ObjectType: 3
       ID: 836511068
       Guid: 435e056468d2584d95260ef4b79003c8
       maxAttenuation: 0
+    - Name: water_splash_convolver
+      Path: Default Work Unit\Fragments\Sfx water splash\water_splash_convolver
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Sfx water splash
+        ObjectType: 4
+      - ElementName: water_splash_convolver
+        ObjectType: 3
+      ID: -2051786505
+      Guid: 737e57f77b8d23478e1e7ec8bb1fdc4d
+      maxAttenuation: 25
+    - Name: water_splash_play
+      Path: Default Work Unit\Fragments\Sfx water splash\water_splash_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Sfx water splash
+        ObjectType: 4
+      - ElementName: water_splash_play
+        ObjectType: 3
+      ID: 191715533
+      Guid: 9aa30cdc1825bd4d81b266a8adf3a4f7
+      maxAttenuation: 25
+    - Name: water_splash_stop
+      Path: Default Work Unit\Fragments\Sfx water splash\water_splash_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Sfx water splash
+        ObjectType: 4
+      - ElementName: water_splash_stop
+        ObjectType: 3
+      ID: 1308909595
+      Guid: 3e2a8c22d7ec2946b89624b196e9dc12
+      maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{F8645F3A-A46A-4E35-AA42-75DF67E675CA}'
-    List: []
+    List:
+    - Name: binaural_send
+      Path: Default Work Unit\Master Audio Bus\Binaural\binaural_send
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Binaural
+        ObjectType: 2
+      - ElementName: binaural_send
+        ObjectType: 1
+      ID: -266658376
+      Guid: c097d982440c8b45b8d81a90050a6fed
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -163,6 +512,47 @@ MonoBehaviour:
     ParentPhysicalPath: 
     Guid: '{A220CD50-3E72-41A8-A6D6-6FCC60089A54}'
     List:
+    - Name: Elements_decor
+      Path: Default Work Unit\Elements_decor
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Elements_decor
+        ObjectType: 11
+      ID: 575849320
+      Guid: 47a9ea0be6c5994e959b01a0baafcbe4
+      values:
+      - Batiment_1
+      - Batiment_2
+      - Batiment_3
+      - Batiment_4
+      - Batiment_5
+      - Batiment_6
+      - Batiment_7
+      ValueIcons:
+      - ElementName: Batiment_1
+        ObjectType: 10
+      - ElementName: Batiment_2
+        ObjectType: 10
+      - ElementName: Batiment_3
+        ObjectType: 10
+      - ElementName: Batiment_4
+        ObjectType: 10
+      - ElementName: Batiment_5
+        ObjectType: 10
+      - ElementName: Batiment_6
+        ObjectType: 10
+      - ElementName: Batiment_7
+        ObjectType: 10
+      valueIDs: 131dbd2e101dbd2e111dbd2e161dbd2e171dbd2e141dbd2e151dbd2e
+      ValueGuids:
+      - bytes: e6f816571ea47b40aab50050485a63a1
+      - bytes: 6e4be239e2fe3f4396a582a16453d5a2
+      - bytes: f19b4ac8155cf848877e8b808d95163b
+      - bytes: 9657f3ba05922f4aa26bceb00baa02a8
+      - bytes: 9eb509ba5136b449b96fae4211024c97
+      - bytes: 3aa490ddf4c81c4d88b4514b1e2b19e1
+      - bytes: 3e1573f98fca594fbc850fd246b7783f
     - Name: Material
       Path: Default Work Unit\Material
       PathAndIcons:
@@ -202,13 +592,14 @@ MonoBehaviour:
   - /villeEmergente_wwise
   - /villeEmergente_wwise/Events
   - /villeEmergente_wwise/Events/Default Work Unit
-  - /villeEmergente_wwise/Events/Default Work Unit/Joueur
-  m_lastPopulateTimePsrt1: 1119603149
-  m_lastPopulateTimePart2: -1999466210
+  - /villeEmergente_wwise/Events/Default Work Unit/Fragments
+  - /villeEmergente_wwise/Events/Default Work Unit/Tests Wwise Pierre & Guillermo
+  m_lastPopulateTimePsrt1: 1780011086
+  m_lastPopulateTimePart2: -1999465805
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)
   defaultPoolSize: 4096
-  lowerPoolSize: 4096
+  lowerPoolSize: 2048
   streamingPoolSize: 1024
   memoryCutoffThreshold: .949999988

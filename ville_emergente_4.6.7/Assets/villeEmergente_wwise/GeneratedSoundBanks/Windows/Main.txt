@@ -1,20 +1,53 @@
 Event	ID	Name			Wwise Object Path	Notes
-	193498114	water_3DObject_play			\Default Work Unit\Tests Wwise Pierre\water_3DObject_play	
-	812837510	rain_2DObject_play			\Default Work Unit\Tests Wwise Pierre\rain_2DObject_play	
-	836511068	water_3DObject_stop			\Default Work Unit\Tests Wwise Pierre\water_3DObject_stop	
+	154537495	traffic_by_stop			\Default Work Unit\Fragments\Sfx traffic by\traffic_by_stop	
+	191715533	water_splash_play			\Default Work Unit\Fragments\Sfx water splash\water_splash_play	
+	193498114	water_3DObject_play			\Default Work Unit\Tests Wwise Pierre & Guillermo\water_3DObject_play	
+	202648455	busy_street_stop			\Default Work Unit\Fragments\Sfx busy street\busy_street_stop	
+	307225475	traffic_by_convolver			\Default Work Unit\Fragments\Sfx traffic by\traffic_by_convolver	
+	425145631	soft_rain_play			\Default Work Unit\Fragments\Sfx soft rain\soft_rain_play	
+	804981421	drops_cardboard_convolver			\Default Work Unit\Fragments\Sfx drops cardboard\drops_cardboard_convolver	
+	812837510	rain_2DObject_play			\Default Work Unit\Tests Wwise Pierre & Guillermo\rain_2DObject_play	
+	836511068	water_3DObject_stop			\Default Work Unit\Tests Wwise Pierre & Guillermo\water_3DObject_stop	
 	1198733287	footsteps_play			\Default Work Unit\Joueur\footsteps_play	
+	1308909595	water_splash_stop			\Default Work Unit\Fragments\Sfx water splash\water_splash_stop	
+	1588676051	busy_street_convolver			\Default Work Unit\Fragments\Sfx busy street\busy_street_convolver	
+	1688429121	drops_cardboard_stop			\Default Work Unit\Fragments\Sfx drops cardboard\drops_cardboard_stop	
+	2129545025	traffic_by_play			\Default Work Unit\Fragments\Sfx traffic by\traffic_by_play	
 	2138522384	prendre_morceau			\Default Work Unit\Joueur\prendre_morceau	
+	2232073879	electric_buzz_stop			\Default Work Unit\Fragments\Sfx electric buzz\electric_buzz_stop	
+	2243180791	water_splash_convolver			\Default Work Unit\Fragments\Sfx water splash\water_splash_convolver	
+	2244334851	electric_buzz_convolver			\Default Work Unit\Fragments\Sfx electric buzz\electric_buzz_convolver	
 	2535466649	lacher_morceau			\Default Work Unit\Joueur\lacher_morceau	
-	2622262392	rain_2DObject_stop			\Default Work Unit\Tests Wwise Pierre\rain_2DObject_stop	
+	2622262392	rain_2DObject_stop			\Default Work Unit\Tests Wwise Pierre & Guillermo\rain_2DObject_stop	
+	2865765803	drops_cardboard_play			\Default Work Unit\Fragments\Sfx drops cardboard\drops_cardboard_play	
 	2896867782	toucher_element			\Default Work Unit\Joueur\toucher_element	
 	3115394940	ville_calme			\Default Work Unit\Ambiances\ville_calme	
+	3246200785	busy_street_play			\Default Work Unit\Fragments\Sfx busy street\busy_street_play	
+	3545498768	switch_bat3			\Default Work Unit\Batiments\switch_bat3	
+	3545498769	switch_bat2			\Default Work Unit\Batiments\switch_bat2	
+	3545498770	switch_bat1			\Default Work Unit\Batiments\switch_bat1	
+	3545498772	switch_bat7			\Default Work Unit\Batiments\switch_bat7	
+	3545498773	switch_bat6			\Default Work Unit\Batiments\switch_bat6	
+	3545498774	switch_bat5			\Default Work Unit\Batiments\switch_bat5	
+	3545498775	switch_bat4			\Default Work Unit\Batiments\switch_bat4	
 	3679869857	linker_morceau			\Default Work Unit\Joueur\linker_morceau	
+	3879033897	soft_rain_convolver			\Default Work Unit\Fragments\Sfx soft rain\soft_rain_convolver	
 	4187365685	footsteps_stop			\Default Work Unit\Joueur\footsteps_stop	
+	4207081409	electric_buzz_play			\Default Work Unit\Fragments\Sfx electric buzz\electric_buzz_play	
+	4252794685	soft_rain_stop			\Default Work Unit\Fragments\Sfx soft rain\soft_rain_stop	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
+	575849320	Elements_decor			\Default Work Unit\Elements_decor	
 	3865314626	Material			\Default Work Unit\Material	
 
 Switch	ID	Name	Switch Group			Notes
+	784145680	Batiment_2	Elements_decor			
+	784145681	Batiment_3	Elements_decor			
+	784145683	Batiment_1	Elements_decor			
+	784145684	Batiment_6	Elements_decor			
+	784145685	Batiment_7	Elements_decor			
+	784145686	Batiment_4	Elements_decor			
+	784145687	Batiment_5	Elements_decor			
 	841620460	Concrete	Material			
 	4248645337	Grass	Material			
 
@@ -22,15 +55,22 @@ Effect plug-ins	ID	Name	Type				Notes
 	761516531	Cymbal	Wwise Convolution Reverb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	22416358	sfx_pas_default_02	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_02_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_02		21444
+	22416358	sfx_pas_default_02	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_02_597F6127.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_02		15081
 	165344794	soft rain - brown noise - human activities - drops reverb - 02	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\soft rain - brown noise - human activities - drops reverb - 02_8AC08B01.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\soft rain - brown noise - human activities - drops reverb - 02		4233873
-	506845639	sfx_pas_default_03	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_03_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_03		23006
-	526131746	sfx_pas_default_01	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_01_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_01		19745
-	592176391	sfx_pas_default_04	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_04_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_04		18021
+	364965466	sfx_pas_default_06	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_07_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_06		9108
+	434967323	sfx_traffic_by	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_traffic_by_D64AECDA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Sfx_traffic_by_switch\RI_marseilles\sfx_traffic_by		1994941
+	506845639	sfx_pas_default_03	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_03_C34D06FC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_03		13298
+	526131746	sfx_pas_default_01	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_01_A6FDDFC4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_01		13799
+	592176391	sfx_pas_default_04	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_04_89C402CC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_04		11537
+	638620715	sfx_electric_buzz	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_electric_buzz_BFE6AB60.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Sfx_electric_buzz_switch\RI_marseilles\sfx_electric_buzz		1193062
+	718304696	sfx_soft_rain	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_soft_rain_BFE6AB60.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Sfx_soft_rain_switch\RI_marseilles\sfx_soft_rain		2273396
 	759217420	Prendre morceau	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_donner_lampe_3DEC88C6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Intéractions simples\Prendre morceau		17541
+	864713684	sfx_drops_carboard	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_drops_carboard_BFE6AB60.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Sfx_drops_cardboard_switch\RI_marseilles\sfx_drops_carboard		959642
+	925339519	sfx_water_splash	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_water_splash_7AC5595F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Sfx_water_splash_switch\RI_marseilles\sfx_water_splash		1546204
+	940668402	sfx_busy_street	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_busy_street_BFE6AB60.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Sfx_busy_street_switch\RI_marseilles\sfx_busy_street		1719501
 	943957025	paddle light freely 01	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\paddle light freely 01_C7E637FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\paddle light freely 01		864882
-	1053272547	sfx_pas_default_07	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_08_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_07		21845
-	1071818968	sfx_pas_default_05	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_05_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_05		15156
+	1053272547	sfx_pas_default_07	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_08_6E826BD3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_07		12741
+	1071818968	sfx_pas_default_05	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_05_587E026D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_05		9684
 
 Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
 	1038465850	Cymbal	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\cymbal_reverb_ABED5F63.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Cymbal		704656

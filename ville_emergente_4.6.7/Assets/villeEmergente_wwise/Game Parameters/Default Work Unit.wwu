@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}" SchemaVersion="69">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="binaural_to_convolver" ID="{4771F142-4D7B-451E-8786-58DE18DAFCFA}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
