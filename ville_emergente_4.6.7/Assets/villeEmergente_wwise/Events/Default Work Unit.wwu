@@ -155,7 +155,7 @@
 										<Action Name="Play" ID="{63C982B6-2D03-48C3-A9F8-22ACD9CB8F60}" ShortID="910422277" Type="Play" Scope="One" Global="false">
 											<ElementList>
 												<Element ID="{28C0D680-8C06-4BB2-8471-EA4416800850}" Global="false">
-													<ObjectRef Name="Sfx_busy_street_switch" ID="{999AE0F4-EEF7-4C82-92DE-DB4F1EA9815B}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="sfx_busy_street" ID="{9BB094D0-1F8C-4D8A-92E0-3D962494EE9D}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -170,7 +170,7 @@
 											</PropertyList>
 											<ElementList>
 												<Element ID="{3D2AB5DA-F750-4A2C-B3AF-193A55D39759}" Global="false">
-													<ObjectRef Name="Sfx_busy_street_switch" ID="{999AE0F4-EEF7-4C82-92DE-DB4F1EA9815B}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="sfx_busy_street" ID="{9BB094D0-1F8C-4D8A-92E0-3D962494EE9D}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -207,7 +207,7 @@
 										<Action Name="Play" ID="{1A2CD02F-9653-4938-BEAF-C964174B5D79}" ShortID="837062103" Type="Play" Scope="One" Global="false">
 											<ElementList>
 												<Element ID="{0F2D5626-D6BC-4FAC-91FF-EA356A6FCDF4}" Global="false">
-													<ObjectRef Name="Sfx_drops_cardboard_switch" ID="{FAE18C05-87AD-4BC0-AB34-1549A570AFFF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="sfx_drops_carboard" ID="{0694EA6D-6A43-4BD1-99A7-F3688CEC3E13}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -222,7 +222,7 @@
 											</PropertyList>
 											<ElementList>
 												<Element ID="{7FCE99D7-8B22-4AEA-90E3-0BD5D738DBC1}" Global="false">
-													<ObjectRef Name="Sfx_drops_cardboard_switch" ID="{FAE18C05-87AD-4BC0-AB34-1549A570AFFF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="sfx_drops_carboard" ID="{0694EA6D-6A43-4BD1-99A7-F3688CEC3E13}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -259,7 +259,7 @@
 										<Action Name="Play" ID="{EEC70FD8-B7D5-4E7B-96D7-A3C68399888F}" ShortID="242213326" Type="Play" Scope="One" Global="false">
 											<ElementList>
 												<Element ID="{2DE2A229-A228-4EE1-8F5E-801632CBDB67}" Global="false">
-													<ObjectRef Name="Sfx_electric_buzz_switch" ID="{6F216BB7-73C0-490F-A314-D7ACCBAC468C}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="sfx_electric_buzz" ID="{A3FA89DA-D9D8-4B55-8A40-105F00CA8653}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -274,7 +274,7 @@
 											</PropertyList>
 											<ElementList>
 												<Element ID="{89356806-0998-4743-9E0F-186507BBDB8B}" Global="false">
-													<ObjectRef Name="Sfx_electric_buzz_switch" ID="{6F216BB7-73C0-490F-A314-D7ACCBAC468C}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="sfx_electric_buzz" ID="{A3FA89DA-D9D8-4B55-8A40-105F00CA8653}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -311,7 +311,7 @@
 										<Action Name="Play" ID="{E9AEEEED-9C9B-48DB-8F63-60E61DECD412}" ShortID="756893076" Type="Play" Scope="One" Global="false">
 											<ElementList>
 												<Element ID="{9DC8E8B2-0D90-453B-979F-CA3F02AC3757}" Global="false">
-													<ObjectRef Name="Sfx_soft_rain_switch" ID="{C8BB4C1F-86D9-4F1D-AC82-02D4C2A08373}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="sfx_soft_rain" ID="{61763F5D-48BD-4F4A-8CA8-A73DBDE6B3B6}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -326,7 +326,7 @@
 											</PropertyList>
 											<ElementList>
 												<Element ID="{6E29B44C-4D7B-46DA-B78C-63A92FF535C5}" Global="false">
-													<ObjectRef Name="Sfx_soft_rain_switch" ID="{C8BB4C1F-86D9-4F1D-AC82-02D4C2A08373}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="sfx_soft_rain" ID="{61763F5D-48BD-4F4A-8CA8-A73DBDE6B3B6}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -363,7 +363,7 @@
 										<Action Name="Play" ID="{3E59769A-A375-4E61-950C-EE6DF5145DBD}" ShortID="95653449" Type="Play" Scope="One" Global="false">
 											<ElementList>
 												<Element ID="{08EA55DC-B144-4A26-864A-D17F0C4C4CF3}" Global="false">
-													<ObjectRef Name="Sfx_traffic_by_switch" ID="{11A7082B-BF9B-4713-9EA8-8693403DC416}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="sfx_traffic_by" ID="{37030187-FEA2-46E6-A7A0-79AA4F006ABF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -378,7 +378,7 @@
 											</PropertyList>
 											<ElementList>
 												<Element ID="{FB4E0567-8260-4570-A447-92BF323C03C7}" Global="false">
-													<ObjectRef Name="Sfx_traffic_by_switch" ID="{11A7082B-BF9B-4713-9EA8-8693403DC416}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="sfx_traffic_by" ID="{37030187-FEA2-46E6-A7A0-79AA4F006ABF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -415,7 +415,7 @@
 										<Action Name="Play" ID="{5D60656E-0B3F-4546-8053-C929172692EF}" ShortID="33879618" Type="Play" Scope="One" Global="false">
 											<ElementList>
 												<Element ID="{602EC58D-BF48-44FA-AB5F-FBA7160F3039}" Global="false">
-													<ObjectRef Name="Sfx_water_splash_switch" ID="{D282DED1-6236-452A-8889-8A6584885BF4}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="sfx_water_splash" ID="{E2D5B4B0-112F-4460-B40B-0BB3541F6958}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -430,7 +430,7 @@
 											</PropertyList>
 											<ElementList>
 												<Element ID="{1B1DE076-573D-44F2-AFC9-54786D92459A}" Global="false">
-													<ObjectRef Name="Sfx_water_splash_switch" ID="{D282DED1-6236-452A-8889-8A6584885BF4}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="sfx_water_splash" ID="{E2D5B4B0-112F-4460-B40B-0BB3541F6958}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>

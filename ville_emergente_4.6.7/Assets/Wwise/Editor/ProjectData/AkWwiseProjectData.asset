@@ -488,20 +488,7 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{F8645F3A-A46A-4E35-AA42-75DF67E675CA}'
-    List:
-    - Name: binaural_send
-      Path: Default Work Unit\Master Audio Bus\Binaural\binaural_send
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-      - ElementName: Binaural
-        ObjectType: 2
-      - ElementName: binaural_send
-        ObjectType: 1
-      ID: -266658376
-      Guid: c097d982440c8b45b8d81a90050a6fed
+    List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -529,6 +516,7 @@ MonoBehaviour:
       - Batiment_5
       - Batiment_6
       - Batiment_7
+      - Default
       ValueIcons:
       - ElementName: Batiment_1
         ObjectType: 10
@@ -544,7 +532,9 @@ MonoBehaviour:
         ObjectType: 10
       - ElementName: Batiment_7
         ObjectType: 10
-      valueIDs: 131dbd2e101dbd2e111dbd2e161dbd2e171dbd2e141dbd2e151dbd2e
+      - ElementName: Default
+        ObjectType: 10
+      valueIDs: 131dbd2e101dbd2e111dbd2e161dbd2e171dbd2e141dbd2e151dbd2e98fba82e
       ValueGuids:
       - bytes: e6f816571ea47b40aab50050485a63a1
       - bytes: 6e4be239e2fe3f4396a582a16453d5a2
@@ -553,6 +543,7 @@ MonoBehaviour:
       - bytes: 9eb509ba5136b449b96fae4211024c97
       - bytes: 3aa490ddf4c81c4d88b4514b1e2b19e1
       - bytes: 3e1573f98fca594fbc850fd246b7783f
+      - bytes: 9eb49eb95649a443aa90864549ee2fc7
     - Name: Material
       Path: Default Work Unit\Material
       PathAndIcons:
@@ -592,9 +583,9 @@ MonoBehaviour:
   - /villeEmergente_wwise
   - /villeEmergente_wwise/Events
   - /villeEmergente_wwise/Events/Default Work Unit
-  - /villeEmergente_wwise/Events/Default Work Unit/Joueur
-  m_lastPopulateTimePsrt1: 1744563479
-  m_lastPopulateTimePart2: -1999465601
+  - /villeEmergente_wwise/Events/Default Work Unit/Tests Wwise Pierre & Guillermo
+  m_lastPopulateTimePsrt1: 1728134722
+  m_lastPopulateTimePart2: -1999465435
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)

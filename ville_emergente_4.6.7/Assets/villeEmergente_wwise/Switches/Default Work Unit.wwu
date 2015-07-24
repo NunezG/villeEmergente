@@ -18,6 +18,7 @@
 						<Switch Name="Batiment_5" ID="{BA09B59E-3651-49B4-B96F-AE4211024C97}"/>
 						<Switch Name="Batiment_6" ID="{DD90A43A-C8F4-4D1C-88B4-514B1E2B19E1}"/>
 						<Switch Name="Batiment_7" ID="{F973153E-CA8F-4F59-BC85-0FD246B7783F}"/>
+						<Switch Name="Default" ID="{B99EB49E-4956-43A4-AA90-864549EE2FC7}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>
