@@ -33,7 +33,7 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="busy_street_convolver" ID="{FD41C19C-4F57-4065-8CD4-E550E25BC4CD}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="busy_street_convolver_play" ID="{FD41C19C-4F57-4065-8CD4-E550E25BC4CD}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
@@ -41,7 +41,7 @@
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="drops_cardboard_convolver" ID="{DF245358-F986-4D73-A0B7-DD36238AC25F}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="drops_cardboard_convolver_play" ID="{DF245358-F986-4D73-A0B7-DD36238AC25F}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
 							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
@@ -81,7 +81,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Batiment_7" ID="{F973153E-CA8F-4F59-BC85-0FD246B7783F}"/>
+						<CurrentSwitchRef Name="Batiment_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
 						<CurrentSwitchRef Name="Concrete" ID="{42CEC38C-5153-4D39-B808-3CDB613BA801}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

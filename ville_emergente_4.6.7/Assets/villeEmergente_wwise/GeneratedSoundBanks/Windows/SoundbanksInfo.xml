@@ -13,55 +13,21 @@
 		<SoundBank Id="1355168291" Language="SFX">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
-			<ExcludedMemoryFiles>
-				<File Id="8472028" Language="SFX">
-					<ShortName>ri_marseilles.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_marseilles_AA5D0D94.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="141266967" Language="SFX">
-					<ShortName>ri_shevannai.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_shevannai_F1A59D96.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="212197897" Language="SFX">
-					<ShortName>ri_symphobia.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_symphobia_1022339C.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="640771282" Language="SFX">
-					<ShortName>ri_sylenth.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_sylenth_F1482EAF.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="758536210" Language="SFX">
-					<ShortName>ri_skanner_pad.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_skanner_pad_0308A06B.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="763805354" Language="SFX">
-					<ShortName>ri_rev_light.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_rev_light_F843A9A4.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="971457556" Language="SFX">
-					<ShortName>ri_suriya.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_suriya_F0D73493.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-			</ExcludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="3161908922" Language="SFX">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1588676051" Name="busy_street_convolver" MaxAttenuation="25.000000"/>
+				<Event Id="843571876" Name="busy_street_convolver_play"/>
+				<Event Id="3616019102" Name="busy_street_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="3246200785" Name="busy_street_play" MaxAttenuation="25.000000"/>
 				<Event Id="202648455" Name="busy_street_stop" MaxAttenuation="0.000000"/>
-				<Event Id="804981421" Name="drops_cardboard_convolver" MaxAttenuation="25.000000"/>
+				<Event Id="2764064030" Name="drops_cardboard_convolver_play"/>
+				<Event Id="3760380384" Name="drops_cardboard_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="2865765803" Name="drops_cardboard_play" MaxAttenuation="25.000000"/>
 				<Event Id="1688429121" Name="drops_cardboard_stop" MaxAttenuation="0.000000"/>
-				<Event Id="2244334851" Name="electric_buzz_convolver" MaxAttenuation="25.000000"/>
+				<Event Id="2203347092" Name="electric_buzz_convolver_play"/>
+				<Event Id="3907249774" Name="electric_buzz_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="4207081409" Name="electric_buzz_play" MaxAttenuation="25.000000"/>
 				<Event Id="2232073879" Name="electric_buzz_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1198733287" Name="footsteps_play"/>
@@ -71,7 +37,8 @@
 				<Event Id="2138522384" Name="prendre_morceau" MaxAttenuation="25.000000"/>
 				<Event Id="812837510" Name="rain_2DObject_play"/>
 				<Event Id="2622262392" Name="rain_2DObject_stop" MaxAttenuation="0.000000"/>
-				<Event Id="3879033897" Name="soft_rain_convolver"/>
+				<Event Id="1129695426" Name="soft_rain_convolver_play"/>
+				<Event Id="1731234588" Name="soft_rain_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="425145631" Name="soft_rain_play"/>
 				<Event Id="4252794685" Name="soft_rain_stop" MaxAttenuation="0.000000"/>
 				<Event Id="3545498770" Name="switch_bat1" MaxAttenuation="0.000000"/>
@@ -81,14 +48,17 @@
 				<Event Id="3545498774" Name="switch_bat5" MaxAttenuation="0.000000"/>
 				<Event Id="3545498773" Name="switch_bat6" MaxAttenuation="0.000000"/>
 				<Event Id="3545498772" Name="switch_bat7" MaxAttenuation="0.000000"/>
+				<Event Id="2406558223" Name="switch_default" MaxAttenuation="0.000000"/>
 				<Event Id="2896867782" Name="toucher_element" MaxAttenuation="25.000000"/>
-				<Event Id="307225475" Name="traffic_by_convolver" MaxAttenuation="25.000000"/>
+				<Event Id="1342370836" Name="traffic_by_convolver_play"/>
+				<Event Id="3046273518" Name="traffic_by_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="2129545025" Name="traffic_by_play" MaxAttenuation="25.000000"/>
 				<Event Id="154537495" Name="traffic_by_stop" MaxAttenuation="0.000000"/>
 				<Event Id="3115394940" Name="ville_calme"/>
 				<Event Id="193498114" Name="water_3DObject_play" MaxAttenuation="25.000000"/>
 				<Event Id="836511068" Name="water_3DObject_stop" MaxAttenuation="0.000000"/>
-				<Event Id="2243180791" Name="water_splash_convolver" MaxAttenuation="25.000000"/>
+				<Event Id="2169518128" Name="water_splash_convolver_play" MaxAttenuation="25.000000"/>
+				<Event Id="518000082" Name="water_splash_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="191715533" Name="water_splash_play" MaxAttenuation="25.000000"/>
 				<Event Id="1308909595" Name="water_splash_stop" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
@@ -97,9 +67,19 @@
 					<ShortName>sfx_pas_mere_chambre_02.wav</ShortName>
 					<Path>SFX\sfx_pas_mere_chambre_02_597F6127.wem</Path>
 				</File>
+				<File Id="121343736" Language="SFX">
+					<ShortName>ri_rev_light.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_rev_light_8E718BC5.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="133497567" Language="SFX">
 					<ShortName>sfx_busy_street.wav</ShortName>
 					<Path>SFX\sfx_busy_street_D64AECDA.wem</Path>
+				</File>
+				<File Id="141266967" Language="SFX">
+					<ShortName>ri_shevannai.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_shevannai_F1A59D96.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="165344794" Language="SFX">
 					<ShortName>soft rain - brown noise - human activities - drops reverb - 02.wav</ShortName>
@@ -125,6 +105,11 @@
 					<ShortName>sfx_pas_mere_chambre_01.wav</ShortName>
 					<Path>SFX\sfx_pas_mere_chambre_01_A6FDDFC4.wem</Path>
 				</File>
+				<File Id="550288729" Language="SFX">
+					<ShortName>ri_symphobia.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_symphobia_AF95AB3B.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="554074608" Language="SFX">
 					<ShortName>sfx_soft_rain.wav</ShortName>
 					<Path>SFX\sfx_soft_rain_D64AECDA.wem</Path>
@@ -132,6 +117,16 @@
 				<File Id="592176391" Language="SFX">
 					<ShortName>sfx_pas_mere_chambre_04.wav</ShortName>
 					<Path>SFX\sfx_pas_mere_chambre_04_89C402CC.wem</Path>
+				</File>
+				<File Id="755671691" Language="SFX">
+					<ShortName>ri_marseilles.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_marseilles_AE679101.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="758536210" Language="SFX">
+					<ShortName>ri_skanner_pad.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_skanner_pad_0308A06B.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="759217420" Language="SFX">
 					<ShortName>sfx_donner_lampe.wav</ShortName>
@@ -144,6 +139,16 @@
 				<File Id="943957025" Language="SFX">
 					<ShortName>paddle light freely 01.wav</ShortName>
 					<Path>SFX\paddle light freely 01_C7E637FB.wem</Path>
+				</File>
+				<File Id="971457556" Language="SFX">
+					<ShortName>ri_suriya.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_suriya_F0D73493.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="997528366" Language="SFX">
+					<ShortName>ri_sylenth.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_sylenth_C7C64756.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="1004131313" Language="SFX">
 					<ShortName>sfx_electric_buzz.wav</ShortName>
