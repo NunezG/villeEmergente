@@ -13,14 +13,14 @@ public class Building : InteractibleObject {
 		base.Start ();
 	}
 
-
+    /*
 	void OnMouseDown()
 	{
 		if (lastPos == 0)
 			Down ();
 		else
 			Up ();
-	}
+	}*/
 
 
 	public void Down()

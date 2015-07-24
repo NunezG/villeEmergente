@@ -25,11 +25,12 @@ public class Musicien : MonoBehaviour{
     //public List<Fragment> fragments = new List<Fragment>();
     public Fragment fragment = null;
 
-    public static GameObject[] allNavTargets=null;
+    public static GameObject[] allNavTargets = null;
     public List<GameObject> targets = new List<GameObject>();
 	public GameObject previousTarget = null;
 
 	public GameObject[] buildings;
+
 
 	public bool isFragmentComplete=false;
 	
@@ -50,6 +51,12 @@ public class Musicien : MonoBehaviour{
                targets.Add(gObject);
            }
         }
+
+
+
+
+
+
        //targets = GameObject.FindGame
 
 		//Debug.Log ("FINISH MUSICIENN");
@@ -107,7 +114,6 @@ public class Musicien : MonoBehaviour{
             }
         }
 
-
         /*
         if (isFragmentComplete)
         {
@@ -127,7 +133,7 @@ public class Musicien : MonoBehaviour{
             buildings[i].GetComponent<Building>().Down();
         }
     }
-    
+
     public void OnAddingFragment(Fragment fragment)
     {
         print("NPC:OnAddingFragment");
@@ -149,11 +155,13 @@ public class Musicien : MonoBehaviour{
         print("Emit Sound");
     }
 
+
     public void SetJustReceivedFragmentComplete(bool boolean)
     {
         isFragmentComplete = boolean;
         tMemory.SetItem<bool>("justReceivedFragment", boolean);
     }
+
     public void SetIsFragmentComplete(bool boolean)
     {
         isFragmentComplete = boolean;
@@ -164,6 +172,7 @@ public class Musicien : MonoBehaviour{
     {
         tMemory.SetItem<bool>("playerIsInRange", boolean);
     }
+
     public void SetTargetLookAt(GameObject lookAtTarget)
     {
         tMemory.SetItem<GameObject>("lookAtTarget", lookAtTarget);

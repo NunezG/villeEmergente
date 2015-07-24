@@ -20,7 +20,7 @@ public class ProtoSelectTarget : RAINAction
 		//Debug.Log ("SELECTTARG");
 		if (target == null) {
 			//Debut de la partie
-			int targetIndex = Random.Range (0, ai.Body.GetComponent<Musicien>().targets.Count - 1);
+			int targetIndex = Random.Range (0, ai.Body.GetComponent<Musicien>().targets.Count );
             Debug.Log("targetIndex : " + targetIndex);
 			target = ai.Body.GetComponent<Musicien>().targets [targetIndex];
 
@@ -29,7 +29,7 @@ public class ProtoSelectTarget : RAINAction
 			float percent = Random.Range(0,100);
 
 			//choix random du target suivant
-			int targetIndex = Random.Range (0, target.GetComponent<navigationScript>().targets.Count - 1);
+			int targetIndex = Random.Range (0, target.GetComponent<navigationScript>().targets.Count );
 
 			//si le target choisi est le précédent, on a un 75% de probabilités de recommencer cette action
 			if (ai.Body.GetComponent<Musicien>().previousTarget == target.GetComponent<navigationScript>().targets[targetIndex] &&  percent < 75)
