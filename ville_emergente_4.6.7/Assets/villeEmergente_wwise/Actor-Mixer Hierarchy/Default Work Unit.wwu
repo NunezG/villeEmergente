@@ -1031,6 +1031,9 @@
 																	<PropertyList>
 																		<Property Name="DataFileName" Type="string" Value="ri_marseilles.wav"/>
 																	</PropertyList>
+																	<ConvertedFileIDList>
+																		<File ID="755671691"/>
+																	</ConvertedFileIDList>
 																</PluginMediaSource>
 															</ChildrenList>
 															<PluginData>
