@@ -434,6 +434,11 @@
 							<PropertyList>
 								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -472,6 +477,7 @@
 										<Sound Name="sfx_busy_street" ID="{9D2683FE-945B-464F-A396-B637E786CE0B}" ShortID="599693612" Type="SoundFX">
 											<PropertyList>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -492,6 +498,9 @@
 												<AudioFileSource Name="sfx_busy_street" ID="{48045311-8507-4AA7-A49D-A923EDFBD13E}" ShortID="940668402">
 													<Language>SFX</Language>
 													<AudioFile>sfx_busy_street.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="133497567"/>
+													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -525,6 +534,7 @@
 										<Sound Name="sfx_busy_street" ID="{973B8774-0369-416B-9F70-FEFDDE43A629}" ShortID="434687471" Type="SoundFX">
 											<PropertyList>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -546,7 +556,7 @@
 													<Language>SFX</Language>
 													<AudioFile>sfx_busy_street.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="940668402"/>
+														<File ID="133497567"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -581,6 +591,7 @@
 										<Sound Name="sfx_busy_street" ID="{BDA262C9-9E61-4B14-BC5C-40197E09B035}" ShortID="180516028" Type="SoundFX">
 											<PropertyList>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -602,7 +613,7 @@
 													<Language>SFX</Language>
 													<AudioFile>sfx_busy_street.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="940668402"/>
+														<File ID="133497567"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -637,6 +648,7 @@
 										<Sound Name="sfx_busy_street" ID="{C53BE4A8-BB8C-4A96-9E89-438055113929}" ShortID="847111840" Type="SoundFX">
 											<PropertyList>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -658,7 +670,7 @@
 													<Language>SFX</Language>
 													<AudioFile>sfx_busy_street.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="940668402"/>
+														<File ID="133497567"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -693,6 +705,7 @@
 										<Sound Name="sfx_busy_street" ID="{70A46A8D-373B-4E41-8E6F-4A0CCECEFD52}" ShortID="545479332" Type="SoundFX">
 											<PropertyList>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -713,13 +726,114 @@
 												<AudioFileSource Name="sfx_busy_street" ID="{CD31589C-E8D2-4B4F-BF11-EF60E07A70C8}" ShortID="133497567">
 													<Language>SFX</Language>
 													<AudioFile>sfx_busy_street.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="940668402"/>
-													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="sfx_busy_street" ID="{CD31589C-E8D2-4B4F-BF11-EF60E07A70C8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RI_symphobia" ID="{DB8A8702-ED05-45F2-B965-B0BFAA79BB7C}" ShortID="203265924">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ri_symphobia" ID="{CF673215-420F-43AD-9863-10CA083CBF51}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_busy_street" ID="{98833105-B81C-42E5-B9BF-47683AFDC9A1}" ShortID="619204847" Type="SoundFX">
+											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="ri_marseilles" ID="{C9643B79-B126-4FC2-8D44-DDDF120883C5}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_busy_street" ID="{89B7A76E-FFEC-45C7-9E16-D4BE97B9F05F}" ShortID="610418983">
+													<Language>SFX</Language>
+													<AudioFile>sfx_busy_street.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="133497567"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_busy_street" ID="{89B7A76E-FFEC-45C7-9E16-D4BE97B9F05F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RI_revlight" ID="{676CB072-F5FD-4711-B0D4-90AA3476F31F}" ShortID="681885203">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ri_revlight" ID="{0E0F6521-7C0B-4E26-8D0E-853BCA55A12D}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_busy_street" ID="{38ED7C2D-F440-455A-A508-76FDD83801F6}" ShortID="114300849" Type="SoundFX">
+											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="ri_marseilles" ID="{C9643B79-B126-4FC2-8D44-DDDF120883C5}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_busy_street" ID="{9A74CF41-147D-47AC-ACEB-CD2297C9A976}" ShortID="719769445">
+													<Language>SFX</Language>
+													<AudioFile>sfx_busy_street.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="133497567"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_busy_street" ID="{9A74CF41-147D-47AC-ACEB-CD2297C9A976}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -729,6 +843,12 @@
 								<GroupRef Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
 								<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
 								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="RI_symphobia" ID="{DB8A8702-ED05-45F2-B965-B0BFAA79BB7C}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="RI_revlight" ID="{676CB072-F5FD-4711-B0D4-90AA3476F31F}"/>
+									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="RI_suriya" ID="{B081D18F-8451-4C12-B520-5BE56FB13825}"/>
 									</GroupingBehavior>
@@ -746,6 +866,18 @@
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Batiment_6" ID="{DD90A43A-C8F4-4D1C-88B4-514B1E2B19E1}"/>
+										<ItemList>
+											<ItemRef Name="RI_symphobia" ID="{DB8A8702-ED05-45F2-B965-B0BFAA79BB7C}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Batiment_7" ID="{F973153E-CA8F-4F59-BC85-0FD246B7783F}"/>
+										<ItemList>
+											<ItemRef Name="RI_revlight" ID="{676CB072-F5FD-4711-B0D4-90AA3476F31F}"/>
+										</ItemList>
+									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Batiment_2" ID="{39E24B6E-FEE2-433F-96A5-82A16453D5A2}"/>
 										<ItemList>
@@ -783,6 +915,11 @@
 							<PropertyList>
 								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -826,6 +963,7 @@
 														<Value>40</Value>
 													</ValueList>
 												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -843,9 +981,6 @@
 												<AudioFileSource Name="sfx_soft_rain" ID="{72F34064-8EC0-43A9-BF74-4DCCD276348C}" ShortID="554074608">
 													<Language>SFX</Language>
 													<AudioFile>sfx_soft_rain.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="718304696"/>
-													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -884,6 +1019,7 @@
 														<Value>40</Value>
 													</ValueList>
 												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -902,7 +1038,7 @@
 													<Language>SFX</Language>
 													<AudioFile>sfx_soft_rain.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="718304696"/>
+														<File ID="554074608"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -942,6 +1078,7 @@
 														<Value>40</Value>
 													</ValueList>
 												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -960,7 +1097,7 @@
 													<Language>SFX</Language>
 													<AudioFile>sfx_soft_rain.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="718304696"/>
+														<File ID="554074608"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1000,6 +1137,7 @@
 														<Value>40</Value>
 													</ValueList>
 												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1018,7 +1156,7 @@
 													<Language>SFX</Language>
 													<AudioFile>sfx_soft_rain.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="718304696"/>
+														<File ID="554074608"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1058,6 +1196,7 @@
 														<Value>40</Value>
 													</ValueList>
 												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1076,12 +1215,120 @@
 													<Language>SFX</Language>
 													<AudioFile>sfx_soft_rain.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="718304696"/>
+														<File ID="554074608"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="sfx_soft_rain" ID="{94676DCC-AAC3-4AA7-A288-C2D586D02244}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RI_symphobia" ID="{D905865A-CB56-43A8-8BFC-F499AC31FD68}" ShortID="1004565981">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ri_symphobia" ID="{CF673215-420F-43AD-9863-10CA083CBF51}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_soft_rain" ID="{A50E11B1-DFFC-4170-83EC-6561CB3ED669}" ShortID="247756099" Type="SoundFX">
+											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>40</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_soft_rain" ID="{C08C98F6-E9F6-4662-BECB-F5494206C85D}" ShortID="569442698">
+													<Language>SFX</Language>
+													<AudioFile>sfx_soft_rain.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="554074608"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_soft_rain" ID="{C08C98F6-E9F6-4662-BECB-F5494206C85D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RI_revlight" ID="{9FCD358B-C110-4DA5-9AEA-62882AA30E94}" ShortID="135626320">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ri_revlight" ID="{0E0F6521-7C0B-4E26-8D0E-853BCA55A12D}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_soft_rain" ID="{8F9F3A8F-ABF7-4398-8ADF-2CC11186B60C}" ShortID="372561751" Type="SoundFX">
+											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>40</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_soft_rain" ID="{5F48853B-34CA-456D-9D21-32EB93D4656C}" ShortID="664662564">
+													<Language>SFX</Language>
+													<AudioFile>sfx_soft_rain.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="554074608"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_soft_rain" ID="{5F48853B-34CA-456D-9D21-32EB93D4656C}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -1098,6 +1345,12 @@
 										<ItemRef Name="RI_marseilles" ID="{E5FAF339-0DCB-43AB-BF57-F066E16D1C67}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
+										<ItemRef Name="RI_symphobia" ID="{D905865A-CB56-43A8-8BFC-F499AC31FD68}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="RI_revlight" ID="{9FCD358B-C110-4DA5-9AEA-62882AA30E94}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="RI_suriya" ID="{8C93378D-4E68-4F24-9FD0-D06812F0D0F8}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
@@ -1108,6 +1361,18 @@
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Batiment_6" ID="{DD90A43A-C8F4-4D1C-88B4-514B1E2B19E1}"/>
+										<ItemList>
+											<ItemRef Name="RI_symphobia" ID="{D905865A-CB56-43A8-8BFC-F499AC31FD68}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Batiment_7" ID="{F973153E-CA8F-4F59-BC85-0FD246B7783F}"/>
+										<ItemList>
+											<ItemRef Name="RI_revlight" ID="{9FCD358B-C110-4DA5-9AEA-62882AA30E94}"/>
+										</ItemList>
+									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Batiment_2" ID="{39E24B6E-FEE2-433F-96A5-82A16453D5A2}"/>
 										<ItemList>
@@ -1145,6 +1410,11 @@
 							<PropertyList>
 								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1183,6 +1453,7 @@
 										<Sound Name="sfx_drops_carboard" ID="{7D25785C-A839-43CA-8A91-57131E38477F}" ShortID="1019481077" Type="SoundFX">
 											<PropertyList>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1203,9 +1474,6 @@
 												<AudioFileSource Name="sfx_drops_carboard" ID="{4DECF89E-852D-4D66-AF31-A34C21D2B176}" ShortID="523768018">
 													<Language>SFX</Language>
 													<AudioFile>sfx_drops_carboard.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="864713684"/>
-													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -1239,6 +1507,7 @@
 										<Sound Name="sfx_drops_carboard" ID="{FDC88BB6-7C99-4319-8E10-95A5D68812D9}" ShortID="532625502" Type="SoundFX">
 											<PropertyList>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1260,7 +1529,7 @@
 													<Language>SFX</Language>
 													<AudioFile>sfx_drops_carboard.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="864713684"/>
+														<File ID="523768018"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1295,6 +1564,7 @@
 										<Sound Name="sfx_drops_carboard" ID="{D49890D3-9A39-46D0-8F92-5FCD28A3C4C6}" ShortID="121195525" Type="SoundFX">
 											<PropertyList>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1316,7 +1586,7 @@
 													<Language>SFX</Language>
 													<AudioFile>sfx_drops_carboard.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="864713684"/>
+														<File ID="523768018"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1351,6 +1621,7 @@
 										<Sound Name="sfx_drops_carboard" ID="{F6E7C6AD-1397-44A0-84C5-B71DCBE3AFFC}" ShortID="534491555" Type="SoundFX">
 											<PropertyList>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1372,7 +1643,7 @@
 													<Language>SFX</Language>
 													<AudioFile>sfx_drops_carboard.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="864713684"/>
+														<File ID="523768018"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1407,6 +1678,7 @@
 										<Sound Name="sfx_drops_carboard" ID="{30CEF74D-D251-4B79-9116-09690C7AD389}" ShortID="265611600" Type="SoundFX">
 											<PropertyList>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1428,12 +1700,116 @@
 													<Language>SFX</Language>
 													<AudioFile>sfx_drops_carboard.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="864713684"/>
+														<File ID="523768018"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="sfx_drops_carboard" ID="{FD57A81B-EE46-43AB-B0A3-E3992DC9F27A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RI_symphobia" ID="{DAF72253-1FBF-4E5C-8EAC-97CC0F7BEC6D}" ShortID="675855265">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ri_symphobia" ID="{CF673215-420F-43AD-9863-10CA083CBF51}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_drops_carboard" ID="{F2D7D36E-ACE8-4B2F-A6FA-AB794F27ED54}" ShortID="153619549" Type="SoundFX">
+											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_drops_carboard" ID="{5734270F-3057-47AC-8239-D5F5F67BBAA8}" ShortID="892586866">
+													<Language>SFX</Language>
+													<AudioFile>sfx_drops_carboard.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="523768018"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_drops_carboard" ID="{5734270F-3057-47AC-8239-D5F5F67BBAA8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RI_revlight" ID="{B0C204EE-9F8F-46C5-B48C-399849C4D460}" ShortID="465392982">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ri_revlight" ID="{0E0F6521-7C0B-4E26-8D0E-853BCA55A12D}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_drops_carboard" ID="{0BB011A2-D96A-407B-A6BB-6317D10C85C4}" ShortID="596085626" Type="SoundFX">
+											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_drops_carboard" ID="{1043EBC0-0DDF-47A3-837C-F5A6FFA619DF}" ShortID="667444571">
+													<Language>SFX</Language>
+													<AudioFile>sfx_drops_carboard.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="523768018"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_drops_carboard" ID="{1043EBC0-0DDF-47A3-837C-F5A6FFA619DF}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -1447,6 +1823,9 @@
 										<ItemRef Name="RI_shevannai" ID="{06B5554E-EBD6-465E-B1F8-4879BCDC0F61}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
+										<ItemRef Name="RI_symphobia" ID="{DAF72253-1FBF-4E5C-8EAC-97CC0F7BEC6D}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="RI_marseilles" ID="{3A467265-8697-485F-AC78-3B7EC9C3B071}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
@@ -1458,8 +1837,23 @@
 									<GroupingBehavior>
 										<ItemRef Name="RI_sylenth" ID="{B97BBECC-7E15-4F05-809E-4B1225F62FC7}"/>
 									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="RI_revlight" ID="{B0C204EE-9F8F-46C5-B48C-399849C4D460}"/>
+									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Batiment_6" ID="{DD90A43A-C8F4-4D1C-88B4-514B1E2B19E1}"/>
+										<ItemList>
+											<ItemRef Name="RI_symphobia" ID="{DAF72253-1FBF-4E5C-8EAC-97CC0F7BEC6D}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Batiment_7" ID="{F973153E-CA8F-4F59-BC85-0FD246B7783F}"/>
+										<ItemList>
+											<ItemRef Name="RI_revlight" ID="{B0C204EE-9F8F-46C5-B48C-399849C4D460}"/>
+										</ItemList>
+									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Batiment_2" ID="{39E24B6E-FEE2-433F-96A5-82A16453D5A2}"/>
 										<ItemList>
@@ -1497,6 +1891,11 @@
 							<PropertyList>
 								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1535,6 +1934,7 @@
 										<Sound Name="sfx_electric_buzz" ID="{B568B59E-0245-4022-9C6E-DDCEE901AFFF}" ShortID="388574998" Type="SoundFX">
 											<PropertyList>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1555,9 +1955,6 @@
 												<AudioFileSource Name="sfx_electric_buzz" ID="{39EC7B48-492B-4767-B1EF-146529449266}" ShortID="1004131313">
 													<Language>SFX</Language>
 													<AudioFile>sfx_electric_buzz.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="638620715"/>
-													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -1591,6 +1988,7 @@
 										<Sound Name="sfx_electric_buzz" ID="{7EB1A9E5-A861-4234-8899-03AE84EAABFF}" ShortID="977169133" Type="SoundFX">
 											<PropertyList>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1612,7 +2010,7 @@
 													<Language>SFX</Language>
 													<AudioFile>sfx_electric_buzz.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="638620715"/>
+														<File ID="1004131313"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1647,6 +2045,7 @@
 										<Sound Name="sfx_electric_buzz" ID="{5402BCF0-C7D2-45C6-ACE0-A0F14C86348F}" ShortID="303278331" Type="SoundFX">
 											<PropertyList>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1668,7 +2067,7 @@
 													<Language>SFX</Language>
 													<AudioFile>sfx_electric_buzz.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="638620715"/>
+														<File ID="1004131313"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1703,6 +2102,7 @@
 										<Sound Name="sfx_electric_buzz" ID="{2C9CF9EA-2C84-4447-942F-9EAEB59DAB35}" ShortID="27850389" Type="SoundFX">
 											<PropertyList>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1724,7 +2124,7 @@
 													<Language>SFX</Language>
 													<AudioFile>sfx_electric_buzz.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="638620715"/>
+														<File ID="1004131313"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1759,6 +2159,7 @@
 										<Sound Name="sfx_electric_buzz" ID="{578CBB8B-B8F5-4E9E-8DF2-720CE62754A4}" ShortID="568232616" Type="SoundFX">
 											<PropertyList>
 												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1780,12 +2181,116 @@
 													<Language>SFX</Language>
 													<AudioFile>sfx_electric_buzz.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="638620715"/>
+														<File ID="1004131313"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="sfx_electric_buzz" ID="{7DE35B85-0396-4809-BFDD-C0746E426FD6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RI_symphobia" ID="{EAB440D0-6C3F-44B4-A5B9-CA4537190E14}" ShortID="1052624111">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ri_symphobia" ID="{CF673215-420F-43AD-9863-10CA083CBF51}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_electric_buzz" ID="{4F843F99-E46B-4D50-AADF-3D769ED75C4B}" ShortID="652777617" Type="SoundFX">
+											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_electric_buzz" ID="{43ECF886-7384-452C-86E2-67E5AA7B110E}" ShortID="806101469">
+													<Language>SFX</Language>
+													<AudioFile>sfx_electric_buzz.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="1004131313"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_electric_buzz" ID="{43ECF886-7384-452C-86E2-67E5AA7B110E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RI_revlight" ID="{863A6181-EB4A-40AC-A476-B398701D9E2B}" ShortID="286244583">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ri_revlight" ID="{0E0F6521-7C0B-4E26-8D0E-853BCA55A12D}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_electric_buzz" ID="{E6B5430A-F032-4ED9-863E-950D8124A089}" ShortID="860773087" Type="SoundFX">
+											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_electric_buzz" ID="{31060311-23A6-4F3F-92EB-E1A9D75B206D}" ShortID="853158956">
+													<Language>SFX</Language>
+													<AudioFile>sfx_electric_buzz.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="1004131313"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_electric_buzz" ID="{31060311-23A6-4F3F-92EB-E1A9D75B206D}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -1802,16 +2307,34 @@
 										<ItemRef Name="RI_sylenth" ID="{CE7CB764-49CA-45DC-864D-9027D65ADFD4}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
+										<ItemRef Name="RI_revlight" ID="{863A6181-EB4A-40AC-A476-B398701D9E2B}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="RI_suriya" ID="{84670F9A-3DD6-4B4B-8547-223B87873C1F}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="RI_shevannai" ID="{6ECF1BBB-FD93-4CE7-A4F2-B0300B0900B3}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
+										<ItemRef Name="RI_symphobia" ID="{EAB440D0-6C3F-44B4-A5B9-CA4537190E14}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="RI_skanner_pad" ID="{6A6686EE-A4DD-46AB-B246-1C1A4A2AD345}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Batiment_6" ID="{DD90A43A-C8F4-4D1C-88B4-514B1E2B19E1}"/>
+										<ItemList>
+											<ItemRef Name="RI_symphobia" ID="{EAB440D0-6C3F-44B4-A5B9-CA4537190E14}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Batiment_7" ID="{F973153E-CA8F-4F59-BC85-0FD246B7783F}"/>
+										<ItemList>
+											<ItemRef Name="RI_revlight" ID="{863A6181-EB4A-40AC-A476-B398701D9E2B}"/>
+										</ItemList>
+									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Batiment_2" ID="{39E24B6E-FEE2-433F-96A5-82A16453D5A2}"/>
 										<ItemList>
@@ -1849,6 +2372,11 @@
 							<PropertyList>
 								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -2197,6 +2725,130 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RI_symphobia" ID="{A4CF5116-9BE6-4B64-9451-5FFD0303EAAF}" ShortID="548675368">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ri_symphobia" ID="{CF673215-420F-43AD-9863-10CA083CBF51}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_traffic_by" ID="{C63AFB14-78F8-4E2D-9B3A-E00B284366AF}" ShortID="748799943" Type="SoundFX">
+											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>30</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_traffic_by" ID="{F7DAE9DF-9924-48C9-A3C2-7DF623297A95}" ShortID="191945900">
+													<Language>SFX</Language>
+													<AudioFile>sfx_traffic_by.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="434967323"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_traffic_by" ID="{F7DAE9DF-9924-48C9-A3C2-7DF623297A95}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RI_revlight" ID="{03FA42EB-EDBF-4E8A-ABCA-2F75A4C23979}" ShortID="969358550">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ri_revlight" ID="{0E0F6521-7C0B-4E26-8D0E-853BCA55A12D}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_traffic_by" ID="{4C089D4A-CAF5-4D4D-9F34-A049D51FBBB4}" ShortID="880648751" Type="SoundFX">
+											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>30</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_traffic_by" ID="{BF0A13CE-B82C-4898-898D-8F54A36EBEDC}" ShortID="70043457">
+													<Language>SFX</Language>
+													<AudioFile>sfx_traffic_by.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="434967323"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_traffic_by" ID="{BF0A13CE-B82C-4898-898D-8F54A36EBEDC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupRef Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
@@ -2204,6 +2856,9 @@
 								<GroupingBehaviorList>
 									<GroupingBehavior>
 										<ItemRef Name="RI_suriya" ID="{C7B7BF14-58AD-46AB-9D0C-18B5BD24C40E}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="RI_symphobia" ID="{A4CF5116-9BE6-4B64-9451-5FFD0303EAAF}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="RI_sylenth" ID="{0049654D-7A7F-4154-B210-0FDADC16CCAB}"/>
@@ -2215,10 +2870,25 @@
 										<ItemRef Name="RI_marseilles" ID="{8384F87E-8C55-4557-B8FC-9E4D2A86C4FE}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
+										<ItemRef Name="RI_revlight" ID="{03FA42EB-EDBF-4E8A-ABCA-2F75A4C23979}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="RI_shevannai" ID="{A1A45DF8-6107-4348-9719-50BC2E801FC7}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Batiment_6" ID="{DD90A43A-C8F4-4D1C-88B4-514B1E2B19E1}"/>
+										<ItemList>
+											<ItemRef Name="RI_symphobia" ID="{A4CF5116-9BE6-4B64-9451-5FFD0303EAAF}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Batiment_7" ID="{F973153E-CA8F-4F59-BC85-0FD246B7783F}"/>
+										<ItemList>
+											<ItemRef Name="RI_revlight" ID="{03FA42EB-EDBF-4E8A-ABCA-2F75A4C23979}"/>
+										</ItemList>
+									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Batiment_2" ID="{39E24B6E-FEE2-433F-96A5-82A16453D5A2}"/>
 										<ItemList>
@@ -2256,6 +2926,11 @@
 							<PropertyList>
 								<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -2604,6 +3279,130 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RI_symphobia" ID="{E9A2B638-F8D6-4EFA-A0DD-2070782F60A7}" ShortID="87603782">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ri_symphobia" ID="{CF673215-420F-43AD-9863-10CA083CBF51}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_water_splash" ID="{FE5F85C5-0546-4DE9-9356-680564CF0B2A}" ShortID="245877740" Type="SoundFX">
+											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="Spatialization" Type="bool" Value="False"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_water_splash" ID="{C463E2A5-EB8C-42BD-AEBD-69C59F33A507}" ShortID="913039177">
+													<PropertyList>
+														<Property Name="TrimEnd" Type="Real64" Value="19.3034913986537"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>sfx_water_splash.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="925339519"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_water_splash" ID="{C463E2A5-EB8C-42BD-AEBD-69C59F33A507}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RI_revlight" ID="{2099E5A5-53E1-4D00-B8A6-626F70B48619}" ShortID="781071280">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="ri_revlight" ID="{0E0F6521-7C0B-4E26-8D0E-853BCA55A12D}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="sfx_water_splash" ID="{0D92D15C-2500-4C40-BB4B-8E51E22BDE1A}" ShortID="489750415" Type="SoundFX">
+											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="Spatialization" Type="bool" Value="False"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="binaural_send" ID="{82D997C0-0C44-458B-B8D8-1A90050A6FED}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_water_splash" ID="{FDDB9D00-B506-41BA-B2F5-A2D90E5FB7A6}" ShortID="361709565">
+													<PropertyList>
+														<Property Name="TrimEnd" Type="Real64" Value="19.3034913986537"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>sfx_water_splash.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="925339519"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_water_splash" ID="{FDDB9D00-B506-41BA-B2F5-A2D90E5FB7A6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupRef Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
@@ -2611,6 +3410,9 @@
 								<GroupingBehaviorList>
 									<GroupingBehavior>
 										<ItemRef Name="RI_shevannai" ID="{9DB81313-FA22-4209-AA23-CB65005E02C1}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="RI_symphobia" ID="{E9A2B638-F8D6-4EFA-A0DD-2070782F60A7}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="RI_suriya" ID="{59846E58-C471-4334-8E65-F4C687D12BEE}"/>
@@ -2622,10 +3424,25 @@
 										<ItemRef Name="RI_marseilles" ID="{77C907A4-DC77-42D8-B3F4-9EC8984E3075}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
+										<ItemRef Name="RI_revlight" ID="{2099E5A5-53E1-4D00-B8A6-626F70B48619}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="RI_sylenth" ID="{B51D0DF8-9CA3-4A8B-9758-767D6649C751}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Batiment_6" ID="{DD90A43A-C8F4-4D1C-88B4-514B1E2B19E1}"/>
+										<ItemList>
+											<ItemRef Name="RI_symphobia" ID="{E9A2B638-F8D6-4EFA-A0DD-2070782F60A7}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Batiment_7" ID="{F973153E-CA8F-4F59-BC85-0FD246B7783F}"/>
+										<ItemList>
+											<ItemRef Name="RI_revlight" ID="{2099E5A5-53E1-4D00-B8A6-626F70B48619}"/>
+										</ItemList>
+									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Batiment_2" ID="{39E24B6E-FEE2-433F-96A5-82A16453D5A2}"/>
 										<ItemList>

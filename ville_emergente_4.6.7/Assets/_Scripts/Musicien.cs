@@ -15,7 +15,7 @@ public class Musicien : MonoBehaviour{
 
 
 
-    public float timer = 0,minEndTimer=10, maxEndTimer = 15, endTimer;
+    public float soundTimer = 0,minEndSoundTimer=10, maxEndSoundTimer = 15, endSoundTimer,waitTimer=0,minEndWaitTimer=10, maxEndWaitTimer = 15, endWaitTimer;
 
     public Material material;
     //public AudioSource audioSource;
@@ -25,11 +25,12 @@ public class Musicien : MonoBehaviour{
     //public List<Fragment> fragments = new List<Fragment>();
     public Fragment fragment = null;
 
-    public static GameObject[] allNavTargets=null;
+    public static GameObject[] allNavTargets = null;
     public List<GameObject> targets = new List<GameObject>();
 	public GameObject previousTarget = null;
 
 	public GameObject[] buildings;
+
 
 	public bool isFragmentComplete=false;
 	
@@ -50,6 +51,12 @@ public class Musicien : MonoBehaviour{
                targets.Add(gObject);
            }
         }
+
+
+
+
+
+
        //targets = GameObject.FindGame
 
 		//Debug.Log ("FINISH MUSICIENN");
@@ -66,7 +73,8 @@ public class Musicien : MonoBehaviour{
         tMemory = aiRig.AI.WorkingMemory as RAIN.Memory.BasicMemory;
 
 
-        endTimer = (int)Random.Range(minEndTimer, maxEndTimer);
+        endSoundTimer = (int)Random.Range(minEndSoundTimer, maxEndSoundTimer);
+        endWaitTimer = (int)Random.Range(minEndWaitTimer, maxEndWaitTimer);
 
         this.renderer.material = material;
 	}
@@ -74,34 +82,64 @@ public class Musicien : MonoBehaviour{
 	// Update is called once per frame
     public void Update()
     {
-        if (timer < endTimer)
+        
+        if (soundTimer < endSoundTimer && !tMemory.GetItem<bool>("soundTimerHasEnded"))
         {
-            timer = timer + Time.deltaTime;
+            soundTimer = soundTimer + Time.deltaTime;
         }
-        else
+        else if (!tMemory.GetItem<bool>("soundTimerHasEnded"))
         {
-            timer = 0;
-            endTimer = (int)Random.Range(minEndTimer, maxEndTimer);
-            EmitSound();
+            tMemory.SetItem<bool>("soundTimerHasEnded", true);
+        }
+        if (soundTimer != 0 && tMemory.GetItem<bool>("soundTimerHasEnded"))
+        {
+            soundTimer = 0;
+            endSoundTimer = (int)Random.Range(minEndSoundTimer, maxEndSoundTimer);
+        }
+        //----------------------
+        if (tMemory.GetItem<bool>("destinationReached"))
+        {
+            if (waitTimer < endWaitTimer && !tMemory.GetItem<bool>("waitTimerHasEnded"))
+            {
+                waitTimer = waitTimer + Time.deltaTime;
+            }
+            else if (!tMemory.GetItem<bool>("waitTimerHasEnded"))
+            {
+                tMemory.SetItem<bool>("waitTimerHasEnded", true);
+            }
+            if (waitTimer != 0 && tMemory.GetItem<bool>("waitTimerHasEnded"))
+            {
+                waitTimer = 0;
+                endWaitTimer = (int)Random.Range(minEndWaitTimer, maxEndWaitTimer);
+            }
         }
 
+        /*
         if (isFragmentComplete)
         {
             isFragmentComplete = false;
-			for (int i=0; i<buildings.Length ; i++ )
-			{
-				buildings[i].GetComponent<Building>().Down();
-			}
 
-		}
+            for (int i = 0; i < buildings.Length; i++)
+            {
+                buildings[i].GetComponent<Building>().Down();
+            }
+		}*/
 	}
-    
+
+    public void OpenTheWay()
+    {
+        for (int i = 0; i < buildings.Length; i++)
+        {
+            buildings[i].GetComponent<Building>().Down();
+        }
+    }
+
     public void OnAddingFragment(Fragment fragment)
     {
         print("NPC:OnAddingFragment");
 
-        SetIsFragmentComplete(true);
-
+        //SetIsFragmentComplete(true);
+        SetJustReceivedFragmentComplete(true);
         this.fragment = fragment;
         
         this.renderer.material = fragment.material;
@@ -117,6 +155,13 @@ public class Musicien : MonoBehaviour{
         print("Emit Sound");
     }
 
+
+    public void SetJustReceivedFragmentComplete(bool boolean)
+    {
+        isFragmentComplete = boolean;
+        tMemory.SetItem<bool>("justReceivedFragment", boolean);
+    }
+
     public void SetIsFragmentComplete(bool boolean)
     {
         isFragmentComplete = boolean;
@@ -127,6 +172,7 @@ public class Musicien : MonoBehaviour{
     {
         tMemory.SetItem<bool>("playerIsInRange", boolean);
     }
+
     public void SetTargetLookAt(GameObject lookAtTarget)
     {
         tMemory.SetItem<GameObject>("lookAtTarget", lookAtTarget);

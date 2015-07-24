@@ -81,7 +81,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Batiment_2" ID="{39E24B6E-FEE2-433F-96A5-82A16453D5A2}"/>
+						<CurrentSwitchRef Name="Batiment_7" ID="{F973153E-CA8F-4F59-BC85-0FD246B7783F}"/>
 						<CurrentSwitchRef Name="Concrete" ID="{42CEC38C-5153-4D39-B808-3CDB613BA801}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
