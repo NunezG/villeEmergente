@@ -14,6 +14,7 @@ public class SettingPiece : MonoBehaviour{
     public string defaultAudioEventName = "";
     public Fragment fragment;
     public bool isPlayingInteract = false;
+	public string switchName;
 
 
 	// Use this for initialization
