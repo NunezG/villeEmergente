@@ -39,6 +39,7 @@ namespace AK
         static const AkUniqueID SWITCH_BAT5 = 3545498774U;
         static const AkUniqueID SWITCH_BAT6 = 3545498773U;
         static const AkUniqueID SWITCH_BAT7 = 3545498772U;
+        static const AkUniqueID SWITCH_DEFAULT = 2406558223U;
         static const AkUniqueID TOUCHER_ELEMENT = 2896867782U;
         static const AkUniqueID TRAFFIC_BY_CONVOLVER = 307225475U;
         static const AkUniqueID TRAFFIC_BY_PLAY = 2129545025U;

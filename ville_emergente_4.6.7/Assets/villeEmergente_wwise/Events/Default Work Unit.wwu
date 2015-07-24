@@ -534,6 +534,16 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="switch_default" ID="{7CB29F39-1DD0-4000-9526-374D0527BBDD}">
+							<ChildrenList>
+								<Action Name="Set Switch" ID="{E1A5F9F0-7720-43F0-8C6B-E8A188DDD71B}" ShortID="792144242" Type="SetSwitch" Scope="All" Global="false">
+									<SetItemParam>
+										<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+										<GroupItem Name="Default" ID="{B99EB49E-4956-43A4-AA90-864549EE2FC7}"/>
+									</SetItemParam>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

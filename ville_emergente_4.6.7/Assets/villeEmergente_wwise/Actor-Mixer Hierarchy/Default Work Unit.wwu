@@ -899,7 +899,7 @@
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupRef Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+										<DefaultSwitchRef Name="Default" ID="{B99EB49E-4956-43A4-AA90-864549EE2FC7}"/>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
 												<ItemRef Name="RI_skanner_pad" ID="{25687333-FB92-407A-827F-42E25C063308}"/>
@@ -1498,7 +1498,7 @@
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupRef Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+										<DefaultSwitchRef Name="Default" ID="{B99EB49E-4956-43A4-AA90-864549EE2FC7}"/>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
 												<ItemRef Name="Default" ID="{5249A942-FAA9-4610-94AA-A098F9256895}"/>
@@ -2016,7 +2016,7 @@
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupRef Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+										<DefaultSwitchRef Name="Default" ID="{B99EB49E-4956-43A4-AA90-864549EE2FC7}"/>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
 												<ItemRef Name="Default" ID="{B1674B3E-AF92-48AF-89F2-3CF51FF438AF}"/>
@@ -2617,7 +2617,7 @@
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupRef Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+										<DefaultSwitchRef Name="Default" ID="{B99EB49E-4956-43A4-AA90-864549EE2FC7}"/>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
 												<ItemRef Name="Default" ID="{5A9E1C0A-963A-415C-BD8D-FB4357D1B9C2}"/>
@@ -3117,7 +3117,7 @@
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupRef Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+										<DefaultSwitchRef Name="Default" ID="{B99EB49E-4956-43A4-AA90-864549EE2FC7}"/>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
 												<ItemRef Name="RI_symphobia" ID="{DB8A8702-ED05-45F2-B965-B0BFAA79BB7C}"/>
@@ -3718,7 +3718,7 @@
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupRef Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+										<DefaultSwitchRef Name="Default" ID="{B99EB49E-4956-43A4-AA90-864549EE2FC7}"/>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
 												<ItemRef Name="RI_shevannai" ID="{9DB81313-FA22-4209-AA23-CB65005E02C1}"/>

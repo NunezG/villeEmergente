@@ -17,6 +17,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2232073879	electric_buzz_stop			\Default Work Unit\Fragments\Sfx electric buzz\electric_buzz_stop	
 	2243180791	water_splash_convolver			\Default Work Unit\Fragments\Sfx water splash\water_splash_convolver	
 	2244334851	electric_buzz_convolver			\Default Work Unit\Fragments\Sfx electric buzz\electric_buzz_convolver	
+	2406558223	switch_default			\Default Work Unit\Batiments\switch_default	
 	2535466649	lacher_morceau			\Default Work Unit\Joueur\lacher_morceau	
 	2622262392	rain_2DObject_stop			\Default Work Unit\Tests Wwise Pierre & Guillermo\rain_2DObject_stop	
 	2865765803	drops_cardboard_play			\Default Work Unit\Fragments\Sfx drops cardboard\drops_cardboard_play	

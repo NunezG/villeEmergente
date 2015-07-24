@@ -44,6 +44,7 @@
 				<Event Id="3545498774" Name="switch_bat5" MaxAttenuation="0.000000"/>
 				<Event Id="3545498773" Name="switch_bat6" MaxAttenuation="0.000000"/>
 				<Event Id="3545498772" Name="switch_bat7" MaxAttenuation="0.000000"/>
+				<Event Id="2406558223" Name="switch_default" MaxAttenuation="0.000000"/>
 				<Event Id="2896867782" Name="toucher_element" MaxAttenuation="25.000000"/>
 				<Event Id="307225475" Name="traffic_by_convolver"/>
 				<Event Id="2129545025" Name="traffic_by_play" MaxAttenuation="25.000000"/>
