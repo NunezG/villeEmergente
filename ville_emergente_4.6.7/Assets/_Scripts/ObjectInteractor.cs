@@ -7,8 +7,6 @@ public class ObjectInteractor : MonoBehaviour {
     public bool handsFull = false;
     public float range;
 
-
-
 	// Use this for initialization
 	void Start () {
 	}
@@ -70,31 +68,20 @@ public class ObjectInteractor : MonoBehaviour {
     public void PickUpObject(GameObject toPickUp)
     {
         print("Interactor:PickUpObject");
-
-
 		inHandObject = toPickUp;
         inHandObject.transform.parent = inHandPosition.transform;
         inHandObject.transform.position = inHandPosition.transform.position;
         inHandObject.transform.rotation = inHandPosition.transform.rotation;
         inHandObject.rigidbody.isKinematic = true;
-        handsFull = true;
-
-		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_stop", inHandObject.gameObject);
-		
-		WwiseAudioManager.instance.PlayFiniteEvent("prendre_morceau", inHandObject.gameObject);
-		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_play", inHandObject.gameObject);
-
-
-    }
+        handsFull = true;    
+	}
 
     public void DropInHandObject()
     {
         print("Interactor:DropInHandObject");
-		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_stop", inHandObject.gameObject);
-
 		if (inHandObject != null)
         {
-            inHandObject.GetComponent<Fragment>().Play();
+            inHandObject.GetComponent<Fragment>().Drop();
 
             inHandObject.rigidbody.isKinematic = false;
             handsFull = false;
@@ -102,25 +89,11 @@ public class ObjectInteractor : MonoBehaviour {
             inHandObject = null;
 
         }
-//		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_stop", inHandObject.gameObject);
-
-		//WwiseAudioManager.instance.PlayFiniteEvent("busy_street_convolver", this.gameObject);
-		//AkSoundEngine.SetRTPCValue ("binaural_to_convolver", 0);
-		//AkSoundEngine.SetSwitch("Elements_decor", "Batiment_4", gameObject);
-		//WwiseAudioManager.instance.PlayFiniteEvent("switch_bat1", this.gameObject);
-
 	}
 
     public void AddingFragment()
     {
-        print("Interactor:AddingFragment");
-
-		//AkSoundEngine.SetRTPCValue ("binaural_to_convolver", 100);
-		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_stop", inHandObject.gameObject);
-		//AkSoundEngine.SetSwitch("Elements_decor", "Batiment_1", inHandObject.gameObject);
-		WwiseAudioManager.instance.PlayFiniteEvent("switch_bat1", this.gameObject);
-		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_convolver", inHandObject.gameObject);
-
+		print("Interactor:AddingFragment");
 		inHandObject.rigidbody.isKinematic = false;
         handsFull = false;
         inHandObject.transform.parent = null;
