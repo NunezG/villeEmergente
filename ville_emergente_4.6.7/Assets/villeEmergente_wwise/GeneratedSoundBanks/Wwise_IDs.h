@@ -36,13 +36,20 @@ namespace AK
         static const AkUniqueID SOFT_RAIN_CONVOLVER_STOP = 1731234588U;
         static const AkUniqueID SOFT_RAIN_PLAY = 425145631U;
         static const AkUniqueID SOFT_RAIN_STOP = 4252794685U;
-        static const AkUniqueID SWITCH_BAT1 = 3545498770U;
-        static const AkUniqueID SWITCH_BAT2 = 3545498769U;
-        static const AkUniqueID SWITCH_BAT3 = 3545498768U;
-        static const AkUniqueID SWITCH_BAT4 = 3545498775U;
-        static const AkUniqueID SWITCH_BAT5 = 3545498774U;
-        static const AkUniqueID SWITCH_BAT6 = 3545498773U;
-        static const AkUniqueID SWITCH_BAT7 = 3545498772U;
+        static const AkUniqueID SWITCH_ATMO1 = 2442452516U;
+        static const AkUniqueID SWITCH_ATMO2 = 2442452519U;
+        static const AkUniqueID SWITCH_ATMO3 = 2442452518U;
+        static const AkUniqueID SWITCH_ATMO4 = 2442452513U;
+        static const AkUniqueID SWITCH_ATMO5 = 2442452512U;
+        static const AkUniqueID SWITCH_ATMO6 = 2442452515U;
+        static const AkUniqueID SWITCH_ATMO7 = 2442452514U;
+        static const AkUniqueID SWITCH_DARK1 = 3617898637U;
+        static const AkUniqueID SWITCH_DARK2 = 3617898638U;
+        static const AkUniqueID SWITCH_DARK3 = 3617898639U;
+        static const AkUniqueID SWITCH_DARK4 = 3617898632U;
+        static const AkUniqueID SWITCH_DARK5 = 3617898633U;
+        static const AkUniqueID SWITCH_DARK6 = 3617898634U;
+        static const AkUniqueID SWITCH_DARK7 = 3617898635U;
         static const AkUniqueID SWITCH_DEFAULT = 2406558223U;
         static const AkUniqueID TOUCHER_ELEMENT = 2896867782U;
         static const AkUniqueID TRAFFIC_BY_CONVOLVER_PLAY = 1342370836U;
@@ -66,13 +73,20 @@ namespace AK
 
             namespace SWITCH
             {
-                static const AkUniqueID BATIMENT_1 = 784145683U;
-                static const AkUniqueID BATIMENT_2 = 784145680U;
-                static const AkUniqueID BATIMENT_3 = 784145681U;
-                static const AkUniqueID BATIMENT_4 = 784145686U;
-                static const AkUniqueID BATIMENT_5 = 784145687U;
-                static const AkUniqueID BATIMENT_6 = 784145684U;
-                static const AkUniqueID BATIMENT_7 = 784145685U;
+                static const AkUniqueID ATMO_1 = 1051899170U;
+                static const AkUniqueID ATMO_2 = 1051899169U;
+                static const AkUniqueID ATMO_3 = 1051899168U;
+                static const AkUniqueID ATMO_4 = 1051899175U;
+                static const AkUniqueID ATMO_5 = 1051899174U;
+                static const AkUniqueID ATMO_6 = 1051899173U;
+                static const AkUniqueID ATMO_7 = 1051899172U;
+                static const AkUniqueID DARK_1 = 3283321497U;
+                static const AkUniqueID DARK_2 = 3283321498U;
+                static const AkUniqueID DARK_3 = 3283321499U;
+                static const AkUniqueID DARK_4 = 3283321500U;
+                static const AkUniqueID DARK_5 = 3283321501U;
+                static const AkUniqueID DARK_6 = 3283321502U;
+                static const AkUniqueID DARK_7 = 3283321503U;
                 static const AkUniqueID DEFAULT = 782826392U;
             } // namespace SWITCH
         } // namespace ELEMENTS_DECOR

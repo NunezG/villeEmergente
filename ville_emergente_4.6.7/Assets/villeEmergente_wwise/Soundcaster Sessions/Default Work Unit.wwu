@@ -22,7 +22,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Batiment_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
+						<CurrentSwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
 						<CurrentSwitchRef Name="Concrete" ID="{42CEC38C-5153-4D39-B808-3CDB613BA801}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
@@ -45,31 +45,31 @@
 							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="switch_bat1" ID="{60AB84F6-A7DD-4D3D-8896-CBB1FDA57298}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="switch_atmo1" ID="{60AB84F6-A7DD-4D3D-8896-CBB1FDA57298}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="switch_bat2" ID="{D9B617F6-D445-41BA-859C-D6001F927507}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="switch_atmo2" ID="{D9B617F6-D445-41BA-859C-D6001F927507}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="switch_bat3" ID="{5703399A-3D9D-45CC-9D5C-91060AA1D684}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="switch_atmo3" ID="{5703399A-3D9D-45CC-9D5C-91060AA1D684}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="switch_bat4" ID="{14718C5C-B317-4265-8905-89400EDBAB53}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="switch_atmo4" ID="{14718C5C-B317-4265-8905-89400EDBAB53}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="switch_bat5" ID="{0E16BEB7-B413-4B55-A33A-8E7551BD81F3}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="switch_atmo5" ID="{0E16BEB7-B413-4B55-A33A-8E7551BD81F3}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="switch_bat6" ID="{8D7F321D-5323-4FEE-9F8D-5E14A3D2CCBB}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="switch_atmo6" ID="{8D7F321D-5323-4FEE-9F8D-5E14A3D2CCBB}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
 							<Position X="3" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="switch_bat7" ID="{3125D7B5-64E0-4C58-8347-FA17E7576771}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="switch_atmo7" ID="{3125D7B5-64E0-4C58-8347-FA17E7576771}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
 							<Position X="3" Y="2"/>
 						</Module>
 					</ModuleList>
@@ -81,7 +81,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Batiment_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
+						<CurrentSwitchRef Name="Dark_1" ID="{65F12811-7F28-46B7-8012-C1165748BE61}"/>
 						<CurrentSwitchRef Name="Concrete" ID="{42CEC38C-5153-4D39-B808-3CDB613BA801}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

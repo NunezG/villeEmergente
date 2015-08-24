@@ -41,13 +41,20 @@
 				<Event Id="1731234588" Name="soft_rain_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="425145631" Name="soft_rain_play"/>
 				<Event Id="4252794685" Name="soft_rain_stop" MaxAttenuation="0.000000"/>
-				<Event Id="3545498770" Name="switch_bat1" MaxAttenuation="0.000000"/>
-				<Event Id="3545498769" Name="switch_bat2" MaxAttenuation="0.000000"/>
-				<Event Id="3545498768" Name="switch_bat3" MaxAttenuation="0.000000"/>
-				<Event Id="3545498775" Name="switch_bat4" MaxAttenuation="0.000000"/>
-				<Event Id="3545498774" Name="switch_bat5" MaxAttenuation="0.000000"/>
-				<Event Id="3545498773" Name="switch_bat6" MaxAttenuation="0.000000"/>
-				<Event Id="3545498772" Name="switch_bat7" MaxAttenuation="0.000000"/>
+				<Event Id="2442452516" Name="switch_atmo1" MaxAttenuation="0.000000"/>
+				<Event Id="2442452519" Name="switch_atmo2" MaxAttenuation="0.000000"/>
+				<Event Id="2442452518" Name="switch_atmo3" MaxAttenuation="0.000000"/>
+				<Event Id="2442452513" Name="switch_atmo4" MaxAttenuation="0.000000"/>
+				<Event Id="2442452512" Name="switch_atmo5" MaxAttenuation="0.000000"/>
+				<Event Id="2442452515" Name="switch_atmo6" MaxAttenuation="0.000000"/>
+				<Event Id="2442452514" Name="switch_atmo7" MaxAttenuation="0.000000"/>
+				<Event Id="3617898637" Name="switch_dark1" MaxAttenuation="0.000000"/>
+				<Event Id="3617898638" Name="switch_dark2" MaxAttenuation="0.000000"/>
+				<Event Id="3617898639" Name="switch_dark3" MaxAttenuation="0.000000"/>
+				<Event Id="3617898632" Name="switch_dark4" MaxAttenuation="0.000000"/>
+				<Event Id="3617898633" Name="switch_dark5" MaxAttenuation="0.000000"/>
+				<Event Id="3617898634" Name="switch_dark6" MaxAttenuation="0.000000"/>
+				<Event Id="3617898635" Name="switch_dark7" MaxAttenuation="0.000000"/>
 				<Event Id="2406558223" Name="switch_default" MaxAttenuation="0.000000"/>
 				<Event Id="2896867782" Name="toucher_element" MaxAttenuation="25.000000"/>
 				<Event Id="1342370836" Name="traffic_by_convolver_play"/>
@@ -76,6 +83,16 @@
 					<ShortName>sfx_busy_street.wav</ShortName>
 					<Path>SFX\sfx_busy_street_D64AECDA.wem</Path>
 				</File>
+				<File Id="138389321" Language="SFX">
+					<ShortName>ri_absynth_dark.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_absynth_dark_EDB54EA3.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="140784749" Language="SFX">
+					<ShortName>ri_electric.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_electric_A6B2CDA0.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="141266967" Language="SFX">
 					<ShortName>ri_shevannai.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_shevannai_F1A59D96.wem</Path>
@@ -84,6 +101,11 @@
 				<File Id="165344794" Language="SFX">
 					<ShortName>soft rain - brown noise - human activities - drops reverb - 02.wav</ShortName>
 					<Path>SFX\soft rain - brown noise - human activities - drops reverb - 02_8AC08B01.wem</Path>
+				</File>
+				<File Id="218791853" Language="SFX">
+					<ShortName>ri_pipe.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_pipe_870CD3DD.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="364965466" Language="SFX">
 					<ShortName>sfx_pas_mere_chambre_07.wav</ShortName>
@@ -143,6 +165,11 @@
 				<File Id="971457556" Language="SFX">
 					<ShortName>ri_suriya.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_suriya_F0D73493.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="984711463" Language="SFX">
+					<ShortName>ri_choirslike.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_choirslike_48D3F6A3.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="997528366" Language="SFX">
