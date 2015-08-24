@@ -27,25 +27,31 @@ public class Fragment : MonoBehaviour{
 	
 	}
 
-    public void Play()
-    {
-        //audioSource.Play();
-        WwiseAudioManager.instance.PlayFiniteEvent(audioEventName, this.gameObject);
-    }
+	public void Drop()
+	{
+		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_stop", gameObject);
 
-
-    public void AnswerTheCall()
+		//AkSoundEngine.SetRTPCValue ("binaural_to_convolver", 0);
+		//AkSoundEngine.SetSwitch("Elements_decor", "Batiment_4", gameObject);
+		//WwiseAudioManager.instance.PlayFiniteEvent("switch_bat1", this.gameObject);
+	}
+		
+	public void AnswerTheCall()
     {
         print("Fragment:AnswerTheCall");
-        Play();
+       // Play();
     }
 
     public GameObject OnPickUp()
     {
         print("Fragment:OnPickUp");
         this.gameObject.SetActive(true);
-        Play();
-        return this.gameObject;
+
+		//WwiseAudioManager.instance.PlayFiniteEvent("busy_street_stop", gameObject);	
+		WwiseAudioManager.instance.PlayFiniteEvent("prendre_morceau", gameObject);
+		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_play", gameObject);	
+
+		return this.gameObject;
     }
 
 }
