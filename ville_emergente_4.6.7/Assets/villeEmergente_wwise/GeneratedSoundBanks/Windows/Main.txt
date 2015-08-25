@@ -86,6 +86,8 @@ Effect plug-ins	ID	Name	Type				Notes
 	648453178	RI_marseilles (Custom)	Wwise Convolution Reverb			
 	761516531	Cymbal	Wwise Convolution Reverb			
 	780565931	AstoundSound RTI (Custom)	AstoundSound RTI			
+	1277476852	RI_revdark	Wwise Convolution Reverb			
+	1354992497	RI_skannermorph	Wwise Convolution Reverb			
 	1583413766	RI_absynthdark	Wwise Convolution Reverb			
 	2362353244	RI_shevannai	Wwise Convolution Reverb			
 	2623519623	RI_symphobia	Wwise Convolution Reverb			
@@ -95,6 +97,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	3711219716	RI_suriya	Wwise Convolution Reverb			
 	3891660296	RI_marseilles	Wwise Convolution Reverb			
 	3909810158	RI_sylenth	Wwise Convolution Reverb			
+	3997939343	RI_watersplash	Wwise Convolution Reverb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	22416358	sfx_pas_default_02	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_pas_mere_chambre_02_597F6127.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_pas_default_02		15081
@@ -116,15 +119,18 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 
 Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
 	121343736	RI_revlight	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_rev_light_8E718BC5.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Atmospheric\RI_revlight		515424
-	138389321	RI_absynthdark	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_absynth_dark_EDB54EA3.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Atmospheric\RI_absynthdark		333776
-	140784749	RI_electric	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_electric_A6B2CDA0.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Atmospheric\RI_electric		112240
+	138389321	RI_absynthdark	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_absynth_dark_EEDC3BAE.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Dark Univers\RI_absynthdark		333776
+	140784749	RI_electric	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_electric_A6B2CDA0.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Dark Univers\RI_electric		112240
 	141266967	RI_shevannai	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_shevannai_F1A59D96.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Atmospheric\RI_shevannai		230544
-	218791853	RI_pipe	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_pipe_870CD3DD.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Atmospheric\RI_pipe		100864
+	176876817	RI_revdark	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_revdark_25064B7F.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Dark Univers\RI_revdark		79104
+	193697366	RI_watersplash	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_watersplash_DD7B91F2.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Dark Univers\RI_watersplash		1191168
+	218791853	RI_pipe	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_pipe_5757CD80.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Dark Univers\RI_pipe		100864
 	550288729	RI_symphobia	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_symphobia_AF95AB3B.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Atmospheric\RI_symphobia		272816
 	755671691	RI_marseilles	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_marseilles_AE679101.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Atmospheric\RI_marseilles		242080
 	758536210	RI_skanner_pad	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skanner_pad_0308A06B.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Atmospheric\RI_skanner_pad		231520
 	971457556	RI_suriya	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_suriya_F0D73493.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Atmospheric\RI_suriya		561664
-	984711463	RI_choirslike	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_choirslike_48D3F6A3.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Atmospheric\RI_choirslike		307696
+	983665814	RI_skannermorph	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skannermorph_01B3EE8B.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Dark Univers\RI_skannermorph		929840
+	984711463	RI_choirslike	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_choirslike_48D3F6A3.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Dark Univers\RI_choirslike		307696
 	997528366	RI_sylenth	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_sylenth_C7C64756.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Atmospheric\RI_sylenth		27296
 	1038465850	Cymbal	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\cymbal_reverb_ABED5F63.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Cymbal		704656
 

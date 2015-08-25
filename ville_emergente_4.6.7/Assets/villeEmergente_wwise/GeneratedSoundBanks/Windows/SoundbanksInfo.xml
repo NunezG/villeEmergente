@@ -85,7 +85,7 @@
 				</File>
 				<File Id="138389321" Language="SFX">
 					<ShortName>ri_absynth_dark.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_absynth_dark_EDB54EA3.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\ri_absynth_dark_EEDC3BAE.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="140784749" Language="SFX">
@@ -102,9 +102,19 @@
 					<ShortName>soft rain - brown noise - human activities - drops reverb - 02.wav</ShortName>
 					<Path>SFX\soft rain - brown noise - human activities - drops reverb - 02_8AC08B01.wem</Path>
 				</File>
+				<File Id="176876817" Language="SFX">
+					<ShortName>ri_revdark.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_revdark_25064B7F.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="193697366" Language="SFX">
+					<ShortName>ri_watersplash.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_watersplash_DD7B91F2.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="218791853" Language="SFX">
 					<ShortName>ri_pipe.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_pipe_870CD3DD.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\ri_pipe_5757CD80.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="364965466" Language="SFX">
@@ -165,6 +175,11 @@
 				<File Id="971457556" Language="SFX">
 					<ShortName>ri_suriya.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_suriya_F0D73493.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="983665814" Language="SFX">
+					<ShortName>ri_skannermorph.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_skannermorph_01B3EE8B.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="984711463" Language="SFX">
