@@ -417,6 +417,7 @@
 					<PropertyList>
 						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="bool" Value="False"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -432,10 +433,16 @@
 					<ChildrenList>
 						<ActorMixer Name="Convolutions" ID="{47404959-D7A3-420B-80D3-BB262924C09D}" ShortID="1027962881">
 							<PropertyList>
+								<Property Name="FollowListenerOrientation" Type="bool" Value="False"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Spatialization" Type="bool" Value="False"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 								</Reference>
@@ -6535,10 +6542,15 @@
 									</GroupingInfo>
 								</SwitchContainer>
 							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{E8649058-DEC7-4665-ACEC-FC455B9A3396}"/>
+							</PositioningInfo>
 						</ActorMixer>
 						<ActorMixer Name="Dry" ID="{96D06DED-2C51-48C4-BA7F-831FBA483436}" ShortID="460071281">
 							<PropertyList>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">

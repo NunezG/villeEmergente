@@ -7,21 +7,22 @@
 					<PropertyList>
 						<Property Name="ConeAttenuation" Type="Real64">
 							<ValueList>
-								<Value>-7</Value>
+								<Value>-8</Value>
 							</ValueList>
 						</Property>
+						<Property Name="ConeInnerAngle" Type="int32" Value="95"/>
 						<Property Name="ConeLowPassFilterValue" Type="int32">
 							<ValueList>
-								<Value>20</Value>
+								<Value>40</Value>
 							</ValueList>
 						</Property>
-						<Property Name="ConeOuterAngle" Type="int32" Value="260"/>
+						<Property Name="ConeOuterAngle" Type="int32" Value="270"/>
 						<Property Name="ConeUse" Type="bool">
 							<ValueList>
 								<Value>True</Value>
 							</ValueList>
 						</Property>
-						<Property Name="RadiusMax" Type="Real64" Value="25"/>
+						<Property Name="RadiusMax" Type="Real64" Value="50"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -35,10 +36,10 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>SCurve</SegmentShape>
+											<SegmentShape>InvertedSCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>25</XPos>
+											<XPos>50</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -63,10 +64,10 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>SCurve</SegmentShape>
+											<SegmentShape>Exp3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>25</XPos>
+											<XPos>50</XPos>
 											<YPos>60</YPos>
 											<Flags>37</Flags>
 										</Point>

@@ -81,7 +81,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Dark_1" ID="{65F12811-7F28-46B7-8012-C1165748BE61}"/>
+						<CurrentSwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
 						<CurrentSwitchRef Name="Concrete" ID="{42CEC38C-5153-4D39-B808-3CDB613BA801}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

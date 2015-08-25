@@ -18,23 +18,23 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="843571876" Name="busy_street_convolver_play"/>
+				<Event Id="843571876" Name="busy_street_convolver_play" MaxAttenuation="50.000000"/>
 				<Event Id="3616019102" Name="busy_street_convolver_stop" MaxAttenuation="0.000000"/>
-				<Event Id="3246200785" Name="busy_street_play" MaxAttenuation="25.000000"/>
+				<Event Id="3246200785" Name="busy_street_play"/>
 				<Event Id="202648455" Name="busy_street_stop" MaxAttenuation="0.000000"/>
-				<Event Id="2764064030" Name="drops_cardboard_convolver_play"/>
+				<Event Id="2764064030" Name="drops_cardboard_convolver_play" MaxAttenuation="50.000000"/>
 				<Event Id="3760380384" Name="drops_cardboard_convolver_stop" MaxAttenuation="0.000000"/>
-				<Event Id="2865765803" Name="drops_cardboard_play" MaxAttenuation="25.000000"/>
+				<Event Id="2865765803" Name="drops_cardboard_play"/>
 				<Event Id="1688429121" Name="drops_cardboard_stop" MaxAttenuation="0.000000"/>
-				<Event Id="2203347092" Name="electric_buzz_convolver_play"/>
+				<Event Id="2203347092" Name="electric_buzz_convolver_play" MaxAttenuation="50.000000"/>
 				<Event Id="3907249774" Name="electric_buzz_convolver_stop" MaxAttenuation="0.000000"/>
-				<Event Id="4207081409" Name="electric_buzz_play" MaxAttenuation="25.000000"/>
+				<Event Id="4207081409" Name="electric_buzz_play"/>
 				<Event Id="2232073879" Name="electric_buzz_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1198733287" Name="footsteps_play"/>
 				<Event Id="4187365685" Name="footsteps_stop" MaxAttenuation="0.000000"/>
-				<Event Id="2535466649" Name="lacher_morceau" MaxAttenuation="25.000000"/>
-				<Event Id="3679869857" Name="linker_morceau" MaxAttenuation="25.000000"/>
-				<Event Id="2138522384" Name="prendre_morceau" MaxAttenuation="25.000000"/>
+				<Event Id="2535466649" Name="lacher_morceau" MaxAttenuation="50.000000"/>
+				<Event Id="3679869857" Name="linker_morceau" MaxAttenuation="50.000000"/>
+				<Event Id="2138522384" Name="prendre_morceau" MaxAttenuation="50.000000"/>
 				<Event Id="812837510" Name="rain_2DObject_play"/>
 				<Event Id="2622262392" Name="rain_2DObject_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1129695426" Name="soft_rain_convolver_play"/>
@@ -56,17 +56,17 @@
 				<Event Id="3617898634" Name="switch_dark6" MaxAttenuation="0.000000"/>
 				<Event Id="3617898635" Name="switch_dark7" MaxAttenuation="0.000000"/>
 				<Event Id="2406558223" Name="switch_default" MaxAttenuation="0.000000"/>
-				<Event Id="2896867782" Name="toucher_element" MaxAttenuation="25.000000"/>
-				<Event Id="1342370836" Name="traffic_by_convolver_play"/>
+				<Event Id="2896867782" Name="toucher_element" MaxAttenuation="50.000000"/>
+				<Event Id="1342370836" Name="traffic_by_convolver_play" MaxAttenuation="50.000000"/>
 				<Event Id="3046273518" Name="traffic_by_convolver_stop" MaxAttenuation="0.000000"/>
-				<Event Id="2129545025" Name="traffic_by_play" MaxAttenuation="25.000000"/>
+				<Event Id="2129545025" Name="traffic_by_play"/>
 				<Event Id="154537495" Name="traffic_by_stop" MaxAttenuation="0.000000"/>
 				<Event Id="3115394940" Name="ville_calme"/>
-				<Event Id="193498114" Name="water_3DObject_play" MaxAttenuation="25.000000"/>
+				<Event Id="193498114" Name="water_3DObject_play" MaxAttenuation="50.000000"/>
 				<Event Id="836511068" Name="water_3DObject_stop" MaxAttenuation="0.000000"/>
-				<Event Id="2169518128" Name="water_splash_convolver_play" MaxAttenuation="25.000000"/>
+				<Event Id="2169518128" Name="water_splash_convolver_play" MaxAttenuation="50.000000"/>
 				<Event Id="518000082" Name="water_splash_convolver_stop" MaxAttenuation="0.000000"/>
-				<Event Id="191715533" Name="water_splash_play" MaxAttenuation="25.000000"/>
+				<Event Id="191715533" Name="water_splash_play" MaxAttenuation="50.000000"/>
 				<Event Id="1308909595" Name="water_splash_stop" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
