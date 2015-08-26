@@ -11,13 +11,21 @@
 				</SwitchGroup>
 				<SwitchGroup Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}">
 					<ChildrenList>
-						<Switch Name="Batiment_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
-						<Switch Name="Batiment_2" ID="{39E24B6E-FEE2-433F-96A5-82A16453D5A2}"/>
-						<Switch Name="Batiment_3" ID="{C84A9BF1-5C15-48F8-877E-8B808D95163B}"/>
-						<Switch Name="Batiment_4" ID="{BAF35796-9205-4A2F-A26B-CEB00BAA02A8}"/>
-						<Switch Name="Batiment_5" ID="{BA09B59E-3651-49B4-B96F-AE4211024C97}"/>
-						<Switch Name="Batiment_6" ID="{DD90A43A-C8F4-4D1C-88B4-514B1E2B19E1}"/>
-						<Switch Name="Batiment_7" ID="{F973153E-CA8F-4F59-BC85-0FD246B7783F}"/>
+						<Switch Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
+						<Switch Name="Atmo_2" ID="{39E24B6E-FEE2-433F-96A5-82A16453D5A2}"/>
+						<Switch Name="Atmo_3" ID="{C84A9BF1-5C15-48F8-877E-8B808D95163B}"/>
+						<Switch Name="Atmo_4" ID="{BAF35796-9205-4A2F-A26B-CEB00BAA02A8}"/>
+						<Switch Name="Atmo_5" ID="{BA09B59E-3651-49B4-B96F-AE4211024C97}"/>
+						<Switch Name="Atmo_6" ID="{DD90A43A-C8F4-4D1C-88B4-514B1E2B19E1}"/>
+						<Switch Name="Atmo_7" ID="{F973153E-CA8F-4F59-BC85-0FD246B7783F}"/>
+						<Switch Name="Default" ID="{B99EB49E-4956-43A4-AA90-864549EE2FC7}"/>
+						<Switch Name="Dark_1" ID="{65F12811-7F28-46B7-8012-C1165748BE61}"/>
+						<Switch Name="Dark_2" ID="{C09A34D0-F519-40CC-BF22-6ACC7C538EE4}"/>
+						<Switch Name="Dark_3" ID="{4F52C6A1-7E6F-4017-AF8E-C12BFB9CA162}"/>
+						<Switch Name="Dark_4" ID="{31F5337C-1709-4BE4-884F-D600E12ABC9C}"/>
+						<Switch Name="Dark_5" ID="{973CCB6B-3D15-4A6A-9EB9-C6EC72EB6251}"/>
+						<Switch Name="Dark_6" ID="{9211FD1D-6C13-41C8-86C8-3B4B2C1475CA}"/>
+						<Switch Name="Dark_7" ID="{A7D16E56-5F54-4C8E-BDA0-2372329B19EA}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

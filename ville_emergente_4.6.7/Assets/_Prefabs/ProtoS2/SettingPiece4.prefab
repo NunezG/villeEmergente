@@ -15,12 +15,13 @@ GameObject:
   - 65: {fileID: 6559042}
   - 114: {fileID: 11420718}
   - 114: {fileID: 11479858}
+  - 114: {fileID: 11494542}
   m_Layer: 0
   m_Name: SettingPiece4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &417352
 Transform:
@@ -28,9 +29,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117352}
-  m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: 14.5, y: -.0199999996, z: -24.1000004}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalRotation: {x: .0354091041, y: -.706219733, z: -.706219614, w: -.0354089588}
+  m_LocalPosition: {x: 48.3000031, y: 0, z: 84.4000015}
+  m_LocalScale: {x: 10, y: 36.0881042, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -61,7 +62,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117352}
-  m_Mesh: {fileID: 4300000, guid: ee54b43b89f4f6348b7f1a059da6f0bb, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 0103c645d1ccf804999a7b80ccfc0475, type: 3}
 --- !u!65 &6559042
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -118,6 +119,7 @@ MonoBehaviour:
   defaultAudioEventName: 
   fragment: {fileID: 0}
   isPlayingInteract: 0
+  switchName: 
 --- !u!114 &11479858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -126,11 +128,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 117352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9657b458081836b419512ffebd4262ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 309e099c60822b6459c72fab73676875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
   collapsingSpeed: 10
+--- !u!114 &11494542
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc7d4d9e1e52144d9bfd6640a3062f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

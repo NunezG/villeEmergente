@@ -14,6 +14,7 @@ public class SettingPiece : MonoBehaviour{
     public string defaultAudioEventName = "";
     public Fragment fragment;
     public bool isPlayingInteract = false;
+	public string switchName;
 
 
 	// Use this for initialization
@@ -84,12 +85,23 @@ public class SettingPiece : MonoBehaviour{
         this.renderer.material = fragment.material;
         //this.audioSource.clip = fragment.GetClip();
         this.audioEventName = fragment.audioEventName;
+
+		//AkSoundEngine.SetRTPCValue ("binaural_to_convolver", 100);
+		fragment.Drop ();
+		//AkSoundEngine.SetSwitch("Elements_decor", "Batiment_1", inHandObject.gameObject);
+		WwiseAudioManager.instance.PlayFiniteEvent(switchName, fragment.gameObject);
+		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_convolver_play", fragment.gameObject);
     }
 
     public GameObject OnPickUp()
     {
-        GameObject fragPicked =fragment.OnPickUp();
-        fragment = null;
+		print("SettingPiece:OnPickUp");
+
+		GameObject fragPicked =fragment.OnPickUp();
+
+		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_convolver_stop", fragPicked);
+
+		fragment = null;
         this.renderer.material = activatedMaterial;
         //audioSource.clip = defaultClip;
         audioEventName = defaultAudioEventName;
