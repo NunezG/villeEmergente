@@ -16,7 +16,8 @@ public class AiPrint : RAINAction
         if ((toPrintExp != null) && (toPrintExp.IsValid))
         {
             string toPrint = toPrintExp.Evaluate<string>(ai.DeltaTime, ai.WorkingMemory);
-            Debug.Log("print : " + toPrint+"");
+            //Debug.Log("print : " + toPrint + "");
+            Debug.Log(ai.Body.name + " : Print : " + toPrint);
         }
 
 

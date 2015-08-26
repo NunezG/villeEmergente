@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Building : InteractibleObject {
+public class Building : MonoBehaviour {
 
 	private float lastPos = 0;
 
@@ -9,8 +9,6 @@ public class Building : InteractibleObject {
 
 	public void Start()
 	{
-		type = InteractibleType.SettingPiece;
-		base.Start ();
 	}
 
     /*

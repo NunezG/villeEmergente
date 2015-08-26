@@ -15,7 +15,10 @@ public class Musicien : MonoBehaviour{
 
 
 
-    public float soundTimer = 0,minEndSoundTimer=10, maxEndSoundTimer = 15, endSoundTimer,waitTimer=0,minEndWaitTimer=10, maxEndWaitTimer = 15, endWaitTimer;
+    public float soundTimer = 0,minEndSoundTimer=10, maxEndSoundTimer = 15, endSoundTimer,
+                waitTimer=0,minEndWaitTimer=10, maxEndWaitTimer = 15, endWaitTimer,
+                
+                danceTimer=0,endDanceTimer=10;
 
     public Material material;
     //public AudioSource audioSource;
@@ -30,7 +33,7 @@ public class Musicien : MonoBehaviour{
 	public GameObject previousTarget = null;
 
 	public GameObject[] buildings;
-
+    public SceneRange scene;
 
 	public bool isFragmentComplete=false;
 	
@@ -113,6 +116,20 @@ public class Musicien : MonoBehaviour{
                 endWaitTimer = (int)Random.Range(minEndWaitTimer, maxEndWaitTimer);
             }
         }
+        //---------------------------------
+        if (tMemory.GetItem<bool>("isDancing"))
+        {
+            if (danceTimer < endDanceTimer )
+            {
+                danceTimer = danceTimer + Time.deltaTime;
+            }
+            else 
+            {
+                danceTimer = 0;
+                tMemory.SetItem<bool>("isDancing", false);
+            }
+        }
+
 
         /*
         if (isFragmentComplete)
@@ -132,6 +149,10 @@ public class Musicien : MonoBehaviour{
         {
             buildings[i].GetComponent<Building>().Down();
         }
+    }
+    public void ActiveScene()
+    {
+        scene.gameObject.SetActive(true);
     }
 
     public void OnAddingFragment(Fragment fragment)

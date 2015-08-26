@@ -88,7 +88,7 @@ MonoBehaviour:
       namespace=&quot;&quot; name=&quot;action&quot; debugbreak=&quot;False&quot;
       classname=&quot;AiPrint&quot; /&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot;
       parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;&quot;
-      name=&quot;definir nouvelle destination&quot; debugbreak=&quot;False&quot; classname=&quot;ProtoSelectTarget&quot;
+      name=&quot;definir nouvelle destination&quot; debugbreak=&quot;False&quot; classname=&quot;MusicianSelectTarget&quot;
       /&gt;&lt;/sequencer&gt;&lt;/sequencer&gt;&lt;/selector&gt;&lt;/behaviortree&gt;\"
       type=\"System.String\" id=\"treeData\" /><field type=\"System.Array\" id=\"treeBindings\"
       elementtype=\"System.String\" /></fields><references /></scriptableobject>"

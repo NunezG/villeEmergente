@@ -12,9 +12,10 @@ GameObject:
   - 23: {fileID: 2336540}
   - 95: {fileID: 9536540}
   - 65: {fileID: 6500464}
-  - 65: {fileID: 6535546}
+  - 65: {fileID: 6543190}
   - 114: {fileID: 11481308}
   - 114: {fileID: 11479858}
+  - 114: {fileID: 11411194}
   m_Layer: 0
   m_Name: SettingPiece6
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136540}
   m_LocalRotation: {x: -.0245555863, y: .706680298, z: .706680298, w: .0245555788}
-  m_LocalPosition: {x: 56.1000061, y: 0, z: 14}
+  m_LocalPosition: {x: 151.756668, y: .271470249, z: 564.500671}
   m_LocalScale: {x: 18.2698555, y: 26.2206306, z: 18.2698574}
   m_Children: []
   m_Father: {fileID: 0}
@@ -61,7 +62,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136540}
-  m_Mesh: {fileID: 4300000, guid: d8d3d3352b9f9fb4e957c589682065a2, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 52eb61805ea83e14a90302e5313e8e15, type: 3}
 --- !u!65 &6500464
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -74,7 +75,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .400000006, y: .469999999, z: 1.05999994}
   m_Center: {x: 0, y: .140000001, z: .469999999}
---- !u!65 &6535546
+--- !u!65 &6543190
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -84,8 +85,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .73886621, y: .469999999, z: .49000001}
-  m_Center: {x: .172582641, y: -.25, z: .239999995}
+  m_Size: {x: .738866031, y: .469999999, z: .540000021}
+  m_Center: {x: .17258355, y: -.25, z: .270000011}
 --- !u!95 &9536540
 Animator:
   serializedVersion: 3
@@ -101,6 +102,18 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11411194
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc7d4d9e1e52144d9bfd6640a3062f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
 --- !u!114 &11479858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -109,7 +122,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 136540}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9657b458081836b419512ffebd4262ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 309e099c60822b6459c72fab73676875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
@@ -131,6 +144,7 @@ MonoBehaviour:
   defaultAudioEventName: 
   fragment: {fileID: 0}
   isPlayingInteract: 0
+  switchName: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

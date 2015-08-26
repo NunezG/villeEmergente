@@ -47,38 +47,11 @@ public class CustomMoveTo : RAINAction
             ai.WorkingMemory.SetItem<bool>("moving", false);
             ai.WorkingMemory.SetItem<bool>("destinationReached", true);
             return ActionResult.SUCCESS;
-
         }
         else { 
             return ActionResult.SUCCESS; 
         }
 
-        /*
-		if (!ai.WorkingMemory.GetItem<bool> ("moving"))
-		{
-			if (agent.enabled)
-			{
-				agent.Stop();
-				agent.ResetPath();
-			}
-			return ActionResult.FAILURE;
-		}
-		
-		if (ai.Body.transform.position.x == ai.WorkingMemory.GetItem<GameObject> ("target").transform.position.x
-			&& ai.Body.transform.position.z == ai.WorkingMemory.GetItem<GameObject> ("target").transform.position.z) 
-		{
-			//private void RotateTowards (Transform target) {
-			Vector3 direction = (ai.WorkingMemory.GetItem<GameObject> ("target").transform.position - ai.Body.transform.position).normalized;
-			Quaternion lookRotation = Quaternion.LookRotation(direction);
-			ai.Body.transform.rotation = Quaternion.Slerp(ai.Body.transform.rotation, lookRotation, Time.deltaTime * 5);
-			//}
-			return ActionResult.SUCCESS;
-
-		}
-
-		agent.SetDestination(ai.WorkingMemory.GetItem<GameObject> ("target").transform.position);
-
-        return ActionResult.RUNNING;*/
     }
 
     public override void Stop(RAIN.Core.AI ai)
@@ -86,31 +59,4 @@ public class CustomMoveTo : RAINAction
         base.Stop(ai);
     }
 
-	/*
-    private bool isArrived(Vector3 p_currentPosition, NavMeshAgent p_Agent)
-    {
-		Vector3 target = ai.Body.WorkingMemory.GetItem<GameObject> ("target");
-        p_currentPosition.y = 0f;
-        target.y = 0f;
-
-        if (p_Agent.pathStatus == NavMeshPathStatus.PathPartial)
-        {
-            if (Vector3.Distance(p_currentPosition, p_Agent.pathEndPosition) < 0.1f)
-            {
-                if (Vector3.Distance(p_currentPosition, target) > 4)
-                {
-                    Debug.LogError(gameObject.name + " Problem goto path not close at all " + p_currentPosition + " " + target);
-                    p_Agent.enabled = false;
-                    return false;
-                }
-                return true;
-            }
-            return false;
-        }
-
-		else if (Vector3.Distance(p_currentPosition, target) < 0.1f)
-            return true;
-        return false;
-    }
-*/
 }
