@@ -34,12 +34,12 @@ public class InteractibleObject : MonoBehaviour {
 
         return null;
     }
-
+	/*
     public void OnInteract(){
         print("Parent OnInteract");
         this.GetComponent<SettingPiece>().OnInteract();
     }
-
+*/
 
     public void OnAddingFragment(Fragment fragment)
     {

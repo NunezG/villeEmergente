@@ -11,6 +11,7 @@ public class WwiseAudioManager : MonoBehaviour {
     {
         instance = this;
         LoadBank();
+		PlayFiniteEvent("ville_calme", this.gameObject);
     }
 
 	public void LoadBank () {
@@ -22,21 +23,28 @@ public class WwiseAudioManager : MonoBehaviour {
 	
 	}
     
-    public void PlayLoopEvent(string eventName, GameObject gObject)
+	public void PlayLoopEvent(string eventName, GameObject gObject, bool convolution = false)
     {
+
+		if (convolution)
+			eventName = eventName+"_convolver";
+
         AkSoundEngine.PostEvent(eventName+"_play", gObject);
     }
 
-    public void StopLoopEvent(string eventName, GameObject gObject)
+	public void StopLoopEvent(string eventName, GameObject gObject, bool convolution = false)
     {
+		if (convolution)
+			eventName = eventName+"_convolver";
+
         AkSoundEngine.PostEvent(eventName+"_stop", gObject);
     }
 
-    public void PlayFiniteEvent(string eventName, GameObject gObject, AkCallbackManager.EventCallback callBackFunction )
-    {
-        AkSoundEngine.PostEvent(eventName, gObject, (uint)AkCallbackType.AK_EndOfEvent, callBackFunction, gObject);
-    }
-    public void PlayFiniteEvent(string eventName, GameObject gObject)
+   // public void PlayFiniteEvent(string eventName, GameObject gObject, AkCallbackManager.EventCallback callBackFunction )
+  //  {
+     //   AkSoundEngine.PostEvent(eventName, gObject, (uint)AkCallbackType.AK_EndOfEvent, callBackFunction, gObject);
+ //   }
+    public void PlayFiniteEvent(string eventName, GameObject gObject )
     {
         AkSoundEngine.PostEvent(eventName, gObject);
     }
