@@ -29,7 +29,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 843571876
       Guid: 9cc141fd574f65408cd4e550e25bc4cd
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: busy_street_convolver_stop
       Path: Default Work Unit\Fragments\Sfx busy street\busy_street_convolver_stop
       PathAndIcons:
@@ -85,7 +85,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1530903266
       Guid: 585324df86f9734da0b7dd36238ac25f
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: drops_cardboard_convolver_stop
       Path: Default Work Unit\Fragments\Sfx drops cardboard\drops_cardboard_convolver_stop
       PathAndIcons:
@@ -141,7 +141,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -2091620204
       Guid: 67483b8120948449ac8c30b90e264a26
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: electric_buzz_convolver_stop
       Path: Default Work Unit\Fragments\Sfx electric buzz\electric_buzz_convolver_stop
       PathAndIcons:
@@ -529,7 +529,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1342370836
       Guid: eafa6760607f0844a5c0a285c03d4c65
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: traffic_by_convolver_stop
       Path: Default Work Unit\Fragments\Sfx traffic by\traffic_by_convolver_stop
       PathAndIcons:
@@ -595,7 +595,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 193498114
       Guid: 79abcf98f2eb31439fb6ce8aec825aa1
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: water_3DObject_stop
       Path: Default Work Unit\Tests Wwise Pierre & Guillermo\water_3DObject_stop
       PathAndIcons:
@@ -621,7 +621,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -2125449168
       Guid: 737e57f77b8d23478e1e7ec8bb1fdc4d
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: water_splash_convolver_stop
       Path: Default Work Unit\Fragments\Sfx water splash\water_splash_convolver_stop
       PathAndIcons:
@@ -649,7 +649,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 191715533
       Guid: 9aa30cdc1825bd4d81b266a8adf3a4f7
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: water_splash_stop
       Path: Default Work Unit\Fragments\Sfx water splash\water_splash_stop
       PathAndIcons:
@@ -792,8 +792,8 @@ MonoBehaviour:
   - /villeEmergente_wwise/Events
   - /villeEmergente_wwise/Events/Default Work Unit
   - /villeEmergente_wwise/Events/Default Work Unit/Joueur
-  m_lastPopulateTimePsrt1: -1453037890
-  m_lastPopulateTimePart2: -1999458807
+  m_lastPopulateTimePsrt1: -1928046381
+  m_lastPopulateTimePart2: -1999458783
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)

@@ -29,8 +29,12 @@ public class Fragment : MonoBehaviour{
 
 	public void Drop()
 	{
-		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_stop", gameObject);
+		rigidbody.isKinematic = false;
+		transform.parent = null;
 
+		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_stop", gameObject);
+		WwiseAudioManager.instance.PlayFiniteEvent("lacher_morceau", gameObject);
+		
 		//AkSoundEngine.SetRTPCValue ("binaural_to_convolver", 0);
 		//AkSoundEngine.SetSwitch("Elements_decor", "Batiment_4", gameObject);
 		//WwiseAudioManager.instance.PlayFiniteEvent("switch_bat1", this.gameObject);
