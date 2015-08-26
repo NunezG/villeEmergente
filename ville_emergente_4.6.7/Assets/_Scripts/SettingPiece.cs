@@ -14,7 +14,11 @@ public class SettingPiece : MonoBehaviour{
     public string defaultAudioEventName = "";
     public Fragment fragment;
     public bool isPlayingInteract = false;
-	public string switchName;
+
+	private string switchAtmo = "switch_atmo";
+	public string switchType;
+	private string switchDark = "switch_dark";
+	public string switchNumber;
 
 
 	// Use this for initialization
@@ -24,6 +28,8 @@ public class SettingPiece : MonoBehaviour{
     }
     public void Start()
     {
+		switchType = switchAtmo;
+
         audioEventName = defaultAudioEventName;
         this.renderer.material = defaultMaterial;
         if (fragmentsOfZeWorld.Count == 0)
@@ -39,6 +45,15 @@ public class SettingPiece : MonoBehaviour{
 	// Update is called once per frame
     public void Update()
     {
+
+		if (Input.GetKeyDown(KeyCode.Space)) {
+
+			if (switchType != switchDark)
+			switchType = switchDark;
+			else switchType = switchAtmo;
+
+		}
+
         if (hasBeenActivated && !isPlayingInteract) // si le decor a ete active, et que son son n'est plus en en train de jouer, 
         {
 
@@ -89,8 +104,10 @@ public class SettingPiece : MonoBehaviour{
 		//AkSoundEngine.SetRTPCValue ("binaural_to_convolver", 100);
 		fragment.Drop ();
 		//AkSoundEngine.SetSwitch("Elements_decor", "Batiment_1", inHandObject.gameObject);
-		WwiseAudioManager.instance.PlayFiniteEvent(switchName, fragment.gameObject);
+
+		WwiseAudioManager.instance.PlayFiniteEvent(switchType+switchNumber, fragment.gameObject);
 		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_convolver_play", fragment.gameObject);
+		
     }
 
     public GameObject OnPickUp()
