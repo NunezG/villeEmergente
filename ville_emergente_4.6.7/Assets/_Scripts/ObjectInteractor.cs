@@ -32,6 +32,8 @@ public class ObjectInteractor : MonoBehaviour {
                    // WwiseAudioManager.instance.PlayFiniteEvent("linker_morceau", this.gameObject);
                     interacObj.OnAddingFragment(inHandObject.GetComponent<Fragment>());
                     AddingFragment();
+					//
+					interacObj.GetComponent<Building>().Down();
                 }
                 else if (!handsFull && (interacObj.type == InteractibleType.Fragment // si on a rien en main et qu'on vise un objet rammassable
                     || (interacObj.type == InteractibleType.SettingPiece && interacObj.HasFragment()))) // ou un batiment avec un fragment
