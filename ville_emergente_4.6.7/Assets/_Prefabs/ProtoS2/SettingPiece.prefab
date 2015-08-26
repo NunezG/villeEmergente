@@ -13,6 +13,7 @@ GameObject:
   - 23: {fileID: 2395112}
   - 114: {fileID: 11495110}
   - 114: {fileID: 11479858}
+  - 114: {fileID: 11427492}
   m_Layer: 0
   m_Name: SettingPiece
   m_TagString: SettingPiece
@@ -146,6 +147,18 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &11427492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc7d4d9e1e52144d9bfd6640a3062f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
 --- !u!114 &11479858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -154,7 +167,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 195110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9657b458081836b419512ffebd4262ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 309e099c60822b6459c72fab73676875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
@@ -176,6 +189,7 @@ MonoBehaviour:
   defaultAudioEventName: prendre_morceau
   fragment: {fileID: 0}
   isPlayingInteract: 0
+  switchName: 
 --- !u!136 &13695112
 CapsuleCollider:
   m_ObjectHideFlags: 1

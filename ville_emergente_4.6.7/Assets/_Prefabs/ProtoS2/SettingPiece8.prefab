@@ -14,6 +14,7 @@ GameObject:
   - 65: {fileID: 6533518}
   - 114: {fileID: 11478836}
   - 114: {fileID: 11479858}
+  - 114: {fileID: 11488062}
   m_Layer: 0
   m_Name: SettingPiece8
   m_TagString: Untagged
@@ -60,7 +61,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 196038}
-  m_Mesh: {fileID: 4300000, guid: 607c6d1b9ffa6f945b6ad8060163148b, type: 3}
+  m_Mesh: {fileID: 4300000, guid: dccba5605f6c25d4e93a77e9dddfa64a, type: 3}
 --- !u!65 &6533518
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -105,6 +106,7 @@ MonoBehaviour:
   defaultAudioEventName: 
   fragment: {fileID: 0}
   isPlayingInteract: 0
+  switchName: 
 --- !u!114 &11479858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -113,11 +115,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 196038}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9657b458081836b419512ffebd4262ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 309e099c60822b6459c72fab73676875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
   collapsingSpeed: 10
+--- !u!114 &11488062
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc7d4d9e1e52144d9bfd6640a3062f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
