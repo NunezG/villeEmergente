@@ -5,7 +5,7 @@ using RAIN.Action;
 using RAIN.Core;
 
 [RAINAction]
-public class OpenTheWay : RAINAction
+public class StartDance : RAINAction
 {
     public override void Start(RAIN.Core.AI ai)
     {
@@ -14,8 +14,9 @@ public class OpenTheWay : RAINAction
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
-        ai.Body.GetComponent<Musicien>().OpenTheWay();
-        ai.Body.GetComponent<Musicien>().ActiveScene();
+        Debug.Log(ai.Body.name + " : Passant dance !");
+
+        ai.WorkingMemory.SetItem<bool>("isDancing", true);
         return ActionResult.SUCCESS;
     }
 

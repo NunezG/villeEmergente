@@ -31,7 +31,7 @@ public class SceneRange : MonoBehaviour {
     {
         //print("SOnTriggerEnterOnTriggerEnterOnTriggerEnter"+other.name);
 
-        if (other.tag == "NPC" && IsThereAvailableSpot())
+        if (other.tag == "NPC" && other.GetComponent<Passant>()!=null  && IsThereAvailableSpot())
         {
             Passant passant = other.GetComponent<Passant>();
             if (passant != null)
@@ -44,13 +44,13 @@ public class SceneRange : MonoBehaviour {
 
     void OnTriggerExit(Collider other)
     {
-        if (other.tag == "NPC")
+        if (other.tag == "NPC" && other.GetComponent<Passant>() != null)
         {
             Passant passant = other.GetComponent<Passant>();
             if (passant != null)
             {
-                passant.SetInRangeOfScene(false);
                 passant.availableScenes.Remove(this);
+                passant.SetInRangeOfScene(false);
             }
         }
     }

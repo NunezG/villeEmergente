@@ -17,7 +17,7 @@ public class MusicianDance : RAINAction
 
         Debug.Log("Musician dance !");
 
-        ai.Body.GetComponent<Musicien>().SetIsFragmentComplete(false);
+        ai.WorkingMemory.SetItem<bool>("isDancing", true);
         return ActionResult.SUCCESS;
     }
 

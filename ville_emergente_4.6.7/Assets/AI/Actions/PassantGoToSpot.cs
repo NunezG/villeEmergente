@@ -4,19 +4,23 @@ using System.Collections.Generic;
 using RAIN.Action;
 using RAIN.Core;
 
+
 [RAINAction]
-public class OpenTheWay : RAINAction
+public class PassantGoToSpot : RAINAction
 {
     public override void Start(RAIN.Core.AI ai)
     {
+        //ai.WorkingMemory.SetItem<bool> ("moving", true);
         base.Start(ai);
     }
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
-        ai.Body.GetComponent<Musicien>().OpenTheWay();
-        ai.Body.GetComponent<Musicien>().ActiveScene();
-        return ActionResult.SUCCESS;
+        NavMeshAgent agent = ai.Body.GetComponent<NavMeshAgent>();
+            ai.WorkingMemory.SetItem<bool>("moving", true);
+            agent.SetDestination(ai.WorkingMemory.GetItem<GameObject>("target").transform.position);
+            return ActionResult.SUCCESS;
+
     }
 
     public override void Stop(RAIN.Core.AI ai)

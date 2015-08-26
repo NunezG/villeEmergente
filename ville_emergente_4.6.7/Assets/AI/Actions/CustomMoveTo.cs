@@ -47,7 +47,6 @@ public class CustomMoveTo : RAINAction
             ai.WorkingMemory.SetItem<bool>("moving", false);
             ai.WorkingMemory.SetItem<bool>("destinationReached", true);
             return ActionResult.SUCCESS;
-
         }
         else { 
             return ActionResult.SUCCESS; 

@@ -5,18 +5,20 @@ using RAIN.Action;
 using RAIN.Core;
 
 [RAINAction]
-public class OpenTheWay : RAINAction
+public class IfGuide : RAINAction
 {
     public override void Start(RAIN.Core.AI ai)
     {
         base.Start(ai);
+        Debug.Log(ai.Body.name + " : ifGuide  ");
     }
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
-        ai.Body.GetComponent<Musicien>().OpenTheWay();
-        ai.Body.GetComponent<Musicien>().ActiveScene();
-        return ActionResult.SUCCESS;
+        if (ai.Body.GetComponent<Passant>().sceneLeader.GetComponent<Guide>() != null)
+            return ActionResult.SUCCESS;
+        else
+            return ActionResult.FAILURE;
     }
 
     public override void Stop(RAIN.Core.AI ai)

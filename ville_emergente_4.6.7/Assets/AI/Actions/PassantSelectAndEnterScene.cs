@@ -5,17 +5,19 @@ using RAIN.Action;
 using RAIN.Core;
 
 [RAINAction]
-public class OpenTheWay : RAINAction
+public class PassantSelectAndEnterScene : RAINAction
 {
     public override void Start(RAIN.Core.AI ai)
     {
         base.Start(ai);
+        Debug.Log(ai.Body.name + " : PassantSelectAndEnterScene");
     }
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
-        ai.Body.GetComponent<Musicien>().OpenTheWay();
-        ai.Body.GetComponent<Musicien>().ActiveScene();
+
+        ai.Body.GetComponent<Passant>().SelectAndEnterScene();
+        ai.WorkingMemory.SetItem<bool>("destinationReached", true);
         return ActionResult.SUCCESS;
     }
 
