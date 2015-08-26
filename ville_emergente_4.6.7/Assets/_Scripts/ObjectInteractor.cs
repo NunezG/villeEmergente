@@ -44,7 +44,7 @@ public class ObjectInteractor : MonoBehaviour {
                 }
                 else if (!handsFull && (interacObj.type == InteractibleType.SettingPiece && !interacObj.HasFragment())) // si on a rien en main et qu'on vise un element de decor vide
                 {
-                   // WwiseAudioManager.instance.PlayFiniteEvent("toucher_element", this.gameObject);
+					WwiseAudioManager.instance.PlayFiniteEvent("toucher_element", this.gameObject);
                     //print("(!handsFull && interacObj.type == InteractibleType.SettingPiece)");
                     //on declenche l'interaction avec cet objet
                    // interacObj.OnInteract();
@@ -84,10 +84,8 @@ public class ObjectInteractor : MonoBehaviour {
 		if (inHandObject != null)
         {
             inHandObject.GetComponent<Fragment>().Drop();
-
-            inHandObject.rigidbody.isKinematic = false;
+			        
             handsFull = false;
-            inHandObject.transform.parent = null;
             inHandObject = null;
 
         }
