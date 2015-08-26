@@ -81,7 +81,46 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
+						<CurrentSwitchRef Name="Atmo_7" ID="{F973153E-CA8F-4F59-BC85-0FD246B7783F}"/>
+						<CurrentSwitchRef Name="Concrete" ID="{42CEC38C-5153-4D39-B808-3CDB613BA801}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Interactions simples" ID="{07B40CED-6B27-4F1B-BF79-9293F99E9F99}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Sfx_drops_cardboard_switch" ID="{FAE18C05-87AD-4BC0-AB34-1549A570AFFF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Ville Calme" ID="{89E7287E-F384-4FAA-9E2B-DD32A0F7F595}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Lâcher morceau" ID="{A2438C7F-1EC1-4963-A35B-145021C0F71D}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Linker morceau" ID="{A7BE9468-CC4C-49D2-BE76-0F3D8FE78658}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Prendre morceau" ID="{37D3EC53-DF92-47FA-A263-D475FE442386}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Toucher élément" ID="{8C0EE57C-46CC-4653-98D5-432112F38E4D}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="binaural_to_convolver" ID="{4771F142-4D7B-451E-8786-58DE18DAFCFA}"/>
+							<Value>100</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Atmo_4" ID="{BAF35796-9205-4A2F-A26B-CEB00BAA02A8}"/>
 						<CurrentSwitchRef Name="Concrete" ID="{42CEC38C-5153-4D39-B808-3CDB613BA801}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
