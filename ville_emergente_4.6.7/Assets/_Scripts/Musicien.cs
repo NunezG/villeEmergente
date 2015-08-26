@@ -49,7 +49,7 @@ public class Musicien : MonoBehaviour{
             allNavTargets = GameObject.FindGameObjectsWithTag("NavigationTarget");
         foreach (GameObject gObject in allNavTargets)
        {
-           if (gObject.name == "Navigation Target " + matriculeMusicien)
+           if (gObject.name == "NT_Musicien_" + matriculeMusicien)
            {
                targets.Add(gObject);
            }
