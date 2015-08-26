@@ -17,7 +17,6 @@ public class PassantGoToSpot : RAINAction
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
         NavMeshAgent agent = ai.Body.GetComponent<NavMeshAgent>();
-            ai.WorkingMemory.SetItem<bool>("moving", true);
             agent.SetDestination(ai.WorkingMemory.GetItem<GameObject>("target").transform.position);
             return ActionResult.SUCCESS;
 

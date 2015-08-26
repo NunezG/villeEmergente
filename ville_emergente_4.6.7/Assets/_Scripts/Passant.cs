@@ -38,13 +38,13 @@ public class Passant : MonoBehaviour {
         // if(targets==null)
         //Debug.Log ("START MUSICIENN");
         int matriculePassant = int.Parse(this.gameObject.name.Substring(7));
-        print("matriculePassant " + matriculePassant);
+        //print("matriculePassant " + matriculePassant);
 
         if (allNavTargets == null)
             allNavTargets = GameObject.FindGameObjectsWithTag("NavigationTarget");
         foreach (GameObject gObject in allNavTargets)
         {
-            if (gObject.name == "Navigation Target " + matriculePassant)
+            if (gObject.name == "NT_Passant_" + matriculePassant)
             {
                 targets.Add(gObject);
             }

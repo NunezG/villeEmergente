@@ -18,6 +18,7 @@ public class PassantSelectAndEnterScene : RAINAction
 
         ai.Body.GetComponent<Passant>().SelectAndEnterScene();
         ai.WorkingMemory.SetItem<bool>("destinationReached", true);
+        ai.WorkingMemory.SetItem<bool>("moving", false); // moving utilisé pour les mouvements hors scene
         return ActionResult.SUCCESS;
     }
 
