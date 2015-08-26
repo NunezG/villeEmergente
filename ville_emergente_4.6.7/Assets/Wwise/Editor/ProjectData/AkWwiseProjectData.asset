@@ -29,7 +29,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 843571876
       Guid: 9cc141fd574f65408cd4e550e25bc4cd
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: busy_street_convolver_stop
       Path: Default Work Unit\Fragments\Sfx busy street\busy_street_convolver_stop
       PathAndIcons:
@@ -57,7 +57,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1048766511
       Guid: 4762f2e5f4ed634d9ac498b587c5d947
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: busy_street_stop
       Path: Default Work Unit\Fragments\Sfx busy street\busy_street_stop
       PathAndIcons:
@@ -85,7 +85,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1530903266
       Guid: 585324df86f9734da0b7dd36238ac25f
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: drops_cardboard_convolver_stop
       Path: Default Work Unit\Fragments\Sfx drops cardboard\drops_cardboard_convolver_stop
       PathAndIcons:
@@ -113,7 +113,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1429201493
       Guid: d06c9440cdf4f24da2d4350ab8080ef0
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: drops_cardboard_stop
       Path: Default Work Unit\Fragments\Sfx drops cardboard\drops_cardboard_stop
       PathAndIcons:
@@ -141,7 +141,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -2091620204
       Guid: 67483b8120948449ac8c30b90e264a26
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: electric_buzz_convolver_stop
       Path: Default Work Unit\Fragments\Sfx electric buzz\electric_buzz_convolver_stop
       PathAndIcons:
@@ -169,7 +169,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -87885887
       Guid: d286b7e26f627849b38d7f784a6d0868
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: electric_buzz_stop
       Path: Default Work Unit\Fragments\Sfx electric buzz\electric_buzz_stop
       PathAndIcons:
@@ -219,7 +219,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1759500647
       Guid: 0829f1ece930964faa3bd51c90e42f61
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: linker_morceau
       Path: Default Work Unit\Joueur\linker_morceau
       PathAndIcons:
@@ -231,7 +231,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -615097439
       Guid: fe6a447c6ea03542a46bc95890394549
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: prendre_morceau
       Path: Default Work Unit\Joueur\prendre_morceau
       PathAndIcons:
@@ -243,7 +243,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 2138522384
       Guid: c36c4d293c1a974f84c14d54963c81bb
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: rain_2DObject_play
       Path: Default Work Unit\Tests Wwise Pierre & Guillermo\rain_2DObject_play
       PathAndIcons:
@@ -515,7 +515,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1398099514
       Guid: a64fd120264ccf4d92ea696661c9a73c
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: traffic_by_convolver_play
       Path: Default Work Unit\Fragments\Sfx traffic by\traffic_by_convolver_play
       PathAndIcons:
@@ -529,7 +529,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1342370836
       Guid: eafa6760607f0844a5c0a285c03d4c65
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: traffic_by_convolver_stop
       Path: Default Work Unit\Fragments\Sfx traffic by\traffic_by_convolver_stop
       PathAndIcons:
@@ -557,7 +557,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 2129545025
       Guid: 3eaca14df8a27145ae189b72db1cb7e5
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: traffic_by_stop
       Path: Default Work Unit\Fragments\Sfx traffic by\traffic_by_stop
       PathAndIcons:
@@ -595,7 +595,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 193498114
       Guid: 79abcf98f2eb31439fb6ce8aec825aa1
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: water_3DObject_stop
       Path: Default Work Unit\Tests Wwise Pierre & Guillermo\water_3DObject_stop
       PathAndIcons:
@@ -621,7 +621,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -2125449168
       Guid: 737e57f77b8d23478e1e7ec8bb1fdc4d
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: water_splash_convolver_stop
       Path: Default Work Unit\Fragments\Sfx water splash\water_splash_convolver_stop
       PathAndIcons:
@@ -649,7 +649,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 191715533
       Guid: 9aa30cdc1825bd4d81b266a8adf3a4f7
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: water_splash_stop
       Path: Default Work Unit\Fragments\Sfx water splash\water_splash_stop
       PathAndIcons:
@@ -791,11 +791,9 @@ MonoBehaviour:
   - /villeEmergente_wwise
   - /villeEmergente_wwise/Events
   - /villeEmergente_wwise/Events/Default Work Unit
-  - /villeEmergente_wwise/Switches
-  - /villeEmergente_wwise/Switches/Default Work Unit
-  - /villeEmergente_wwise/Switches/Default Work Unit/Elements_decor
-  m_lastPopulateTimePsrt1: -1777626246
-  m_lastPopulateTimePart2: -1999458983
+  - /villeEmergente_wwise/Events/Default Work Unit/Joueur
+  m_lastPopulateTimePsrt1: -1453037890
+  m_lastPopulateTimePart2: -1999458807
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)

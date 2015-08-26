@@ -408,7 +408,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 121964}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef59f556bd855d64eaaf2fbee6f53603, type: 3}
+  m_Script: {fileID: 11500000, guid: d8aace19647bc9549af5b7eef099920d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   soundTimer: 0
@@ -419,8 +419,10 @@ MonoBehaviour:
   minEndWaitTimer: 10
   maxEndWaitTimer: 15
   endWaitTimer: 0
-  material: {fileID: 2100000, guid: c246e3bec225f3841bbfd51c3b557eef, type: 2}
-  defaultAudioEventName: prendre_morceau
+  danceTimer: 0
+  endDanceTimer: 10
+  material: {fileID: 0}
+  defaultAudioEventName: 
   fragment: {fileID: 0}
   targets: []
   previousTarget: {fileID: 0}

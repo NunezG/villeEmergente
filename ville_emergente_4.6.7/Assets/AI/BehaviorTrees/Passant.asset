@@ -46,13 +46,30 @@ MonoBehaviour:
       d\xE9j\xE0 ?&quot; expression=&quot;isDancing==true&quot; debugbreak=&quot;False&quot;
       /&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
       parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;d\xE9but de ma danse&quot;
-      debugbreak=&quot;False&quot; classname=&quot;StartDance&quot; /&gt;&lt;expression
+      debugbreak=&quot;False&quot; classname=&quot;StartDance&quot; /&gt;&lt;/selector&gt;&lt;/sequencer&gt;&lt;sequencer
+      usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
+      name=&quot;sequencer&quot; debugbreak=&quot;False&quot;&gt;&lt;expression returnvalue=&quot;evaluate&quot;
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;est-ce que je danse
+      d\xE9j\xE0 ?&quot; expression=&quot;isDancing==true&quot; debugbreak=&quot;False&quot;
+      /&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
+      parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;je ne dance pas&quot;
+      debugbreak=&quot;False&quot; classname=&quot;StopDance&quot; /&gt;&lt;expression
       returnvalue=&quot;success&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
       name=&quot;perte de 5 points d'attention&quot; expression=&quot;attention=attention-5&quot;
-      debugbreak=&quot;False&quot; /&gt;&lt;/selector&gt;&lt;/sequencer&gt;&lt;action
+      debugbreak=&quot;False&quot; /&gt;&lt;expression returnvalue=&quot;evaluate&quot;
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;si attention == 0&quot;
+      expression=&quot;attention==0&quot; debugbreak=&quot;False&quot; /&gt;&lt;action
       repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
-      parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;je ne dance pas&quot;
-      debugbreak=&quot;False&quot; classname=&quot;StopDance&quot; /&gt;&lt;/selector&gt;&lt;/sequencer&gt;&lt;sequencer
+      parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;quitte la sc\xE8ne&quot;
+      debugbreak=&quot;False&quot; classname=&quot;PassantLeaveScene&quot; /&gt;&lt;expression
+      returnvalue=&quot;success&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
+      name=&quot;Je ne suis plus dans la sc\xE8ne&quot; expression=&quot;inLifeScene=false&quot;
+      debugbreak=&quot;False&quot; /&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot;
+      parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;&quot;
+      name=&quot;selectTarget&quot; debugbreak=&quot;False&quot; classname=&quot;PassantSelectTarget&quot;
+      /&gt;&lt;/sequencer&gt;&lt;expression returnvalue=&quot;success&quot; repeatuntil=&quot;&quot;
+      priority=&quot;&quot; name=&quot;renvoie toujours vrai&quot; expression=&quot;&quot;
+      debugbreak=&quot;False&quot; /&gt;&lt;/selector&gt;&lt;/sequencer&gt;&lt;sequencer
       usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
       name=&quot;sequencer&quot; debugbreak=&quot;False&quot;&gt;&lt;action repeatuntil=&quot;&quot;
       priority=&quot;&quot; parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;&quot;
@@ -66,9 +83,9 @@ MonoBehaviour:
       returnvalue=&quot;evaluate&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
       name=&quot;est-ce que je suis \xE0 ma place ?&quot; expression=&quot;&quot;
       debugbreak=&quot;False&quot; /&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot;
-      parametervalues=&quot;&quot; parameters=&quot;dG9QcmludEV4cA==&quot; namespace=&quot;&quot;
+      parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;&quot;
       name=&quot;je me rends \xE0 ma place (renvoie false syst\xE9matiquement)&quot;
-      debugbreak=&quot;False&quot; classname=&quot;AiPrint&quot; /&gt;&lt;/selector&gt;&lt;selector
+      debugbreak=&quot;False&quot; classname=&quot;PassantGoToSpot&quot; /&gt;&lt;/selector&gt;&lt;selector
       usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
       name=&quot;selector&quot; debugbreak=&quot;False&quot;&gt;&lt;sequencer usepriorities=&quot;False&quot;
       repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;sequencer&quot; debugbreak=&quot;False&quot;&gt;&lt;expression
@@ -91,30 +108,32 @@ MonoBehaviour:
       parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;y a-t-il de la place
       ?&quot; debugbreak=&quot;False&quot; classname=&quot;LookForFreeSpot&quot; /&gt;&lt;action
       repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
-      parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;\xE9tablir la priorit\xE9
-      entre ces sc\xE8nes&quot; debugbreak=&quot;False&quot; classname=&quot;PassantSelectAndEnterScene&quot;
+      parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;s\xE9lectionner une
+      sc\xE8ne et y rentrer&quot; debugbreak=&quot;False&quot; classname=&quot;PassantSelectAndEnterScene&quot;
       /&gt;&lt;expression returnvalue=&quot;success&quot; repeatuntil=&quot;&quot;
-      priority=&quot;&quot; name=&quot;Je suis dans la sc\xE8ne&quot; expression=&quot;inLifeScene=true&quot;
+      priority=&quot;&quot; name=&quot;reset timer&quot; expression=&quot;waitTimerHasEnded=false&quot;
+      debugbreak=&quot;False&quot; /&gt;&lt;expression returnvalue=&quot;success&quot;
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;Je suis dans la sc\xE8ne&quot;
+      expression=&quot;inLifeScene=true&quot; debugbreak=&quot;False&quot; /&gt;&lt;action
+      repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
+      parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;stop mon move&quot;
+      debugbreak=&quot;False&quot; classname=&quot;CustomStopMovement&quot; /&gt;&lt;/sequencer&gt;&lt;/selector&gt;&lt;/sequencer&gt;&lt;sequencer
+      usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
+      name=&quot;d\xE9placement&quot; debugbreak=&quot;False&quot;&gt;&lt;selector
+      usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
+      name=&quot;atteindre la cible&quot; debugbreak=&quot;False&quot;&gt;&lt;expression
+      returnvalue=&quot;evaluate&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
+      name=&quot;ai-je atteint la cible ?&quot; expression=&quot;destinationReached==true&quot;
+      debugbreak=&quot;False&quot; /&gt;&lt;selector usepriorities=&quot;False&quot;
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;j'y vais&quot; debugbreak=&quot;False&quot;&gt;&lt;sequencer
+      usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
+      name=&quot;o\xF9 en suis-je ?&quot; debugbreak=&quot;False&quot;&gt;&lt;expression
+      returnvalue=&quot;evaluate&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
+      name=&quot;player in range&quot; expression=&quot;playerIsInRange==true&quot;
       debugbreak=&quot;False&quot; /&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot;
       parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;&quot;
-      name=&quot;stop mon move&quot; debugbreak=&quot;False&quot; classname=&quot;CustomStopMovement&quot;
-      /&gt;&lt;/sequencer&gt;&lt;/selector&gt;&lt;/sequencer&gt;&lt;sequencer usepriorities=&quot;False&quot;
-      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;d\xE9placement&quot;
-      debugbreak=&quot;False&quot;&gt;&lt;selector usepriorities=&quot;False&quot;
-      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;atteindre la cible&quot;
-      debugbreak=&quot;False&quot;&gt;&lt;expression returnvalue=&quot;evaluate&quot;
-      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;ai-je atteint la cible
-      ?&quot; expression=&quot;destinationReached==true&quot; debugbreak=&quot;False&quot;
-      /&gt;&lt;selector usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
-      name=&quot;j'y vais&quot; debugbreak=&quot;False&quot;&gt;&lt;sequencer usepriorities=&quot;False&quot;
-      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;o\xF9 en suis-je ?&quot;
-      debugbreak=&quot;False&quot;&gt;&lt;expression returnvalue=&quot;evaluate&quot;
-      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;player in range&quot;
-      expression=&quot;playerIsInRange==true&quot; debugbreak=&quot;False&quot; /&gt;&lt;action
-      repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
-      parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;stop d\xE9placement&quot;
-      debugbreak=&quot;False&quot; classname=&quot;CustomStopMovement&quot; /&gt;&lt;action
-      repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
+      name=&quot;stop d\xE9placement&quot; debugbreak=&quot;False&quot; classname=&quot;CustomStopMovement&quot;
+      /&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
       parameters=&quot;dG9QcmludEV4cA==&quot; namespace=&quot;&quot; name=&quot;regarder
       le joueur&quot; debugbreak=&quot;False&quot; classname=&quot;AiPrint&quot; /&gt;&lt;/sequencer&gt;&lt;action
       repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
