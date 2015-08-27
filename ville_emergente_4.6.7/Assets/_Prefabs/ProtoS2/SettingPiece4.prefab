@@ -47,8 +47,8 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 599ad750992ab164db995c8fd814ea43, type: 2}
-  - {fileID: 2100000, guid: 8e4891bbf63242e4ea5ffa0703ed3177, type: 2}
+  - {fileID: 2100000, guid: ac85b2bed7f1cb34c8537b3626a4936c, type: 2}
+  - {fileID: 2100000, guid: 9af93862da9adf84e94ec895d1128523, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -116,11 +116,10 @@ MonoBehaviour:
   fragmentsCallRadius: 25
   defaultMaterial: {fileID: 2100000, guid: 599ad750992ab164db995c8fd814ea43, type: 2}
   activatedMaterial: {fileID: 2100000, guid: fc56dd6b8d19fc342b7c6c17af78eb5b, type: 2}
-  defaultAudioEventName: 
   fragment: {fileID: 0}
   isPlayingInteract: 0
-  switchType: switch_atmo
   switchNumber: 1
+  switchT: 
 --- !u!114 &11479858
 MonoBehaviour:
   m_ObjectHideFlags: 1
