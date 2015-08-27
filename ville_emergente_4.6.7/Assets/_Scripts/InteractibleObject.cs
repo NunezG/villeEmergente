@@ -7,6 +7,8 @@ public class InteractibleObject : MonoBehaviour {
    // public AudioSource audioSource;
     public InteractibleType type; // par defaut un element du decor
 
+	//public string playingSound;
+
 	// Use this for initialization
 	public void Start () {
 

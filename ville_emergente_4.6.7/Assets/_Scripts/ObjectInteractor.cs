@@ -83,14 +83,13 @@ public class ObjectInteractor : MonoBehaviour {
 		if (inHandObject != null)
         {
 			inHandObject.GetComponent<Fragment>().Drop();
-			        
-            handsFull = false;
-            inHandObject = null;
-
+			     
 			if (hitObject == null){
 				WwiseAudioManager.instance.PlayFiniteEvent("lacher_morceau", inHandObject);
 			}
 
+            handsFull = false;
+            inHandObject = null;
         }
 	}
 

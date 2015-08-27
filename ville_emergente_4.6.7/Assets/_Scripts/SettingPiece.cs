@@ -97,11 +97,11 @@ public class SettingPiece : MonoBehaviour{
 		fragment.Drop ();
 		//AkSoundEngine.SetSwitch("Elements_decor", "Batiment_1", inHandObject.gameObject);
 
+		SoundUniverseManager.addSoundEvent (fragment.gameObject); 
+
 		WwiseAudioManager.instance.PlayFiniteEvent("linker_morceau", fragment.gameObject);
-
 		WwiseAudioManager.instance.PlayFiniteEvent(SoundUniverseManager.switchType+switchNumber, fragment.gameObject);
-
-		WwiseAudioManager.instance.PlayLoopEvent (fragment.family, fragment.gameObject, true);
+		WwiseAudioManager.instance.PlayLoopEvent (fragment.soundEevent, fragment.gameObject, true);
 
 		
     }
@@ -112,7 +112,9 @@ public class SettingPiece : MonoBehaviour{
 
 		GameObject fragPicked =fragment.OnPickUp();
 
-		WwiseAudioManager.instance.StopLoopEvent(fragment.family, fragment.gameObject, true);
+		SoundUniverseManager.removeSoundEvent(fragment.gameObject);
+
+		WwiseAudioManager.instance.StopLoopEvent(fragment.soundEevent, fragment.gameObject, true);
 
 		fragment = null;
         this.renderer.material = activatedMaterial;
