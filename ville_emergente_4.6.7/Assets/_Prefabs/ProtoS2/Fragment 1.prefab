@@ -15,7 +15,7 @@ GameObject:
   - 114: {fileID: 11435232}
   - 114: {fileID: 11435234}
   m_Layer: 0
-  m_Name: Fragment
+  m_Name: Fragment 1
   m_TagString: Fragment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 62e7be7317d14b8438ddfe47d1d16907, type: 2}
+  - {fileID: 2100000, guid: 7d8ed4dceee7b8843bfabb139a93e312, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -186,7 +186,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 7d8ed4dceee7b8843bfabb139a93e312, type: 2}
-  family: urban
+  audioEventName: prendre_morceau
+  family: liquide
 --- !u!135 &13535232
 SphereCollider:
   m_ObjectHideFlags: 1

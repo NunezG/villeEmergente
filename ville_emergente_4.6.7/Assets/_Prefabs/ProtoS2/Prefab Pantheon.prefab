@@ -966,10 +966,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 151476}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9657b458081836b419512ffebd4262ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 309e099c60822b6459c72fab73676875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  collapsingSpeed: 10
 --- !u!114 &11451456
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -984,10 +984,10 @@ MonoBehaviour:
   fragmentsCallRadius: 25
   defaultMaterial: {fileID: 0}
   activatedMaterial: {fileID: 0}
-  defaultAudioEventName: 
   fragment: {fileID: 0}
   isPlayingInteract: 0
-  switchName: 
+  switchType: 
+  switchNumber: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -10,7 +10,7 @@ public class SettingPiece : MonoBehaviour{
     public Material defaultMaterial, activatedMaterial;
     //public AudioSource audioSource;
    // public AudioClip defaultClip;
-    private string audioEventName = "";
+   // private string audioEventName = "";
     //public string defaultAudioEventName = "";
     public Fragment fragment;
     public bool isPlayingInteract = false;
@@ -72,7 +72,7 @@ public class SettingPiece : MonoBehaviour{
 	}
 
     bool hasBeenActivated = false;
-    public void OnInteract()
+   /* public void OnInteract()
     {
         print("SettingPiece:OnInteract ");
         isPlayingInteract = true;
@@ -91,7 +91,7 @@ public class SettingPiece : MonoBehaviour{
             print("OnInteractCallBack");
         }
     }
-
+*/
     public void OnAddingFragment(Fragment fragment)
 	{
         print("SettingPiece:OnAddingFragment");
@@ -99,7 +99,7 @@ public class SettingPiece : MonoBehaviour{
         //activatedMaterial = fragment.material;
         this.renderer.material = fragment.material;
         //this.audioSource.clip = fragment.GetClip();
-        this.audioEventName = fragment.audioEventName;
+       // this.audioEventName = fragment.audioEventName;
 
 		//AkSoundEngine.SetRTPCValue ("binaural_to_convolver", 100);
 		fragment.Drop ();
@@ -107,9 +107,10 @@ public class SettingPiece : MonoBehaviour{
 
 		WwiseAudioManager.instance.PlayFiniteEvent("linker_morceau", fragment.gameObject);
 
-
 		WwiseAudioManager.instance.PlayFiniteEvent(switchType+switchNumber, fragment.gameObject);
-		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_convolver_play", fragment.gameObject);
+
+		WwiseAudioManager.instance.PlayLoopEvent (fragment.family, fragment.gameObject, true);
+
 		
     }
 
@@ -119,7 +120,7 @@ public class SettingPiece : MonoBehaviour{
 
 		GameObject fragPicked =fragment.OnPickUp();
 
-		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_convolver_stop", fragPicked);
+		WwiseAudioManager.instance.StopLoopEvent(fragment.family, fragment.gameObject, true);
 
 		fragment = null;
         this.renderer.material = activatedMaterial;
