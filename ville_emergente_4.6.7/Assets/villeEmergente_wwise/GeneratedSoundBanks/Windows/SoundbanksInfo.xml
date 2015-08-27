@@ -58,9 +58,9 @@
 				<Event Id="836511068" Name="water_3DObject_stop" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="22416358" Language="SFX">
-					<ShortName>sfx_pas_mere_chambre_02.wav</ShortName>
-					<Path>SFX\sfx_pas_mere_chambre_02_597F6127.wem</Path>
+				<File Id="77724633" Language="SFX">
+					<ShortName>sfx_footsteps_05.wav</ShortName>
+					<Path>SFX\sfx_footsteps_05_950FF8F3.wem</Path>
 				</File>
 				<File Id="121343736" Language="SFX">
 					<ShortName>ri_rev_light.wav</ShortName>
@@ -109,9 +109,9 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_pipe_5757CD80.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
-				<File Id="364965466" Language="SFX">
-					<ShortName>sfx_pas_mere_chambre_07.wav</ShortName>
-					<Path>SFX\sfx_pas_mere_chambre_07_950FF8F3.wem</Path>
+				<File Id="261012673" Language="SFX">
+					<ShortName>sfx_footsteps_01.wav</ShortName>
+					<Path>SFX\sfx_footsteps_01_489996AE.wem</Path>
 				</File>
 				<File Id="387101083" Language="SFX">
 					<ShortName>sfx_ville_calme.wav</ShortName>
@@ -129,17 +129,17 @@
 					<ShortName>sfx_traffic_by.wav</ShortName>
 					<Path>SFX\sfx_traffic_by_D64AECDA.wem</Path>
 				</File>
-				<File Id="506845639" Language="SFX">
-					<ShortName>sfx_pas_mere_chambre_03.wav</ShortName>
-					<Path>SFX\sfx_pas_mere_chambre_03_C34D06FC.wem</Path>
+				<File Id="471228023" Language="SFX">
+					<ShortName>sfx_footsteps_04.wav</ShortName>
+					<Path>SFX\sfx_footsteps_04_950FF8F3.wem</Path>
 				</File>
 				<File Id="523768018" Language="SFX">
 					<ShortName>sfx_drops_carboard.wav</ShortName>
 					<Path>SFX\sfx_drops_carboard_D64AECDA.wem</Path>
 				</File>
-				<File Id="526131746" Language="SFX">
-					<ShortName>sfx_pas_mere_chambre_01.wav</ShortName>
-					<Path>SFX\sfx_pas_mere_chambre_01_A6FDDFC4.wem</Path>
+				<File Id="539345453" Language="SFX">
+					<ShortName>sfx_footsteps_02.wav</ShortName>
+					<Path>SFX\sfx_footsteps_02_950FF8F3.wem</Path>
 				</File>
 				<File Id="550288729" Language="SFX">
 					<ShortName>ri_symphobia.wav</ShortName>
@@ -154,9 +154,13 @@
 					<ShortName>sfx_toucher_element.wav</ShortName>
 					<Path>SFX\sfx_toucher_element_950FF8F3.wem</Path>
 				</File>
-				<File Id="592176391" Language="SFX">
-					<ShortName>sfx_pas_mere_chambre_04.wav</ShortName>
-					<Path>SFX\sfx_pas_mere_chambre_04_89C402CC.wem</Path>
+				<File Id="611686530" Language="SFX">
+					<ShortName>sfx_footsteps_06.wav</ShortName>
+					<Path>SFX\sfx_footsteps_06_950FF8F3.wem</Path>
+				</File>
+				<File Id="666995010" Language="SFX">
+					<ShortName>sfx_footsteps_03.wav</ShortName>
+					<Path>SFX\sfx_footsteps_03_950FF8F3.wem</Path>
 				</File>
 				<File Id="755671691" Language="SFX">
 					<ShortName>ri_marseilles.wav</ShortName>
@@ -180,6 +184,10 @@
 					<ShortName>ri_suriya.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_suriya_F0D73493.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="980183220" Language="SFX">
+					<ShortName>sfx_footsteps_08.wav</ShortName>
+					<Path>SFX\sfx_footsteps_08_950FF8F3.wem</Path>
 				</File>
 				<File Id="983665814" Language="SFX">
 					<ShortName>ri_skannermorph.wav</ShortName>
@@ -205,13 +213,9 @@
 					<Path>Plugins\Wwise Convolution Reverb\cymbal_reverb_ABED5F63.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
-				<File Id="1053272547" Language="SFX">
-					<ShortName>sfx_pas_mere_chambre_08.wav</ShortName>
-					<Path>SFX\sfx_pas_mere_chambre_08_6E826BD3.wem</Path>
-				</File>
-				<File Id="1071818968" Language="SFX">
-					<ShortName>sfx_pas_mere_chambre_05.wav</ShortName>
-					<Path>SFX\sfx_pas_mere_chambre_05_587E026D.wem</Path>
+				<File Id="1072398571" Language="SFX">
+					<ShortName>sfx_footsteps_09.wav</ShortName>
+					<Path>SFX\sfx_footsteps_09_6A53251A.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
