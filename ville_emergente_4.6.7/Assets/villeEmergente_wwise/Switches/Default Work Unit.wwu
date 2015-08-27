@@ -3,12 +3,6 @@
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{A220CD50-3E72-41A8-A6D6-6FCC60089A54}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchGroup Name="Material" ID="{BBAE91CB-B64D-49F8-BA39-EC3319E35652}">
-					<ChildrenList>
-						<Switch Name="Concrete" ID="{42CEC38C-5153-4D39-B808-3CDB613BA801}"/>
-						<Switch Name="Grass" ID="{CA13F0C8-FE2B-45F2-882F-9B15765C563E}"/>
-					</ChildrenList>
-				</SwitchGroup>
 				<SwitchGroup Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}">
 					<ChildrenList>
 						<Switch Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
@@ -26,6 +20,24 @@
 						<Switch Name="Dark_5" ID="{973CCB6B-3D15-4A6A-9EB9-C6EC72EB6251}"/>
 						<Switch Name="Dark_6" ID="{9211FD1D-6C13-41C8-86C8-3B4B2C1475CA}"/>
 						<Switch Name="Dark_7" ID="{A7D16E56-5F54-4C8E-BDA0-2372329B19EA}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Convolutions_Sfx" ID="{126EA80F-09FF-4FF4-BA28-F9D78E97C415}">
+					<ChildrenList>
+						<Switch Name="DarkRI_1" ID="{6EB6B2EB-EE86-4FCC-BD45-1BCB95A9E4B7}"/>
+						<Switch Name="AtmoRI_1" ID="{D66DB834-E895-4554-9254-70B3FB3E760B}"/>
+						<Switch Name="DarkRI_2" ID="{A0EF24A4-8B01-4DB5-BC6E-EE10C6585481}"/>
+						<Switch Name="DarkRI_3" ID="{77F59A5A-B70E-4AE8-93BA-FDF78BE8804F}"/>
+						<Switch Name="DarkRI_4" ID="{B07F3D4D-A650-4C6A-A254-C316C8A1A210}"/>
+						<Switch Name="DarkRI_5" ID="{642B7F14-ED15-4C2A-AFC9-577795E214DC}"/>
+						<Switch Name="DarkRI_6" ID="{F948C5D6-8AC2-4DC7-BB07-FC86C738DB75}"/>
+						<Switch Name="DarkRI_7" ID="{6CE8E506-D9EF-4A02-9F88-C8503F7E6BB0}"/>
+						<Switch Name="AtmoRI_2" ID="{F85E4262-98EF-49E2-BCCC-C672D22C0849}"/>
+						<Switch Name="AtmoRI_3" ID="{E995330B-02D8-4CBC-AE87-182999BEEEED}"/>
+						<Switch Name="AtmoRI_4" ID="{8E8EE9CD-6EDC-4696-AEE7-DAB4F5195B6F}"/>
+						<Switch Name="AtmoRI_5" ID="{E7201813-AB1C-4168-B0E7-9235B11F3A9F}"/>
+						<Switch Name="AtmoRI_6" ID="{E942356C-5EE1-4594-93FE-64888964FAAA}"/>
+						<Switch Name="AtmoRI_7" ID="{10A7C722-1A90-4B97-A74B-EAF64F870E1B}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

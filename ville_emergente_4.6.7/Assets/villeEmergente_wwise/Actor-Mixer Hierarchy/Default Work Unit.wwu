@@ -493,27 +493,13 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>
-								<GroupRef Name="Material" ID="{BBAE91CB-B64D-49F8-BA39-EC3319E35652}"/>
-								<DefaultSwitchRef Name="Concrete" ID="{42CEC38C-5153-4D39-B808-3CDB613BA801}"/>
+								<GroupRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+								<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
 										<ItemRef Name="Defaut" ID="{F54CA89B-A7E1-4820-B89C-793882C44C24}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
-								<GroupingList>
-									<Grouping>
-										<SwitchRef Name="Concrete" ID="{42CEC38C-5153-4D39-B808-3CDB613BA801}"/>
-										<ItemList>
-											<ItemRef Name="Defaut" ID="{F54CA89B-A7E1-4820-B89C-793882C44C24}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Grass" ID="{CA13F0C8-FE2B-45F2-882F-9B15765C563E}"/>
-										<ItemList>
-											<ItemRef Name="Defaut" ID="{F54CA89B-A7E1-4820-B89C-793882C44C24}"/>
-										</ItemList>
-									</Grouping>
-								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 						<ActorMixer Name="Intéractions simples" ID="{0FF43AC4-BBB7-4178-8BFB-D5B41BD770F8}" ShortID="240576246">
@@ -7139,6 +7125,513 @@
 								</Folder>
 							</ChildrenList>
 						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Bâtiments" ID="{0DC20B11-0ECE-4015-859B-4FC5C18FE1A7}" ShortID="476474344">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="RI as Sfx" ID="{67357324-274B-499E-AA05-468EDFA89B35}" ShortID="491922103">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Sfx_ri_absynth_dark" ID="{9FC70B50-6EB7-42EE-9DFC-8B31DE9F8764}" ShortID="710968905" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sfx_ri_absynth_dark" ID="{1361662D-AA5C-48D9-855E-7586E728CC0E}" ShortID="1019937081">
+											<Language>SFX</Language>
+											<AudioFile>Sfx_ri_absynth_dark.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sfx_ri_absynth_dark" ID="{1361662D-AA5C-48D9-855E-7586E728CC0E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sfx_ri_choirslike" ID="{3B2FC1E3-86EF-424D-9438-78BE96CDAC98}" ShortID="271704228" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sfx_ri_choirslike" ID="{DAF3A1BB-5B72-40EF-BEF8-C7AF84B734AE}" ShortID="57806489">
+											<Language>SFX</Language>
+											<AudioFile>Sfx_ri_choirslike.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sfx_ri_choirslike" ID="{DAF3A1BB-5B72-40EF-BEF8-C7AF84B734AE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sfx_ri_electric" ID="{E9F2B185-49B1-473C-A913-82C0CE237371}" ShortID="1031873059" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sfx_ri_electric" ID="{4B4B64BC-2AEE-4F6C-9B80-09A6D97AC621}" ShortID="524736407">
+											<Language>SFX</Language>
+											<AudioFile>Sfx_ri_electric.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sfx_ri_electric" ID="{4B4B64BC-2AEE-4F6C-9B80-09A6D97AC621}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sfx_ri_pipe" ID="{53A383A6-B3D5-43F4-B80D-6973ED810074}" ShortID="937764808" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sfx_ri_pipe" ID="{B6F51BC2-4D2F-4B1F-8A5C-EC9EA5157BA0}" ShortID="279598686">
+											<Language>SFX</Language>
+											<AudioFile>Sfx_ri_pipe.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sfx_ri_pipe" ID="{B6F51BC2-4D2F-4B1F-8A5C-EC9EA5157BA0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sfx_ri_revdark" ID="{D5EA3794-19AF-48D9-989B-BA1328040CB5}" ShortID="650691843" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sfx_ri_revdark" ID="{50C1287B-AFF4-4707-A123-9B92976521AC}" ShortID="608263982">
+											<Language>SFX</Language>
+											<AudioFile>Sfx_ri_revdark.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sfx_ri_revdark" ID="{50C1287B-AFF4-4707-A123-9B92976521AC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sfx_ri_skannermorph" ID="{AC48A40C-AD66-47D8-946E-E1B2F06AA155}" ShortID="463356306" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sfx_ri_skannermorph" ID="{B91151F5-8F1C-4703-81C0-08D3840FFC52}" ShortID="77014115">
+											<Language>SFX</Language>
+											<AudioFile>Sfx_ri_skannermorph.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sfx_ri_skannermorph" ID="{B91151F5-8F1C-4703-81C0-08D3840FFC52}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sfx_ri_watersplash" ID="{6A1FF2B1-E43D-455A-83C6-ED58D1A68C82}" ShortID="395605689" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sfx_ri_watersplash" ID="{E27B5078-8F16-4A4D-955D-2119790BC6D9}" ShortID="61270204">
+											<Language>SFX</Language>
+											<AudioFile>Sfx_ri_watersplash.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sfx_ri_watersplash" ID="{E27B5078-8F16-4A4D-955D-2119790BC6D9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sfx_ri_marseilles" ID="{3B221C01-2F48-464C-9FE6-68B58141D10A}" ShortID="508114992" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sfx_ri_marseilles" ID="{43BDC78D-223B-4800-A7D6-3E35B9721A7F}" ShortID="355509982">
+											<Language>SFX</Language>
+											<AudioFile>Sfx_ri_marseilles.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sfx_ri_marseilles" ID="{43BDC78D-223B-4800-A7D6-3E35B9721A7F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sfx_ri_rev_light" ID="{677A83FE-C824-47D2-98DE-87BB9BFE1E5E}" ShortID="336766226" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sfx_ri_rev_light" ID="{97D58552-572C-4F97-8D3D-0D5F8AC9B7ED}" ShortID="1037490087">
+											<Language>SFX</Language>
+											<AudioFile>Sfx_ri_rev_light.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sfx_ri_rev_light" ID="{97D58552-572C-4F97-8D3D-0D5F8AC9B7ED}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sfx_ri_shevannai" ID="{7CE7AF98-D5C4-45B7-9E1C-3FAA88FF937A}" ShortID="385598580" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sfx_ri_shevannai" ID="{A7BBB8E8-23F8-4683-898B-714DBC952E47}" ShortID="573450885">
+											<Language>SFX</Language>
+											<AudioFile>Sfx_ri_shevannai.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sfx_ri_shevannai" ID="{A7BBB8E8-23F8-4683-898B-714DBC952E47}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sfx_ri_skanner_pad" ID="{E85107B6-DC94-4A9E-B281-A3407CD6D417}" ShortID="569807712" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sfx_ri_skanner_pad" ID="{46B98814-3F98-4749-A7F6-31788D6011EE}" ShortID="213439988">
+											<Language>SFX</Language>
+											<AudioFile>Sfx_ri_skanner_pad.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sfx_ri_skanner_pad" ID="{46B98814-3F98-4749-A7F6-31788D6011EE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sfx_ri_suriya" ID="{72C7F3B1-BF7C-40E9-B44A-86EBDA36E591}" ShortID="1037045203" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sfx_ri_suriya" ID="{5B997418-96A5-490B-A7ED-FC729A265B0D}" ShortID="184241894">
+											<Language>SFX</Language>
+											<AudioFile>Sfx_ri_suriya.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sfx_ri_suriya" ID="{5B997418-96A5-490B-A7ED-FC729A265B0D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sfx_ri_sylenth" ID="{8C05DE50-1C51-4F84-B021-E4FFA5C85D92}" ShortID="919392879" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sfx_ri_sylenth" ID="{AEA62A37-F045-48D6-BCA4-5A7EA36462C9}" ShortID="469843770">
+											<Language>SFX</Language>
+											<AudioFile>Sfx_ri_sylenth.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sfx_ri_sylenth" ID="{AEA62A37-F045-48D6-BCA4-5A7EA36462C9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sfx_ri_symphobia" ID="{F621F747-0D0C-40AA-9F0C-29E825DD7F9A}" ShortID="222353012" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sfx_ri_symphobia" ID="{08D4939A-1361-4A28-B689-FC2C178FF3D4}" ShortID="789123976">
+											<Language>SFX</Language>
+											<AudioFile>Sfx_ri_symphobia.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sfx_ri_symphobia" ID="{08D4939A-1361-4A28-B689-FC2C178FF3D4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupRef Name="Convolutions_Sfx" ID="{126EA80F-09FF-4FF4-BA28-F9D78E97C415}"/>
+								<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Sfx_ri_marseilles" ID="{3B221C01-2F48-464C-9FE6-68B58141D10A}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Sfx_ri_skannermorph" ID="{AC48A40C-AD66-47D8-946E-E1B2F06AA155}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Sfx_ri_symphobia" ID="{F621F747-0D0C-40AA-9F0C-29E825DD7F9A}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Sfx_ri_absynth_dark" ID="{9FC70B50-6EB7-42EE-9DFC-8B31DE9F8764}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Sfx_ri_sylenth" ID="{8C05DE50-1C51-4F84-B021-E4FFA5C85D92}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Sfx_ri_electric" ID="{E9F2B185-49B1-473C-A913-82C0CE237371}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Sfx_ri_revdark" ID="{D5EA3794-19AF-48D9-989B-BA1328040CB5}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Sfx_ri_shevannai" ID="{7CE7AF98-D5C4-45B7-9E1C-3FAA88FF937A}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Sfx_ri_pipe" ID="{53A383A6-B3D5-43F4-B80D-6973ED810074}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Sfx_ri_watersplash" ID="{6A1FF2B1-E43D-455A-83C6-ED58D1A68C82}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Sfx_ri_suriya" ID="{72C7F3B1-BF7C-40E9-B44A-86EBDA36E591}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Sfx_ri_skanner_pad" ID="{E85107B6-DC94-4A9E-B281-A3407CD6D417}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Sfx_ri_choirslike" ID="{3B2FC1E3-86EF-424D-9438-78BE96CDAC98}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Sfx_ri_rev_light" ID="{677A83FE-C824-47D2-98DE-87BB9BFE1E5E}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="DarkRI_7" ID="{6CE8E506-D9EF-4A02-9F88-C8503F7E6BB0}"/>
+										<ItemList>
+											<ItemRef Name="Sfx_ri_watersplash" ID="{6A1FF2B1-E43D-455A-83C6-ED58D1A68C82}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="AtmoRI_3" ID="{E995330B-02D8-4CBC-AE87-182999BEEEED}"/>
+										<ItemList>
+											<ItemRef Name="Sfx_ri_shevannai" ID="{7CE7AF98-D5C4-45B7-9E1C-3FAA88FF937A}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="AtmoRI_5" ID="{E7201813-AB1C-4168-B0E7-9235B11F3A9F}"/>
+										<ItemList>
+											<ItemRef Name="Sfx_ri_suriya" ID="{72C7F3B1-BF7C-40E9-B44A-86EBDA36E591}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="DarkRI_5" ID="{642B7F14-ED15-4C2A-AFC9-577795E214DC}"/>
+										<ItemList>
+											<ItemRef Name="Sfx_ri_revdark" ID="{D5EA3794-19AF-48D9-989B-BA1328040CB5}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="AtmoRI_7" ID="{10A7C722-1A90-4B97-A74B-EAF64F870E1B}"/>
+										<ItemList>
+											<ItemRef Name="Sfx_ri_symphobia" ID="{F621F747-0D0C-40AA-9F0C-29E825DD7F9A}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="AtmoRI_1" ID="{D66DB834-E895-4554-9254-70B3FB3E760B}"/>
+										<ItemList>
+											<ItemRef Name="Sfx_ri_marseilles" ID="{3B221C01-2F48-464C-9FE6-68B58141D10A}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="DarkRI_4" ID="{B07F3D4D-A650-4C6A-A254-C316C8A1A210}"/>
+										<ItemList>
+											<ItemRef Name="Sfx_ri_pipe" ID="{53A383A6-B3D5-43F4-B80D-6973ED810074}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="DarkRI_3" ID="{77F59A5A-B70E-4AE8-93BA-FDF78BE8804F}"/>
+										<ItemList>
+											<ItemRef Name="Sfx_ri_electric" ID="{E9F2B185-49B1-473C-A913-82C0CE237371}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="AtmoRI_2" ID="{F85E4262-98EF-49E2-BCCC-C672D22C0849}"/>
+										<ItemList>
+											<ItemRef Name="Sfx_ri_rev_light" ID="{677A83FE-C824-47D2-98DE-87BB9BFE1E5E}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="AtmoRI_6" ID="{E942356C-5EE1-4594-93FE-64888964FAAA}"/>
+										<ItemList>
+											<ItemRef Name="Sfx_ri_sylenth" ID="{8C05DE50-1C51-4F84-B021-E4FFA5C85D92}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="DarkRI_2" ID="{A0EF24A4-8B01-4DB5-BC6E-EE10C6585481}"/>
+										<ItemList>
+											<ItemRef Name="Sfx_ri_choirslike" ID="{3B2FC1E3-86EF-424D-9438-78BE96CDAC98}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="AtmoRI_4" ID="{8E8EE9CD-6EDC-4696-AEE7-DAB4F5195B6F}"/>
+										<ItemList>
+											<ItemRef Name="Sfx_ri_skanner_pad" ID="{E85107B6-DC94-4A9E-B281-A3407CD6D417}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="DarkRI_6" ID="{F948C5D6-8AC2-4DC7-BB07-FC86C738DB75}"/>
+										<ItemList>
+											<ItemRef Name="Sfx_ri_skannermorph" ID="{AC48A40C-AD66-47D8-946E-E1B2F06AA155}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="DarkRI_1" ID="{6EB6B2EB-EE86-4FCC-BD45-1BCB95A9E4B7}"/>
+										<ItemList>
+											<ItemRef Name="Sfx_ri_absynth_dark" ID="{9FC70B50-6EB7-42EE-9DFC-8B31DE9F8764}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

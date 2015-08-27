@@ -32,6 +32,7 @@ namespace AK
         static const AkUniqueID PRENDRE_MORCEAU = 2138522384U;
         static const AkUniqueID RAIN_2DOBJECT_PLAY = 812837510U;
         static const AkUniqueID RAIN_2DOBJECT_STOP = 2622262392U;
+        static const AkUniqueID SFX_RI = 3913070078U;
         static const AkUniqueID SOFTRAIN_CONVOLVER_PLAY = 2812543877U;
         static const AkUniqueID SOFTRAIN_CONVOLVER_STOP = 4195620099U;
         static const AkUniqueID SOFTRAIN_PLAY = 30806100U;
@@ -43,6 +44,13 @@ namespace AK
         static const AkUniqueID SWITCH_ATMO5 = 2442452512U;
         static const AkUniqueID SWITCH_ATMO6 = 2442452515U;
         static const AkUniqueID SWITCH_ATMO7 = 2442452514U;
+        static const AkUniqueID SWITCH_ATMORI1 = 3587869589U;
+        static const AkUniqueID SWITCH_ATMORI2 = 3587869590U;
+        static const AkUniqueID SWITCH_ATMORI3 = 3587869591U;
+        static const AkUniqueID SWITCH_ATMORI4 = 3587869584U;
+        static const AkUniqueID SWITCH_ATMORI5 = 3587869585U;
+        static const AkUniqueID SWITCH_ATMORI6 = 3587869586U;
+        static const AkUniqueID SWITCH_ATMORI7 = 3587869587U;
         static const AkUniqueID SWITCH_DARK1 = 3617898637U;
         static const AkUniqueID SWITCH_DARK2 = 3617898638U;
         static const AkUniqueID SWITCH_DARK3 = 3617898639U;
@@ -50,6 +58,13 @@ namespace AK
         static const AkUniqueID SWITCH_DARK5 = 3617898633U;
         static const AkUniqueID SWITCH_DARK6 = 3617898634U;
         static const AkUniqueID SWITCH_DARK7 = 3617898635U;
+        static const AkUniqueID SWITCH_DARKRI1 = 3843097384U;
+        static const AkUniqueID SWITCH_DARKRI2 = 3843097387U;
+        static const AkUniqueID SWITCH_DARKRI3 = 3843097386U;
+        static const AkUniqueID SWITCH_DARKRI4 = 3843097389U;
+        static const AkUniqueID SWITCH_DARKRI5 = 3843097388U;
+        static const AkUniqueID SWITCH_DARKRI6 = 3843097391U;
+        static const AkUniqueID SWITCH_DARKRI7 = 3843097390U;
         static const AkUniqueID SWITCH_DEFAULT = 2406558223U;
         static const AkUniqueID TOUCHER_ELEMENT = 2896867782U;
         static const AkUniqueID TRAFFICBY_CONVOLVER_PLAY = 2692438725U;
@@ -67,6 +82,29 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace CONVOLUTIONS_SFX
+        {
+            static const AkUniqueID GROUP = 980332272U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ATMORI_1 = 4114871465U;
+                static const AkUniqueID ATMORI_2 = 4114871466U;
+                static const AkUniqueID ATMORI_3 = 4114871467U;
+                static const AkUniqueID ATMORI_4 = 4114871468U;
+                static const AkUniqueID ATMORI_5 = 4114871469U;
+                static const AkUniqueID ATMORI_6 = 4114871470U;
+                static const AkUniqueID ATMORI_7 = 4114871471U;
+                static const AkUniqueID DARKRI_1 = 1384258054U;
+                static const AkUniqueID DARKRI_2 = 1384258053U;
+                static const AkUniqueID DARKRI_3 = 1384258052U;
+                static const AkUniqueID DARKRI_4 = 1384258051U;
+                static const AkUniqueID DARKRI_5 = 1384258050U;
+                static const AkUniqueID DARKRI_6 = 1384258049U;
+                static const AkUniqueID DARKRI_7 = 1384258048U;
+            } // namespace SWITCH
+        } // namespace CONVOLUTIONS_SFX
+
         namespace ELEMENTS_DECOR
         {
             static const AkUniqueID GROUP = 575849320U;
@@ -90,17 +128,6 @@ namespace AK
                 static const AkUniqueID DEFAULT = 782826392U;
             } // namespace SWITCH
         } // namespace ELEMENTS_DECOR
-
-        namespace MATERIAL
-        {
-            static const AkUniqueID GROUP = 3865314626U;
-
-            namespace SWITCH
-            {
-                static const AkUniqueID CONCRETE = 841620460U;
-                static const AkUniqueID GRASS = 4248645337U;
-            } // namespace SWITCH
-        } // namespace MATERIAL
 
     } // namespace SWITCHES
 

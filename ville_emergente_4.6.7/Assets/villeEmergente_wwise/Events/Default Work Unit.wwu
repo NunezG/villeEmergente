@@ -524,156 +524,319 @@
 				</Folder>
 				<Folder Name="Batiments" ID="{C72A1693-157C-43BF-9288-9EA30BF1AE8A}" ShortID="872575501">
 					<ChildrenList>
-						<Event Name="switch_atmo4" ID="{14718C5C-B317-4265-8905-89400EDBAB53}">
+						<Folder Name="Switches Convolver" ID="{58D40A14-1483-4F97-A4BE-D0F226015CD4}" ShortID="901112024">
 							<ChildrenList>
-								<Action Name="Set Switch" ID="{CC767918-BC82-4372-A2B8-08067144CBF8}" ShortID="427503005" Type="SetSwitch" Scope="All" Global="false">
-									<SetItemParam>
-										<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<GroupItem Name="Atmo_4" ID="{BAF35796-9205-4A2F-A26B-CEB00BAA02A8}"/>
-									</SetItemParam>
-								</Action>
+								<Event Name="switch_atmo4" ID="{14718C5C-B317-4265-8905-89400EDBAB53}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{CC767918-BC82-4372-A2B8-08067144CBF8}" ShortID="427503005" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+												<GroupItem Name="Atmo_4" ID="{BAF35796-9205-4A2F-A26B-CEB00BAA02A8}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_atmo1" ID="{60AB84F6-A7DD-4D3D-8896-CBB1FDA57298}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{7A615B64-91DF-420B-AD08-80E80782AE57}" ShortID="779671915" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+												<GroupItem Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_atmo3" ID="{5703399A-3D9D-45CC-9D5C-91060AA1D684}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{9EECA822-3168-43AB-B6D5-BD5675737D11}" ShortID="197897543" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+												<GroupItem Name="Atmo_3" ID="{C84A9BF1-5C15-48F8-877E-8B808D95163B}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_atmo2" ID="{D9B617F6-D445-41BA-859C-D6001F927507}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{AE17F5FC-AE92-4C32-9EEC-6C595C510C6F}" ShortID="424715989" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+												<GroupItem Name="Atmo_2" ID="{39E24B6E-FEE2-433F-96A5-82A16453D5A2}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_atmo5" ID="{0E16BEB7-B413-4B55-A33A-8E7551BD81F3}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{60983879-389B-43A3-9CC1-25CC736FBA40}" ShortID="43014167" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+												<GroupItem Name="Atmo_5" ID="{BA09B59E-3651-49B4-B96F-AE4211024C97}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_atmo6" ID="{8D7F321D-5323-4FEE-9F8D-5E14A3D2CCBB}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{93B9E8C7-A40C-4D3B-9236-ABC31F892A95}" ShortID="27836269" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+												<GroupItem Name="Atmo_6" ID="{DD90A43A-C8F4-4D1C-88B4-514B1E2B19E1}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_atmo7" ID="{3125D7B5-64E0-4C58-8347-FA17E7576771}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{F5B80DA0-78A7-4FB1-B534-78FE130B8E88}" ShortID="178458516" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+												<GroupItem Name="Atmo_7" ID="{F973153E-CA8F-4F59-BC85-0FD246B7783F}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_default" ID="{7CB29F39-1DD0-4000-9526-374D0527BBDD}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{E1A5F9F0-7720-43F0-8C6B-E8A188DDD71B}" ShortID="792144242" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+												<GroupItem Name="Default" ID="{B99EB49E-4956-43A4-AA90-864549EE2FC7}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_dark1" ID="{EA949020-C851-4062-8848-924E493DF4C2}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{70507194-C18D-417B-AF69-34E380819391}" ShortID="38929932" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+												<GroupItem Name="Dark_1" ID="{65F12811-7F28-46B7-8012-C1165748BE61}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_dark2" ID="{5C683815-EAF1-4AB7-AFF5-4573FF9C9D29}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{7E59D8F5-D77D-49E4-9EA0-851CE6F2F59D}" ShortID="906711031" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+												<GroupItem Name="Dark_2" ID="{C09A34D0-F519-40CC-BF22-6ACC7C538EE4}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_dark3" ID="{B3896FB8-667F-4F50-95A3-CEED647B2592}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{E97E9184-9730-4C64-8820-1A0C02F7179D}" ShortID="1053927121" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+												<GroupItem Name="Dark_3" ID="{4F52C6A1-7E6F-4017-AF8E-C12BFB9CA162}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_dark4" ID="{5DD9CB6D-0FE8-4099-AB72-2CAA4D932226}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{FE665814-B608-429A-B7CB-52D5E9F4DC12}" ShortID="620745310" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+												<GroupItem Name="Dark_4" ID="{31F5337C-1709-4BE4-884F-D600E12ABC9C}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_dark5" ID="{DFDD9EF3-5595-46AD-8639-AEA68DE25210}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{5B1E6702-DBE7-4DBD-ACB3-6BE179D3D53D}" ShortID="310970797" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+												<GroupItem Name="Dark_5" ID="{973CCB6B-3D15-4A6A-9EB9-C6EC72EB6251}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_dark6" ID="{7776F928-FB58-4243-990D-A6688FDC0691}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{A53B102A-9ED0-43E1-A187-1C28BDCCEF6D}" ShortID="126509489" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+												<GroupItem Name="Dark_6" ID="{9211FD1D-6C13-41C8-86C8-3B4B2C1475CA}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_dark7" ID="{68CBE949-F1DF-476A-8B66-8896234CC87A}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{C2812BDE-2DDD-493C-8CBA-1CFABB273207}" ShortID="872415472" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+												<GroupItem Name="Default" ID="{B99EB49E-4956-43A4-AA90-864549EE2FC7}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
-						<Event Name="switch_atmo1" ID="{60AB84F6-A7DD-4D3D-8896-CBB1FDA57298}">
+						</Folder>
+						<Folder Name="Sfx RI" ID="{BCCCB006-DD2F-42DB-ACEE-E54575F73708}" ShortID="857757178">
 							<ChildrenList>
-								<Action Name="Set Switch" ID="{7A615B64-91DF-420B-AD08-80E80782AE57}" ShortID="779671915" Type="SetSwitch" Scope="All" Global="false">
-									<SetItemParam>
-										<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<GroupItem Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
-									</SetItemParam>
-								</Action>
+								<Event Name="Sfx_RI" ID="{5763A820-AD62-49C9-B48B-5FF499250205}">
+									<ChildrenList>
+										<Action Name="Play" ID="{6F1E658D-00AF-4EE0-BA9B-482F5B6F7F1D}" ShortID="679307680" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{71C38FE6-AF1C-41D7-8BA0-1346C82E64FC}" Global="false">
+													<ObjectRef Name="RI as Sfx" ID="{67357324-274B-499E-AA05-468EDFA89B35}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
-						<Event Name="switch_atmo3" ID="{5703399A-3D9D-45CC-9D5C-91060AA1D684}">
+						</Folder>
+						<Folder Name="Switches RI" ID="{0EA3F120-F3BE-4061-A9DB-28C964056D4A}" ShortID="276240796">
 							<ChildrenList>
-								<Action Name="Set Switch" ID="{9EECA822-3168-43AB-B6D5-BD5675737D11}" ShortID="197897543" Type="SetSwitch" Scope="All" Global="false">
-									<SetItemParam>
-										<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<GroupItem Name="Atmo_3" ID="{C84A9BF1-5C15-48F8-877E-8B808D95163B}"/>
-									</SetItemParam>
-								</Action>
+								<Event Name="switch_atmoRI5" ID="{3D60738D-1A2D-47F2-8A1D-63165010FD78}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{2AF3D8F0-ECD9-4844-8584-2BF37835808E}" ShortID="972942024" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Convolutions_Sfx" ID="{126EA80F-09FF-4FF4-BA28-F9D78E97C415}"/>
+												<GroupItem Name="AtmoRI_5" ID="{E7201813-AB1C-4168-B0E7-9235B11F3A9F}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_atmoRI6" ID="{DBCD9BDE-4E1D-4038-8986-EFA8A02B0F5B}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{42A55FD0-92A7-4CD4-8B99-AA89662F6298}" ShortID="721697539" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Convolutions_Sfx" ID="{126EA80F-09FF-4FF4-BA28-F9D78E97C415}"/>
+												<GroupItem Name="AtmoRI_6" ID="{E942356C-5EE1-4594-93FE-64888964FAAA}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_atmoRI4" ID="{70D581EE-533F-42D3-ACA0-4489EA7F31A5}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{9D7E7FB2-89CC-4EC4-9C30-3A2A5D367696}" ShortID="601617713" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Convolutions_Sfx" ID="{126EA80F-09FF-4FF4-BA28-F9D78E97C415}"/>
+												<GroupItem Name="AtmoRI_4" ID="{8E8EE9CD-6EDC-4696-AEE7-DAB4F5195B6F}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_atmoRI3" ID="{BC07F4EB-D418-4D6A-B910-C8B831E7D722}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{9EEC2173-AFC0-4F06-9883-8FB1E4737913}" ShortID="373705366" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Convolutions_Sfx" ID="{126EA80F-09FF-4FF4-BA28-F9D78E97C415}"/>
+												<GroupItem Name="AtmoRI_3" ID="{E995330B-02D8-4CBC-AE87-182999BEEEED}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_atmoRI1" ID="{419BD337-282C-4996-8573-8AA85ADBDE09}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{28DB1035-0675-4786-8CAC-14EFFEBA3481}" ShortID="711365424" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Convolutions_Sfx" ID="{126EA80F-09FF-4FF4-BA28-F9D78E97C415}"/>
+												<GroupItem Name="AtmoRI_1" ID="{D66DB834-E895-4554-9254-70B3FB3E760B}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_atmoRI2" ID="{FB0571B4-E7F3-4F59-A954-471A79861D00}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{41C0ADC3-8167-4702-9D18-3D032DC00620}" ShortID="413537321" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Convolutions_Sfx" ID="{126EA80F-09FF-4FF4-BA28-F9D78E97C415}"/>
+												<GroupItem Name="AtmoRI_2" ID="{F85E4262-98EF-49E2-BCCC-C672D22C0849}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_atmoRI7" ID="{82D45AF0-339E-4B1B-A3E3-F7591315112D}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{774D697C-1374-4D97-9DE6-B89AF1A5C402}" ShortID="398263083" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Convolutions_Sfx" ID="{126EA80F-09FF-4FF4-BA28-F9D78E97C415}"/>
+												<GroupItem Name="AtmoRI_7" ID="{10A7C722-1A90-4B97-A74B-EAF64F870E1B}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_darkRI2" ID="{1F9EA3DA-A084-4D08-BA41-3BB0736C39D9}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{950B69FE-2580-4175-89F7-48E5B979D268}" ShortID="359654280" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Convolutions_Sfx" ID="{126EA80F-09FF-4FF4-BA28-F9D78E97C415}"/>
+												<GroupItem Name="DarkRI_2" ID="{A0EF24A4-8B01-4DB5-BC6E-EE10C6585481}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_darkRI1" ID="{2EDFCBA9-1CAB-419A-B3AE-AB3588DDF3DF}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{4CA970C4-D814-4CDA-BF5C-D0C43FD71A93}" ShortID="498109129" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Convolutions_Sfx" ID="{126EA80F-09FF-4FF4-BA28-F9D78E97C415}"/>
+												<GroupItem Name="DarkRI_1" ID="{6EB6B2EB-EE86-4FCC-BD45-1BCB95A9E4B7}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_darkRI3" ID="{F1453EF4-B097-49DF-90C8-BF7449E6C8BA}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{5A89026E-162B-4AEC-9B1E-5FE50D659BB3}" ShortID="192241138" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Convolutions_Sfx" ID="{126EA80F-09FF-4FF4-BA28-F9D78E97C415}"/>
+												<GroupItem Name="DarkRI_3" ID="{77F59A5A-B70E-4AE8-93BA-FDF78BE8804F}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_darkRI4" ID="{1EEFD487-D992-4BC0-8CDE-0B373CA4C72F}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{2F8F998E-F8D7-4455-9A85-66310AB4D393}" ShortID="582763387" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Convolutions_Sfx" ID="{126EA80F-09FF-4FF4-BA28-F9D78E97C415}"/>
+												<GroupItem Name="DarkRI_4" ID="{B07F3D4D-A650-4C6A-A254-C316C8A1A210}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_darkRI5" ID="{BE271D8A-3C48-4C76-A64D-4EAEBCFA7F53}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{18404426-170D-4F65-B175-BEA80163E6E1}" ShortID="524683179" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Convolutions_Sfx" ID="{126EA80F-09FF-4FF4-BA28-F9D78E97C415}"/>
+												<GroupItem Name="DarkRI_5" ID="{642B7F14-ED15-4C2A-AFC9-577795E214DC}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_darkRI6" ID="{CF5A2814-F61B-4294-AD68-FF1398B68F48}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{EC3E03A9-C666-40E0-99A8-FD22B0DDBCB5}" ShortID="778031584" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Convolutions_Sfx" ID="{126EA80F-09FF-4FF4-BA28-F9D78E97C415}"/>
+												<GroupItem Name="DarkRI_6" ID="{F948C5D6-8AC2-4DC7-BB07-FC86C738DB75}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_darkRI7" ID="{D32B2579-47FE-4464-8A7B-CACADCF840F6}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{1C32922B-035B-49B7-B657-59E46D514F50}" ShortID="1032177297" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Convolutions_Sfx" ID="{126EA80F-09FF-4FF4-BA28-F9D78E97C415}"/>
+												<GroupItem Name="DarkRI_7" ID="{6CE8E506-D9EF-4A02-9F88-C8503F7E6BB0}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
-						<Event Name="switch_atmo2" ID="{D9B617F6-D445-41BA-859C-D6001F927507}">
-							<ChildrenList>
-								<Action Name="Set Switch" ID="{AE17F5FC-AE92-4C32-9EEC-6C595C510C6F}" ShortID="424715989" Type="SetSwitch" Scope="All" Global="false">
-									<SetItemParam>
-										<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<GroupItem Name="Atmo_2" ID="{39E24B6E-FEE2-433F-96A5-82A16453D5A2}"/>
-									</SetItemParam>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="switch_atmo5" ID="{0E16BEB7-B413-4B55-A33A-8E7551BD81F3}">
-							<ChildrenList>
-								<Action Name="Set Switch" ID="{60983879-389B-43A3-9CC1-25CC736FBA40}" ShortID="43014167" Type="SetSwitch" Scope="All" Global="false">
-									<SetItemParam>
-										<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<GroupItem Name="Atmo_5" ID="{BA09B59E-3651-49B4-B96F-AE4211024C97}"/>
-									</SetItemParam>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="switch_atmo6" ID="{8D7F321D-5323-4FEE-9F8D-5E14A3D2CCBB}">
-							<ChildrenList>
-								<Action Name="Set Switch" ID="{93B9E8C7-A40C-4D3B-9236-ABC31F892A95}" ShortID="27836269" Type="SetSwitch" Scope="All" Global="false">
-									<SetItemParam>
-										<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<GroupItem Name="Atmo_6" ID="{DD90A43A-C8F4-4D1C-88B4-514B1E2B19E1}"/>
-									</SetItemParam>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="switch_atmo7" ID="{3125D7B5-64E0-4C58-8347-FA17E7576771}">
-							<ChildrenList>
-								<Action Name="Set Switch" ID="{F5B80DA0-78A7-4FB1-B534-78FE130B8E88}" ShortID="178458516" Type="SetSwitch" Scope="All" Global="false">
-									<SetItemParam>
-										<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<GroupItem Name="Atmo_7" ID="{F973153E-CA8F-4F59-BC85-0FD246B7783F}"/>
-									</SetItemParam>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="switch_default" ID="{7CB29F39-1DD0-4000-9526-374D0527BBDD}">
-							<ChildrenList>
-								<Action Name="Set Switch" ID="{E1A5F9F0-7720-43F0-8C6B-E8A188DDD71B}" ShortID="792144242" Type="SetSwitch" Scope="All" Global="false">
-									<SetItemParam>
-										<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<GroupItem Name="Default" ID="{B99EB49E-4956-43A4-AA90-864549EE2FC7}"/>
-									</SetItemParam>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="switch_dark1" ID="{EA949020-C851-4062-8848-924E493DF4C2}">
-							<ChildrenList>
-								<Action Name="Set Switch" ID="{70507194-C18D-417B-AF69-34E380819391}" ShortID="38929932" Type="SetSwitch" Scope="All" Global="false">
-									<SetItemParam>
-										<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<GroupItem Name="Dark_1" ID="{65F12811-7F28-46B7-8012-C1165748BE61}"/>
-									</SetItemParam>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="switch_dark2" ID="{5C683815-EAF1-4AB7-AFF5-4573FF9C9D29}">
-							<ChildrenList>
-								<Action Name="Set Switch" ID="{7E59D8F5-D77D-49E4-9EA0-851CE6F2F59D}" ShortID="906711031" Type="SetSwitch" Scope="All" Global="false">
-									<SetItemParam>
-										<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<GroupItem Name="Dark_2" ID="{C09A34D0-F519-40CC-BF22-6ACC7C538EE4}"/>
-									</SetItemParam>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="switch_dark3" ID="{B3896FB8-667F-4F50-95A3-CEED647B2592}">
-							<ChildrenList>
-								<Action Name="Set Switch" ID="{E97E9184-9730-4C64-8820-1A0C02F7179D}" ShortID="1053927121" Type="SetSwitch" Scope="All" Global="false">
-									<SetItemParam>
-										<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<GroupItem Name="Dark_3" ID="{4F52C6A1-7E6F-4017-AF8E-C12BFB9CA162}"/>
-									</SetItemParam>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="switch_dark4" ID="{5DD9CB6D-0FE8-4099-AB72-2CAA4D932226}">
-							<ChildrenList>
-								<Action Name="Set Switch" ID="{FE665814-B608-429A-B7CB-52D5E9F4DC12}" ShortID="620745310" Type="SetSwitch" Scope="All" Global="false">
-									<SetItemParam>
-										<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<GroupItem Name="Dark_4" ID="{31F5337C-1709-4BE4-884F-D600E12ABC9C}"/>
-									</SetItemParam>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="switch_dark5" ID="{DFDD9EF3-5595-46AD-8639-AEA68DE25210}">
-							<ChildrenList>
-								<Action Name="Set Switch" ID="{5B1E6702-DBE7-4DBD-ACB3-6BE179D3D53D}" ShortID="310970797" Type="SetSwitch" Scope="All" Global="false">
-									<SetItemParam>
-										<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<GroupItem Name="Dark_5" ID="{973CCB6B-3D15-4A6A-9EB9-C6EC72EB6251}"/>
-									</SetItemParam>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="switch_dark6" ID="{7776F928-FB58-4243-990D-A6688FDC0691}">
-							<ChildrenList>
-								<Action Name="Set Switch" ID="{A53B102A-9ED0-43E1-A187-1C28BDCCEF6D}" ShortID="126509489" Type="SetSwitch" Scope="All" Global="false">
-									<SetItemParam>
-										<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<GroupItem Name="Dark_6" ID="{9211FD1D-6C13-41C8-86C8-3B4B2C1475CA}"/>
-									</SetItemParam>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="switch_dark7" ID="{68CBE949-F1DF-476A-8B66-8896234CC87A}">
-							<ChildrenList>
-								<Action Name="Set Switch" ID="{C2812BDE-2DDD-493C-8CBA-1CFABB273207}" ShortID="872415472" Type="SetSwitch" Scope="All" Global="false">
-									<SetItemParam>
-										<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-										<GroupItem Name="Default" ID="{B99EB49E-4956-43A4-AA90-864549EE2FC7}"/>
-									</SetItemParam>
-								</Action>
-							</ChildrenList>
-						</Event>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
