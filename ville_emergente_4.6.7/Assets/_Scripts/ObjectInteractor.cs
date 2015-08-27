@@ -13,6 +13,7 @@ public class ObjectInteractor : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		hitObject = null;
 
 		if (Input.GetButtonDown ("Action"))
 		{
@@ -81,10 +82,14 @@ public class ObjectInteractor : MonoBehaviour {
         print("Interactor:DropInHandObject");
 		if (inHandObject != null)
         {
-            inHandObject.GetComponent<Fragment>().Drop();
+			inHandObject.GetComponent<Fragment>().Drop();
 			        
             handsFull = false;
             inHandObject = null;
+
+			if (hitObject == null){
+				WwiseAudioManager.instance.PlayFiniteEvent("lacher_morceau", inHandObject);
+			}
 
         }
 	}

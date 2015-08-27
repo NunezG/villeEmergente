@@ -15,10 +15,10 @@ public class SettingPiece : MonoBehaviour{
     public Fragment fragment;
     public bool isPlayingInteract = false;
 
-	private string switchAtmo = "switch_atmo";
-	public string switchType;
-	private string switchDark = "switch_dark";
 	public string switchNumber;
+
+
+	public string switchT;
 
 
 	// Use this for initialization
@@ -28,7 +28,6 @@ public class SettingPiece : MonoBehaviour{
     }
     public void Start()
     {
-		switchType = switchAtmo;
 
         //audioEventName = defaultAudioEventName;
         this.renderer.material = defaultMaterial;
@@ -45,14 +44,7 @@ public class SettingPiece : MonoBehaviour{
 	// Update is called once per frame
     public void Update()
     {
-
-		if (Input.GetKeyDown(KeyCode.Space)) {
-
-			if (switchType != switchDark)
-			switchType = switchDark;
-			else switchType = switchAtmo;
-
-		}
+		switchT = SoundUniverseManager.switchType;
 
         if (hasBeenActivated && !isPlayingInteract) // si le decor a ete active, et que son son n'est plus en en train de jouer, 
         {
@@ -107,7 +99,7 @@ public class SettingPiece : MonoBehaviour{
 
 		WwiseAudioManager.instance.PlayFiniteEvent("linker_morceau", fragment.gameObject);
 
-		WwiseAudioManager.instance.PlayFiniteEvent(switchType+switchNumber, fragment.gameObject);
+		WwiseAudioManager.instance.PlayFiniteEvent(SoundUniverseManager.switchType+switchNumber, fragment.gameObject);
 
 		WwiseAudioManager.instance.PlayLoopEvent (fragment.family, fragment.gameObject, true);
 
