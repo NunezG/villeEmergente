@@ -29,19 +29,19 @@
 				<SoundcasterSession Name="switch tests" ID="{156BE172-21AB-40B5-A589-98452367574E}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="busy_street_play" ID="{E5F26247-EDF4-4D63-9AC4-98B587C5D947}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="urban_play" ID="{E5F26247-EDF4-4D63-9AC4-98B587C5D947}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="busy_street_convolver_play" ID="{FD41C19C-4F57-4065-8CD4-E550E25BC4CD}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="urban_convolver_play" ID="{FD41C19C-4F57-4065-8CD4-E550E25BC4CD}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="drops_cardboard_play" ID="{40946CD0-F4CD-4DF2-A2D4-350AB8080EF0}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="liquide_play" ID="{40946CD0-F4CD-4DF2-A2D4-350AB8080EF0}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="drops_cardboard_convolver_play" ID="{DF245358-F986-4D73-A0B7-DD36238AC25F}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="liquide_convolver_play" ID="{DF245358-F986-4D73-A0B7-DD36238AC25F}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
 							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
@@ -120,7 +120,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Atmo_4" ID="{BAF35796-9205-4A2F-A26B-CEB00BAA02A8}"/>
+						<CurrentSwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
 						<CurrentSwitchRef Name="Concrete" ID="{42CEC38C-5153-4D39-B808-3CDB613BA801}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
