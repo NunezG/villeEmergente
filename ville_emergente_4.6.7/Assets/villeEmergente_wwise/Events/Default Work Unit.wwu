@@ -150,7 +150,7 @@
 					<ChildrenList>
 						<Folder Name="Urban" ID="{493A7DC1-F44A-48E6-8B3A-D1D18D952C3B}" ShortID="861750918">
 							<ChildrenList>
-								<Event Name="urban_play" ID="{E5F26247-EDF4-4D63-9AC4-98B587C5D947}">
+								<Event Name="busyStreet_play" ID="{E5F26247-EDF4-4D63-9AC4-98B587C5D947}">
 									<ChildrenList>
 										<Action Name="Play" ID="{63C982B6-2D03-48C3-A9F8-22ACD9CB8F60}" ShortID="910422277" Type="Play" Scope="One" Global="false">
 											<PropertyList>
@@ -159,13 +159,13 @@
 											</PropertyList>
 											<ElementList>
 												<Element ID="{E7B3F549-C24A-407A-899E-8D2BAFEAA115}" Global="false">
-													<ObjectRef Name="Urban" ID="{5E7698C7-C0E7-47B6-9211-1E6702AB7A8B}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="sfx_busy_street" ID="{9BB094D0-1F8C-4D8A-92E0-3D962494EE9D}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="urban_convolver_play" ID="{FD41C19C-4F57-4065-8CD4-E550E25BC4CD}">
+								<Event Name="busyStreet_convolver_play" ID="{FD41C19C-4F57-4065-8CD4-E550E25BC4CD}">
 									<ChildrenList>
 										<Action Name="Play" ID="{BA830FD4-A8C4-49B9-B52A-2A3216F4C98D}" ShortID="622846130" Type="Play" Scope="One" Global="false">
 											<PropertyList>
@@ -174,13 +174,13 @@
 											</PropertyList>
 											<ElementList>
 												<Element ID="{BFCA23B8-BCEC-4F83-B145-CE1CE702895D}" Global="false">
-													<ObjectRef Name="Urban" ID="{B219FA23-56C7-4653-B160-B98E9A6B63E7}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="Sfx_busy_street_switch" ID="{999AE0F4-EEF7-4C82-92DE-DB4F1EA9815B}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="urban_stop" ID="{71538E4B-179B-42FB-A432-54679C2B72BD}">
+								<Event Name="busyStreet_stop" ID="{71538E4B-179B-42FB-A432-54679C2B72BD}">
 									<ChildrenList>
 										<Action Name="Stop" ID="{86BAEDF7-75AD-4BC1-8DA2-0C0DE0843506}" ShortID="1056408054" Type="Stop" Scope="One" Global="false">
 											<PropertyList>
@@ -189,13 +189,13 @@
 											</PropertyList>
 											<ElementList>
 												<Element ID="{C9ED33CD-1D5F-410E-9CAB-A35AA3573B93}" Global="false">
-													<ObjectRef Name="Urban" ID="{5E7698C7-C0E7-47B6-9211-1E6702AB7A8B}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="sfx_busy_street" ID="{9BB094D0-1F8C-4D8A-92E0-3D962494EE9D}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="urban_convolver_stop" ID="{BDC211A3-F745-4285-9313-C75918214067}">
+								<Event Name="busyStreet_convolver_stop" ID="{BDC211A3-F745-4285-9313-C75918214067}">
 									<ChildrenList>
 										<Action Name="Stop" ID="{7BD78F02-EEAC-476B-8DC4-00C7642468E5}" ShortID="660586790" Type="Stop" Scope="One" Global="false">
 											<PropertyList>
@@ -204,7 +204,67 @@
 											</PropertyList>
 											<ElementList>
 												<Element ID="{32F873FC-4AB7-42A9-9C30-39B49C94667C}" Global="false">
-													<ObjectRef Name="Urban" ID="{B219FA23-56C7-4653-B160-B98E9A6B63E7}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="Sfx_busy_street_switch" ID="{999AE0F4-EEF7-4C82-92DE-DB4F1EA9815B}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="trafficBy_play" ID="{C677B7EB-6D94-4879-B90E-60E8292F300A}">
+									<ChildrenList>
+										<Action Name="Play" ID="{5DBD10BB-3646-4409-B1F5-425304DBE06B}" ShortID="256515372" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{E2D4D6A2-6274-4240-8EA6-D5D8EF35E73B}" Global="false">
+													<ObjectRef Name="sfx_traffic_by" ID="{37030187-FEA2-46E6-A7A0-79AA4F006ABF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="trafficBy_convolver_play" ID="{3DEB9B94-A4F7-4270-BA96-002467E77453}">
+									<ChildrenList>
+										<Action Name="Play" ID="{2F8100B7-991E-4914-B08A-6926938FA5E1}" ShortID="875456702" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{E6185120-A1C7-41F0-9845-E20D78D3CB4A}" Global="false">
+													<ObjectRef Name="Sfx_traffic_by_switch" ID="{11A7082B-BF9B-4713-9EA8-8693403DC416}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="trafficBy_stop" ID="{7E0A81D8-1F96-4C07-974B-FCDA5284641C}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{34D94C0C-9260-4AE1-A244-1B1CEB54A630}" ShortID="744413485" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{E87B02FC-0B9F-4CF8-9BAB-11FA2F02B5C4}" Global="false">
+													<ObjectRef Name="sfx_traffic_by" ID="{37030187-FEA2-46E6-A7A0-79AA4F006ABF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="trafficBy_convolver_stop" ID="{8253E141-8B7A-4907-87CE-86A0F4AE3C11}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{32C33DC9-4546-4257-B505-9737634D9151}" ShortID="496006607" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{D57F3F13-8CB5-45C1-A1A1-3646D6E3C11D}" Global="false">
+													<ObjectRef Name="Sfx_traffic_by_switch" ID="{11A7082B-BF9B-4713-9EA8-8693403DC416}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -214,7 +274,7 @@
 						</Folder>
 						<Folder Name="Liquide" ID="{5E9EF360-182C-4071-BAF6-46A8F5567378}" ShortID="203781444">
 							<ChildrenList>
-								<Event Name="liquide_play" ID="{40946CD0-F4CD-4DF2-A2D4-350AB8080EF0}">
+								<Event Name="dropsCardboard_play" ID="{40946CD0-F4CD-4DF2-A2D4-350AB8080EF0}">
 									<ChildrenList>
 										<Action Name="Play" ID="{1A2CD02F-9653-4938-BEAF-C964174B5D79}" ShortID="837062103" Type="Play" Scope="One" Global="false">
 											<PropertyList>
@@ -223,13 +283,13 @@
 											</PropertyList>
 											<ElementList>
 												<Element ID="{92EC2DE9-AE78-4252-B552-811CE0D1864E}" Global="false">
-													<ObjectRef Name="Liquide" ID="{C2C64FE1-9A90-495A-80EF-A446B6D8258B}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="sfx_drops_carboard" ID="{0694EA6D-6A43-4BD1-99A7-F3688CEC3E13}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="liquide_convolver_play" ID="{DF245358-F986-4D73-A0B7-DD36238AC25F}">
+								<Event Name="dropsCardboard_convolver_play" ID="{DF245358-F986-4D73-A0B7-DD36238AC25F}">
 									<ChildrenList>
 										<Action Name="Play" ID="{B72D78BD-AB48-464E-9F90-6342BB91FEE3}" ShortID="1042544775" Type="Play" Scope="One" Global="false">
 											<PropertyList>
@@ -238,13 +298,13 @@
 											</PropertyList>
 											<ElementList>
 												<Element ID="{07B17123-705F-42AF-BBB9-2C8F66C8BF9D}" Global="false">
-													<ObjectRef Name="Liquide" ID="{2EA51AFA-069D-4898-9852-FF1FCCBA7494}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="Sfx_drops_cardboard_switch" ID="{FAE18C05-87AD-4BC0-AB34-1549A570AFFF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="liquide_stop" ID="{0BC3C381-B9E1-473F-A4B1-422199D66CBC}">
+								<Event Name="dropsCardboard_stop" ID="{0BC3C381-B9E1-473F-A4B1-422199D66CBC}">
 									<ChildrenList>
 										<Action Name="Stop" ID="{6C57E00C-A202-4BDE-98A1-16CAD22204CA}" ShortID="519563068" Type="Stop" Scope="One" Global="false">
 											<PropertyList>
@@ -253,13 +313,13 @@
 											</PropertyList>
 											<ElementList>
 												<Element ID="{0205E3E3-8011-4BFC-BD85-5622801DFB48}" Global="false">
-													<ObjectRef Name="Liquide" ID="{C2C64FE1-9A90-495A-80EF-A446B6D8258B}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="sfx_drops_carboard" ID="{0694EA6D-6A43-4BD1-99A7-F3688CEC3E13}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="liquide_convolver_stop" ID="{770D02A6-2767-416D-9580-366F76A46F0A}">
+								<Event Name="dropsCardboard_convolver_stop" ID="{770D02A6-2767-416D-9580-366F76A46F0A}">
 									<ChildrenList>
 										<Action Name="Stop" ID="{22C55F28-9DB5-4430-A3BD-02C095419040}" ShortID="1036320532" Type="Stop" Scope="One" Global="false">
 											<PropertyList>
@@ -268,7 +328,127 @@
 											</PropertyList>
 											<ElementList>
 												<Element ID="{A0555CF0-1534-4D96-9BB2-9CFD5652CDDA}" Global="false">
-													<ObjectRef Name="Liquide" ID="{2EA51AFA-069D-4898-9852-FF1FCCBA7494}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="Sfx_drops_cardboard_switch" ID="{FAE18C05-87AD-4BC0-AB34-1549A570AFFF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="softRain_play" ID="{337AFC37-45EE-4B19-A3AB-319423A680BA}">
+									<ChildrenList>
+										<Action Name="Play" ID="{0A2BE443-2B1B-478F-B7E1-58AA2D53C0E4}" ShortID="260567635" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{F059F15C-8343-4B05-A3EA-BBCDCFA52D6A}" Global="false">
+													<ObjectRef Name="sfx_soft_rain" ID="{61763F5D-48BD-4F4A-8CA8-A73DBDE6B3B6}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="softRain_convolver_play" ID="{E59B3934-E902-4ECC-A45D-59949FD95179}">
+									<ChildrenList>
+										<Action Name="Play" ID="{264EA65E-CC7E-4A38-8F60-D41B62459A32}" ShortID="1067361213" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{2CD38183-314B-4532-844A-6289B492C1A0}" Global="false">
+													<ObjectRef Name="Sfx_soft_rain_switch" ID="{C8BB4C1F-86D9-4F1D-AC82-02D4C2A08373}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="softRain_stop" ID="{AFA5E911-82F6-4F87-908E-D3629CABE440}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{EBCC9AD0-1929-4B8C-AFEC-C4220F939CE5}" ShortID="327855400" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{F733A5D5-6C58-4D02-A3BA-DDFA4147F9CD}" Global="false">
+													<ObjectRef Name="sfx_soft_rain" ID="{61763F5D-48BD-4F4A-8CA8-A73DBDE6B3B6}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="softRain_convolver_stop" ID="{BC6C0185-C202-4369-ABA2-7438A5F9EB08}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{356F6486-31BF-41E6-800B-E444BAD7B379}" ShortID="916655326" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{072908DB-DFD9-47FB-8993-78C0037AAFC2}" Global="false">
+													<ObjectRef Name="Sfx_soft_rain_switch" ID="{C8BB4C1F-86D9-4F1D-AC82-02D4C2A08373}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="waterSplash_play" ID="{FC1CDF65-6B20-4BC7-AAA0-5497A3ECE5CE}">
+									<ChildrenList>
+										<Action Name="Play" ID="{4E5AE7C1-5AE4-4170-879B-55F9450EA374}" ShortID="842844156" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{B582ED0D-E530-40DC-9339-3B1D9D27CAD6}" Global="false">
+													<ObjectRef Name="sfx_water_splash" ID="{E2D5B4B0-112F-4460-B40B-0BB3541F6958}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="waterSplash_convolver_play" ID="{6265E2FB-7D4B-4D31-B731-9E3FC4E2E922}">
+									<ChildrenList>
+										<Action Name="Play" ID="{B26A7C83-333C-42CE-8D73-68EB73D681DC}" ShortID="459754328" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{D08DC0DB-82BB-4473-A7DB-695DBC1A19C4}" Global="false">
+													<ObjectRef Name="Sfx_water_splash_switch" ID="{D282DED1-6236-452A-8889-8A6584885BF4}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="waterSplash_stop" ID="{06153992-D7EE-4EC8-B83C-B5DD9B8B7142}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{7EC2D9C2-702B-42B5-9D48-CC9679D45C8B}" ShortID="513640847" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{6698ADCE-B570-44FB-A2C8-8AB55CFA5F67}" Global="false">
+													<ObjectRef Name="sfx_water_splash" ID="{E2D5B4B0-112F-4460-B40B-0BB3541F6958}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="waterSplash_convolver_stop" ID="{FB597918-1A69-4C05-B9DC-BFA1DAB9474D}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{B12C5820-15E3-4273-A2BC-840F8CF0F523}" ShortID="448029109" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{E3FB6B79-DDA3-4A5C-A962-7ABA3C6D1918}" Global="false">
+													<ObjectRef Name="Sfx_water_splash_switch" ID="{D282DED1-6236-452A-8889-8A6584885BF4}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -278,7 +458,7 @@
 						</Folder>
 						<Folder Name="Electricite" ID="{7C7F85B4-89D3-43F8-A7AE-8F22F253C940}" ShortID="732021048">
 							<ChildrenList>
-								<Event Name="electricite_play" ID="{E2B786D2-626F-4978-B38D-7F784A6D0868}">
+								<Event Name="electricBuzz_play" ID="{E2B786D2-626F-4978-B38D-7F784A6D0868}">
 									<ChildrenList>
 										<Action Name="Play" ID="{EEC70FD8-B7D5-4E7B-96D7-A3C68399888F}" ShortID="242213326" Type="Play" Scope="One" Global="false">
 											<PropertyList>
@@ -287,13 +467,13 @@
 											</PropertyList>
 											<ElementList>
 												<Element ID="{B860F834-4D9F-4600-9714-0359940CA9DD}" Global="false">
-													<ObjectRef Name="Electricite" ID="{1B1D5EA4-B729-4BE8-91DC-FE2C20A356D9}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="sfx_electric_buzz" ID="{A3FA89DA-D9D8-4B55-8A40-105F00CA8653}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="electricite_convolver_play" ID="{813B4867-9420-4984-AC8C-30B90E264A26}">
+								<Event Name="electricBuzz_convolver_play" ID="{813B4867-9420-4984-AC8C-30B90E264A26}">
 									<ChildrenList>
 										<Action Name="Play" ID="{FC2FC23A-FBC3-4891-B469-CC5D0965D289}" ShortID="366881327" Type="Play" Scope="One" Global="false">
 											<PropertyList>
@@ -302,13 +482,13 @@
 											</PropertyList>
 											<ElementList>
 												<Element ID="{E08FD74B-A088-43F0-853D-85AB755EEE2B}" Global="false">
-													<ObjectRef Name="Electricite" ID="{BF6A6F97-08FA-43FF-ADFA-90708626E7B5}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="Sfx_electric_buzz_switch" ID="{6F216BB7-73C0-490F-A314-D7ACCBAC468C}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="electricite_stop" ID="{913DF791-4357-476F-9E44-619ADC4B40F0}">
+								<Event Name="electricBuzz_stop" ID="{913DF791-4357-476F-9E44-619ADC4B40F0}">
 									<ChildrenList>
 										<Action Name="Stop" ID="{F685DFFB-5E18-4EDE-9C01-6A03624C2458}" ShortID="699196666" Type="Stop" Scope="One" Global="false">
 											<PropertyList>
@@ -317,13 +497,13 @@
 											</PropertyList>
 											<ElementList>
 												<Element ID="{122E6132-2CDA-4224-938E-832BB28DF6CE}" Global="false">
-													<ObjectRef Name="Electricite" ID="{1B1D5EA4-B729-4BE8-91DC-FE2C20A356D9}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="sfx_electric_buzz" ID="{A3FA89DA-D9D8-4B55-8A40-105F00CA8653}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="electricite_convolver_stop" ID="{37287501-2287-448F-81FA-1DB97C8AB498}">
+								<Event Name="electricBuzz_convolver_stop" ID="{37287501-2287-448F-81FA-1DB97C8AB498}">
 									<ChildrenList>
 										<Action Name="Stop" ID="{286F0A6E-9F65-477F-AA5B-B533BF86BC0B}" ShortID="471392205" Type="Stop" Scope="One" Global="false">
 											<PropertyList>
@@ -332,7 +512,7 @@
 											</PropertyList>
 											<ElementList>
 												<Element ID="{B6D5A653-EA74-4582-AE45-F2136D422410}" Global="false">
-													<ObjectRef Name="Electricite" ID="{BF6A6F97-08FA-43FF-ADFA-90708626E7B5}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+													<ObjectRef Name="Sfx_electric_buzz_switch" ID="{6F216BB7-73C0-490F-A314-D7ACCBAC468C}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>

@@ -94,7 +94,7 @@
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
@@ -765,19 +765,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="Urban" ID="{B219FA23-56C7-4653-B160-B98E9A6B63E7}" ShortID="970207160">
-									<PropertyList>
-										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
-										</Reference>
-									</ReferenceList>
+								<Folder Name="Urban" ID="{712AD9B0-A22F-4A36-B3F7-0597A9D393EA}" ShortID="939575217">
 									<ChildrenList>
 										<SwitchContainer Name="Sfx_busy_street_switch" ID="{999AE0F4-EEF7-4C82-92DE-DB4F1EA9815B}" ShortID="803071278">
 											<PropertyList>
@@ -1571,7 +1559,7 @@
 												</RandomSequenceContainer>
 											</ChildrenList>
 											<PositioningInfo>
-												<Position Name="" ID="{D019166E-3CB9-4A21-A5CC-6FE61927A8B4}"/>
+												<Position Name="" ID="{59B5F904-F2A2-40D2-B2B7-0D3DB795D125}"/>
 											</PositioningInfo>
 											<GroupingInfo>
 												<GroupRef Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
@@ -2680,7 +2668,7 @@
 												</RandomSequenceContainer>
 											</ChildrenList>
 											<PositioningInfo>
-												<Position Name="" ID="{0C4E33C1-D6F6-4E7D-9F0E-DA0B6C616B62}"/>
+												<Position Name="" ID="{C1DD22A0-8010-4960-A107-8A4CEA228ACB}"/>
 											</PositioningInfo>
 											<GroupingInfo>
 												<GroupRef Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
@@ -2827,20 +2815,8 @@
 											</GroupingInfo>
 										</SwitchContainer>
 									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Liquide" ID="{2EA51AFA-069D-4898-9852-FF1FCCBA7494}" ShortID="891173377">
-									<PropertyList>
-										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
-										</Reference>
-									</ReferenceList>
+								</Folder>
+								<Folder Name="Liquide" ID="{293CD31D-2107-44ED-85E6-07FD023FC561}" ShortID="4739397">
 									<ChildrenList>
 										<SwitchContainer Name="Sfx_soft_rain_switch" ID="{C8BB4C1F-86D9-4F1D-AC82-02D4C2A08373}" ShortID="895750737">
 											<PropertyList>
@@ -3682,7 +3658,7 @@
 												</RandomSequenceContainer>
 											</ChildrenList>
 											<PositioningInfo>
-												<Position Name="" ID="{BFDC2D1D-3E5F-4466-AB23-5F9B75E0DA91}"/>
+												<Position Name="" ID="{318CEA1D-5B5A-4CB6-B489-947F6DA42B1A}"/>
 											</PositioningInfo>
 											<GroupingInfo>
 												<GroupRef Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
@@ -4722,7 +4698,7 @@
 												</RandomSequenceContainer>
 											</ChildrenList>
 											<PositioningInfo>
-												<Position Name="" ID="{F76DDFFC-8D75-4904-A673-08A3DC9F9A26}"/>
+												<Position Name="" ID="{768E453F-BFD6-4E10-85F8-8F4D3161BCBB}"/>
 											</PositioningInfo>
 											<GroupingInfo>
 												<GroupRef Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
@@ -5831,7 +5807,7 @@
 												</RandomSequenceContainer>
 											</ChildrenList>
 											<PositioningInfo>
-												<Position Name="" ID="{A7E7F280-943F-4D58-BD51-B164812114CC}"/>
+												<Position Name="" ID="{6226B037-9532-42DA-B387-DE2A26B4B64F}"/>
 											</PositioningInfo>
 											<GroupingInfo>
 												<GroupRef Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
@@ -5978,20 +5954,8 @@
 											</GroupingInfo>
 										</SwitchContainer>
 									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Electricite" ID="{BF6A6F97-08FA-43FF-ADFA-90708626E7B5}" ShortID="289280439">
-									<PropertyList>
-										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
-										</Reference>
-									</ReferenceList>
+								</Folder>
+								<Folder Name="Electricite" ID="{48CCB3CF-FF88-4F1E-9CFC-E1A6F0697E25}" ShortID="409136909">
 									<ChildrenList>
 										<SwitchContainer Name="Sfx_electric_buzz_switch" ID="{6F216BB7-73C0-490F-A314-D7ACCBAC468C}" ShortID="333759003">
 											<PropertyList>
@@ -6803,7 +6767,7 @@
 												</RandomSequenceContainer>
 											</ChildrenList>
 											<PositioningInfo>
-												<Position Name="" ID="{3DB5F3D9-652C-4A95-A530-659AC6859809}"/>
+												<Position Name="" ID="{53F218AB-D206-4ED7-8EC5-98C4E679783A}"/>
 											</PositioningInfo>
 											<GroupingInfo>
 												<GroupRef Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
@@ -6950,7 +6914,7 @@
 											</GroupingInfo>
 										</SwitchContainer>
 									</ChildrenList>
-								</RandomSequenceContainer>
+								</Folder>
 							</ChildrenList>
 							<PositioningInfo>
 								<Position Name="" ID="{E8649058-DEC7-4665-ACEC-FC455B9A3396}"/>
@@ -6971,19 +6935,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="Urban" ID="{5E7698C7-C0E7-47B6-9211-1E6702AB7A8B}" ShortID="45761658">
-									<PropertyList>
-										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
-										</Reference>
-									</ReferenceList>
+								<Folder Name="Urban" ID="{14CD4FD6-8466-48DA-A905-FF1B44A7DBBD}" ShortID="293170633">
 									<ChildrenList>
 										<Sound Name="sfx_busy_street" ID="{9BB094D0-1F8C-4D8A-92E0-3D962494EE9D}" ShortID="460413632" Type="SoundFX">
 											<PropertyList>
@@ -7050,20 +7002,8 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Liquide" ID="{C2C64FE1-9A90-495A-80EF-A446B6D8258B}" ShortID="353284030">
-									<PropertyList>
-										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
-										</Reference>
-									</ReferenceList>
+								</Folder>
+								<Folder Name="Liquide" ID="{93208F1D-5FFE-4DCB-A9EF-87A681D3A4FA}" ShortID="713601456">
 									<ChildrenList>
 										<Sound Name="sfx_drops_carboard" ID="{0694EA6D-6A43-4BD1-99A7-F3688CEC3E13}" ShortID="379826182" Type="SoundFX">
 											<PropertyList>
@@ -7165,20 +7105,8 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Electricite" ID="{1B1D5EA4-B729-4BE8-91DC-FE2C20A356D9}" ShortID="602244848">
-									<PropertyList>
-										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
-										</Reference>
-									</ReferenceList>
+								</Folder>
+								<Folder Name="Electricite" ID="{38D302BC-6146-4446-BAAD-C07AEE1CAB43}" ShortID="430497541">
 									<ChildrenList>
 										<Sound Name="sfx_electric_buzz" ID="{A3FA89DA-D9D8-4B55-8A40-105F00CA8653}" ShortID="744242838" Type="SoundFX">
 											<PropertyList>
@@ -7208,7 +7136,7 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-								</RandomSequenceContainer>
+								</Folder>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

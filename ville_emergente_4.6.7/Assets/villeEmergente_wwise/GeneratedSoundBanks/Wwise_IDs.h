@@ -13,21 +13,29 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID ELECTRICITE_CONVOLVER_PLAY = 158896872U;
-        static const AkUniqueID ELECTRICITE_CONVOLVER_STOP = 2494990426U;
-        static const AkUniqueID ELECTRICITE_PLAY = 3578289109U;
-        static const AkUniqueID ELECTRICITE_STOP = 1745285299U;
+        static const AkUniqueID BUSYSTREET_CONVOLVER_PLAY = 289850157U;
+        static const AkUniqueID BUSYSTREET_CONVOLVER_STOP = 1407044475U;
+        static const AkUniqueID BUSYSTREET_PLAY = 3997590316U;
+        static const AkUniqueID BUSYSTREET_STOP = 1672407606U;
+        static const AkUniqueID DROPSCARDBOARD_CONVOLVER_PLAY = 3012043839U;
+        static const AkUniqueID DROPSCARDBOARD_CONVOLVER_STOP = 2544725597U;
+        static const AkUniqueID DROPSCARDBOARD_PLAY = 1374189182U;
+        static const AkUniqueID DROPSCARDBOARD_STOP = 2412081984U;
+        static const AkUniqueID ELECTRICBUZZ_CONVOLVER_PLAY = 558637385U;
+        static const AkUniqueID ELECTRICBUZZ_CONVOLVER_STOP = 2081157487U;
+        static const AkUniqueID ELECTRICBUZZ_PLAY = 2776279528U;
+        static const AkUniqueID ELECTRICBUZZ_STOP = 817405786U;
         static const AkUniqueID FOOTSTEPS_PLAY = 1198733287U;
         static const AkUniqueID FOOTSTEPS_STOP = 4187365685U;
         static const AkUniqueID LACHER_MORCEAU = 2535466649U;
         static const AkUniqueID LINKER_MORCEAU = 3679869857U;
-        static const AkUniqueID LIQUIDE_CONVOLVER_PLAY = 3445613974U;
-        static const AkUniqueID LIQUIDE_CONVOLVER_STOP = 4176151336U;
-        static const AkUniqueID LIQUIDE_PLAY = 2164616883U;
-        static const AkUniqueID LIQUIDE_STOP = 1253058969U;
         static const AkUniqueID PRENDRE_MORCEAU = 2138522384U;
         static const AkUniqueID RAIN_2DOBJECT_PLAY = 812837510U;
         static const AkUniqueID RAIN_2DOBJECT_STOP = 2622262392U;
+        static const AkUniqueID SOFTRAIN_CONVOLVER_PLAY = 2812543877U;
+        static const AkUniqueID SOFTRAIN_CONVOLVER_STOP = 4195620099U;
+        static const AkUniqueID SOFTRAIN_PLAY = 30806100U;
+        static const AkUniqueID SOFTRAIN_STOP = 1693234990U;
         static const AkUniqueID SWITCH_ATMO1 = 2442452516U;
         static const AkUniqueID SWITCH_ATMO2 = 2442452519U;
         static const AkUniqueID SWITCH_ATMO3 = 2442452518U;
@@ -44,13 +52,17 @@ namespace AK
         static const AkUniqueID SWITCH_DARK7 = 3617898635U;
         static const AkUniqueID SWITCH_DEFAULT = 2406558223U;
         static const AkUniqueID TOUCHER_ELEMENT = 2896867782U;
-        static const AkUniqueID URBAN_CONVOLVER_PLAY = 4206195729U;
-        static const AkUniqueID URBAN_CONVOLVER_STOP = 1162643655U;
-        static const AkUniqueID URBAN_PLAY = 3573556064U;
-        static const AkUniqueID URBAN_STOP = 1916918242U;
+        static const AkUniqueID TRAFFICBY_CONVOLVER_PLAY = 2692438725U;
+        static const AkUniqueID TRAFFICBY_CONVOLVER_STOP = 4117091651U;
+        static const AkUniqueID TRAFFICBY_PLAY = 3501369492U;
+        static const AkUniqueID TRAFFICBY_STOP = 910304878U;
         static const AkUniqueID VILLE_CALME = 3115394940U;
         static const AkUniqueID WATER_3DOBJECT_PLAY = 193498114U;
         static const AkUniqueID WATER_3DOBJECT_STOP = 836511068U;
+        static const AkUniqueID WATERSPLASH_CONVOLVER_PLAY = 763713321U;
+        static const AkUniqueID WATERSPLASH_CONVOLVER_STOP = 2286130255U;
+        static const AkUniqueID WATERSPLASH_PLAY = 4213022088U;
+        static const AkUniqueID WATERSPLASH_STOP = 2295622138U;
     } // namespace EVENTS
 
     namespace SWITCHES

@@ -18,21 +18,29 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="158896872" Name="electricite_convolver_play" MaxAttenuation="50.000000"/>
-				<Event Id="2494990426" Name="electricite_convolver_stop" MaxAttenuation="0.000000"/>
-				<Event Id="3578289109" Name="electricite_play"/>
-				<Event Id="1745285299" Name="electricite_stop" MaxAttenuation="0.000000"/>
+				<Event Id="289850157" Name="busyStreet_convolver_play" MaxAttenuation="50.000000"/>
+				<Event Id="1407044475" Name="busyStreet_convolver_stop" MaxAttenuation="0.000000"/>
+				<Event Id="3997590316" Name="busyStreet_play"/>
+				<Event Id="1672407606" Name="busyStreet_stop" MaxAttenuation="0.000000"/>
+				<Event Id="3012043839" Name="dropsCardboard_convolver_play" MaxAttenuation="50.000000"/>
+				<Event Id="2544725597" Name="dropsCardboard_convolver_stop" MaxAttenuation="0.000000"/>
+				<Event Id="1374189182" Name="dropsCardboard_play"/>
+				<Event Id="2412081984" Name="dropsCardboard_stop" MaxAttenuation="0.000000"/>
+				<Event Id="558637385" Name="electricBuzz_convolver_play" MaxAttenuation="50.000000"/>
+				<Event Id="2081157487" Name="electricBuzz_convolver_stop" MaxAttenuation="0.000000"/>
+				<Event Id="2776279528" Name="electricBuzz_play"/>
+				<Event Id="817405786" Name="electricBuzz_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1198733287" Name="footsteps_play"/>
 				<Event Id="4187365685" Name="footsteps_stop" MaxAttenuation="0.000000"/>
 				<Event Id="2535466649" Name="lacher_morceau"/>
 				<Event Id="3679869857" Name="linker_morceau"/>
-				<Event Id="3445613974" Name="liquide_convolver_play"/>
-				<Event Id="4176151336" Name="liquide_convolver_stop" MaxAttenuation="0.000000"/>
-				<Event Id="2164616883" Name="liquide_play"/>
-				<Event Id="1253058969" Name="liquide_stop" MaxAttenuation="0.000000"/>
 				<Event Id="2138522384" Name="prendre_morceau"/>
 				<Event Id="812837510" Name="rain_2DObject_play"/>
 				<Event Id="2622262392" Name="rain_2DObject_stop" MaxAttenuation="0.000000"/>
+				<Event Id="2812543877" Name="softRain_convolver_play"/>
+				<Event Id="4195620099" Name="softRain_convolver_stop" MaxAttenuation="0.000000"/>
+				<Event Id="30806100" Name="softRain_play"/>
+				<Event Id="1693234990" Name="softRain_stop" MaxAttenuation="0.000000"/>
 				<Event Id="2442452516" Name="switch_atmo1" MaxAttenuation="0.000000"/>
 				<Event Id="2442452519" Name="switch_atmo2" MaxAttenuation="0.000000"/>
 				<Event Id="2442452518" Name="switch_atmo3" MaxAttenuation="0.000000"/>
@@ -49,13 +57,17 @@
 				<Event Id="3617898635" Name="switch_dark7" MaxAttenuation="0.000000"/>
 				<Event Id="2406558223" Name="switch_default" MaxAttenuation="0.000000"/>
 				<Event Id="2896867782" Name="toucher_element"/>
-				<Event Id="4206195729" Name="urban_convolver_play" MaxAttenuation="50.000000"/>
-				<Event Id="1162643655" Name="urban_convolver_stop" MaxAttenuation="0.000000"/>
-				<Event Id="3573556064" Name="urban_play"/>
-				<Event Id="1916918242" Name="urban_stop" MaxAttenuation="0.000000"/>
+				<Event Id="2692438725" Name="trafficBy_convolver_play" MaxAttenuation="50.000000"/>
+				<Event Id="4117091651" Name="trafficBy_convolver_stop" MaxAttenuation="0.000000"/>
+				<Event Id="3501369492" Name="trafficBy_play"/>
+				<Event Id="910304878" Name="trafficBy_stop" MaxAttenuation="0.000000"/>
 				<Event Id="3115394940" Name="ville_calme"/>
 				<Event Id="193498114" Name="water_3DObject_play" MaxAttenuation="50.000000"/>
 				<Event Id="836511068" Name="water_3DObject_stop" MaxAttenuation="0.000000"/>
+				<Event Id="763713321" Name="waterSplash_convolver_play" MaxAttenuation="50.000000"/>
+				<Event Id="2286130255" Name="waterSplash_convolver_stop" MaxAttenuation="0.000000"/>
+				<Event Id="4213022088" Name="waterSplash_play" MaxAttenuation="50.000000"/>
+				<Event Id="2295622138" Name="waterSplash_stop" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="77724633" Language="SFX">
