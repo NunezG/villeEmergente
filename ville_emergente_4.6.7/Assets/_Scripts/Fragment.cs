@@ -1,14 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//public enum FragmentType { Liquid, Urban, Electric };
+
 public class Fragment : MonoBehaviour{
 
 
     public Material material;
     //public  AudioSource audioSource;
     //public AudioClip defaultClip;
-    public string audioEventName;
+    //public string audioEventName;
 	// Use this for initialization
+	//public FragmentType family;
+	public string family;
+
+
+
+
     public void Awake()
     {
         this.tag = "Fragment";
@@ -18,7 +26,7 @@ public class Fragment : MonoBehaviour{
     {
         print("FragmentStart");
         //audioSource.clip = defaultClip;
-        this.renderer.material = material;
+       // this.renderer.material = material;
 	}
 	
 	// Update is called once per frame
@@ -29,8 +37,12 @@ public class Fragment : MonoBehaviour{
 
 	public void Drop()
 	{
-		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_stop", gameObject);
+		rigidbody.isKinematic = false;
+		transform.parent = null;
 
+		WwiseAudioManager.instance.StopLoopEvent(family, gameObject);
+		WwiseAudioManager.instance.PlayFiniteEvent("lacher_morceau", gameObject);
+		
 		//AkSoundEngine.SetRTPCValue ("binaural_to_convolver", 0);
 		//AkSoundEngine.SetSwitch("Elements_decor", "Batiment_4", gameObject);
 		//WwiseAudioManager.instance.PlayFiniteEvent("switch_bat1", this.gameObject);
@@ -49,7 +61,7 @@ public class Fragment : MonoBehaviour{
 
 		//WwiseAudioManager.instance.PlayFiniteEvent("busy_street_stop", gameObject);	
 		WwiseAudioManager.instance.PlayFiniteEvent("prendre_morceau", gameObject);
-		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_play", gameObject);	
+		WwiseAudioManager.instance.PlayLoopEvent(family, gameObject);	
 
 		return this.gameObject;
     }

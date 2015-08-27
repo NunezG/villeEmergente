@@ -10,8 +10,8 @@ public class SettingPiece : MonoBehaviour{
     public Material defaultMaterial, activatedMaterial;
     //public AudioSource audioSource;
    // public AudioClip defaultClip;
-    private string audioEventName = "";
-    public string defaultAudioEventName = "";
+   // private string audioEventName = "";
+    //public string defaultAudioEventName = "";
     public Fragment fragment;
     public bool isPlayingInteract = false;
 
@@ -30,7 +30,7 @@ public class SettingPiece : MonoBehaviour{
     {
 		switchType = switchAtmo;
 
-        audioEventName = defaultAudioEventName;
+        //audioEventName = defaultAudioEventName;
         this.renderer.material = defaultMaterial;
         if (fragmentsOfZeWorld.Count == 0)
         {
@@ -72,11 +72,11 @@ public class SettingPiece : MonoBehaviour{
 	}
 
     bool hasBeenActivated = false;
-    public void OnInteract()
+   /* public void OnInteract()
     {
         print("SettingPiece:OnInteract ");
         isPlayingInteract = true;
-        WwiseAudioManager.instance.PlayFiniteEvent(audioEventName,this.gameObject, OnInteractCallBack);
+		WwiseAudioManager.instance.PlayFiniteEvent("prendre_morceau",this.gameObject, OnInteractCallBack);
         hasBeenActivated = true;
 
         this.renderer.material = activatedMaterial;
@@ -91,22 +91,26 @@ public class SettingPiece : MonoBehaviour{
             print("OnInteractCallBack");
         }
     }
-
+*/
     public void OnAddingFragment(Fragment fragment)
-    {
+	{
         print("SettingPiece:OnAddingFragment");
         this.fragment = fragment;
         //activatedMaterial = fragment.material;
         this.renderer.material = fragment.material;
         //this.audioSource.clip = fragment.GetClip();
-        this.audioEventName = fragment.audioEventName;
+       // this.audioEventName = fragment.audioEventName;
 
 		//AkSoundEngine.SetRTPCValue ("binaural_to_convolver", 100);
 		fragment.Drop ();
 		//AkSoundEngine.SetSwitch("Elements_decor", "Batiment_1", inHandObject.gameObject);
 
+		WwiseAudioManager.instance.PlayFiniteEvent("linker_morceau", fragment.gameObject);
+
 		WwiseAudioManager.instance.PlayFiniteEvent(switchType+switchNumber, fragment.gameObject);
-		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_convolver_play", fragment.gameObject);
+
+		WwiseAudioManager.instance.PlayLoopEvent (fragment.family, fragment.gameObject, true);
+
 		
     }
 
@@ -116,12 +120,12 @@ public class SettingPiece : MonoBehaviour{
 
 		GameObject fragPicked =fragment.OnPickUp();
 
-		WwiseAudioManager.instance.PlayFiniteEvent("busy_street_convolver_stop", fragPicked);
+		WwiseAudioManager.instance.StopLoopEvent(fragment.family, fragment.gameObject, true);
 
 		fragment = null;
         this.renderer.material = activatedMaterial;
         //audioSource.clip = defaultClip;
-        audioEventName = defaultAudioEventName;
+        //audioEventName = defaultAudioEventName;
         return fragPicked;
     }
 }
