@@ -115,7 +115,7 @@ public class Passant : MonoBehaviour {
         {
             for (int j = 0; j < availableScenes[i].availablesSpots.Count; j++) // parcours des places dans la scene
             {
-                if (availableScenes[i].availablesSpots[i])// si il ya une place de libre
+                if (availableScenes[i].availablesSpots[j])// si il ya une place de libre
                 {
                     return true;
                 }
