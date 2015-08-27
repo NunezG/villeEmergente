@@ -416,8 +416,8 @@ MonoBehaviour:
   maxEndSoundTimer: 15
   endSoundTimer: 0
   waitTimer: 0
-  minEndWaitTimer: 10
-  maxEndWaitTimer: 15
+  minEndWaitTimer: 25
+  maxEndWaitTimer: 30
   endWaitTimer: 0
   danceTimer: 0
   endDanceTimer: 10
@@ -441,7 +441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6682c08d09b29f4483ea71f5917282a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainActor: {fileID: 0}
+  mainActor: {fileID: 121964}
   spots: []
   availablesSpots: 
 --- !u!135 &13519876
