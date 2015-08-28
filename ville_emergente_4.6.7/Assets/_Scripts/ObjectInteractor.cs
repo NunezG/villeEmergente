@@ -78,10 +78,10 @@ public class ObjectInteractor : MonoBehaviour {
 	}
 
     public void DropInHandObject()
-    {
-        print("Interactor:DropInHandObject");
+    { 
 		if (inHandObject != null)
         {
+			print("Interactor:DropInHandObject");
 			inHandObject.GetComponent<Fragment>().Drop();
 			     
 			if (hitObject == null){
@@ -97,10 +97,11 @@ public class ObjectInteractor : MonoBehaviour {
     {
 		print("Interactor:AddingFragment");
 		inHandObject.rigidbody.isKinematic = false;
-        handsFull = false;
+       // handsFull = false;
         inHandObject.transform.parent = null;
         SettingPiece.fragmentsOfZeWorld.Remove(inHandObject.GetComponent<Fragment>());
         //Destroy(inHandObject);
         inHandObject.SetActive(false);
+		DropInHandObject ();
     }
 }

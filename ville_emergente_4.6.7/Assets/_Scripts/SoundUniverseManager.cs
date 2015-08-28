@@ -8,12 +8,12 @@ public class SoundUniverseManager : MonoBehaviour {
 	public static string switchType;
 	private string switchDark = "switch_dark";
 
-	private float timer;
-	private float moveTimer;
-	private float stopTimer;
-	private int stopCounter;
+	public static float timer;
+	public static float moveTimer;
+	public static float stopTimer;
+	public static int stopCounter;
 
-	private static List<GameObject> playingObjects;
+	public static List<GameObject> playingObjects;
 	
 	// Use this for initialization
 	void Start () {
@@ -27,23 +27,25 @@ public class SoundUniverseManager : MonoBehaviour {
 		timer += Time.deltaTime;
 
 		if (timer >= 120.0f) {
-			stopCounter = 0;
+			//stopCounter = 0;
+			//timer = 0.0f;
+			resetTimers();
 		}
 
 		if (Input.GetKeyDown (KeyCode.Space))
 		{
-			if (switchType != switchDark)
-			{
-				switchType = switchDark;
-				switchSounds();
-			}	
+			//if (switchType != switchDark)
+			//{
+				//switchType = switchDark;
+				//switchSounds();
+			//}	
 		} else
-		if (Input.GetKey (KeyCode.Z) || Input.GetKey (KeyCode.Q) || Input.GetKey (KeyCode.S) || Input.GetKey (KeyCode.D)) {
+		if (Input.GetKey (KeyCode.Z) || Input.GetKey (KeyCode.Q) || Input.GetKey (KeyCode.S) || Input.GetKey (KeyCode.D)) 
+		{
 			moveTimer += Time.deltaTime;
-
 			stopTimer = 0;
 
-			if(moveTimer >=6.0f)
+			if((switchType == switchAtmo) && moveTimer >=6.0f)
 			{
 				switchType = switchDark;
 				switchSounds();
@@ -56,24 +58,27 @@ public class SoundUniverseManager : MonoBehaviour {
 			moveTimer = 0;
 			stopTimer += Time.deltaTime;
 
+
+			if ((switchType == switchDark) && (stopTimer >= 8.0f || stopCounter >= 5))
+			{
+				switchType = switchAtmo;
+				switchSounds();
+			}
+
 			if (stopTimer >= 3.0f)
 			{
 				stopCounter++;
 				stopTimer = 0;
 			}
-
-			if (stopTimer >= 8.0f || stopCounter == 5)
-			{
-				switchType = switchAtmo;
-				switchSounds();
-			}
 		}
 	}
 
-	void resetTimer()
+	static void resetTimers()
 	{
-		stopTimer = 0;
 		timer = 0;
+		stopTimer = 0;
+		stopCounter = 0;
+		moveTimer = 0;
 	}
 
 	public static void addSoundEvent(GameObject target)
@@ -91,7 +96,6 @@ public class SoundUniverseManager : MonoBehaviour {
 	//void getNextEvent()
 	//{
 		//soundsList.Remove (name, target);
-		
 	//}
 
 	static void switchSounds()
@@ -99,18 +103,27 @@ public class SoundUniverseManager : MonoBehaviour {
 	//	bool convolve = true;
 		//if (switchType == switchAtmo)
 	//		convolve = false;
-
+		resetTimers ();
 		//Tous les sons a switcher sont avec convolver
 		for (int i = 0; i < playingObjects.Count; i++)
 		{
+			Debug.Log( " stop: "+ playingObjects[i].GetComponent<InteractibleObject>().soundEevent);
 			//Stoppe son du convolver avec switch précédent
-			WwiseAudioManager.instance.StopLoopEvent (playingObjects[i].GetComponent<Fragment>().soundEevent, playingObjects[i], true);
+			WwiseAudioManager.instance.StopLoopEvent (playingObjects[i].GetComponent<InteractibleObject>().soundEevent, playingObjects[i], true);
 
+			Debug.Log( " one: " + switchType);
+
+			Debug.Log( " yoyoyoyo: " + playingObjects[i].name);
+
+			Debug.Log( " two: " + playingObjects[i].GetComponent<SettingPiece>().switchNumber);
+
+			Debug.Log( " finite: " + switchType+playingObjects[i].GetComponent<SettingPiece>().switchNumber);
 			//Lance switch du convolver
 			WwiseAudioManager.instance.PlayFiniteEvent(switchType+playingObjects[i].GetComponent<SettingPiece>().switchNumber, playingObjects[i]);
 
+			Debug.Log( " play loop: " + playingObjects[i].GetComponent<InteractibleObject>().soundEevent);
 			//Lance son du convolver
-			WwiseAudioManager.instance.PlayLoopEvent (playingObjects[i].GetComponent<Fragment>().soundEevent, playingObjects[i], true);
+			WwiseAudioManager.instance.PlayLoopEvent (playingObjects[i].GetComponent<InteractibleObject>().soundEevent, playingObjects[i], true);
 		}
 	}
 }
