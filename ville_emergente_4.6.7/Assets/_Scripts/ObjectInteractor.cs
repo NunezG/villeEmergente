@@ -31,9 +31,12 @@ public class ObjectInteractor : MonoBehaviour {
                     //ajout de l'objet en main a l'objet vise
                     print("ajout de l'objet en main a l'objet vise");
                    // WwiseAudioManager.instance.PlayFiniteEvent("linker_morceau", this.gameObject);
-                    interacObj.OnAddingFragment(inHandObject.GetComponent<Fragment>());
-                    AddingFragment();			
-                }
+					Fragment fragment= inHandObject.GetComponent<Fragment>();
+					AddingFragment();
+					interacObj.OnAddingFragment(fragment);
+					fragment.gameObject.SetActive(false);
+					
+				}
                 else if (!handsFull && (interacObj.type == InteractibleType.Fragment // si on a rien en main et qu'on vise un objet rammassable
                     || (interacObj.type == InteractibleType.SettingPiece && interacObj.HasFragment()))) // ou un batiment avec un fragment
                 {
@@ -101,7 +104,6 @@ public class ObjectInteractor : MonoBehaviour {
         inHandObject.transform.parent = null;
         SettingPiece.fragmentsOfZeWorld.Remove(inHandObject.GetComponent<Fragment>());
         //Destroy(inHandObject);
-        inHandObject.SetActive(false);
 		DropInHandObject ();
     }
 }
