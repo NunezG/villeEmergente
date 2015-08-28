@@ -16,172 +16,60 @@ MonoBehaviour:
     ParentPhysicalPath: 
     Guid: '{7F93A25F-2979-462E-8B53-8DECAD100DFF}'
     List:
-    - Name: busy_street_convolver_play
-      Path: Default Work Unit\Fragments\Sfx busy street\busy_street_convolver_play
+    - Name: electricite_convolver_play
+      Path: Default Work Unit\Fragments\Electricite\electricite_convolver_play
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Fragments
         ObjectType: 4
-      - ElementName: Sfx busy street
+      - ElementName: Electricite
         ObjectType: 4
-      - ElementName: busy_street_convolver_play
+      - ElementName: electricite_convolver_play
         ObjectType: 3
-      ID: 843571876
-      Guid: 9cc141fd574f65408cd4e550e25bc4cd
-      maxAttenuation: 50
-    - Name: busy_street_convolver_stop
-      Path: Default Work Unit\Fragments\Sfx busy street\busy_street_convolver_stop
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Sfx busy street
-        ObjectType: 4
-      - ElementName: busy_street_convolver_stop
-        ObjectType: 3
-      ID: -678948194
-      Guid: a311c2bd45f785429313c75918214067
-      maxAttenuation: 0
-    - Name: busy_street_play
-      Path: Default Work Unit\Fragments\Sfx busy street\busy_street_play
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Sfx busy street
-        ObjectType: 4
-      - ElementName: busy_street_play
-        ObjectType: 3
-      ID: -1048766511
-      Guid: 4762f2e5f4ed634d9ac498b587c5d947
-      maxAttenuation: 0
-    - Name: busy_street_stop
-      Path: Default Work Unit\Fragments\Sfx busy street\busy_street_stop
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Sfx busy street
-        ObjectType: 4
-      - ElementName: busy_street_stop
-        ObjectType: 3
-      ID: 202648455
-      Guid: 4b8e53719b17fb42a43254679c2b72bd
-      maxAttenuation: 0
-    - Name: drops_cardboard_convolver_play
-      Path: Default Work Unit\Fragments\Sfx drops cardboard\drops_cardboard_convolver_play
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Sfx drops cardboard
-        ObjectType: 4
-      - ElementName: drops_cardboard_convolver_play
-        ObjectType: 3
-      ID: -1530903266
-      Guid: 585324df86f9734da0b7dd36238ac25f
-      maxAttenuation: 50
-    - Name: drops_cardboard_convolver_stop
-      Path: Default Work Unit\Fragments\Sfx drops cardboard\drops_cardboard_convolver_stop
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Sfx drops cardboard
-        ObjectType: 4
-      - ElementName: drops_cardboard_convolver_stop
-        ObjectType: 3
-      ID: -534586912
-      Guid: a6020d7767276d419580366f76a46f0a
-      maxAttenuation: 0
-    - Name: drops_cardboard_play
-      Path: Default Work Unit\Fragments\Sfx drops cardboard\drops_cardboard_play
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Sfx drops cardboard
-        ObjectType: 4
-      - ElementName: drops_cardboard_play
-        ObjectType: 3
-      ID: -1429201493
-      Guid: d06c9440cdf4f24da2d4350ab8080ef0
-      maxAttenuation: 0
-    - Name: drops_cardboard_stop
-      Path: Default Work Unit\Fragments\Sfx drops cardboard\drops_cardboard_stop
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Sfx drops cardboard
-        ObjectType: 4
-      - ElementName: drops_cardboard_stop
-        ObjectType: 3
-      ID: 1688429121
-      Guid: 81c3c30be1b93f47a4b1422199d66cbc
-      maxAttenuation: 0
-    - Name: electric_buzz_convolver_play
-      Path: Default Work Unit\Fragments\Sfx electric buzz\electric_buzz_convolver_play
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Sfx electric buzz
-        ObjectType: 4
-      - ElementName: electric_buzz_convolver_play
-        ObjectType: 3
-      ID: -2091620204
+      ID: 158896872
       Guid: 67483b8120948449ac8c30b90e264a26
-      maxAttenuation: 50
-    - Name: electric_buzz_convolver_stop
-      Path: Default Work Unit\Fragments\Sfx electric buzz\electric_buzz_convolver_stop
+      maxAttenuation: 0
+    - Name: electricite_convolver_stop
+      Path: Default Work Unit\Fragments\Electricite\electricite_convolver_stop
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Fragments
         ObjectType: 4
-      - ElementName: Sfx electric buzz
+      - ElementName: Electricite
         ObjectType: 4
-      - ElementName: electric_buzz_convolver_stop
+      - ElementName: electricite_convolver_stop
         ObjectType: 3
-      ID: -387717522
+      ID: -1799976870
       Guid: 0175283787228f4481fa1db97c8ab498
       maxAttenuation: 0
-    - Name: electric_buzz_play
-      Path: Default Work Unit\Fragments\Sfx electric buzz\electric_buzz_play
+    - Name: electricite_play
+      Path: Default Work Unit\Fragments\Electricite\electricite_play
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Fragments
         ObjectType: 4
-      - ElementName: Sfx electric buzz
+      - ElementName: Electricite
         ObjectType: 4
-      - ElementName: electric_buzz_play
+      - ElementName: electricite_play
         ObjectType: 3
-      ID: -87885887
+      ID: -716678187
       Guid: d286b7e26f627849b38d7f784a6d0868
       maxAttenuation: 0
-    - Name: electric_buzz_stop
-      Path: Default Work Unit\Fragments\Sfx electric buzz\electric_buzz_stop
+    - Name: electricite_stop
+      Path: Default Work Unit\Fragments\Electricite\electricite_stop
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Fragments
         ObjectType: 4
-      - ElementName: Sfx electric buzz
+      - ElementName: Electricite
         ObjectType: 4
-      - ElementName: electric_buzz_stop
+      - ElementName: electricite_stop
         ObjectType: 3
-      ID: -2062893417
+      ID: 1745285299
       Guid: 91f73d9157436f479e44619adc4b40f0
       maxAttenuation: 0
     - Name: footsteps_play
@@ -232,6 +120,62 @@ MonoBehaviour:
       ID: -615097439
       Guid: fe6a447c6ea03542a46bc95890394549
       maxAttenuation: 0
+    - Name: liquide_convolver_play
+      Path: Default Work Unit\Fragments\Liquide\liquide_convolver_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Liquide
+        ObjectType: 4
+      - ElementName: liquide_convolver_play
+        ObjectType: 3
+      ID: -849353322
+      Guid: 585324df86f9734da0b7dd36238ac25f
+      maxAttenuation: 0
+    - Name: liquide_convolver_stop
+      Path: Default Work Unit\Fragments\Liquide\liquide_convolver_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Liquide
+        ObjectType: 4
+      - ElementName: liquide_convolver_stop
+        ObjectType: 3
+      ID: -118815960
+      Guid: a6020d7767276d419580366f76a46f0a
+      maxAttenuation: 0
+    - Name: liquide_play
+      Path: Default Work Unit\Fragments\Liquide\liquide_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Liquide
+        ObjectType: 4
+      - ElementName: liquide_play
+        ObjectType: 3
+      ID: -2130350413
+      Guid: d06c9440cdf4f24da2d4350ab8080ef0
+      maxAttenuation: 0
+    - Name: liquide_stop
+      Path: Default Work Unit\Fragments\Liquide\liquide_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Liquide
+        ObjectType: 4
+      - ElementName: liquide_stop
+        ObjectType: 3
+      ID: 1253058969
+      Guid: 81c3c30be1b93f47a4b1422199d66cbc
+      maxAttenuation: 0
     - Name: prendre_morceau
       Path: Default Work Unit\Joueur\prendre_morceau
       PathAndIcons:
@@ -267,62 +211,6 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1672704904
       Guid: cb13d3b763c61a4e9e6fe84937b1b5ca
-      maxAttenuation: 0
-    - Name: soft_rain_convolver_play
-      Path: Default Work Unit\Fragments\Sfx soft rain\soft_rain_convolver_play
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Sfx soft rain
-        ObjectType: 4
-      - ElementName: soft_rain_convolver_play
-        ObjectType: 3
-      ID: 1129695426
-      Guid: 3fd0cb10a4c49f47a6fa3302ff2e3c0b
-      maxAttenuation: 0
-    - Name: soft_rain_convolver_stop
-      Path: Default Work Unit\Fragments\Sfx soft rain\soft_rain_convolver_stop
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Sfx soft rain
-        ObjectType: 4
-      - ElementName: soft_rain_convolver_stop
-        ObjectType: 3
-      ID: 1731234588
-      Guid: bfedb4d49aabd5488506d1abfb87dc0e
-      maxAttenuation: 0
-    - Name: soft_rain_play
-      Path: Default Work Unit\Fragments\Sfx soft rain\soft_rain_play
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Sfx soft rain
-        ObjectType: 4
-      - ElementName: soft_rain_play
-        ObjectType: 3
-      ID: 425145631
-      Guid: 88cc4cd877305348ac683c96d1e9097a
-      maxAttenuation: 0
-    - Name: soft_rain_stop
-      Path: Default Work Unit\Fragments\Sfx soft rain\soft_rain_stop
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Sfx soft rain
-        ObjectType: 4
-      - ElementName: soft_rain_stop
-        ObjectType: 3
-      ID: -42172611
-      Guid: 9c4c73e14c21794a82f952cc2301fe1e
       maxAttenuation: 0
     - Name: switch_atmo1
       Path: Default Work Unit\Batiments\switch_atmo1
@@ -516,61 +404,61 @@ MonoBehaviour:
       ID: -1398099514
       Guid: a64fd120264ccf4d92ea696661c9a73c
       maxAttenuation: 0
-    - Name: traffic_by_convolver_play
-      Path: Default Work Unit\Fragments\Sfx traffic by\traffic_by_convolver_play
+    - Name: urban_convolver_play
+      Path: Default Work Unit\Fragments\Urban\urban_convolver_play
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Fragments
         ObjectType: 4
-      - ElementName: Sfx traffic by
+      - ElementName: Urban
         ObjectType: 4
-      - ElementName: traffic_by_convolver_play
+      - ElementName: urban_convolver_play
         ObjectType: 3
-      ID: 1342370836
-      Guid: eafa6760607f0844a5c0a285c03d4c65
-      maxAttenuation: 50
-    - Name: traffic_by_convolver_stop
-      Path: Default Work Unit\Fragments\Sfx traffic by\traffic_by_convolver_stop
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Sfx traffic by
-        ObjectType: 4
-      - ElementName: traffic_by_convolver_stop
-        ObjectType: 3
-      ID: -1248693778
-      Guid: 4b6b4bb7fccaba47b0de3c6bd6b3f93e
+      ID: -88771567
+      Guid: 9cc141fd574f65408cd4e550e25bc4cd
       maxAttenuation: 0
-    - Name: traffic_by_play
-      Path: Default Work Unit\Fragments\Sfx traffic by\traffic_by_play
+    - Name: urban_convolver_stop
+      Path: Default Work Unit\Fragments\Urban\urban_convolver_stop
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Fragments
         ObjectType: 4
-      - ElementName: Sfx traffic by
+      - ElementName: Urban
         ObjectType: 4
-      - ElementName: traffic_by_play
+      - ElementName: urban_convolver_stop
         ObjectType: 3
-      ID: 2129545025
-      Guid: 3eaca14df8a27145ae189b72db1cb7e5
+      ID: 1162643655
+      Guid: a311c2bd45f785429313c75918214067
       maxAttenuation: 0
-    - Name: traffic_by_stop
-      Path: Default Work Unit\Fragments\Sfx traffic by\traffic_by_stop
+    - Name: urban_play
+      Path: Default Work Unit\Fragments\Urban\urban_play
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Fragments
         ObjectType: 4
-      - ElementName: Sfx traffic by
+      - ElementName: Urban
         ObjectType: 4
-      - ElementName: traffic_by_stop
+      - ElementName: urban_play
         ObjectType: 3
-      ID: 154537495
-      Guid: 23edb3b1abb13d419545339d03345f0a
+      ID: -721411232
+      Guid: 4762f2e5f4ed634d9ac498b587c5d947
+      maxAttenuation: 0
+    - Name: urban_stop
+      Path: Default Work Unit\Fragments\Urban\urban_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Urban
+        ObjectType: 4
+      - ElementName: urban_stop
+        ObjectType: 3
+      ID: 1916918242
+      Guid: 4b8e53719b17fb42a43254679c2b72bd
       maxAttenuation: 0
     - Name: ville_calme
       Path: Default Work Unit\Ambiances\ville_calme
@@ -595,7 +483,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 193498114
       Guid: 79abcf98f2eb31439fb6ce8aec825aa1
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: water_3DObject_stop
       Path: Default Work Unit\Tests Wwise Pierre & Guillermo\water_3DObject_stop
       PathAndIcons:
@@ -607,62 +495,6 @@ MonoBehaviour:
         ObjectType: 3
       ID: 836511068
       Guid: 435e056468d2584d95260ef4b79003c8
-      maxAttenuation: 0
-    - Name: water_splash_convolver_play
-      Path: Default Work Unit\Fragments\Sfx water splash\water_splash_convolver_play
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Sfx water splash
-        ObjectType: 4
-      - ElementName: water_splash_convolver_play
-        ObjectType: 3
-      ID: -2125449168
-      Guid: 737e57f77b8d23478e1e7ec8bb1fdc4d
-      maxAttenuation: 50
-    - Name: water_splash_convolver_stop
-      Path: Default Work Unit\Fragments\Sfx water splash\water_splash_convolver_stop
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Sfx water splash
-        ObjectType: 4
-      - ElementName: water_splash_convolver_stop
-        ObjectType: 3
-      ID: 518000082
-      Guid: 60b5aa8e5394f04998bd79e41f397492
-      maxAttenuation: 0
-    - Name: water_splash_play
-      Path: Default Work Unit\Fragments\Sfx water splash\water_splash_play
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Sfx water splash
-        ObjectType: 4
-      - ElementName: water_splash_play
-        ObjectType: 3
-      ID: 191715533
-      Guid: 9aa30cdc1825bd4d81b266a8adf3a4f7
-      maxAttenuation: 50
-    - Name: water_splash_stop
-      Path: Default Work Unit\Fragments\Sfx water splash\water_splash_stop
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Sfx water splash
-        ObjectType: 4
-      - ElementName: water_splash_stop
-        ObjectType: 3
-      ID: 1308909595
-      Guid: 3e2a8c22d7ec2946b89624b196e9dc12
       maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -792,8 +624,8 @@ MonoBehaviour:
   - /villeEmergente_wwise/Events
   - /villeEmergente_wwise/Events/Default Work Unit
   - /villeEmergente_wwise/Events/Default Work Unit/Joueur
-  m_lastPopulateTimePsrt1: -1928046381
-  m_lastPopulateTimePart2: -1999458783
+  m_lastPopulateTimePsrt1: 1078056235
+  m_lastPopulateTimePart2: -1999458631
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)
