@@ -23,25 +23,24 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
-						<CurrentSwitchRef Name="Concrete" ID="{42CEC38C-5153-4D39-B808-3CDB613BA801}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="switch tests" ID="{156BE172-21AB-40B5-A589-98452367574E}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="urban_play" ID="{E5F26247-EDF4-4D63-9AC4-98B587C5D947}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="busyStreet_play" ID="{E5F26247-EDF4-4D63-9AC4-98B587C5D947}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="urban_convolver_play" ID="{FD41C19C-4F57-4065-8CD4-E550E25BC4CD}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="busyStreet_convolver_play" ID="{FD41C19C-4F57-4065-8CD4-E550E25BC4CD}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="liquide_play" ID="{40946CD0-F4CD-4DF2-A2D4-350AB8080EF0}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="dropsCardboard_play" ID="{40946CD0-F4CD-4DF2-A2D4-350AB8080EF0}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="liquide_convolver_play" ID="{DF245358-F986-4D73-A0B7-DD36238AC25F}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="dropsCardboard_convolver_play" ID="{DF245358-F986-4D73-A0B7-DD36238AC25F}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
 							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
@@ -82,7 +81,6 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Atmo_7" ID="{F973153E-CA8F-4F59-BC85-0FD246B7783F}"/>
-						<CurrentSwitchRef Name="Concrete" ID="{42CEC38C-5153-4D39-B808-3CDB613BA801}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Interactions simples" ID="{07B40CED-6B27-4F1B-BF79-9293F99E9F99}">
@@ -98,6 +96,14 @@
 						<Module>
 							<ObjectRef Name="Lâcher morceau" ID="{A2438C7F-1EC1-4963-A35B-145021C0F71D}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Sfx_RI" ID="{5763A820-AD62-49C9-B48B-5FF499250205}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Footsteps" ID="{F7A32648-70DD-45FB-A9EB-99A2F4177AC9}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Linker morceau" ID="{A7BE9468-CC4C-49D2-BE76-0F3D8FE78658}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
@@ -120,8 +126,8 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="DarkRI_7" ID="{6CE8E506-D9EF-4A02-9F88-C8503F7E6BB0}"/>
 						<CurrentSwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
-						<CurrentSwitchRef Name="Concrete" ID="{42CEC38C-5153-4D39-B808-3CDB613BA801}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
