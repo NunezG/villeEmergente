@@ -11,7 +11,6 @@ public struct soundsFamilies{
 }
 
 
-
 public class Fragment : MonoBehaviour{
 
     public Material material;
@@ -21,7 +20,6 @@ public class Fragment : MonoBehaviour{
 	// Use this for initialization
 	//public FragmentType family;
 	public FragmentType family;
-	public string soundEevent;
 
     public void Awake()
     {
@@ -46,7 +44,7 @@ public class Fragment : MonoBehaviour{
 		rigidbody.isKinematic = false;
 		transform.parent = null;
 
-		WwiseAudioManager.instance.StopLoopEvent(soundEevent, gameObject);
+		WwiseAudioManager.instance.StopLoopEvent(GetComponent<InteractibleObject>().soundEevent, gameObject);
 
 
 		//AkSoundEngine.SetRTPCValue ("binaural_to_convolver", 0);
@@ -68,7 +66,7 @@ public class Fragment : MonoBehaviour{
 
 		//WwiseAudioManager.instance.PlayFiniteEvent("busy_street_stop", gameObject);	
 		WwiseAudioManager.instance.PlayFiniteEvent("prendre_morceau", gameObject);
-		WwiseAudioManager.instance.PlayLoopEvent(soundEevent, gameObject);	
+		WwiseAudioManager.instance.PlayLoopEvent(GetComponent<InteractibleObject>().soundEevent, gameObject);	
 
 
 		return this.gameObject;
@@ -80,13 +78,13 @@ public class Fragment : MonoBehaviour{
 		switch (family) 
 		{
 		case (FragmentType.Urban):
-			soundEevent = soundsFamilies.urban[Random.Range(0,soundsFamilies.urban.Length-1)];
+			GetComponent<InteractibleObject>().soundEevent = soundsFamilies.urban[Random.Range(0,soundsFamilies.urban.Length-1)];
 			break;
 		case (FragmentType.Liquid):
-			soundEevent = soundsFamilies.liquid[Random.Range(0,soundsFamilies.liquid.Length-1)];
+			GetComponent<InteractibleObject>().soundEevent = soundsFamilies.liquid[Random.Range(0,soundsFamilies.liquid.Length-1)];
 			break;
 		case (FragmentType.Electric):
-			soundEevent = soundsFamilies.electric[Random.Range(0,soundsFamilies.electric.Length-1)];
+			GetComponent<InteractibleObject>().soundEevent = soundsFamilies.electric[Random.Range(0,soundsFamilies.electric.Length-1)];
 			break;
 		default:
 			break;
