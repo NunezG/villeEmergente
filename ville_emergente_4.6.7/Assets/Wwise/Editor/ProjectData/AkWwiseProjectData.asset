@@ -1079,9 +1079,19 @@ MonoBehaviour:
   - /villeEmergente_wwise
   - /villeEmergente_wwise/Events
   - /villeEmergente_wwise/Events/Default Work Unit
+<<<<<<< HEAD
   - /villeEmergente_wwise/Events/Default Work Unit/Joueur
   m_lastPopulateTimePsrt1: -1642015536
   m_lastPopulateTimePart2: -1999457786
+=======
+  - /villeEmergente_wwise/Events/Default Work Unit/Ambiances
+  - /villeEmergente_wwise/Events/Default Work Unit/Batiments
+  - /villeEmergente_wwise/Events/Default Work Unit/Fragments
+  - /villeEmergente_wwise/Events/Default Work Unit/Fragments/Electricite
+  - /villeEmergente_wwise/Events/Default Work Unit/Tests Wwise Pierre & Guillermo
+  m_lastPopulateTimePsrt1: -1474006683
+  m_lastPopulateTimePart2: -1999458567
+>>>>>>> ab953a91af51c2e3d2d99b01774ce6b81d35378d
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)
