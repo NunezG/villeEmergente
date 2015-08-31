@@ -112,10 +112,6 @@
 					<ShortName>Sfx_ri_skannermorph.wav</ShortName>
 					<Path>SFX\Sfx_ri_skannermorph_DDC98EF4.wem</Path>
 				</File>
-				<File Id="77724633" Language="SFX">
-					<ShortName>sfx_footsteps_05.wav</ShortName>
-					<Path>SFX\sfx_footsteps_05_950FF8F3.wem</Path>
-				</File>
 				<File Id="80597723" Language="SFX">
 					<ShortName>ri_absynth_dark.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_absynth_dark_9E3D7768.wem</Path>
@@ -150,6 +146,10 @@
 					<ShortName>soft rain - brown noise - human activities - drops reverb - 02.wav</ShortName>
 					<Path>SFX\soft rain - brown noise - human activities - drops reverb - 02_8AC08B01.wem</Path>
 				</File>
+				<File Id="168415822" Language="SFX">
+					<ShortName>sfx_footsteps_02.wav</ShortName>
+					<Path>SFX\sfx_footsteps_02_950FF8F3.wem</Path>
+				</File>
 				<File Id="176876817" Language="SFX">
 					<ShortName>ri_revdark.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_revdark_25064B7F.wem</Path>
@@ -182,9 +182,9 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_watersplash_51175EC6.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
-				<File Id="261012673" Language="SFX">
-					<ShortName>sfx_footsteps_01.wav</ShortName>
-					<Path>SFX\sfx_footsteps_01_489996AE.wem</Path>
+				<File Id="270007800" Language="SFX">
+					<ShortName>sfx_footsteps_04.wav</ShortName>
+					<Path>SFX\sfx_footsteps_04_950FF8F3.wem</Path>
 				</File>
 				<File Id="279598686" Language="SFX">
 					<ShortName>Sfx_ri_pipe.wav</ShortName>
@@ -219,22 +219,30 @@
 					<ShortName>sfx_prendre_morceau.wav</ShortName>
 					<Path>SFX\sfx_prendre_morceau_950FF8F3.wem</Path>
 				</File>
+				<File Id="421608933" Language="SFX">
+					<ShortName>sfx_footsteps_05.wav</ShortName>
+					<Path>SFX\sfx_footsteps_05_950FF8F3.wem</Path>
+				</File>
 				<File Id="469843770" Language="SFX">
 					<ShortName>Sfx_ri_sylenth.wav</ShortName>
 					<Path>SFX\Sfx_ri_sylenth_DDC98EF4.wem</Path>
-				</File>
-				<File Id="471228023" Language="SFX">
-					<ShortName>sfx_footsteps_04.wav</ShortName>
-					<Path>SFX\sfx_footsteps_04_950FF8F3.wem</Path>
 				</File>
 				<File Id="479227711" Language="SFX">
 					<ShortName>sfx_traffic_by.wav</ShortName>
 					<Path>SFX\sfx_traffic_by_383A349A.wem</Path>
 				</File>
+				<File Id="479982870" Language="SFX">
+					<ShortName>sfx_footsteps_01.wav</ShortName>
+					<Path>SFX\sfx_footsteps_01_950FF8F3.wem</Path>
+				</File>
 				<File Id="500831021" Language="SFX">
 					<ShortName>ri_shevannai.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_shevannai_95C1C6C3.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="511288261" Language="SFX">
+					<ShortName>sfx_footsteps_03.wav</ShortName>
+					<Path>SFX\sfx_footsteps_03_950FF8F3.wem</Path>
 				</File>
 				<File Id="524736407" Language="SFX">
 					<ShortName>Sfx_ri_electric.wav</ShortName>
@@ -244,10 +252,6 @@
 					<ShortName>ri_skanner_pad.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_skanner_pad_06FD7189.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="539345453" Language="SFX">
-					<ShortName>sfx_footsteps_02.wav</ShortName>
-					<Path>SFX\sfx_footsteps_02_950FF8F3.wem</Path>
 				</File>
 				<File Id="557897535" Language="SFX">
 					<ShortName>sfx_busy_street.wav</ShortName>
@@ -266,22 +270,22 @@
 					<ShortName>Sfx_ri_shevannai.wav</ShortName>
 					<Path>SFX\Sfx_ri_shevannai_DDC98EF4.wem</Path>
 				</File>
+				<File Id="601542201" Language="SFX">
+					<ShortName>sfx_footsteps_09.wav</ShortName>
+					<Path>SFX\sfx_footsteps_09_950FF8F3.wem</Path>
+				</File>
 				<File Id="608263982" Language="SFX">
 					<ShortName>Sfx_ri_revdark.wav</ShortName>
 					<Path>SFX\Sfx_ri_revdark_DDC98EF4.wem</Path>
-				</File>
-				<File Id="611686530" Language="SFX">
-					<ShortName>sfx_footsteps_06.wav</ShortName>
-					<Path>SFX\sfx_footsteps_06_950FF8F3.wem</Path>
 				</File>
 				<File Id="629931913" Language="SFX">
 					<ShortName>ri_watersplash.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_watersplash_6BEC301A.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
-				<File Id="666995010" Language="SFX">
-					<ShortName>sfx_footsteps_03.wav</ShortName>
-					<Path>SFX\sfx_footsteps_03_950FF8F3.wem</Path>
+				<File Id="695305672" Language="SFX">
+					<ShortName>sfx_footsteps_07.wav</ShortName>
+					<Path>SFX\sfx_footsteps_07_950FF8F3.wem</Path>
 				</File>
 				<File Id="713635385" Language="SFX">
 					<ShortName>ri_pipe.wav</ShortName>
@@ -325,6 +329,10 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_choirslike_EC96448D.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="893801091" Language="SFX">
+					<ShortName>sfx_footsteps_08.wav</ShortName>
+					<Path>SFX\sfx_footsteps_08_950FF8F3.wem</Path>
+				</File>
 				<File Id="932933361" Language="SFX">
 					<ShortName>ri_skannermorph.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_skannermorph_01B3EE8B.wem</Path>
@@ -338,10 +346,6 @@
 					<ShortName>ri_suriya.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_suriya_F0D73493.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="980183220" Language="SFX">
-					<ShortName>sfx_footsteps_08.wav</ShortName>
-					<Path>SFX\sfx_footsteps_08_950FF8F3.wem</Path>
 				</File>
 				<File Id="984711463" Language="SFX">
 					<ShortName>ri_choirslike.wav</ShortName>
@@ -361,6 +365,10 @@
 					<ShortName>Sfx_ri_rev_light.wav</ShortName>
 					<Path>SFX\Sfx_ri_rev_light_DDC98EF4.wem</Path>
 				</File>
+				<File Id="1037935833" Language="SFX">
+					<ShortName>sfx_footsteps_06.wav</ShortName>
+					<Path>SFX\sfx_footsteps_06_950FF8F3.wem</Path>
+				</File>
 				<File Id="1038465850" Language="SFX">
 					<ShortName>cymbal_reverb.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\cymbal_reverb_ABED5F63.wem</Path>
@@ -370,10 +378,6 @@
 					<ShortName>ri_sylenth.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_sylenth_27FB1D34.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="1072398571" Language="SFX">
-					<ShortName>sfx_footsteps_09.wav</ShortName>
-					<Path>SFX\sfx_footsteps_09_6A53251A.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
