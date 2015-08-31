@@ -1080,8 +1080,8 @@ MonoBehaviour:
   - /villeEmergente_wwise/Events
   - /villeEmergente_wwise/Events/Default Work Unit
   - /villeEmergente_wwise/Events/Default Work Unit/Joueur
-  m_lastPopulateTimePsrt1: -1474006683
-  m_lastPopulateTimePart2: -1999458567
+  m_lastPopulateTimePsrt1: -1642015536
+  m_lastPopulateTimePart2: -1999457786
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)
