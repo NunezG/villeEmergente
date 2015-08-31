@@ -2,40 +2,59 @@
 using System.Collections;
 using System.Collections.Generic;
 
+using RAIN.Core;
+using RAIN.Navigation.Targets;
+using RAIN.Minds;
+using RAIN.Serialization;
+using RAIN.Motion;
+
 public class Guide : MonoBehaviour
 {
     public static GameObject[] allPointsOfView = null;
-   // public List<GameObject> targets = new List<GameObject>();
+
     public PointDeVue pdv;
     public Fragment fragment;
     public Material defaultMaterial, material;
+    public SceneRange scene;
+    public RAIN.Memory.BasicMemory tMemory;
 
     public void Awake()
     {
         tag = "NPC";
-        // if(targets==null)
-        //Debug.Log ("START MUSICIENN");
-        int matriculePassant = int.Parse(this.gameObject.name.Substring(7));
-        //print("matriculePassant " + matriculePassant);
-
         if (allPointsOfView == null)
             allPointsOfView = GameObject.FindGameObjectsWithTag("PointDeVue");
-        /*foreach (GameObject gObject in allPointsOfView)
-        {
-            if (gObject.name == "NT_Passant_" + matriculePassant)
-            {
-                targets.Add(gObject);
-            }
-        }*/
     }
+
 	// Use this for initialization
-	void Start () {
-	
+    void Start()
+    {
+        AIRig aiRig = GetComponentInChildren<AIRig>();
+        tMemory = aiRig.AI.WorkingMemory as RAIN.Memory.BasicMemory;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
+
+    public void InteractWithBuilding()
+    {
+        if (pdv.batimentAVisiter.fragment == null)
+        {
+            pdv.batimentAVisiter.OnAddingFragment(fragment);
+            tMemory.SetItem<bool>("hasFragment", false);
+
+        }
+        else
+        {
+            fragment = pdv.batimentAVisiter.OnPickUp().GetComponent<Fragment>();
+            tMemory.SetItem<bool>("hasFragment", true);
+        }
+    }
+
+    public void EmitSound()
+    {
+
+    }
 
 }

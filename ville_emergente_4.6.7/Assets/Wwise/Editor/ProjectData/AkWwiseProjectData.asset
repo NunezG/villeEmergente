@@ -268,6 +268,20 @@ MonoBehaviour:
       ID: -1672704904
       Guid: cb13d3b763c61a4e9e6fe84937b1b5ca
       maxAttenuation: 0
+    - Name: Sfx_RI
+      Path: Default Work Unit\Batiments\Sfx RI\Sfx_RI
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Sfx RI
+        ObjectType: 4
+      - ElementName: Sfx_RI
+        ObjectType: 3
+      ID: -381897218
+      Guid: 20a8635762adc949b48b5ff499250205
+      maxAttenuation: 0
     - Name: softRain_convolver_play
       Path: Default Work Unit\Fragments\Liquide\softRain_convolver_play
       PathAndIcons:
@@ -325,11 +339,13 @@ MonoBehaviour:
       Guid: 11e9a5aff682874f908ed3629cabe440
       maxAttenuation: 0
     - Name: switch_atmo1
-      Path: Default Work Unit\Batiments\switch_atmo1
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_atmo1
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
         ObjectType: 4
       - ElementName: switch_atmo1
         ObjectType: 3
@@ -337,11 +353,13 @@ MonoBehaviour:
       Guid: f684ab60dda73d4d8896cbb1fda57298
       maxAttenuation: 0
     - Name: switch_atmo2
-      Path: Default Work Unit\Batiments\switch_atmo2
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_atmo2
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
         ObjectType: 4
       - ElementName: switch_atmo2
         ObjectType: 3
@@ -349,11 +367,13 @@ MonoBehaviour:
       Guid: f617b6d945d4ba41859cd6001f927507
       maxAttenuation: 0
     - Name: switch_atmo3
-      Path: Default Work Unit\Batiments\switch_atmo3
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_atmo3
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
         ObjectType: 4
       - ElementName: switch_atmo3
         ObjectType: 3
@@ -361,11 +381,13 @@ MonoBehaviour:
       Guid: 9a3903579d3dcc459d5c91060aa1d684
       maxAttenuation: 0
     - Name: switch_atmo4
-      Path: Default Work Unit\Batiments\switch_atmo4
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_atmo4
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
         ObjectType: 4
       - ElementName: switch_atmo4
         ObjectType: 3
@@ -373,11 +395,13 @@ MonoBehaviour:
       Guid: 5c8c711417b36542890589400edbab53
       maxAttenuation: 0
     - Name: switch_atmo5
-      Path: Default Work Unit\Batiments\switch_atmo5
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_atmo5
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
         ObjectType: 4
       - ElementName: switch_atmo5
         ObjectType: 3
@@ -385,11 +409,13 @@ MonoBehaviour:
       Guid: b7be160e13b4554ba33a8e7551bd81f3
       maxAttenuation: 0
     - Name: switch_atmo6
-      Path: Default Work Unit\Batiments\switch_atmo6
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_atmo6
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
         ObjectType: 4
       - ElementName: switch_atmo6
         ObjectType: 3
@@ -397,23 +423,125 @@ MonoBehaviour:
       Guid: 1d327f8d2353ee4f9f8d5e14a3d2ccbb
       maxAttenuation: 0
     - Name: switch_atmo7
-      Path: Default Work Unit\Batiments\switch_atmo7
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_atmo7
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
         ObjectType: 4
       - ElementName: switch_atmo7
         ObjectType: 3
       ID: -1852514782
       Guid: b5d72531e064584c8347fa17e7576771
       maxAttenuation: 0
-    - Name: switch_dark1
-      Path: Default Work Unit\Batiments\switch_dark1
+    - Name: switch_atmoRI1
+      Path: Default Work Unit\Batiments\Switches RI\switch_atmoRI1
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_atmoRI1
+        ObjectType: 3
+      ID: -707097707
+      Guid: 37d39b412c28964985738aa85adbde09
+      maxAttenuation: 0
+    - Name: switch_atmoRI2
+      Path: Default Work Unit\Batiments\Switches RI\switch_atmoRI2
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_atmoRI2
+        ObjectType: 3
+      ID: -707097706
+      Guid: b47105fbf3e7594fa954471a79861d00
+      maxAttenuation: 0
+    - Name: switch_atmoRI3
+      Path: Default Work Unit\Batiments\Switches RI\switch_atmoRI3
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_atmoRI3
+        ObjectType: 3
+      ID: -707097705
+      Guid: ebf407bc18d46a4db910c8b831e7d722
+      maxAttenuation: 0
+    - Name: switch_atmoRI4
+      Path: Default Work Unit\Batiments\Switches RI\switch_atmoRI4
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_atmoRI4
+        ObjectType: 3
+      ID: -707097712
+      Guid: ee81d5703f53d342aca04489ea7f31a5
+      maxAttenuation: 0
+    - Name: switch_atmoRI5
+      Path: Default Work Unit\Batiments\Switches RI\switch_atmoRI5
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_atmoRI5
+        ObjectType: 3
+      ID: -707097711
+      Guid: 8d73603d2d1af2478a1d63165010fd78
+      maxAttenuation: 0
+    - Name: switch_atmoRI6
+      Path: Default Work Unit\Batiments\Switches RI\switch_atmoRI6
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_atmoRI6
+        ObjectType: 3
+      ID: -707097710
+      Guid: de9bcddb1d4e38408986efa8a02b0f5b
+      maxAttenuation: 0
+    - Name: switch_atmoRI7
+      Path: Default Work Unit\Batiments\Switches RI\switch_atmoRI7
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_atmoRI7
+        ObjectType: 3
+      ID: -707097709
+      Guid: f05ad4829e331b4ba3e3f7591315112d
+      maxAttenuation: 0
+    - Name: switch_dark1
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_dark1
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
         ObjectType: 4
       - ElementName: switch_dark1
         ObjectType: 3
@@ -421,11 +549,13 @@ MonoBehaviour:
       Guid: 209094ea51c862408848924e493df4c2
       maxAttenuation: 0
     - Name: switch_dark2
-      Path: Default Work Unit\Batiments\switch_dark2
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_dark2
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
         ObjectType: 4
       - ElementName: switch_dark2
         ObjectType: 3
@@ -433,11 +563,13 @@ MonoBehaviour:
       Guid: 1538685cf1eab74aaff54573ff9c9d29
       maxAttenuation: 0
     - Name: switch_dark3
-      Path: Default Work Unit\Batiments\switch_dark3
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_dark3
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
         ObjectType: 4
       - ElementName: switch_dark3
         ObjectType: 3
@@ -445,11 +577,13 @@ MonoBehaviour:
       Guid: b86f89b37f66504f95a3ceed647b2592
       maxAttenuation: 0
     - Name: switch_dark4
-      Path: Default Work Unit\Batiments\switch_dark4
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_dark4
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
         ObjectType: 4
       - ElementName: switch_dark4
         ObjectType: 3
@@ -457,11 +591,13 @@ MonoBehaviour:
       Guid: 6dcbd95de80f9940ab722caa4d932226
       maxAttenuation: 0
     - Name: switch_dark5
-      Path: Default Work Unit\Batiments\switch_dark5
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_dark5
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
         ObjectType: 4
       - ElementName: switch_dark5
         ObjectType: 3
@@ -469,11 +605,13 @@ MonoBehaviour:
       Guid: f39edddf9555ad468639aea68de25210
       maxAttenuation: 0
     - Name: switch_dark6
-      Path: Default Work Unit\Batiments\switch_dark6
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_dark6
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
         ObjectType: 4
       - ElementName: switch_dark6
         ObjectType: 3
@@ -481,23 +619,125 @@ MonoBehaviour:
       Guid: 28f9767758fb4342990da6688fdc0691
       maxAttenuation: 0
     - Name: switch_dark7
-      Path: Default Work Unit\Batiments\switch_dark7
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_dark7
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
         ObjectType: 4
       - ElementName: switch_dark7
         ObjectType: 3
       ID: -677068661
       Guid: 49e9cb68dff16a478b668896234cc87a
       maxAttenuation: 0
-    - Name: switch_default
-      Path: Default Work Unit\Batiments\switch_default
+    - Name: switch_darkRI1
+      Path: Default Work Unit\Batiments\Switches RI\switch_darkRI1
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_darkRI1
+        ObjectType: 3
+      ID: -451869912
+      Guid: a9cbdf2eab1c9a41b3aeab3588ddf3df
+      maxAttenuation: 0
+    - Name: switch_darkRI2
+      Path: Default Work Unit\Batiments\Switches RI\switch_darkRI2
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_darkRI2
+        ObjectType: 3
+      ID: -451869909
+      Guid: daa39e1f84a0084dba413bb0736c39d9
+      maxAttenuation: 0
+    - Name: switch_darkRI3
+      Path: Default Work Unit\Batiments\Switches RI\switch_darkRI3
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_darkRI3
+        ObjectType: 3
+      ID: -451869910
+      Guid: f43e45f197b0df4990c8bf7449e6c8ba
+      maxAttenuation: 0
+    - Name: switch_darkRI4
+      Path: Default Work Unit\Batiments\Switches RI\switch_darkRI4
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_darkRI4
+        ObjectType: 3
+      ID: -451869907
+      Guid: 87d4ef1e92d9c04b8cde0b373ca4c72f
+      maxAttenuation: 0
+    - Name: switch_darkRI5
+      Path: Default Work Unit\Batiments\Switches RI\switch_darkRI5
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_darkRI5
+        ObjectType: 3
+      ID: -451869908
+      Guid: 8a1d27be483c764ca64d4eaebcfa7f53
+      maxAttenuation: 0
+    - Name: switch_darkRI6
+      Path: Default Work Unit\Batiments\Switches RI\switch_darkRI6
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_darkRI6
+        ObjectType: 3
+      ID: -451869905
+      Guid: 14285acf1bf69442ad68ff1398b68f48
+      maxAttenuation: 0
+    - Name: switch_darkRI7
+      Path: Default Work Unit\Batiments\Switches RI\switch_darkRI7
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_darkRI7
+        ObjectType: 3
+      ID: -451869906
+      Guid: 79252bd3fe4764448a7bcacadcf840f6
+      maxAttenuation: 0
+    - Name: switch_default
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_default
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
         ObjectType: 4
       - ElementName: switch_default
         ObjectType: 3
@@ -679,6 +919,75 @@ MonoBehaviour:
     ParentPhysicalPath: 
     Guid: '{A220CD50-3E72-41A8-A6D6-6FCC60089A54}'
     List:
+    - Name: Convolutions_Sfx
+      Path: Default Work Unit\Convolutions_Sfx
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Convolutions_Sfx
+        ObjectType: 11
+      ID: 980332272
+      Guid: 0fa86e12ff09f44fba28f9d78e97c415
+      values:
+      - AtmoRI_1
+      - AtmoRI_2
+      - AtmoRI_3
+      - AtmoRI_4
+      - AtmoRI_5
+      - AtmoRI_6
+      - AtmoRI_7
+      - DarkRI_1
+      - DarkRI_2
+      - DarkRI_3
+      - DarkRI_4
+      - DarkRI_5
+      - DarkRI_6
+      - DarkRI_7
+      ValueIcons:
+      - ElementName: AtmoRI_1
+        ObjectType: 10
+      - ElementName: AtmoRI_2
+        ObjectType: 10
+      - ElementName: AtmoRI_3
+        ObjectType: 10
+      - ElementName: AtmoRI_4
+        ObjectType: 10
+      - ElementName: AtmoRI_5
+        ObjectType: 10
+      - ElementName: AtmoRI_6
+        ObjectType: 10
+      - ElementName: AtmoRI_7
+        ObjectType: 10
+      - ElementName: DarkRI_1
+        ObjectType: 10
+      - ElementName: DarkRI_2
+        ObjectType: 10
+      - ElementName: DarkRI_3
+        ObjectType: 10
+      - ElementName: DarkRI_4
+        ObjectType: 10
+      - ElementName: DarkRI_5
+        ObjectType: 10
+      - ElementName: DarkRI_6
+        ObjectType: 10
+      - ElementName: DarkRI_7
+        ObjectType: 10
+      valueIDs: a9f443f5aaf443f5abf443f5acf443f5adf443f5aef443f5aff443f5061a8252051a8252041a8252031a8252021a8252011a8252001a8252
+      ValueGuids:
+      - bytes: 34b86dd695e85445925470b3fb3e760b
+      - bytes: 62425ef8ef98e249bcccc672d22c0849
+      - bytes: 0b3395e9d802bc4cae87182999beeeed
+      - bytes: cde98e8edc6e9646aee7dab4f5195b6f
+      - bytes: 131820e71cab6841b0e79235b11f3a9f
+      - bytes: 6c3542e9e15e944593fe64888964faaa
+      - bytes: 22c7a710901a974ba74beaf64f870e1b
+      - bytes: ebb2b66e86eecc4fbd451bcb95a9e4b7
+      - bytes: a424efa0018bb54dbc6eee10c6585481
+      - bytes: 5a9af5770eb7e84a93bafdf78be8804f
+      - bytes: 4d3d7fb050a66a4ca254c316c8a1a210
+      - bytes: 147f2b6415ed2a4cafc9577795e214dc
+      - bytes: d6c548f9c28ac74dbb07fc86c738db75
+      - bytes: 06e5e86cefd9024a9f88c8503f7e6bb0
     - Name: Elements_decor
       Path: Default Work Unit\Elements_decor
       PathAndIcons:
@@ -752,27 +1061,6 @@ MonoBehaviour:
       - bytes: 1dfd1192136cc84186c83b4b2c1475ca
       - bytes: 566ed1a7545f8e4cbda02372329b19ea
       - bytes: 9eb49eb95649a443aa90864549ee2fc7
-    - Name: Material
-      Path: Default Work Unit\Material
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Material
-        ObjectType: 11
-      ID: -429652670
-      Guid: cb91aebb4db6f849ba39ec3319e35652
-      values:
-      - Concrete
-      - Grass
-      ValueIcons:
-      - ElementName: Concrete
-        ObjectType: 10
-      - ElementName: Grass
-        ObjectType: 10
-      valueIDs: ec1b2a32d92e3dfd
-      ValueGuids:
-      - bytes: 8cc3ce425351394db8083cdb613ba801
-      - bytes: c8f013ca2bfef245882f9b15765c563e
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -792,8 +1080,8 @@ MonoBehaviour:
   - /villeEmergente_wwise/Events
   - /villeEmergente_wwise/Events/Default Work Unit
   - /villeEmergente_wwise/Events/Default Work Unit/Joueur
-  m_lastPopulateTimePsrt1: -1350605656
-  m_lastPopulateTimePart2: -1999458601
+  m_lastPopulateTimePsrt1: 1574215988
+  m_lastPopulateTimePart2: -1999458419
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)

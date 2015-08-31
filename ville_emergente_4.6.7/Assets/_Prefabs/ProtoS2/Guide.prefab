@@ -94,7 +94,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &173606
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,7 +105,6 @@ GameObject:
   - 4: {fileID: 473606}
   - 33: {fileID: 3373606}
   - 135: {fileID: 13573606}
-  - 23: {fileID: 2373606}
   - 114: {fileID: 11473606}
   m_Layer: 0
   m_Name: sceneRange
@@ -319,26 +318,6 @@ Renderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!23 &2373606
-Renderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173606}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
 --- !u!33 &3317184
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -415,35 +394,67 @@ MonoBehaviour:
       id="_ai" /></fields><references><reference type="RAIN.Core.AI" refcount="1"
       id="0"><field value="True" type="System.Boolean" id="_isActive" /><field type="UnityEngine.GameObject"
       id="_body" gameobject="0" /><field type="RAIN.Memory.BasicMemory" reference="1"
-      id="_workingMemory" childrenvisible="True" /><field type="RAIN.Minds.BasicMind"
-      reference="2" id="_mind" childrenvisible="False" /><field type="RAIN.Motion.BasicMotor"
+      id="_workingMemory" childrenvisible="False" /><field type="RAIN.Minds.BasicMind"
+      reference="2" id="_mind" childrenvisible="True" /><field type="RAIN.Motion.BasicMotor"
       reference="3" id="_motor" /><field type="RAIN.Animation.BasicAnimator" reference="4"
       id="_animator" /><field type="RAIN.Navigation.BasicNavigator" reference="5"
       id="_navigator" /><field type="RAIN.Perception.BasicSenses" reference="6" id="_senses"
       /><field type="System.Collections.Generic.List" id="_customElements" elementtype="RAIN.Core.CustomAIElement"
       /></reference><reference type="RAIN.Memory.BasicMemory" refcount="1" id="1"><field
-      type="System.Collections.Generic.List" id="_memoryItems" elementtype="RAIN.Memory.BasicMemory+MemoryItem"
-      /></reference><reference type="RAIN.Minds.BasicMind" refcount="1" id="2"><field
-      type="RAIN.BehaviorTrees.BTAsset" id="_behaviorTreeAsset" gameobject="1" /><field
-      type="System.Collections.Generic.List" id="_behaviorTreeBindings" elementtype="RAIN.BehaviorTrees.BTAssetBinding"
-      /></reference><reference type="RAIN.Motion.BasicMotor" refcount="1" id="3"><field
-      value="1" type="System.Single" id="_speed" /><field value="360" type="System.Single"
-      id="_rotationSpeed" /><field value="0.1" type="System.Single" id="_closeEnoughDistance"
-      /><field value="0.1" type="System.Single" id="_closeEnoughAngle" /><field value="360"
-      type="System.Single" id="_faceBeforeMoveAngle" /><field value="1" type="System.Single"
-      id="_maxHeightOffset" /><field value="False" type="System.Boolean" id="_allow3DMovement"
-      /><field value="False" type="System.Boolean" id="_allow3DRotation" /><field
-      value="True" type="System.Boolean" id="_allowOffGraphMovement" /></reference><reference
-      type="RAIN.Animation.BasicAnimator" refcount="1" id="4"><field type="System.Collections.Generic.List"
-      id="_animationStates" elementtype="RAIN.Animation.BasicAnimator+BasicAnimatorState"
-      /></reference><reference type="RAIN.Navigation.BasicNavigator" refcount="1"
-      id="5"><field value="False" type="System.Boolean" id="_drawPaths" /><field value="0,1,0,1"
-      type="UnityEngine.Color" id="_pathColor" /><field value="-0.5" type="System.Single"
-      id="_outlineColorOffset" /><field value="100" type="System.Int32" id="_maxPathfindingSteps"
-      /><field value="0" type="System.Single" id="_maxPathLength" /><field type="System.Collections.Generic.List"
+      type="System.Collections.Generic.List" id="_memoryItems" elementtype="RAIN.Memory.BasicMemory+MemoryItem"><field
+      type="RAIN.Memory.BasicMemory+MemoryItem" reference="7" id="element0" /><field
+      type="RAIN.Memory.BasicMemory+MemoryItem" reference="8" id="element1" /><field
+      type="RAIN.Memory.BasicMemory+MemoryItem" reference="9" id="element2" /><field
+      type="RAIN.Memory.BasicMemory+MemoryItem" reference="10" id="element3" /><field
+      type="RAIN.Memory.BasicMemory+MemoryItem" reference="11" id="element4" /><field
+      type="RAIN.Memory.BasicMemory+MemoryItem" reference="12" id="element5" /><field
+      type="RAIN.Memory.BasicMemory+MemoryItem" reference="13" id="element6" /><field
+      type="RAIN.Memory.BasicMemory+MemoryItem" reference="14" id="element7" /></field></reference><reference
+      type="RAIN.Minds.BasicMind" refcount="1" id="2"><field type="RAIN.BehaviorTrees.BTAsset"
+      id="_behaviorTreeAsset" gameobject="1" /><field type="System.Collections.Generic.List"
+      id="_behaviorTreeBindings" elementtype="RAIN.BehaviorTrees.BTAssetBinding" /></reference><reference
+      type="RAIN.Motion.BasicMotor" refcount="1" id="3"><field value="1" type="System.Single"
+      id="_speed" /><field value="360" type="System.Single" id="_rotationSpeed" /><field
+      value="0.1" type="System.Single" id="_closeEnoughDistance" /><field value="0.1"
+      type="System.Single" id="_closeEnoughAngle" /><field value="360" type="System.Single"
+      id="_faceBeforeMoveAngle" /><field value="1" type="System.Single" id="_maxHeightOffset"
+      /><field value="False" type="System.Boolean" id="_allow3DMovement" /><field
+      value="False" type="System.Boolean" id="_allow3DRotation" /><field value="True"
+      type="System.Boolean" id="_allowOffGraphMovement" /></reference><reference type="RAIN.Animation.BasicAnimator"
+      refcount="1" id="4"><field type="System.Collections.Generic.List" id="_animationStates"
+      elementtype="RAIN.Animation.BasicAnimator+BasicAnimatorState" /></reference><reference
+      type="RAIN.Navigation.BasicNavigator" refcount="1" id="5"><field value="False"
+      type="System.Boolean" id="_drawPaths" /><field value="0,1,0,1" type="UnityEngine.Color"
+      id="_pathColor" /><field value="-0.5" type="System.Single" id="_outlineColorOffset"
+      /><field value="100" type="System.Int32" id="_maxPathfindingSteps" /><field
+      value="0" type="System.Single" id="_maxPathLength" /><field type="System.Collections.Generic.List"
       id="_graphTags" elementtype="System.String" /></reference><reference type="RAIN.Perception.BasicSenses"
       refcount="1" id="6"><field type="System.Collections.Generic.List" id="_sensors"
-      elementtype="RAIN.Perception.Sensors.RAINSensor" /></reference></references></component>
+      elementtype="RAIN.Perception.Sensors.RAINSensor" /></reference><reference type="RAIN.Memory.BasicMemory+MemoryItem"
+      refcount="1" id="7"><field value="isOnPoV" type="System.String" id="Key" /><field
+      value="System.Boolean" type="System.Type" id="ValueType" /><field value="False"
+      type="System.Boolean" id="Value" /></reference><reference type="RAIN.Memory.BasicMemory+MemoryItem"
+      refcount="1" id="8"><field value="hasTouchedBuilding" type="System.String" id="Key"
+      /><field value="System.Boolean" type="System.Type" id="ValueType" /><field value="False"
+      type="System.Boolean" id="Value" /></reference><reference type="RAIN.Memory.BasicMemory+MemoryItem"
+      refcount="1" id="9"><field value="isComplete" type="System.String" id="Key"
+      /><field value="System.Boolean" type="System.Type" id="ValueType" /><field value="False"
+      type="System.Boolean" id="Value" /></reference><reference type="RAIN.Memory.BasicMemory+MemoryItem"
+      refcount="1" id="10"><field value="followMe" type="System.String" id="Key" /><field
+      value="System.Boolean" type="System.Type" id="ValueType" /><field value="False"
+      type="System.Boolean" id="Value" /></reference><reference type="RAIN.Memory.BasicMemory+MemoryItem"
+      refcount="1" id="11"><field value="target" type="System.String" id="Key" /><field
+      value="UnityEngine.GameObject" type="System.Type" id="ValueType" /><field value=""
+      type="System.Object" id="Value" /></reference><reference type="RAIN.Memory.BasicMemory+MemoryItem"
+      refcount="1" id="12"><field value="lookAtTarget" type="System.String" id="Key"
+      /><field value="UnityEngine.GameObject" type="System.Type" id="ValueType" /><field
+      value="" type="System.Object" id="Value" /></reference><reference type="RAIN.Memory.BasicMemory+MemoryItem"
+      refcount="1" id="13"><field value="destinationReached" type="System.String"
+      id="Key" /><field value="System.Boolean" type="System.Type" id="ValueType" /><field
+      value="False" type="System.Boolean" id="Value" /></reference><reference type="RAIN.Memory.BasicMemory+MemoryItem"
+      refcount="1" id="14"><field value="hasInteracted" type="System.String" id="Key"
+      /><field value="System.Boolean" type="System.Type" id="ValueType" /><field value="False"
+      type="System.Boolean" id="Value" /></reference></references></component>
     _serializedGameObjects:
     - {fileID: 161070}
     - {fileID: 11400000, guid: a78e6e3da35aa1c42b35642e67068127, type: 2}
@@ -472,6 +483,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainActor: {fileID: 0}
+  spots: []
+  availablesSpots: 
 --- !u!114 &11473608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -483,6 +496,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2ed6f099c46e7547b156c33d88be294, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pdv: {fileID: 0}
+  fragment: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  material: {fileID: 0}
+  scene: {fileID: 11473606}
 --- !u!135 &13517184
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -538,7 +556,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173606}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: .5
