@@ -11,10 +11,12 @@ using RAIN.Motion;
 public class Guide : MonoBehaviour
 {
     public static GameObject[] allPointsOfView = null;
+    public GameObject inHandPosition, inHandObject;
+
+    public GameObject startingFragment;
+    public bool handsFull = false;
 
     public PointDeVue pdv;
-    public Fragment fragment;
-    public Material defaultMaterial, material;
     public SceneRange scene;
     public RAIN.Memory.BasicMemory tMemory;
 
@@ -30,6 +32,7 @@ public class Guide : MonoBehaviour
     {
         AIRig aiRig = GetComponentInChildren<AIRig>();
         tMemory = aiRig.AI.WorkingMemory as RAIN.Memory.BasicMemory;
+        PickUpObject(startingFragment);
 	}
 	
 	// Update is called once per frame
@@ -41,13 +44,14 @@ public class Guide : MonoBehaviour
     {
         if (pdv.batimentAVisiter.fragment == null)
         {
+            Fragment fragment = inHandObject.GetComponent<Fragment>();
             pdv.batimentAVisiter.OnAddingFragment(fragment);
-            tMemory.SetItem<bool>("hasFragment", false);
+            fragment.gameObject.SetActive(false);
+            AddingFragment();
         }
         else
         {
-            fragment = pdv.batimentAVisiter.OnPickUp().GetComponent<Fragment>();
-            tMemory.SetItem<bool>("hasFragment", true);
+            PickUpObject(pdv.batimentAVisiter.OnPickUp());
         }
     }
 
@@ -56,4 +60,35 @@ public class Guide : MonoBehaviour
 
     }
 
+    public void DropInHandObject()
+    {
+        if (inHandObject != null)
+        {
+            print("Interactor:DropInHandObject");
+            inHandObject.GetComponent<Fragment>().Drop();
+            handsFull = false;
+            inHandObject = null;
+            tMemory.SetItem<bool>("hasFragment", false);
+        }
+    }
+
+    public void PickUpObject(GameObject toPickUp)
+    {
+        tMemory.SetItem<bool>("hasFragment", true);
+        print("Interactor:PickUpObject");
+        inHandObject = toPickUp;
+        inHandObject.transform.parent = inHandPosition.transform;
+        inHandObject.transform.position = inHandPosition.transform.position;
+        inHandObject.transform.rotation = inHandPosition.transform.rotation;
+        inHandObject.rigidbody.isKinematic = true;
+        handsFull = true;
+    }
+    public void AddingFragment()
+    {
+        print("Interactor:AddingFragment");
+        inHandObject.rigidbody.isKinematic = false;
+        inHandObject.transform.parent = null;
+        SettingPiece.fragmentsOfZeWorld.Remove(inHandObject.GetComponent<Fragment>());
+        DropInHandObject();
+    }
 }

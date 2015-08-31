@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9104d85d8786abd41b52baf0dee4e731, type: 3}
-  m_Name: AkWwiseProjectData
+  m_Name: AkWwiseProjectData 6
   m_EditorClassIdentifier: 
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
@@ -1075,17 +1075,13 @@ MonoBehaviour:
         ObjectType: 7
       ID: -1133058374
       Guid: 13a8cb8be9ce1d40a1ae57d196fca6c9
-  ExpandedItems:
-  - /villeEmergente_wwise
-  - /villeEmergente_wwise/Events
-  - /villeEmergente_wwise/Events/Default Work Unit
-  - /villeEmergente_wwise/Events/Default Work Unit/Joueur
-  m_lastPopulateTimePsrt1: -1310572892
+  ExpandedItems: []
+  m_lastPopulateTimePsrt1: -1491391022
   m_lastPopulateTimePart2: -1999457818
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)
-  defaultPoolSize: 4096
-  lowerPoolSize: 2048
-  streamingPoolSize: 1024
+  defaultPoolSize: 8192
+  lowerPoolSize: 4096
+  streamingPoolSize: 2048
   memoryCutoffThreshold: .949999988
