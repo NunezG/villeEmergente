@@ -126,8 +126,8 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="DarkRI_7" ID="{6CE8E506-D9EF-4A02-9F88-C8503F7E6BB0}"/>
-						<CurrentSwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
+						<CurrentSwitchRef Name="AtmoRI_1" ID="{D66DB834-E895-4554-9254-70B3FB3E760B}"/>
+						<CurrentSwitchRef Name="Dark_1" ID="{65F12811-7F28-46B7-8012-C1165748BE61}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

@@ -7,6 +7,8 @@ public class InteractibleObject : MonoBehaviour {
    // public AudioSource audioSource;
     public InteractibleType type; // par defaut un element du decor
 
+	public string soundEevent;
+
 	//public string playingSound;
 
 	// Use this for initialization
@@ -45,6 +47,13 @@ public class InteractibleObject : MonoBehaviour {
 
     public void OnAddingFragment(Fragment fragment)
     {
+		soundEevent = fragment.GetComponent<InteractibleObject> ().soundEevent;
+
+		//fragment.transform.parent = this.transform;
+
+		print("fragment.transform.parentfragment.transform.parent: "+ this.name);
+
+
         if (type == InteractibleType.NPC)
         {
 			this.GetComponent<Musicien>().OnAddingFragment(fragment);

@@ -28,11 +28,10 @@ MonoBehaviour:
       usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
       name=&quot;comme je n'ai pas encore touch\xE9&quot; debugbreak=&quot;False&quot;&gt;&lt;action
       repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
-      parameters=&quot;dG9QcmludEV4cA==&quot; namespace=&quot;&quot; name=&quot;je
-      touche&quot; debugbreak=&quot;False&quot; classname=&quot;AiPrint&quot; /&gt;&lt;action
-      repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
-      parameters=&quot;dG9QcmludEV4cA==&quot; namespace=&quot;&quot; name=&quot;je
-      fais mon son&quot; debugbreak=&quot;False&quot; classname=&quot;AiPrint&quot;
+      parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;je touche&quot; debugbreak=&quot;False&quot;
+      classname=&quot;GuideBuildingInteraction&quot; /&gt;&lt;action repeatuntil=&quot;&quot;
+      priority=&quot;&quot; parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;&quot;
+      name=&quot;je fais mon son&quot; debugbreak=&quot;False&quot; classname=&quot;GuideEmitSound&quot;
       /&gt;&lt;expression returnvalue=&quot;success&quot; repeatuntil=&quot;&quot;
       priority=&quot;&quot; name=&quot;expression&quot; expression=&quot;destinationReached=false&quot;
       debugbreak=&quot;False&quot; /&gt;&lt;/sequencer&gt;&lt;/selector&gt;&lt;/sequencer&gt;&lt;sequencer
@@ -47,15 +46,16 @@ MonoBehaviour:
       usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
       name=&quot;destination j'ai un morceau&quot; debugbreak=&quot;False&quot;&gt;&lt;expression
       returnvalue=&quot;evaluate&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
-      name=&quot;ai-je un morceau ?&quot; expression=&quot;&quot; debugbreak=&quot;False&quot;
-      /&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
-      parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;s\xE9lectionner un
-      pdv random&quot; debugbreak=&quot;False&quot; classname=&quot;GuideSelectRandomTarget&quot;
-      /&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
-      parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;\xE9mettre l'ordre
-      suivez-moi&quot; debugbreak=&quot;False&quot; classname=&quot;GuideActivateScene&quot;
-      /&gt;&lt;/sequencer&gt;&lt;sequencer usepriorities=&quot;False&quot; repeatuntil=&quot;&quot;
-      priority=&quot;&quot; name=&quot;destination quand je n'ai ien&quot; debugbreak=&quot;False&quot;&gt;&lt;action
+      name=&quot;ai-je un morceau ?&quot; expression=&quot;hasFragment==true&quot;
+      debugbreak=&quot;False&quot; /&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot;
+      parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;&quot;
+      name=&quot;s\xE9lectionner un pdv random&quot; debugbreak=&quot;False&quot;
+      classname=&quot;GuideSelectRandomTarget&quot; /&gt;&lt;action repeatuntil=&quot;&quot;
+      priority=&quot;&quot; parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;&quot;
+      name=&quot;\xE9mettre l'ordre suivez-moi&quot; debugbreak=&quot;False&quot;
+      classname=&quot;GuideActivateScene&quot; /&gt;&lt;/sequencer&gt;&lt;sequencer
+      usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
+      name=&quot;destination quand je n'ai ien&quot; debugbreak=&quot;False&quot;&gt;&lt;action
       repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
       parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;s\xE9lectionner pdv
       d'un \xE9l\xE9ment de d\xE9cor poss\xE9dant un morceau&quot; debugbreak=&quot;False&quot;

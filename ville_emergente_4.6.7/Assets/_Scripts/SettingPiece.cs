@@ -94,14 +94,14 @@ public class SettingPiece : MonoBehaviour{
        // this.audioEventName = fragment.audioEventName;
 
 		//AkSoundEngine.SetRTPCValue ("binaural_to_convolver", 100);
-		fragment.Drop ();
+		//fragment.Drop ();
 		//AkSoundEngine.SetSwitch("Elements_decor", "Batiment_1", inHandObject.gameObject);
 
-		SoundUniverseManager.addSoundEvent (fragment.gameObject); 
+		SoundUniverseManager.addSoundEvent (this.gameObject); 
 
 		WwiseAudioManager.instance.PlayFiniteEvent("linker_morceau", fragment.gameObject);
 		WwiseAudioManager.instance.PlayFiniteEvent(SoundUniverseManager.switchType+switchNumber, fragment.gameObject);
-		WwiseAudioManager.instance.PlayLoopEvent (fragment.soundEevent, fragment.gameObject, true);
+		WwiseAudioManager.instance.PlayLoopEvent (fragment.GetComponent<InteractibleObject>().soundEevent, fragment.gameObject, true);
 
 		
     }
@@ -114,7 +114,7 @@ public class SettingPiece : MonoBehaviour{
 
 		SoundUniverseManager.removeSoundEvent(fragment.gameObject);
 
-		WwiseAudioManager.instance.StopLoopEvent(fragment.soundEevent, fragment.gameObject, true);
+		//WwiseAudioManager.instance.StopLoopEvent(fragment.GetComponent<InteractibleObject>().soundEevent, fragment.gameObject, true);
 
 		fragment = null;
         this.renderer.material = activatedMaterial;

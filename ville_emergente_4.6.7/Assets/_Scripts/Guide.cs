@@ -43,7 +43,6 @@ public class Guide : MonoBehaviour
         {
             pdv.batimentAVisiter.OnAddingFragment(fragment);
             tMemory.SetItem<bool>("hasFragment", false);
-
         }
         else
         {
