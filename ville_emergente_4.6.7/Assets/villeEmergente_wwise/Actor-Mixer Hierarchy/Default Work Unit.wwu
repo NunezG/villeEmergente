@@ -69,7 +69,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Ambiances" ID="{CECFFADC-8E7D-4D9B-BADB-DC94CDCB5FB6}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+									<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -78,7 +78,7 @@
 										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
-												<Value>40</Value>
+												<Value>50</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Lowpass" Type="int16">
@@ -94,8 +94,8 @@
 													<Modifier Name="" ID="{45BFCD33-889F-4D20-8CF0-7FBCF686FC64}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="100"/>
-															<Property Name="Min" Type="Real64" Value="-100"/>
+															<Property Name="Max" Type="Real64" Value="300"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -104,12 +104,12 @@
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-12</Value>
+												<Value>5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -507,6 +507,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="sfx_footsteps_01_v2" ID="{72C35DA3-4863-4FAA-8C1B-C727EE340EF7}" ShortID="230156341" Type="SoundFX">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{92B268E1-CC91-4C32-BD16-99315024F833}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -526,6 +535,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="sfx_footsteps_02_v2" ID="{EF1794F1-4B93-4B75-A800-FE62CE404131}" ShortID="909725666" Type="SoundFX">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5185D9CB-B7FA-4F3D-87CE-93ABADDCAD93}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -545,6 +563,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="sfx_footsteps_03_v2" ID="{088CD693-CDB7-4AF0-B7BD-C7F8E87BDAB1}" ShortID="1053159899" Type="SoundFX">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{71D13A33-0046-4004-BFCE-09BF89C6E2FE}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -564,6 +591,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="sfx_footsteps_04_v2" ID="{1595E0B9-869D-4B9C-A867-CA25B594EA71}" ShortID="864999165" Type="SoundFX">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C94095BD-F394-4A62-BD67-B005186CFE93}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -583,6 +619,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="sfx_footsteps_05_v2" ID="{401AF546-88EA-45D9-9612-4AB1A6C3672C}" ShortID="463284739" Type="SoundFX">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{DA832706-4D77-444E-AF8A-EE2F62C3E634}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -602,6 +647,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="sfx_footsteps_06_v2" ID="{656F5CB8-0E59-4F4F-BB3C-C36C5D6C8811}" ShortID="871061516" Type="SoundFX">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A0D805A5-6B32-46E0-901C-BFA0E4A66E7A}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -621,6 +675,18 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="sfx_footsteps_07_v2" ID="{F714A5F0-2B81-45D9-9421-3E7490570245}" ShortID="458516815" Type="SoundFX">
+											<ExcludedPlatformList>
+												<Platform>Windows</Platform>
+											</ExcludedPlatformList>
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{6D8F808C-5698-4E32-B3A1-D804E0034473}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -640,6 +706,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="sfx_footsteps_08_v2" ID="{1C4A3CE5-2515-484A-8C04-B1D1E317ADAE}" ShortID="1019317861" Type="SoundFX">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9AB70934-0C5B-4272-B3F8-D8A752B2572B}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -659,6 +734,18 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="sfx_footsteps_09_v2" ID="{6DE22E46-2F76-4D85-BCE8-D3A9EDC670A0}" ShortID="258434013" Type="SoundFX">
+											<ExcludedPlatformList>
+												<Platform>Windows</Platform>
+											</ExcludedPlatformList>
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B44B10EC-22E3-4F38-9BD4-B05D59BDC6DE}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>

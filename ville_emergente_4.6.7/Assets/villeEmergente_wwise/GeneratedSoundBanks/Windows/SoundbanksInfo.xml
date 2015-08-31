@@ -244,10 +244,6 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_shevannai_95C1C6C3.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
-				<File Id="523934062" Language="SFX">
-					<ShortName>sfx_footsteps_07_v2.wav</ShortName>
-					<Path>SFX\sfx_footsteps_07_v2_950FF8F3.wem</Path>
-				</File>
 				<File Id="524736407" Language="SFX">
 					<ShortName>Sfx_ri_electric.wav</ShortName>
 					<Path>SFX\Sfx_ri_electric_DDC98EF4.wem</Path>
@@ -291,10 +287,6 @@
 					<ShortName>ri_pipe.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_pipe_B855AD0D.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="735453495" Language="SFX">
-					<ShortName>sfx_footsteps_09_v2.wav</ShortName>
-					<Path>SFX\sfx_footsteps_09_v2_950FF8F3.wem</Path>
 				</File>
 				<File Id="755671691" Language="SFX">
 					<ShortName>ri_marseilles.wav</ShortName>
