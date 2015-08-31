@@ -155,7 +155,7 @@ public class Musicien : MonoBehaviour{
         
         this.renderer.material = fragment.material;
         //this.audioSource.clip = fragment.GetClip();
-		this.audioEventName = fragment.GetComponent<InteractibleObject>().soundEevent;
+		this.audioEventName = fragment.GetComponent<InteractibleObject>().soundEvent;
 
 
     }

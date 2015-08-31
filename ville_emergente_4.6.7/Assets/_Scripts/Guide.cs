@@ -39,14 +39,14 @@ public class Guide : MonoBehaviour
 
     public void InteractWithBuilding()
     {
-        if (pdv.batimentAVisiter.fragment == null)
+		if (pdv.batimentAVisiter.GetComponent<ConvolutionObject>().fragment == null)
         {
-            pdv.batimentAVisiter.OnAddingFragment(fragment);
+			pdv.batimentAVisiter.GetComponent<ConvolutionObject>().OnAddingFragment(fragment);
             tMemory.SetItem<bool>("hasFragment", false);
         }
         else
         {
-            fragment = pdv.batimentAVisiter.OnPickUp().GetComponent<Fragment>();
+            fragment = pdv.batimentAVisiter.OnTouch().GetComponent<Fragment>();
             tMemory.SetItem<bool>("hasFragment", true);
         }
     }

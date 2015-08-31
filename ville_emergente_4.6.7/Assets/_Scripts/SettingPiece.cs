@@ -7,18 +7,15 @@ public class SettingPiece : MonoBehaviour{
     public static List<Fragment> fragmentsOfZeWorld = new List<Fragment>(); // tout les fragments 
     public float fragmentsCallRadius = 25;
 
-    public Material defaultMaterial, activatedMaterial;
+    
     //public AudioSource audioSource;
    // public AudioClip defaultClip;
    // private string audioEventName = "";
     //public string defaultAudioEventName = "";
-    public Fragment fragment;
     public bool isPlayingInteract = false;
 
-	public string switchNumber;
 
-
-	public string switchT;
+	//public string switchT;
 
 
 	// Use this for initialization
@@ -27,10 +24,9 @@ public class SettingPiece : MonoBehaviour{
         this.tag = "SettingPiece";
     }
     public void Start()
-    {
-
+	{
         //audioEventName = defaultAudioEventName;
-        this.renderer.material = defaultMaterial;
+    
         if (fragmentsOfZeWorld.Count == 0)
         {
             GameObject[] fragsTab = GameObject.FindGameObjectsWithTag("Fragment");
@@ -41,10 +37,17 @@ public class SettingPiece : MonoBehaviour{
         }
 	}
 
+	public GameObject OnTouch()
+	{
+		
+		return GetComponent<ConvolutionObject> ().OnTouch ();
+		
+	}
+
 	// Update is called once per frame
     public void Update()
     {
-		switchT = SoundUniverseManager.switchType;
+		//switchT = SoundUniverseManager.switchType;
 
         if (hasBeenActivated && !isPlayingInteract) // si le decor a ete active, et que son son n'est plus en en train de jouer, 
         {
@@ -84,42 +87,8 @@ public class SettingPiece : MonoBehaviour{
         }
     }
 */
-    public void OnAddingFragment(Fragment fragment)
-	{
-        print("SettingPiece:OnAddingFragment");
-        this.fragment = fragment;
-        //activatedMaterial = fragment.material;
-        this.renderer.material = fragment.material;
-        //this.audioSource.clip = fragment.GetClip();
-       // this.audioEventName = fragment.audioEventName;
+   
 
-		//AkSoundEngine.SetRTPCValue ("binaural_to_convolver", 100);
-		//fragment.Drop ();
-		//AkSoundEngine.SetSwitch("Elements_decor", "Batiment_1", inHandObject.gameObject);
 
-		SoundUniverseManager.addSoundEvent (this.gameObject); 
 
-		WwiseAudioManager.instance.PlayFiniteEvent("linker_morceau", fragment.gameObject);
-		WwiseAudioManager.instance.PlayFiniteEvent(SoundUniverseManager.switchType+switchNumber, fragment.gameObject);
-		WwiseAudioManager.instance.PlayLoopEvent (fragment.GetComponent<InteractibleObject>().soundEevent, fragment.gameObject, true);
-
-		
-    }
-
-    public GameObject OnPickUp()
-    {
-		print("SettingPiece:OnPickUp");
-
-		GameObject fragPicked =fragment.OnPickUp();
-
-		SoundUniverseManager.removeSoundEvent(fragment.gameObject);
-
-		//WwiseAudioManager.instance.StopLoopEvent(fragment.GetComponent<InteractibleObject>().soundEevent, fragment.gameObject, true);
-
-		fragment = null;
-        this.renderer.material = activatedMaterial;
-        //audioSource.clip = defaultClip;
-        //audioEventName = defaultAudioEventName;
-        return fragPicked;
-    }
 }
