@@ -46,6 +46,7 @@ public class CustomMoveTo : RAINAction
             ai.Body.transform.rotation = Quaternion.Slerp(ai.Body.transform.rotation, lookRotation, Time.deltaTime * 5);
             ai.WorkingMemory.SetItem<bool>("moving", false);
             ai.WorkingMemory.SetItem<bool>("destinationReached", true);
+            ai.WorkingMemory.SetItem<GameObject>("target", null);
             return ActionResult.SUCCESS;
         }
         else { 

@@ -5,7 +5,7 @@ using RAIN.Action;
 using RAIN.Core;
 
 [RAINAction]
-public class OpenTheWay : RAINAction
+public class GuideActivateScene : RAINAction
 {
     public override void Start(RAIN.Core.AI ai)
     {
@@ -14,8 +14,8 @@ public class OpenTheWay : RAINAction
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
-        ai.Body.GetComponent<Musicien>().OpenTheWay();
-        //ai.Body.GetComponent<Musicien>().ActiveScene();
+        ai.Body.GetComponent<Guide>().scene.gameObject.SetActive(true);
+        
         return ActionResult.SUCCESS;
     }
 

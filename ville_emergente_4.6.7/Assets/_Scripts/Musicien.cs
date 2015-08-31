@@ -54,16 +54,6 @@ public class Musicien : MonoBehaviour{
                targets.Add(gObject);
            }
         }
-
-
-
-
-
-
-       //targets = GameObject.FindGame
-
-		//Debug.Log ("FINISH MUSICIENN");
-
 	}
 
 	// Use this for initialization
