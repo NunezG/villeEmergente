@@ -30,9 +30,15 @@ public class ConvolutionObject : MonoBehaviour {
 	{
 		if (!HasFragment ()) {
 
-
 			WwiseAudioManager.instance.PlayFiniteEvent ("toucher_element", this.gameObject);
-			WwiseAudioManager.instance.PlayFiniteEvent ("Sfx_RI", this.gameObject);
+
+			if (GetComponent<InteractibleObject>().type == InteractibleType.SettingPiece) {
+
+				WwiseAudioManager.instance.PlayFiniteEvent(SoundUniverseManager.switchType+"RI"+switchNumber, this.gameObject);
+
+				WwiseAudioManager.instance.PlayFiniteEvent ("Sfx_RI", this.gameObject);
+
+			}
 
 			return null;
 
@@ -46,14 +52,14 @@ public class ConvolutionObject : MonoBehaviour {
 
 	public GameObject OnPickUp()
 	{
-	
 			print("SettingPiece:OnPickUp");
 			
 			GameObject fragPicked =fragment.OnTouch();
 			
 			SoundUniverseManager.removeSoundEvent(fragment.gameObject);
 			
-			//WwiseAudioManager.instance.StopLoopEvent(fragment.GetComponent<InteractibleObject>().soundEevent, fragment.gameObject, true);
+			WwiseAudioManager.instance.StopLoopEvent(fragment.GetComponent<InteractibleObject>().soundEvent, fragment.gameObject, true);
+			WwiseAudioManager.instance.PlayFiniteEvent ("convolution_wet_to0", this.gameObject);
 			
 			fragment = null;
 			this.renderer.material = activatedMaterial;
@@ -75,9 +81,7 @@ public class ConvolutionObject : MonoBehaviour {
 		GetComponent<InteractibleObject> ().soundEvent = fragment.GetComponent<InteractibleObject> ().soundEvent;
 
 		//fragment.transform.parent = this.transform;
-
-		print("fragment.transform.parentfragment.transform.parent: "+ this.name);
-
+		
 		print("SettingPiece:OnAddingFragment");
 		this.fragment = fragment;
 		//activatedMaterial = fragment.material;
@@ -94,7 +98,7 @@ public class ConvolutionObject : MonoBehaviour {
 		WwiseAudioManager.instance.PlayFiniteEvent("linker_morceau", fragment.gameObject);
 		WwiseAudioManager.instance.PlayFiniteEvent(SoundUniverseManager.switchType+switchNumber, fragment.gameObject);
 		WwiseAudioManager.instance.PlayLoopEvent (fragment.GetComponent<InteractibleObject>().soundEvent, fragment.gameObject, true);
-
+		WwiseAudioManager.instance.PlayFiniteEvent ("convolution_wet_to100", this.gameObject);
 		
 		
 		
