@@ -22,7 +22,7 @@ public class GuideSelectCompletedTarget : RAINAction
         List<GameObject> completedTargets = new List<GameObject>();
         for (int i = 0; i < Guide.allPointsOfView.Length; i++)
         {
-            if (Guide.allPointsOfView[i].GetComponent<PointDeVue>().batimentAVisiter.GetComponent<ConvolutionObject>().fragment != null)
+            if (Guide.allPointsOfView[i].GetComponent<PointDeVue>().batimentAVisiter.fragment != null)
             {
                 completedTargets.Add(Guide.allPointsOfView[i]); // on remplit la liste de tous les points de vue liés à des bâtiments complétés
             }

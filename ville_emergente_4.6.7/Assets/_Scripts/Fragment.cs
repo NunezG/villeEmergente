@@ -44,7 +44,7 @@ public class Fragment : MonoBehaviour{
 		rigidbody.isKinematic = false;
 		transform.parent = null;
 
-		WwiseAudioManager.instance.StopLoopEvent(GetComponent<InteractibleObject>().soundEvent, gameObject);
+		WwiseAudioManager.instance.StopLoopEvent(GetComponent<InteractibleObject>().soundEevent, gameObject);
 
 
 		//AkSoundEngine.SetRTPCValue ("binaural_to_convolver", 0);
@@ -58,7 +58,7 @@ public class Fragment : MonoBehaviour{
        // Play();
     }
 
-	public GameObject OnTouch()
+    public GameObject OnPickUp()
     {
         print("Fragment:OnPickUp");
         this.gameObject.SetActive(true);
@@ -66,12 +66,11 @@ public class Fragment : MonoBehaviour{
 
 		//WwiseAudioManager.instance.PlayFiniteEvent("busy_street_stop", gameObject);	
 		WwiseAudioManager.instance.PlayFiniteEvent("prendre_morceau", gameObject);
-		WwiseAudioManager.instance.PlayLoopEvent(GetComponent<InteractibleObject>().soundEvent, gameObject);	
+		WwiseAudioManager.instance.PlayLoopEvent(GetComponent<InteractibleObject>().soundEevent, gameObject);	
 
 
 		return this.gameObject;
     }
-
 
 
 	void randomSoundFromFamily()
@@ -79,13 +78,13 @@ public class Fragment : MonoBehaviour{
 		switch (family) 
 		{
 		case (FragmentType.Urban):
-			GetComponent<InteractibleObject>().soundEvent = soundsFamilies.urban[Random.Range(0,soundsFamilies.urban.Length-1)];
+			GetComponent<InteractibleObject>().soundEevent = soundsFamilies.urban[Random.Range(0,soundsFamilies.urban.Length-1)];
 			break;
 		case (FragmentType.Liquid):
-			GetComponent<InteractibleObject>().soundEvent = soundsFamilies.liquid[Random.Range(0,soundsFamilies.liquid.Length-1)];
+			GetComponent<InteractibleObject>().soundEevent = soundsFamilies.liquid[Random.Range(0,soundsFamilies.liquid.Length-1)];
 			break;
 		case (FragmentType.Electric):
-			GetComponent<InteractibleObject>().soundEvent = soundsFamilies.electric[Random.Range(0,soundsFamilies.electric.Length-1)];
+			GetComponent<InteractibleObject>().soundEevent = soundsFamilies.electric[Random.Range(0,soundsFamilies.electric.Length-1)];
 			break;
 		default:
 			break;

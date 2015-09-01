@@ -12,8 +12,8 @@ GameObject:
   - 135: {fileID: 13535232}
   - 23: {fileID: 2335232}
   - 54: {fileID: 5435232}
+  - 114: {fileID: 11435232}
   - 114: {fileID: 11435234}
-  - 114: {fileID: 11435782}
   m_Layer: 0
   m_Name: Fragment
   m_TagString: Fragment
@@ -162,6 +162,18 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &11435232
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc7d4d9e1e52144d9bfd6640a3062f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
 --- !u!114 &11435234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -174,20 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 7d8ed4dceee7b8843bfabb139a93e312, type: 2}
-  family: 0
---- !u!114 &11435782
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 135232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdc7d4d9e1e52144d9bfd6640a3062f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  soundEevent: 
+  family: urban
 --- !u!135 &13535232
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -25,34 +25,34 @@ public class ObjectInteractor : MonoBehaviour {
                 hitObject = hit.collider.gameObject; // on recupere l'objet vise
                 InteractibleObject interacObj = hitObject.GetComponent<InteractibleObject>(); // on recupere sa composante InteractibleObject
 
-				if (!handsFull // si on a rien en main et qu'on vise un objet rammassable
-				    )
-				{
-					print("PickUpObject");
-					PickUpObject(interacObj.GetComponent<InteractibleObject>().OnTouch());
-				}
-
-				else
-                if (interacObj.type == InteractibleType.NPC // si on a un objet en main et qu'on vise un NPC
-				                  || ( interacObj.type == InteractibleType.SettingPiece)) // ou un batiment vide
+                if (handsFull && (interacObj.type == InteractibleType.NPC // si on a un objet en main et qu'on vise un NPC
+                    || ( interacObj.type == InteractibleType.SettingPiece && !interacObj.HasFragment() ) ) ) // ou un batiment vide
                 {
-					ConvolutionObject convolObj = interacObj.GetComponent<ConvolutionObject>();
-
-					if (handsFull &&  !convolObj.HasFragment()){
-
-						//ajout de l'objet en main a l'objet vise
-						print("ajout de l'objet en main a l'objet vise");
-						// WwiseAudioManager.instance.PlayFiniteEvent("linker_morceau", this.gameObject);
-						Fragment fragment= inHandObject.GetComponent<Fragment>();
-						AddingFragment();
-						convolObj.OnAddingFragment(fragment);
-						fragment.gameObject.SetActive(false);
-					} 
+                    //ajout de l'objet en main a l'objet vise
+                    print("ajout de l'objet en main a l'objet vise");
+                   // WwiseAudioManager.instance.PlayFiniteEvent("linker_morceau", this.gameObject);
+					Fragment fragment= inHandObject.GetComponent<Fragment>();
+					AddingFragment();
+					interacObj.OnAddingFragment(fragment);
+					fragment.gameObject.SetActive(false);
+					
 				}
-              
-				else  // sinon, si on a juste un objet en main et qu'on ne vise pas un NPC
+                else if (!handsFull && (interacObj.type == InteractibleType.Fragment // si on a rien en main et qu'on vise un objet rammassable
+                    || (interacObj.type == InteractibleType.SettingPiece && interacObj.HasFragment()))) // ou un batiment avec un fragment
                 {
-
+                    print("on ramasse l'objet");
+                    //on ramasse l'objet
+                    PickUpObject(interacObj.OnPickUp());
+                }
+                else if (!handsFull && (interacObj.type == InteractibleType.SettingPiece && !interacObj.HasFragment())) // si on a rien en main et qu'on vise un element de decor vide
+                {
+					WwiseAudioManager.instance.PlayFiniteEvent("toucher_element", this.gameObject);
+                    //print("(!handsFull && interacObj.type == InteractibleType.SettingPiece)");
+                    //on declenche l'interaction avec cet objet
+                   // interacObj.OnInteract();
+                }
+                else if (handsFull) // sinon, si on a juste un objet en main et qu'on ne vise pas un NPC
+                {
                     //on laisse tomber l'objet en main
                     DropInHandObject();
                 }
@@ -68,17 +68,16 @@ public class ObjectInteractor : MonoBehaviour {
         }
     }
 
+
     public void PickUpObject(GameObject toPickUp)
     {
-		if (toPickUp != null) {
-			print("Interactor:PickUpObject");
-			inHandObject = toPickUp;
-			inHandObject.transform.parent = inHandPosition.transform;
-			inHandObject.transform.position = inHandPosition.transform.position;
-			inHandObject.transform.rotation = inHandPosition.transform.rotation;
-			inHandObject.rigidbody.isKinematic = true;
-			handsFull = true;    
-		}	
+        print("Interactor:PickUpObject");
+		inHandObject = toPickUp;
+        inHandObject.transform.parent = inHandPosition.transform;
+        inHandObject.transform.position = inHandPosition.transform.position;
+        inHandObject.transform.rotation = inHandPosition.transform.rotation;
+        inHandObject.rigidbody.isKinematic = true;
+        handsFull = true;    
 	}
 
     public void DropInHandObject()
