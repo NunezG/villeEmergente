@@ -15,6 +15,7 @@ public class GuideDesactivateScene : RAINAction
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
         ai.Body.GetComponent<Guide>().scene.gameObject.SetActive(false);
+        ai.WorkingMemory.SetItem<bool>("followMe", false);
 
         return ActionResult.SUCCESS;
     }

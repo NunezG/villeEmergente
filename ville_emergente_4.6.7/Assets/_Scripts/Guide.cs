@@ -20,6 +20,8 @@ public class Guide : MonoBehaviour
     public SceneRange scene;
     public RAIN.Memory.BasicMemory tMemory;
 
+    public float timer = 0, endTimer = 5;
+
     public void Awake()
     {
         tag = "NPC";
@@ -37,6 +39,20 @@ public class Guide : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
+        if (tMemory.GetItem<bool>("destinationReached"))
+        {
+            timer = timer + Time.deltaTime;
+        }
+        else if(timer != 0)
+        {
+            timer = 0;
+        }
+        if (timer > endTimer)
+        {
+            tMemory.SetItem<bool>("timerIsOver", true);
+        }
+
+
 	
 	}
 
