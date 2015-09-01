@@ -6,8 +6,8 @@ public enum FragmentType { Liquid, Urban, Electric };
 
 public struct soundsFamilies{
 	public static string[] electric = {"electricBuzz"};
-	public static string[] urban = {"waterSplash","softRain", "dropsCardboard"};
-	public static string[] liquid = {"trafficBy","busyStreet"};
+	public static string[] liquid = {"waterSplash","softRain", "dropsCardboard"};
+	public static string[] urban = {"trafficBy","busyStreet"};
 }
 
 
@@ -79,13 +79,13 @@ public class Fragment : MonoBehaviour{
 		switch (family) 
 		{
 		case (FragmentType.Urban):
-			GetComponent<InteractibleObject>().soundEvent = soundsFamilies.urban[Random.Range(0,soundsFamilies.urban.Length-1)];
+			GetComponent<InteractibleObject>().soundEvent = soundsFamilies.urban[Random.Range(0,soundsFamilies.urban.Length)];
 			break;
 		case (FragmentType.Liquid):
-			GetComponent<InteractibleObject>().soundEvent = soundsFamilies.liquid[Random.Range(0,soundsFamilies.liquid.Length-1)];
+			GetComponent<InteractibleObject>().soundEvent = soundsFamilies.liquid[Random.Range(0,soundsFamilies.liquid.Length)];
 			break;
 		case (FragmentType.Electric):
-			GetComponent<InteractibleObject>().soundEvent = soundsFamilies.electric[Random.Range(0,soundsFamilies.electric.Length-1)];
+			GetComponent<InteractibleObject>().soundEvent = soundsFamilies.electric[Random.Range(0,soundsFamilies.electric.Length)];
 			break;
 		default:
 			break;
