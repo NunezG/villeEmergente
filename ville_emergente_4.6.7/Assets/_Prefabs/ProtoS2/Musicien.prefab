@@ -29,12 +29,13 @@ GameObject:
   - 4: {fileID: 421964}
   - 33: {fileID: 3321962}
   - 23: {fileID: 2321962}
-  - 114: {fileID: 11421962}
   - 114: {fileID: 11421964}
   - 54: {fileID: 5421962}
   - 114: {fileID: 11421966}
   - 136: {fileID: 13621962}
   - 195: {fileID: 19565174}
+  - 114: {fileID: 11456072}
+  - 114: {fileID: 11457188}
   m_Layer: 0
   m_Name: Musicien
   m_TagString: NPC
@@ -298,18 +299,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npc: {fileID: 11421966}
---- !u!114 &11421962
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 121964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdc7d4d9e1e52144d9bfd6640a3062f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 1
 --- !u!114 &11421964
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -430,6 +419,34 @@ MonoBehaviour:
   - {fileID: 0}
   scene: {fileID: 0}
   isFragmentComplete: 0
+--- !u!114 &11456072
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c336472b3d96a74bbc38a518b234833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchNumber: 1
+  fragment: {fileID: 0}
+  defaultMaterial: {fileID: 0}
+  activatedMaterial: {fileID: 0}
+--- !u!114 &11457188
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc7d4d9e1e52144d9bfd6640a3062f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  soundEevent: 
 --- !u!114 &11468352
 MonoBehaviour:
   m_ObjectHideFlags: 1

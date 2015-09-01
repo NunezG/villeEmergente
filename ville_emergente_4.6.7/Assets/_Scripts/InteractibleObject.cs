@@ -6,8 +6,8 @@ public class InteractibleObject : MonoBehaviour {
 
    // public AudioSource audioSource;
     public InteractibleType type; // par defaut un element du decor
+	public string soundEvent;
 
-	public string soundEevent;
 
 	//public string playingSound;
 
@@ -17,60 +17,29 @@ public class InteractibleObject : MonoBehaviour {
         this.gameObject.layer = 8; // mis dans la layer InteractibleObject pour limiter les raycast avec un layermask
 	}
 	
-	// Update is called once per frame
-    public void Update()
-    {
 
+	public GameObject OnTouch()
+	{
+		if (type == InteractibleType.NPC // si on a un objet en main et qu'on vise un NPC
+			|| (type == InteractibleType.SettingPiece)) { // ou un batiment vide
+			return GetComponent<ConvolutionObject>().OnTouch();
+
+
+		} else if (type == InteractibleType.Fragment) { 
+			return GetComponent<Fragment>().OnTouch();
+
+		}
+
+		return null;
 	}
+	
 
-
-    public GameObject OnPickUp()
-    {
-        print("Parent OnPickUp");
-        if (type == InteractibleType.Fragment)
-        {
-            return this.GetComponent<Fragment>().OnPickUp();
-        }
-        else if (type == InteractibleType.SettingPiece)
-        {
-            return this.GetComponent<SettingPiece>().OnPickUp();
-        }
-
-        return null;
-    }
-	/*
+		
+		/*
     public void OnInteract(){
         print("Parent OnInteract");
         this.GetComponent<SettingPiece>().OnInteract();
     }
 */
-
-    public void OnAddingFragment(Fragment fragment)
-    {
-		soundEevent = fragment.GetComponent<InteractibleObject> ().soundEevent;
-
-		//fragment.transform.parent = this.transform;
-
-		print("fragment.transform.parentfragment.transform.parent: "+ this.name);
-
-
-        if (type == InteractibleType.NPC)
-        {
-			this.GetComponent<Musicien>().OnAddingFragment(fragment);
-        }
-        else if (type == InteractibleType.SettingPiece)
-        {
-            this.GetComponent<SettingPiece>().OnAddingFragment(fragment);
-        }
-    }
-
-    public bool HasFragment()
-    {
-        bool value =false;
-        if (this.GetComponent<SettingPiece>().fragment != null) { 
-            value = true; 
-        }
-        return value;
-    }
 
 }
