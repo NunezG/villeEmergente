@@ -6,7 +6,7 @@ public class PointDeVue : MonoBehaviour {
 
 
 
-    public SettingPiece batimentAVisiter;
+    public ConvolutionObject batimentAVisiter;
     public List<GameObject> spots = new List<GameObject>();
     public List<bool> availablesSpots = new List<bool>();
 

@@ -15,7 +15,7 @@ public class IfGuideSpeechIsOver : RAINAction
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
-        if (!ai.Body.GetComponent<Passant>().sceneLeader.GetComponent<Guide>().tMemory.GetItem<bool>("speechIsOver"))
+        if (ai.Body.GetComponent<Passant>().sceneLeader.GetComponent<Guide>().tMemory.GetItem<bool>("speechIsOver"))
             return ActionResult.SUCCESS;
         else
             return ActionResult.FAILURE;

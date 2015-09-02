@@ -22,7 +22,7 @@ public class PassantGoToPoVSpot : RAINAction
 
         if (ai.Body.transform.position.x == povSpot.transform.position.x
                 && ai.Body.transform.position.z == povSpot.transform.position.z)
-        { 
+        {
 
         }
 
