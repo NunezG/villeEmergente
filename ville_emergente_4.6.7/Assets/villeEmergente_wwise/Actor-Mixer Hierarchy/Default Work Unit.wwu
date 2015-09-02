@@ -779,8 +779,19 @@
 						</SwitchContainer>
 						<ActorMixer Name="Intéractions simples" ID="{0FF43AC4-BBB7-4178-8BFB-D5B41BD770F8}" ShortID="240576246">
 							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -17696,41 +17707,59 @@
 										</Sound>
 									</ChildrenList>
 								</Folder>
+								<Folder Name="Fragment Call" ID="{46CE8B0C-CE06-42D8-B1F5-1395B0FC05D2}" ShortID="112597587">
+									<ChildrenList>
+										<Sound Name="sfx_fragment_call" ID="{D8E6EC21-B6A1-43DF-ACFE-0A78C05F7F63}" ShortID="230852798" Type="SoundFX">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Fragment_call_attenuation" ID="{D54AA4EA-A384-4E92-A297-345D1046EEE0}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx_fragment_call" ID="{E74E71A4-6EA6-4206-AABE-68B052BEA658}" ShortID="865538397">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.43679581151832"/>
+														<Property Name="FadeInShape" Type="int16" Value="4"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="2.70669109947644"/>
+														<Property Name="FadeOutShape" Type="int16" Value="4"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>sfx_fragment_call.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx_fragment_call" ID="{E74E71A4-6EA6-4206-AABE-68B052BEA658}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</ActorMixer>
-						<Sound Name="sfx_fragment_call" ID="{D8E6EC21-B6A1-43DF-ACFE-0A78C05F7F63}" ShortID="230852798" Type="SoundFX">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="PositioningType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="Fragment_call_attenuation" ID="{D54AA4EA-A384-4E92-A297-345D1046EEE0}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="sfx_fragment_call" ID="{E74E71A4-6EA6-4206-AABE-68B052BEA658}" ShortID="865538397">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="1.43679581151832"/>
-										<Property Name="FadeInShape" Type="int16" Value="4"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="2.70669109947644"/>
-										<Property Name="FadeOutShape" Type="int16" Value="4"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>sfx_fragment_call.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="sfx_fragment_call" ID="{E74E71A4-6EA6-4206-AABE-68B052BEA658}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Bâtiments" ID="{0DC20B11-0ECE-4015-859B-4FC5C18FE1A7}" ShortID="476474344">
@@ -17750,6 +17779,19 @@
 					</ReferenceList>
 					<ChildrenList>
 						<SwitchContainer Name="RI as Sfx" ID="{67357324-274B-499E-AA05-468EDFA89B35}" ShortID="491922103">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
