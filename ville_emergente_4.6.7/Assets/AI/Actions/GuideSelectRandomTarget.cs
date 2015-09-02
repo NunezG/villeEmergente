@@ -23,6 +23,7 @@ public class GuideSelectRandomTarget : RAINAction
         target = Guide.allPointsOfView[targetIndex];
         ai.WorkingMemory.SetItem<bool>("destinationReached", false);
         ai.WorkingMemory.SetItem<GameObject>("target", target);
+        ai.Body.GetComponent<Guide>().pdv = ai.WorkingMemory.GetItem<GameObject>("target").GetComponent<PointDeVue>();
         return ActionResult.SUCCESS;
     }
 
