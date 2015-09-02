@@ -20,6 +20,7 @@ public class Fragment : MonoBehaviour{
 	// Use this for initialization
 	//public FragmentType family;
 	public FragmentType family;
+	public bool justSpawn = false;
 
     public void Awake()
     {
@@ -30,6 +31,7 @@ public class Fragment : MonoBehaviour{
     {
         print("FragmentStart");
 		randomSoundFromFamily ();
+		WwiseAudioManager.instance.PlayLoopEvent ("fragment_call", this.gameObject, false);
         //audioSource.clip = defaultClip;
        // this.renderer.material = material;
 	}
@@ -61,9 +63,15 @@ public class Fragment : MonoBehaviour{
 
 	public GameObject OnTouch()
     {
-        print("Fragment:OnPickUp");
-        this.gameObject.SetActive(true);
+		print ("Fragment:OnPickUp");
+		this.gameObject.SetActive (true);
 
+		if (justSpawn) 
+		{
+			WwiseAudioManager.instance.StopLoopEvent ("fragment_call", this.gameObject, false);
+			justSpawn = false;
+		}
+	
 		//WwiseAudioManager.instance.PlayFiniteEvent("busy_street_stop", gameObject);	
 		WwiseAudioManager.instance.PlayFiniteEvent("prendre_morceau", gameObject);
 		WwiseAudioManager.instance.PlayLoopEvent(GetComponent<InteractibleObject>().soundEvent, gameObject);	

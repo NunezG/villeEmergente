@@ -16,6 +16,7 @@ public class GuideBuildingInteraction : RAINAction
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
         ai.Body.GetComponent<Guide>().InteractWithBuilding();
+        ai.WorkingMemory.SetItem<bool>("hasInteracted", true);
         return ActionResult.SUCCESS;
     }
 

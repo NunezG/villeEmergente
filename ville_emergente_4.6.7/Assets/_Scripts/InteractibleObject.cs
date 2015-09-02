@@ -26,6 +26,8 @@ public class InteractibleObject : MonoBehaviour {
 
 
 		} else if (type == InteractibleType.Fragment) { 
+			//GetComponent<Fragment>().randomSoundFromFamily ();
+
 			return GetComponent<Fragment>().OnTouch();
 
 		}
