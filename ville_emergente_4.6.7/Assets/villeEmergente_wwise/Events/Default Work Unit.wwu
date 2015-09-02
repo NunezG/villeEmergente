@@ -129,6 +129,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="interactions_simples_motion" ID="{A0D696B9-3867-414F-A3E4-33D2DAECF486}">
+							<ChildrenList>
+								<Action Name="Play" ID="{2E393B82-CDA2-4EBF-ADF3-3B2C45373644}" ShortID="956663603" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{4CED26B2-0483-4082-BC87-6CC15186C418}" Global="false">
+											<ObjectRef Name="Interactions simples motion" ID="{A561D55C-C4C9-48B8-AE2A-A17AC989F334}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambiances" ID="{8CE28A80-2BF9-4BA7-B484-E3A8E968B819}" ShortID="730974361">
