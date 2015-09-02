@@ -11,13 +11,13 @@ GameObject:
   - 33: {fileID: 3325644}
   - 23: {fileID: 2325644}
   - 95: {fileID: 9525644}
-  - 135: {fileID: 13568570}
+  - 136: {fileID: 13657886}
   m_Layer: 0
   m_Name: Prefab Fontaine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &425644
 Transform:
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 125644}
   m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
-  m_LocalPosition: {x: 151.520004, y: .319999993, z: 435.700012}
+  m_LocalPosition: {x: 440.020203, y: 401.370575, z: -1.26257324}
   m_LocalScale: {x: 18.6996365, y: 18.6996269, z: 18.6996269}
   m_Children: []
   m_Father: {fileID: 0}
@@ -73,8 +73,8 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!135 &13568570
-SphereCollider:
+--- !u!136 &13657886
+CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -82,9 +82,10 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
   m_Radius: .270835906
-  m_Center: {x: 0, y: 0, z: .0199999996}
+  m_Height: 1
+  m_Direction: 2
+  m_Center: {x: 9.53674316e-07, y: 1.90734863e-06, z: .0929338112}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
