@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3343302}
   - 23: {fileID: 2343302}
   - 95: {fileID: 9543302}
+  - 65: {fileID: 6531118}
   m_Layer: 0
   m_Name: Prefab Insigne
   m_TagString: Untagged
@@ -24,9 +25,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 143302}
-  m_LocalRotation: {x: -.707106829, y: -.707106829, z: 2.21972471e-07, w: 2.21972471e-07}
-  m_LocalPosition: {x: -5.40999985, y: 6.36000013, z: 414.200012}
-  m_LocalScale: {x: 6.07109022, y: 3.09978795, z: 6.07108879}
+  m_LocalRotation: {x: -.486987203, y: -.486987203, z: .512682676, w: .512682617}
+  m_LocalPosition: {x: -250.470001, y: 8.97999954, z: 397.079987}
+  m_LocalScale: {x: 11.0882998, y: 5.66148281, z: 11.0882959}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -57,6 +58,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 143302}
   m_Mesh: {fileID: 4300000, guid: 5c32fd9ae777ea944a9d47f9ad2eb66f, type: 3}
+--- !u!65 &6531118
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 143302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .23633191, y: .0682179704, z: .234808385}
+  m_Center: {x: .0175418127, y: 2.55616577e-08, z: .121978126}
 --- !u!95 &9543302
 Animator:
   serializedVersion: 3

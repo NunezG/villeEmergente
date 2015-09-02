@@ -837,6 +837,41 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Set Convolver" ID="{A63890E5-3DE1-4BDE-855E-CBEC9CAE2237}" ShortID="1044635672">
+							<ChildrenList>
+								<Event Name="convolution_wet_to100" ID="{D718E28B-6844-45DB-9279-07C6AD0BCACF}">
+									<ChildrenList>
+										<Action Name="Set Game Parameter" ID="{58379893-64CA-4AD4-B3AA-86D9DE6AFA26}" ShortID="265975488" Type="SetGameParameter" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="3"/>
+												<Property Name="FadeTime" Type="Real64" Value="7"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{87D1F041-1F88-493C-8101-458AAD81D8B3}" Global="false">
+													<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="convolution_wet_to0" ID="{2C61C26C-AA23-4E6D-9922-996F88C3D078}">
+									<ChildrenList>
+										<Action Name="Set Game Parameter" ID="{4D614D35-C52D-42DC-8D1D-644F1659EDB4}" ShortID="974942200" Type="SetGameParameter" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="3"/>
+												<Property Name="FadeTime" Type="Real64" Value="3"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{246C60D1-0C03-46E2-85E6-5B10A1EDB69C}" Global="false">
+													<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

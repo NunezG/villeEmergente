@@ -17,6 +17,8 @@ namespace AK
         static const AkUniqueID BUSYSTREET_CONVOLVER_STOP = 1407044475U;
         static const AkUniqueID BUSYSTREET_PLAY = 3997590316U;
         static const AkUniqueID BUSYSTREET_STOP = 1672407606U;
+        static const AkUniqueID CONVOLUTION_WET_TO0 = 2013603504U;
+        static const AkUniqueID CONVOLUTION_WET_TO100 = 837754713U;
         static const AkUniqueID DROPSCARDBOARD_CONVOLVER_PLAY = 3012043839U;
         static const AkUniqueID DROPSCARDBOARD_CONVOLVER_STOP = 2544725597U;
         static const AkUniqueID DROPSCARDBOARD_PLAY = 1374189182U;
@@ -134,6 +136,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID BINAURAL_TO_CONVOLVER = 296257622U;
+        static const AkUniqueID CONVOLUTION_WET = 1405780204U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

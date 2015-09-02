@@ -6,8 +6,8 @@ public enum FragmentType { Liquid, Urban, Electric };
 
 public struct soundsFamilies{
 	public static string[] electric = {"electricBuzz"};
-	public static string[] urban = {"waterSplash","softRain", "dropsCardboard"};
-	public static string[] liquid = {"trafficBy","busyStreet"};
+	public static string[] liquid = {"waterSplash","softRain", "dropsCardboard"};
+	public static string[] urban = {"trafficBy","busyStreet"};
 }
 
 
@@ -44,7 +44,7 @@ public class Fragment : MonoBehaviour{
 		rigidbody.isKinematic = false;
 		transform.parent = null;
 
-		WwiseAudioManager.instance.StopLoopEvent(GetComponent<InteractibleObject>().soundEevent, gameObject);
+		WwiseAudioManager.instance.StopLoopEvent(GetComponent<InteractibleObject>().soundEvent, gameObject);
 
 
 		//AkSoundEngine.SetRTPCValue ("binaural_to_convolver", 0);
@@ -58,7 +58,7 @@ public class Fragment : MonoBehaviour{
        // Play();
     }
 
-    public GameObject OnPickUp()
+	public GameObject OnTouch()
     {
         print("Fragment:OnPickUp");
         this.gameObject.SetActive(true);
@@ -66,11 +66,12 @@ public class Fragment : MonoBehaviour{
 
 		//WwiseAudioManager.instance.PlayFiniteEvent("busy_street_stop", gameObject);	
 		WwiseAudioManager.instance.PlayFiniteEvent("prendre_morceau", gameObject);
-		WwiseAudioManager.instance.PlayLoopEvent(GetComponent<InteractibleObject>().soundEevent, gameObject);	
+		WwiseAudioManager.instance.PlayLoopEvent(GetComponent<InteractibleObject>().soundEvent, gameObject);	
 
 
 		return this.gameObject;
     }
+
 
 
 	void randomSoundFromFamily()
@@ -78,13 +79,13 @@ public class Fragment : MonoBehaviour{
 		switch (family) 
 		{
 		case (FragmentType.Urban):
-			GetComponent<InteractibleObject>().soundEevent = soundsFamilies.urban[Random.Range(0,soundsFamilies.urban.Length-1)];
+			GetComponent<InteractibleObject>().soundEvent = soundsFamilies.urban[Random.Range(0,soundsFamilies.urban.Length)];
 			break;
 		case (FragmentType.Liquid):
-			GetComponent<InteractibleObject>().soundEevent = soundsFamilies.liquid[Random.Range(0,soundsFamilies.liquid.Length-1)];
+			GetComponent<InteractibleObject>().soundEvent = soundsFamilies.liquid[Random.Range(0,soundsFamilies.liquid.Length)];
 			break;
 		case (FragmentType.Electric):
-			GetComponent<InteractibleObject>().soundEevent = soundsFamilies.electric[Random.Range(0,soundsFamilies.electric.Length-1)];
+			GetComponent<InteractibleObject>().soundEvent = soundsFamilies.electric[Random.Range(0,soundsFamilies.electric.Length)];
 			break;
 		default:
 			break;
