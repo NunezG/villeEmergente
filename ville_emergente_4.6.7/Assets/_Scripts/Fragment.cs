@@ -29,6 +29,7 @@ public class Fragment : MonoBehaviour{
     public void Start()
     {
         print("FragmentStart");
+		randomSoundFromFamily ();
         //audioSource.clip = defaultClip;
        // this.renderer.material = material;
 	}
@@ -62,7 +63,6 @@ public class Fragment : MonoBehaviour{
     {
         print("Fragment:OnPickUp");
         this.gameObject.SetActive(true);
-		randomSoundFromFamily ();
 
 		//WwiseAudioManager.instance.PlayFiniteEvent("busy_street_stop", gameObject);	
 		WwiseAudioManager.instance.PlayFiniteEvent("prendre_morceau", gameObject);

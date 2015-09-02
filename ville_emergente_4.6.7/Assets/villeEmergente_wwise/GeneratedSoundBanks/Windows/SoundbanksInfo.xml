@@ -34,6 +34,8 @@
 				<Event Id="817405786" Name="electricBuzz_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1198733287" Name="footsteps_play"/>
 				<Event Id="4187365685" Name="footsteps_stop" MaxAttenuation="0.000000"/>
+				<Event Id="1465870985" Name="fragment_call_play" MaxAttenuation="25.000000"/>
+				<Event Id="2988287919" Name="fragment_call_stop" MaxAttenuation="0.000000"/>
 				<Event Id="2535466649" Name="lacher_morceau"/>
 				<Event Id="3679869857" Name="linker_morceau"/>
 				<Event Id="2138522384" Name="prendre_morceau"/>
@@ -322,6 +324,10 @@
 				<File Id="857643460" Language="SFX">
 					<ShortName>sfx_drops_carboard.wav</ShortName>
 					<Path>SFX\sfx_drops_carboard_ABF82687.wem</Path>
+				</File>
+				<File Id="865538397" Language="SFX">
+					<ShortName>sfx_fragment_call.wav</ShortName>
+					<Path>SFX\sfx_fragment_call_6D360882.wem</Path>
 				</File>
 				<File Id="874496307" Language="SFX">
 					<ShortName>ri_electric.wav</ShortName>
