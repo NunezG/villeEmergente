@@ -29,6 +29,8 @@ namespace AK
         static const AkUniqueID ELECTRICBUZZ_STOP = 817405786U;
         static const AkUniqueID FOOTSTEPS_PLAY = 1198733287U;
         static const AkUniqueID FOOTSTEPS_STOP = 4187365685U;
+        static const AkUniqueID FRAGMENT_CALL_PLAY = 1465870985U;
+        static const AkUniqueID FRAGMENT_CALL_STOP = 2988287919U;
         static const AkUniqueID LACHER_MORCEAU = 2535466649U;
         static const AkUniqueID LINKER_MORCEAU = 3679869857U;
         static const AkUniqueID PRENDRE_MORCEAU = 2138522384U;
