@@ -31,6 +31,7 @@ namespace AK
         static const AkUniqueID FOOTSTEPS_STOP = 4187365685U;
         static const AkUniqueID FRAGMENT_CALL_PLAY = 1465870985U;
         static const AkUniqueID FRAGMENT_CALL_STOP = 2988287919U;
+        static const AkUniqueID INTERACTIONS_SIMPLES_MOTION = 3759079039U;
         static const AkUniqueID LACHER_MORCEAU = 2535466649U;
         static const AkUniqueID LINKER_MORCEAU = 3679869857U;
         static const AkUniqueID PRENDRE_MORCEAU = 2138522384U;

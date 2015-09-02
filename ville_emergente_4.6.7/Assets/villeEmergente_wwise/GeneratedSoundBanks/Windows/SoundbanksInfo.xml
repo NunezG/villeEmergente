@@ -36,6 +36,7 @@
 				<Event Id="4187365685" Name="footsteps_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1465870985" Name="fragment_call_play" MaxAttenuation="25.000000"/>
 				<Event Id="2988287919" Name="fragment_call_stop" MaxAttenuation="0.000000"/>
+				<Event Id="3759079039" Name="interactions_simples_motion"/>
 				<Event Id="2535466649" Name="lacher_morceau"/>
 				<Event Id="3679869857" Name="linker_morceau"/>
 				<Event Id="2138522384" Name="prendre_morceau"/>
