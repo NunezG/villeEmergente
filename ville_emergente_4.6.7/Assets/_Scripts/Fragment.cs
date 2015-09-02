@@ -20,7 +20,7 @@ public class Fragment : MonoBehaviour{
 	// Use this for initialization
 	//public FragmentType family;
 	public FragmentType family;
-	public bool justSpawn = true;
+	private bool justSpawn = true;
 
     public void Awake()
     {
