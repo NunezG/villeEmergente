@@ -15,7 +15,7 @@ public class GuideActivateScene : RAINAction
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
         ai.Body.GetComponent<Guide>().scene.gameObject.SetActive(true);
-        
+        ai.WorkingMemory.SetItem<bool>("followMe", true);
         return ActionResult.SUCCESS;
     }
 

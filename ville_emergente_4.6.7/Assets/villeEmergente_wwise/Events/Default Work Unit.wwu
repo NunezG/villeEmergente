@@ -520,6 +520,36 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Call" ID="{E4788156-686F-4515-9787-979D0B1A47CD}" ShortID="208909004">
+							<ChildrenList>
+								<Event Name="fragment_call_play" ID="{AAC87B03-3500-434D-9798-72D5679C3595}">
+									<ChildrenList>
+										<Action Name="Play" ID="{034565BF-02EF-4516-9846-017BB750F78A}" ShortID="27632872" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{AD736685-B139-4E75-A015-C925743D83CB}" Global="false">
+													<ObjectRef Name="sfx_fragment_call" ID="{D8E6EC21-B6A1-43DF-ACFE-0A78C05F7F63}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="fragment_call_stop" ID="{5C289ED2-FDD6-4CA4-9E48-3B9504DE058D}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{1FD3D7B7-723B-429A-8D69-D9D7261EBA37}" ShortID="55030136" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{6F61E2BA-B2EC-4B7C-A92A-50BDD8903755}" Global="false">
+													<ObjectRef Name="sfx_fragment_call" ID="{D8E6EC21-B6A1-43DF-ACFE-0A78C05F7F63}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Batiments" ID="{C72A1693-157C-43BF-9288-9EA30BF1AE8A}" ShortID="872575501">

@@ -110,20 +110,20 @@
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="convolution_wet_to100" ID="{D718E28B-6844-45DB-9279-07C6AD0BCACF}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
-							<Position X="2" Y="0"/>
+							<ObjectRef Name="fragment_call_play" ID="{AAC87B03-3500-434D-9798-72D5679C3595}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<Position X="1" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="convolution_wet_to0" ID="{2C61C26C-AA23-4E6D-9922-996F88C3D078}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
-							<Position X="2" Y="1"/>
+							<ObjectRef Name="Sfx_electric_buzz_switch" ID="{6F216BB7-73C0-490F-A314-D7ACCBAC468C}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Prendre morceau" ID="{37D3EC53-DF92-47FA-A263-D475FE442386}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Sfx_electric_buzz_switch" ID="{6F216BB7-73C0-490F-A314-D7ACCBAC468C}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
-							<Position X="3" Y="0"/>
+							<ObjectRef Name="fragment_call_stop" ID="{5C289ED2-FDD6-4CA4-9E48-3B9504DE058D}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<Position X="2" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Toucher élément" ID="{8C0EE57C-46CC-4653-98D5-432112F38E4D}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
@@ -137,7 +137,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}"/>
-							<Value>0</Value>
+							<Value>100</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
