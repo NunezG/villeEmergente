@@ -34,6 +34,11 @@ public class Fragment : MonoBehaviour{
 		WwiseAudioManager.instance.PlayLoopEvent ("fragment_call", this.gameObject, false);
         //audioSource.clip = defaultClip;
        // this.renderer.material = material;
+		
+		AkSoundEngine.AddPlayerMotionDevice (0, 1, AkSoundEngine.AKMOTIONDEVICEID_RUMBLE);
+		//AkSoundEngine.SetPlayerListener (0, 0);
+		AkSoundEngine.SetListenerPipeline (0, true, true);
+		//AkSoundEngine.SetActiveListeners(GameObject.FindWithTag("Player"),1);
 	}
 	
 	// Update is called once per frame
@@ -44,6 +49,8 @@ public class Fragment : MonoBehaviour{
 
 	public void Drop()
 	{
+		WwiseAudioManager.instance.PlayFiniteEvent("interactions_simples_motion", GameObject.FindWithTag("Player"));
+
 		rigidbody.isKinematic = false;
 		transform.parent = null;
 
@@ -62,7 +69,9 @@ public class Fragment : MonoBehaviour{
     }
 
 	public GameObject OnTouch()
-    {
+    {		
+		WwiseAudioManager.instance.PlayFiniteEvent("interactions_simples_motion", GameObject.FindWithTag("Player"));
+
 		print ("Fragment:OnPickUp");
 		this.gameObject.SetActive (true);
 

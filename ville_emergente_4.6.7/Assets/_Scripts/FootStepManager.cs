@@ -3,12 +3,12 @@ using System.Collections;
 
 public class FootStepManager : MonoBehaviour {
 
-    public CharacterController controller;
+    CharacterController controller;
     public bool startWalking=false,isWalking=false, stoppedWalking=false;
     public float isWalkingThreshold = 1;
 	// Use this for initialization
 	void Start () {
-
+		controller = GetComponent<CharacterController> ();
 	}
 	
 	// Update is called once per frame
