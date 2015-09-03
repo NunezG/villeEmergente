@@ -16,11 +16,7 @@ MonoBehaviour:
   StateWwu: []
   SwitchWwu: []
   BankWwu: []
-  ExpandedItems:
-  - /villeEmergente_wwise
-  - /villeEmergente_wwise/Events
-  - /villeEmergente_wwise/Events/Default Work Unit
-  - /villeEmergente_wwise/Events/Default Work Unit/Joueur
+  ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
