@@ -55,6 +55,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3617898638	switch_dark2			\Default Work Unit\Batiments\Switches Convolver\switch_dark2	
 	3617898639	switch_dark3			\Default Work Unit\Batiments\Switches Convolver\switch_dark3	
 	3679869857	linker_morceau			\Default Work Unit\Joueur\linker_morceau	
+	3759079039	interactions_simples_motion			\Default Work Unit\Joueur\interactions_simples_motion	
 	3843097384	switch_darkRI1			\Default Work Unit\Batiments\Switches RI\switch_darkRI1	
 	3843097386	switch_darkRI3			\Default Work Unit\Batiments\Switches RI\switch_darkRI3	
 	3843097387	switch_darkRI2			\Default Work Unit\Batiments\Switches RI\switch_darkRI2	
@@ -112,6 +113,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	579757428	Convolutions			\Default Work Unit\Master Audio Bus\Convolutions	
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
 	1404066300	Ambiances			\Default Work Unit\Master Audio Bus\Ambiances	
+	3011552261	Master Motion Bus			\Default Work Unit\Master Motion Bus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Effect plug-ins	ID	Name	Type				Notes
@@ -202,6 +204,9 @@ Effect plug-ins	ID	Name	Type				Notes
 	1011028865	RI_absynthdark (Custom)	Wwise Convolution Reverb			
 	1014517583	RI_shevannai (Custom)	Wwise Convolution Reverb			
 
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	1072845960	Wwise Motion Generator	Wwise Motion Generator		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Intéractions simples\Interactions simples motion\Wwise Motion Generator	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	57806489	Sfx_ri_choirslike	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_choirslike_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_choirslike		616524
 	61270204	Sfx_ri_watersplash	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_watersplash_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_watersplash		776048
@@ -232,7 +237,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	608263982	Sfx_ri_revdark	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_revdark_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_revdark		725192
 	789123976	Sfx_ri_symphobia	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_symphobia_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_symphobia		653212
 	857643460	sfx_drops_carboard	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_drops_carboard_ABF82687.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Liquide\sfx_drops_carboard		959627
-	865538397	sfx_fragment_call	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_fragment_call_6D360882.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Fragment Call\sfx_fragment_call		169255
+	865538397	sfx_fragment_call	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_fragment_call_67E0794F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Fragment Call\sfx_fragment_call		169255
 	888063290	sfx_water_splash	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_water_splash_7AF3DED3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Liquide\sfx_water_splash		1515325
 	943957025	paddle light freely 01	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\paddle light freely 01_C7E637FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\paddle light freely 01		864882
 	963062918	sfx_footsteps_06_v2	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_footsteps_06_v2_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_footsteps_06_v2		35371
