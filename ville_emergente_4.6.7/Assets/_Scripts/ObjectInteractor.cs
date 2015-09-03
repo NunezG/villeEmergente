@@ -90,6 +90,7 @@ public class ObjectInteractor : MonoBehaviour {
 			     
 			if (hitObject == null){
 				WwiseAudioManager.instance.PlayFiniteEvent("lacher_morceau", inHandObject);
+				WwiseAudioManager.instance.PlayLoopEvent ("fragment_call", this.gameObject, false);
 			}
 
             handsFull = false;
