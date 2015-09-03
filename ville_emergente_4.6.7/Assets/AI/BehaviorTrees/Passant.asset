@@ -83,12 +83,9 @@ MonoBehaviour:
       classname=&quot;IfGuideIsOnPoV&quot; /&gt;&lt;selector usepriorities=&quot;False&quot;
       repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;selector&quot; debugbreak=&quot;False&quot;&gt;&lt;sequencer
       usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
-      name=&quot;sequencer&quot; debugbreak=&quot;False&quot;&gt;&lt;expression returnvalue=&quot;evaluate&quot;
-      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;hasCommentedSpeech==false&quot;
-      expression=&quot;hasCommentedSpeech==false&quot; debugbreak=&quot;False&quot;
-      /&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
-      parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;a-t-il fini son speech
-      ?&quot; debugbreak=&quot;False&quot; classname=&quot;IfGuideSpeechIsOver&quot;
+      name=&quot;sequencer&quot; debugbreak=&quot;False&quot;&gt;&lt;action repeatuntil=&quot;&quot;
+      priority=&quot;&quot; parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;&quot;
+      name=&quot;a-t-il fini son speech ?&quot; debugbreak=&quot;False&quot; classname=&quot;IfGuideSpeechIsOver&quot;
       /&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
       parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;j'\xE9mets mon son&quot;
       debugbreak=&quot;False&quot; classname=&quot;EmitSound&quot; /&gt;&lt;expression
@@ -115,18 +112,10 @@ MonoBehaviour:
       debugbreak=&quot;False&quot; /&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot;
       parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;&quot;
       name=&quot;je me rends \xE0 ma place&quot; debugbreak=&quot;False&quot; classname=&quot;PassantGoToPoVSpot&quot;
-      /&gt;&lt;/selector&gt;&lt;/sequencer&gt;&lt;sequencer usepriorities=&quot;False&quot;
-      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;sequencer&quot; debugbreak=&quot;False&quot;&gt;&lt;selector
-      usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
-      name=&quot;selector&quot; debugbreak=&quot;False&quot;&gt;&lt;expression returnvalue=&quot;evaluate&quot;
-      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;hasCommentedSpeech==false&quot;
-      expression=&quot;hasCommentedSpeech==false&quot; debugbreak=&quot;False&quot;
-      /&gt;&lt;expression returnvalue=&quot;success&quot; repeatuntil=&quot;&quot;
-      priority=&quot;&quot; name=&quot;hasCommentedSpeech=false&quot; expression=&quot;hasCommentedSpeech=false&quot;
-      debugbreak=&quot;False&quot; /&gt;&lt;/selector&gt;&lt;action repeatuntil=&quot;&quot;
+      /&gt;&lt;/selector&gt;&lt;/sequencer&gt;&lt;action repeatuntil=&quot;&quot;
       priority=&quot;&quot; parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;&quot;
       name=&quot;je suis le guide&quot; debugbreak=&quot;False&quot; classname=&quot;PassantGoToSpot&quot;
-      /&gt;&lt;/sequencer&gt;&lt;/selector&gt;&lt;/sequencer&gt;&lt;/selector&gt;&lt;/sequencer&gt;&lt;sequencer
+      /&gt;&lt;/selector&gt;&lt;/sequencer&gt;&lt;/selector&gt;&lt;/sequencer&gt;&lt;sequencer
       usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
       name=&quot;sequencer&quot; debugbreak=&quot;False&quot;&gt;&lt;expression returnvalue=&quot;evaluate&quot;
       repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;suis-je \xE0 port\xE9e
