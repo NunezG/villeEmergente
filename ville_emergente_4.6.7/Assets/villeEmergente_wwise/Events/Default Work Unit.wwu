@@ -915,6 +915,232 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="PNJs" ID="{B87A0465-1994-42A1-869F-C00A80BCC855}" ShortID="107901107">
+					<ChildrenList>
+						<Folder Name="Passants" ID="{F8BB7692-FED8-4D92-9BC3-E14381B45B2E}" ShortID="823404031">
+							<ChildrenList>
+								<Event Name="passant_idle_play" ID="{D02900F4-99DC-4800-B0C7-F0EADAD30478}">
+									<ChildrenList>
+										<Action Name="Play" ID="{C8655CDE-EA7C-4182-A1EB-D63710D2AFC6}" ShortID="95594137" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{41BA9C28-D632-4438-9C4D-16E92969DA34}" Global="false">
+													<ObjectRef Name="sfx_passant_respiration" ID="{F73C74F5-43AD-4E6B-AE58-984C42B1073C}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="passant_danse" ID="{A7D15B02-60D0-4804-999F-5618B14182DE}">
+									<ChildrenList>
+										<Action Name="Play" ID="{E1812379-86DA-4F91-A641-A418A561A8D3}" ShortID="123502241" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{F2BD41DE-2B59-4D7B-9C54-98C78EA97B1A}" Global="false">
+													<ObjectRef Name="sfx_passant_danse" ID="{9BAF3750-68A3-4199-89A5-34C1A040FA5A}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="passant_son" ID="{430CEFE9-642D-4593-AD6C-12277B8D44B8}">
+									<ChildrenList>
+										<Action Name="Play" ID="{FD3B4EC2-1205-4C35-A651-45D77F6A96CB}" ShortID="446919169" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{269F0A6F-9B71-405A-89E3-D5B63415D625}" Global="false">
+													<ObjectRef Name="sfx_passant_son" ID="{B2516F16-BD59-4678-BFDE-44BA7E08EAF6}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="passant_tourne" ID="{50857784-C932-4DA2-92E7-F06F8C8A830E}">
+									<ChildrenList>
+										<Action Name="Play" ID="{08CCFAA0-460D-41B2-B009-86139420FEF3}" ShortID="598424414" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{D76733D1-4377-44FF-80BA-193ACBFC3519}" Global="false">
+													<ObjectRef Name="sfx_passant_tourne" ID="{2ECB21EB-C400-4A21-8128-3EB62FFD9D37}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="passant_idle_stop" ID="{A1E4E73A-C37D-40E2-B4B5-984A4A8FE054}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{00960340-65A6-4F74-BAA1-182F05C4BB5F}" ShortID="123083088" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="3"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{ADA6B81E-5532-44C1-ACD6-9DE26FD418A8}" Global="false">
+													<ObjectRef Name="sfx_passant_respiration" ID="{F73C74F5-43AD-4E6B-AE58-984C42B1073C}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Guide" ID="{D2839917-E648-4FD2-8882-EBD36039D3CF}" ShortID="300983300">
+							<ChildrenList>
+								<Event Name="guide_change_couleur" ID="{11D20D83-517B-4AEE-A12D-49AE02547C5F}">
+									<ChildrenList>
+										<Action Name="Play" ID="{16A51E0A-BA2F-453E-9B97-F1B1E36B6C97}" ShortID="715948304" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{9DA87379-E7E6-464C-8ED8-F082CA1951FA}" Global="false">
+													<ObjectRef Name="sfx_guide_change_couleur" ID="{7C93C356-658A-4E7A-B102-BB8F7B6D119B}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="guide_idle_play" ID="{5A0FF513-CAFF-46D6-9E64-0830A23440C6}">
+									<ChildrenList>
+										<Action Name="Play" ID="{93C2E959-5F33-43D5-8EE5-AA338ACE4DB8}" ShortID="410307545" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{03A43C2B-AF13-4606-ACC7-086597380DE1}" Global="false">
+													<ObjectRef Name="sfx_guide_respiration" ID="{A6D047F5-A08A-4760-B854-9E9E2C8051D1}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="guide_son" ID="{E574B079-2951-48B4-B7D0-A17079F2B8FB}">
+									<ChildrenList>
+										<Action Name="Play" ID="{693AF788-08F0-4EAF-9A6C-38D0EA2B7FC1}" ShortID="742685349" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{D4DC2EFD-8948-40B6-839A-EBA728405153}" Global="false">
+													<ObjectRef Name="sfx_guide_son" ID="{E87B98FF-2745-476B-88E3-F8379043047E}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="guide_ordre" ID="{969BD2A2-73A7-42F8-8040-41BAC38DEB39}">
+									<ChildrenList>
+										<Action Name="Play" ID="{DD76CFDB-8C69-48AA-84F4-598368F91582}" ShortID="38509844" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{7855F786-FC16-4FD7-9769-D293E094E854}" Global="false">
+													<ObjectRef Name="sfx_guide_ordre" ID="{A3EF4838-F282-4401-B7EF-6E465DD76322}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="guide_nouveau_son" ID="{D5F48B42-855A-40D1-A322-340340D26CA4}">
+									<ChildrenList>
+										<Action Name="Play" ID="{AB5564E5-92F5-496E-8A65-F3DA44B2415E}" ShortID="174160687" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{AA634A38-AAE0-47B3-916A-C8416D2A2547}" Global="false">
+													<ObjectRef Name="sfx_guide_nouveau_son" ID="{C78881B2-0474-4E63-9C2F-529055FBD01F}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="guide_idle_stop" ID="{20AB0285-44EE-4823-BD7E-CCF501B57103}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{057D997B-8A8B-4732-87EE-E41DD7C5371E}" ShortID="81221327" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="3"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{9D12902F-8041-47C4-BE99-071277D3B19C}" Global="false">
+													<ObjectRef Name="sfx_guide_respiration" ID="{A6D047F5-A08A-4760-B854-9E9E2C8051D1}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Musicien" ID="{AA3E06A1-83AB-4468-BD3E-3F0FC823C0EB}" ShortID="179620011">
+							<ChildrenList>
+								<Event Name="musicien_tourne" ID="{36D6D463-4F88-45D9-935C-8CCB3E8A399B}">
+									<ChildrenList>
+										<Action Name="Play" ID="{F4A7979F-295F-4A73-B609-9BF6E2ADB038}" ShortID="40495636" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{AC3A2819-11E1-45E2-A61E-526DC1CBE13C}" Global="false">
+													<ObjectRef Name="sfx_musicien_tourne" ID="{D3A01FA2-C7EB-486A-8902-D3D9196A02E1}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="musicien_son" ID="{F63AEFCB-9F11-48BB-8B6B-27647DCEA2DD}">
+									<ChildrenList>
+										<Action Name="Play" ID="{BB8AB90D-7841-4738-BEC6-5199A94AC623}" ShortID="336358073" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{8FD7345E-F648-4521-BEA9-770E786E804D}" Global="false">
+													<ObjectRef Name="sfx_musicien_son" ID="{D9140353-F316-4C80-9D7D-8B866373F8E6}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="musicien_ouverture" ID="{7508ECCA-2FA7-472F-AD38-B009620B4BF1}">
+									<ChildrenList>
+										<Action Name="Play" ID="{0162328D-12D1-4B01-8B81-554D371B009B}" ShortID="208220880" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{96D90660-69FD-41F0-9713-E084D41980FA}" Global="false">
+													<ObjectRef Name="sfx_musicien_ouverture" ID="{5CEF1DE6-33A3-4FFC-86A1-490AE5A14C56}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="musicien_nouveau_son" ID="{83F17F85-7A6F-4598-9293-7771A43259D6}">
+									<ChildrenList>
+										<Action Name="Play" ID="{0D0C89C2-C75A-453F-A009-28254FA5AB3E}" ShortID="1060273167" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{766B591E-76BC-497E-BAF6-E5865AD6113A}" Global="false">
+													<ObjectRef Name="sfx_musicien_nouveau_son" ID="{FC6389B0-9EAE-4D75-9AE3-7489F78B6827}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="musicien_joie" ID="{88EEB13F-0D47-4FB9-8B0B-C2A4E040D57D}">
+									<ChildrenList>
+										<Action Name="Play" ID="{3609C07B-B500-45DA-80BD-C7C0012E3C5D}" ShortID="690267374" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{CC3A12EE-9F8F-4069-8181-60D3F652665E}" Global="false">
+													<ObjectRef Name="sfx_musicien_joie" ID="{3B98EA7A-20F6-435B-B94D-04433E3843C1}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="musicien_idle_play" ID="{93604F50-40D1-4940-B72F-8E1CA0FC8B65}">
+									<ChildrenList>
+										<Action Name="Play" ID="{0CBB77FC-3AD8-4B09-AB18-103D3BB10819}" ShortID="706403767" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{7F87E010-E902-40F5-B5B7-4EBE0F8B2264}" Global="false">
+													<ObjectRef Name="sfx_musicien_respiration" ID="{013FEFAF-0A85-4A4D-9E98-9C8F2B63A1E1}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="musicien_idle_stop" ID="{1A646748-1854-4E55-A633-54B4D538A60C}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{960882C8-334A-469B-8430-C920D4A42ADF}" ShortID="793340353" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="3"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{55CD3E14-F619-4BA4-B01E-8C67A3AF1B72}" Global="false">
+													<ObjectRef Name="sfx_musicien_respiration" ID="{013FEFAF-0A85-4A4D-9E98-9C8F2B63A1E1}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
