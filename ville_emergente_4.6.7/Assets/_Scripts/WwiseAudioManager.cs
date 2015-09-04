@@ -7,11 +7,17 @@ public class WwiseAudioManager : MonoBehaviour {
     uint bankID;
 	// Use this for initialization
 
+
+	public void Awake()
+	{
+		instance = this;
+		LoadBank();
+		PlayFiniteEvent("ville_calme", this.gameObject);
+	}
+
     public void Start()
     {
-        instance = this;
-        LoadBank();
-		PlayFiniteEvent("ville_calme", this.gameObject);
+        
     }
 
 	public void LoadBank () {

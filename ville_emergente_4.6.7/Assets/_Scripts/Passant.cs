@@ -15,7 +15,7 @@ public class Passant : MonoBehaviour {
 
 
 
-    public float waitTimer = 0, minEndWaitTimer = 10, maxEndWaitTimer = 15, endWaitTimer;
+    public float waitTimer = 0, minEndWaitTimer = 10, maxEndWaitTimer = 15, endWaitTimer,povTimer = 0,endPovTimer =5;
 
     public Material material;
     private string audioEventName = "";
@@ -78,6 +78,23 @@ public class Passant : MonoBehaviour {
                 endWaitTimer = (int)Random.Range(minEndWaitTimer, maxEndWaitTimer);
             }
         }
+        if (tMemory.GetItem<bool>("guideIsOnPov") )
+        {
+            if (povTimer < endPovTimer && !tMemory.GetItem<bool>("povTimerHasEnded"))
+            {
+                povTimer = povTimer + Time.deltaTime;
+            }
+            else if (povTimer!=0)
+            {
+                povTimer = 0;
+            }
+            if (povTimer > endPovTimer)
+            {
+                tMemory.SetItem<bool>("povTimerHasEnded", true);
+                tMemory.SetItem<bool>("guideIsOnPov", false);
+            }
+        }
+
 	}
 
     public void EmitSound()
@@ -172,6 +189,7 @@ public class Passant : MonoBehaviour {
     {
         selectedScene.availablesSpots[selectedSpotIndex] = true;
         sceneSpot = null;
+        sceneLeader = null;
         selectedScene = null;
         SetTarget(null); 
         selectedSpotIndex = -1;

@@ -16,8 +16,9 @@ public class IfGuideIsOnPoV : RAINAction
     {
         if (ai.Body.GetComponent<Passant>().sceneLeader.GetComponent<Guide>().tMemory.GetItem<bool>("destinationReached"))
         {
+
+            ai.WorkingMemory.SetItem<bool>("guideIsOnPov", true);
             return ActionResult.SUCCESS;
-            Debug.Log(ai.Body.name + " : Guide Speech is Over  ");
         }
         else
             return ActionResult.FAILURE;
