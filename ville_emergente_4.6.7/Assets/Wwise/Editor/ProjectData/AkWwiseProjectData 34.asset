@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9104d85d8786abd41b52baf0dee4e731, type: 3}
-  m_Name: AkWwiseProjectData
+  m_Name: AkWwiseProjectData 34
   m_EditorClassIdentifier: 
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
@@ -235,46 +235,6 @@ MonoBehaviour:
         ObjectType: 3
       ID: -107601611
       Guid: 525d0e49c9c33d489038053e1f03d1a6
-      maxAttenuation: 0
-    - Name: fragment_call_play
-      Path: Default Work Unit\Fragments\Call\fragment_call_play
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Call
-        ObjectType: 4
-      - ElementName: fragment_call_play
-        ObjectType: 3
-      ID: 1465870985
-      Guid: 037bc8aa00354d43979872d5679c3595
-      maxAttenuation: 0
-    - Name: fragment_call_stop
-      Path: Default Work Unit\Fragments\Call\fragment_call_stop
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Call
-        ObjectType: 4
-      - ElementName: fragment_call_stop
-        ObjectType: 3
-      ID: -1306679377
-      Guid: d29e285cd6fda44c9e483b9504de058d
-      maxAttenuation: 0
-    - Name: interactions_simples_motion
-      Path: Default Work Unit\Joueur\interactions_simples_motion
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Joueur
-        ObjectType: 4
-      - ElementName: interactions_simples_motion
-        ObjectType: 3
-      ID: -535888257
-      Guid: b996d6a067384f41a3e433d2daecf486
       maxAttenuation: 0
     - Name: lacher_morceau
       Path: Default Work Unit\Joueur\lacher_morceau
@@ -1144,8 +1104,8 @@ MonoBehaviour:
       ID: -1133058374
       Guid: 13a8cb8be9ce1d40a1ae57d196fca6c9
   ExpandedItems: []
-  m_lastPopulateTimePsrt1: -109500699
-  m_lastPopulateTimePart2: -1999457170
+  m_lastPopulateTimePsrt1: -1159399125
+  m_lastPopulateTimePart2: -1999457412
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)

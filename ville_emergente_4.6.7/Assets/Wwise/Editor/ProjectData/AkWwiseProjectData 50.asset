@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9104d85d8786abd41b52baf0dee4e731, type: 3}
-  m_Name: AkWwiseProjectData
+  m_Name: AkWwiseProjectData 50
   m_EditorClassIdentifier: 
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
@@ -263,18 +263,6 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1306679377
       Guid: d29e285cd6fda44c9e483b9504de058d
-      maxAttenuation: 0
-    - Name: interactions_simples_motion
-      Path: Default Work Unit\Joueur\interactions_simples_motion
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Joueur
-        ObjectType: 4
-      - ElementName: interactions_simples_motion
-        ObjectType: 3
-      ID: -535888257
-      Guid: b996d6a067384f41a3e433d2daecf486
       maxAttenuation: 0
     - Name: lacher_morceau
       Path: Default Work Unit\Joueur\lacher_morceau
@@ -1144,8 +1132,8 @@ MonoBehaviour:
       ID: -1133058374
       Guid: 13a8cb8be9ce1d40a1ae57d196fca6c9
   ExpandedItems: []
-  m_lastPopulateTimePsrt1: -109500699
-  m_lastPopulateTimePart2: -1999457170
+  m_lastPopulateTimePsrt1: -337251767
+  m_lastPopulateTimePart2: -1999457370
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)
