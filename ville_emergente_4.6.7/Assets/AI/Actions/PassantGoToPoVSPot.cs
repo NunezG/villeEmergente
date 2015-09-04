@@ -24,6 +24,7 @@ public class PassantGoToPoVSpot : RAINAction
                 && ai.Body.transform.position.z == povSpot.transform.position.z)
         {
 
+            ai.WorkingMemory.SetItem<bool>("isOnPovSpot", true);
         }
 
         return ActionResult.SUCCESS;
