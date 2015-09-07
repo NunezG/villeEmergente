@@ -54,6 +54,58 @@ public class WwiseAudioManager : MonoBehaviour {
     {
         AkSoundEngine.PostEvent(eventName, gObject);
     }
+
+	public void soundPlayIdle(string playerName, GameObject gObject )
+	{
+		PlayLoopEvent (playerName+"_idle", gObject);
+	}
+
+	public void sounStopdIdle(string playerName, GameObject gObject )
+	{
+		StopLoopEvent (playerName+"_idle", gObject);
+	}
+
+	public void soundJoie(string playerName, GameObject gObject )
+	{
+		PlayFiniteEvent (playerName+"_joie", this.gameObject);	
+		//gObject.GetComponentInChildren<Animator> ().SetBool ("",true);
+	}
+
+	public void soundSon(string playerName, GameObject gObject )
+	{
+		PlayFiniteEvent (playerName+"_son", this.gameObject);	
+	}
+
+	public void soundNouveauSon(string playerName, GameObject gObject )
+	{
+		PlayFiniteEvent (playerName+"_nouveau_son", this.gameObject);	
+	}
+
+	public void soundTourne(string playerName, GameObject gObject )
+	{
+		PlayFiniteEvent (playerName+"_tourne", this.gameObject);	
+	}
+
+	public void soundOuverture(string playerName, GameObject gObject )
+	{
+		PlayFiniteEvent (playerName+"_ouverture", this.gameObject);	
+	}
+
+	public void soundOrdre(string playerName, GameObject gObject )
+	{
+		PlayFiniteEvent (playerName+"_ordre", this.gameObject);	
+	}
+
+	public void soundChangeCouleur(string playerName, GameObject gObject )
+	{
+		PlayFiniteEvent (playerName+"_change_couleur", this.gameObject);	
+	}
+
+	public void soundDanse(string playerName, GameObject gObject )
+	{
+		PlayFiniteEvent (playerName+"_passant_danse", this.gameObject);	
+	}
+
     /*
     public void StopEvent(string eventName, GameObject gObject, int fadeout)
     {
