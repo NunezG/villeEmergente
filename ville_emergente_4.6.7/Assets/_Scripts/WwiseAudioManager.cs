@@ -46,14 +46,72 @@ public class WwiseAudioManager : MonoBehaviour {
         AkSoundEngine.PostEvent(eventName+"_stop", gObject);
     }
 
-   // public void PlayFiniteEvent(string eventName, GameObject gObject, AkCallbackManager.EventCallback callBackFunction )
-  //  {
-     //   AkSoundEngine.PostEvent(eventName, gObject, (uint)AkCallbackType.AK_EndOfEvent, callBackFunction, gObject);
- //   }
+    public void PlayFiniteEvent(string eventName, GameObject gObject, AkCallbackManager.EventCallback callBackFunction )
+    {
+        AkSoundEngine.PostEvent(eventName, gObject, (uint)AkCallbackType.AK_EndOfEvent, callBackFunction, gObject);
+
+	}
+
     public void PlayFiniteEvent(string eventName, GameObject gObject )
     {
         AkSoundEngine.PostEvent(eventName, gObject);
     }
+
+
+	//Sound events
+
+	public void soundPlayIdle(string playerName, GameObject gObject )
+	{
+		PlayLoopEvent (playerName+"_idle", gObject);
+	}
+
+	public void sounStopdIdle(string playerName, GameObject gObject )
+	{
+		StopLoopEvent (playerName+"_idle", gObject);
+	}
+
+	public void soundJoie(string playerName, GameObject gObject, AkCallbackManager.EventCallback callBackFunction )
+	{
+		PlayFiniteEvent (playerName+"_joie", this.gameObject,callBackFunction);	
+		//gObject.GetComponentInChildren<Animator> ().SetBool ("",true);
+	}
+
+
+	public void soundSon(string playerName, GameObject gObject, AkCallbackManager.EventCallback callBackFunction )
+	{
+		PlayFiniteEvent (playerName+"_son", this.gameObject,callBackFunction);	
+	}
+
+	public void soundNouveauSon(string playerName, GameObject gObject , AkCallbackManager.EventCallback callBackFunction)
+	{
+		PlayFiniteEvent (playerName+"_nouveau_son", this.gameObject,callBackFunction);	
+	}
+
+	public void soundTourne(string playerName, GameObject gObject , AkCallbackManager.EventCallback callBackFunction)
+	{
+		PlayFiniteEvent (playerName+"_tourne", this.gameObject,callBackFunction);	
+	}
+
+	public void soundOuverture(string playerName, GameObject gObject, AkCallbackManager.EventCallback callBackFunction )
+	{
+		PlayFiniteEvent (playerName+"_ouverture", this.gameObject,callBackFunction);	
+	}
+
+	public void soundOrdre(string playerName, GameObject gObject, AkCallbackManager.EventCallback callBackFunction )
+	{
+		PlayFiniteEvent (playerName+"_ordre", this.gameObject,callBackFunction);	
+	}
+
+	public void soundChangeCouleur(string playerName, GameObject gObject, AkCallbackManager.EventCallback callBackFunction )
+	{
+		PlayFiniteEvent (playerName+"_change_couleur", this.gameObject,callBackFunction);	
+	}
+
+	public void soundDanse(string playerName, GameObject gObject , AkCallbackManager.EventCallback callBackFunction)
+	{
+		PlayFiniteEvent (playerName+"_danse", this.gameObject,callBackFunction);	
+	}
+
     /*
     public void StopEvent(string eventName, GameObject gObject, int fadeout)
     {
