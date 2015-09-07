@@ -8,16 +8,19 @@ public class Plateforme_Move : MonoBehaviour
 
     public float time;
     
-    private Vector3 pos;
     private Vector3 dir;
 
-    private bool fall = false;
-    private float currentTime = 0.0f;
+    private bool fall = true;
+    public float ratio = 0.0f;
 
 	// Use this for initialization
 	void Start () 
     {
-        pos = transform.position;
+        if (ratio > 1.0f)
+            ratio = 1.0f;
+        if (ratio < 0.0f)
+            ratio = 0.0f;
+
         dir = (max - min) * 1.0f/time;
 	}
 	
@@ -27,25 +30,21 @@ public class Plateforme_Move : MonoBehaviour
        
         if(fall)
         {
-            pos = pos - dir * Time.deltaTime;
+            ratio += Time.deltaTime / time;
 
-            currentTime += Time.deltaTime / time;
-
-            if (currentTime >= 1.0f)
+            if (ratio >= 1.0f)
                 fall = false;
         }
        
         else
         {
-            pos = pos + dir * Time.deltaTime;
+            ratio -= Time.deltaTime / time;
 
-            currentTime -= Time.deltaTime / time;
-
-            if (currentTime <= 0.0f)
+            if (ratio <= 0.0f)
                 fall = true;
         }
 
-        transform.position = pos;
+        transform.position = min + ratio * (max - min); ;
 
 	}
 }
