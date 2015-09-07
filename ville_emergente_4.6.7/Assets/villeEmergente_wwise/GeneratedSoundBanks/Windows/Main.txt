@@ -1,5 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
+	2159062	musicien_idle_stop			\Default Work Unit\PNJs\Musicien\musicien_idle_stop	
 	30806100	softRain_play			\Default Work Unit\Fragments\Liquide\softRain_play	
+	161018858	musicien_ouverture			\Default Work Unit\PNJs\Musicien\musicien_ouverture	
 	193498114	water_3DObject_play			\Default Work Unit\Tests Wwise Pierre & Guillermo\water_3DObject_play	
 	289850157	busyStreet_convolver_play			\Default Work Unit\Fragments\Urban\busyStreet_convolver_play	
 	558637385	electricBuzz_convolver_play			\Default Work Unit\Fragments\Electricite\electricBuzz_convolver_play	
@@ -9,17 +11,25 @@ Event	ID	Name			Wwise Object Path	Notes
 	836511068	water_3DObject_stop			\Default Work Unit\Tests Wwise Pierre & Guillermo\water_3DObject_stop	
 	837754713	convolution_wet_to100			\Default Work Unit\Batiments\Set Convolver\convolution_wet_to100	
 	910304878	trafficBy_stop			\Default Work Unit\Fragments\Urban\trafficBy_stop	
+	916635435	musicien_son			\Default Work Unit\PNJs\Musicien\musicien_son	
+	1128982233	guide_idle_play			\Default Work Unit\PNJs\Guide\guide_idle_play	
+	1195210688	passant_son			\Default Work Unit\PNJs\Passants\passant_son	
 	1198733287	footsteps_play			\Default Work Unit\Joueur\footsteps_play	
 	1374189182	dropsCardboard_play			\Default Work Unit\Fragments\Liquide\dropsCardboard_play	
 	1407044475	busyStreet_convolver_stop			\Default Work Unit\Fragments\Urban\busyStreet_convolver_stop	
 	1465870985	fragment_call_play			\Default Work Unit\Fragments\Call\fragment_call_play	
 	1672407606	busyStreet_stop			\Default Work Unit\Fragments\Urban\busyStreet_stop	
 	1693234990	softRain_stop			\Default Work Unit\Fragments\Liquide\softRain_stop	
+	1735048872	guide_ordre			\Default Work Unit\PNJs\Guide\guide_ordre	
 	2013603504	convolution_wet_to0			\Default Work Unit\Batiments\Set Convolver\convolution_wet_to0	
+	2028913609	passant_idle_stop			\Default Work Unit\PNJs\Passants\passant_idle_stop	
 	2081157487	electricBuzz_convolver_stop			\Default Work Unit\Fragments\Electricite\electricBuzz_convolver_stop	
 	2138522384	prendre_morceau			\Default Work Unit\Joueur\prendre_morceau	
+	2204075982	guide_son			\Default Work Unit\PNJs\Guide\guide_son	
+	2220177058	musicien_joie			\Default Work Unit\PNJs\Musicien\musicien_joie	
 	2286130255	waterSplash_convolver_stop			\Default Work Unit\Fragments\Liquide\waterSplash_convolver_stop	
 	2295622138	waterSplash_stop			\Default Work Unit\Fragments\Liquide\waterSplash_stop	
+	2327341772	musicien_idle_play			\Default Work Unit\PNJs\Musicien\musicien_idle_play	
 	2406558223	switch_default			\Default Work Unit\Batiments\Switches Convolver\switch_default	
 	2412081984	dropsCardboard_stop			\Default Work Unit\Fragments\Liquide\dropsCardboard_stop	
 	2442452512	switch_atmo5			\Default Work Unit\Batiments\Switches Convolver\switch_atmo5	
@@ -32,13 +42,17 @@ Event	ID	Name			Wwise Object Path	Notes
 	2535466649	lacher_morceau			\Default Work Unit\Joueur\lacher_morceau	
 	2544725597	dropsCardboard_convolver_stop			\Default Work Unit\Fragments\Liquide\dropsCardboard_convolver_stop	
 	2622262392	rain_2DObject_stop			\Default Work Unit\Tests Wwise Pierre & Guillermo\rain_2DObject_stop	
+	2629109720	musicien_tourne			\Default Work Unit\PNJs\Musicien\musicien_tourne	
 	2692438725	trafficBy_convolver_play			\Default Work Unit\Fragments\Urban\trafficBy_convolver_play	
 	2776279528	electricBuzz_play			\Default Work Unit\Fragments\Electricite\electricBuzz_play	
 	2812543877	softRain_convolver_play			\Default Work Unit\Fragments\Liquide\softRain_convolver_play	
 	2896867782	toucher_element			\Default Work Unit\Joueur\toucher_element	
 	2988287919	fragment_call_stop			\Default Work Unit\Fragments\Call\fragment_call_stop	
 	3012043839	dropsCardboard_convolver_play			\Default Work Unit\Fragments\Liquide\dropsCardboard_convolver_play	
+	3026819668	guide_change_couleur			\Default Work Unit\PNJs\Guide\guide_change_couleur	
 	3115394940	ville_calme			\Default Work Unit\Ambiances\ville_calme	
+	3122327449	passant_danse			\Default Work Unit\PNJs\Passants\passant_danse	
+	3405539997	musicien_nouveau_son			\Default Work Unit\PNJs\Musicien\musicien_nouveau_son	
 	3501369492	trafficBy_play			\Default Work Unit\Fragments\Urban\trafficBy_play	
 	3587869584	switch_atmoRI4			\Default Work Unit\Batiments\Switches RI\switch_atmoRI4	
 	3587869585	switch_atmoRI5			\Default Work Unit\Batiments\Switches RI\switch_atmoRI5	
@@ -56,6 +70,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3617898639	switch_dark3			\Default Work Unit\Batiments\Switches Convolver\switch_dark3	
 	3679869857	linker_morceau			\Default Work Unit\Joueur\linker_morceau	
 	3759079039	interactions_simples_motion			\Default Work Unit\Joueur\interactions_simples_motion	
+	3761520415	guide_idle_stop			\Default Work Unit\PNJs\Guide\guide_idle_stop	
 	3843097384	switch_darkRI1			\Default Work Unit\Batiments\Switches RI\switch_darkRI1	
 	3843097386	switch_darkRI3			\Default Work Unit\Batiments\Switches RI\switch_darkRI3	
 	3843097387	switch_darkRI2			\Default Work Unit\Batiments\Switches RI\switch_darkRI2	
@@ -64,11 +79,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	3843097390	switch_darkRI7			\Default Work Unit\Batiments\Switches RI\switch_darkRI7	
 	3843097391	switch_darkRI6			\Default Work Unit\Batiments\Switches RI\switch_darkRI6	
 	3913070078	Sfx_RI			\Default Work Unit\Batiments\Sfx RI\Sfx_RI	
+	3967439363	passant_idle_play			\Default Work Unit\PNJs\Passants\passant_idle_play	
 	3997590316	busyStreet_play			\Default Work Unit\Fragments\Urban\busyStreet_play	
+	4080525896	guide_nouveau_son			\Default Work Unit\PNJs\Guide\guide_nouveau_son	
 	4117091651	trafficBy_convolver_stop			\Default Work Unit\Fragments\Urban\trafficBy_convolver_stop	
 	4187365685	footsteps_stop			\Default Work Unit\Joueur\footsteps_stop	
 	4195620099	softRain_convolver_stop			\Default Work Unit\Fragments\Liquide\softRain_convolver_stop	
 	4213022088	waterSplash_play			\Default Work Unit\Fragments\Liquide\waterSplash_play	
+	4275515877	passant_tourne			\Default Work Unit\PNJs\Passants\passant_tourne	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	575849320	Elements_decor			\Default Work Unit\Elements_decor	
@@ -208,41 +226,67 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	1072845960	Wwise Motion Generator	Wwise Motion Generator		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Intéractions simples\Interactions simples motion\Wwise Motion Generator	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	57806489	Sfx_ri_choirslike	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_choirslike_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_choirslike		616524
-	61270204	Sfx_ri_watersplash	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_watersplash_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_watersplash		776048
-	77014115	Sfx_ri_skannermorph	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_skannermorph_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_skannermorph		966552
+	57806489	Sfx_ri_choirslike	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_choirslike_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_choirslike		157775
+	61270204	Sfx_ri_watersplash	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_watersplash_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_watersplash		289078
+	68116553	sfx_musicien_respiration_03	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_musicien_respiration_03_89C97D33.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Musicien\sfx_musicien_respiration\sfx_musicien_respiration_03		331939
+	77014115	Sfx_ri_skannermorph	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_skannermorph_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_skannermorph		270972
 	79795147	sfx_footsteps_01_v2	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_footsteps_01_v2_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_footsteps_01_v2		35271
+	88545374	sfx_musicien_respiration_04	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_musicien_respiration_04_43CC1B23.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Musicien\sfx_musicien_respiration\sfx_musicien_respiration_04		331786
 	162478722	sfx_footsteps_08_v2	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_footsteps_08_v2_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_footsteps_08_v2		37810
 	165344794	soft rain - brown noise - human activities - drops reverb - 02	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\soft rain - brown noise - human activities - drops reverb - 02_8AC08B01.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\soft rain - brown noise - human activities - drops reverb - 02		4233873
-	184241894	Sfx_ri_suriya	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_suriya_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_suriya		1245372
+	184241894	Sfx_ri_suriya	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_suriya_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_suriya		333331
+	186153398	sfx_musicien_ouverture	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_musicien_ouverture_7CF3968E.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Musicien\sfx_musicien_ouverture		300681
+	200281006	sfx_passant_respiration_01	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_passant_respiration_01_03C72C03.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Passants\sfx_passant_respiration\sfx_passant_respiration_01		136350
 	210743791	Lâcher morceau	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_lacher_morceau_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Intéractions simples\Lâcher morceau		133969
-	213439988	Sfx_ri_skanner_pad	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_skanner_pad_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_skanner_pad		801208
-	279598686	Sfx_ri_pipe	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_pipe_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_pipe		702352
+	213439988	Sfx_ri_skanner_pad	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_skanner_pad_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_skanner_pad		211145
+	235702269	sfx_guide_respiration_03	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_guide_respiration_03_34B80AE7.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Guide\sfx_guide_respiration\sfx_guide_respiration_03		155800
+	279598686	Sfx_ri_pipe	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_pipe_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_pipe		167979
+	281704168	sfx_guide_ordre	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_guide_ordre_4DD8F591.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Guide\sfx_guide_ordre		194577
 	297417493	sfx_footsteps_04_v2	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_footsteps_04_v2_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_footsteps_04_v2		36275
 	334615060	sfx_footsteps_05_v2	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_footsteps_05_v2_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_footsteps_05_v2		35334
 	338283210	sfx_soft_rain	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_soft_rain_0D81CD0C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Liquide\sfx_soft_rain		2276200
-	355509982	Sfx_ri_marseilles	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_marseilles_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_marseilles		520776
+	345389724	sfx_passant_respiration_02	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_passant_respiration_02_978E38C3.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Passants\sfx_passant_respiration\sfx_passant_respiration_02		127686
+	355509982	Sfx_ri_marseilles	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_marseilles_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_marseilles		130828
 	387101083	Ville Calme	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_ville_calme_BA573D6E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ville Calme		658638
 	392624030	Linker morceau	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_linker_morceau_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Intéractions simples\Linker morceau		261836
 	394458146	sfx_electric_buzz	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_electric_buzz_2983C7FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Electricite\sfx_electric_buzz		1192644
 	403341299	Prendre morceau	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_prendre_morceau_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Intéractions simples\Prendre morceau		136077
-	469843770	Sfx_ri_sylenth	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_sylenth_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_sylenth		448736
+	419873606	sfx_musicien_nouveau_son	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_musicien_nouveau_son_2F2DBC8F.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Musicien\sfx_musicien_nouveau_son		361715
+	469843770	Sfx_ri_sylenth	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_sylenth_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_sylenth		99432
+	475948589	sfx_musicien_respiration_06	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_musicien_respiration_06_0AAD8B99.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Musicien\sfx_musicien_respiration\sfx_musicien_respiration_06		323496
 	479227711	sfx_traffic_by	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_traffic_by_383A349A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Urban\sfx_traffic_by		1945313
+	480734998	sfx_passant_tourne	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_passant_tourne_5EB4B52E.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Passants\sfx_passant_tourne		132359
 	482751310	sfx_footsteps_02_v2	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_footsteps_02_v2_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_footsteps_02_v2		35091
-	524736407	Sfx_ri_electric	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_electric_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_electric		827488
+	524736407	Sfx_ri_electric	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_electric_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_electric		215449
 	544891264	sfx_footsteps_03_v2	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_footsteps_03_v2_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_footsteps_03_v2		36102
 	557897535	sfx_busy_street	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_busy_street_44686525.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Urban\sfx_busy_street		1721836
 	563338810	Toucher élément	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_toucher_element_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Intéractions simples\Toucher élément		182290
-	573450885	Sfx_ri_shevannai	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_shevannai_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_shevannai		835676
-	608263982	Sfx_ri_revdark	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_revdark_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_revdark		725192
-	789123976	Sfx_ri_symphobia	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_symphobia_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_symphobia		653212
+	573450885	Sfx_ri_shevannai	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_shevannai_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_shevannai		198262
+	601234390	sfx_guide_respiration_04	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_guide_respiration_04_CEFCAC48.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Guide\sfx_guide_respiration\sfx_guide_respiration_04		149025
+	608263982	Sfx_ri_revdark	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_revdark_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_revdark		158408
+	649306740	sfx_musicien_respiration_02	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_musicien_respiration_02_C3595685.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Musicien\sfx_musicien_respiration\sfx_musicien_respiration_02		324781
+	727022421	sfx_musicien_respiration_01	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_musicien_respiration_01_9F4ECBF2.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Musicien\sfx_musicien_respiration\sfx_musicien_respiration_01		285644
+	732653660	sfx_guide_son	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_guide_son_C4EFA21D.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Guide\sfx_guide_son		273637
+	771216038	sfx_guide_respiration_01	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_guide_respiration_01_BB930D01.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Guide\sfx_guide_respiration\sfx_guide_respiration_01		142869
+	776156565	sfx_guide_respiration_06	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_guide_respiration_06_3857B4A5.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Guide\sfx_guide_respiration\sfx_guide_respiration_06		161607
+	784759727	sfx_guide_respiration_05	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_guide_respiration_05_B1A02EA4.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Guide\sfx_guide_respiration\sfx_guide_respiration_05		157254
+	788675832	sfx_musicien_tourne	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_musicien_tourne_D25BED74.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Musicien\sfx_musicien_tourne		215883
+	789123976	Sfx_ri_symphobia	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_symphobia_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_symphobia		159244
+	801096109	sfx_passant_son	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_passant_son_B5A23426.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Passants\sfx_passant_son		176701
 	857643460	sfx_drops_carboard	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_drops_carboard_ABF82687.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Liquide\sfx_drops_carboard		959627
+	862717797	sfx_passant_danse	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_passant_danse_7D6BEA78.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Passants\sfx_passant_danse		194085
 	865538397	sfx_fragment_call	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_fragment_call_67E0794F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Fragment Call\sfx_fragment_call		169255
 	888063290	sfx_water_splash	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_water_splash_7AF3DED3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Liquide\sfx_water_splash		1515325
 	943957025	paddle light freely 01	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\paddle light freely 01_C7E637FB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\paddle light freely 01		864882
+	946500758	sfx_musicien_joie	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_musicien_joie_AAD1E0BF.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Musicien\sfx_musicien_joie		385286
 	963062918	sfx_footsteps_06_v2	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_footsteps_06_v2_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_footsteps_06_v2		35371
-	1019937081	Sfx_ri_absynth_dark	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_absynth_dark_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_absynth_dark		923700
-	1037490087	Sfx_ri_rev_light	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_rev_light_DDC98EF4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_rev_light		611384
+	983328808	sfx_musicien_son	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_musicien_son_FB8874BF.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Musicien\sfx_musicien_son		326912
+	1013727589	sfx_musicien_respiration_05	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_musicien_respiration_05_7DAD6643.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Musicien\sfx_musicien_respiration\sfx_musicien_respiration_05		350762
+	1019937081	Sfx_ri_absynth_dark	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_absynth_dark_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_absynth_dark		244064
+	1023826568	sfx_guide_change_couleur	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_guide_change_couleur_B058E1A0.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Guide\sfx_guide_change_couleur		236062
+	1037490087	Sfx_ri_rev_light	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_rev_light_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_rev_light		167665
+	1052472384	sfx_guide_respiration_02	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_guide_respiration_02_9DE795B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Guide\sfx_guide_respiration\sfx_guide_respiration_02		157689
+	1058618159	sfx_guide_nouveau_son	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_guide_nouveau_son_86C32023.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Guide\sfx_guide_nouveau_son		239920
 
 Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
 	5649477	RI_marseilles (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_marseilles_589B3963.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_busy_street_switch\RI_marseilles\RI_marseilles (Custom)		238720

@@ -133,7 +133,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="binaural_to_convolver" ID="{4771F142-4D7B-451E-8786-58DE18DAFCFA}"/>
-							<Value>100</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}"/>
