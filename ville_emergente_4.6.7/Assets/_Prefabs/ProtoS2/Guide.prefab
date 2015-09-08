@@ -12,7 +12,7 @@ GameObject:
   - 135: {fileID: 13513072}
   - 23: {fileID: 2313072}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: spot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ GameObject:
   - 135: {fileID: 13513074}
   - 23: {fileID: 2313074}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: spot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +48,7 @@ GameObject:
   - 135: {fileID: 13513076}
   - 23: {fileID: 2313076}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: spot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +66,7 @@ GameObject:
   - 135: {fileID: 13513078}
   - 23: {fileID: 2313078}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: spot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ GameObject:
   - 135: {fileID: 13513080}
   - 23: {fileID: 2313080}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: spot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,7 +102,7 @@ GameObject:
   - 135: {fileID: 13513082}
   - 23: {fileID: 2313082}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: spot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,7 +120,7 @@ GameObject:
   - 135: {fileID: 13513084}
   - 23: {fileID: 2313084}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: spot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -388,7 +388,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 185466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.91000009, y: 4.01999998, z: -2.80999994}
+  m_LocalPosition: {x: -23.1499996, y: -4.61999989, z: 1055.59998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 485474}
@@ -813,7 +813,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainActor: {fileID: 185466}
-  spots: []
+  spots:
+  - {fileID: 113084}
+  - {fileID: 113082}
+  - {fileID: 113080}
+  - {fileID: 113078}
+  - {fileID: 113076}
+  - {fileID: 113074}
+  - {fileID: 113072}
   availablesSpots: 
 --- !u!114 &11485472
 MonoBehaviour:
@@ -832,6 +839,8 @@ MonoBehaviour:
   handsFull: 0
   pdv: {fileID: 0}
   scene: {fileID: 11466726}
+  timer: 0
+  endTimer: 5
 --- !u!114 &11485474
 MonoBehaviour:
   m_ObjectHideFlags: 1
