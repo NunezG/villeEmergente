@@ -312,6 +312,7 @@ GameObject:
   - 95: {fileID: 9572896}
   - 114: {fileID: 11426788}
   - 114: {fileID: 11483310}
+  - 54: {fileID: 5419640}
   m_Layer: 0
   m_Name: PNJ_final
   m_TagString: Untagged
@@ -591,6 +592,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 472934}
   m_RootOrder: 1
+--- !u!54 &5419640
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172936}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!95 &9572896
 Animator:
   serializedVersion: 3
@@ -600,7 +616,7 @@ Animator:
   m_GameObject: {fileID: 172936}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: bd7f44bcc7a3bf240babbac2334d8560, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3b65b9111131f3b479ef30cd14abb352, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -639,6 +655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 568bc0ee0cdf8324593a205fc4303cc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioName: 
 --- !u!137 &13772896
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
