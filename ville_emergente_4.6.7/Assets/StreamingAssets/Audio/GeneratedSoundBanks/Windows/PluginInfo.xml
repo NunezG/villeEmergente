@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PluginInfo Project="villeEmergente_wwise" Platform="Windows" Motion="true">
+	<Plugins>
+		<Plugin Name="AstoundSound RTI" ID="200774"/>
+		<Plugin Name="Wwise Convolution Reverb" ID="8323075"/>
+	</Plugins>
+</PluginInfo>
