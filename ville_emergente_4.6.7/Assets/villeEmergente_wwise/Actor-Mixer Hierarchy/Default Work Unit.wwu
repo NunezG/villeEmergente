@@ -6,6 +6,7 @@
 				<ActorMixer Name="Joueur" ID="{CFB662AF-C053-4B86-BF35-67DD3452BC2E}" ShortID="550476142">
 					<PropertyList>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Spatialization" Type="bool" Value="False"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -787,13 +788,102 @@
 								<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Spatialization" Type="bool" Value="False"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom CreatedFrom="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}">
+										<Attenuation Name="Basic_Attenuation (Custom)" ID="{CD23BE3C-995D-451D-BDFE-BD5529CF9918}" ShortID="132198092">
+											<PropertyList>
+												<Property Name="ConeAttenuation" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ConeInnerAngle" Type="int32" Value="95"/>
+												<Property Name="ConeLowPassFilterValue" Type="int32">
+													<ValueList>
+														<Value>40</Value>
+													</ValueList>
+												</Property>
+												<Property Name="ConeOuterAngle" Type="int32" Value="270"/>
+												<Property Name="RadiusMax" Type="Real64" Value="50"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{41DA986B-6116-4487-AD5B-4962C9B2E3CE}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																	<SegmentShape>SCurve</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>50</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="LowPassFilter" ID="{9D19C010-89F2-4C8F-946A-C88B078360DE}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="65537"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																	<SegmentShape>Exp3</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>50</XPos>
+																	<YPos>60</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 								</Reference>
@@ -899,7 +989,7 @@
 										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3649,6 +3739,194 @@
 														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_musicien" ID="{3F031E78-34EE-4205-90D7-F01DE771B823}" ShortID="625492961">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-11</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{36942618-8521-401E-8C22-61A006B34591}">
+																<Effect Name="RI_watersplash (Custom)" ID="{5372EF2C-FAE0-4EF7-9D4A-64CCD496F331}" ShortID="920469474" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="8.3515625"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-28">
+																			<RTPCList>
+																				<RTPC Name="" ID="{0CD37425-6666-49AF-A3BE-34217A507942}" ShortID="332953791">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{EE4E1B19-E8A2-4845-AD22-C68279503EB1}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-28</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="sfx_musicien_son" ID="{B1D39EEA-CEEC-4362-9F39-42200F7EC0EF}" ShortID="702626441">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="sfx_musicien_son.wav"/>
+																			</PropertyList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{C2DE5C0E-CCE6-4177-BDB5-363E3002A115}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>551.25875</XPos>
+							<YPos>0.03761</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>842.95417</XPos>
+							<YPos>-2.47356</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1338.21928</XPos>
+							<YPos>-0.01914</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{D38D5E5F-9B76-4BB9-87F8-2A0C9C66675F}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>8.3515625</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{2016CAF6-461A-4AC1-AECE-EC5BA4BBA92A}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>8.3515625</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_busy_street" ID="{3F99A7B3-5CE1-44D6-982C-287C6AD6BAFB}" ShortID="251692898" Type="SoundFX">
+															<PropertyList>
+																<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="PositioningType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_busy_street" ID="{01F9E7B9-C292-41BA-9C37-4F197FDA7C4F}" ShortID="471346931">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="1.45424083769633"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="2.76305759162304"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="27.1943036649215"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_busy_street.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="557897535"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_busy_street" ID="{01F9E7B9-C292-41BA-9C37-4F197FDA7C4F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
 											<PositioningInfo>
 												<Position Name="" ID="{59B5F904-F2A2-40D2-B2B7-0D3DB795D125}"/>
@@ -3674,6 +3952,9 @@
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="RI_revlight" ID="{676CB072-F5FD-4711-B0D4-90AA3476F31F}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_musicien" ID="{3F031E78-34EE-4205-90D7-F01DE771B823}"/>
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="RI_watersplash" ID="{1FCDFD7D-B959-4304-B77C-E651258D7F01}"/>
@@ -6436,6 +6717,200 @@
 														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_musicien" ID="{BFD1A74B-DC60-4EF7-89B9-8DCF7C3830FC}" ShortID="1057367200">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-11</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{36942618-8521-401E-8C22-61A006B34591}">
+																<Effect Name="RI_watersplash (Custom)" ID="{8CD655D7-70C5-450E-A0C5-DD37CCBF08B5}" ShortID="273792586" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="8.3515625"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-28">
+																			<RTPCList>
+																				<RTPC Name="" ID="{3B2F8FAD-F4EE-44E5-BEAF-313C01F1414A}" ShortID="475362550">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{9515B6CB-13A3-4FC1-9D90-42AE5CFE897B}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-28</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="sfx_musicien_son" ID="{93801FBD-FD2D-4456-AE5E-8C89AEF27DC9}" ShortID="266055826">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="sfx_musicien_son.wav"/>
+																			</PropertyList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{2571B46E-9822-4E1B-A12B-F0C46CB220B6}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>551.25875</XPos>
+							<YPos>0.03761</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>842.95417</XPos>
+							<YPos>-2.47356</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1338.21928</XPos>
+							<YPos>-0.01914</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{59478120-9147-4BFA-881A-0D8556A28979}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>8.3515625</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{FDDED47E-2005-4916-823E-450884E54FC1}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>8.3515625</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_traffic_by" ID="{11BF1468-16D5-457D-85FB-6D7E4F1DEB84}" ShortID="584481393" Type="SoundFX">
+															<PropertyList>
+																<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+																<Property Name="Highpass" Type="int16">
+																	<ValueList>
+																		<Value>30</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="PositioningType" Type="int16" Value="1"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-5</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_traffic_by" ID="{B06755B9-6897-47E1-A44E-9B9D2040D943}" ShortID="44610537">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="36.0028002991773"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_traffic_by.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="479227711"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_traffic_by" ID="{B06755B9-6897-47E1-A44E-9B9D2040D943}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
 											<PositioningInfo>
 												<Position Name="" ID="{C1DD22A0-8010-4960-A107-8A4CEA228ACB}"/>
@@ -6461,6 +6936,9 @@
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="RI_revdark" ID="{5810133C-D3A8-473D-BCDE-89164099566B}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_musicien" ID="{BFD1A74B-DC60-4EF7-89B9-8DCF7C3830FC}"/>
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="RI_sylenth" ID="{0049654D-7A7F-4154-B210-0FDADC16CCAB}"/>
@@ -6595,7 +7073,7 @@
 												<Property Name="Spatialization" Type="bool" Value="False"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>7</Value>
+														<Value>1</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -6605,6 +7083,15 @@
 												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise Flanger (Custom)" ID="{4FB53E31-3E1E-4A6F-B61A-CE5B45929522}" ShortID="1024434354" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+															<PropertyList>
+																<Property Name="EnableLFO" Type="bool" Value="False"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
@@ -9138,6 +9625,180 @@
 														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_musicien" ID="{FF3373EB-3AA4-4E30-BC94-9E5065FD1884}" ShortID="426459900">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-11</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{36942618-8521-401E-8C22-61A006B34591}">
+																<Effect Name="RI_watersplash (Custom)" ID="{2AF8EC23-DB5B-4D0D-9EEA-C152EFEDFDAD}" ShortID="705189620" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="8.3515625"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-28">
+																			<RTPCList>
+																				<RTPC Name="" ID="{F3931D58-5749-445B-A609-43C5D1E56EBC}" ShortID="403297914">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{BB751E61-AAA0-4CB5-9D78-F4D557FED581}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-24</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="sfx_musicien_son" ID="{110AA5A6-ED95-4C1C-8F29-8331F54B48F8}" ShortID="911859901">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="sfx_musicien_son.wav"/>
+																			</PropertyList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{76685840-96F9-4AB8-A125-9A87435C0795}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{1788B8FF-3759-4487-8FE5-BEEE49D36633}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>8.3515625</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{4A0239B9-3D93-4C9C-8483-06904F7C5627}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>8.3515625</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_soft_rain" ID="{3736A756-DBF0-425E-8DF3-C5A66B3D4A06}" ShortID="767172921" Type="SoundFX">
+															<PropertyList>
+																<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+																<Property Name="Highpass" Type="int16">
+																	<ValueList>
+																		<Value>40</Value>
+																	</ValueList>
+																</Property>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="OverridePositioning" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_soft_rain" ID="{6912F187-9261-45C1-B2E0-BED7D634D376}" ShortID="520701440">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="1.09534779356769"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="31.6920628272251"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_soft_rain.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="338283210"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_soft_rain" ID="{6912F187-9261-45C1-B2E0-BED7D634D376}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
 											<PositioningInfo>
 												<Position Name="" ID="{318CEA1D-5B5A-4CB6-B489-947F6DA42B1A}"/>
@@ -9187,6 +9848,9 @@
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="RI_absynthdark" ID="{8CD372CE-CD38-4E97-91C8-AE1C7FDF6723}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_musicien" ID="{FF3373EB-3AA4-4E30-BC94-9E5065FD1884}"/>
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="RI_sylenth" ID="{1AE67DF1-7412-4DB4-9151-97893FF19C3C}"/>
@@ -11936,6 +12600,195 @@
 														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_musicien" ID="{1CEA8F63-6DF3-4C36-A4E0-72EB05EDFD85}" ShortID="669681075">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-8</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{36942618-8521-401E-8C22-61A006B34591}">
+																<Effect Name="RI_watersplash (Custom)" ID="{649714FA-3C0B-49E5-8DE5-5E71F63BFD6F}" ShortID="962864143" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="8.3515625"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-28">
+																			<RTPCList>
+																				<RTPC Name="" ID="{F9915D49-2722-4818-AFE4-1587F837B382}" ShortID="72515166">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{A033BE39-668B-4ABC-9520-E2E24249CE32}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-26</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="sfx_musicien_son" ID="{9E77E12C-ADAA-43F2-B234-C04BD2AF0C3A}" ShortID="971740296">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="sfx_musicien_son.wav"/>
+																			</PropertyList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{F690C246-E479-4501-A64F-03C9676B7FA3}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>286.11812</XPos>
+							<YPos>-0.05683</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>597.88505</XPos>
+							<YPos>-18.13789</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>811.94964</XPos>
+							<YPos>-48</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1665.19076</XPos>
+							<YPos>0.09564</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{5B8443FD-ACFB-46D7-BFAA-083F3A07EFFE}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>8.3515625</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{5780D7F3-A2CA-4E78-9591-21493BF3C114}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>8.3515625</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_drops_carboard" ID="{1A2C9183-0A65-414D-8899-321559C0F12E}" ShortID="371320492" Type="SoundFX">
+															<PropertyList>
+																<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="PositioningType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_drops_carboard" ID="{0FECEC53-9977-4182-9D68-68B0D8C0F4CE}" ShortID="228880263">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="17.5264981301421"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_drops_carboard.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="857643460"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_drops_carboard" ID="{0FECEC53-9977-4182-9D68-68B0D8C0F4CE}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
 											<PositioningInfo>
 												<Position Name="" ID="{768E453F-BFD6-4E10-85F8-8F4D3161BCBB}"/>
@@ -11961,6 +12814,9 @@
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="RI_pipe" ID="{AEDEDA5B-9AFC-47D0-B195-CA75B52D8338}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_musicien" ID="{1CEA8F63-6DF3-4C36-A4E0-72EB05EDFD85}"/>
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="RI_marseilles" ID="{3A467265-8697-485F-AC78-3B7EC9C3B071}"/>
@@ -14684,6 +15540,183 @@
 														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_musicien" ID="{AD17E569-194A-4AC3-827C-0B87D7C2B2D6}" ShortID="864366353">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{36942618-8521-401E-8C22-61A006B34591}">
+																<Effect Name="RI_watersplash (Custom)" ID="{BB4C61D0-F1A8-4A23-A3CF-C03E65E1D911}" ShortID="904861061" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="8.3515625"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-28">
+																			<RTPCList>
+																				<RTPC Name="" ID="{FEA0119B-6DBA-4E31-AD7C-F09008F32266}" ShortID="458825002">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{C8567C0E-89D8-4F16-9862-58FD52308798}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-27</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="sfx_musicien_son" ID="{B8CB3235-589F-436B-827F-ABC98C92E09F}" ShortID="441711852">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="sfx_musicien_son.wav"/>
+																			</PropertyList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{526250BA-BF5B-4137-A2BA-30B396517BE3}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{FE96AFCE-89C3-467F-BFBF-A1F4BC54151D}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>8.3515625</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{69337556-E609-4248-B4D6-0CCD0E038677}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>8.3515625</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_water_splash" ID="{364AAD5E-8DE0-451D-AB1E-3CD690F876EB}" ShortID="365939094" Type="SoundFX">
+															<PropertyList>
+																<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="OverridePositioning" Type="bool" Value="True"/>
+																<Property Name="PositioningType" Type="int16" Value="1"/>
+																<Property Name="Spatialization" Type="bool" Value="False"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-6</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_water_splash" ID="{005485F8-5E5B-4992-83FB-6481267C7197}" ShortID="1068440469">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.799377711293943"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="18.9630157068063"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_water_splash.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="888063290"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_water_splash" ID="{005485F8-5E5B-4992-83FB-6481267C7197}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
 											<PositioningInfo>
 												<Position Name="" ID="{6226B037-9532-42DA-B387-DE2A26B4B64F}"/>
@@ -14712,6 +15745,9 @@
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="RI_suriya" ID="{59846E58-C471-4334-8E65-F4C687D12BEE}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_musicien" ID="{AD17E569-194A-4AC3-827C-0B87D7C2B2D6}"/>
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="RI_skanner_pad" ID="{5A49F997-A93E-4847-A26F-CC564E7A7177}"/>
@@ -17393,6 +18429,195 @@
 														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_musicien" ID="{FFC6C344-CB67-4EF0-B6AA-7777B0EC705B}" ShortID="516043910">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-9</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{36942618-8521-401E-8C22-61A006B34591}">
+																<Effect Name="RI_watersplash (Custom)" ID="{83DEFDCD-C781-4B11-968C-9D30E23C74F8}" ShortID="710801977" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="8.3515625"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-28">
+																			<RTPCList>
+																				<RTPC Name="" ID="{1CD8DBBD-E3D5-4E4B-B01F-AF3D96AAF4CC}" ShortID="160497836">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{BCC9A30A-0B56-4A06-AA7E-5FA3D4D07C64}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-30</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="sfx_musicien_son" ID="{9E88214C-A133-47B2-ADF0-150A288566CD}" ShortID="1062462249">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="sfx_musicien_son.wav"/>
+																			</PropertyList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{7FB80D5E-40E2-424E-A6BC-71E75A1D797F}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>547.8264735246</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>801.87032</XPos>
+							<YPos>-6.05821</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1665.19076</XPos>
+							<YPos>0.09564</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{814BFB7B-AED9-4CF7-B014-74B96BBEFDC4}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>8.3515625</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{DEC9219A-19C9-4DC0-9537-CA050B2223F5}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>8.3515625</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_electric_buzz" ID="{44B48B19-430A-4C25-AE4B-83A51196BC93}" ShortID="495983514" Type="SoundFX">
+															<PropertyList>
+																<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="PositioningType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Attenuation">
+																	<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+																</Reference>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_electric_buzz" ID="{B921D4BF-BE37-41F2-9248-D9E8BB3FAF38}" ShortID="977783490">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.581169783096485"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0.994106207928197"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="19.8974181002244"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="20.3103545250561"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_electric_buzz.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="394458146"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_electric_buzz" ID="{B921D4BF-BE37-41F2-9248-D9E8BB3FAF38}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
 											<PositioningInfo>
 												<Position Name="" ID="{53F218AB-D206-4ED7-8EC5-98C4E679783A}"/>
@@ -17409,6 +18634,9 @@
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="Default" ID="{B1674B3E-AF92-48AF-89F2-3CF51FF438AF}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_musicien" ID="{FFC6C344-CB67-4EF0-B6AA-7777B0EC705B}"/>
 													</GroupingBehavior>
 													<GroupingBehavior>
 														<ItemRef Name="RI_marseilles" ID="{2C09BB4C-8FB7-4133-8130-B8431EAC8FAB}"/>
@@ -19251,257 +20479,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="sfx_musicien_joie" ID="{3B98EA7A-20F6-435B-B94D-04433E3843C1}" ShortID="802083934" Type="SoundFX">
-									<PropertyList>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-										<Property Name="MaxSoundPerInstance" Type="int16">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_musicien_joie" ID="{3C723246-27DB-4704-9628-203FAFCC96F3}" ShortID="946500758">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="3.93838668661182"/>
-												<Property Name="FadeOutShape" Type="int16" Value="6"/>
-												<Property Name="TrimEnd" Type="Real64" Value="8.15271129394166"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>sfx_musicien_joie.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_musicien_joie" ID="{3C723246-27DB-4704-9628-203FAFCC96F3}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_musicien_nouveau_son" ID="{FC6389B0-9EAE-4D75-9AE3-7489F78B6827}" ShortID="825207909" Type="SoundFX">
-									<PropertyList>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-										<Property Name="MaxSoundPerInstance" Type="int16">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_musicien_nouveau_son" ID="{8C4D64BD-BF67-4B20-BE90-924676C1A290}" ShortID="419873606">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="4.09831781351284"/>
-												<Property Name="FadeOutShape" Type="int16" Value="6"/>
-												<Property Name="TrimEnd" Type="Real64" Value="7.59538540887559"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>sfx_musicien_nouveau_son.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_musicien_nouveau_son" ID="{8C4D64BD-BF67-4B20-BE90-924676C1A290}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_musicien_ouverture" ID="{5CEF1DE6-33A3-4FFC-86A1-490AE5A14C56}" ShortID="236768244" Type="SoundFX">
-									<PropertyList>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-										<Property Name="MaxSoundPerInstance" Type="int16">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_musicien_ouverture" ID="{F4C62682-D3B5-4DA8-A20B-22E9DB8DE4F8}" ShortID="186153398">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="3.74577497818499"/>
-												<Property Name="FadeOutShape" Type="int16" Value="6"/>
-												<Property Name="TrimEnd" Type="Real64" Value="6.23190881326352"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>sfx_musicien_ouverture.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_musicien_ouverture" ID="{F4C62682-D3B5-4DA8-A20B-22E9DB8DE4F8}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_musicien_son" ID="{D9140353-F316-4C80-9D7D-8B866373F8E6}" ShortID="1043738850" Type="SoundFX">
-									<PropertyList>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-										<Property Name="MaxSoundPerInstance" Type="int16">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_musicien_son" ID="{646A3CC8-57DA-4938-86C1-B0915BCCA0CA}" ShortID="983328808">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="4.49747569184742"/>
-												<Property Name="FadeOutShape" Type="int16" Value="6"/>
-												<Property Name="TrimEnd" Type="Real64" Value="7.00231979244576"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>sfx_musicien_son.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_musicien_son" ID="{646A3CC8-57DA-4938-86C1-B0915BCCA0CA}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="sfx_musicien_tourne" ID="{D3A01FA2-C7EB-486A-8902-D3D9196A02E1}" ShortID="365074769" Type="SoundFX">
-									<PropertyList>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-										<Property Name="MaxSoundPerInstance" Type="int16">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
-										<Property Name="PositioningType" Type="int16" Value="1"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-2</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="sfx_musicien_tourne" ID="{8A02EDD6-B055-4E18-9870-99C29A0FB736}" ShortID="788675832">
-											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="3.49793520942409"/>
-												<Property Name="FadeOutShape" Type="int16" Value="6"/>
-												<Property Name="TrimEnd" Type="Real64" Value="4.62370746073298"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>sfx_musicien_tourne.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="sfx_musicien_tourne" ID="{8A02EDD6-B055-4E18-9870-99C29A0FB736}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<RandomSequenceContainer Name="sfx_musicien_respiration" ID="{013FEFAF-0A85-4A4D-9E98-9C8F2B63A1E1}" ShortID="769481106">
-									<PropertyList>
-										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
-										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-									</PropertyList>
+								<ActorMixer Name="Sfx" ID="{4C76DC42-EC04-478D-AE58-028E967E9A50}" ShortID="299434981">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -19511,16 +20489,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="sfx_musicien_respiration_01" ID="{FED9F066-FFD4-443C-83B5-F8D8C9ED552C}" ShortID="42837459" Type="SoundFX">
+										<Sound Name="sfx_musicien_joie" ID="{3B98EA7A-20F6-435B-B94D-04433E3843C1}" ShortID="802083934" Type="SoundFX">
 											<PropertyList>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
-														<Value>10</Value>
+														<Value>2</Value>
 													</ValueList>
 												</Property>
-												<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Priority" Type="int16">
 													<ValueList>
@@ -19534,7 +20510,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-7</Value>
+														<Value>-3</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -19550,30 +20526,28 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="sfx_musicien_respiration_01" ID="{D070B3DC-3871-4B20-86BE-CA8F2A2F0A45}" ShortID="727022421">
+												<AudioFileSource Name="sfx_musicien_joie" ID="{3C723246-27DB-4704-9628-203FAFCC96F3}" ShortID="946500758">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="4.30642931937173"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="3.93838668661182"/>
 														<Property Name="FadeOutShape" Type="int16" Value="6"/>
-														<Property Name="TrimEnd" Type="Real64" Value="6.25077835951135"/>
+														<Property Name="TrimEnd" Type="Real64" Value="8.15271129394166"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>sfx_musicien_respiration_01.wav</AudioFile>
+													<AudioFile>sfx_musicien_joie.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="sfx_musicien_respiration_01" ID="{D070B3DC-3871-4B20-86BE-CA8F2A2F0A45}" Platform="Linked"/>
+												<ActiveSource Name="sfx_musicien_joie" ID="{3C723246-27DB-4704-9628-203FAFCC96F3}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="sfx_musicien_respiration_02" ID="{C48775B5-8FD5-43C3-867F-BBF0499BED78}" ShortID="107842917" Type="SoundFX">
+										<Sound Name="sfx_musicien_nouveau_son" ID="{FC6389B0-9EAE-4D75-9AE3-7489F78B6827}" ShortID="825207909" Type="SoundFX">
 											<PropertyList>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
-														<Value>10</Value>
+														<Value>2</Value>
 													</ValueList>
 												</Property>
-												<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Priority" Type="int16">
 													<ValueList>
@@ -19587,7 +20561,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-5</Value>
+														<Value>-4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -19603,30 +20577,28 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="sfx_musicien_respiration_02" ID="{E2DDE866-8F77-4D93-A8C3-B674E3E2FFB8}" ShortID="649306740">
+												<AudioFileSource Name="sfx_musicien_nouveau_son" ID="{8C4D64BD-BF67-4B20-BE90-924676C1A290}" ShortID="419873606">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="4.81393154761905"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="4.09831781351284"/>
 														<Property Name="FadeOutShape" Type="int16" Value="6"/>
-														<Property Name="TrimEnd" Type="Real64" Value="7.04028273809524"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.59538540887559"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>sfx_musicien_respiration_02.wav</AudioFile>
+													<AudioFile>sfx_musicien_nouveau_son.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="sfx_musicien_respiration_02" ID="{E2DDE866-8F77-4D93-A8C3-B674E3E2FFB8}" Platform="Linked"/>
+												<ActiveSource Name="sfx_musicien_nouveau_son" ID="{8C4D64BD-BF67-4B20-BE90-924676C1A290}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="sfx_musicien_respiration_03" ID="{B3F56F66-44F4-41F1-838C-925EE881592F}" ShortID="911773158" Type="SoundFX">
+										<Sound Name="sfx_musicien_ouverture" ID="{5CEF1DE6-33A3-4FFC-86A1-490AE5A14C56}" ShortID="236768244" Type="SoundFX">
 											<PropertyList>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
-														<Value>10</Value>
+														<Value>2</Value>
 													</ValueList>
 												</Property>
-												<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Priority" Type="int16">
 													<ValueList>
@@ -19640,7 +20612,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-7</Value>
+														<Value>-4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -19656,30 +20628,28 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="sfx_musicien_respiration_03" ID="{9361A4D9-9D09-451B-BC53-2B14A39ADA9E}" ShortID="68116553">
+												<AudioFileSource Name="sfx_musicien_ouverture" ID="{F4C62682-D3B5-4DA8-A20B-22E9DB8DE4F8}" ShortID="186153398">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="3.91714154824233"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="3.74577497818499"/>
 														<Property Name="FadeOutShape" Type="int16" Value="6"/>
-														<Property Name="TrimEnd" Type="Real64" Value="7.09078347045624"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.23190881326352"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>sfx_musicien_respiration_03.wav</AudioFile>
+													<AudioFile>sfx_musicien_ouverture.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="sfx_musicien_respiration_03" ID="{9361A4D9-9D09-451B-BC53-2B14A39ADA9E}" Platform="Linked"/>
+												<ActiveSource Name="sfx_musicien_ouverture" ID="{F4C62682-D3B5-4DA8-A20B-22E9DB8DE4F8}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="sfx_musicien_respiration_04" ID="{49C8BE62-7C93-48F4-AA00-5D20FD176F90}" ShortID="528441138" Type="SoundFX">
+										<Sound Name="sfx_musicien_son" ID="{D9140353-F316-4C80-9D7D-8B866373F8E6}" ShortID="1043738850" Type="SoundFX">
 											<PropertyList>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
-														<Value>10</Value>
+														<Value>2</Value>
 													</ValueList>
 												</Property>
-												<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Priority" Type="int16">
 													<ValueList>
@@ -19693,7 +20663,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-6</Value>
+														<Value>-2</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -19709,30 +20679,28 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="sfx_musicien_respiration_04" ID="{5B6A14A2-2681-48E9-85FB-C0DAF6AFB87D}" ShortID="88545374">
+												<AudioFileSource Name="sfx_musicien_son" ID="{646A3CC8-57DA-4938-86C1-B0915BCCA0CA}" ShortID="983328808">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="5.18456958987784"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="4.49747569184742"/>
 														<Property Name="FadeOutShape" Type="int16" Value="6"/>
-														<Property Name="TrimEnd" Type="Real64" Value="7.52106192346049"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.00231979244576"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>sfx_musicien_respiration_04.wav</AudioFile>
+													<AudioFile>sfx_musicien_son.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="sfx_musicien_respiration_04" ID="{5B6A14A2-2681-48E9-85FB-C0DAF6AFB87D}" Platform="Linked"/>
+												<ActiveSource Name="sfx_musicien_son" ID="{646A3CC8-57DA-4938-86C1-B0915BCCA0CA}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="sfx_musicien_respiration_05" ID="{C4577216-020C-43EE-A238-24EEEF91932A}" ShortID="1063770914" Type="SoundFX">
+										<Sound Name="sfx_musicien_tourne" ID="{D3A01FA2-C7EB-486A-8902-D3D9196A02E1}" ShortID="365074769" Type="SoundFX">
 											<PropertyList>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
-														<Value>10</Value>
+														<Value>2</Value>
 													</ValueList>
 												</Property>
-												<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Priority" Type="int16">
 													<ValueList>
@@ -19746,7 +20714,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-8</Value>
+														<Value>-2</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -19762,44 +20730,45 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="sfx_musicien_respiration_05" ID="{64BE165C-D628-4EA3-9899-7B1780346E49}" ShortID="1013727589">
+												<AudioFileSource Name="sfx_musicien_tourne" ID="{8A02EDD6-B055-4E18-9870-99C29A0FB736}" ShortID="788675832">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="4.69456260907504"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="3.49793520942409"/>
 														<Property Name="FadeOutShape" Type="int16" Value="6"/>
-														<Property Name="TrimEnd" Type="Real64" Value="7.5571007853403"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.62370746073298"/>
 													</PropertyList>
 													<Language>SFX</Language>
-													<AudioFile>sfx_musicien_respiration_05.wav</AudioFile>
+													<AudioFile>sfx_musicien_tourne.wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="sfx_musicien_respiration_05" ID="{64BE165C-D628-4EA3-9899-7B1780346E49}" Platform="Linked"/>
+												<ActiveSource Name="sfx_musicien_tourne" ID="{8A02EDD6-B055-4E18-9870-99C29A0FB736}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="sfx_musicien_respiration_06" ID="{34834FB9-6D38-4D1C-85FE-A8A63535556E}" ShortID="464450693" Type="SoundFX">
+										<RandomSequenceContainer Name="sfx_musicien_respiration" ID="{013FEFAF-0A85-4A4D-9E98-9C8F2B63A1E1}" ShortID="769481106">
 											<PropertyList>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
-														<Value>10</Value>
+														<Value>2</Value>
 													</ValueList>
 												</Property>
-												<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
 												<Property Name="Priority" Type="int16">
 													<ValueList>
 														<Value>70</Value>
 													</ValueList>
 												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 												<Property Name="UseMaxSoundPerInstance" Type="bool">
 													<ValueList>
 														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-8</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -19815,22 +20784,338 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="sfx_musicien_respiration_06" ID="{17AF0164-C311-4DAC-8D06-CDD2989A80E2}" ShortID="475948589">
+												<Sound Name="sfx_musicien_respiration_01" ID="{FED9F066-FFD4-443C-83B5-F8D8C9ED552C}" ShortID="42837459" Type="SoundFX">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="4.92963316504612"/>
-														<Property Name="FadeOutShape" Type="int16" Value="6"/>
-														<Property Name="TrimEnd" Type="Real64" Value="7.02419832959361"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Priority" Type="int16">
+															<ValueList>
+																<Value>70</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-7</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>sfx_musicien_respiration_06.wav</AudioFile>
-												</AudioFileSource>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_musicien_respiration_01" ID="{D070B3DC-3871-4B20-86BE-CA8F2A2F0A45}" ShortID="727022421">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="4.30642931937173"/>
+																<Property Name="FadeOutShape" Type="int16" Value="6"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.25077835951135"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sfx_musicien_respiration_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_musicien_respiration_01" ID="{D070B3DC-3871-4B20-86BE-CA8F2A2F0A45}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_musicien_respiration_02" ID="{C48775B5-8FD5-43C3-867F-BBF0499BED78}" ShortID="107842917" Type="SoundFX">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Priority" Type="int16">
+															<ValueList>
+																<Value>70</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_musicien_respiration_02" ID="{E2DDE866-8F77-4D93-A8C3-B674E3E2FFB8}" ShortID="649306740">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="4.81393154761905"/>
+																<Property Name="FadeOutShape" Type="int16" Value="6"/>
+																<Property Name="TrimEnd" Type="Real64" Value="7.04028273809524"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sfx_musicien_respiration_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_musicien_respiration_02" ID="{E2DDE866-8F77-4D93-A8C3-B674E3E2FFB8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_musicien_respiration_03" ID="{B3F56F66-44F4-41F1-838C-925EE881592F}" ShortID="911773158" Type="SoundFX">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Priority" Type="int16">
+															<ValueList>
+																<Value>70</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-7</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_musicien_respiration_03" ID="{9361A4D9-9D09-451B-BC53-2B14A39ADA9E}" ShortID="68116553">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="3.91714154824233"/>
+																<Property Name="FadeOutShape" Type="int16" Value="6"/>
+																<Property Name="TrimEnd" Type="Real64" Value="7.09078347045624"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sfx_musicien_respiration_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_musicien_respiration_03" ID="{9361A4D9-9D09-451B-BC53-2B14A39ADA9E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_musicien_respiration_04" ID="{49C8BE62-7C93-48F4-AA00-5D20FD176F90}" ShortID="528441138" Type="SoundFX">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Priority" Type="int16">
+															<ValueList>
+																<Value>70</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_musicien_respiration_04" ID="{5B6A14A2-2681-48E9-85FB-C0DAF6AFB87D}" ShortID="88545374">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="5.18456958987784"/>
+																<Property Name="FadeOutShape" Type="int16" Value="6"/>
+																<Property Name="TrimEnd" Type="Real64" Value="7.52106192346049"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sfx_musicien_respiration_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_musicien_respiration_04" ID="{5B6A14A2-2681-48E9-85FB-C0DAF6AFB87D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_musicien_respiration_05" ID="{C4577216-020C-43EE-A238-24EEEF91932A}" ShortID="1063770914" Type="SoundFX">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Priority" Type="int16">
+															<ValueList>
+																<Value>70</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-8</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_musicien_respiration_05" ID="{64BE165C-D628-4EA3-9899-7B1780346E49}" ShortID="1013727589">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="4.69456260907504"/>
+																<Property Name="FadeOutShape" Type="int16" Value="6"/>
+																<Property Name="TrimEnd" Type="Real64" Value="7.5571007853403"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sfx_musicien_respiration_05.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_musicien_respiration_05" ID="{64BE165C-D628-4EA3-9899-7B1780346E49}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_musicien_respiration_06" ID="{34834FB9-6D38-4D1C-85FE-A8A63535556E}" ShortID="464450693" Type="SoundFX">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Priority" Type="int16">
+															<ValueList>
+																<Value>70</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-8</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_musicien_respiration_06" ID="{17AF0164-C311-4DAC-8D06-CDD2989A80E2}" ShortID="475948589">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="4.92963316504612"/>
+																<Property Name="FadeOutShape" Type="int16" Value="6"/>
+																<Property Name="TrimEnd" Type="Real64" Value="7.02419832959361"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sfx_musicien_respiration_06.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_musicien_respiration_06" ID="{17AF0164-C311-4DAC-8D06-CDD2989A80E2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_musicien_respiration_06" ID="{17AF0164-C311-4DAC-8D06-CDD2989A80E2}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										</RandomSequenceContainer>
 									</ChildrenList>
-								</RandomSequenceContainer>
+								</ActorMixer>
+								<ActorMixer Name="Convolutions" ID="{88008333-E99F-42FE-B25B-E03DD6A0ACE8}" ShortID="164005086">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+										</Reference>
+									</ReferenceList>
+								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

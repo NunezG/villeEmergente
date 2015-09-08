@@ -72,6 +72,7 @@
 				<Event Id="2442452512" Name="switch_atmo5" MaxAttenuation="0.000000"/>
 				<Event Id="2442452515" Name="switch_atmo6" MaxAttenuation="0.000000"/>
 				<Event Id="2442452514" Name="switch_atmo7" MaxAttenuation="0.000000"/>
+				<Event Id="3926128980" Name="switch_atmoMus" MaxAttenuation="0.000000"/>
 				<Event Id="3587869589" Name="switch_atmoRI1" MaxAttenuation="0.000000"/>
 				<Event Id="3587869590" Name="switch_atmoRI2" MaxAttenuation="0.000000"/>
 				<Event Id="3587869591" Name="switch_atmoRI3" MaxAttenuation="0.000000"/>
@@ -86,6 +87,7 @@
 				<Event Id="3617898633" Name="switch_dark5" MaxAttenuation="0.000000"/>
 				<Event Id="3617898634" Name="switch_dark6" MaxAttenuation="0.000000"/>
 				<Event Id="3617898635" Name="switch_dark7" MaxAttenuation="0.000000"/>
+				<Event Id="4044973233" Name="switch_darkMus" MaxAttenuation="0.000000"/>
 				<Event Id="3843097384" Name="switch_darkRI1" MaxAttenuation="0.000000"/>
 				<Event Id="3843097387" Name="switch_darkRI2" MaxAttenuation="0.000000"/>
 				<Event Id="3843097386" Name="switch_darkRI3" MaxAttenuation="0.000000"/>
@@ -234,6 +236,11 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_watersplash_51175EC6.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="266055826" Language="SFX">
+					<ShortName>sfx_musicien_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_5EF7D0CA.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="279598686" Language="SFX">
 					<ShortName>Sfx_ri_pipe.wav</ShortName>
 					<Path>SFX\Sfx_ri_pipe_950FF8F3.wem</Path>
@@ -286,6 +293,11 @@
 				<File Id="419873606" Language="SFX">
 					<ShortName>sfx_musicien_nouveau_son.wav</ShortName>
 					<Path>SFX\sfx_musicien_nouveau_son_17F6C3CF.wem</Path>
+				</File>
+				<File Id="441711852" Language="SFX">
+					<ShortName>sfx_musicien_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_A104AEB9.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="469843770" Language="SFX">
 					<ShortName>Sfx_ri_sylenth.wav</ShortName>
@@ -358,6 +370,11 @@
 				<File Id="649306740" Language="SFX">
 					<ShortName>sfx_musicien_respiration_02.wav</ShortName>
 					<Path>SFX\sfx_musicien_respiration_02_D53CC522.wem</Path>
+				</File>
+				<File Id="702626441" Language="SFX">
+					<ShortName>sfx_musicien_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_5EF7D0CA.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="713635385" Language="SFX">
 					<ShortName>ri_pipe.wav</ShortName>
@@ -442,6 +459,11 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_choirslike_EC96448D.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="911859901" Language="SFX">
+					<ShortName>sfx_musicien_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_A104AEB9.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="932933361" Language="SFX">
 					<ShortName>ri_skannermorph.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_skannermorph_01B3EE8B.wem</Path>
@@ -458,6 +480,11 @@
 				<File Id="963062918" Language="SFX">
 					<ShortName>sfx_footsteps_06_v2.wav</ShortName>
 					<Path>SFX\sfx_footsteps_06_v2_950FF8F3.wem</Path>
+				</File>
+				<File Id="971740296" Language="SFX">
+					<ShortName>sfx_musicien_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_172299DF.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="983328808" Language="SFX">
 					<ShortName>sfx_musicien_son.wav</ShortName>
@@ -501,6 +528,11 @@
 				<File Id="1058618159" Language="SFX">
 					<ShortName>sfx_guide_nouveau_son.wav</ShortName>
 					<Path>SFX\sfx_guide_nouveau_son_417B9326.wem</Path>
+				</File>
+				<File Id="1062462249" Language="SFX">
+					<ShortName>sfx_musicien_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_C9D448BF.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

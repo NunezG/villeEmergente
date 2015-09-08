@@ -67,6 +67,7 @@ namespace AK
         static const AkUniqueID SWITCH_ATMO5 = 2442452512U;
         static const AkUniqueID SWITCH_ATMO6 = 2442452515U;
         static const AkUniqueID SWITCH_ATMO7 = 2442452514U;
+        static const AkUniqueID SWITCH_ATMOMUS = 3926128980U;
         static const AkUniqueID SWITCH_ATMORI1 = 3587869589U;
         static const AkUniqueID SWITCH_ATMORI2 = 3587869590U;
         static const AkUniqueID SWITCH_ATMORI3 = 3587869591U;
@@ -81,6 +82,7 @@ namespace AK
         static const AkUniqueID SWITCH_DARK5 = 3617898633U;
         static const AkUniqueID SWITCH_DARK6 = 3617898634U;
         static const AkUniqueID SWITCH_DARK7 = 3617898635U;
+        static const AkUniqueID SWITCH_DARKMUS = 4044973233U;
         static const AkUniqueID SWITCH_DARKRI1 = 3843097384U;
         static const AkUniqueID SWITCH_DARKRI2 = 3843097387U;
         static const AkUniqueID SWITCH_DARKRI3 = 3843097386U;
@@ -141,6 +143,7 @@ namespace AK
                 static const AkUniqueID ATMO_5 = 1051899174U;
                 static const AkUniqueID ATMO_6 = 1051899173U;
                 static const AkUniqueID ATMO_7 = 1051899172U;
+                static const AkUniqueID ATMO_MUS = 3586537614U;
                 static const AkUniqueID DARK_1 = 3283321497U;
                 static const AkUniqueID DARK_2 = 3283321498U;
                 static const AkUniqueID DARK_3 = 3283321499U;
@@ -148,6 +151,7 @@ namespace AK
                 static const AkUniqueID DARK_5 = 3283321501U;
                 static const AkUniqueID DARK_6 = 3283321502U;
                 static const AkUniqueID DARK_7 = 3283321503U;
+                static const AkUniqueID DARK_MUS = 1602026157U;
                 static const AkUniqueID DEFAULT = 782826392U;
             } // namespace SWITCH
         } // namespace ELEMENTS_DECOR
