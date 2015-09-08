@@ -162,16 +162,12 @@ public class LifeSceneParameters : MonoBehaviour {
                 param = entityKnowledge.addChild(EventProp, "Temporary");
                 entityKnowledge.setBool(param, Temporary);
             }
-			Debug.Log ("JUST BEFORE ACTIVATEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDDDDDDDDDDDDDDDDDDDDDDDDDDDDD "+ entity.name);
             if (!entityKnowledge.hasChild(EventProp, "Activated"))
             {
-				Debug.Log ("NOOOTTTTTTTTTTT ACTIVATEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEDDDDDDDDDDDDDDDDDDDDDDDDDDDDD");
 
                 param = entityKnowledge.addChild(EventProp, "Activated");
-				Debug.Log ("NOOOTTTTTTTTTTT A22222222222222222222");
 
                 entityKnowledge.setBool(param, activated);
-				Debug.Log ("END ACTIVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
             }
             if (!entityKnowledge.hasChild(EventProp, "InteractionNPC"))
             {
