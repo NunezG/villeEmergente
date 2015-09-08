@@ -311,6 +311,7 @@ GameObject:
   - 4: {fileID: 472934}
   - 95: {fileID: 9572896}
   - 114: {fileID: 11426788}
+  - 114: {fileID: 11483310}
   m_Layer: 0
   m_Name: PNJ_final
   m_TagString: Untagged
@@ -627,6 +628,17 @@ MonoBehaviour:
   - Errance
   - CriErrance
   - Satisfait
+--- !u!114 &11483310
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 568bc0ee0cdf8324593a205fc4303cc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!137 &13772896
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

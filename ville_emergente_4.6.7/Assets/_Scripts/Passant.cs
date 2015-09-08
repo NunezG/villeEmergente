@@ -99,7 +99,7 @@ public class Passant : MonoBehaviour {
 
     public void EmitSound()
     {
-        WwiseAudioManager.instance.PlayFiniteEvent(audioEventName, this.gameObject);
+        WwiseAudioManager.PlayFiniteEvent(audioEventName, this.gameObject);
         print("Emit Sound");
     }
 
