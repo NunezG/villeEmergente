@@ -11,6 +11,7 @@ using RAIN.Motion;
 public class Guide : MonoBehaviour
 {
     public static GameObject[] allPointsOfView = null;
+    public List<GameObject> targets = new List<GameObject>();
     public GameObject inHandPosition, inHandObject;
 
     public GameObject startingFragment;
@@ -24,9 +25,20 @@ public class Guide : MonoBehaviour
 
     public void Awake()
     {
-        tag = "NPC";
+        // if(targets==null)
+        //Debug.Log ("START MUSICIENN");
+        int matriculeMusicien = int.Parse(this.gameObject.name.Substring(5));
+
+
         if (allPointsOfView == null)
             allPointsOfView = GameObject.FindGameObjectsWithTag("PointDeVue");
+        foreach (GameObject gObject in allPointsOfView)
+        {
+            if (gObject.name == "PointDeVue" + matriculeMusicien)
+            {
+                targets.Add(gObject);
+            }
+        }
     }
 
     // Use this for initialization

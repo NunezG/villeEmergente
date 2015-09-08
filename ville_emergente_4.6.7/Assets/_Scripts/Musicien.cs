@@ -60,7 +60,6 @@ public class Musicien : MonoBehaviour{
     public void Start()
     {
         audioEventName = defaultAudioEventName;
-
         //print("number : " + this.gameObject.name.Substring(8));
         AIRig aiRig = GetComponentInChildren<AIRig>();
         tMemory = aiRig.AI.WorkingMemory as RAIN.Memory.BasicMemory;
@@ -148,7 +147,7 @@ public class Musicien : MonoBehaviour{
     public void OnAddingFragment(Fragment fragment)
     {
         print("NPC:OnAddingFragment");
-
+        //WwiseAudioManager.instance.soundOuverture("musicien", this.gameObject);
         //SetIsFragmentComplete(true);
         SetJustReceivedFragmentComplete(true);
         this.fragment = fragment;
@@ -160,9 +159,30 @@ public class Musicien : MonoBehaviour{
 
     }
 
+
+    public void PlayIdleSoundobject(object in_cookie, AkCallbackType in_type, object in_info)
+    {
+
+       // if (in_type == AK_EndOfEvent)
+
+            {
+
+               //AkEventCallbackInfo info = (AkEventCallbackInfo)in_info; //Then do stuff.
+
+            }
+
+    }
     public void EmitSound()
     {
         //WwiseAudioManager.instance.PlayFiniteEvent(audioEventName, this.gameObject);
+        if (tMemory.GetItem<bool>("isFragmentComplete"))
+        {
+           // WwiseAudioManager.instance.soundNouveauSon("musicien", this.gameObject, PlayIdleSound);
+        }
+        else
+        {
+            //WwiseAudioManager.instance.soundSon("musicien", this.gameObject);
+        }
         print("Emit Sound");
     }
 

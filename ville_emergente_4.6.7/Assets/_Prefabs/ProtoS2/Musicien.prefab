@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
-  soundEevent: 
+  soundEvent: 
 --- !u!114 &11468352
 MonoBehaviour:
   m_ObjectHideFlags: 1
