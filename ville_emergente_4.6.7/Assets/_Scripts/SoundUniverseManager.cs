@@ -19,6 +19,7 @@ public class SoundUniverseManager : MonoBehaviour {
 	void Start () {
 		playingObjects = new List<GameObject>();
 		switchType = switchAtmo;
+		WwiseAudioManager.PlayFiniteEvent("ville_calme", this.gameObject);
 	}
 	
 	// Update is called once per frame
@@ -108,14 +109,14 @@ public class SoundUniverseManager : MonoBehaviour {
 		for (int i = 0; i < playingObjects.Count; i++)
 		{
 			//Stoppe son du convolver avec switch précédent
-			WwiseAudioManager.instance.StopLoopEvent (playingObjects[i].GetComponent<InteractibleObject>().soundEvent, playingObjects[i], true);
+			WwiseAudioManager.StopLoopEvent (playingObjects[i].GetComponent<InteractibleObject>().soundEvent, playingObjects[i], true);
 
 			//Lance switch du convolver
-			WwiseAudioManager.instance.PlayFiniteEvent(switchType+playingObjects[i].GetComponent<ConvolutionObject>().switchNumber, playingObjects[i]);
+			WwiseAudioManager.PlayFiniteEvent(switchType+playingObjects[i].GetComponent<ConvolutionObject>().switchNumber, playingObjects[i]);
 
 			//Debug.Log( " play loop: " + playingObjects[i].GetComponent<InteractibleObject>().soundEevent);
 			//Lance son du convolver
-			WwiseAudioManager.instance.PlayLoopEvent (playingObjects[i].GetComponent<InteractibleObject>().soundEvent, playingObjects[i], true);
+			WwiseAudioManager.PlayLoopEvent (playingObjects[i].GetComponent<InteractibleObject>().soundEvent, playingObjects[i], true);
 		}
 	}
 }

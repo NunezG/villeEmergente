@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MusicController : WwiseAudioManager {
+public class MusicController : MonoBehaviour {
 
     public GameObject[] tabGobs;
 
@@ -12,7 +12,7 @@ public class MusicController : WwiseAudioManager {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.A))
+    /*    if (Input.GetKeyDown(KeyCode.A))
         {
             PlayLoopEvent("water_3DObject_play", tabGobs[0]);
         }
@@ -40,7 +40,7 @@ public class MusicController : WwiseAudioManager {
         {
             AkSoundEngine.PostEvent("prendre_morceau", tabGobs[0], (uint)AkCallbackType.AK_EndOfEvent, MyCallbackFunction, tabGobs[0]);
         }
-
+		*/
 	}
     void MyCallbackFunction(object in_cookie, AkCallbackType in_type, object in_info)
     {
