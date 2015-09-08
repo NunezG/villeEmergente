@@ -70,6 +70,8 @@ public class Musicien : MonoBehaviour{
         endWaitTimer = (int)Random.Range(minEndWaitTimer, maxEndWaitTimer);
 
         this.renderer.material = material;
+
+		//WwiseAudioManager.instance.soundPlayIdle ("musicien", this.gameObject);
 	}
 	
 	// Update is called once per frame
