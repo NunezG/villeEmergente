@@ -32,6 +32,7 @@ public class AnimationManager : MonoBehaviour {
 		{
 			ClearTriggers ();
 			this.GetComponentInChildren<Animator> ().SetBool (listeAnimations[Random.Range(0,listeAnimations.Length)], true);
+			//transform.FindChild("mesh").GetComponent<AudioEventManager>().soundOuverture();
 
 		} 
 

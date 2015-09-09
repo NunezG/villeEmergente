@@ -14,7 +14,8 @@ public class EmitSound : RAINAction
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
-        //ai.Body.GetComponent<Musicien>().EmitSound();
+		ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().CriErrance ();
+		ai.Body.transform.FindChild("mesh").GetComponent<AudioEventManager> ().soundSon ();
         return ActionResult.SUCCESS;
     }
 

@@ -69,7 +69,7 @@ public class Musicien : MonoBehaviour{
         endSoundTimer = (int)Random.Range(minEndSoundTimer, maxEndSoundTimer);
         endWaitTimer = (int)Random.Range(minEndWaitTimer, maxEndWaitTimer);
 
-        this.renderer.material = material;
+		this.transform.FindChild("mesh").GetChild(1).renderer.material = material;
 
 		//WwiseAudioManager.instance.soundPlayIdle ("musicien", this.gameObject);
 	}

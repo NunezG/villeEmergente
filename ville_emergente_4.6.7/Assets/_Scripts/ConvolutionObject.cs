@@ -15,7 +15,7 @@ public class ConvolutionObject : MonoBehaviour {
 
 	// Use this for initialization
 	public void Start () {
-		this.renderer.material = defaultMaterial;
+		//this.renderer.material = defaultMaterial;
 		this.gameObject.layer = 8; // mis dans la layer InteractibleObject pour limiter les raycast avec un layermask
 	}
 	

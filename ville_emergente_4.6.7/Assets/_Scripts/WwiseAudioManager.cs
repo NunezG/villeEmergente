@@ -24,6 +24,11 @@ public static class WwiseAudioManager {
 		AkSoundEngine.PostEvent(eventName, gObject);
     }
 
+	public static void PlayFiniteEvent(string eventName, GameObject gObject, AkCallbackManager.EventCallback callBackFunction )
+	{
+		AkSoundEngine.PostEvent(eventName, gObject, (uint)AkCallbackType.AK_EndOfEvent, callBackFunction, gObject);	
+	}
+
 	public static void PlayLoopEvent(string eventName, GameObject gObject, bool convolution = false)
 	{
 		if (convolution)

@@ -18,6 +18,8 @@ public class MusicianDance : RAINAction
         Debug.Log("Musician dance !");
 
         ai.WorkingMemory.SetItem<bool>("isDancing", true);
+		ai.Body.GetComponent<AnimationManager> ().Danse();
+		ai.Body.GetComponent<AudioEventManager> ().soundDanse ();
         return ActionResult.SUCCESS;
     }
 
