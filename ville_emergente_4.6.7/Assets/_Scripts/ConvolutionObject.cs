@@ -60,7 +60,7 @@ public class ConvolutionObject : MonoBehaviour {
 		SoundUniverseManager.removeSoundEvent(this.gameObject);
 			
 		fragment = null;
-		this.renderer.material = activatedMaterial;
+		this.GetComponentInChildren<Renderer>().material = activatedMaterial;
 		//audioSource.clip = defaultClip;
 		//audioEventName = defaultAudioEventName;
 		return fragPicked;
@@ -78,10 +78,10 @@ public class ConvolutionObject : MonoBehaviour {
 
 		//fragment.transform.parent = this.transform;
 		
-		print("SettingPiece:OnAddingFragment");
+		print("SettingPiece:OnAddingFragment:" + GetComponent<InteractibleObject>().type);
 		this.fragment = fragment;
 		//activatedMaterial = fragment.material;
-		this.renderer.material = fragment.material;
+		this.GetComponentInChildren<Renderer>().material = fragment.material;
 		//this.audioSource.clip = fragment.GetClip();
 		// this.audioEventName = fragment.audioEventName;
 		

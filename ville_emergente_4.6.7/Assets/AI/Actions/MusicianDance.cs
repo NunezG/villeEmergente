@@ -15,10 +15,10 @@ public class MusicianDance : RAINAction
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
 
-        Debug.Log("Musician dance !");
 
         ai.WorkingMemory.SetItem<bool>("isDancing", true);
-		ai.Body.GetComponent<AnimationManager> ().Danse();
+
+		ai.Body.GetComponent<AnimationManager> ().Sautille();
 		ai.Body.GetComponent<AudioEventManager> ().soundDanse ();
         return ActionResult.SUCCESS;
     }

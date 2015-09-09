@@ -23,10 +23,10 @@ public class Musicien : MonoBehaviour{
     public Material material;
     //public AudioSource audioSource;
     //public AudioClip defaultClip;
-    private string audioEventName = "";
-    public string defaultAudioEventName="";
+   // private string audioEventName = "";
+   // public string defaultAudioEventName="";
     //public List<Fragment> fragments = new List<Fragment>();
-    public Fragment fragment = null;
+ //   public Fragment fragment = null;
 
     public static GameObject[] allNavTargets = null;
     public List<GameObject> targets = new List<GameObject>();
@@ -59,7 +59,7 @@ public class Musicien : MonoBehaviour{
 	// Use this for initialization
     public void Start()
     {
-        audioEventName = defaultAudioEventName;
+       // audioEventName = defaultAudioEventName;
 
         //print("number : " + this.gameObject.name.Substring(8));
         AIRig aiRig = GetComponentInChildren<AIRig>();
@@ -153,11 +153,11 @@ public class Musicien : MonoBehaviour{
 
         //SetIsFragmentComplete(true);
         SetJustReceivedFragmentComplete(true);
-        this.fragment = fragment;
+       // this.Getcomp   fragment = fragment;
         
-        this.renderer.material = fragment.material;
+     //   this.renderer.material = fragment.material;
         //this.audioSource.clip = fragment.GetClip();
-		this.audioEventName = fragment.GetComponent<InteractibleObject>().soundEvent;
+	//	this.audioEventName = fragment.GetComponent<InteractibleObject>().soundEvent;
 
 
     }

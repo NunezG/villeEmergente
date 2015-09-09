@@ -17,6 +17,10 @@ public class StartDance : RAINAction
         Debug.Log(ai.Body.name + " : Passant dance !");
 
         ai.WorkingMemory.SetItem<bool>("isDancing", true);
+
+		ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Danse ();
+		ai.Body.transform.FindChild ("mesh").GetComponent<AudioEventManager> ().soundDanse ();
+
         return ActionResult.SUCCESS;
     }
 

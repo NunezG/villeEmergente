@@ -14,6 +14,7 @@ public class StopDance : RAINAction
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
+		ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Marche ();
 
         ai.WorkingMemory.SetItem<bool>("isDancing", false);
             return ActionResult.SUCCESS;

@@ -7,6 +7,7 @@ public class AudioEventManager : MonoBehaviour {
 
     public void Start()
     {
+		SoundPlayIdle ();
 		//if (audioName=="")
 		//audioName = gameObject.name;
     }

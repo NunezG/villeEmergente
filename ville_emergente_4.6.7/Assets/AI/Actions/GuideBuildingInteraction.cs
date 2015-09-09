@@ -15,6 +15,10 @@ public class GuideBuildingInteraction : RAINAction
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
+
+		ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().MontreDeux ();
+		ai.Body.transform.FindChild ("mesh").GetComponent<AudioEventManager> ().soundNouveauSon ();
+
         ai.Body.GetComponent<Guide>().InteractWithBuilding();
         ai.WorkingMemory.SetItem<bool>("hasInteracted", true);
         return ActionResult.SUCCESS;
