@@ -89,8 +89,8 @@ public class ObjectInteractor : MonoBehaviour {
 			inHandObject.GetComponent<Fragment>().Drop();
 			     
 			if (hitObject == null){
-				WwiseAudioManager.instance.PlayFiniteEvent("lacher_morceau", inHandObject);
-				WwiseAudioManager.instance.PlayLoopEvent ("fragment_call", this.gameObject, false);
+				WwiseAudioManager.PlayFiniteEvent("lacher_morceau", inHandObject);
+				WwiseAudioManager.PlayLoopEvent ("fragment_call", this.gameObject, false);
 			}
 
             handsFull = false;

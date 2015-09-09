@@ -20,6 +20,8 @@
 						<Switch Name="Dark_5" ID="{973CCB6B-3D15-4A6A-9EB9-C6EC72EB6251}"/>
 						<Switch Name="Dark_6" ID="{9211FD1D-6C13-41C8-86C8-3B4B2C1475CA}"/>
 						<Switch Name="Dark_7" ID="{A7D16E56-5F54-4C8E-BDA0-2372329B19EA}"/>
+						<Switch Name="Atmo_mus" ID="{07FD9990-460F-43B1-B8F7-9BDF1DA9A2C8}"/>
+						<Switch Name="Dark_mus" ID="{39C9F7DE-65C7-4DEC-86BB-ACFE0BF4F364}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="Convolutions_Sfx" ID="{126EA80F-09FF-4FF4-BA28-F9D78E97C415}">

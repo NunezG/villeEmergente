@@ -31,14 +31,9 @@ public class Fragment : MonoBehaviour{
     {
         print("FragmentStart");
 		randomSoundFromFamily ();
-		WwiseAudioManager.instance.PlayLoopEvent ("fragment_call", this.gameObject, false);
+		WwiseAudioManager.PlayLoopEvent ("fragment_call", this.gameObject, false);
         //audioSource.clip = defaultClip;
        // this.renderer.material = material;
-		
-		AkSoundEngine.AddPlayerMotionDevice (0, 1, AkSoundEngine.AKMOTIONDEVICEID_RUMBLE);
-		//AkSoundEngine.SetPlayerListener (0, 0);
-		AkSoundEngine.SetListenerPipeline (0, true, true);
-		//AkSoundEngine.SetActiveListeners(GameObject.FindWithTag("Player"),1);
 	}
 	
 	// Update is called once per frame
@@ -49,12 +44,12 @@ public class Fragment : MonoBehaviour{
 
 	public void Drop()
 	{
-		WwiseAudioManager.instance.PlayFiniteEvent("interactions_simples_motion", GameObject.FindWithTag("Player"));
+		WwiseAudioManager.PlayFiniteEvent("interactions_simples_motion", GameObject.FindWithTag("Player"));
 
 		rigidbody.isKinematic = false;
 		transform.parent = null;
 
-		WwiseAudioManager.instance.StopLoopEvent(GetComponent<InteractibleObject>().soundEvent, gameObject);
+		WwiseAudioManager.StopLoopEvent(GetComponent<InteractibleObject>().soundEvent, gameObject);
 
 
 		//AkSoundEngine.SetRTPCValue ("binaural_to_convolver", 0);
@@ -70,20 +65,20 @@ public class Fragment : MonoBehaviour{
 
 	public GameObject OnTouch()
     {		
-		WwiseAudioManager.instance.PlayFiniteEvent("interactions_simples_motion", GameObject.FindWithTag("Player"));
+		WwiseAudioManager.PlayFiniteEvent("interactions_simples_motion", GameObject.FindWithTag("Player"));
 
 		print ("Fragment:OnPickUp");
 		this.gameObject.SetActive (true);
 
 		if (justSpawn) 
 		{
-			WwiseAudioManager.instance.StopLoopEvent ("fragment_call", this.gameObject, false);
+			WwiseAudioManager.StopLoopEvent ("fragment_call", this.gameObject, false);
 			justSpawn = false;
 		}
 	
 		//WwiseAudioManager.instance.PlayFiniteEvent("busy_street_stop", gameObject);	
-		WwiseAudioManager.instance.PlayFiniteEvent("prendre_morceau", gameObject);
-		WwiseAudioManager.instance.PlayLoopEvent(GetComponent<InteractibleObject>().soundEvent, gameObject);	
+		WwiseAudioManager.PlayFiniteEvent("prendre_morceau", gameObject);
+		WwiseAudioManager.PlayLoopEvent(GetComponent<InteractibleObject>().soundEvent, gameObject);	
 
 
 		return this.gameObject;

@@ -15,7 +15,7 @@ public class ConvolutionObject : MonoBehaviour {
 
 	// Use this for initialization
 	public void Start () {
-		this.renderer.material = defaultMaterial;
+		//this.renderer.material = defaultMaterial;
 		this.gameObject.layer = 8; // mis dans la layer InteractibleObject pour limiter les raycast avec un layermask
 	}
 	
@@ -30,13 +30,13 @@ public class ConvolutionObject : MonoBehaviour {
 	{
 		if (!HasFragment ()) {
 
-			WwiseAudioManager.instance.PlayFiniteEvent ("toucher_element", this.gameObject);
+			WwiseAudioManager.PlayFiniteEvent ("toucher_element", this.gameObject);
 
 			if (GetComponent<InteractibleObject>().type == InteractibleType.SettingPiece) {
 
-				WwiseAudioManager.instance.PlayFiniteEvent(SoundUniverseManager.switchType+"RI"+switchNumber, this.gameObject);
+				WwiseAudioManager.PlayFiniteEvent(SoundUniverseManager.switchType+"RI"+switchNumber, this.gameObject);
 
-				WwiseAudioManager.instance.PlayFiniteEvent ("Sfx_RI", this.gameObject);
+				WwiseAudioManager.PlayFiniteEvent ("Sfx_RI", this.gameObject);
 			}
 
 			return null;
@@ -52,8 +52,8 @@ public class ConvolutionObject : MonoBehaviour {
 	{
 		print("SettingPiece:OnPickUp");
 			
-		WwiseAudioManager.instance.StopLoopEvent(this.GetComponent<InteractibleObject>().soundEvent, this.gameObject, true);
-		WwiseAudioManager.instance.PlayFiniteEvent ("convolution_wet_to0", this.gameObject);
+		WwiseAudioManager.StopLoopEvent(this.GetComponent<InteractibleObject>().soundEvent, this.gameObject, true);
+		WwiseAudioManager.PlayFiniteEvent ("convolution_wet_to0", this.gameObject);
 
 		GameObject fragPicked =fragment.OnTouch();
 			
@@ -91,10 +91,10 @@ public class ConvolutionObject : MonoBehaviour {
 		
 		SoundUniverseManager.addSoundEvent (this.gameObject); 
 		
-		WwiseAudioManager.instance.PlayFiniteEvent("linker_morceau", this.gameObject);
-		WwiseAudioManager.instance.PlayFiniteEvent(SoundUniverseManager.switchType+switchNumber, this.gameObject);
-		WwiseAudioManager.instance.PlayLoopEvent (fragment.GetComponent<InteractibleObject>().soundEvent, this.gameObject, true);
-		WwiseAudioManager.instance.PlayFiniteEvent ("convolution_wet_to100", this.gameObject);
+		WwiseAudioManager.PlayFiniteEvent("linker_morceau", this.gameObject);
+		WwiseAudioManager.PlayFiniteEvent(SoundUniverseManager.switchType+switchNumber, this.gameObject);
+		WwiseAudioManager.PlayLoopEvent (fragment.GetComponent<InteractibleObject>().soundEvent, this.gameObject, true);
+		WwiseAudioManager.PlayFiniteEvent ("convolution_wet_to100", this.gameObject);
 		
 		
 		
