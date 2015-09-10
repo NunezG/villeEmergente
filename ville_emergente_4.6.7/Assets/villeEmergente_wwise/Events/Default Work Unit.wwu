@@ -717,6 +717,26 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="switch_atmoMus" ID="{723E07BD-D8DC-4037-87C3-CF8F6B04D15E}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{66C04A68-53DE-46E3-B9DD-CFB4DD3E5B17}" ShortID="967918273" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+												<GroupItem Name="Atmo_mus" ID="{07FD9990-460F-43B1-B8F7-9BDF1DA9A2C8}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_darkMus" ID="{61258500-BA54-47D7-818D-DF3ACF1FA219}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{5EB9ED71-CF03-410C-B704-92EA2B9C88C9}" ShortID="283060197" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+												<GroupItem Name="Dark_mus" ID="{39C9F7DE-65C7-4DEC-86BB-ACFE0BF4F364}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Sfx RI" ID="{BCCCB006-DD2F-42DB-ACEE-E54575F73708}" ShortID="857757178">
@@ -923,8 +943,8 @@
 									<ChildrenList>
 										<Action Name="Play" ID="{C8655CDE-EA7C-4182-A1EB-D63710D2AFC6}" ShortID="95594137" Type="Play" Scope="One" Global="false">
 											<ElementList>
-												<Element ID="{41BA9C28-D632-4438-9C4D-16E92969DA34}" Global="false">
-													<ObjectRef Name="sfx_passant_respiration" ID="{F73C74F5-43AD-4E6B-AE58-984C42B1073C}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{4C93B7ED-A426-4951-A953-DAF3CB659CCF}" Global="false">
+													<ObjectRef Name="Sfx_passant_respiration" ID="{C731AB71-D8CE-4C85-8D5A-AA39408487D4}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -934,8 +954,8 @@
 									<ChildrenList>
 										<Action Name="Play" ID="{E1812379-86DA-4F91-A641-A418A561A8D3}" ShortID="123502241" Type="Play" Scope="One" Global="false">
 											<ElementList>
-												<Element ID="{F2BD41DE-2B59-4D7B-9C54-98C78EA97B1A}" Global="false">
-													<ObjectRef Name="sfx_passant_danse" ID="{9BAF3750-68A3-4199-89A5-34C1A040FA5A}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{012AB7DA-EA46-4CBC-9D78-B80979A7049E}" Global="false">
+													<ObjectRef Name="Sfx_passant_danse" ID="{F6B59B25-2E46-4B79-B93F-2A76057E0E8A}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -945,8 +965,8 @@
 									<ChildrenList>
 										<Action Name="Play" ID="{FD3B4EC2-1205-4C35-A651-45D77F6A96CB}" ShortID="446919169" Type="Play" Scope="One" Global="false">
 											<ElementList>
-												<Element ID="{269F0A6F-9B71-405A-89E3-D5B63415D625}" Global="false">
-													<ObjectRef Name="sfx_passant_son" ID="{B2516F16-BD59-4678-BFDE-44BA7E08EAF6}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{78F6EA6F-0DEF-4E7E-877D-5D5CE4CDAD97}" Global="false">
+													<ObjectRef Name="Sfx_passant_son" ID="{B658FD27-90E6-40E0-B132-4B3B69597E69}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -956,8 +976,8 @@
 									<ChildrenList>
 										<Action Name="Play" ID="{08CCFAA0-460D-41B2-B009-86139420FEF3}" ShortID="598424414" Type="Play" Scope="One" Global="false">
 											<ElementList>
-												<Element ID="{D76733D1-4377-44FF-80BA-193ACBFC3519}" Global="false">
-													<ObjectRef Name="sfx_passant_tourne" ID="{2ECB21EB-C400-4A21-8128-3EB62FFD9D37}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{0B6E024E-7B03-4F33-B9EB-55A81CE83B5A}" Global="false">
+													<ObjectRef Name="Sfx_passant_tourne" ID="{20D6F7DF-D15B-46CA-9BB6-B13A37D6CF1E}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -971,8 +991,8 @@
 												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 											</PropertyList>
 											<ElementList>
-												<Element ID="{ADA6B81E-5532-44C1-ACD6-9DE26FD418A8}" Global="false">
-													<ObjectRef Name="sfx_passant_respiration" ID="{F73C74F5-43AD-4E6B-AE58-984C42B1073C}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{56A66BCB-12CA-48F3-B1BB-C7B52C5222E6}" Global="false">
+													<ObjectRef Name="Sfx_passant_respiration" ID="{C731AB71-D8CE-4C85-8D5A-AA39408487D4}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -982,23 +1002,12 @@
 						</Folder>
 						<Folder Name="Guide" ID="{D2839917-E648-4FD2-8882-EBD36039D3CF}" ShortID="300983300">
 							<ChildrenList>
-								<Event Name="guide_change_couleur" ID="{11D20D83-517B-4AEE-A12D-49AE02547C5F}">
-									<ChildrenList>
-										<Action Name="Play" ID="{16A51E0A-BA2F-453E-9B97-F1B1E36B6C97}" ShortID="715948304" Type="Play" Scope="One" Global="false">
-											<ElementList>
-												<Element ID="{9DA87379-E7E6-464C-8ED8-F082CA1951FA}" Global="false">
-													<ObjectRef Name="sfx_guide_change_couleur" ID="{7C93C356-658A-4E7A-B102-BB8F7B6D119B}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
-												</Element>
-											</ElementList>
-										</Action>
-									</ChildrenList>
-								</Event>
 								<Event Name="guide_idle_play" ID="{5A0FF513-CAFF-46D6-9E64-0830A23440C6}">
 									<ChildrenList>
 										<Action Name="Play" ID="{93C2E959-5F33-43D5-8EE5-AA338ACE4DB8}" ShortID="410307545" Type="Play" Scope="One" Global="false">
 											<ElementList>
-												<Element ID="{03A43C2B-AF13-4606-ACC7-086597380DE1}" Global="false">
-													<ObjectRef Name="sfx_guide_respiration" ID="{A6D047F5-A08A-4760-B854-9E9E2C8051D1}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{ABAC030C-0C8A-4922-9B4E-A1F8811A4C1C}" Global="false">
+													<ObjectRef Name="Sfx_guide_respiration" ID="{72AEEEB7-9F91-42A0-BD8A-3B81B2D12FAF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -1008,8 +1017,8 @@
 									<ChildrenList>
 										<Action Name="Play" ID="{693AF788-08F0-4EAF-9A6C-38D0EA2B7FC1}" ShortID="742685349" Type="Play" Scope="One" Global="false">
 											<ElementList>
-												<Element ID="{D4DC2EFD-8948-40B6-839A-EBA728405153}" Global="false">
-													<ObjectRef Name="sfx_guide_son" ID="{E87B98FF-2745-476B-88E3-F8379043047E}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{C2160ACD-9E2F-49F5-BC00-2704BADF0F35}" Global="false">
+													<ObjectRef Name="Sfx_guide_son" ID="{91E240B5-2B3F-413F-BB6E-EB3249C2BEC0}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -1019,8 +1028,8 @@
 									<ChildrenList>
 										<Action Name="Play" ID="{DD76CFDB-8C69-48AA-84F4-598368F91582}" ShortID="38509844" Type="Play" Scope="One" Global="false">
 											<ElementList>
-												<Element ID="{7855F786-FC16-4FD7-9769-D293E094E854}" Global="false">
-													<ObjectRef Name="sfx_guide_ordre" ID="{A3EF4838-F282-4401-B7EF-6E465DD76322}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{F393000D-1285-4822-A28A-FEFCE07548FE}" Global="false">
+													<ObjectRef Name="Sfx_guide_ordre" ID="{1CC78533-907A-47A5-B50B-88E92A770706}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -1045,8 +1054,8 @@
 												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 											</PropertyList>
 											<ElementList>
-												<Element ID="{9D12902F-8041-47C4-BE99-071277D3B19C}" Global="false">
-													<ObjectRef Name="sfx_guide_respiration" ID="{A6D047F5-A08A-4760-B854-9E9E2C8051D1}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{6B34567E-32F7-42FA-A112-E094A8793081}" Global="false">
+													<ObjectRef Name="Sfx_guide_respiration" ID="{72AEEEB7-9F91-42A0-BD8A-3B81B2D12FAF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -1060,8 +1069,8 @@
 									<ChildrenList>
 										<Action Name="Play" ID="{F4A7979F-295F-4A73-B609-9BF6E2ADB038}" ShortID="40495636" Type="Play" Scope="One" Global="false">
 											<ElementList>
-												<Element ID="{AC3A2819-11E1-45E2-A61E-526DC1CBE13C}" Global="false">
-													<ObjectRef Name="sfx_musicien_tourne" ID="{D3A01FA2-C7EB-486A-8902-D3D9196A02E1}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{3FF456CB-7DF1-497D-AFE8-4B276E422C84}" Global="false">
+													<ObjectRef Name="Sfx_musicien_tourne" ID="{79333650-A6B9-41B8-A0B1-BFEC8156D438}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -1071,8 +1080,8 @@
 									<ChildrenList>
 										<Action Name="Play" ID="{BB8AB90D-7841-4738-BEC6-5199A94AC623}" ShortID="336358073" Type="Play" Scope="One" Global="false">
 											<ElementList>
-												<Element ID="{8FD7345E-F648-4521-BEA9-770E786E804D}" Global="false">
-													<ObjectRef Name="sfx_musicien_son" ID="{D9140353-F316-4C80-9D7D-8B866373F8E6}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{F934289A-73B1-45BA-BC01-270CBB0497B8}" Global="false">
+													<ObjectRef Name="Sfx_musicien_son" ID="{2777E1C2-795D-41A7-9106-26E188BD0A11}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -1082,19 +1091,8 @@
 									<ChildrenList>
 										<Action Name="Play" ID="{0162328D-12D1-4B01-8B81-554D371B009B}" ShortID="208220880" Type="Play" Scope="One" Global="false">
 											<ElementList>
-												<Element ID="{96D90660-69FD-41F0-9713-E084D41980FA}" Global="false">
-													<ObjectRef Name="sfx_musicien_ouverture" ID="{5CEF1DE6-33A3-4FFC-86A1-490AE5A14C56}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
-												</Element>
-											</ElementList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="musicien_nouveau_son" ID="{83F17F85-7A6F-4598-9293-7771A43259D6}">
-									<ChildrenList>
-										<Action Name="Play" ID="{0D0C89C2-C75A-453F-A009-28254FA5AB3E}" ShortID="1060273167" Type="Play" Scope="One" Global="false">
-											<ElementList>
-												<Element ID="{766B591E-76BC-497E-BAF6-E5865AD6113A}" Global="false">
-													<ObjectRef Name="sfx_musicien_nouveau_son" ID="{FC6389B0-9EAE-4D75-9AE3-7489F78B6827}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{02703069-D078-4FA2-B06E-34FED08A4150}" Global="false">
+													<ObjectRef Name="Sfx_musicien_ouverture" ID="{D5880E37-8134-4553-83FB-0209802CAF42}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -1104,8 +1102,8 @@
 									<ChildrenList>
 										<Action Name="Play" ID="{3609C07B-B500-45DA-80BD-C7C0012E3C5D}" ShortID="690267374" Type="Play" Scope="One" Global="false">
 											<ElementList>
-												<Element ID="{CC3A12EE-9F8F-4069-8181-60D3F652665E}" Global="false">
-													<ObjectRef Name="sfx_musicien_joie" ID="{3B98EA7A-20F6-435B-B94D-04433E3843C1}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{359A2648-FB27-440E-8486-073061655C1B}" Global="false">
+													<ObjectRef Name="Sfx_musicien_joie" ID="{E093C040-D30D-479D-B206-22A62E2C7C66}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -1115,8 +1113,8 @@
 									<ChildrenList>
 										<Action Name="Play" ID="{0CBB77FC-3AD8-4B09-AB18-103D3BB10819}" ShortID="706403767" Type="Play" Scope="One" Global="false">
 											<ElementList>
-												<Element ID="{7F87E010-E902-40F5-B5B7-4EBE0F8B2264}" Global="false">
-													<ObjectRef Name="sfx_musicien_respiration" ID="{013FEFAF-0A85-4A4D-9E98-9C8F2B63A1E1}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{1A0D0A91-3267-4897-9D6C-11F99A045DCC}" Global="false">
+													<ObjectRef Name="Sfx_musicien_respiration" ID="{5076DBCB-4F33-4F20-B672-21D14C72EB3B}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -1130,10 +1128,34 @@
 												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 											</PropertyList>
 											<ElementList>
-												<Element ID="{55CD3E14-F619-4BA4-B01E-8C67A3AF1B72}" Global="false">
-													<ObjectRef Name="sfx_musicien_respiration" ID="{013FEFAF-0A85-4A4D-9E98-9C8F2B63A1E1}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{7D46E117-A724-4F2D-BE50-B5C4394A96CC}" Global="false">
+													<ObjectRef Name="Sfx_musicien_respiration" ID="{5076DBCB-4F33-4F20-B672-21D14C72EB3B}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Switches Mood" ID="{5FB41560-2F03-4A51-9FCE-A117E7E121C0}" ShortID="972595144">
+							<ChildrenList>
+								<Event Name="switch_mood_dark" ID="{AA071AAF-ADAC-49EC-B364-20C6BA30E86D}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{BEC74BBA-7B2B-4107-AD7C-5ED28BBB7763}" ShortID="915094875" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="PNJ_mood" ID="{090CF553-2D11-45BE-9C21-77382D2CCF65}"/>
+												<GroupItem Name="PNJ_dark" ID="{22839C04-35C4-43D7-8862-4D6AA0DAE69C}"/>
+											</SetItemParam>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="switch_mood_atmo" ID="{3DF50F7E-ACA1-464A-A708-959C42CBB2D8}">
+									<ChildrenList>
+										<Action Name="Set Switch" ID="{3EB9E689-5CA3-419D-B73C-A983A47FBF77}" ShortID="639197797" Type="SetSwitch" Scope="All" Global="false">
+											<SetItemParam>
+												<Group Name="PNJ_mood" ID="{090CF553-2D11-45BE-9C21-77382D2CCF65}"/>
+												<GroupItem Name="PNJ_atmo" ID="{6583DB66-6DA5-4465-8339-CE6734F36F63}"/>
+											</SetItemParam>
 										</Action>
 									</ChildrenList>
 								</Event>

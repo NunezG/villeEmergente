@@ -31,7 +31,6 @@ namespace AK
         static const AkUniqueID FOOTSTEPS_STOP = 4187365685U;
         static const AkUniqueID FRAGMENT_CALL_PLAY = 1465870985U;
         static const AkUniqueID FRAGMENT_CALL_STOP = 2988287919U;
-        static const AkUniqueID GUIDE_CHANGE_COULEUR = 3026819668U;
         static const AkUniqueID GUIDE_IDLE_PLAY = 1128982233U;
         static const AkUniqueID GUIDE_IDLE_STOP = 3761520415U;
         static const AkUniqueID GUIDE_NOUVEAU_SON = 4080525896U;
@@ -43,7 +42,6 @@ namespace AK
         static const AkUniqueID MUSICIEN_IDLE_PLAY = 2327341772U;
         static const AkUniqueID MUSICIEN_IDLE_STOP = 2159062U;
         static const AkUniqueID MUSICIEN_JOIE = 2220177058U;
-        static const AkUniqueID MUSICIEN_NOUVEAU_SON = 3405539997U;
         static const AkUniqueID MUSICIEN_OUVERTURE = 161018858U;
         static const AkUniqueID MUSICIEN_SON = 916635435U;
         static const AkUniqueID MUSICIEN_TOURNE = 2629109720U;
@@ -91,6 +89,8 @@ namespace AK
         static const AkUniqueID SWITCH_DARKRI6 = 3843097391U;
         static const AkUniqueID SWITCH_DARKRI7 = 3843097390U;
         static const AkUniqueID SWITCH_DEFAULT = 2406558223U;
+        static const AkUniqueID SWITCH_MOOD_ATMO = 918269819U;
+        static const AkUniqueID SWITCH_MOOD_DARK = 4231059320U;
         static const AkUniqueID TOUCHER_ELEMENT = 2896867782U;
         static const AkUniqueID TRAFFICBY_CONVOLVER_PLAY = 2692438725U;
         static const AkUniqueID TRAFFICBY_CONVOLVER_STOP = 4117091651U;
@@ -155,6 +155,17 @@ namespace AK
                 static const AkUniqueID DEFAULT = 782826392U;
             } // namespace SWITCH
         } // namespace ELEMENTS_DECOR
+
+        namespace PNJ_MOOD
+        {
+            static const AkUniqueID GROUP = 3937062991U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID PNJ_ATMO = 3515469617U;
+                static const AkUniqueID PNJ_DARK = 743121882U;
+            } // namespace SWITCH
+        } // namespace PNJ_MOOD
 
     } // namespace SWITCHES
 
