@@ -8,7 +8,7 @@ public class AnimationManager : MonoBehaviour {
    // uint bankID;
 	// Use this for initialization
 
-	public string[] listeAnimations = {"Complete","Marche","MarcheFiere","Sautille","Danse","MontreUne","MontreDeux","Errance","CriErrance","Satisfait"};
+	//public string[] listeAnimations = {"Complete","Marche","MarcheFiere","Sautille","Danse","MontreUne","MontreDeux","Errance","CriErrance","Satisfait"};
 
 
 
