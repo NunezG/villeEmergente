@@ -42,6 +42,12 @@
 						<Switch Name="AtmoRI_7" ID="{10A7C722-1A90-4B97-A74B-EAF64F870E1B}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="PNJ_mood" ID="{090CF553-2D11-45BE-9C21-77382D2CCF65}">
+					<ChildrenList>
+						<Switch Name="PNJ_dark" ID="{22839C04-35C4-43D7-8862-4D6AA0DAE69C}"/>
+						<Switch Name="PNJ_atmo" ID="{6583DB66-6DA5-4465-8339-CE6734F36F63}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

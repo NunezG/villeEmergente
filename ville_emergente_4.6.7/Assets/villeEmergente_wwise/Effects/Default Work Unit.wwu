@@ -723,6 +723,131 @@
 	</ConvolutionData>
 </PluginData>
 								</Effect>
+								<Effect Name="RI_musicien_atmo" ID="{5E121B1F-941E-4007-9504-FC8F01364CC5}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+									<PropertyList>
+										<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+										<Property Name="IRConvolutionStop" Type="Real64" Value="8.3515625"/>
+										<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+										<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+										<Property Name="WetLevel" Type="Real32" Value="-28">
+											<RTPCList>
+												<RTPC Name="" ID="{6C35BAB7-4AFD-4874-963A-47F796E3D6BB}" ShortID="926205349">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{BB0B4C6A-2208-425D-9C4D-AAECAE09DEBF}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96.3000030517578</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-30</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ChildrenList>
+										<PluginMediaSource Name="sfx_musicien_son" ID="{81F39302-3A1D-48CD-81A2-8A723B29AD63}" ShortID="843105287">
+											<ParentPluginID>8323075</ParentPluginID>
+											<PropertyList>
+												<Property Name="DataFileName" Type="string" Value="sfx_musicien_son.wav"/>
+											</PropertyList>
+											<ConvertedFileIDList>
+												<File ID="10547618"/>
+											</ConvertedFileIDList>
+										</PluginMediaSource>
+									</ChildrenList>
+									<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{A352087F-1E3B-4114-A3B9-96CBD1B66658}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>547.8264735246</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>801.87032</XPos>
+							<YPos>-6.05821</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1665.19076</XPos>
+							<YPos>0.09564</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{B5A723B4-0069-4390-AAA2-5CC40C05137E}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>8.3515625</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{98281A72-8964-4075-81B7-00603BBF3560}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>8.3515625</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+								</Effect>
 							</ChildrenList>
 						</Folder>
 						<Effect Name="Cymbal" ID="{13E491C6-6232-4A6E-BEAD-E027043BB0C2}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
@@ -1438,6 +1563,128 @@
 						</Point>
 						<Point>
 							<XPos>2.85969791666667</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+								</Effect>
+								<Effect Name="RI_musicien_dark" ID="{D5163B13-1185-4B79-BDC9-EC10564CD2AE}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+									<PropertyList>
+										<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+										<Property Name="IRConvolutionStop" Type="Real64" Value="5.29558333333333"/>
+										<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+										<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+										<Property Name="WetLevel" Type="Real32" Value="-28">
+											<RTPCList>
+												<RTPC Name="" ID="{5E389A6D-805B-4C58-8C96-CBA9D14D5873}" ShortID="305868563">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{06167076-41E9-4049-B49E-3E0B3C090922}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96.3000030517578</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-30</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ChildrenList>
+										<PluginMediaSource Name="sfx_passant_dark_tourne" ID="{2BFCDF3C-4DB9-48D5-9414-43C262644AD2}" ShortID="117065539">
+											<ParentPluginID>8323075</ParentPluginID>
+											<PropertyList>
+												<Property Name="DataFileName" Type="string" Value="sfx_passant_dark_tourne.wav"/>
+											</PropertyList>
+										</PluginMediaSource>
+									</ChildrenList>
+									<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{37F8F332-62CF-4860-8581-B8DAD2DEBA90}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>547.8264735246</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>801.87032</XPos>
+							<YPos>-6.05821</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1665.19076</XPos>
+							<YPos>0.09564</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{9586B0C3-54CC-47D1-8843-339DE6428C2E}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>5.29558333333333</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{B508F420-6BD8-42E4-AEA8-D84FEC3619FC}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>5.29558333333333</XPos>
 							<YPos>0</YPos>
 							<Flags>37</Flags>
 						</Point>
