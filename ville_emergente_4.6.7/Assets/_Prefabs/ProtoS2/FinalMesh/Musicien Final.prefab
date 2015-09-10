@@ -876,7 +876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 568bc0ee0cdf8324593a205fc4303cc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioName: 
+  audioName: 0
 --- !u!114 &11456162
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -888,17 +888,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ead95211a74b64190953227226cee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listeAnimations:
-  - Complete
-  - Marche
-  - MarcheFiere
-  - Sautille
-  - Danse
-  - MontreUne
-  - MontreDeux
-  - Errance
-  - CriErrance
-  - Satisfait
 --- !u!114 &11456164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -937,7 +926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c336472b3d96a74bbc38a518b234833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  switchNumber: 1
+  switchNumber: Mus
   fragment: {fileID: 0}
   defaultMaterial: {fileID: 0}
   activatedMaterial: {fileID: 0}
@@ -963,8 +952,6 @@ MonoBehaviour:
   danceTimer: 0
   endDanceTimer: 10
   material: {fileID: 0}
-  defaultAudioEventName: 
-  fragment: {fileID: 0}
   targets: []
   previousTarget: {fileID: 0}
   buildings:
