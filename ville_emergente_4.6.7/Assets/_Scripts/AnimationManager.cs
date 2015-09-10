@@ -8,7 +8,7 @@ public class AnimationManager : MonoBehaviour {
    // uint bankID;
 	// Use this for initialization
 
-	public string[] listeAnimations = {"Complete","Marche","MarcheFiere","Sautille","Danse","MontreUne","MontreDeux","Errance","CriErrance","Satisfait"};
+	//public string[] listeAnimations = {"Complete","Marche","MarcheFiere","Sautille","Danse","MontreUne","MontreDeux","Errance","CriErrance","Satisfait"};
 
 
 
@@ -27,14 +27,15 @@ public class AnimationManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+	/*
 		if (Input.GetKeyDown (KeyCode.Space))
 		{
 			ClearTriggers ();
 			this.GetComponentInChildren<Animator> ().SetBool (listeAnimations[Random.Range(0,listeAnimations.Length)], true);
+			//transform.FindChild("mesh").GetComponent<AudioEventManager>().soundOuverture();
 
 		} 
-
+	*/
 	}
     
 	public void ClearTriggers()
@@ -44,7 +45,7 @@ public class AnimationManager : MonoBehaviour {
 		this.GetComponentInChildren<Animator> ().SetBool ("MarcheFiere",false);
 		this.GetComponentInChildren<Animator> ().SetBool ("Sautille",false);
 		this.GetComponentInChildren<Animator> ().SetBool ("Danse",false);
-		this.GetComponentInChildren<Animator> ().SetBool ("MontreUne",false);
+		//this.GetComponentInChildren<Animator> ().SetBool ("MontreUne",false);
 		this.GetComponentInChildren<Animator> ().SetBool ("MontreDeux",false);
 		this.GetComponentInChildren<Animator> ().SetBool ("Errance",false);
 		this.GetComponentInChildren<Animator> ().SetBool ("CriErrance",false);
@@ -87,12 +88,12 @@ public class AnimationManager : MonoBehaviour {
 	}
 
 
-	public void MontreUne()
+/*	public void MontreUne()
 	{
 		ClearTriggers ();
 		this.GetComponent<Animator> ().SetBool ("MontreUne",true);
 	}
-
+*/
 
 	public void MontreDeux()
 	{

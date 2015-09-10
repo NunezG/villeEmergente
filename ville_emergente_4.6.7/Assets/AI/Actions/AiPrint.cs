@@ -13,6 +13,8 @@ public class AiPrint : RAINAction
 
     public override void Start(RAIN.Core.AI ai)
     {
+		ai.Body.transform.FindChild("mesh").GetComponent<AudioEventManager> ().soundTourne ();
+		
         if ((toPrintExp != null) && (toPrintExp.IsValid))
         {
             string toPrint = toPrintExp.Evaluate<string>(ai.DeltaTime, ai.WorkingMemory);
