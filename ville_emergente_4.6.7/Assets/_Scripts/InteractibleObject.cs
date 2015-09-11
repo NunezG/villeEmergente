@@ -6,7 +6,7 @@ public class InteractibleObject : MonoBehaviour {
 
    // public AudioSource audioSource;
     public InteractibleType type; // par defaut un element du decor
-	public string soundEvent;
+	public string soundEvent = "";
 
 
 	//public string playingSound;

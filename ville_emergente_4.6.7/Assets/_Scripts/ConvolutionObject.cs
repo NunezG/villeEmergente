@@ -8,10 +8,11 @@ public class ConvolutionObject : MonoBehaviour {
    // public InteractibleType type; // par defaut un element du decor
 
 	//public string soundEevent;
-	public string switchNumber;
 	public Fragment fragment;
 	public Material defaultMaterial, activatedMaterial;
 	//public string playingSound;
+	public string switchName;
+
 
 	// Use this for initialization
 	public void Start () {
@@ -34,7 +35,7 @@ public class ConvolutionObject : MonoBehaviour {
 
 			if (GetComponent<InteractibleObject>().type == InteractibleType.SettingPiece) {
 
-				WwiseAudioManager.PlayFiniteEvent(SoundUniverseManager.switchType+"RI"+switchNumber, this.gameObject);
+				WwiseAudioManager.PlayFiniteEvent(SoundUniverseManager.switchType+"RI"+switchName, this.gameObject);
 
 				WwiseAudioManager.PlayFiniteEvent ("Sfx_RI", this.gameObject);
 			}
@@ -78,7 +79,7 @@ public class ConvolutionObject : MonoBehaviour {
 
 		//fragment.transform.parent = this.transform;
 		
-		print("SettingPiece:OnAddingFragment:" + GetComponent<InteractibleObject>().type);
+		//print("SettingPiece:OnAddingFragment:" + GetComponent<InteractibleObject>().type);
 		this.fragment = fragment;
 		//activatedMaterial = fragment.material;
 		this.GetComponentInChildren<Renderer>().material = fragment.material;
@@ -92,7 +93,9 @@ public class ConvolutionObject : MonoBehaviour {
 		SoundUniverseManager.addSoundEvent (this.gameObject); 
 		
 		WwiseAudioManager.PlayFiniteEvent("linker_morceau", this.gameObject);
-		WwiseAudioManager.PlayFiniteEvent(SoundUniverseManager.switchType+switchNumber, this.gameObject);
+	
+		WwiseAudioManager.PlayFiniteEvent(SoundUniverseManager.switchType+switchName, this.gameObject);
+
 		WwiseAudioManager.PlayLoopEvent (fragment.GetComponent<InteractibleObject>().soundEvent, this.gameObject, true);
 		WwiseAudioManager.PlayFiniteEvent ("convolution_wet_to100", this.gameObject);
 		

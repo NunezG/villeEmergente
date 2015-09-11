@@ -42,10 +42,15 @@ public class Fragment : MonoBehaviour{
 	
 	}
 
+	public void Ground()
+	{
+		WwiseAudioManager.PlayFiniteEvent("lacher_morceau", gameObject);
+		WwiseAudioManager.PlayLoopEvent ("fragment_call", gameObject, false);
+	}
+
+
 	public void Drop()
 	{
-		WwiseAudioManager.PlayFiniteEvent("interactions_simples_motion", GameObject.FindWithTag("Player"));
-
 		rigidbody.isKinematic = false;
 		transform.parent = null;
 
@@ -65,16 +70,14 @@ public class Fragment : MonoBehaviour{
 
 	public GameObject OnTouch()
     {		
-		WwiseAudioManager.PlayFiniteEvent("interactions_simples_motion", GameObject.FindWithTag("Player"));
-
 		print ("Fragment:OnPickUp");
 		this.gameObject.SetActive (true);
 
-		if (justSpawn) 
-		{
-			WwiseAudioManager.StopLoopEvent ("fragment_call", this.gameObject, false);
-			justSpawn = false;
-		}
+		//if (justSpawn) 
+		//{
+		WwiseAudioManager.StopLoopEvent ("fragment_call", this.gameObject, false);
+		//	justSpawn = false;
+		//}
 	
 		//WwiseAudioManager.instance.PlayFiniteEvent("busy_street_stop", gameObject);	
 		WwiseAudioManager.PlayFiniteEvent("prendre_morceau", gameObject);
