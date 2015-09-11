@@ -14,7 +14,11 @@ public class MusicianSelectTarget : RAINAction
         target = ai.WorkingMemory.GetItem<GameObject>("target");
         Debug.Log(ai.Body.name + " : SELECT TARGET ");
 
-		ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Errance ();
+		if ( ai.WorkingMemory.GetItem<bool>("isFragmentComplete"))
+			ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Marche ();
+		else 
+		ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Errance();
+
 		//ai.Body.GetComponent<AudioEventManager> ().soundSon ();
     }
 

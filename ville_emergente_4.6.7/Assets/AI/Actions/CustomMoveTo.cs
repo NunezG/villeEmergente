@@ -12,6 +12,8 @@ public class CustomMoveTo : RAINAction
     {
 		//ai.WorkingMemory.SetItem<bool> ("moving", true);
         base.Start(ai);
+		//ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Marche ();
+
     }
 
     public override ActionResult Execute(RAIN.Core.AI ai)

@@ -1316,17 +1316,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ead95211a74b64190953227226cee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listeAnimations:
-  - Complete
-  - Marche
-  - MarcheFiere
-  - Sautille
-  - Danse
-  - MontreUne
-  - MontreDeux
-  - Errance
-  - CriErrance
-  - Satisfait
 --- !u!114 &11496448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1338,7 +1327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 568bc0ee0cdf8324593a205fc4303cc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioName: 
+  audioName: 1
 --- !u!135 &13596432
 SphereCollider:
   m_ObjectHideFlags: 1

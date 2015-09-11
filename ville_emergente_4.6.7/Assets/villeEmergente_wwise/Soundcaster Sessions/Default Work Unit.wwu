@@ -19,10 +19,16 @@
 							<GameParameterRef Name="binaural_to_convolver" ID="{4771F142-4D7B-451E-8786-58DE18DAFCFA}"/>
 							<Value>0</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}"/>
+							<Value>82.6498422712934</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="AtmoRI_1" ID="{D66DB834-E895-4554-9254-70B3FB3E760B}"/>
 						<CurrentSwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
+						<CurrentSwitchRef Name="PNJ_atmo" ID="{6583DB66-6DA5-4465-8339-CE6734F36F63}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="switch tests" ID="{156BE172-21AB-40B5-A589-98452367574E}">
@@ -149,11 +155,11 @@
 				<SoundcasterSession Name="Musicien" ID="{2720A7A0-76DC-4326-A2EE-95148F28070B}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="RI_musicien" ID="{FFC6C344-CB67-4EF0-B6AA-7777B0EC705B}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<ObjectRef Name="RI_musicien_atmo" ID="{FFC6C344-CB67-4EF0-B6AA-7777B0EC705B}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="RI_musicien" ID="{3F031E78-34EE-4205-90D7-F01DE771B823}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<ObjectRef Name="RI_musicien_atmo" ID="{3F031E78-34EE-4205-90D7-F01DE771B823}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
@@ -161,11 +167,11 @@
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="RI_musicien" ID="{1CEA8F63-6DF3-4C36-A4E0-72EB05EDFD85}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<ObjectRef Name="RI_musicien_atmo" ID="{1CEA8F63-6DF3-4C36-A4E0-72EB05EDFD85}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="RI_musicien" ID="{BFD1A74B-DC60-4EF7-89B9-8DCF7C3830FC}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<ObjectRef Name="RI_musicien_atmo" ID="{BFD1A74B-DC60-4EF7-89B9-8DCF7C3830FC}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
@@ -173,7 +179,7 @@
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="RI_musicien" ID="{FF3373EB-3AA4-4E30-BC94-9E5065FD1884}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<ObjectRef Name="RI_musicien_atmo" ID="{FF3373EB-3AA4-4E30-BC94-9E5065FD1884}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
@@ -181,7 +187,7 @@
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="RI_musicien" ID="{AD17E569-194A-4AC3-827C-0B87D7C2B2D6}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<ObjectRef Name="RI_musicien_atmo" ID="{AD17E569-194A-4AC3-827C-0B87D7C2B2D6}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
@@ -196,13 +202,14 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}"/>
-							<Value>100</Value>
+							<Value>99.3690851735016</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="AtmoRI_1" ID="{D66DB834-E895-4554-9254-70B3FB3E760B}"/>
 						<CurrentSwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
+						<CurrentSwitchRef Name="PNJ_atmo" ID="{6583DB66-6DA5-4465-8339-CE6734F36F63}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

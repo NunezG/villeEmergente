@@ -14,6 +14,9 @@ public class GuideDesactivateScene : RAINAction
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
+		ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Marche ();
+		ai.Body.transform.FindChild ("mesh").GetComponent<AudioEventManager> ().soundSon ();
+
         ai.Body.GetComponent<Guide>().scene.gameObject.SetActive(false);
         ai.WorkingMemory.SetItem<bool>("followMe", false);
 
