@@ -11,7 +11,7 @@ public class PassantGoToPoVSpot : RAINAction
     public override void Start(RAIN.Core.AI ai)
     {
         base.Start(ai);
-        Debug.Log(ai.Body.name + " : PassantGoToPoVSpot");
+      //  Debug.Log(ai.Body.name + " : PassantGoToPoVSpot");
     }
 
     public override ActionResult Execute(RAIN.Core.AI ai)

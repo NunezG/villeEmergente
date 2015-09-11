@@ -5,7 +5,10 @@ public class Plateforme_Move : MonoBehaviour
 {
     public Vector3 min;
     public Vector3 max;
-
+   
+    public float angle_min;
+    public float angle_max;
+    
     public float time;
     public float sleep;
 
@@ -14,9 +17,10 @@ public class Plateforme_Move : MonoBehaviour
     private bool fall = true;
     private bool stop = false;
 
+    private Vector3 currentAngle;
     private float timer = 0.0f;
 
-
+  
 
 	// Use this for initialization
 	void Start () 
@@ -25,6 +29,8 @@ public class Plateforme_Move : MonoBehaviour
             ratio = 1.0f;
         if (ratio < 0.0f)
             ratio = 0.0f;
+
+        currentAngle = transform.localEulerAngles;
 	}
 
 	// Update is called once per frame
@@ -34,7 +40,7 @@ public class Plateforme_Move : MonoBehaviour
         {
             timer += Time.deltaTime;
 
-            if(timer >= 5.0f)
+            if(timer >= sleep)
             {
                 timer = 0.0f;
                 stop = false;
@@ -70,5 +76,6 @@ public class Plateforme_Move : MonoBehaviour
         }
 
         transform.position = min + ratio * (max - min);
+        transform.localEulerAngles = new Vector3(currentAngle.x, angle_min + ratio * (angle_max - angle_min), currentAngle.z);
 	}
 }
