@@ -3800,6 +3800,9 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="sfx_musicien_son.wav"/>
 																			</PropertyList>
+																			<ConvertedFileIDList>
+																				<File ID="679969941"/>
+																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -10080,6 +10083,9 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="sfx_musicien_son.wav"/>
 																			</PropertyList>
+																			<ConvertedFileIDList>
+																				<File ID="275831905"/>
+																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -19482,6 +19488,9 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="sfx_musicien_son.wav"/>
 																			</PropertyList>
+																			<ConvertedFileIDList>
+																				<File ID="10547618"/>
+																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>

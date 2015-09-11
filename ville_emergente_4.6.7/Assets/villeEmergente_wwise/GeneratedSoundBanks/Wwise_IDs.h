@@ -58,6 +58,7 @@ namespace AK
         static const AkUniqueID SOFTRAIN_CONVOLVER_STOP = 4195620099U;
         static const AkUniqueID SOFTRAIN_PLAY = 30806100U;
         static const AkUniqueID SOFTRAIN_STOP = 1693234990U;
+        static const AkUniqueID SWITCH_ATMO_MOOD = 1340877891U;
         static const AkUniqueID SWITCH_ATMO1 = 2442452516U;
         static const AkUniqueID SWITCH_ATMO2 = 2442452519U;
         static const AkUniqueID SWITCH_ATMO3 = 2442452518U;
@@ -73,6 +74,7 @@ namespace AK
         static const AkUniqueID SWITCH_ATMORI5 = 3587869585U;
         static const AkUniqueID SWITCH_ATMORI6 = 3587869586U;
         static const AkUniqueID SWITCH_ATMORI7 = 3587869587U;
+        static const AkUniqueID SWITCH_DARK_MOOD = 2746150966U;
         static const AkUniqueID SWITCH_DARK1 = 3617898637U;
         static const AkUniqueID SWITCH_DARK2 = 3617898638U;
         static const AkUniqueID SWITCH_DARK3 = 3617898639U;
@@ -89,8 +91,6 @@ namespace AK
         static const AkUniqueID SWITCH_DARKRI6 = 3843097391U;
         static const AkUniqueID SWITCH_DARKRI7 = 3843097390U;
         static const AkUniqueID SWITCH_DEFAULT = 2406558223U;
-        static const AkUniqueID SWITCH_MOOD_ATMO = 918269819U;
-        static const AkUniqueID SWITCH_MOOD_DARK = 4231059320U;
         static const AkUniqueID TOUCHER_ELEMENT = 2896867782U;
         static const AkUniqueID TRAFFICBY_CONVOLVER_PLAY = 2692438725U;
         static const AkUniqueID TRAFFICBY_CONVOLVER_STOP = 4117091651U;
