@@ -1139,7 +1139,7 @@
 						</Folder>
 						<Folder Name="Switches Mood" ID="{5FB41560-2F03-4A51-9FCE-A117E7E121C0}" ShortID="972595144">
 							<ChildrenList>
-								<Event Name="switch_mood_dark" ID="{AA071AAF-ADAC-49EC-B364-20C6BA30E86D}">
+								<Event Name="switch_dark_mood" ID="{AA071AAF-ADAC-49EC-B364-20C6BA30E86D}">
 									<ChildrenList>
 										<Action Name="Set Switch" ID="{BEC74BBA-7B2B-4107-AD7C-5ED28BBB7763}" ShortID="915094875" Type="SetSwitch" Scope="All" Global="false">
 											<SetItemParam>
@@ -1149,7 +1149,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="switch_mood_atmo" ID="{3DF50F7E-ACA1-464A-A708-959C42CBB2D8}">
+								<Event Name="switch_atmo_mood" ID="{3DF50F7E-ACA1-464A-A708-959C42CBB2D8}">
 									<ChildrenList>
 										<Action Name="Set Switch" ID="{3EB9E689-5CA3-419D-B73C-A983A47FBF77}" ShortID="639197797" Type="SetSwitch" Scope="All" Global="false">
 											<SetItemParam>
