@@ -20,22 +20,30 @@
 			<IncludedEvents>
 				<Event Id="289850157" Name="busyStreet_convolver_play" MaxAttenuation="50.000000"/>
 				<Event Id="1407044475" Name="busyStreet_convolver_stop" MaxAttenuation="0.000000"/>
-				<Event Id="3997590316" Name="busyStreet_play"/>
+				<Event Id="3997590316" Name="busyStreet_play" MaxAttenuation="50.000000"/>
 				<Event Id="1672407606" Name="busyStreet_stop" MaxAttenuation="0.000000"/>
 				<Event Id="2013603504" Name="convolution_wet_to0" MaxAttenuation="0.000000"/>
 				<Event Id="837754713" Name="convolution_wet_to100" MaxAttenuation="0.000000"/>
 				<Event Id="3012043839" Name="dropsCardboard_convolver_play" MaxAttenuation="50.000000"/>
 				<Event Id="2544725597" Name="dropsCardboard_convolver_stop" MaxAttenuation="0.000000"/>
-				<Event Id="1374189182" Name="dropsCardboard_play"/>
+				<Event Id="1374189182" Name="dropsCardboard_play" MaxAttenuation="50.000000"/>
 				<Event Id="2412081984" Name="dropsCardboard_stop" MaxAttenuation="0.000000"/>
 				<Event Id="558637385" Name="electricBuzz_convolver_play" MaxAttenuation="50.000000"/>
 				<Event Id="2081157487" Name="electricBuzz_convolver_stop" MaxAttenuation="0.000000"/>
-				<Event Id="2776279528" Name="electricBuzz_play"/>
+				<Event Id="2776279528" Name="electricBuzz_play" MaxAttenuation="50.000000"/>
 				<Event Id="817405786" Name="electricBuzz_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1198733287" Name="footsteps_play"/>
 				<Event Id="4187365685" Name="footsteps_stop" MaxAttenuation="0.000000"/>
-				<Event Id="1465870985" Name="fragment_call_play" MaxAttenuation="25.000000"/>
-				<Event Id="2988287919" Name="fragment_call_stop" MaxAttenuation="0.000000"/>
+				<Event Id="3885638619" Name="fragment_call_electricity_play" MaxAttenuation="25.000000"/>
+				<Event Id="2755101329" Name="fragment_call_electricity_stop" MaxAttenuation="0.000000"/>
+				<Event Id="3141592368" Name="fragment_call_liquid_play" MaxAttenuation="25.000000"/>
+				<Event Id="1490074322" Name="fragment_call_liquid_stop" MaxAttenuation="0.000000"/>
+				<Event Id="933666621" Name="fragment_call_metal_play" MaxAttenuation="25.000000"/>
+				<Event Id="3160982187" Name="fragment_call_metal_stop" MaxAttenuation="0.000000"/>
+				<Event Id="2631922986" Name="fragment_call_urban_play" MaxAttenuation="25.000000"/>
+				<Event Id="4036125012" Name="fragment_call_urban_stop" MaxAttenuation="0.000000"/>
+				<Event Id="1375190009" Name="fragment_call_wood_play" MaxAttenuation="25.000000"/>
+				<Event Id="3966254655" Name="fragment_call_wood_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1128982233" Name="guide_idle_play" MaxAttenuation="50.000000"/>
 				<Event Id="3761520415" Name="guide_idle_stop" MaxAttenuation="0.000000"/>
 				<Event Id="4080525896" Name="guide_nouveau_son" MaxAttenuation="50.000000"/>
@@ -99,7 +107,7 @@
 				<Event Id="2896867782" Name="toucher_element" MaxAttenuation="50.000000"/>
 				<Event Id="2692438725" Name="trafficBy_convolver_play" MaxAttenuation="50.000000"/>
 				<Event Id="4117091651" Name="trafficBy_convolver_stop" MaxAttenuation="0.000000"/>
-				<Event Id="3501369492" Name="trafficBy_play"/>
+				<Event Id="3501369492" Name="trafficBy_play" MaxAttenuation="50.000000"/>
 				<Event Id="910304878" Name="trafficBy_stop" MaxAttenuation="0.000000"/>
 				<Event Id="3115394940" Name="ville_calme"/>
 				<Event Id="193498114" Name="water_3DObject_play" MaxAttenuation="50.000000"/>
@@ -114,6 +122,10 @@
 					<ShortName>ri_marseilles.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_marseilles_589B3963.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="7039575" Language="SFX">
+					<ShortName>sfx_fragment_metal_call.wav</ShortName>
+					<Path>SFX\sfx_fragment_metal_call_80EE552A.wem</Path>
 				</File>
 				<File Id="9738449" Language="SFX">
 					<ShortName>ri_electric.wav</ShortName>
@@ -244,6 +256,10 @@
 					<ShortName>sfx_lacher_morceau.wav</ShortName>
 					<Path>SFX\sfx_lacher_morceau_950FF8F3.wem</Path>
 				</File>
+				<File Id="212568920" Language="SFX">
+					<ShortName>sfx_fragment_liquid_call.wav</ShortName>
+					<Path>SFX\sfx_fragment_liquid_call_AD725B07.wem</Path>
+				</File>
 				<File Id="213439988" Language="SFX">
 					<ShortName>Sfx_ri_skanner_pad.wav</ShortName>
 					<Path>SFX\Sfx_ri_skanner_pad_950FF8F3.wem</Path>
@@ -336,9 +352,17 @@
 					<ShortName>sfx_musicien_dark_joie.wav</ShortName>
 					<Path>SFX\sfx_musicien_dark_joie_816A4F72.wem</Path>
 				</File>
+				<File Id="426163079" Language="SFX">
+					<ShortName>sfx_fragment_bois_call.wav</ShortName>
+					<Path>SFX\sfx_fragment_bois_call_3B5C85C4.wem</Path>
+				</File>
 				<File Id="432804772" Language="SFX">
 					<ShortName>sfx_musicien_dark_ouverture.wav</ShortName>
 					<Path>SFX\sfx_musicien_dark_ouverture_3B661F6D.wem</Path>
+				</File>
+				<File Id="441125095" Language="SFX">
+					<ShortName>sfx_fragment_electricity_call.wav</ShortName>
+					<Path>SFX\sfx_fragment_electricity_call_8101B521.wem</Path>
 				</File>
 				<File Id="469843770" Language="SFX">
 					<ShortName>Sfx_ri_sylenth.wav</ShortName>
@@ -518,10 +542,6 @@
 					<ShortName>sfx_passant_danse.wav</ShortName>
 					<Path>SFX\sfx_passant_danse_489326F1_111F01D4.wem</Path>
 				</File>
-				<File Id="865538397" Language="SFX">
-					<ShortName>sfx_fragment_call.wav</ShortName>
-					<Path>SFX\sfx_fragment_call_67E0794F.wem</Path>
-				</File>
 				<File Id="874496307" Language="SFX">
 					<ShortName>ri_electric.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_electric_414A7EE3.wem</Path>
@@ -560,6 +580,10 @@
 				<File Id="966743415" Language="SFX">
 					<ShortName>sfx_guide_dark_respiration_01.wav</ShortName>
 					<Path>SFX\sfx_guide_dark_respiration_01_611A8A58.wem</Path>
+				</File>
+				<File Id="969870296" Language="SFX">
+					<ShortName>sfx_fragment_urban_call.wav</ShortName>
+					<Path>SFX\sfx_fragment_urban_call_E72C5E03.wem</Path>
 				</File>
 				<File Id="983328808" Language="SFX">
 					<ShortName>sfx_musicien_son.wav</ShortName>

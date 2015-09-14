@@ -116,7 +116,7 @@
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="fragment_call_play" ID="{AAC87B03-3500-434D-9798-72D5679C3595}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="sfx_fragment_electricity_call" ID="{615DC188-A9C7-41EF-9563-2CE180E2C2B9}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 							<Position X="1" Y="3"/>
 						</Module>
 						<Module>
@@ -128,12 +128,24 @@
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="fragment_call_stop" ID="{5C289ED2-FDD6-4CA4-9E48-3B9504DE058D}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="sfx_fragment_liquid_call" ID="{C57140A8-1A1D-4858-BF15-11067E4578DB}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 							<Position X="2" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Toucher élément" ID="{8C0EE57C-46CC-4653-98D5-432112F38E4D}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_fragment_metal_call" ID="{8349C6DE-56F9-4142-8CD5-E9A807BCD9D3}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_fragment_urban_call" ID="{B97D1270-10F6-40B3-BE2C-E2D597D6F730}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="4" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_fragment_wood_call" ID="{44B1999F-01E1-43F6-A1EB-A492948C20AF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="5" Y="3"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -145,11 +157,16 @@
 							<GameParameterRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}"/>
 							<Value>100</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="fragment_call" ID="{01907384-92A1-4475-BF60-07203E37C654}"/>
+							<Value>100</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="AtmoRI_1" ID="{D66DB834-E895-4554-9254-70B3FB3E760B}"/>
 						<CurrentSwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
+						<CurrentSwitchRef Name="PNJ_atmo" ID="{6583DB66-6DA5-4465-8339-CE6734F36F63}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Musicien" ID="{2720A7A0-76DC-4326-A2EE-95148F28070B}">
@@ -203,6 +220,10 @@
 						<RTPCValue>
 							<GameParameterRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}"/>
 							<Value>99.3690851735016</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="fragment_call" ID="{01907384-92A1-4475-BF60-07203E37C654}"/>
+							<Value>3.2751796640994E-315</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>

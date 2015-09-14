@@ -533,27 +533,131 @@
 						</Folder>
 						<Folder Name="Call" ID="{E4788156-686F-4515-9787-979D0B1A47CD}" ShortID="208909004">
 							<ChildrenList>
-								<Event Name="fragment_call_play" ID="{AAC87B03-3500-434D-9798-72D5679C3595}">
+								<Event Name="fragment_call_wood_play" ID="{D7022409-D4FA-431C-8124-175398BF26D0}">
 									<ChildrenList>
-										<Action Name="Play" ID="{034565BF-02EF-4516-9846-017BB750F78A}" ShortID="27632872" Type="Play" Scope="One" Global="false">
+										<Action Name="Play" ID="{9D78DC1C-0860-4364-8A53-6EA50A9ED68B}" ShortID="1010736610" Type="Play" Scope="One" Global="false">
 											<ElementList>
-												<Element ID="{AD736685-B139-4E75-A015-C925743D83CB}" Global="false">
-													<ObjectRef Name="sfx_fragment_call" ID="{D8E6EC21-B6A1-43DF-ACFE-0A78C05F7F63}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{DB38FB0C-4D2B-4BF3-B7A2-08E8D6096D17}" Global="false">
+													<ObjectRef Name="sfx_fragment_wood_call" ID="{44B1999F-01E1-43F6-A1EB-A492948C20AF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="fragment_call_stop" ID="{5C289ED2-FDD6-4CA4-9E48-3B9504DE058D}">
+								<Event Name="fragment_call_electricity_play" ID="{2B42ECE5-1088-4D8F-AD23-2DF88A36EDB1}">
 									<ChildrenList>
-										<Action Name="Stop" ID="{1FD3D7B7-723B-429A-8D69-D9D7261EBA37}" ShortID="55030136" Type="Stop" Scope="One" Global="false">
+										<Action Name="Play" ID="{1B143148-A3B5-41D3-B58A-945ED57C5E69}" ShortID="74639545" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{3F815003-EAEB-4022-B7B7-D3CA13FFF0ED}" Global="false">
+													<ObjectRef Name="sfx_fragment_electricity_call" ID="{615DC188-A9C7-41EF-9563-2CE180E2C2B9}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="fragment_call_liquid_play" ID="{B3A6D7EB-D1AF-4873-84FF-7192BB7B9017}">
+									<ChildrenList>
+										<Action Name="Play" ID="{138CCA81-1490-46DF-BC3A-7595FF8FD006}" ShortID="910644794" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{6F21036C-4F4A-4B41-BF57-48975AC4DB8D}" Global="false">
+													<ObjectRef Name="sfx_fragment_liquid_call" ID="{C57140A8-1A1D-4858-BF15-11067E4578DB}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="fragment_call_metal_play" ID="{76AF91E1-D0FF-4355-A167-59BBB10537CF}">
+									<ChildrenList>
+										<Action Name="Play" ID="{DE9651B7-23A6-4E7D-92C0-F8585CB16AF0}" ShortID="290517183" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{E5B1DB3E-8D79-452E-992D-ECD785E5742F}" Global="false">
+													<ObjectRef Name="sfx_fragment_metal_call" ID="{8349C6DE-56F9-4142-8CD5-E9A807BCD9D3}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="fragment_call_urban_play" ID="{1E21D0C5-C755-444D-A86C-494EFF0D3BC3}">
+									<ChildrenList>
+										<Action Name="Play" ID="{031961BA-F586-498E-9EF7-C9511961EFE7}" ShortID="641014238" Type="Play" Scope="One" Global="false">
+											<ElementList>
+												<Element ID="{AC2D7DAF-FC1C-422E-B831-1ED2273D67C3}" Global="false">
+													<ObjectRef Name="sfx_fragment_urban_call" ID="{B97D1270-10F6-40B3-BE2C-E2D597D6F730}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="fragment_call_wood_stop" ID="{F444DA6C-355C-4540-B878-19C76D947C09}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{2B4D4DAE-2388-42D7-B987-15980B9CCCA5}" ShortID="886049015" Type="Stop" Scope="One" Global="false">
 											<PropertyList>
 												<Property Name="FadeCurve" Type="int16" Value="6"/>
 												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 											</PropertyList>
 											<ElementList>
-												<Element ID="{6F61E2BA-B2EC-4B7C-A92A-50BDD8903755}" Global="false">
-													<ObjectRef Name="sfx_fragment_call" ID="{D8E6EC21-B6A1-43DF-ACFE-0A78C05F7F63}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{A041FCF9-833C-45E2-9ECA-034C08F92178}" Global="false">
+													<ObjectRef Name="sfx_fragment_wood_call" ID="{44B1999F-01E1-43F6-A1EB-A492948C20AF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="fragment_call_electricity_stop" ID="{D27C3F81-0D44-4C3E-A14A-749EB4CCFA3A}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{DE9A3B0E-05A8-43E4-BEFC-C5B8321B67F4}" ShortID="210306204" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{B4766D51-7087-4C7B-AC3B-19EBE3D2115D}" Global="false">
+													<ObjectRef Name="sfx_fragment_electricity_call" ID="{615DC188-A9C7-41EF-9563-2CE180E2C2B9}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="fragment_call_liquid_stop" ID="{13970FD8-E07C-46CC-B6E8-77241AEF93A6}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{DA879914-B4F7-48BD-90EF-B9DFDA4D99CC}" ShortID="328083629" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{C3C441BA-50AC-425B-9D01-A156FBA354E1}" Global="false">
+													<ObjectRef Name="sfx_fragment_liquid_call" ID="{C57140A8-1A1D-4858-BF15-11067E4578DB}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="fragment_call_metal_stop" ID="{4A233564-B8F5-492F-8056-ED69CC6DBBCB}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{0EB0F7D4-80FA-4592-A38A-AA9A454A48E3}" ShortID="397453880" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{33DCCA97-7727-4515-86C1-2F77D94D7A13}" Global="false">
+													<ObjectRef Name="sfx_fragment_metal_call" ID="{8349C6DE-56F9-4142-8CD5-E9A807BCD9D3}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="fragment_call_urban_stop" ID="{4A0B1E08-59AB-4CB7-84FB-FDD7CC930132}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{6978EA79-A4B0-44A0-8FEB-DC13970D159A}" ShortID="574877941" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{335234C2-889E-42E5-98B3-8B1DF77F4A02}" Global="false">
+													<ObjectRef Name="sfx_fragment_urban_call" ID="{B97D1270-10F6-40B3-BE2C-E2D597D6F730}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>

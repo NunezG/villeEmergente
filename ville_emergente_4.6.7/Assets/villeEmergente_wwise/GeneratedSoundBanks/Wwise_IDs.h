@@ -29,8 +29,16 @@ namespace AK
         static const AkUniqueID ELECTRICBUZZ_STOP = 817405786U;
         static const AkUniqueID FOOTSTEPS_PLAY = 1198733287U;
         static const AkUniqueID FOOTSTEPS_STOP = 4187365685U;
-        static const AkUniqueID FRAGMENT_CALL_PLAY = 1465870985U;
-        static const AkUniqueID FRAGMENT_CALL_STOP = 2988287919U;
+        static const AkUniqueID FRAGMENT_CALL_ELECTRICITY_PLAY = 3885638619U;
+        static const AkUniqueID FRAGMENT_CALL_ELECTRICITY_STOP = 2755101329U;
+        static const AkUniqueID FRAGMENT_CALL_LIQUID_PLAY = 3141592368U;
+        static const AkUniqueID FRAGMENT_CALL_LIQUID_STOP = 1490074322U;
+        static const AkUniqueID FRAGMENT_CALL_METAL_PLAY = 933666621U;
+        static const AkUniqueID FRAGMENT_CALL_METAL_STOP = 3160982187U;
+        static const AkUniqueID FRAGMENT_CALL_URBAN_PLAY = 2631922986U;
+        static const AkUniqueID FRAGMENT_CALL_URBAN_STOP = 4036125012U;
+        static const AkUniqueID FRAGMENT_CALL_WOOD_PLAY = 1375190009U;
+        static const AkUniqueID FRAGMENT_CALL_WOOD_STOP = 3966254655U;
         static const AkUniqueID GUIDE_IDLE_PLAY = 1128982233U;
         static const AkUniqueID GUIDE_IDLE_STOP = 3761520415U;
         static const AkUniqueID GUIDE_NOUVEAU_SON = 4080525896U;
@@ -173,6 +181,7 @@ namespace AK
     {
         static const AkUniqueID BINAURAL_TO_CONVOLVER = 296257622U;
         static const AkUniqueID CONVOLUTION_WET = 1405780204U;
+        static const AkUniqueID FRAGMENT_CALL = 1001606272U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

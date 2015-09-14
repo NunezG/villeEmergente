@@ -1171,7 +1171,6 @@
 					<PropertyList>
 						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
-						<Property Name="Spatialization" Type="bool" Value="False"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -19968,6 +19967,9 @@
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 								</Reference>
@@ -20200,59 +20202,246 @@
 								</Folder>
 								<Folder Name="Fragment Call" ID="{46CE8B0C-CE06-42D8-B1F5-1395B0FC05D2}" ShortID="112597587">
 									<ChildrenList>
-										<Sound Name="sfx_fragment_call" ID="{D8E6EC21-B6A1-43DF-ACFE-0A78C05F7F63}" ShortID="230852798" Type="SoundFX">
+										<ActorMixer Name="Fragment Call" ID="{DF000654-470E-4CBE-BB77-0BB357DB1735}" ShortID="217953990">
 											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="MaxSoundPerInstance" Type="int16">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
-												<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{5C6E34B5-754F-497A-BDAA-54406A321836}" ShortID="62752912">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="fragment_call" ID="{01907384-92A1-4475-BF60-07203E37C654}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{CD7B8CAB-AAE9-486A-BF54-7FF4BCCE6D50}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>1200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-3</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
 													<ObjectRef Name="Fragment_call_attenuation" ID="{D54AA4EA-A384-4E92-A297-345D1046EEE0}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
 												</Reference>
 												<Reference Name="Conversion">
-													<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="sfx_fragment_call" ID="{E74E71A4-6EA6-4206-AABE-68B052BEA658}" ShortID="865538397">
+												<Sound Name="sfx_fragment_wood_call" ID="{44B1999F-01E1-43F6-A1EB-A492948C20AF}" ShortID="382776858" Type="SoundFX">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="1.43679581151832"/>
-														<Property Name="FadeInShape" Type="int16" Value="4"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="2.70669109947644"/>
-														<Property Name="FadeOutShape" Type="int16" Value="4"/>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>sfx_fragment_call.wav</AudioFile>
-												</AudioFileSource>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_fragment_bois_call" ID="{B00ED7AB-657E-49B3-8CA1-2C55B808CF51}" ShortID="426163079">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.660941753926702"/>
+																<Property Name="LoopEnd" Type="Real64" Value="7.10188394415358"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="8.32009031413613"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sfx_fragment_bois_call.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_fragment_bois_call" ID="{B00ED7AB-657E-49B3-8CA1-2C55B808CF51}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_fragment_electricity_call" ID="{615DC188-A9C7-41EF-9563-2CE180E2C2B9}" ShortID="243427221" Type="SoundFX">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_fragment_electricity_call" ID="{3B2C932F-C6B7-43EC-871C-55D8DCC4DECD}" ShortID="441125095">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.213579733856894"/>
+																<Property Name="LoopEnd" Type="Real64" Value="2.29667557965595"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sfx_fragment_electricity_call.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_fragment_electricity_call" ID="{3B2C932F-C6B7-43EC-871C-55D8DCC4DECD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_fragment_liquid_call" ID="{C57140A8-1A1D-4858-BF15-11067E4578DB}" ShortID="261543868" Type="SoundFX">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_fragment_liquid_call" ID="{249D0EE2-2AB9-43FB-AF7F-24530CAB3442}" ShortID="212568920">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.225952801670406"/>
+																<Property Name="LoopEnd" Type="Real64" Value="4.35278887746198"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sfx_fragment_liquid_call.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_fragment_liquid_call" ID="{249D0EE2-2AB9-43FB-AF7F-24530CAB3442}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_fragment_metal_call" ID="{8349C6DE-56F9-4142-8CD5-E9A807BCD9D3}" ShortID="527254288" Type="SoundFX">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_fragment_metal_call" ID="{73C04CAC-0C4D-47AA-A489-8A14E7C35B63}" ShortID="7039575">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+																<Property Name="LoopBegin" Type="Real64" Value="1.373301421092"/>
+																<Property Name="LoopEnd" Type="Real64" Value="5.4058578908003"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.140727000747943"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sfx_fragment_metal_call.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_fragment_metal_call" ID="{73C04CAC-0C4D-47AA-A489-8A14E7C35B63}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_fragment_urban_call" ID="{B97D1270-10F6-40B3-BE2C-E2D597D6F730}" ShortID="516037406" Type="SoundFX">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>8</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_fragment_urban_call" ID="{B6991AD9-2C6C-4B5B-AB3D-938413C48599}" ShortID="969870296">
+															<PropertyList>
+																<Property Name="CrossfadeDuration" Type="Real64" Value="250"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.556094739466467"/>
+																<Property Name="LoopEnd" Type="Real64" Value="7.28742757417103"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="4.52635253054101E-02"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>sfx_fragment_urban_call.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_fragment_urban_call" ID="{B6991AD9-2C6C-4B5B-AB3D-938413C48599}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_fragment_call" ID="{E74E71A4-6EA6-4206-AABE-68B052BEA658}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										</ActorMixer>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>
@@ -20795,6 +20984,7 @@
 								<Value>True</Value>
 							</ValueList>
 						</Property>
+						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -20837,70 +21027,6 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<ActorMixer Name="what to do with that" ID="{1BC0EF00-A257-471C-BF7B-63A5DE61EB61}" ShortID="801653023">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="sfx_guide_son" ID="{E87B98FF-2745-476B-88E3-F8379043047E}" ShortID="500101678" Type="SoundFX">
-											<PropertyList>
-												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-												<Property Name="MaxSoundPerInstance" Type="int16">
-													<ValueList>
-														<Value>2</Value>
-													</ValueList>
-												</Property>
-												<Property Name="PositioningType" Type="int16" Value="1"/>
-												<Property Name="Priority" Type="int16">
-													<ValueList>
-														<Value>70</Value>
-													</ValueList>
-												</Property>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>3</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation">
-													<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
-												</Reference>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Binaural" ID="{6DEE636B-F448-4A86-A51C-E7A5EF1F5344}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_guide_son" ID="{CDEAC055-18AE-4F28-AA42-C0CB00CF67CD}" ShortID="732653660">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="3.80661618050362"/>
-														<Property Name="FadeOutShape" Type="int16" Value="6"/>
-														<Property Name="TrimBegin" Type="Real64" Value="6.44196584392919E-02"/>
-														<Property Name="TrimEnd" Type="Real64" Value="6.17843087758664"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>sfx_guide_son.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_guide_son" ID="{CDEAC055-18AE-4F28-AA42-C0CB00CF67CD}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</ActorMixer>
 								<SwitchContainer Name="Sfx_guide_respiration" ID="{72AEEEB7-9F91-42A0-BD8A-3B81B2D12FAF}" ShortID="340135189">
 									<PropertyList>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
