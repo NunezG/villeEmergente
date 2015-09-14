@@ -1321,6 +1321,9 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_marseilles.wav"/>
 																			</PropertyList>
+																			<ConvertedFileIDList>
+																				<File ID="221881774"/>
+																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -1520,7 +1523,6 @@
 																		<Property Name="IRConvolutionStop" Type="Real64" Value="4.6194375"/>
 																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
 																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
-																		<Property Name="IRStretch" Type="Real32" Value="200"/>
 																		<Property Name="WetLevel" Type="Real32" Value="-25">
 																			<RTPCList>
 																				<RTPC Name="" ID="{DB961DD2-F996-4711-B501-D871207C5F46}" ShortID="200769012">
@@ -1541,7 +1543,7 @@
 																							</Point>
 																							<Point>
 																								<XPos>100</XPos>
-																								<YPos>-23.62914</YPos>
+																								<YPos>-15.73363</YPos>
 																								<Flags>37</Flags>
 																							</Point>
 																						</PointList>
@@ -1578,8 +1580,8 @@
 							<Flags>0</Flags>
 						</Point>
 						<Point>
-							<XPos>652.5164</XPos>
-							<YPos>-4.92258</YPos>
+							<XPos>1016.66374</XPos>
+							<YPos>-6.93598</YPos>
 							<Flags>0</Flags>
 						</Point>
 						<Point>
@@ -1785,9 +1787,6 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_skanner_pad.wav"/>
 																			</PropertyList>
-																			<ConvertedFileIDList>
-																				<File ID="758536210"/>
-																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -2388,7 +2387,7 @@
 																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
 																		<Property Name="IRConvolutionStop" Type="Real64" Value="1.72385416666667"/>
 																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
-																		<Property Name="IRStretch" Type="Real32" Value="200"/>
+																		<Property Name="IRStretch" Type="Real32" Value="50"/>
 																		<Property Name="WetLevel" Type="Real32" Value="-20">
 																			<RTPCList>
 																				<RTPC Name="" ID="{F66510A9-78B1-4F5B-BCAC-E7EADF84CADF}" ShortID="1010159659">
@@ -2409,7 +2408,7 @@
 																							</Point>
 																							<Point>
 																								<XPos>100</XPos>
-																								<YPos>-18</YPos>
+																								<YPos>-8.526</YPos>
 																								<Flags>37</Flags>
 																							</Point>
 																						</PointList>
@@ -2424,9 +2423,6 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_symphobia.wav"/>
 																			</PropertyList>
-																			<ConvertedFileIDList>
-																				<File ID="180389536"/>
-																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -4949,7 +4945,6 @@
 																		<Property Name="IRConvolutionStop" Type="Real64" Value="4.6194375"/>
 																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
 																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
-																		<Property Name="IRStretch" Type="Real32" Value="200"/>
 																		<Property Name="WetLevel" Type="Real32" Value="-25">
 																			<RTPCList>
 																				<RTPC Name="" ID="{FEB1F024-509E-439B-9DA0-B7EA5445BBB7}" ShortID="857349268">
@@ -5820,7 +5815,7 @@
 																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
 																		<Property Name="IRConvolutionStop" Type="Real64" Value="1.72385416666667"/>
 																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
-																		<Property Name="IRStretch" Type="Real32" Value="200"/>
+																		<Property Name="IRStretch" Type="Real32" Value="50"/>
 																		<Property Name="WetLevel" Type="Real32" Value="-23">
 																			<RTPCList>
 																				<RTPC Name="" ID="{3CF55D17-E58B-4029-AD60-2D9C85A80F6F}" ShortID="134165111">
@@ -5841,7 +5836,7 @@
 																							</Point>
 																							<Point>
 																								<XPos>100</XPos>
-																								<YPos>-15</YPos>
+																								<YPos>-6.82219</YPos>
 																								<Flags>37</Flags>
 																							</Point>
 																						</PointList>
@@ -5856,6 +5851,9 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_symphobia.wav"/>
 																			</PropertyList>
+																			<ConvertedFileIDList>
+																				<File ID="45333934"/>
+																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -8222,9 +8220,6 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_marseilles.wav"/>
 																			</PropertyList>
-																			<ConvertedFileIDList>
-																				<File ID="178625608"/>
-																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -8417,7 +8412,6 @@
 																		<Property Name="IRConvolutionStop" Type="Real64" Value="4.6194375"/>
 																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
 																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
-																		<Property Name="IRStretch" Type="Real32" Value="200"/>
 																		<Property Name="WetLevel" Type="Real32" Value="-23">
 																			<RTPCList>
 																				<RTPC Name="" ID="{A215D224-0D6F-4978-908F-B3EF5E12AA8C}" ShortID="252082234">
@@ -8680,9 +8674,6 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_skanner_pad.wav"/>
 																			</PropertyList>
-																			<ConvertedFileIDList>
-																				<File ID="758536210"/>
-																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -9282,7 +9273,7 @@
 																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
 																		<Property Name="IRConvolutionStop" Type="Real64" Value="1.72385416666667"/>
 																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
-																		<Property Name="IRStretch" Type="Real32" Value="200"/>
+																		<Property Name="IRStretch" Type="Real32" Value="50"/>
 																		<Property Name="WetLevel" Type="Real32" Value="-23">
 																			<RTPCList>
 																				<RTPC Name="" ID="{1FF0BAC4-E6A8-4729-9F80-768EF429FE67}" ShortID="5917354">
@@ -9303,7 +9294,7 @@
 																							</Point>
 																							<Point>
 																								<XPos>100</XPos>
-																								<YPos>-13</YPos>
+																								<YPos>-7.45463</YPos>
 																								<Flags>37</Flags>
 																							</Point>
 																						</PointList>
@@ -9318,9 +9309,6 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_symphobia.wav"/>
 																			</PropertyList>
-																			<ConvertedFileIDList>
-																				<File ID="180389536"/>
-																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
