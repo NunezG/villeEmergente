@@ -232,7 +232,7 @@
 				</File>
 				<File Id="178625608" Language="SFX">
 					<ShortName>ri_marseilles.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_marseilles_6659AB86.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\ri_marseilles_434B559E.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="180389536" Language="SFX">
@@ -352,6 +352,11 @@
 					<ShortName>sfx_musicien_dark_joie.wav</ShortName>
 					<Path>SFX\sfx_musicien_dark_joie_816A4F72.wem</Path>
 				</File>
+				<File Id="420474650" Language="SFX">
+					<ShortName>ri_shevannai.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_shevannai_45DBF9BD.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="426163079" Language="SFX">
 					<ShortName>sfx_fragment_bois_call.wav</ShortName>
 					<Path>SFX\sfx_fragment_bois_call_3B5C85C4.wem</Path>
@@ -390,7 +395,7 @@
 				</File>
 				<File Id="500831021" Language="SFX">
 					<ShortName>ri_shevannai.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_shevannai_95C1C6C3.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\ri_shevannai_06E7FE2C.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="502472035" Language="SFX">
@@ -411,7 +416,7 @@
 				</File>
 				<File Id="528881146" Language="SFX">
 					<ShortName>ri_skanner_pad.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_skanner_pad_06FD7189.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\ri_skanner_pad_B8577540.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="544891264" Language="SFX">
@@ -488,7 +493,7 @@
 				</File>
 				<File Id="755671691" Language="SFX">
 					<ShortName>ri_marseilles.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_marseilles_68332AF1.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\ri_marseilles_C8EAAB5F.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="758536210" Language="SFX">
@@ -601,6 +606,11 @@
 				<File Id="1019937081" Language="SFX">
 					<ShortName>Sfx_ri_absynth_dark.wav</ShortName>
 					<Path>SFX\Sfx_ri_absynth_dark_950FF8F3.wem</Path>
+				</File>
+				<File Id="1031649523" Language="SFX">
+					<ShortName>ri_shevannai.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_shevannai_04F1EDF8.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="1037490087" Language="SFX">
 					<ShortName>Sfx_ri_rev_light.wav</ShortName>
