@@ -77,7 +77,8 @@ public class ObjectInteractor : MonoBehaviour {
 			inHandObject.transform.position = inHandPosition.transform.position;
 			inHandObject.transform.rotation = inHandPosition.transform.rotation;
 			inHandObject.rigidbody.isKinematic = true;
-			handsFull = true;    
+			handsFull = true;   
+			WwiseAudioManager.PlayFiniteEvent("interactions_simples_motion", this.gameObject);
 		}	
 	}
 
@@ -86,11 +87,11 @@ public class ObjectInteractor : MonoBehaviour {
 		if (inHandObject != null)
         {
 			print("Interactor:DropInHandObject");
+			WwiseAudioManager.PlayFiniteEvent("interactions_simples_motion", this.gameObject);
 			inHandObject.GetComponent<Fragment>().Drop();
 			     
 			if (hitObject == null){
-				WwiseAudioManager.PlayFiniteEvent("lacher_morceau", inHandObject);
-				WwiseAudioManager.PlayLoopEvent ("fragment_call", this.gameObject, false);
+				inHandObject.GetComponent<Fragment>().Ground();
 			}
 
             handsFull = false;

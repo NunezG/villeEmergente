@@ -37,12 +37,15 @@ public class AudioEventManager : MonoBehaviour {
 	*Sound events
 	*/
 	public void SoundPlayIdle()
-	{
+	{		
+		SoundUniverseManager.addSoundEvent (this.transform.parent.gameObject); 
+		WwiseAudioManager.PlayFiniteEvent(SoundUniverseManager.switchType+"_mood", this.transform.parent.gameObject);
 		WwiseAudioManager.PlayLoopEvent (audioName.ToString()+"_idle", this.transform.parent.gameObject);
 	}
 
 	public void SounStopdIdle()
 	{
+		SoundUniverseManager.removeSoundEvent (this.transform.parent.gameObject);
 		WwiseAudioManager.StopLoopEvent (audioName.ToString()+"_idle", this.transform.parent.gameObject);
 	}
 

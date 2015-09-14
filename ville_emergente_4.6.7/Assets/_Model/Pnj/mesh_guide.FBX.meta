@@ -1,0 +1,863 @@
+fileFormatVersion: 2
+guid: 1eabd8d61abbf3848a78dad9db1c0c43
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: body1
+    100002: body2
+    100004: body3
+    100006: body4
+    100008: body5
+    100010: bonend_face
+    100012: bonend_l_hand
+    100014: bonend_r_hand
+    100016: Cylinder001
+    100018: face1
+    100020: head1
+    100022: l_arm1
+    100024: l_arm2
+    100026: l_hand
+    100028: l_shoulder
+    100030: neck1
+    100032: //RootNode
+    100034: r_arm
+    100036: r_arm 1
+    100038: r_hand
+    100040: r_shoulder
+    400000: body1
+    400002: body2
+    400004: body3
+    400006: body4
+    400008: body5
+    400010: bonend_face
+    400012: bonend_l_hand
+    400014: bonend_r_hand
+    400016: Cylinder001
+    400018: face1
+    400020: head1
+    400022: l_arm1
+    400024: l_arm2
+    400026: l_hand
+    400028: l_shoulder
+    400030: neck1
+    400032: //RootNode
+    400034: r_arm
+    400036: r_arm 1
+    400038: r_hand
+    400040: r_shoulder
+    4300000: Cylinder001
+    7400000: Idle
+    7400002: Marche
+    7400004: Errance
+    7400006: Montre d'une main
+    7400008: Danse
+    7400010: Montre des deux mains
+    7400012: Satisfait
+    7400014: "Compl\xE9t\xE9"
+    7400016: "Marche fi\xE8re"
+    7400018: Sautille gentiement
+    7400020: Cri errance
+    9500000: //RootNode
+    13700000: Cylinder001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 5
+      lastFrame: 44
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body1
+        weight: 1
+      - path: body1/body2
+        weight: 1
+      - path: body1/body2/body3
+        weight: 1
+      - path: body1/body2/body3/body4
+        weight: 1
+      - path: body1/body2/body3/body4/body5
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand/bonend_l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1/bonend_face
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand/bonend_r_hand
+        weight: 1
+      - path: Cylinder001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Marche
+      takeName: Take 001
+      firstFrame: 50
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body1
+        weight: 1
+      - path: body1/body2
+        weight: 1
+      - path: body1/body2/body3
+        weight: 1
+      - path: body1/body2/body3/body4
+        weight: 1
+      - path: body1/body2/body3/body4/body5
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand/bonend_l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1/bonend_face
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand/bonend_r_hand
+        weight: 1
+      - path: Cylinder001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Errance
+      takeName: Take 001
+      firstFrame: 105
+      lastFrame: 145
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body1
+        weight: 1
+      - path: body1/body2
+        weight: 1
+      - path: body1/body2/body3
+        weight: 1
+      - path: body1/body2/body3/body4
+        weight: 1
+      - path: body1/body2/body3/body4/body5
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand/bonend_l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1/bonend_face
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand/bonend_r_hand
+        weight: 1
+      - path: Cylinder001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Montre d'une main
+      takeName: Take 001
+      firstFrame: 148
+      lastFrame: 232
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body1
+        weight: 1
+      - path: body1/body2
+        weight: 1
+      - path: body1/body2/body3
+        weight: 1
+      - path: body1/body2/body3/body4
+        weight: 1
+      - path: body1/body2/body3/body4/body5
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand/bonend_l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1/bonend_face
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand/bonend_r_hand
+        weight: 1
+      - path: Cylinder001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Danse
+      takeName: Take 001
+      firstFrame: 240
+      lastFrame: 320
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body1
+        weight: 1
+      - path: body1/body2
+        weight: 1
+      - path: body1/body2/body3
+        weight: 1
+      - path: body1/body2/body3/body4
+        weight: 1
+      - path: body1/body2/body3/body4/body5
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand/bonend_l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1/bonend_face
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand/bonend_r_hand
+        weight: 1
+      - path: Cylinder001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Montre des deux mains
+      takeName: Take 001
+      firstFrame: 330
+      lastFrame: 390
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body1
+        weight: 1
+      - path: body1/body2
+        weight: 1
+      - path: body1/body2/body3
+        weight: 1
+      - path: body1/body2/body3/body4
+        weight: 1
+      - path: body1/body2/body3/body4/body5
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand/bonend_l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1/bonend_face
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand/bonend_r_hand
+        weight: 1
+      - path: Cylinder001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Satisfait
+      takeName: Take 001
+      firstFrame: 391
+      lastFrame: 426
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body1
+        weight: 1
+      - path: body1/body2
+        weight: 1
+      - path: body1/body2/body3
+        weight: 1
+      - path: body1/body2/body3/body4
+        weight: 1
+      - path: body1/body2/body3/body4/body5
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand/bonend_l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1/bonend_face
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand/bonend_r_hand
+        weight: 1
+      - path: Cylinder001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: "Compl\xE9t\xE9"
+      takeName: Take 001
+      firstFrame: 427
+      lastFrame: 470
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body1
+        weight: 1
+      - path: body1/body2
+        weight: 1
+      - path: body1/body2/body3
+        weight: 1
+      - path: body1/body2/body3/body4
+        weight: 1
+      - path: body1/body2/body3/body4/body5
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand/bonend_l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1/bonend_face
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand/bonend_r_hand
+        weight: 1
+      - path: Cylinder001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: "Marche fi\xE8re"
+      takeName: Take 001
+      firstFrame: 472
+      lastFrame: 502
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body1
+        weight: 1
+      - path: body1/body2
+        weight: 1
+      - path: body1/body2/body3
+        weight: 1
+      - path: body1/body2/body3/body4
+        weight: 1
+      - path: body1/body2/body3/body4/body5
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand/bonend_l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1/bonend_face
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand/bonend_r_hand
+        weight: 1
+      - path: Cylinder001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Sautille gentiement
+      takeName: Take 001
+      firstFrame: 504
+      lastFrame: 544
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body1
+        weight: 1
+      - path: body1/body2
+        weight: 1
+      - path: body1/body2/body3
+        weight: 1
+      - path: body1/body2/body3/body4
+        weight: 1
+      - path: body1/body2/body3/body4/body5
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand/bonend_l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1/bonend_face
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand/bonend_r_hand
+        weight: 1
+      - path: Cylinder001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Cri errance
+      takeName: Take 001
+      firstFrame: 546
+      lastFrame: 586
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body1
+        weight: 1
+      - path: body1/body2
+        weight: 1
+      - path: body1/body2/body3
+        weight: 1
+      - path: body1/body2/body3/body4
+        weight: 1
+      - path: body1/body2/body3/body4/body5
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/l_shoulder/l_arm1/l_arm2/l_hand/bonend_l_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/neck1/head1/face1/bonend_face
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand
+        weight: 1
+      - path: body1/body2/body3/body4/body5/r_shoulder/r_arm/r_arm 1/r_hand/bonend_r_hand
+        weight: 1
+      - path: Cylinder001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
