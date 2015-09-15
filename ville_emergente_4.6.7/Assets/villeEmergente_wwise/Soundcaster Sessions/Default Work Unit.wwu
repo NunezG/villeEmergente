@@ -19,10 +19,16 @@
 							<GameParameterRef Name="binaural_to_convolver" ID="{4771F142-4D7B-451E-8786-58DE18DAFCFA}"/>
 							<Value>0</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}"/>
+							<Value>82.6498422712934</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="AtmoRI_1" ID="{D66DB834-E895-4554-9254-70B3FB3E760B}"/>
 						<CurrentSwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
+						<CurrentSwitchRef Name="PNJ_atmo" ID="{6583DB66-6DA5-4465-8339-CE6734F36F63}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="switch tests" ID="{156BE172-21AB-40B5-A589-98452367574E}">
@@ -110,7 +116,7 @@
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="fragment_call_play" ID="{AAC87B03-3500-434D-9798-72D5679C3595}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="sfx_fragment_electricity_call" ID="{615DC188-A9C7-41EF-9563-2CE180E2C2B9}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 							<Position X="1" Y="3"/>
 						</Module>
 						<Module>
@@ -122,11 +128,87 @@
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="fragment_call_stop" ID="{5C289ED2-FDD6-4CA4-9E48-3B9504DE058D}" WorkUnitID="{7F93A25F-2979-462E-8B53-8DECAD100DFF}"/>
+							<ObjectRef Name="sfx_fragment_liquid_call" ID="{C57140A8-1A1D-4858-BF15-11067E4578DB}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 							<Position X="2" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Toucher élément" ID="{8C0EE57C-46CC-4653-98D5-432112F38E4D}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_fragment_metal_call" ID="{8349C6DE-56F9-4142-8CD5-E9A807BCD9D3}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_fragment_urban_call" ID="{B97D1270-10F6-40B3-BE2C-E2D597D6F730}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="4" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_fragment_wood_call" ID="{44B1999F-01E1-43F6-A1EB-A492948C20AF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="5" Y="3"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="binaural_to_convolver" ID="{4771F142-4D7B-451E-8786-58DE18DAFCFA}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}"/>
+							<Value>99.5268138801262</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="fragment_call" ID="{01907384-92A1-4475-BF60-07203E37C654}"/>
+							<Value>100</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="AtmoRI_1" ID="{D66DB834-E895-4554-9254-70B3FB3E760B}"/>
+						<CurrentSwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
+						<CurrentSwitchRef Name="PNJ_atmo" ID="{6583DB66-6DA5-4465-8339-CE6734F36F63}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Musicien" ID="{2720A7A0-76DC-4326-A2EE-95148F28070B}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="RI_musicien_atmo" ID="{FFC6C344-CB67-4EF0-B6AA-7777B0EC705B}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RI_musicien_atmo" ID="{3F031E78-34EE-4205-90D7-F01DE771B823}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_musicien_respiration" ID="{013FEFAF-0A85-4A4D-9E98-9C8F2B63A1E1}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RI_musicien_atmo" ID="{1CEA8F63-6DF3-4C36-A4E0-72EB05EDFD85}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RI_musicien_atmo" ID="{BFD1A74B-DC60-4EF7-89B9-8DCF7C3830FC}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_musicien_joie" ID="{3B98EA7A-20F6-435B-B94D-04433E3843C1}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RI_musicien_atmo" ID="{FF3373EB-3AA4-4E30-BC94-9E5065FD1884}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_musicien_ouverture" ID="{5CEF1DE6-33A3-4FFC-86A1-490AE5A14C56}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RI_musicien_atmo" ID="{AD17E569-194A-4AC3-827C-0B87D7C2B2D6}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="sfx_musicien_son" ID="{D9140353-F316-4C80-9D7D-8B866373F8E6}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 							<Position X="3" Y="2"/>
 						</Module>
 					</ModuleList>
@@ -137,13 +219,18 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}"/>
-							<Value>100</Value>
+							<Value>99.3690851735016</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="fragment_call" ID="{01907384-92A1-4475-BF60-07203E37C654}"/>
+							<Value>3.2751796640994E-315</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="AtmoRI_1" ID="{D66DB834-E895-4554-9254-70B3FB3E760B}"/>
 						<CurrentSwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
+						<CurrentSwitchRef Name="PNJ_atmo" ID="{6583DB66-6DA5-4465-8339-CE6734F36F63}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

@@ -5,13 +5,22 @@ public class Plateforme_Move : MonoBehaviour
 {
     public Vector3 min;
     public Vector3 max;
-
-    public float time;
+   
+    public float angle_min;
+    public float angle_max;
     
-    private Vector3 dir;
+    public float time;
+    public float sleep;
+
+    public float ratio = 0.0f;
 
     private bool fall = true;
-    public float ratio = 0.0f;
+    private bool stop = false;
+
+    private Vector3 currentAngle;
+    private float timer = 0.0f;
+
+  
 
 	// Use this for initialization
 	void Start () 
@@ -21,30 +30,52 @@ public class Plateforme_Move : MonoBehaviour
         if (ratio < 0.0f)
             ratio = 0.0f;
 
-        dir = (max - min) * 1.0f/time;
+        currentAngle = transform.localEulerAngles;
 	}
-	
+
 	// Update is called once per frame
 	void Update () 
     {
-       
-        if(fall)
+        if (stop)
         {
-            ratio += Time.deltaTime / time;
+            timer += Time.deltaTime;
 
-            if (ratio >= 1.0f)
-                fall = false;
+            if(timer >= sleep)
+            {
+                timer = 0.0f;
+                stop = false;
+            }
         }
-       
+
         else
         {
-            ratio -= Time.deltaTime / time;
+            if (fall)
+            {
+                ratio += Time.deltaTime / time;
 
-            if (ratio <= 0.0f)
-                fall = true;
+                if (ratio >= 1.0f)
+                {
+                    ratio = 1.0f;
+                    fall = false;
+                    stop = true;
+                }
+            }
+
+            else
+            {
+                ratio -= Time.deltaTime / time;
+
+                if (ratio <= 0.0f)
+                {
+                    ratio = 0.0f;
+                    fall = true;
+                    stop = true;
+                }
+            }
+
         }
 
-        transform.position = min + ratio * (max - min); ;
-
+        transform.position = min + ratio * (max - min);
+        transform.localEulerAngles = new Vector3(currentAngle.x, angle_min + ratio * (angle_max - angle_min), currentAngle.z);
 	}
 }

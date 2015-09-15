@@ -13,17 +13,26 @@ public class SoundUniverseManager : MonoBehaviour {
 	public static float stopTimer;
 	public static int stopCounter;
 
+	public string switchTypeTest;
+
+
 	public static List<GameObject> playingObjects;
-	
-	// Use this for initialization
-	void Start () {
+
+	void Awake () {
 		playingObjects = new List<GameObject>();
 		switchType = switchAtmo;
+	}
+
+
+
+	// Use this for initialization
+	void Start () {
 		WwiseAudioManager.PlayFiniteEvent("ville_calme", this.gameObject);
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		switchTypeTest = switchType;
 
 		timer += Time.deltaTime;
 
@@ -90,8 +99,7 @@ public class SoundUniverseManager : MonoBehaviour {
 	
 	public static void removeSoundEvent(GameObject target)
 	{
-		playingObjects.Remove (target);
-		
+		playingObjects.Remove (target);	
 	}
 
 	//void getNextEvent()
@@ -108,15 +116,28 @@ public class SoundUniverseManager : MonoBehaviour {
 		//Tous les sons a switcher sont avec convolver
 		for (int i = 0; i < playingObjects.Count; i++)
 		{
-			//Stoppe son du convolver avec switch précédent
-			WwiseAudioManager.StopLoopEvent (playingObjects[i].GetComponent<InteractibleObject>().soundEvent, playingObjects[i], true);
 
-			//Lance switch du convolver
-			WwiseAudioManager.PlayFiniteEvent(switchType+playingObjects[i].GetComponent<ConvolutionObject>().switchNumber, playingObjects[i]);
+			if (playingObjects[i].GetComponent<ConvolutionObject>() != null && playingObjects[i].GetComponent<InteractibleObject>().soundEvent != "")
+			{
+				          //Stoppe son du convolver avec switch précédent
+				WwiseAudioManager.StopLoopEvent (playingObjects[i].GetComponent<InteractibleObject>().soundEvent, playingObjects[i], true);
 
-			//Debug.Log( " play loop: " + playingObjects[i].GetComponent<InteractibleObject>().soundEevent);
-			//Lance son du convolver
-			WwiseAudioManager.PlayLoopEvent (playingObjects[i].GetComponent<InteractibleObject>().soundEvent, playingObjects[i], true);
+				//Lance switch du convolver
+				WwiseAudioManager.PlayFiniteEvent(switchType+playingObjects[i].GetComponent<ConvolutionObject>().switchName, playingObjects[i]);
+
+				//Lance son du convolver
+				WwiseAudioManager.PlayLoopEvent (playingObjects[i].GetComponent<InteractibleObject>().soundEvent, playingObjects[i], true);
+			}
+
+			if (playingObjects[i].GetComponent<AudioEventManager>() != null)
+			{
+				playingObjects[i].GetComponent<AudioEventManager>().SounStopdIdle();
+				
+				playingObjects[i].GetComponent<AudioEventManager>().SoundPlayIdle();
+
+				//WwiseAudioManager.PlayLoopEvent (playingObjects[i].GetComponent<InteractibleObject>().soundEvent, playingObjects[i], true);
+
+			}
 		}
 	}
 }

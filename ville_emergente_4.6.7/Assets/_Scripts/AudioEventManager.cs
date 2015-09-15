@@ -3,20 +3,21 @@ using System.Collections;
 
 public class AudioEventManager : MonoBehaviour {
 
-	public string audioName;
+	public NPCType audioName;
 
     public void Start()
     {
-		if (audioName=="")
-		audioName = gameObject.name;
+		SoundPlayIdle ();
+		//if (audioName=="")
+		//audioName = gameObject.name;
     }
     
     public void PlayFiniteEventWithCallBack(string eventName)
     {
 		//Stops previous event
 		SounStopdIdle();
-
-		AkSoundEngine.PostEvent(eventName, this.gameObject, (uint)AkCallbackType.AK_EndOfEvent, MyCallbackFunction, this.gameObject);	
+		WwiseAudioManager.PlayFiniteEvent (eventName, this.transform.parent.gameObject, MyCallbackFunction);
+		//AkSoundEngine.PostEvent(eventName, this.gameObject, (uint)AkCallbackType.AK_EndOfEvent, MyCallbackFunction, this.gameObject);	
 	}
 
 	void MyCallbackFunction(object in_cookie, AkCallbackType in_type, object in_info)	
@@ -36,13 +37,16 @@ public class AudioEventManager : MonoBehaviour {
 	*Sound events
 	*/
 	public void SoundPlayIdle()
-	{
-		WwiseAudioManager.PlayLoopEvent (audioName+"_idle", this.gameObject);
+	{		
+		SoundUniverseManager.addSoundEvent (this.transform.parent.gameObject); 
+		WwiseAudioManager.PlayFiniteEvent(SoundUniverseManager.switchType+"_mood", this.transform.parent.gameObject);
+		WwiseAudioManager.PlayLoopEvent (audioName.ToString()+"_idle", this.transform.parent.gameObject);
 	}
 
 	public void SounStopdIdle()
 	{
-		WwiseAudioManager.StopLoopEvent (audioName+"_idle", this.gameObject);
+		SoundUniverseManager.removeSoundEvent (this.transform.parent.gameObject);
+		WwiseAudioManager.StopLoopEvent (audioName.ToString()+"_idle", this.transform.parent.gameObject);
 	}
 
 
@@ -51,43 +55,43 @@ public class AudioEventManager : MonoBehaviour {
 	*/
 	public void soundJoie()
 	{
-		PlayFiniteEventWithCallBack (audioName+"_joie");	
+		PlayFiniteEventWithCallBack (audioName.ToString()+"_joie");	
 		//gObject.GetComponentInChildren<Animator> ().SetBool ("",true);
 	}
 
 	public void soundSon()
 	{
-		PlayFiniteEventWithCallBack (audioName+"_son");	
+		PlayFiniteEventWithCallBack (audioName.ToString()+"_son");	
 	}
 
 	public void soundNouveauSon()
 	{
-		PlayFiniteEventWithCallBack (audioName+"_nouveau_son");	
+		PlayFiniteEventWithCallBack (audioName.ToString()+"_nouveau_son");	
 	}
 
 	public void soundTourne()
 	{
-		PlayFiniteEventWithCallBack (audioName+"_tourne");	
+		PlayFiniteEventWithCallBack (audioName.ToString()+"_tourne");	
 	}
 
 	public void soundOuverture()
 	{
-		PlayFiniteEventWithCallBack (audioName+"_ouverture");	
+		PlayFiniteEventWithCallBack (audioName.ToString()+"_ouverture");	
 	}
 
 	public void soundOrdre()
 	{
-		PlayFiniteEventWithCallBack (audioName+"_ordre");	
+		PlayFiniteEventWithCallBack (audioName.ToString()+"_ordre");	
 	}
 
 	public void soundChangeCouleur()
 	{
-		PlayFiniteEventWithCallBack (audioName+"_change_couleur");	
+		PlayFiniteEventWithCallBack (audioName.ToString()+"_change_couleur");	
 	}
 
 	public void soundDanse()
 	{
-		PlayFiniteEventWithCallBack (audioName+"_danse");	
+		PlayFiniteEventWithCallBack (audioName.ToString()+"_danse");	
 	}
 
     

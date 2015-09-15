@@ -15,6 +15,10 @@ public class OpenTheWay : RAINAction
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
         ai.Body.GetComponent<Musicien>().OpenTheWay();
+		ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Complete ();
+		ai.Body.transform.FindChild("mesh").GetComponent<AudioEventManager> ().soundOuverture ();
+			
+        //ai.Body.GetComponent<Musicien>().OpenTheWay();
         //ai.Body.GetComponent<Musicien>().ActiveScene();
         return ActionResult.SUCCESS;
     }

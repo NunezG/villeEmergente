@@ -261,8 +261,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113072}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.159999996, y: 0, z: -.141000003}
-  m_LocalScale: {x: .143757835, y: .143757761, z: .143757761}
+  m_LocalPosition: {x: .0719999969, y: -.00100000005, z: -.584999979}
+  m_LocalScale: {x: .112871058, y: .112871014, z: .112871014}
   m_Children: []
   m_Father: {fileID: 466726}
   m_RootOrder: 6
@@ -273,8 +273,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.159999996, y: 0, z: -.419}
-  m_LocalScale: {x: .143757835, y: .143757761, z: .143757761}
+  m_LocalPosition: {x: .217999995, y: -.00100000005, z: -.361000001}
+  m_LocalScale: {x: .112871058, y: .112871014, z: .112871014}
   m_Children: []
   m_Father: {fileID: 466726}
   m_RootOrder: 5
@@ -285,8 +285,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113076}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .191, y: 0, z: -.419}
-  m_LocalScale: {x: .143757835, y: .143757761, z: .143757761}
+  m_LocalPosition: {x: .050999999, y: -.00100000005, z: -.43599999}
+  m_LocalScale: {x: .112871058, y: .112871014, z: .112871014}
   m_Children: []
   m_Father: {fileID: 466726}
   m_RootOrder: 4
@@ -297,8 +297,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113078}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0120000001, y: 0, z: -.421000004}
-  m_LocalScale: {x: .143757835, y: .143757761, z: .143757761}
+  m_LocalPosition: {x: -.115999997, y: -.00100000005, z: -.393999994}
+  m_LocalScale: {x: .112871058, y: .112871014, z: .112871014}
   m_Children: []
   m_Father: {fileID: 466726}
   m_RootOrder: 3
@@ -309,8 +309,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.179000005, y: 0, z: -.293000013}
-  m_LocalScale: {x: .143757835, y: .143757761, z: .143757761}
+  m_LocalPosition: {x: .163000003, y: -.00100000005, z: -.131999999}
+  m_LocalScale: {x: .112871058, y: .112871014, z: .112871014}
   m_Children: []
   m_Father: {fileID: 466726}
   m_RootOrder: 2
@@ -321,8 +321,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .167999998, y: 0, z: -.293000013}
-  m_LocalScale: {x: .143757835, y: .143757761, z: .143757761}
+  m_LocalPosition: {x: .0309999995, y: -.0120000001, z: -.266000003}
+  m_LocalScale: {x: .112871058, y: .112871014, z: .112871014}
   m_Children: []
   m_Father: {fileID: 466726}
   m_RootOrder: 1
@@ -333,8 +333,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113084}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -.244000003}
-  m_LocalScale: {x: .14375782, y: .143757701, z: .143757701}
+  m_LocalPosition: {x: -.136999995, y: -.00100000005, z: -.211999997}
+  m_LocalScale: {x: .112871051, y: .112870961, z: .112870961}
   m_Children: []
   m_Father: {fileID: 466726}
   m_RootOrder: 0
@@ -345,8 +345,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7.47539091, y: 7.47538805, z: 7.47538805}
+  m_LocalPosition: {x: -2.3842e-07, y: 0, z: .275040001}
+  m_LocalScale: {x: 9.39284992, y: 9.39284515, z: 9.39284515}
   m_Children:
   - {fileID: 413084}
   - {fileID: 413082}
@@ -388,7 +388,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 185466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.1499996, y: -4.61999989, z: 1055.59998}
+  m_LocalPosition: {x: 2.91000009, y: 4.01999998, z: -2.80999994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 485474}
@@ -813,14 +813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainActor: {fileID: 185466}
-  spots:
-  - {fileID: 113084}
-  - {fileID: 113082}
-  - {fileID: 113080}
-  - {fileID: 113078}
-  - {fileID: 113076}
-  - {fileID: 113074}
-  - {fileID: 113072}
+  spots: []
   availablesSpots: 
 --- !u!114 &11485472
 MonoBehaviour:
@@ -860,8 +853,8 @@ MonoBehaviour:
       id="_ai" /></fields><references><reference type="RAIN.Core.AI" refcount="1"
       id="0"><field value="True" type="System.Boolean" id="_isActive" /><field type="UnityEngine.GameObject"
       id="_body" gameobject="0" /><field type="RAIN.Memory.BasicMemory" reference="1"
-      id="_workingMemory" childrenvisible="True" /><field type="RAIN.Minds.BasicMind"
-      reference="2" id="_mind" childrenvisible="False" /><field type="RAIN.Motion.BasicMotor"
+      id="_workingMemory" childrenvisible="False" /><field type="RAIN.Minds.BasicMind"
+      reference="2" id="_mind" childrenvisible="True" /><field type="RAIN.Motion.BasicMotor"
       reference="3" id="_motor" /><field type="RAIN.Animation.BasicAnimator" reference="4"
       id="_animator" /><field type="RAIN.Navigation.BasicNavigator" reference="5"
       id="_navigator" /><field type="RAIN.Perception.BasicSenses" reference="6" id="_senses"
@@ -876,7 +869,9 @@ MonoBehaviour:
       type="RAIN.Memory.BasicMemory+MemoryItem" reference="12" id="element5" /><field
       type="RAIN.Memory.BasicMemory+MemoryItem" reference="13" id="element6" /><field
       type="RAIN.Memory.BasicMemory+MemoryItem" reference="14" id="element7" /><field
-      type="RAIN.Memory.BasicMemory+MemoryItem" reference="15" id="element8" /></field></reference><reference
+      type="RAIN.Memory.BasicMemory+MemoryItem" reference="15" id="element8" /><field
+      type="RAIN.Memory.BasicMemory+MemoryItem" reference="16" id="element9" /><field
+      type="RAIN.Memory.BasicMemory+MemoryItem" reference="17" id="element10" /></field></reference><reference
       type="RAIN.Minds.BasicMind" refcount="1" id="2"><field type="RAIN.BehaviorTrees.BTAsset"
       id="_behaviorTreeAsset" gameobject="1" /><field type="System.Collections.Generic.List"
       id="_behaviorTreeBindings" elementtype="RAIN.BehaviorTrees.BTAssetBinding" /></reference><reference
@@ -923,6 +918,12 @@ MonoBehaviour:
       /><field value="System.Boolean" type="System.Type" id="ValueType" /><field value="False"
       type="System.Boolean" id="Value" /></reference><reference type="RAIN.Memory.BasicMemory+MemoryItem"
       refcount="1" id="15"><field value="hasFragment" type="System.String" id="Key"
+      /><field value="System.Boolean" type="System.Type" id="ValueType" /><field value="False"
+      type="System.Boolean" id="Value" /></reference><reference type="RAIN.Memory.BasicMemory+MemoryItem"
+      refcount="1" id="16"><field value="timerIsOver" type="System.String" id="Key"
+      /><field value="System.Boolean" type="System.Type" id="ValueType" /><field value="False"
+      type="System.Boolean" id="Value" /></reference><reference type="RAIN.Memory.BasicMemory+MemoryItem"
+      refcount="1" id="17"><field value="speechIsOver" type="System.String" id="Key"
       /><field value="System.Boolean" type="System.Type" id="ValueType" /><field value="False"
       type="System.Boolean" id="Value" /></reference></references></component>
     _serializedGameObjects:
@@ -1023,7 +1024,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: .5
+  m_Radius: .75
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!135 &13585468
 SphereCollider:

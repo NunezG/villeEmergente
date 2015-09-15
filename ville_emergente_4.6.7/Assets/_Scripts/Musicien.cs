@@ -23,10 +23,10 @@ public class Musicien : MonoBehaviour{
     public Material material;
     //public AudioSource audioSource;
     //public AudioClip defaultClip;
-    private string audioEventName = "";
-    public string defaultAudioEventName="";
+   // private string audioEventName = "";
+   // public string defaultAudioEventName="";
     //public List<Fragment> fragments = new List<Fragment>();
-    public Fragment fragment = null;
+ //   public Fragment fragment = null;
 
     public static GameObject[] allNavTargets = null;
     public List<GameObject> targets = new List<GameObject>();
@@ -59,7 +59,8 @@ public class Musicien : MonoBehaviour{
 	// Use this for initialization
     public void Start()
     {
-        audioEventName = defaultAudioEventName;
+       // audioEventName = defaultAudioEventName;
+
         //print("number : " + this.gameObject.name.Substring(8));
         AIRig aiRig = GetComponentInChildren<AIRig>();
         tMemory = aiRig.AI.WorkingMemory as RAIN.Memory.BasicMemory;
@@ -68,7 +69,7 @@ public class Musicien : MonoBehaviour{
         endSoundTimer = (int)Random.Range(minEndSoundTimer, maxEndSoundTimer);
         endWaitTimer = (int)Random.Range(minEndWaitTimer, maxEndWaitTimer);
 
-        this.renderer.material = material;
+		this.transform.FindChild("mesh").GetChild(1).renderer.material = material;
 
 		//WwiseAudioManager.instance.soundPlayIdle ("musicien", this.gameObject);
 	}
@@ -149,42 +150,21 @@ public class Musicien : MonoBehaviour{
     public void OnAddingFragment(Fragment fragment)
     {
         print("NPC:OnAddingFragment");
-        //WwiseAudioManager.instance.soundOuverture("musicien", this.gameObject);
+
         //SetIsFragmentComplete(true);
         SetJustReceivedFragmentComplete(true);
-        this.fragment = fragment;
+       // this.Getcomp   fragment = fragment;
         
-        this.renderer.material = fragment.material;
+     //   this.renderer.material = fragment.material;
         //this.audioSource.clip = fragment.GetClip();
-		this.audioEventName = fragment.GetComponent<InteractibleObject>().soundEvent;
+	//	this.audioEventName = fragment.GetComponent<InteractibleObject>().soundEvent;
 
 
     }
 
-
-    public void PlayIdleSoundobject(object in_cookie, AkCallbackType in_type, object in_info)
-    {
-
-       // if (in_type == AK_EndOfEvent)
-
-            {
-
-               //AkEventCallbackInfo info = (AkEventCallbackInfo)in_info; //Then do stuff.
-
-            }
-
-    }
     public void EmitSound()
     {
         //WwiseAudioManager.instance.PlayFiniteEvent(audioEventName, this.gameObject);
-        if (tMemory.GetItem<bool>("isFragmentComplete"))
-        {
-           // WwiseAudioManager.instance.soundNouveauSon("musicien", this.gameObject, PlayIdleSound);
-        }
-        else
-        {
-            //WwiseAudioManager.instance.soundSon("musicien", this.gameObject);
-        }
         print("Emit Sound");
     }
 

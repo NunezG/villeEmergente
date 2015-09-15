@@ -14,6 +14,9 @@ public class GuideActivateScene : RAINAction
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
+		ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().MarcheFiere ();
+		ai.Body.transform.FindChild ("mesh").GetComponent<AudioEventManager> ().soundOrdre ();
+
         ai.Body.GetComponent<Guide>().scene.gameObject.SetActive(true);
         ai.WorkingMemory.SetItem<bool>("followMe", true);
         return ActionResult.SUCCESS;

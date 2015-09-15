@@ -13,6 +13,13 @@ public class MusicianSelectTarget : RAINAction
         base.Start(ai);
         target = ai.WorkingMemory.GetItem<GameObject>("target");
         Debug.Log(ai.Body.name + " : SELECT TARGET ");
+
+		if ( ai.WorkingMemory.GetItem<bool>("isFragmentComplete"))
+			ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Marche ();
+		else 
+		ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Errance();
+
+		//ai.Body.GetComponent<AudioEventManager> ().soundSon ();
     }
 
     public override ActionResult Execute(RAIN.Core.AI ai)
