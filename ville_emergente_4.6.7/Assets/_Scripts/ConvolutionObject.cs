@@ -9,7 +9,7 @@ public class ConvolutionObject : MonoBehaviour {
 
 	//public string soundEevent;
 	public Fragment fragment;
-	public Material defaultMaterial, activatedMaterial;
+	private Material defaultMaterial;//, activatedMaterial;
 	//public string playingSound;
 	public string switchName;
 
@@ -18,6 +18,7 @@ public class ConvolutionObject : MonoBehaviour {
 	public void Start () {
 		//this.renderer.material = defaultMaterial;
 		this.gameObject.layer = 8; // mis dans la layer InteractibleObject pour limiter les raycast avec un layermask
+		defaultMaterial = this.GetComponentInChildren<Renderer> ().material;
 	}
 	
 	// Update is called once per frame
@@ -61,7 +62,7 @@ public class ConvolutionObject : MonoBehaviour {
 		SoundUniverseManager.removeSoundEvent(this.gameObject);
 			
 		fragment = null;
-		this.GetComponentInChildren<Renderer>().material = activatedMaterial;
+		this.GetComponentInChildren<Renderer>().material = defaultMaterial;
 		//audioSource.clip = defaultClip;
 		//audioEventName = defaultAudioEventName;
 		return fragPicked;
@@ -85,11 +86,11 @@ public class ConvolutionObject : MonoBehaviour {
 		this.GetComponentInChildren<Renderer>().material = fragment.material;
 		//this.audioSource.clip = fragment.GetClip();
 		// this.audioEventName = fragment.audioEventName;
-		
+
 		//AkSoundEngine.SetRTPCValue ("binaural_to_convolver", 100);
 		//fragment.Drop ();
 		//AkSoundEngine.SetSwitch("Elements_decor", "Batiment_1", inHandObject.gameObject);
-		
+	
 		SoundUniverseManager.addSoundEvent (this.gameObject); 
 		
 		WwiseAudioManager.PlayFiniteEvent("linker_morceau", this.gameObject);
