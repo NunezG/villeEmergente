@@ -4000,9 +4000,6 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_skannermorph.wav"/>
 																			</PropertyList>
-																			<ConvertedFileIDList>
-																				<File ID="932933361"/>
-																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -4215,9 +4212,6 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_watersplash.wav"/>
 																			</PropertyList>
-																			<ConvertedFileIDList>
-																				<File ID="22131471"/>
-																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -4274,7 +4268,7 @@
 						</Point>
 						<Point>
 							<XPos>0.001</XPos>
-							<YPos>-0</YPos>
+							<YPos>0</YPos>
 							<Flags>0</Flags>
 						</Point>
 						<Point>
@@ -7724,9 +7718,6 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_skannermorph.wav"/>
 																			</PropertyList>
-																			<ConvertedFileIDList>
-																				<File ID="932933361"/>
-																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -10939,9 +10930,6 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_pipe.wav"/>
 																			</PropertyList>
-																			<ConvertedFileIDList>
-																				<File ID="218791853"/>
-																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -11555,9 +11543,6 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_watersplash.wav"/>
 																			</PropertyList>
-																			<ConvertedFileIDList>
-																				<File ID="22131471"/>
-																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>

@@ -40,6 +40,8 @@
 				<Event Id="1490074322" Name="fragment_call_liquid_stop" MaxAttenuation="0.000000"/>
 				<Event Id="933666621" Name="fragment_call_metal_play" MaxAttenuation="25.000000"/>
 				<Event Id="3160982187" Name="fragment_call_metal_stop" MaxAttenuation="0.000000"/>
+				<Event Id="3516654290" Name="fragment_call_pitch_0" MaxAttenuation="0.000000"/>
+				<Event Id="1252949355" Name="fragment_call_pitch_100" MaxAttenuation="0.000000"/>
 				<Event Id="2631922986" Name="fragment_call_urban_play" MaxAttenuation="25.000000"/>
 				<Event Id="4036125012" Name="fragment_call_urban_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1375190009" Name="fragment_call_wood_play" MaxAttenuation="25.000000"/>
@@ -139,7 +141,7 @@
 				</File>
 				<File Id="22131471" Language="SFX">
 					<ShortName>ri_watersplash.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_watersplash_C8B5A993.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\ri_watersplash_01D8B5E7.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="41809020" Language="SFX">
@@ -307,6 +309,11 @@
 					<ShortName>sfx_passant_dark_tourne.wav</ShortName>
 					<Path>SFX\sfx_passant_dark_tourne_67368452.wem</Path>
 				</File>
+				<File Id="266736448" Language="SFX">
+					<ShortName>ri_watersplash.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_watersplash_CD898ADD.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="269898543" Language="SFX">
 					<ShortName>sfx_musicien_dark_respiration_04.wav</ShortName>
 					<Path>SFX\sfx_musicien_dark_respiration_04_01D733E3.wem</Path>
@@ -407,6 +414,11 @@
 				<File Id="446688879" Language="SFX">
 					<ShortName>ri_absynth_dark.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_absynth_dark_1683FDF7.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="449513959" Language="SFX">
+					<ShortName>ri_watersplash.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_watersplash_CBB57613.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="469843770" Language="SFX">
@@ -511,6 +523,11 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_watersplash_F030DEA1.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="641832316" Language="SFX">
+					<ShortName>ri_skannermorph.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_skannermorph_7D9F37E6.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="649306740" Language="SFX">
 					<ShortName>sfx_musicien_respiration_02.wav</ShortName>
 					<Path>SFX\sfx_musicien_respiration_02_D53CC522.wem</Path>
@@ -531,6 +548,11 @@
 				<File Id="713635385" Language="SFX">
 					<ShortName>ri_pipe.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_pipe_28D43EC5.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="717146645" Language="SFX">
+					<ShortName>ri_pipe.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_pipe_B7A07533.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="727022421" Language="SFX">
@@ -637,7 +659,12 @@
 				</File>
 				<File Id="932933361" Language="SFX">
 					<ShortName>ri_skannermorph.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_skannermorph_7D9F37E6.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\ri_skannermorph_01B3EE8B.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="935799406" Language="SFX">
+					<ShortName>ri_skannermorph.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_skannermorph_C1AF1EE0.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="943957025" Language="SFX">

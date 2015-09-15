@@ -35,6 +35,8 @@ namespace AK
         static const AkUniqueID FRAGMENT_CALL_LIQUID_STOP = 1490074322U;
         static const AkUniqueID FRAGMENT_CALL_METAL_PLAY = 933666621U;
         static const AkUniqueID FRAGMENT_CALL_METAL_STOP = 3160982187U;
+        static const AkUniqueID FRAGMENT_CALL_PITCH_0 = 3516654290U;
+        static const AkUniqueID FRAGMENT_CALL_PITCH_100 = 1252949355U;
         static const AkUniqueID FRAGMENT_CALL_URBAN_PLAY = 2631922986U;
         static const AkUniqueID FRAGMENT_CALL_URBAN_STOP = 4036125012U;
         static const AkUniqueID FRAGMENT_CALL_WOOD_PLAY = 1375190009U;
