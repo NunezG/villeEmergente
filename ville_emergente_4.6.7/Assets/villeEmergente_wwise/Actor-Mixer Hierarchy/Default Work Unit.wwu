@@ -4994,9 +4994,6 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_marseilles.wav"/>
 																			</PropertyList>
-																			<ConvertedFileIDList>
-																				<File ID="340849640"/>
-																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -6829,9 +6826,6 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_choirslike.wav"/>
 																			</PropertyList>
-																			<ConvertedFileIDList>
-																				<File ID="124185746"/>
-																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -7290,9 +7284,6 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_pipe.wav"/>
 																			</PropertyList>
-																			<ConvertedFileIDList>
-																				<File ID="142176626"/>
-																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -7521,6 +7512,9 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_revdark.wav"/>
 																			</PropertyList>
+																			<ConvertedFileIDList>
+																				<File ID="89917018"/>
+																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -12784,9 +12778,6 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_skanner_pad.wav"/>
 																			</PropertyList>
-																			<ConvertedFileIDList>
-																				<File ID="528881146"/>
-																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -13012,9 +13003,6 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_suriya.wav"/>
 																			</PropertyList>
-																			<ConvertedFileIDList>
-																				<File ID="55749257"/>
-																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -15067,9 +15055,6 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_skannermorph.wav"/>
 																			</PropertyList>
-																			<ConvertedFileIDList>
-																				<File ID="178740596"/>
-																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -36563,12 +36548,19 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>0</YPos>
+																		<YPos>1200</YPos>
 																		<Flags>5</Flags>
+																		<SegmentShape>Log3</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>39.33589</XPos>
+																		<YPos>86</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp3</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
-																		<YPos>1200</YPos>
+																		<YPos>0</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
