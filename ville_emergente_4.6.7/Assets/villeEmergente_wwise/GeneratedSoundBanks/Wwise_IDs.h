@@ -27,6 +27,14 @@ namespace AK
         static const AkUniqueID ELECTRICBUZZ_CONVOLVER_STOP = 2081157487U;
         static const AkUniqueID ELECTRICBUZZ_PLAY = 2776279528U;
         static const AkUniqueID ELECTRICBUZZ_STOP = 817405786U;
+        static const AkUniqueID ELECTRICITYARCING_CONVOLVER_PLAY = 3797452220U;
+        static const AkUniqueID ELECTRICITYARCING_CONVOLVER_STOP = 2551156774U;
+        static const AkUniqueID ELECTRICITYARCING_PLAY = 2107924217U;
+        static const AkUniqueID ELECTRICITYARCING_STOP = 404021567U;
+        static const AkUniqueID ELECTRICITYSTATIC_CONVOLVER_PLAY = 2137081894U;
+        static const AkUniqueID ELECTRICITYSTATIC_CONVOLVER_STOP = 3988186392U;
+        static const AkUniqueID ELECTRICITYSTATIC_PLAY = 512634819U;
+        static const AkUniqueID ELECTRICITYSTATIC_STOP = 2827602569U;
         static const AkUniqueID FOOTSTEPS_PLAY = 1198733287U;
         static const AkUniqueID FOOTSTEPS_STOP = 4187365685U;
         static const AkUniqueID FRAGMENT_CALL_ELECTRICITY_PLAY = 3885638619U;
@@ -55,6 +63,10 @@ namespace AK
         static const AkUniqueID MUSICIEN_OUVERTURE = 161018858U;
         static const AkUniqueID MUSICIEN_SON = 916635435U;
         static const AkUniqueID MUSICIEN_TOURNE = 2629109720U;
+        static const AkUniqueID PADDLE_CONVOLVER_PLAY = 2562287223U;
+        static const AkUniqueID PADDLE_CONVOLVER_STOP = 1250729381U;
+        static const AkUniqueID PADDLE_PLAY = 2502442470U;
+        static const AkUniqueID PADDLE_STOP = 16899800U;
         static const AkUniqueID PASSANT_DANSE = 3122327449U;
         static const AkUniqueID PASSANT_IDLE_PLAY = 3967439363U;
         static const AkUniqueID PASSANT_IDLE_STOP = 2028913609U;
@@ -101,6 +113,10 @@ namespace AK
         static const AkUniqueID SWITCH_DARKRI6 = 3843097391U;
         static const AkUniqueID SWITCH_DARKRI7 = 3843097390U;
         static const AkUniqueID SWITCH_DEFAULT = 2406558223U;
+        static const AkUniqueID THUNDER_CONVOLVER_PLAY = 3493063959U;
+        static const AkUniqueID THUNDER_CONVOLVER_STOP = 2181506373U;
+        static const AkUniqueID THUNDER_PLAY = 2706991942U;
+        static const AkUniqueID THUNDER_STOP = 221449272U;
         static const AkUniqueID TOUCHER_ELEMENT = 2896867782U;
         static const AkUniqueID TRAFFICBY_CONVOLVER_PLAY = 2692438725U;
         static const AkUniqueID TRAFFICBY_CONVOLVER_STOP = 4117091651U;
