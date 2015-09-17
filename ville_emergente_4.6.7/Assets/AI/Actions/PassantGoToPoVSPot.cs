@@ -18,15 +18,17 @@ public class PassantGoToPoVSpot : RAINAction
     {
         NavMeshAgent agent = ai.Body.GetComponent<NavMeshAgent>();
         GameObject povSpot = ai.Body.GetComponent<Passant>().sceneLeader.GetComponent<Guide>().pdv.spots[ai.Body.GetComponent<Passant>().selectedSpotIndex];
-        agent.SetDestination(povSpot.transform.position);
-
-        if (ai.Body.transform.position.x == povSpot.transform.position.x
-                && ai.Body.transform.position.z == povSpot.transform.position.z)
+        if (povSpot != null)
         {
+            agent.SetDestination(povSpot.transform.position);
 
-            ai.WorkingMemory.SetItem<bool>("isOnPovSpot", true);
+            if (ai.Body.transform.position.x == povSpot.transform.position.x
+                    && ai.Body.transform.position.z == povSpot.transform.position.z)
+            {
+
+                ai.WorkingMemory.SetItem<bool>("isOnPovSpot", true);
+            }
         }
-
         return ActionResult.SUCCESS;
     }
 

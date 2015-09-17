@@ -27,14 +27,14 @@ public class Guide : MonoBehaviour
     {
         // if(targets==null)
         //Debug.Log ("START MUSICIENN");
-        int matriculeMusicien = int.Parse(this.gameObject.name.Substring(5));
+        int matriculeGuide = int.Parse(this.gameObject.name.Substring(5));
 
 
         if (allPointsOfView == null)
             allPointsOfView = GameObject.FindGameObjectsWithTag("PointDeVue");
         foreach (GameObject gObject in allPointsOfView)
         {
-            if (gObject.name == "PointDeVue" + matriculeMusicien)
+            if (gObject.name == "PointDeVue" + matriculeGuide)
             {
                 targets.Add(gObject);
             }
