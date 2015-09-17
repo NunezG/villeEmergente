@@ -38,7 +38,7 @@ public class ObjectInteractor : MonoBehaviour {
 				Cm.setFragmentCursor();
 			}
 
-			if (Input.GetButtonDown ("Action"))
+			if (Vector3.Distance(hitObject.transform.position, transform.position) < range && Input.GetButtonDown ("Action"))
 			{ 
 
 				if (!handsFull // si on a rien en main et qu'on vise un objet rammassable
