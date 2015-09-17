@@ -1,0 +1,48 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{f7207e96-be78-4ef6-968d-7c259ef085e9}"
+name: "Interact"
+description: ""
+children {
+  type: Node
+  name: "fd3bdf16-2962-4d49-89a5-0367162d4dba"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "0baebf42-7219-4b2c-91c0-ac19f075f25d"
+      presentation {
+        itemTemplate: "BTActionNode.qml"
+        position {
+          x: 5453.5
+          y: 2707.5
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: ActionNode
+          isActivated: true
+          [mlv.toolset.proto.ActionNode.extension] {
+            actionName: "Interact"
+          }
+        }
+      }
+    }
+  }
+}

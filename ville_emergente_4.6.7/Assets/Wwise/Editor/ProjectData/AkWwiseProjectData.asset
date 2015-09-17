@@ -361,6 +361,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -409328677
       Guid: e5ec422b88108f4dad232df88a36edb1
+<<<<<<< HEAD
       maxAttenuation: 25
     - Name: fragment_call_electricity_stop
       Path: Default Work Unit\Fragments\Call\fragment_call_electricity_stop
@@ -392,6 +393,11 @@ MonoBehaviour:
       maxAttenuation: 25
     - Name: fragment_call_liquid_stop
       Path: Default Work Unit\Fragments\Call\fragment_call_liquid_stop
+=======
+      maxAttenuation: 0
+    - Name: fragment_call_electricity_stop
+      Path: Default Work Unit\Fragments\Call\fragment_call_electricity_stop
+>>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -399,6 +405,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Call
         ObjectType: 4
+<<<<<<< HEAD
       - ElementName: fragment_call_liquid_stop
         ObjectType: 3
       ID: 1490074322
@@ -406,6 +413,15 @@ MonoBehaviour:
       maxAttenuation: 0
     - Name: fragment_call_metal_play
       Path: Default Work Unit\Fragments\Call\fragment_call_metal_play
+=======
+      - ElementName: fragment_call_electricity_stop
+        ObjectType: 3
+      ID: -1539865967
+      Guid: 813f7cd2440d3e4ca14a749eb4ccfa3a
+      maxAttenuation: 0
+    - Name: fragment_call_liquid_play
+      Path: Default Work Unit\Fragments\Call\fragment_call_liquid_play
+>>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -413,6 +429,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Call
         ObjectType: 4
+<<<<<<< HEAD
       - ElementName: fragment_call_metal_play
         ObjectType: 3
       ID: 933666621
@@ -420,6 +437,15 @@ MonoBehaviour:
       maxAttenuation: 25
     - Name: fragment_call_metal_stop
       Path: Default Work Unit\Fragments\Call\fragment_call_metal_stop
+=======
+      - ElementName: fragment_call_liquid_play
+        ObjectType: 3
+      ID: -1153374928
+      Guid: ebd7a6b3afd1734884ff7192bb7b9017
+      maxAttenuation: 0
+    - Name: fragment_call_liquid_stop
+      Path: Default Work Unit\Fragments\Call\fragment_call_liquid_stop
+>>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -427,6 +453,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Call
         ObjectType: 4
+<<<<<<< HEAD
       - ElementName: fragment_call_metal_stop
         ObjectType: 3
       ID: -1133985109
@@ -434,6 +461,15 @@ MonoBehaviour:
       maxAttenuation: 0
     - Name: fragment_call_pitch_0
       Path: Default Work Unit\Fragments\Call\fragment_call_pitch_0
+=======
+      - ElementName: fragment_call_liquid_stop
+        ObjectType: 3
+      ID: 1490074322
+      Guid: d80f97137ce0cc46b6e877241aef93a6
+      maxAttenuation: 0
+    - Name: fragment_call_metal_play
+      Path: Default Work Unit\Fragments\Call\fragment_call_metal_play
+>>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -441,6 +477,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Call
         ObjectType: 4
+<<<<<<< HEAD
       - ElementName: fragment_call_pitch_0
         ObjectType: 3
       ID: -778313006
@@ -448,6 +485,15 @@ MonoBehaviour:
       maxAttenuation: 0
     - Name: fragment_call_pitch_100
       Path: Default Work Unit\Fragments\Call\fragment_call_pitch_100
+=======
+      - ElementName: fragment_call_metal_play
+        ObjectType: 3
+      ID: 933666621
+      Guid: e191af76ffd05543a16759bbb10537cf
+      maxAttenuation: 0
+    - Name: fragment_call_metal_stop
+      Path: Default Work Unit\Fragments\Call\fragment_call_metal_stop
+>>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -455,10 +501,17 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Call
         ObjectType: 4
+<<<<<<< HEAD
       - ElementName: fragment_call_pitch_100
         ObjectType: 3
       ID: 1252949355
       Guid: 66aa85a6eeae364b938264880f86be95
+=======
+      - ElementName: fragment_call_metal_stop
+        ObjectType: 3
+      ID: -1133985109
+      Guid: 6435234af5b82f498056ed69cc6dbbcb
+>>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
       maxAttenuation: 0
     - Name: fragment_call_urban_play
       Path: Default Work Unit\Fragments\Call\fragment_call_urban_play
@@ -473,7 +526,11 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1663044310
       Guid: c5d0211e55c74d44a86c494eff0d3bc3
+<<<<<<< HEAD
       maxAttenuation: 25
+=======
+      maxAttenuation: 0
+>>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
     - Name: fragment_call_urban_stop
       Path: Default Work Unit\Fragments\Call\fragment_call_urban_stop
       PathAndIcons:
@@ -501,7 +558,11 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1375190009
       Guid: 092402d7fad41c438124175398bf26d0
+<<<<<<< HEAD
       maxAttenuation: 25
+=======
+      maxAttenuation: 0
+>>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
     - Name: fragment_call_wood_stop
       Path: Default Work Unit\Fragments\Call\fragment_call_wood_stop
       PathAndIcons:
@@ -1817,8 +1878,13 @@ MonoBehaviour:
       ID: -1133058374
       Guid: 13a8cb8be9ce1d40a1ae57d196fca6c9
   ExpandedItems: []
+<<<<<<< HEAD
   m_lastPopulateTimePsrt1: -1173283472
   m_lastPopulateTimePart2: -1999454553
+=======
+  m_lastPopulateTimePsrt1: 1914322183
+  m_lastPopulateTimePart2: -1999454767
+>>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)

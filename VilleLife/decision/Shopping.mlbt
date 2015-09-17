@@ -1,0 +1,119 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{30f1a002-cb8c-49e1-8c6d-3b967ac739bc}"
+name: "Shopping"
+description: ""
+children {
+  type: Node
+  name: "7eb2303a-eca6-4a50-8e7d-719ac8524889"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "43995395-235d-4c59-84ef-da2ff96b0339"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5382
+          y: 2619
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "be0bde19-3284-4520-87c9-ab1213ce3c62"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -108
+              y: 132.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "Speak"
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "c9fec49d-6ebb-4c16-b0fb-450f04e0de0d"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -3
+              y: 150.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "wait"
+                parameters {
+                  type: DoubleType
+                  name: "time"
+                  kbSelection: plainValue
+                  doubleValue: 0.5
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "2c2f388e-8759-48bc-9490-15294ecd8665"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 90.5
+              y: 133
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "Interact"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

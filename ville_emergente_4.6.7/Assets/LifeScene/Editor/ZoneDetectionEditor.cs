@@ -36,6 +36,7 @@ public class ZoneDetectionEditor : Editor
 		SerializedProperty nameIP = serializedObject.FindProperty("nameIP");
 		SerializedProperty nameEvent = serializedObject.FindProperty("nameEvent");
         SerializedProperty order = serializedObject.FindProperty("order");
+        SerializedProperty repeat = serializedObject.FindProperty("repeat");
 
 		EditorGUILayout.PropertyField( useExternalTrigger, new GUIContent("Use External Trigger"), true);
 		GUI.enabled = false;
@@ -51,11 +52,9 @@ public class ZoneDetectionEditor : Editor
         myStyle.richText = true;
         myStyle.fontSize = 11;
         EditorGUILayout.TextArea("<b>Active LifeScenes</b> (All by default)", myStyle);
-        GUILayout.BeginHorizontal(); 
         EditorGUILayout.LabelField("Choice (random by default) : ");
-        GUILayout.Space(-50);
         order.boolValue = EditorGUILayout.Toggle("Ordered", order.boolValue);
-        GUILayout.EndHorizontal();
+        repeat.boolValue = EditorGUILayout.Toggle("Repeat", repeat.boolValue);
         GUILayout.FlexibleSpace();
 
         GUILayout.Space(5);

@@ -1,0 +1,97 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{bde0eb08-56a3-49b6-9d74-57ae12201322}"
+name: "3DV-Bench"
+description: ""
+children {
+  type: Node
+  name: "f9fa636c-27bb-483c-ae1b-099285722295"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "89e52f28-48dd-4b6d-b9f0-8df7136227d0"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5344
+          y: 2698
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "ca999a4b-0fd9-4617-8fd0-f1d43acb399e"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -103.5
+              y: 143.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "3DV-Bench"
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "3e127cf1-d038-4d86-b9c6-105756f9c848"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 83.5
+              y: 142
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "wait"
+                parameters {
+                  type: IntType
+                  name: "time"
+                  kbSelection: plainValue
+                  intValue: 2
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

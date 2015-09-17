@@ -57,6 +57,13 @@ root {
     value {
       type: Object
       objectValue {
+        key: "activated"
+        value {
+          type: Bool
+          boolValue: false
+        }
+      }
+      objectValue {
         key: "inIP"
         value {
           type: Int

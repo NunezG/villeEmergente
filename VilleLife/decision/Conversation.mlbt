@@ -1,0 +1,231 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{7c0178da-8dc2-4f8f-a2d3-f3f1d024bc22}"
+name: "Conversation"
+description: ""
+children {
+  type: Node
+  name: "471fe653-d49f-456c-8791-22fea53931c4"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "ab29c233-7984-4f06-b359-f13ce30f402f"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 4947.1197707736392
+          y: 2779.2146131805162
+          z: nan
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "19f15d94-dc76-4b0f-a8bf-f4c362d311cf"
+          presentation {
+            itemTemplate: "BTCustomNode.qml"
+            position {
+              x: -186.64558544862575
+              y: 160.92480940050996
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: BTCustomNode
+              isActivated: true
+              [mlv.toolset.proto.BTCustomNode.extension] {
+                typeName: "WaitingNode"
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "655ee452-34dc-496c-89d5-e2890f1699f9"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -91.035710425068828
+              y: 165.44372229812825
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "wait"
+                parameters {
+                  type: StringType
+                  name: "time"
+                  kbSelection: selectLocalKB
+                  stringValue: "IP.waiting.timeBegin"
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "622d302f-36ff-4166-8c9c-a9857d3c2e06"
+          presentation {
+            itemTemplate: "BTEmbeddedNode.qml"
+            position {
+              x: 7.3802292263608251
+              y: 164.78538681948385
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: BTEmbeddedBehaviorNode
+              isActivated: true
+              [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                behaviorName {
+                  type: StringType
+                  name: ""
+                  kbSelection: plainValue
+                  stringValue: "decision/LifeScene/Talking.mlbt"
+                }
+                parameters {
+                  type: StringType
+                  name: "caption"
+                  kbSelection: selectLocalKB
+                  stringValue: "IP.waiting.sentence1"
+                }
+                parameters {
+                  type: IntType
+                  name: "duration"
+                  kbSelection: plainValue
+                  intValue: 2
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "61221a45-c2b7-48e4-b8b3-ec82ecc847d2"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 104.00995938122924
+              y: 164.34796010820537
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "wait"
+                parameters {
+                  type: StringType
+                  name: "time"
+                  kbSelection: selectLocalKB
+                  stringValue: "IP.waiting.timeWait"
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "4e23a471-4c40-4cc2-a0b1-679a3efb905d"
+          presentation {
+            itemTemplate: "BTEmbeddedNode.qml"
+            position {
+              x: 197.11351165879933
+              y: 166.948805395597
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: BTEmbeddedBehaviorNode
+              isActivated: true
+              [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+                behaviorName {
+                  type: StringType
+                  name: ""
+                  kbSelection: plainValue
+                  stringValue: "decision/LifeScene/Talking.mlbt"
+                }
+                parameters {
+                  type: StringType
+                  name: "caption"
+                  kbSelection: selectLocalKB
+                  stringValue: "IP.waiting.sentence3"
+                }
+                parameters {
+                  type: IntType
+                  name: "duration"
+                  kbSelection: plainValue
+                  intValue: 2
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "076a6fbc-06ca-4fb4-a50d-56f5b743a229"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 310.35441455137425
+              y: 166.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "wait"
+                parameters {
+                  type: StringType
+                  name: "time"
+                  kbSelection: selectLocalKB
+                  stringValue: "IP.waiting.timeEnd"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

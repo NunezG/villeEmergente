@@ -1,0 +1,65 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{2054aafb-04a4-4b18-97b5-a7f0de005298}"
+name: "SpectaclePart"
+description: ""
+children {
+  type: Node
+  name: "06933d49-e728-4f69-adef-38ca5c61dd54"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "994cb090-eb24-4848-8036-93f7ea02968a"
+      presentation {
+        itemTemplate: "BTEmbeddedNode.qml"
+        position {
+          x: 5604
+          y: 2802.5
+          z: nan
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: BTEmbeddedBehaviorNode
+          isActivated: true
+          [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+            behaviorName {
+              type: StringType
+              name: ""
+              kbSelection: plainValue
+              stringValue: "decision/LifeScene/Talking.mlbt"
+            }
+            parameters {
+              type: StringType
+              name: "caption"
+              kbSelection: selectLocalKB
+              stringValue: "BehaviorSequence.say"
+            }
+            parameters {
+              type: StringType
+              name: "duration"
+              kbSelection: selectLocalKB
+              stringValue: "BehaviorSequence.duration"
+            }
+          }
+        }
+      }
+    }
+  }
+}

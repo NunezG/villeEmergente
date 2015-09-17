@@ -47,6 +47,7 @@
                     "trigger": false
                 },
                 "IP": {
+                    "activated": false,
                     "inIP": -1,
                     "waiting": {
                         "sentence1": "none",

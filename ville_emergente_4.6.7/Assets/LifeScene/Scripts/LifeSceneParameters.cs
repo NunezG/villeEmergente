@@ -164,9 +164,7 @@ public class LifeSceneParameters : MonoBehaviour {
             }
             if (!entityKnowledge.hasChild(EventProp, "Activated"))
             {
-
                 param = entityKnowledge.addChild(EventProp, "Activated");
-
                 entityKnowledge.setBool(param, activated);
             }
             if (!entityKnowledge.hasChild(EventProp, "InteractionNPC"))
@@ -671,9 +669,12 @@ public class LifeSceneParameters : MonoBehaviour {
                                 UInt32 param2;
                                 if (!entityKnowledge.hasChild(param, "Position"))
                                 {
-                                    Vector3 pos1 = Placements.Formations[i].PlaceGeneration.Position.position;
-                                    param2 = entityKnowledge.addChild(param, "Position");
-                                    entityKnowledge.put(param2, pos1);
+                                    if (Placements.Formations[i].PlaceGeneration.Position != null)
+                                    {
+                                        Vector3 pos1 = Placements.Formations[i].PlaceGeneration.Position.position;
+                                        param2 = entityKnowledge.addChild(param, "Position");
+                                        entityKnowledge.put(param2, pos1);
+                                    }
                                 }
                                 if (!entityKnowledge.hasChild(param, "PlaceNumber"))
                                 {

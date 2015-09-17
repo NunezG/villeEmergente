@@ -212,7 +212,7 @@ public class PositioningParametersDrawer
                 {
                     //posParam.GenerateAutoPlaces();
                     //SerializedProperty placeP = placeParam.FindPropertyRelative("UnityPlaces");
-
+                    
                     Transform posref1 = null;
                     if (posref.objectReferenceValue != null)
                         posref1 = (Transform)posref.objectReferenceValue;
@@ -230,6 +230,20 @@ public class PositioningParametersDrawer
                         else
                             Places = Selection.activeGameObject.transform.FindChild("Places").gameObject;
 
+                        Places = Selection.activeGameObject.transform.FindChild("Places").gameObject;
+                        List<GameObject> listDelete = new List<GameObject>();
+                        if (Places != null)
+                        {
+                            for (int i = 0; i < Places.transform.childCount; i++)
+                            {
+                                Transform namePl = Places.transform.GetChild(i);
+                                if (namePl != null && namePl.name.Contains("Formation" + indexPlacement + "-" + Selection.activeGameObject.name + "-"))
+                                    listDelete.Add(namePl.gameObject);
+                            }
+                            for (int i = 0; i < listDelete.Count; i++)
+                                GameObject.DestroyImmediate(listDelete[i]);
+                        }
+                        
                         PlacesNPC.Clear();
                         for (int i = 0; i < nbrPlace.intValue; i++)
                             PlacesNPC.Add(null);

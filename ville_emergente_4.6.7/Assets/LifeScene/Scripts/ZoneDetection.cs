@@ -21,6 +21,7 @@ public class ZoneDetection : MonoBehaviour {
     public int numberLS = -1;
     public string buttonText = "Lock Inspector and Select LifeScenes";
     public bool order = false;
+    public bool repeat = false;
 
 	private GameObject[] LifeScene;
 	private Entity entity;	
@@ -74,6 +75,16 @@ public class ZoneDetection : MonoBehaviour {
                     EventProp = entity.getWorkingKnowledge().getProperty("LifeScenes.orderChoice");
                 }
                 entity.getWorkingKnowledge().setBool(EventProp, order);
+
+                if (!entity.getWorkingKnowledge().hasProperty("LifeScenes.repeatOrder"))
+                {
+                    EventProp = entity.getWorkingKnowledge().addProperty("LifeScenes.repeatOrder");
+                }
+                else
+                {
+                    EventProp = entity.getWorkingKnowledge().getProperty("LifeScenes.repeatOrder");
+                }
+                entity.getWorkingKnowledge().setBool(EventProp, repeat);
 
                 if (!entity.getWorkingKnowledge().hasProperty("LifeScenes.Active"))
                 {
