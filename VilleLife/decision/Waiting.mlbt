@@ -1,0 +1,54 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{874e464b-82b9-4a49-bda3-d4d93316a463}"
+name: "Waiting"
+description: ""
+children {
+  type: Node
+  name: "00aa1c2f-b867-4ad8-9f24-74cdad9535c7"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "af1a18ff-56a2-482e-9736-435ffaf1d2d4"
+      presentation {
+        itemTemplate: "BTActionNode.qml"
+        position {
+          x: 5545.5
+          y: 2833.5
+          z: nan
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: ActionNode
+          isActivated: true
+          [mlv.toolset.proto.ActionNode.extension] {
+            actionName: "wait"
+            parameters {
+              type: IntType
+              name: "time"
+              kbSelection: plainValue
+              intValue: 3
+            }
+          }
+        }
+      }
+    }
+  }
+}

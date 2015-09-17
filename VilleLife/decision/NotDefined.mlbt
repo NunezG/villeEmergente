@@ -1,0 +1,65 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{159433c7-079d-473f-9f8a-5d03275951ba}"
+name: "NotDefined"
+description: ""
+children {
+  type: Node
+  name: "12aec6d1-e7bf-4c69-aea2-413ee73f1cda"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "059e9d8e-3c2a-4171-adc0-6c3da3dd0a8d"
+      presentation {
+        itemTemplate: "BTEmbeddedNode.qml"
+        position {
+          x: 5667.5
+          y: 2853.5
+          z: nan
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: BTEmbeddedBehaviorNode
+          isActivated: true
+          [mlv.toolset.proto.BTEmbeddedBehaviorNode.extension] {
+            behaviorName {
+              type: StringType
+              name: ""
+              kbSelection: plainValue
+              stringValue: "decision/LifeScene/Talking.mlbt"
+            }
+            parameters {
+              type: StringType
+              name: "caption"
+              kbSelection: plainValue
+              stringValue: "Behavior not Defined"
+            }
+            parameters {
+              type: DoubleType
+              name: "duration"
+              kbSelection: plainValue
+              doubleValue: 0.5
+            }
+          }
+        }
+      }
+    }
+  }
+}

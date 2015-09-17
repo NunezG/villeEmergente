@@ -1,0 +1,131 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{ca057e98-814c-4bd0-9771-21294e8482bd}"
+name: "WatchAd"
+description: ""
+children {
+  type: Node
+  name: "a438b1c5-bbd2-440e-b69b-b92be0db7c0f"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "1416e34d-6b25-4b00-a38e-3c4b6f8b16cc"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5371
+          y: 2684
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "6f82c4e8-e323-432f-99f8-1e846360a97a"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -116.5
+              y: 107
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "SetIdle"
+                parameters {
+                  type: IntType
+                  name: "value"
+                  kbSelection: plainValue
+                  intValue: 2
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "0d6bbe91-6e6e-4d68-af44-7017ae8e8b34"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 7.5
+              y: 108.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "wait"
+                parameters {
+                  type: IntType
+                  name: "time"
+                  kbSelection: plainValue
+                  intValue: 3
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "ff5b0265-bad1-4aba-a73e-19926bfb628c"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 124.5
+              y: 107.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "SetIdle"
+                parameters {
+                  type: IntType
+                  name: "value"
+                  kbSelection: plainValue
+                  intValue: 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

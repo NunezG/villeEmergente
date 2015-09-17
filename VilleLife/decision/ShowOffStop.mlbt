@@ -1,0 +1,97 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{f928bf3f-fe2c-4005-bd5e-419dd78c6936}"
+name: "ShowOffStop"
+description: ""
+children {
+  type: Node
+  name: "6043d674-31ba-4b25-aefa-ca2b27f0784f"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "fcef391f-fc0a-4402-9078-7a9f73e2691e"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5386
+          y: 2722
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "54f2aea9-cd7d-478a-9d5a-3386966dac15"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -90.5
+              y: 125.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "StopShowOff"
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "ad58737a-7294-4840-a445-80a53a4b5c5c"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 68.5
+              y: 126.5
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "wait"
+                parameters {
+                  type: IntType
+                  name: "time"
+                  kbSelection: plainValue
+                  intValue: 1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

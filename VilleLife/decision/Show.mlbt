@@ -1,0 +1,131 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{e6b3588d-2882-4749-90a1-70e37643327c}"
+name: "Show"
+description: ""
+children {
+  type: Node
+  name: "bc6e63ba-4bda-4918-8417-d9f59a2bdf80"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "c6591267-997d-4857-aa42-24180cae6225"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5224.5
+          y: 2541
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "ed08b6a3-29c0-47fe-b5ec-1b6666e1fb73"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -118.86000000000058
+              y: 115.64000000000033
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "AirGuitar"
+                parameters {
+                  type: IntType
+                  name: "duration"
+                  kbSelection: plainValue
+                  intValue: 60
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "30588cd9-5922-4612-b9f0-d18b48d0c6ef"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -1.680000000000291
+              y: 146.64000000000033
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "wait"
+                parameters {
+                  type: DoubleType
+                  name: "time"
+                  kbSelection: plainValue
+                  doubleValue: 0.5
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "cfc68d60-c6fa-4c56-aad5-a821b9e6cb0c"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 130.5
+              y: 134
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "SetSpectacleStatus"
+                parameters {
+                  type: BoolType
+                  name: "value"
+                  kbSelection: plainValue
+                  boolValue: false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

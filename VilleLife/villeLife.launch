@@ -33,6 +33,10 @@ attribute {
   value: "\"0.35;1.7;0.35\""
 }
 attribute {
+  key: "port"
+  value: "8100"
+}
+attribute {
   key: "project"
   value: "VilleLife"
 }

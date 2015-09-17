@@ -12,14 +12,6 @@ MonoBehaviour:
   m_Name: RoleManager
   m_EditorClassIdentifier: 
   roleNames:
-  - AirPlayer
   - Ambient
-  - Default
-  - Juggler
-  - Merchant
-  - Patient
-  - RestMan
-  - Speaker
-  - Spectator
-  - Demonstrator
-  - Junkie
+  - Musicien
+  - Guide

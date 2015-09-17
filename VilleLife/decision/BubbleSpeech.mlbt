@@ -1,0 +1,131 @@
+version {
+  major: 0
+  minor: 7
+  patch: 0
+}
+type: BehaviorTree
+uuid: "{a0b0cec8-6c12-4d41-816e-82144d815201}"
+name: "BubbleSpeech"
+description: ""
+children {
+  type: Node
+  name: "bb601612-da7b-4f65-bdf2-a8f7e23e3a89"
+  presentation {
+    itemTemplate: "MLV_USE_NO_TEMPLATE"
+    position {
+      x: 0
+      y: 0
+      z: 0
+    }
+  }
+  properties {
+    type: RootProperties
+  }
+  [mlv.toolset.proto.Node.extension] {
+    children {
+      type: Node
+      name: "0bdf96be-834e-4210-9c37-c49be33e1552"
+      presentation {
+        itemTemplate: "BTSequenceNode.qml"
+        position {
+          x: 5560
+          y: 2730
+          z: 0
+        }
+      }
+      properties {
+        type: BTNodeProperties
+        [mlv.toolset.proto.BTNodeProperties.extension] {
+          type: SequenceNode
+          isActivated: true
+        }
+      }
+      [mlv.toolset.proto.Node.extension] {
+        children {
+          type: Node
+          name: "4b28e281-1125-4cc0-8760-c86af83a2f37"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: -98.5
+              y: 172
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "bubbleInteract"
+                parameters {
+                  type: StringType
+                  name: "text"
+                  kbSelection: plainValue
+                  stringValue: "Salut"
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "998aeb60-c5fc-46da-a425-06f7ad8beead"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 5
+              y: 175
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "wait"
+                parameters {
+                  type: IntType
+                  name: "time"
+                  kbSelection: plainValue
+                  intValue: 2
+                }
+              }
+            }
+          }
+        }
+        children {
+          type: Node
+          name: "7fb4b07e-3b07-4251-9232-b3ddabdc0254"
+          presentation {
+            itemTemplate: "BTActionNode.qml"
+            position {
+              x: 111.5
+              y: 174
+              z: nan
+            }
+          }
+          properties {
+            type: BTNodeProperties
+            [mlv.toolset.proto.BTNodeProperties.extension] {
+              type: ActionNode
+              isActivated: true
+              [mlv.toolset.proto.ActionNode.extension] {
+                actionName: "bubbleInteract"
+                parameters {
+                  type: StringType
+                  name: "text"
+                  kbSelection: plainValue
+                  stringValue: "none"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
