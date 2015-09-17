@@ -453,9 +453,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 496402}
-  - 33: {fileID: 3396446}
   - 135: {fileID: 13596446}
-  - 23: {fileID: 2396446}
   - 114: {fileID: 11496440}
   m_Layer: 0
   m_Name: sceneRange
@@ -472,9 +470,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 496404}
-  - 33: {fileID: 3396448}
   - 135: {fileID: 13596448}
-  - 23: {fileID: 2396448}
   m_Layer: 0
   m_Name: inHandPosition
   m_TagString: Untagged
@@ -1636,46 +1632,6 @@ Renderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!23 &2396446
-Renderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 196402}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!23 &2396448
-Renderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 196404}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
 --- !u!33 &3396432
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -1724,20 +1680,6 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 196400}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &3396446
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 196402}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &3396448
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 196404}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &5496448
 Rigidbody:
@@ -1839,6 +1781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2ed6f099c46e7547b156c33d88be294, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targets: []
   inHandPosition: {fileID: 196404}
   inHandObject: {fileID: 0}
   startingFragment: {fileID: 0}

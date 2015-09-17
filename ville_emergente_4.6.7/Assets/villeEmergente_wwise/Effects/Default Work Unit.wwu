@@ -421,6 +421,9 @@
 											<PropertyList>
 												<Property Name="DataFileName" Type="string" Value="ri_sylenth.wav"/>
 											</PropertyList>
+											<ConvertedFileIDList>
+												<File ID="402957229"/>
+											</ConvertedFileIDList>
 										</PluginMediaSource>
 									</ChildrenList>
 									<PluginData>
