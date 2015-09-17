@@ -29,7 +29,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 289850157
       Guid: 9cc141fd574f65408cd4e550e25bc4cd
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: busyStreet_convolver_stop
       Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\busyStreet_convolver_stop"
       PathAndIcons:
@@ -57,7 +57,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -297376980
       Guid: 4762f2e5f4ed634d9ac498b587c5d947
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: busyStreet_stop
       Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\busyStreet_stop"
       PathAndIcons:
@@ -113,7 +113,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1282923457
       Guid: 585324df86f9734da0b7dd36238ac25f
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: dropsCardboard_convolver_stop
       Path: Default Work Unit\Fragments\Liquide\dropsCardboard_convolver_stop
       PathAndIcons:
@@ -141,7 +141,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1374189182
       Guid: d06c9440cdf4f24da2d4350ab8080ef0
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: dropsCardboard_stop
       Path: Default Work Unit\Fragments\Liquide\dropsCardboard_stop
       PathAndIcons:
@@ -169,7 +169,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 558637385
       Guid: 67483b8120948449ac8c30b90e264a26
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: electricBuzz_convolver_stop
       Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\electricBuzz_convolver_stop"
       PathAndIcons:
@@ -197,7 +197,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1518687768
       Guid: d286b7e26f627849b38d7f784a6d0868
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: electricBuzz_stop
       Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\electricBuzz_stop"
       PathAndIcons:
@@ -225,7 +225,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -497515076
       Guid: 01da943569790a4da769b5c95f5d5748
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: electricityArcing_convolver_stop
       Path: Default Work Unit\Fragments\Electricite\electricityArcing_convolver_stop
       PathAndIcons:
@@ -253,7 +253,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 2107924217
       Guid: a071783b1fe4ce4a84f6ee90f2bd989c
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: electricityArcing_stop
       Path: Default Work Unit\Fragments\Electricite\electricityArcing_stop
       PathAndIcons:
@@ -281,7 +281,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 2137081894
       Guid: 1319b3a194a1dd4ebf4580fc209d1e15
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: electricityStatic_convolver_stop
       Path: Default Work Unit\Fragments\Electricite\electricityStatic_convolver_stop
       PathAndIcons:
@@ -309,7 +309,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 512634819
       Guid: f78028092dcede49a0a90677073e9929
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: electricityStatic_stop
       Path: Default Work Unit\Fragments\Electricite\electricityStatic_stop
       PathAndIcons:
@@ -361,7 +361,8 @@ MonoBehaviour:
         ObjectType: 3
       ID: -409328677
       Guid: e5ec422b88108f4dad232df88a36edb1
-      maxAttenuation: 0
+<<<<<<< HEAD
+      maxAttenuation: 25
     - Name: fragment_call_electricity_stop
       Path: Default Work Unit\Fragments\Call\fragment_call_electricity_stop
       PathAndIcons:
@@ -389,9 +390,14 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1153374928
       Guid: ebd7a6b3afd1734884ff7192bb7b9017
-      maxAttenuation: 0
+      maxAttenuation: 25
     - Name: fragment_call_liquid_stop
       Path: Default Work Unit\Fragments\Call\fragment_call_liquid_stop
+=======
+      maxAttenuation: 0
+    - Name: fragment_call_electricity_stop
+      Path: Default Work Unit\Fragments\Call\fragment_call_electricity_stop
+>>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -399,6 +405,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Call
         ObjectType: 4
+<<<<<<< HEAD
       - ElementName: fragment_call_liquid_stop
         ObjectType: 3
       ID: 1490074322
@@ -406,6 +413,15 @@ MonoBehaviour:
       maxAttenuation: 0
     - Name: fragment_call_metal_play
       Path: Default Work Unit\Fragments\Call\fragment_call_metal_play
+=======
+      - ElementName: fragment_call_electricity_stop
+        ObjectType: 3
+      ID: -1539865967
+      Guid: 813f7cd2440d3e4ca14a749eb4ccfa3a
+      maxAttenuation: 0
+    - Name: fragment_call_liquid_play
+      Path: Default Work Unit\Fragments\Call\fragment_call_liquid_play
+>>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -413,13 +429,23 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Call
         ObjectType: 4
+<<<<<<< HEAD
       - ElementName: fragment_call_metal_play
         ObjectType: 3
       ID: 933666621
       Guid: e191af76ffd05543a16759bbb10537cf
-      maxAttenuation: 0
+      maxAttenuation: 25
     - Name: fragment_call_metal_stop
       Path: Default Work Unit\Fragments\Call\fragment_call_metal_stop
+=======
+      - ElementName: fragment_call_liquid_play
+        ObjectType: 3
+      ID: -1153374928
+      Guid: ebd7a6b3afd1734884ff7192bb7b9017
+      maxAttenuation: 0
+    - Name: fragment_call_liquid_stop
+      Path: Default Work Unit\Fragments\Call\fragment_call_liquid_stop
+>>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -427,6 +453,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Call
         ObjectType: 4
+<<<<<<< HEAD
       - ElementName: fragment_call_metal_stop
         ObjectType: 3
       ID: -1133985109
@@ -434,6 +461,15 @@ MonoBehaviour:
       maxAttenuation: 0
     - Name: fragment_call_pitch_0
       Path: Default Work Unit\Fragments\Call\fragment_call_pitch_0
+=======
+      - ElementName: fragment_call_liquid_stop
+        ObjectType: 3
+      ID: 1490074322
+      Guid: d80f97137ce0cc46b6e877241aef93a6
+      maxAttenuation: 0
+    - Name: fragment_call_metal_play
+      Path: Default Work Unit\Fragments\Call\fragment_call_metal_play
+>>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -441,6 +477,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Call
         ObjectType: 4
+<<<<<<< HEAD
       - ElementName: fragment_call_pitch_0
         ObjectType: 3
       ID: -778313006
@@ -448,6 +485,15 @@ MonoBehaviour:
       maxAttenuation: 0
     - Name: fragment_call_pitch_100
       Path: Default Work Unit\Fragments\Call\fragment_call_pitch_100
+=======
+      - ElementName: fragment_call_metal_play
+        ObjectType: 3
+      ID: 933666621
+      Guid: e191af76ffd05543a16759bbb10537cf
+      maxAttenuation: 0
+    - Name: fragment_call_metal_stop
+      Path: Default Work Unit\Fragments\Call\fragment_call_metal_stop
+>>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -455,10 +501,17 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Call
         ObjectType: 4
+<<<<<<< HEAD
       - ElementName: fragment_call_pitch_100
         ObjectType: 3
       ID: 1252949355
       Guid: 66aa85a6eeae364b938264880f86be95
+=======
+      - ElementName: fragment_call_metal_stop
+        ObjectType: 3
+      ID: -1133985109
+      Guid: 6435234af5b82f498056ed69cc6dbbcb
+>>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
       maxAttenuation: 0
     - Name: fragment_call_urban_play
       Path: Default Work Unit\Fragments\Call\fragment_call_urban_play
@@ -473,7 +526,11 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1663044310
       Guid: c5d0211e55c74d44a86c494eff0d3bc3
+<<<<<<< HEAD
+      maxAttenuation: 25
+=======
       maxAttenuation: 0
+>>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
     - Name: fragment_call_urban_stop
       Path: Default Work Unit\Fragments\Call\fragment_call_urban_stop
       PathAndIcons:
@@ -501,7 +558,11 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1375190009
       Guid: 092402d7fad41c438124175398bf26d0
+<<<<<<< HEAD
+      maxAttenuation: 25
+=======
       maxAttenuation: 0
+>>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
     - Name: fragment_call_wood_stop
       Path: Default Work Unit\Fragments\Call\fragment_call_wood_stop
       PathAndIcons:
@@ -529,7 +590,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1128982233
       Guid: 13f50f5affcad6469e640830a23440c6
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: guide_idle_stop
       Path: Default Work Unit\PNJs\Guide\guide_idle_stop
       PathAndIcons:
@@ -557,7 +618,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -214441400
       Guid: 428bf4d55a85d140a322340340d26ca4
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: guide_ordre
       Path: Default Work Unit\PNJs\Guide\guide_ordre
       PathAndIcons:
@@ -571,7 +632,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1735048872
       Guid: a2d29b96a773f842804041bac38deb39
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: guide_son
       Path: Default Work Unit\PNJs\Guide\guide_son
       PathAndIcons:
@@ -585,7 +646,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -2090891314
       Guid: 79b074e55129b448b7d0a17079f2b8fb
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: interactions_simples_motion
       Path: Default Work Unit\Joueur\interactions_simples_motion
       PathAndIcons:
@@ -597,7 +658,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -535888257
       Guid: b996d6a067384f41a3e433d2daecf486
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: lacher_morceau
       Path: Default Work Unit\Joueur\lacher_morceau
       PathAndIcons:
@@ -609,7 +670,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1759500647
       Guid: 0829f1ece930964faa3bd51c90e42f61
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: linker_morceau
       Path: Default Work Unit\Joueur\linker_morceau
       PathAndIcons:
@@ -621,7 +682,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -615097439
       Guid: fe6a447c6ea03542a46bc95890394549
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: musicien_idle_play
       Path: Default Work Unit\PNJs\Musicien\musicien_idle_play
       PathAndIcons:
@@ -635,7 +696,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1967625524
       Guid: 504f6093d1404049b72f8e1ca0fc8b65
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: musicien_idle_stop
       Path: Default Work Unit\PNJs\Musicien\musicien_idle_stop
       PathAndIcons:
@@ -663,7 +724,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -2074790238
       Guid: 3fb1ee88470db94f8b0bc2a4e040d57d
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: musicien_ouverture
       Path: Default Work Unit\PNJs\Musicien\musicien_ouverture
       PathAndIcons:
@@ -677,7 +738,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 161018858
       Guid: caec0875a72f2f47ad38b009620b4bf1
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: musicien_son
       Path: Default Work Unit\PNJs\Musicien\musicien_son
       PathAndIcons:
@@ -691,7 +752,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 916635435
       Guid: cbef3af6119fbb488b6b27647dcea2dd
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: musicien_tourne
       Path: Default Work Unit\PNJs\Musicien\musicien_tourne
       PathAndIcons:
@@ -705,7 +766,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1665857576
       Guid: 63d4d636884fd945935c8ccb3e8a399b
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: paddle_convolver_play
       Path: Default Work Unit\Fragments\Liquide\paddle_convolver_play
       PathAndIcons:
@@ -719,7 +780,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1732680073
       Guid: c79642e6c126f14991b888a3782ebe3f
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: paddle_convolver_stop
       Path: Default Work Unit\Fragments\Liquide\paddle_convolver_stop
       PathAndIcons:
@@ -747,7 +808,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1792524826
       Guid: 72433668a3907a4e9104f9ac5ef5b719
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: paddle_stop
       Path: Default Work Unit\Fragments\Liquide\paddle_stop
       PathAndIcons:
@@ -775,7 +836,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1172639847
       Guid: 025bd1a7d0600448999f5618b14182de
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: passant_idle_play
       Path: Default Work Unit\PNJs\Passants\passant_idle_play
       PathAndIcons:
@@ -789,7 +850,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -327527933
       Guid: f40029d0dc990048b0c7f0eadad30478
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: passant_idle_stop
       Path: Default Work Unit\PNJs\Passants\passant_idle_stop
       PathAndIcons:
@@ -817,7 +878,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1195210688
       Guid: e9ef0c432d649345ad6c12277b8d44b8
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: passant_tourne
       Path: Default Work Unit\PNJs\Passants\passant_tourne
       PathAndIcons:
@@ -831,7 +892,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -19451419
       Guid: 8477855032c9a24d92e7f06f8c8a830e
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: prendre_morceau
       Path: Default Work Unit\Joueur\prendre_morceau
       PathAndIcons:
@@ -843,7 +904,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 2138522384
       Guid: c36c4d293c1a974f84c14d54963c81bb
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: rain_2DObject_play
       Path: Default Work Unit\Tests Wwise Pierre & Guillermo\rain_2DObject_play
       PathAndIcons:
@@ -881,7 +942,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -381897218
       Guid: 20a8635762adc949b48b5ff499250205
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: softRain_convolver_play
       Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\softRain_convolver_play"
       PathAndIcons:
@@ -1413,7 +1474,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -801903337
       Guid: 6d14ccc5d3b2f34281b57e0e0795a1e1
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: thunder_convolver_stop
       Path: Default Work Unit\Fragments\Electricite\thunder_convolver_stop
       PathAndIcons:
@@ -1441,7 +1502,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1587975354
       Guid: 11fab9475c406147b06e560368b5f9de
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: thunder_stop
       Path: Default Work Unit\Fragments\Electricite\thunder_stop
       PathAndIcons:
@@ -1467,7 +1528,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1398099514
       Guid: a64fd120264ccf4d92ea696661c9a73c
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: trafficBy_convolver_play
       Path: Default Work Unit\Fragments\Urban\trafficBy_convolver_play
       PathAndIcons:
@@ -1481,7 +1542,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1602528571
       Guid: 949beb3df7a47042ba96002467e77453
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: trafficBy_convolver_stop
       Path: Default Work Unit\Fragments\Urban\trafficBy_convolver_stop
       PathAndIcons:
@@ -1509,7 +1570,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -793597804
       Guid: ebb777c6946d7948b90e60e8292f300a
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: trafficBy_stop
       Path: Default Work Unit\Fragments\Urban\trafficBy_stop
       PathAndIcons:
@@ -1547,7 +1608,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 193498114
       Guid: 79abcf98f2eb31439fb6ce8aec825aa1
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: water_3DObject_stop
       Path: Default Work Unit\Tests Wwise Pierre & Guillermo\water_3DObject_stop
       PathAndIcons:
@@ -1573,7 +1634,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 763713321
       Guid: fbe265624b7d314db7319e3fc4e2e922
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: waterSplash_convolver_stop
       Path: Default Work Unit\Fragments\Liquide\waterSplash_convolver_stop
       PathAndIcons:
@@ -1601,7 +1662,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -81945208
       Guid: 65df1cfc206bc74baaa05497a3ece5ce
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: waterSplash_stop
       Path: Default Work Unit\Fragments\Liquide\waterSplash_stop
       PathAndIcons:
@@ -1817,8 +1878,13 @@ MonoBehaviour:
       ID: -1133058374
       Guid: 13a8cb8be9ce1d40a1ae57d196fca6c9
   ExpandedItems: []
-  m_lastPopulateTimePsrt1: -1826259454
-  m_lastPopulateTimePart2: -1999454402
+<<<<<<< HEAD
+  m_lastPopulateTimePsrt1: -1173283472
+  m_lastPopulateTimePart2: -1999454553
+=======
+  m_lastPopulateTimePsrt1: 1914322183
+  m_lastPopulateTimePart2: -1999454767
+>>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)
