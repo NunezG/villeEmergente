@@ -33,12 +33,12 @@ public class ObjectInteractor : MonoBehaviour {
 
 
 
-			if (inHandObject != null && interacObj.type == InteractibleType.SettingPiece || interacObj.type == InteractibleType.NPC)
+			if (handsFull && interacObj.type == InteractibleType.SettingPiece || interacObj.type == InteractibleType.NPC)
 			{
 				Cm.setFragmentCursor();
 			}
 
-			if (Vector3.Distance(hitObject.transform.position, transform.position) < range && Input.GetButtonDown ("Action"))
+			if (hit.distance < range && Input.GetButtonDown ("Action"))
 			{ 
 
 				if (!handsFull // si on a rien en main et qu'on vise un objet rammassable
@@ -53,8 +53,8 @@ public class ObjectInteractor : MonoBehaviour {
 					    || ( interacObj.type == InteractibleType.SettingPiece)) // ou un batiment vide
 				{
 					ConvolutionObject convolObj = interacObj.GetComponent<ConvolutionObject>();
-					
-					if (handsFull &&  !convolObj.HasFragment()){
+
+					if (!convolObj.HasFragment()){
 						
 						//ajout de l'objet en main a l'objet vise
 						print("ajout de l'objet en main a l'objet vise");
@@ -77,7 +77,7 @@ public class ObjectInteractor : MonoBehaviour {
 		else
 		{
 
-			if (Input.GetButton ("Action") && inHandObject == null) { 
+			if (Input.GetButton ("Action") && !handsFull) { 
 				Cm.setFailCursor();
 
 			}	else if (Input.GetButtonDown("Action")) 
