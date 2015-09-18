@@ -58,9 +58,17 @@ namespace AK
         static const AkUniqueID GUIDE_NOUVEAU_SON = 4080525896U;
         static const AkUniqueID GUIDE_ORDRE = 1735048872U;
         static const AkUniqueID GUIDE_SON = 2204075982U;
+        static const AkUniqueID HAMMER_CONVOLVER_PLAY = 3334697193U;
+        static const AkUniqueID HAMMER_CONVOLVER_STOP = 562249743U;
+        static const AkUniqueID HAMMER_PLAY = 1109396808U;
+        static const AkUniqueID HAMMER_STOP = 3487067066U;
         static const AkUniqueID INTERACTIONS_SIMPLES_MOTION = 3759079039U;
         static const AkUniqueID LACHER_MORCEAU = 2535466649U;
         static const AkUniqueID LINKER_MORCEAU = 3679869857U;
+        static const AkUniqueID LOG_CRACK_CONVOLVER_PLAY = 3974557966U;
+        static const AkUniqueID LOG_CRACK_CONVOLVER_STOP = 681129968U;
+        static const AkUniqueID LOG_CRACK_PLAY = 542386779U;
+        static const AkUniqueID LOG_CRACK_STOP = 3706816785U;
         static const AkUniqueID METALCREAK_CONVOLVER_PLAY = 3510319782U;
         static const AkUniqueID METALCREAK_CONVOLVER_STOP = 1066456984U;
         static const AkUniqueID METALCREAK_PLAY = 3965185603U;
@@ -145,6 +153,10 @@ namespace AK
         static const AkUniqueID WATERSPLASH_CONVOLVER_STOP = 2286130255U;
         static const AkUniqueID WATERSPLASH_PLAY = 4213022088U;
         static const AkUniqueID WATERSPLASH_STOP = 2295622138U;
+        static const AkUniqueID WOOD_FALL_CONVOLVER_PLAY = 1585537922U;
+        static const AkUniqueID WOOD_FALL_CONVOLVER_STOP = 2228550876U;
+        static const AkUniqueID WOOD_FALL_PLAY = 1894130911U;
+        static const AkUniqueID WOOD_FALL_STOP = 1385339133U;
     } // namespace EVENTS
 
     namespace SWITCHES

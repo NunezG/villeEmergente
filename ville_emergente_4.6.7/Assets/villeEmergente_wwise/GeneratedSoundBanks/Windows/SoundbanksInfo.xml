@@ -63,9 +63,17 @@
 				<Event Id="4080525896" Name="guide_nouveau_son" MaxAttenuation="50.000000"/>
 				<Event Id="1735048872" Name="guide_ordre" MaxAttenuation="50.000000"/>
 				<Event Id="2204075982" Name="guide_son" MaxAttenuation="50.000000"/>
+				<Event Id="3334697193" Name="hammer_convolver_play" MaxAttenuation="50.000000"/>
+				<Event Id="562249743" Name="hammer_convolver_stop" MaxAttenuation="0.000000"/>
+				<Event Id="1109396808" Name="hammer_play" MaxAttenuation="50.000000"/>
+				<Event Id="3487067066" Name="hammer_stop" MaxAttenuation="0.000000"/>
 				<Event Id="3759079039" Name="interactions_simples_motion" MaxAttenuation="50.000000"/>
 				<Event Id="2535466649" Name="lacher_morceau" MaxAttenuation="50.000000"/>
 				<Event Id="3679869857" Name="linker_morceau" MaxAttenuation="50.000000"/>
+				<Event Id="3974557966" Name="log_crack_convolver_play" MaxAttenuation="50.000000"/>
+				<Event Id="681129968" Name="log_crack_convolver_stop" MaxAttenuation="0.000000"/>
+				<Event Id="542386779" Name="log_crack_play" MaxAttenuation="50.000000"/>
+				<Event Id="3706816785" Name="log_crack_stop" MaxAttenuation="0.000000"/>
 				<Event Id="3510319782" Name="metalCreak_convolver_play" MaxAttenuation="50.000000"/>
 				<Event Id="1066456984" Name="metalCreak_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="3965185603" Name="metalCreak_play" MaxAttenuation="50.000000"/>
@@ -150,8 +158,17 @@
 				<Event Id="2286130255" Name="waterSplash_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="4213022088" Name="waterSplash_play" MaxAttenuation="50.000000"/>
 				<Event Id="2295622138" Name="waterSplash_stop" MaxAttenuation="0.000000"/>
+				<Event Id="1585537922" Name="wood_fall_convolver_play" MaxAttenuation="50.000000"/>
+				<Event Id="2228550876" Name="wood_fall_convolver_stop" MaxAttenuation="0.000000"/>
+				<Event Id="1894130911" Name="wood_fall_play" MaxAttenuation="50.000000"/>
+				<Event Id="1385339133" Name="wood_fall_stop" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="2796700" Language="SFX">
+					<ShortName>ri_absynth_dark.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_absynth_dark_8BCB3669.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="3521562" Language="SFX">
 					<ShortName>ri_marseilles.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_marseilles_48DDB435.wem</Path>
@@ -205,6 +222,11 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_electric_8D4034EF.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="25839266" Language="SFX">
+					<ShortName>ri_skannermorph.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_skannermorph_5725BF4C.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="27787804" Language="SFX">
 					<ShortName>ri_choirslike.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_choirslike_B903109D.wem</Path>
@@ -212,7 +234,7 @@
 				</File>
 				<File Id="32344818" Language="SFX">
 					<ShortName>sfx_train.wav</ShortName>
-					<Path>SFX\sfx_train_2A70365C.wem</Path>
+					<Path>SFX\sfx_train_337820B8.wem</Path>
 				</File>
 				<File Id="41809020" Language="SFX">
 					<ShortName>ri_rev_light.wav</ShortName>
@@ -224,6 +246,11 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_symphobia_7ED67175.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="42113534" Language="SFX">
+					<ShortName>ri_sylenth.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_sylenth_C7C64756.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="45333934" Language="SFX">
 					<ShortName>ri_symphobia.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_symphobia_82ABD766.wem</Path>
@@ -232,6 +259,10 @@
 				<File Id="46964867" Language="SFX">
 					<ShortName>sfx_paddle.wav</ShortName>
 					<Path>SFX\sfx_paddle_91A420B5.wem</Path>
+				</File>
+				<File Id="48800980" Language="SFX">
+					<ShortName>sfx_hammer_wood.wav</ShortName>
+					<Path>SFX\sfx_hammer_wood_2ACFBC15.wem</Path>
 				</File>
 				<File Id="52127588" Language="SFX">
 					<ShortName>ri_choirslike.wav</ShortName>
@@ -250,6 +281,16 @@
 				<File Id="61270204" Language="SFX">
 					<ShortName>Sfx_ri_watersplash.wav</ShortName>
 					<Path>SFX\Sfx_ri_watersplash_950FF8F3.wem</Path>
+				</File>
+				<File Id="63781649" Language="SFX">
+					<ShortName>ri_symphobia.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_symphobia_87FE4D61.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="64348797" Language="SFX">
+					<ShortName>ri_marseilles.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_marseilles_F98FA24A.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="64397103" Language="SFX">
 					<ShortName>sfx_musicien_son.wav</ShortName>
@@ -280,7 +321,7 @@
 				</File>
 				<File Id="76700068" Language="SFX">
 					<ShortName>sfx_anvil.wav</ShortName>
-					<Path>SFX\sfx_anvil_319C49A0.wem</Path>
+					<Path>SFX\sfx_anvil_5090589F.wem</Path>
 				</File>
 				<File Id="77014115" Language="SFX">
 					<ShortName>Sfx_ri_skannermorph.wav</ShortName>
@@ -289,11 +330,6 @@
 				<File Id="79795147" Language="SFX">
 					<ShortName>sfx_footsteps_01_v2.wav</ShortName>
 					<Path>SFX\sfx_footsteps_01_v2_950FF8F3.wem</Path>
-				</File>
-				<File Id="80311516" Language="SFX">
-					<ShortName>ri_sylenth.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_sylenth_C7C64756.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="80597723" Language="SFX">
 					<ShortName>ri_absynth_dark.wav</ShortName>
@@ -314,6 +350,10 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_revdark_12C64036.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="111986403" Language="SFX">
+					<ShortName>sfx_log_crack.wav</ShortName>
+					<Path>SFX\sfx_log_crack_96AE8446.wem</Path>
+				</File>
 				<File Id="114593290" Language="SFX">
 					<ShortName>ri_electric.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_electric_B9A14C31.wem</Path>
@@ -326,7 +366,7 @@
 				</File>
 				<File Id="121343736" Language="SFX">
 					<ShortName>ri_rev_light.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_rev_light_5B61295E.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\ri_rev_light_B20CE29A.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="122963745" Language="SFX">
@@ -345,6 +385,11 @@
 				<File Id="124983689" Language="SFX">
 					<ShortName>ri_electric.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_electric_7E9F2061.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="134633180" Language="SFX">
+					<ShortName>sfx_musicien_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_172299DF.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="138389321" Language="SFX">
@@ -381,9 +426,19 @@
 					<ShortName>sfx_guide_dark_respiration_02.wav</ShortName>
 					<Path>SFX\sfx_guide_dark_respiration_02_B6559965.wem</Path>
 				</File>
+				<File Id="162463159" Language="SFX">
+					<ShortName>ri_revdark.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_revdark_43AAAFB7.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="162478722" Language="SFX">
 					<ShortName>sfx_footsteps_08_v2.wav</ShortName>
 					<Path>SFX\sfx_footsteps_08_v2_950FF8F3.wem</Path>
+				</File>
+				<File Id="164133065" Language="SFX">
+					<ShortName>ri_symphobia.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_symphobia_E7E5DF69.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="165344794" Language="SFX">
 					<ShortName>soft rain - brown noise - human activities - drops reverb - 02.wav</ShortName>
@@ -467,9 +522,24 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_pipe_5757CD80.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="221494143" Language="SFX">
+					<ShortName>ri_rev_light.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_rev_light_5B61295E.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="221881774" Language="SFX">
 					<ShortName>ri_marseilles.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_marseilles_434B559E.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="227346128" Language="SFX">
+					<ShortName>ri_rev_light.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_rev_light_AFD53608.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="227972535" Language="SFX">
+					<ShortName>ri_skanner_pad.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_skanner_pad_78A3A57C.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="235702269" Language="SFX">
@@ -526,9 +596,19 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_choirslike_72D56C54.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="288853293" Language="SFX">
+					<ShortName>ri_suriya.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_suriya_D32D1434.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="291496351" Language="SFX">
 					<ShortName>ri_symphobia.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_symphobia_56E7BF2A.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="293248322" Language="SFX">
+					<ShortName>ri_marseilles.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_marseilles_B4AA06FC.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="296724181" Language="SFX">
@@ -543,6 +623,11 @@
 				<File Id="300328009" Language="SFX">
 					<ShortName>ri_sylenth.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_sylenth_CF891C4A.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="307331539" Language="SFX">
+					<ShortName>ri_watersplash.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_watersplash_57EADE69.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="310504727" Language="SFX">
@@ -565,11 +650,6 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_absynth_dark_049F591D.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
-				<File Id="331933552" Language="SFX">
-					<ShortName>sfx_musicien_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_172299DF.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
 				<File Id="334615060" Language="SFX">
 					<ShortName>sfx_footsteps_05_v2.wav</ShortName>
 					<Path>SFX\sfx_footsteps_05_v2_950FF8F3.wem</Path>
@@ -588,9 +668,19 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_marseilles_F9E38563.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="343980729" Language="SFX">
+					<ShortName>ri_pipe.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_pipe_6939BCE2.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="345389724" Language="SFX">
 					<ShortName>sfx_passant_respiration_02.wav</ShortName>
 					<Path>SFX\sfx_passant_respiration_02_299FCA36.wem</Path>
+				</File>
+				<File Id="346925210" Language="SFX">
+					<ShortName>ri_skanner_pad.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_skanner_pad_31D21368.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="347537987" Language="SFX">
 					<ShortName>ri_marseilles.wav</ShortName>
@@ -604,6 +694,11 @@
 				<File Id="363840658" Language="SFX">
 					<ShortName>ri_absynth_dark.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_absynth_dark_91F5F333.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="365224507" Language="SFX">
+					<ShortName>ri_skannermorph.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_skannermorph_BA054C25.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="373358376" Language="SFX">
@@ -676,6 +771,11 @@
 					<ShortName>sfx_prendre_morceau.wav</ShortName>
 					<Path>SFX\sfx_prendre_morceau_950FF8F3.wem</Path>
 				</File>
+				<File Id="403776113" Language="SFX">
+					<ShortName>ri_electric.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_electric_B1BAC88D.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="409979021" Language="SFX">
 					<ShortName>sfx_musicien_dark_joie.wav</ShortName>
 					<Path>SFX\sfx_musicien_dark_joie_816A4F72.wem</Path>
@@ -685,9 +785,14 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_shevannai_7B744463.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="424282730" Language="SFX">
+					<ShortName>ri_choirslike.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_choirslike_9131B360.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="425693773" Language="SFX">
 					<ShortName>ri_skannermorph.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_skannermorph_E33C38A7.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\ri_skannermorph_39E36BBC.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="426163079" Language="SFX">
@@ -702,6 +807,11 @@
 				<File Id="432804772" Language="SFX">
 					<ShortName>sfx_musicien_dark_ouverture.wav</ShortName>
 					<Path>SFX\sfx_musicien_dark_ouverture_3B661F6D.wem</Path>
+				</File>
+				<File Id="434038222" Language="SFX">
+					<ShortName>ri_absynth_dark.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_absynth_dark_20E62348.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="441125095" Language="SFX">
 					<ShortName>sfx_fragment_electricity_call.wav</ShortName>
@@ -720,11 +830,6 @@
 				<File Id="453527598" Language="SFX">
 					<ShortName>ri_absynth_dark.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_absynth_dark_5068EFFB.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="462620299" Language="SFX">
-					<ShortName>ri_sylenth.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_sylenth_C7C64756.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="469843770" Language="SFX">
@@ -746,6 +851,11 @@
 				<File Id="482751310" Language="SFX">
 					<ShortName>sfx_footsteps_02_v2.wav</ShortName>
 					<Path>SFX\sfx_footsteps_02_v2_950FF8F3.wem</Path>
+				</File>
+				<File Id="492051974" Language="SFX">
+					<ShortName>ri_revdark.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_revdark_6C7B9BBF.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="496512953" Language="SFX">
 					<ShortName>sfx_passant_dark_son.wav</ShortName>
@@ -798,7 +908,7 @@
 				</File>
 				<File Id="554279713" Language="SFX">
 					<ShortName>ri_symphobia.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_symphobia_52E165A0.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\ri_symphobia_33EE5DD5.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="557897535" Language="SFX">
@@ -810,9 +920,9 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_choirslike_C65E5DD0.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
-				<File Id="560725296" Language="SFX">
-					<ShortName>ri_skannermorph.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_skannermorph_F9420164.wem</Path>
+				<File Id="561093996" Language="SFX">
+					<ShortName>ri_electric.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_electric_DEC8F020.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="561119845" Language="SFX">
@@ -884,6 +994,11 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_suriya_98A57E2A.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="641459777" Language="SFX">
+					<ShortName>ri_pipe.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_pipe_C6B1A581.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="641832316" Language="SFX">
 					<ShortName>ri_skannermorph.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_skannermorph_7D9F37E6.wem</Path>
@@ -908,14 +1023,24 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_choirslike_25C27E04.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
-				<File Id="679969941" Language="SFX">
-					<ShortName>sfx_musicien_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_5EF7D0CA.wem</Path>
+				<File Id="671705003" Language="SFX">
+					<ShortName>ri_shevannai.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_shevannai_F12DB0DD.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="678871571" Language="SFX">
+					<ShortName>ri_watersplash.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_watersplash_4E74B076.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="684188370" Language="SFX">
 					<ShortName>sfx_musicien_dark_son.wav</ShortName>
 					<Path>SFX\sfx_musicien_dark_son_F308AADF.wem</Path>
+				</File>
+				<File Id="690183283" Language="SFX">
+					<ShortName>ri_suriya.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_suriya_09A1D435.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="711322153" Language="SFX">
 					<ShortName>sfx_passant_dark_respiration_02.wav</ShortName>
@@ -934,6 +1059,11 @@
 				<File Id="722123379" Language="SFX">
 					<ShortName>ri_electric.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_electric_BCAEE3E7.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="723659768" Language="SFX">
+					<ShortName>ri_watersplash.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_watersplash_6D8BD8EF.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="726012872" Language="SFX">
@@ -959,9 +1089,18 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_suriya_B89E5F40.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="738437857" Language="SFX">
+					<ShortName>sfx_wood_fall.wav</ShortName>
+					<Path>SFX\sfx_wood_fall_D64AECDA.wem</Path>
+				</File>
+				<File Id="744056424" Language="SFX">
+					<ShortName>ri_shevannai.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_shevannai_68B038B4.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="752190460" Language="SFX">
 					<ShortName>ri_symphobia.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_symphobia_4B59CC71.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\ri_symphobia_DD5F8DB4.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="758536210" Language="SFX">
@@ -974,13 +1113,18 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_electric_2DCEE0F6.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="770082890" Language="SFX">
+					<ShortName>ri_absynth_dark.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_absynth_dark_68382D70.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="771216038" Language="SFX">
 					<ShortName>sfx_guide_respiration_01.wav</ShortName>
 					<Path>SFX\sfx_guide_respiration_01_6AB16D09.wem</Path>
 				</File>
-				<File Id="774319586" Language="SFX">
-					<ShortName>sfx_musicien_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_172299DF.wem</Path>
+				<File Id="775083911" Language="SFX">
+					<ShortName>ri_electric.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_electric_D711EB03.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="776156565" Language="SFX">
@@ -994,11 +1138,16 @@
 				</File>
 				<File Id="782147887" Language="SFX">
 					<ShortName>sfx_metal_creak.wav</ShortName>
-					<Path>SFX\sfx_metal_creak_D9844389_78386D5A.wem</Path>
+					<Path>SFX\sfx_metal_creak_9C67D7BD_78386D5A.wem</Path>
 				</File>
 				<File Id="784759727" Language="SFX">
 					<ShortName>sfx_guide_respiration_05.wav</ShortName>
 					<Path>SFX\sfx_guide_respiration_05_74510568.wem</Path>
+				</File>
+				<File Id="788259123" Language="SFX">
+					<ShortName>sfx_musicien_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_172299DF.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="788675832" Language="SFX">
 					<ShortName>sfx_musicien_tourne.wav</ShortName>
@@ -1008,14 +1157,19 @@
 					<ShortName>Sfx_ri_symphobia.wav</ShortName>
 					<Path>SFX\Sfx_ri_symphobia_950FF8F3.wem</Path>
 				</File>
-				<File Id="793150995" Language="SFX">
-					<ShortName>sfx_musicien_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_172299DF.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
 				<File Id="801096109" Language="SFX">
 					<ShortName>sfx_passant_son.wav</ShortName>
 					<Path>SFX\sfx_passant_son_E60FF86F.wem</Path>
+				</File>
+				<File Id="802287252" Language="SFX">
+					<ShortName>ri_sylenth.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_sylenth_2C0D4CEE.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="803390808" Language="SFX">
+					<ShortName>ri_marseilles.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_marseilles_32AB02C1.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="803796088" Language="SFX">
 					<ShortName>ri_rev_light.wav</ShortName>
@@ -1024,7 +1178,7 @@
 				</File>
 				<File Id="808410429" Language="SFX">
 					<ShortName>sfx_train.wav</ShortName>
-					<Path>SFX\sfx_train_2A70365C_FD739E20.wem</Path>
+					<Path>SFX\sfx_train_337820B8_FD739E20.wem</Path>
 				</File>
 				<File Id="823416201" Language="SFX">
 					<ShortName>ri_marseilles.wav</ShortName>
@@ -1039,6 +1193,11 @@
 				<File Id="830793965" Language="SFX">
 					<ShortName>ri_marseilles.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_marseilles_C8EAAB5F.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="840120234" Language="SFX">
+					<ShortName>ri_rev_light.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_rev_light_5C4D4896.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="853048477" Language="SFX">
@@ -1058,7 +1217,7 @@
 				</File>
 				<File Id="855011190" Language="SFX">
 					<ShortName>sfx_metal_rattle.wav</ShortName>
-					<Path>SFX\sfx_metal_rattle_587CA577.wem</Path>
+					<Path>SFX\sfx_metal_rattle_EE55DC61.wem</Path>
 				</File>
 				<File Id="856207129" Language="SFX">
 					<ShortName>sfx_passant_dark_danse.wav</ShortName>
@@ -1112,12 +1271,7 @@
 				</File>
 				<File Id="908901912" Language="SFX">
 					<ShortName>ri_symphobia.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_symphobia_63FE11FC.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="916804666" Language="SFX">
-					<ShortName>ri_suriya.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_suriya_EDC8974A.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\ri_symphobia_E878D195.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="924113453" Language="SFX">
@@ -1138,6 +1292,16 @@
 				<File Id="932944951" Language="SFX">
 					<ShortName>ri_rev_light.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_rev_light_DDACB54A.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="933609642" Language="SFX">
+					<ShortName>ri_skanner_pad.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_skanner_pad_D77E8C18.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="937428614" Language="SFX">
+					<ShortName>ri_skannermorph.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_skannermorph_458BD1BF.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="940609291" Language="SFX">
@@ -1175,6 +1339,11 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_choirslike_D8CEFB75.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="980641113" Language="SFX">
+					<ShortName>ri_suriya.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_suriya_BB9D3E94.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="981645410" Language="SFX">
 					<ShortName>ri_revdark.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_revdark_9AA47DB4.wem</Path>
@@ -1183,6 +1352,11 @@
 				<File Id="983328808" Language="SFX">
 					<ShortName>sfx_musicien_son.wav</ShortName>
 					<Path>SFX\sfx_musicien_son_19FD7619.wem</Path>
+				</File>
+				<File Id="989552503" Language="SFX">
+					<ShortName>ri_symphobia.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\ri_symphobia_D5EF05BD.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="1003377797" Language="SFX">
 					<ShortName>ri_marseilles.wav</ShortName>
@@ -1233,7 +1407,7 @@
 				</File>
 				<File Id="1048083952" Language="SFX">
 					<ShortName>ri_watersplash.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_watersplash_A2FAC992.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\ri_watersplash_67DFC16F.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="1052472384" Language="SFX">
@@ -1246,7 +1420,7 @@
 				</File>
 				<File Id="1066095528" Language="SFX">
 					<ShortName>sfx_metal_creak.wav</ShortName>
-					<Path>SFX\sfx_metal_creak_D9844389.wem</Path>
+					<Path>SFX\sfx_metal_creak_9C67D7BD.wem</Path>
 				</File>
 				<File Id="1068454558" Language="SFX">
 					<ShortName>ri_symphobia.wav</ShortName>
@@ -1274,14 +1448,14 @@
 					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_D4B37BBA.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
-				<File Id="213378079" Language="SFX">
-					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_31BBC5E0.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
 				<File Id="276110766" Language="SFX">
 					<ShortName>sfx_musicien_dark_son.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_1CF291D9.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="287729982" Language="SFX">
+					<ShortName>sfx_musicien_dark_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_31BBC5E0.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="454858103" Language="SFX">
@@ -1289,19 +1463,9 @@
 					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_B6FB6C63.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
-				<File Id="485845248" Language="SFX">
+				<File Id="993464400" Language="SFX">
 					<ShortName>sfx_musicien_dark_son.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_31BBC5E0.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="552141386" Language="SFX">
-					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_31BBC5E0.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="1004987277" Language="SFX">
-					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_B6FB6C63.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="1010572178" Language="SFX">
