@@ -17,6 +17,14 @@ namespace AK
         static const AkUniqueID ANVIL_CONVOLVER_STOP = 3850059241U;
         static const AkUniqueID ANVIL_PLAY = 767008978U;
         static const AkUniqueID ANVIL_STOP = 2437092940U;
+        static const AkUniqueID BREWING_CONVOLVER_PLAY = 3747363609U;
+        static const AkUniqueID BREWING_CONVOLVER_STOP = 2043461215U;
+        static const AkUniqueID BREWING_PLAY = 610603704U;
+        static const AkUniqueID BREWING_STOP = 2983051018U;
+        static const AkUniqueID BUILDINGSITE_CONVOLVER_PLAY = 257985868U;
+        static const AkUniqueID BUILDINGSITE_CONVOLVER_STOP = 2227770454U;
+        static const AkUniqueID BUILDINGSITE_PLAY = 603921033U;
+        static const AkUniqueID BUILDINGSITE_STOP = 2126337967U;
         static const AkUniqueID BUSYSTREET_CONVOLVER_PLAY = 289850157U;
         static const AkUniqueID BUSYSTREET_CONVOLVER_STOP = 1407044475U;
         static const AkUniqueID BUSYSTREET_PLAY = 3997590316U;
@@ -138,10 +146,6 @@ namespace AK
         static const AkUniqueID THUNDER_PLAY = 2706991942U;
         static const AkUniqueID THUNDER_STOP = 221449272U;
         static const AkUniqueID TOUCHER_ELEMENT = 2896867782U;
-        static const AkUniqueID TRAFFICBY_CONVOLVER_PLAY = 2692438725U;
-        static const AkUniqueID TRAFFICBY_CONVOLVER_STOP = 4117091651U;
-        static const AkUniqueID TRAFFICBY_PLAY = 3501369492U;
-        static const AkUniqueID TRAFFICBY_STOP = 910304878U;
         static const AkUniqueID TRAIN_CONVOLVER_PLAY = 1092919631U;
         static const AkUniqueID TRAIN_CONVOLVER_STOP = 3810550349U;
         static const AkUniqueID TRAIN_PLAY = 113163278U;
