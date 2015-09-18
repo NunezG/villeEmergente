@@ -21985,6 +21985,9 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_pipe.wav"/>
 																			</PropertyList>
+																			<ConvertedFileIDList>
+																				<File ID="118672614"/>
+																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -39855,7 +39858,3726 @@
 										</SwitchContainer>
 									</ChildrenList>
 								</Folder>
-								<Folder Name="Bois" ID="{EF4921FA-F05E-41A0-A7B9-992BAE658B32}" ShortID="760925176"/>
+								<Folder Name="Bois" ID="{EF4921FA-F05E-41A0-A7B9-992BAE658B32}" ShortID="760925176">
+									<ChildrenList>
+										<SwitchContainer Name="Sfx_hammer_switch" ID="{FC80FB16-DEA2-4B80-9739-248A1E4B4A30}" ShortID="867916313">
+											<PropertyList>
+												<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="Spatialization" Type="bool" Value="False"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="RI_marseilles" ID="{11C5AD98-2916-4A86-9D09-558588136C48}" ShortID="526691654">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-8</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{49F3BE92-ACC5-439C-A3A7-4EFC19996A6D}">
+																<Effect Name="RI_marseilles (Custom)" ID="{9F5D8121-811C-472B-B2CA-AA0E780BF566}" ShortID="111950587" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DryLevel" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{E1CAFFF6-971F-4565-A074-8B3AB658108E}" ShortID="258148726">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{902E557B-D608-4244-BA7F-0F91D46FEFBF}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-0.08373</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-8.39141</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="1.198875"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRStretch" Type="Real32" Value="200"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-28">
+																			<RTPCList>
+																				<RTPC Name="" ID="{476FBCAA-E822-47D3-A24B-9409BCA20A9D}" ShortID="358546730">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{C389996B-23A1-48EE-9C28-F59B9E903837}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-11.56009</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="ri_marseilles" ID="{903F7456-C82D-435B-A7A1-5AF9018F8FBE}" ShortID="293248322">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="ri_marseilles.wav"/>
+																			</PropertyList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{EFEB4F8E-7FBE-4A83-9A71-55E6ED6C03C8}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>758.03951</XPos>
+							<YPos>0.03761</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>897.28154</XPos>
+							<YPos>-3.71296</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1584.03281</XPos>
+							<YPos>-0.01914</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{CAF82D09-D7D5-472B-BE1B-B0FF9481980A}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.198875</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{8414AED2-3D64-4593-AB22-BF5207256314}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.11164</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.49646</XPos>
+							<YPos>-120</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1.198875</XPos>
+							<YPos>-120</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_hammer" ID="{ED5D54EA-103D-467A-913B-A991C186A916}" ShortID="261476364" Type="SoundFX">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_hammer_wood" ID="{EA019834-176A-4E75-9144-B37FD5E1BDF8}" ShortID="971125409">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="28.4562094240838"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_hammer_wood.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="155993767"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_hammer_wood" ID="{EA019834-176A-4E75-9144-B37FD5E1BDF8}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_shevannai" ID="{E3E27766-BE82-48AE-8FA9-59F5015B7A27}" ShortID="834719686">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{683C28E0-5CEB-447D-BE58-A369865D84F1}">
+																<Effect Name="RI_shevannai (Custom)" ID="{57AB3736-943B-4945-B90E-E68F6DD73978}" ShortID="583190426" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DryLevel" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{49499449-C298-4FA6-868E-16FD06B64D00}" ShortID="200709845">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{0523421C-4538-49D4-978D-5FF5E828ED06}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-11.91923</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="4.6194375"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-25">
+																			<RTPCList>
+																				<RTPC Name="" ID="{6FC14194-1745-4066-8C9F-D5E04E717208}" ShortID="549404556">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{AFC5BF01-6216-4DEC-A807-9739EFD0CED8}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-0.72622</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="ri_shevannai" ID="{1C6D0A53-240B-47E0-9993-69232F912DF7}" ShortID="671705003">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="ri_shevannai.wav"/>
+																			</PropertyList>
+																			<ConvertedFileIDList>
+																				<File ID="500831021"/>
+																			</ConvertedFileIDList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{22A60195-0E34-479E-BB61-189D2DF5DC86}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>347.24193</XPos>
+							<YPos>-0.05683</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>601.62964</XPos>
+							<YPos>-10.64871</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1159.15178</XPos>
+							<YPos>-48</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>2921.37518</XPos>
+							<YPos>-48</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>4196.7263</XPos>
+							<YPos>-0.04914</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{EE11EFF8-A319-4A07-864A-39D03AB3E8A7}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>4.6194375</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{D0316059-8AAB-4E48-B665-36690F7F7911}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.11277</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.63069</XPos>
+							<YPos>-120</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>4.6194375</XPos>
+							<YPos>-120</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_hammer" ID="{707EDDA4-B2A0-43D2-BECF-A267EA87A9E0}" ShortID="620589116" Type="SoundFX">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_hammer_wood" ID="{07730FF9-0E31-430F-9F57-E5B5C73C2D23}" ShortID="983297266">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="28.4562094240838"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_hammer_wood.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="155993767"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_hammer_wood" ID="{07730FF9-0E31-430F-9F57-E5B5C73C2D23}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_skanner_pad" ID="{DC398FA5-4351-4187-B7DE-35F72FDC4CE6}" ShortID="118847413">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{21B95AB8-9E2A-4125-8AB1-2E117734F757}">
+																<Effect Name="RI_skanner_pad (Custom)" ID="{DD233AF9-B33C-4DAF-9527-5DC50A476270}" ShortID="385735287" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DryLevel" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{EC7B071B-C7CF-4B76-B326-6CFC8C67EE83}" ShortID="467790071">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{2430D049-91B6-41A7-87F6-8C2875A2CA4D}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-10.67552</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="2.782875"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+																		<Property Name="IRStretch" Type="Real32" Value="50"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-10">
+																			<RTPCList>
+																				<RTPC Name="" ID="{C78767EA-9910-48CA-9BB1-7888DBD7665C}" ShortID="496556589">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{63BEB80A-A78B-4950-ABB4-94EC4BBBF9E2}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>1.51719</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="ri_skanner_pad" ID="{46AB01DA-E0F6-4FEE-8A95-184778BDA0AE}" ShortID="227972535">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="ri_skanner_pad.wav"/>
+																			</PropertyList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{F5BCC5AA-EA73-44A5-9BBE-B4F4DD0F71BE}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>403.39603</XPos>
+							<YPos>0.03761</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>677.4344</XPos>
+							<YPos>-5.33141</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1159.15177</XPos>
+							<YPos>-0.13343</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>-5.6146</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{E18845A4-8761-478C-9554-08E7EF16EBBE}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.782875</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{A24180A3-FA64-4900-A9B3-054B23A9F865}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.25916</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1.85441</XPos>
+							<YPos>-120</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>2.782875</XPos>
+							<YPos>-120</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_hammer" ID="{4D0D1B4B-DB70-453D-B6FC-8F4FC82D8565}" ShortID="401891251" Type="SoundFX">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_hammer_wood" ID="{BB71377B-507A-4B32-AB7E-C9B8E766AE3F}" ShortID="246429140">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="28.4562094240838"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_hammer_wood.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="155993767"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_hammer_wood" ID="{BB71377B-507A-4B32-AB7E-C9B8E766AE3F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_suriya" ID="{CBCE289F-93E8-4822-8DE3-1EC1E16048DE}" ShortID="1023920813">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{962FF9A9-F748-401A-AD21-5046033809FE}">
+																<Effect Name="RI_suriya (Custom)" ID="{B16EEC95-8C05-4E11-B460-94C5CEE5605F}" ShortID="47490728" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DryLevel" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{71CD7C8F-6362-4194-927C-554135252301}" ShortID="80166241">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{9B73787A-9D64-4CF2-AEE5-6D4B93DB4B88}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-9.21262</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="7.336"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-23">
+																			<RTPCList>
+																				<RTPC Name="" ID="{23FC373E-4A88-4B08-BCCD-0896F92A4260}" ShortID="766567500">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{395A291D-49FD-4770-B107-FEF90411549A}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-15.72598</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="ri_suriya" ID="{055D8CFF-45F2-4B40-9F33-D45E638F7435}" ShortID="288853293">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="ri_suriya.wav"/>
+																			</PropertyList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{5FD6E6D5-55C7-4F05-8A0D-809991E0D61E}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{7B51D588-981D-4D1D-801E-7ADC0696C242}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>7.336</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{9435E0BB-0ED9-4B8D-9229-71FB760A1C02}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.39853</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>2.93837</XPos>
+							<YPos>-120</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>7.336</XPos>
+							<YPos>-120</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_hammer" ID="{EA3AAB7B-E635-4F26-9C43-7ADAE4232ACA}" ShortID="696051855" Type="SoundFX">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_hammer_wood" ID="{F529092B-A92A-4D04-9273-8A359C445EBE}" ShortID="816497878">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="28.4562094240838"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_hammer_wood.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="155993767"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_hammer_wood" ID="{F529092B-A92A-4D04-9273-8A359C445EBE}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_sylenth" ID="{8A345D10-4C5A-4E53-8E2C-C059B38A8650}" ShortID="1018334981">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{AD2C5645-B2F5-4507-867D-FB5FDEE03EDE}">
+																<Effect Name="RI_sylenth (Custom)" ID="{B4804A3A-4E87-4C1C-835B-A9F83CF7A3AC}" ShortID="534505410" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DryLevel" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{1A5847D3-EF6D-4366-8721-74ABAF9C67E1}" ShortID="653406614">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{2F2FCA97-40C5-4D07-A84E-7E0991E189E1}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-14.41988</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="0.629979166666667"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-20">
+																			<RTPCList>
+																				<RTPC Name="" ID="{0A8C6695-0EF7-44D2-99AC-F3BA9374B14C}" ShortID="525677752">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{9DB1CAAE-5A58-479E-9406-805E6BD7D838}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-14.52519</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="ri_sylenth" ID="{9FF0AAB9-07B5-4521-8098-BB50CCD1C247}" ShortID="465448051">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="ri_sylenth.wav"/>
+																			</PropertyList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{003EA056-BEDE-4DB4-8719-FE05033EFDA7}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{AD1DD960-5A48-457F-AA1E-DF4A1259E8B6}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.629979166666667</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{E7AA1132-AEF2-46CF-BC54-A70A91881515}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.629979166666667</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_hammer" ID="{94EEA6CA-1029-4A03-8BAD-F3F892D28B55}" ShortID="884629696" Type="SoundFX">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_hammer_wood" ID="{43EA2927-CF07-4718-84A2-1E843039509E}" ShortID="372657607">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="28.4562094240838"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_hammer_wood.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="155993767"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_hammer_wood" ID="{43EA2927-CF07-4718-84A2-1E843039509E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_symphobia" ID="{DBE3479F-B724-47DA-A5C4-989314707ADA}" ShortID="240094326">
+													<PropertyList>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{086DCDD6-C723-4C06-89C9-C8C292C4ED1A}">
+																<Effect Name="RI_symphobia (Custom)" ID="{14F4C0F5-73FE-4424-B7DB-48B6A1640A0A}" ShortID="493587043" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DryLevel" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{E9B7F1A0-41B1-43A6-BD47-BAE1A33BAE61}" ShortID="825088152">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{95818862-A2DB-4A81-80B1-237F9381073F}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-18.28659</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="1.72385416666667"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+																		<Property Name="IRStretch" Type="Real32" Value="50"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-23">
+																			<RTPCList>
+																				<RTPC Name="" ID="{5BFB5A16-ACD3-4F94-AE75-40BBFD141AAB}" ShortID="60058072">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{140B1DBF-130F-4D61-9850-920617FDB641}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-4.47458</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="ri_symphobia" ID="{7FBD1C4A-B3F7-4302-9FCD-25983378146C}" ShortID="164133065">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="ri_symphobia.wav"/>
+																			</PropertyList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{8AEE0E02-3968-4E26-9F36-A4E4A83C5A88}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1958.79238</XPos>
+							<YPos>-0.01913</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>2392.146</XPos>
+							<YPos>-7.86513</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>4118.82381</XPos>
+							<YPos>-0.01914</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>6873.7916</XPos>
+							<YPos>-2.20203</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>10776.92185</XPos>
+							<YPos>0.03761</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{E061B232-3582-4385-B654-E69BAFC4AC36}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.72385416666667</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{5C092AC8-AAC9-494C-A7E3-138EE893DC59}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.25664</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.46455</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.70197</XPos>
+							<YPos>-120</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.91492</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1.14404</XPos>
+							<YPos>-119.62848</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1.37628</XPos>
+							<YPos>-0.37152</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1.59293</XPos>
+							<YPos>-120</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1.72385416666667</XPos>
+							<YPos>-120</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_hammer" ID="{ADFD19DA-4439-4D77-B362-CB5CA70C61FF}" ShortID="283687708" Type="SoundFX">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_hammer_wood" ID="{6497710E-95D9-48A4-A2F0-5B80678897FE}" ShortID="583112639">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="28.4562094240838"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_hammer_wood.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="155993767"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_hammer_wood" ID="{6497710E-95D9-48A4-A2F0-5B80678897FE}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_revlight" ID="{BEDE772D-0CF1-40D9-BBD0-4A0E1C4D904D}" ShortID="743930768">
+													<PropertyList>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{3BEA9FCF-D2A8-4F4A-BFF1-961FB30AE00F}">
+																<Effect Name="RI_revlight (Custom)" ID="{1B54BECF-1355-42BB-A08C-219C26FECFD3}" ShortID="65204531" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DryLevel" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{2758DF66-1BED-4EA9-B5F9-1181F0E6D5D9}" ShortID="664174611">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{EE2D7E48-4288-4007-A1AD-654965032D97}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-11.59121</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="1.93510416666667"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+																		<Property Name="IRStretch" Type="Real32" Value="200"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-12">
+																			<RTPCList>
+																				<RTPC Name="" ID="{948B64D9-A047-410D-B576-5477D8FE64DA}" ShortID="679693023">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{4FBA29F7-8586-4706-B9CF-2E382812AEF8}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>2.86091</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="ri_rev_light" ID="{492D327C-CF7B-4DCF-B2EE-B077B0F7206D}" ShortID="419774308">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="ri_rev_light.wav"/>
+																			</PropertyList>
+																			<ConvertedFileIDList>
+																				<File ID="121343736"/>
+																			</ConvertedFileIDList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{35EE7886-E850-4B83-AA20-B6671E69E6ED}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>4249.47813</XPos>
+							<YPos>-0.01914</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>6620.96569</XPos>
+							<YPos>-5.87107</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>7596.19314</XPos>
+							<YPos>-0.01914</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{DA7C9E2F-0E27-4DC0-A4CB-DC40D684A249}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.93510416666667</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{4D44F534-992D-4B4F-903A-5B8E40D8F4A2}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.19945</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1.93510416666667</XPos>
+							<YPos>-120</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_hammer" ID="{17879CA0-7C82-4A0C-AD94-E869B8974B8F}" ShortID="416321950" Type="SoundFX">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_hammer_wood" ID="{4220FED5-E878-4830-98A1-03CCA1D6571E}" ShortID="729018375">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="28.4562094240838"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_hammer_wood.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="155993767"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_hammer_wood" ID="{4220FED5-E878-4830-98A1-03CCA1D6571E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Default" ID="{6ADDBD34-F700-45D7-831A-AEF01731EE91}" ShortID="290221022">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_hammer" ID="{3C525EDF-C461-4D65-8C1B-E69554105927}" ShortID="19853894" Type="SoundFX">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_hammer_wood" ID="{6ED84F44-F0C0-4A47-B4C4-09EA4C915A1A}" ShortID="448400963">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="28.4562094240838"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_hammer_wood.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="155993767"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_hammer_wood" ID="{6ED84F44-F0C0-4A47-B4C4-09EA4C915A1A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_absynthdark" ID="{E2A29425-F6A7-4526-A959-EED3DB51ABEA}" ShortID="210069885">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{C98EBFB9-94FA-42E4-982C-29283F2ACD89}">
+																<Effect Name="RI_absynthdark (Custom)" ID="{72A45978-2C16-4998-816B-D526A53FD4EE}" ShortID="646203759" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DryLevel" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{87CB5289-A7AA-44A8-B266-403C684848B3}" ShortID="600896256">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{AC5F97EC-2317-4568-A556-7CF123930B20}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-8.37300000000027E-02</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-10.81615</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="3.37083333333333"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+																		<Property Name="IRStretch" Type="Real32" Value="200"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-38">
+																			<RTPCList>
+																				<RTPC Name="" ID="{E83A878F-342E-4F1E-A068-B8F2E10887F2}" ShortID="57142677">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{FBB1245F-6355-44CE-9A2C-C43281D69447}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-29.86861</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="ri_absynth_dark" ID="{C323FE6D-F116-4C5A-BA35-ABA2271986B8}" ShortID="434038222">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="ri_absynth_dark.wav"/>
+																			</PropertyList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{ECD99879-44CD-4160-A7B2-A8FC47007606}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>194.2548</XPos>
+							<YPos>-0.13343</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>310.31604</XPos>
+							<YPos>-48</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>694.57185</XPos>
+							<YPos>-0.03299</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{9BFA7CE9-0F82-4548-AA0A-DB45CDEC85E1}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>3.37083333333333</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{D5AE58F8-71CC-4292-9633-7B25755BB198}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.12394</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.63393</XPos>
+							<YPos>-120</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>3.37083333333333</XPos>
+							<YPos>-120</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_hammer" ID="{1BABED4C-7417-4F0E-B6A9-50E79A2897D3}" ShortID="872662189" Type="SoundFX">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_hammer_wood" ID="{80BAA77D-99E1-4C01-B067-58D97FF9B2BF}" ShortID="345651120">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="28.4562094240838"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_hammer_wood.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="155993767"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_hammer_wood" ID="{80BAA77D-99E1-4C01-B067-58D97FF9B2BF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_choirslike" ID="{CDC76254-23DD-4775-8F8D-20E76386E79C}" ShortID="977155259">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{51170D5E-FB70-4536-A04D-8D227685A6B3}">
+																<Effect Name="RI_choirslike (Custom)" ID="{BD06A754-00C7-41CC-B650-D0CB15869600}" ShortID="256257699" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DryLevel" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{9CDC2378-8868-40D8-B498-8F84A31100B0}" ShortID="969652977">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{5DD5CABA-AB87-4C07-B894-F63F1CB83FF3}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-8.37300000000027E-02</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-11.58527</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="1.1028125"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+																		<Property Name="IRStretch" Type="Real32" Value="50"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-28">
+																			<RTPCList>
+																				<RTPC Name="" ID="{A5612755-E280-400A-9505-44C4FDB2F364}" ShortID="659572220">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{5BFC51D7-9CA7-48FA-931C-78B4F1C82C22}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-7.94045</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="ri_choirslike" ID="{927869F2-C80A-4EA7-9F07-0A59498C3DB8}" ShortID="682837335">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="ri_choirslike.wav"/>
+																			</PropertyList>
+																			<ConvertedFileIDList>
+																				<File ID="124185746"/>
+																			</ConvertedFileIDList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{B0FD1BA1-E020-4318-BFB2-DDF0E2206E51}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1297.07442</XPos>
+							<YPos>-0.07609</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1983.41392</XPos>
+							<YPos>-7.04164</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>3436.4606</XPos>
+							<YPos>-6.32834</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>5387.77863</XPos>
+							<YPos>-0.07609</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>10061.37837</XPos>
+							<YPos>-4.62812</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>-0.11403</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{A4314FFD-0225-4967-9507-8C17C8C843EE}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.1028125</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{94446C9F-D3E8-40CD-9462-42D20A54BA10}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.26622</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1.1028125</XPos>
+							<YPos>-120</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_hammer" ID="{51A2D22F-ADA9-4ADA-8811-6C6FF1887E9A}" ShortID="324601571" Type="SoundFX">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_hammer_wood" ID="{39A843F9-1A51-4EAC-AD51-7D4D7CE5C806}" ShortID="293586390">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="28.4562094240838"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_hammer_wood.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="155993767"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_hammer_wood" ID="{39A843F9-1A51-4EAC-AD51-7D4D7CE5C806}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_electric" ID="{A9C3BB96-FD00-48AF-8BE0-3CBB00FE0E9F}" ShortID="504386558">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{3BD99834-C4AC-4E15-AF82-329F4D292186}">
+																<Effect Name="RI_electric (Custom)" ID="{C50C7707-6191-4C66-A046-A9E052A0F0AA}" ShortID="351402970" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DryLevel" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{F676457B-5054-47FA-B3BA-9532B4B761AF}" ShortID="58292364">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{68DBA6BE-2639-4371-9B14-A7FD4D2617AB}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-8.37300000000027E-02</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-14.86888</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="1.088375"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+																		<Property Name="IRLevel" Type="Real32" Value="-12.5"/>
+																		<Property Name="IRStretch" Type="Real32" Value="200"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-27">
+																			<RTPCList>
+																				<RTPC Name="" ID="{26ABECAE-91D9-4692-84B0-F3A98478F6FE}" ShortID="521430350">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{3BD735B0-276E-4117-8DED-1E6ED8D1B9E9}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-21.54557</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="ri_electric" ID="{95074064-4EFF-430E-AD7E-82987CBC9C72}" ShortID="403776113">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="ri_electric.wav"/>
+																			</PropertyList>
+																			<ConvertedFileIDList>
+																				<File ID="722123379"/>
+																			</ConvertedFileIDList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{C1E66877-5DE9-4D96-A785-914DE89807DE}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>91.23511</XPos>
+							<YPos>-0.01914</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>187.10996</XPos>
+							<YPos>-48</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>247.83258</XPos>
+							<YPos>-48</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>324.18649</XPos>
+							<YPos>-48</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>429.3944</XPos>
+							<YPos>-9.01096</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>660.71983</XPos>
+							<YPos>-10.08815</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>973.174982580514</XPos>
+							<YPos>-1.63644532273516E-02</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{A0A64595-F183-4097-8698-4DCBDE6FD540}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.088375</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{B5254209-AA9B-417B-B275-6F9958F2F192}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.1604</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.59635</XPos>
+							<YPos>-120</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1.088375</XPos>
+							<YPos>-120</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_hammer" ID="{2F9A8F97-CC82-4522-ABB2-EF8E51661E7B}" ShortID="262622378" Type="SoundFX">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_hammer_wood" ID="{F5542214-59FD-477B-9552-AA4F36F02F00}" ShortID="747519173">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="28.4562094240838"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_hammer_wood.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="155993767"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_hammer_wood" ID="{F5542214-59FD-477B-9552-AA4F36F02F00}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_pipe" ID="{EDB1B240-9B12-4AF7-9895-0C7CD641956A}" ShortID="512776451">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{BBAAF58B-54D5-4231-8E11-F2FCA01DE941}">
+																<Effect Name="RI_pipe (Custom)" ID="{2AD33736-DF3A-4A5A-9A48-1A059E1CA857}" ShortID="96252759" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DryLevel" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{7D921A39-243C-4EA0-BB80-59A757F15857}" ShortID="674127059">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{AEB222C1-D019-4F0A-BC16-AFDD948EEB3E}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-8.37300000000027E-02</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-14.19177</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="0.477936507936508"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRLevel" Type="Real32" Value="-5"/>
+																		<Property Name="IRStretch" Type="Real32" Value="165"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-25">
+																			<RTPCList>
+																				<RTPC Name="" ID="{6D8FCA32-07EF-4790-B3B7-D4057138BE06}" ShortID="174123042">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{D0B177C7-FC6B-4524-91AD-3104C40BBA59}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-18.80265</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="ri_pipe" ID="{7AD71BA3-AA1D-4EA1-942A-5C2871C58A77}" ShortID="343980729">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="ri_pipe.wav"/>
+																			</PropertyList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{B5ECDF1D-00E2-4083-A560-40FA28C894A8}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{0C33DE40-BEE7-4CD6-B826-604B7DE483CF}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.477936507936508</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{7E75B091-1CA2-474B-A05B-D68495E70B9D}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.11062</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.477936507936508</XPos>
+							<YPos>-120</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_hammer" ID="{8515E2F5-DA3D-4D02-B6D2-74C66909FBFA}" ShortID="1054781278" Type="SoundFX">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_hammer_wood" ID="{475ABFE2-87EF-4200-9403-764A495435E9}" ShortID="652914703">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="28.4562094240838"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_hammer_wood.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="155993767"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_hammer_wood" ID="{475ABFE2-87EF-4200-9403-764A495435E9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_revdark" ID="{D33B5726-D363-409D-9B94-8553755DC163}" ShortID="867374394">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{0D8250FA-42C6-460F-AA1E-058BFA1935DF}">
+																<Effect Name="RI_revdark (Custom)" ID="{4F07975A-C892-46E1-8188-A778BD5700B2}" ShortID="795457871" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DryLevel" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{982A1720-0AC9-4603-AC3F-9B1CB1406C28}" ShortID="48152627">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{085491B6-F0DD-4168-9728-0A799976DF95}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-8.37300000000027E-02</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-15.60327</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="1.36120833333333"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRStretch" Type="Real32" Value="200"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-30">
+																			<RTPCList>
+																				<RTPC Name="" ID="{E1763430-3411-4CFB-9425-679F78F822D0}" ShortID="3028984">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{1B74AAA8-DA7C-460F-9B80-2DADDB335083}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-19.17993</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="ri_revdark" ID="{24062C1F-7648-4417-BC9E-72B161A46CBE}" ShortID="967850843">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="ri_revdark.wav"/>
+																			</PropertyList>
+																			<ConvertedFileIDList>
+																				<File ID="176876817"/>
+																			</ConvertedFileIDList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{46D47BF0-962F-45A9-B127-CC5346416DBF}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{35766CC8-0E21-4591-A5B6-CE7B22E3C7F8}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1.36120833333333</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{E5E428C0-61FA-4B24-9EC8-23BE76F95534}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.54176</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1.36120833333333</XPos>
+							<YPos>-120</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_hammer" ID="{860334F2-6992-40D5-B820-BD82A12EAA7F}" ShortID="665263111" Type="SoundFX">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_hammer_wood" ID="{0E0B7CC8-3170-4C09-B005-37EDC0B15931}" ShortID="303544615">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="28.4562094240838"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_hammer_wood.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="155993767"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_hammer_wood" ID="{0E0B7CC8-3170-4C09-B005-37EDC0B15931}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_skannermorph" ID="{F96CEE85-37F0-49F9-9129-8C192D4BAB69}" ShortID="26980953">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-7</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{31354899-C29C-4F16-B533-DB3FE5678B9F}">
+																<Effect Name="RI_skannermorph (Custom)" ID="{D13CA481-441C-465F-B79E-6AF5DC63D012}" ShortID="1013893863" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DryLevel" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{BE7B54AC-5067-4B7E-89BF-68F3B4C3F567}" ShortID="1055592460">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{C2AE4891-A4E7-41CF-97F6-71C3B941616C}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-8.37300000000027E-02</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-8.50348</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="4.44797916666667"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRStretch" Type="Real32" Value="125"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-23">
+																			<RTPCList>
+																				<RTPC Name="" ID="{902CA4BD-248E-42AB-848C-AA019E2E37FA}" ShortID="1016820129">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{CC770AA0-A82F-4B5D-B406-F38487A63E89}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-14.08231</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="ri_skannermorph" ID="{7A2FE889-D184-41F5-9EA4-46F4DC0D78A8}" ShortID="365224507">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="ri_skannermorph.wav"/>
+																			</PropertyList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{8EFFD1BD-B0E5-4623-B4EA-57BF74D3B54C}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{568D056E-00B8-4170-BDEB-039675412B3C}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>4.44797916666667</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{734037BE-4ABB-4390-8C01-CA8E0CD8C502}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.48663</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1.99376</XPos>
+							<YPos>-120</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>4.44797916666667</XPos>
+							<YPos>-120</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_hammer" ID="{EF99F8F7-F492-400D-971A-5539C4164823}" ShortID="796287826" Type="SoundFX">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_hammer_wood" ID="{794F16F4-3206-4C50-AEEF-83D7849FA896}" ShortID="90886562">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="28.4562094240838"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_hammer_wood.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="155993767"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_hammer_wood" ID="{794F16F4-3206-4C50-AEEF-83D7849FA896}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_watersplash" ID="{757A2882-51A6-4ED6-B57C-877C84A46FD9}" ShortID="1058319934">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{36942618-8521-401E-8C22-61A006B34591}">
+																<Effect Name="RI_watersplash (Custom)" ID="{1B80D423-50F2-4669-B89A-9FB601658228}" ShortID="368142029" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DryLevel" Type="Real32">
+																			<RTPCList>
+																				<RTPC Name="" ID="{34029FA0-DEC5-47EE-B607-A9CF0A54CE7E}" ShortID="1000180691">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{97DBCC1C-B667-4E02-83D2-C408224B0022}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-8.37300000000027E-02</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-7.05252</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="2.85969791666667"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+																		<Property Name="IRStretch" Type="Real32" Value="50"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-28">
+																			<RTPCList>
+																				<RTPC Name="" ID="{BACB7B8C-B0BE-4669-8122-ABEDF580012A}" ShortID="758218004">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{00964E50-F683-49C0-BFEC-85F2BF215A17}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-17.24104</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="ri_watersplash" ID="{FA429B54-0355-4ED9-919E-F40B02E88313}" ShortID="307331539">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="ri_watersplash.wav"/>
+																			</PropertyList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{8A02F715-F721-4DB1-8CFF-EB99CE1E8B39}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>1272.99725</XPos>
+							<YPos>0.09469</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>2761.68831</XPos>
+							<YPos>-19.63055</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>5189.61187</XPos>
+							<YPos>-0.01914</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>8660.8003</XPos>
+							<YPos>-0.01913</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{853BB2ED-DDB6-4C21-A0B3-50FA526CF9A9}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>2.85969791666667</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{24F733A4-6A3A-4520-BAC4-36C5496FE9DD}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.574</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>2.09695</XPos>
+							<YPos>-120</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>2.85969791666667</XPos>
+							<YPos>-120</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_hammer" ID="{23C8F9D4-D95F-441B-84F7-FA06072E21D0}" ShortID="936061512" Type="SoundFX">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_hammer_wood" ID="{1309867C-8EA8-46DD-AB3C-7B7BE8DCE51E}" ShortID="266191863">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="28.4562094240838"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_hammer_wood.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="155993767"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_hammer_wood" ID="{1309867C-8EA8-46DD-AB3C-7B7BE8DCE51E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_musicien_atmo" ID="{2530A9EC-E8C1-4318-A58B-D14B7A5DD7C1}" ShortID="165436282">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-8</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{5E121B1F-941E-4007-9504-FC8F01364CC5}">
+																<Effect Name="RI_musicien_atmo (Custom)" ID="{D8581F5C-0DCE-4304-AA52-5138C6054A10}" ShortID="147966859" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="8.3515625"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-28">
+																			<RTPCList>
+																				<RTPC Name="" ID="{D689510B-070F-4DFA-90BC-A2BAEBA3158D}" ShortID="549508601">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{56ED645B-9D23-402A-8536-30ADF06B3720}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-26</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="sfx_musicien_son" ID="{FCDF3F80-FFD8-4981-B05C-D641E6E20EDE}" ShortID="331654593">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="sfx_musicien_son.wav"/>
+																			</PropertyList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{D68D7751-2CC9-4EAD-AD14-AAE316BBC189}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>286.11812</XPos>
+							<YPos>-0.05683</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>597.88505</XPos>
+							<YPos>-18.13789</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>811.94964</XPos>
+							<YPos>-48</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>1665.19076</XPos>
+							<YPos>0.09564</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{E89452A6-99F8-463E-A23C-BEA2851C50D3}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>8.3515625</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{2C7BB09D-445C-4B61-8F21-732B1A74AB51}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>8.3515625</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_hammer" ID="{342E9131-2033-467B-907F-5D37B0785A2D}" ShortID="1029624912" Type="SoundFX">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_hammer_wood" ID="{609516A0-AD6F-4CF8-AF7F-79FBE4FF2B54}" ShortID="409249881">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="28.4562094240838"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_hammer_wood.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="155993767"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_hammer_wood" ID="{609516A0-AD6F-4CF8-AF7F-79FBE4FF2B54}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="RI_musicien_dark" ID="{76E427E2-62E8-469F-BC8E-E03EA894279F}" ShortID="1037456909">
+													<PropertyList>
+														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-8</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Basic_Attenuation" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+														</Reference>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{D5163B13-1185-4B79-BDC9-EC10564CD2AE}">
+																<Effect Name="RI_musicien_dark (Custom)" ID="{58D2A8D3-03C6-4F3B-819D-F1D5DFBFD6BA}" ShortID="715670761" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+																	<PropertyList>
+																		<Property Name="IRConvolutionSmooth" Type="Real32" Value="10"/>
+																		<Property Name="IRConvolutionStop" Type="Real64" Value="7.541125"/>
+																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
+																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+																		<Property Name="IRStretch" Type="Real32" Value="125"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-28">
+																			<RTPCList>
+																				<RTPC Name="" ID="{72EDD0E0-8884-4895-877A-FCA48E5BA5FE}" ShortID="905137992">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{ACF941F3-D56F-4393-A889-844A50EB792E}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-96.3000030517578</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>-20</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																	</PropertyList>
+																	<ChildrenList>
+																		<PluginMediaSource Name="sfx_musicien_dark_son" ID="{955EA967-0653-4227-B686-43FD29668B94}" ShortID="251945985">
+																			<ParentPluginID>8323075</ParentPluginID>
+																			<PropertyList>
+																				<Property Name="DataFileName" Type="string" Value="sfx_musicien_dark_son.wav"/>
+																			</PropertyList>
+																		</PluginMediaSource>
+																	</ChildrenList>
+																	<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="" ID="{54A8A001-1EF3-4B19-A1A5-D369B033BD71}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>80.52161</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>134.38031</XPos>
+							<YPos>-3.34416</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>209.3734</XPos>
+							<YPos>-0.05683</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="" ID="{D0613786-05D6-4939-9B76-2F0DB6B36131}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>7.541125</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="" ID="{85FAEB2D-6B3C-461A-87E7-BD7CDB5080C2}">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>0.75002</XPos>
+							<YPos>0</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>0.82602</XPos>
+							<YPos>-120</YPos>
+							<Flags>0</Flags>
+						</Point>
+						<Point>
+							<XPos>7.541125</XPos>
+							<YPos>-120</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Convolutions" ID="{A693D4EF-A021-4D47-8874-91C9C9A0EA57}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="sfx_hammer" ID="{8744CEBA-B879-4EC9-A9A5-28CB620C8660}" ShortID="608411328" Type="SoundFX">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{F8645F3A-A46A-4E35-AA42-75DF67E675CA}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="sfx_hammer_wood" ID="{7F5CF8DF-BBC8-47A8-9A06-AE6F5EBB625A}" ShortID="644460170">
+																	<PropertyList>
+																		<Property Name="TrimEnd" Type="Real64" Value="28.4562094240838"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>sfx_hammer_wood.wav</AudioFile>
+																	<ConvertedFileIDList>
+																		<File ID="155993767"/>
+																	</ConvertedFileIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="sfx_hammer_wood" ID="{7F5CF8DF-BBC8-47A8-9A06-AE6F5EBB625A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{13DB1275-BC22-473D-8E5E-A8C0F31DFE58}"/>
+											</PositioningInfo>
+											<GroupingInfo>
+												<GroupRef Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
+												<DefaultSwitchRef Name="Default" ID="{B99EB49E-4956-43A4-AA90-864549EE2FC7}"/>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="RI_sylenth" ID="{8A345D10-4C5A-4E53-8E2C-C059B38A8650}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_absynthdark" ID="{E2A29425-F6A7-4526-A959-EED3DB51ABEA}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_revdark" ID="{D33B5726-D363-409D-9B94-8553755DC163}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_revlight" ID="{BEDE772D-0CF1-40D9-BBD0-4A0E1C4D904D}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Default" ID="{6ADDBD34-F700-45D7-831A-AEF01731EE91}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_pipe" ID="{EDB1B240-9B12-4AF7-9895-0C7CD641956A}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_choirslike" ID="{CDC76254-23DD-4775-8F8D-20E76386E79C}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_shevannai" ID="{E3E27766-BE82-48AE-8FA9-59F5015B7A27}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_watersplash" ID="{757A2882-51A6-4ED6-B57C-877C84A46FD9}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_skannermorph" ID="{F96CEE85-37F0-49F9-9129-8C192D4BAB69}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_electric" ID="{A9C3BB96-FD00-48AF-8BE0-3CBB00FE0E9F}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_marseilles" ID="{11C5AD98-2916-4A86-9D09-558588136C48}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_suriya" ID="{CBCE289F-93E8-4822-8DE3-1EC1E16048DE}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_symphobia" ID="{DBE3479F-B724-47DA-A5C4-989314707ADA}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_skanner_pad" ID="{DC398FA5-4351-4187-B7DE-35F72FDC4CE6}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_musicien_dark" ID="{76E427E2-62E8-469F-BC8E-E03EA894279F}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="RI_musicien_atmo" ID="{2530A9EC-E8C1-4318-A58B-D14B7A5DD7C1}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Dark_1" ID="{65F12811-7F28-46B7-8012-C1165748BE61}"/>
+														<ItemList>
+															<ItemRef Name="RI_absynthdark" ID="{E2A29425-F6A7-4526-A959-EED3DB51ABEA}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dark_6" ID="{9211FD1D-6C13-41C8-86C8-3B4B2C1475CA}"/>
+														<ItemList>
+															<ItemRef Name="RI_skannermorph" ID="{F96CEE85-37F0-49F9-9129-8C192D4BAB69}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Atmo_6" ID="{DD90A43A-C8F4-4D1C-88B4-514B1E2B19E1}"/>
+														<ItemList>
+															<ItemRef Name="RI_symphobia" ID="{DBE3479F-B724-47DA-A5C4-989314707ADA}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Atmo_7" ID="{F973153E-CA8F-4F59-BC85-0FD246B7783F}"/>
+														<ItemList>
+															<ItemRef Name="RI_revlight" ID="{BEDE772D-0CF1-40D9-BBD0-4A0E1C4D904D}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dark_7" ID="{A7D16E56-5F54-4C8E-BDA0-2372329B19EA}"/>
+														<ItemList>
+															<ItemRef Name="RI_watersplash" ID="{757A2882-51A6-4ED6-B57C-877C84A46FD9}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dark_5" ID="{973CCB6B-3D15-4A6A-9EB9-C6EC72EB6251}"/>
+														<ItemList>
+															<ItemRef Name="RI_revdark" ID="{D33B5726-D363-409D-9B94-8553755DC163}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Atmo_2" ID="{39E24B6E-FEE2-433F-96A5-82A16453D5A2}"/>
+														<ItemList>
+															<ItemRef Name="RI_shevannai" ID="{E3E27766-BE82-48AE-8FA9-59F5015B7A27}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dark_4" ID="{31F5337C-1709-4BE4-884F-D600E12ABC9C}"/>
+														<ItemList>
+															<ItemRef Name="RI_pipe" ID="{EDB1B240-9B12-4AF7-9895-0C7CD641956A}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Atmo_mus" ID="{07FD9990-460F-43B1-B8F7-9BDF1DA9A2C8}"/>
+														<ItemList>
+															<ItemRef Name="RI_musicien_atmo" ID="{2530A9EC-E8C1-4318-A58B-D14B7A5DD7C1}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Atmo_4" ID="{BAF35796-9205-4A2F-A26B-CEB00BAA02A8}"/>
+														<ItemList>
+															<ItemRef Name="RI_suriya" ID="{CBCE289F-93E8-4822-8DE3-1EC1E16048DE}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Default" ID="{B99EB49E-4956-43A4-AA90-864549EE2FC7}"/>
+														<ItemList>
+															<ItemRef Name="Default" ID="{6ADDBD34-F700-45D7-831A-AEF01731EE91}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Atmo_5" ID="{BA09B59E-3651-49B4-B96F-AE4211024C97}"/>
+														<ItemList>
+															<ItemRef Name="RI_sylenth" ID="{8A345D10-4C5A-4E53-8E2C-C059B38A8650}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dark_3" ID="{4F52C6A1-7E6F-4017-AF8E-C12BFB9CA162}"/>
+														<ItemList>
+															<ItemRef Name="RI_electric" ID="{A9C3BB96-FD00-48AF-8BE0-3CBB00FE0E9F}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dark_2" ID="{C09A34D0-F519-40CC-BF22-6ACC7C538EE4}"/>
+														<ItemList>
+															<ItemRef Name="RI_choirslike" ID="{CDC76254-23DD-4775-8F8D-20E76386E79C}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
+														<ItemList>
+															<ItemRef Name="RI_marseilles" ID="{11C5AD98-2916-4A86-9D09-558588136C48}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Atmo_3" ID="{C84A9BF1-5C15-48F8-877E-8B808D95163B}"/>
+														<ItemList>
+															<ItemRef Name="RI_skanner_pad" ID="{DC398FA5-4351-4187-B7DE-35F72FDC4CE6}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+									</ChildrenList>
+								</Folder>
 								<Folder Name="Metal" ID="{57DADFB2-FFB5-4C2C-A45C-53229EFB1CE2}" ShortID="584178339">
 									<ChildrenList>
 										<SwitchContainer Name="Sfx_anvil_switch" ID="{79F31355-08CE-4FA4-BB51-3FAF7B019055}" ShortID="714565264">
@@ -39967,6 +43689,9 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_marseilles.wav"/>
 																			</PropertyList>
+																			<ConvertedFileIDList>
+																				<File ID="3521562"/>
+																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -45357,9 +49082,6 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_choirslike.wav"/>
 																			</PropertyList>
-																			<ConvertedFileIDList>
-																				<File ID="970260383"/>
-																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -49413,6 +53135,9 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_pipe.wav"/>
 																			</PropertyList>
+																			<ConvertedFileIDList>
+																				<File ID="218791853"/>
+																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -49606,6 +53331,9 @@
 																			<PropertyList>
 																				<Property Name="DataFileName" Type="string" Value="ri_revdark.wav"/>
 																			</PropertyList>
+																			<ConvertedFileIDList>
+																				<File ID="176876817"/>
+																			</ConvertedFileIDList>
 																		</PluginMediaSource>
 																	</ChildrenList>
 																	<PluginData>
@@ -51018,7 +54746,9 @@
 									<ChildrenList>
 										<ActorMixer Name="Fragment Call" ID="{DF000654-470E-4CBE-BB77-0BB357DB1735}" ShortID="217953990">
 											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<RTPCList>
 														<RTPC Name="" ID="{5C6E34B5-754F-497A-BDAA-54406A321836}" ShortID="62752912">
@@ -51382,6 +55112,7 @@
 									<ChildrenList>
 										<Sound Name="sfx_hammer" ID="{AA5CABB7-2972-479A-BB6A-BC853664C3F5}" ShortID="544275280" Type="SoundFX">
 											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-2</Value>
@@ -51398,6 +55129,9 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="sfx_hammer_wood" ID="{E3BDB54D-DB5D-4D1B-A1FC-E9C887F9681A}" ShortID="155993767">
+													<PropertyList>
+														<Property Name="TrimEnd" Type="Real64" Value="28.4562094240838"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>sfx_hammer_wood.wav</AudioFile>
 												</AudioFileSource>
@@ -53154,17 +56888,21 @@
 						</ActorMixer>
 						<ActorMixer Name="Passants" ID="{9576AF8F-2B01-442B-877A-37998ECAB847}" ShortID="873494729">
 							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>2</Value>
+										<Value>7</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">

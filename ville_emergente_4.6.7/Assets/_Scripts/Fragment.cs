@@ -27,11 +27,11 @@ public class Fragment : MonoBehaviour{
 
     public void Awake()
     {
-		soundString [0] = new string[]{"waterSplash","softRain", "dropsCardboard"}; // Liquid
-		soundString [1] = new string[]{"waterSplash","softRain", "dropsCardboard"}; // Wood
-		soundString [2] = new string[]{"electricBuzz"};						  		// Electricity
+		soundString [0] = new string[]{"waterSplash","paddle", "dropsCardboard"}; // Liquid
+		soundString [1] = new string[]{"waterSplash", "dropsCardboard"}; // Wood
+		soundString [2] = new string[]{"thunder", "electricityStatic", "electricityArcing"};						  		// Electricity
 		soundString [3] = new string[]{"waterSplash","softRain", "dropsCardboard"}; // Metal
-		soundString [4] = new string[]{"waterSplash","softRain", "dropsCardboard"}; // Urban
+		soundString [4] = new string[]{"trafficBy"}; // Urban
 
         this.tag = "Fragment";
     }
