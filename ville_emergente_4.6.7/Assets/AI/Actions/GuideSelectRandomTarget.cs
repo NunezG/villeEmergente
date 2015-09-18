@@ -18,9 +18,9 @@ public class GuideSelectRandomTarget : RAINAction
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
         //Debut de la partie
-        int targetIndex = Random.Range(0, Guide.allPointsOfView.Length);
+        int targetIndex = Random.Range(0, ai.Body.GetComponent<Guide>().targets.Count);
         Debug.Log(ai.Body.name + " : targetIndex : " + targetIndex);
-        target = Guide.allPointsOfView[targetIndex];
+        target = ai.Body.GetComponent<Guide>().targets[targetIndex];
         ai.WorkingMemory.SetItem<bool>("destinationReached", false);
         ai.WorkingMemory.SetItem<GameObject>("target", target);
         ai.Body.GetComponent<Guide>().pdv = ai.WorkingMemory.GetItem<GameObject>("target").GetComponent<PointDeVue>();

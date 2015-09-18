@@ -221,6 +221,66 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="train_play" ID="{00EE5F80-7A95-4F52-9193-1A32D78A371D}">
+									<ChildrenList>
+										<Action Name="Play" ID="{2E149232-EEEF-4286-AC86-1A203070CB4E}" ShortID="561741362" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{6270BADE-834D-4EDA-A82B-E41AE8E381BD}" Global="false">
+													<ObjectRef Name="sfx_train" ID="{3077186B-7DD4-4977-8615-9AAFEFE939D3}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="train_convolver_play" ID="{CCDBE8B0-E75D-4AA5-88EF-53ADE6E6F354}">
+									<ChildrenList>
+										<Action Name="Play" ID="{ACD01575-38CE-4678-BADC-12A3E154440D}" ShortID="53408334" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{D75EA608-5F15-4078-80EB-F38061633886}" Global="false">
+													<ObjectRef Name="Sfx_train_switch" ID="{D70227B2-E745-4146-9B83-03C2BA864310}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="train_stop" ID="{BD4886B8-F9A4-4DEF-A55D-D12B92174D9A}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{0241038E-A30E-4D9A-A1F3-2F9B67C22366}" ShortID="395165681" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{0F719DEF-A378-457E-9FCB-AFE80B6C3452}" Global="false">
+													<ObjectRef Name="sfx_train" ID="{3077186B-7DD4-4977-8615-9AAFEFE939D3}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="train_convolver_stop" ID="{78DFDA25-D154-4841-800F-3A9836B4347D}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{79BD8E9D-F874-4398-91C1-9C5D50CEE2F5}" ShortID="953598312" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{FB73E1F5-0500-4132-B224-26E0626697B3}" Global="false">
+													<ObjectRef Name="Sfx_train_switch" ID="{D70227B2-E745-4146-9B83-03C2BA864310}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Liquide" ID="{5E9EF360-182C-4071-BAF6-46A8F5567378}" ShortID="203781444">
@@ -928,6 +988,190 @@
 											<ElementList>
 												<Element ID="{32F873FC-4AB7-42A9-9C30-39B49C94667C}" Global="false">
 													<ObjectRef Name="Sfx_busy_street_switch" ID="{999AE0F4-EEF7-4C82-92DE-DB4F1EA9815B}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Metal" ID="{42AC68E2-7E97-41F5-81BE-76557D6A812C}" ShortID="97777577">
+							<ChildrenList>
+								<Event Name="anvil_play" ID="{C1BDAD69-5351-4876-A8F4-377E866A6976}">
+									<ChildrenList>
+										<Action Name="Play" ID="{265F4021-0A31-40BC-A8CB-7010B2F0A961}" ShortID="974463355" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{CB2A8513-5C4F-4007-B06B-6575D5F93911}" Global="false">
+													<ObjectRef Name="sfx_anvil" ID="{6BA8CADF-9057-4C34-9BA5-6406AFC9C3A6}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="anvil_convolver_play" ID="{AF2062FB-072B-4C96-A951-737E206AD15D}">
+									<ChildrenList>
+										<Action Name="Play" ID="{D46F7C2C-4D5B-4FB8-86B5-0F57BA8083B1}" ShortID="63157800" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{41E15243-D2DF-47E6-BBAC-14BA62B787B4}" Global="false">
+													<ObjectRef Name="Sfx_anvil_switch" ID="{79F31355-08CE-4FA4-BB51-3FAF7B019055}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="anvil_stop" ID="{C5AA43C6-900A-492D-A47B-AE211B7EBE6B}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{B8DE675C-6CD5-4E3A-B6EB-BB7FF6F2ABB7}" ShortID="19455480" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{41FA27E7-9392-4A43-9BA9-E023B5B53308}" Global="false">
+													<ObjectRef Name="sfx_anvil" ID="{6BA8CADF-9057-4C34-9BA5-6406AFC9C3A6}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="anvil_convolver_stop" ID="{B6718AC0-D6F7-4398-ABB5-BCFD34A3C391}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{B22391BF-2EC4-4D04-904A-B93D8FF09069}" ShortID="345353944" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{FC07C281-951C-4053-A3A2-87D6F7A9E9E4}" Global="false">
+													<ObjectRef Name="Sfx_anvil_switch" ID="{79F31355-08CE-4FA4-BB51-3FAF7B019055}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="metalCreak_convolver_play" ID="{9E6EBB5C-D5B7-4069-9D25-1B0975050E70}">
+									<ChildrenList>
+										<Action Name="Play" ID="{FB3AD7D7-DC62-4162-8F0F-0D079F3C903D}" ShortID="343717991" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{610CED77-E34B-49D1-8922-82149500FF97}" Global="false">
+													<ObjectRef Name="Sfx_metal_creak_switch" ID="{34B4ABC9-676C-49F0-A5AB-CA815A8B444C}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="metalCreak_play" ID="{EF83F469-5C4A-4D52-A701-2B7051A9CC69}">
+									<ChildrenList>
+										<Action Name="Play" ID="{A10B057B-2A6B-4B04-B8D6-98FA42DE4FFE}" ShortID="59377335" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{5675E831-E0B1-41CB-99A0-5FA34E97CDA9}" Global="false">
+													<ObjectRef Name="sfx_metal_creak" ID="{BF677846-36AA-4E89-B92C-A90088C685FF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="metalCreak_stop" ID="{4F9EE2D7-0B72-449A-B3CC-D178EC1E316E}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{F045F6BF-7011-4FDF-9F31-2EACF1E6082B}" ShortID="346902836" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{57A1FEC3-BD07-49D3-BEB5-FD3CAE06EF5B}" Global="false">
+													<ObjectRef Name="sfx_metal_creak" ID="{BF677846-36AA-4E89-B92C-A90088C685FF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="metalCreak_convolver_stop" ID="{C182FDED-39D4-4BD3-ADC7-AD43C16E11CE}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{3505E3EB-A660-40A5-9E2C-979CD0D8C51E}" ShortID="371101420" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{EEEA9FAD-8BAC-4DEE-9485-AC72AF1E8356}" Global="false">
+													<ObjectRef Name="Sfx_metal_creak_switch" ID="{34B4ABC9-676C-49F0-A5AB-CA815A8B444C}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="metalRattle_convolver_play" ID="{037860D0-F9AB-418D-9C9C-82276EAB8C65}">
+									<ChildrenList>
+										<Action Name="Play" ID="{B445FBDD-B949-4F0F-B979-3AF5E23370BE}" ShortID="907823038" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{2DBCE57C-FACB-46A5-8E38-23ECE7C6A44D}" Global="false">
+													<ObjectRef Name="Sfx_metal_rattle_switch" ID="{84C89826-1B17-4093-92DA-3FAF5D6A591E}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="metalRattle_play" ID="{2E1AA747-4663-46EB-AD87-24664A9996CE}">
+									<ChildrenList>
+										<Action Name="Play" ID="{03DC6CE9-2D69-41B6-8E33-4907BAD0448A}" ShortID="554167672" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{02B58427-0336-40C9-AD6A-B6FC3EE67D68}" Global="false">
+													<ObjectRef Name="sfx_metal_rattle" ID="{18BD62EE-C7BC-4121-BCE7-FAFEAC88F690}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="metalRattle_stop" ID="{AA9638AB-9ED2-42E9-8A91-5035B51A5DF5}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{CB10A7B9-3B12-404E-8DAF-D0C421AEE9A6}" ShortID="11140402" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{DBF0F3C6-7E1A-42FF-877F-3A031D4F0222}" Global="false">
+													<ObjectRef Name="sfx_metal_rattle" ID="{18BD62EE-C7BC-4121-BCE7-FAFEAC88F690}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="metalRattle_convolver_stop" ID="{70904505-DC58-44D0-B27F-C138556F5D04}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{19A49795-7444-4EFF-AE3C-30688BB9002D}" ShortID="183892994" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{394BBD9A-9B23-4573-829D-1B769C051958}" Global="false">
+													<ObjectRef Name="Sfx_metal_rattle_switch" ID="{84C89826-1B17-4093-92DA-3FAF5D6A591E}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>

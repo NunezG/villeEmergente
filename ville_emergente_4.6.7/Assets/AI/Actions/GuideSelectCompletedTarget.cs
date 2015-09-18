@@ -20,11 +20,11 @@ public class GuideSelectCompletedTarget : RAINAction
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
         List<GameObject> completedTargets = new List<GameObject>();
-        for (int i = 0; i < Guide.allPointsOfView.Length; i++)
+        for (int i = 0; i < ai.Body.GetComponent<Guide>().targets.Count; i++)
         {
-            if (Guide.allPointsOfView[i].GetComponent<PointDeVue>().batimentAVisiter.GetComponent<ConvolutionObject>().fragment != null)
+            if (ai.Body.GetComponent<Guide>().targets[i].GetComponent<PointDeVue>().batimentAVisiter.GetComponent<ConvolutionObject>().fragment != null)
             {
-                completedTargets.Add(Guide.allPointsOfView[i]); // on remplit la liste de tous les points de vue liés à des bâtiments complétés
+                completedTargets.Add(ai.Body.GetComponent<Guide>().targets[i]); // on remplit la liste de tous les points de vue liés à des bâtiments complétés
             }
         }
         int targetIndex = Random.Range(0, completedTargets.Count); // on en prend un au hasard
