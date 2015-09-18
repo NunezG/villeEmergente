@@ -90627,9 +90627,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basePath: Audio\GeneratedSoundBanks
   language: English(US)
-  defaultPoolSize: 8192
-  lowerPoolSize: 4096
-  streamingPoolSize: 2048
+  defaultPoolSize: 16384
+  lowerPoolSize: 8192
+  streamingPoolSize: 4096
   memoryCutoffThreshold: .949999988
 --- !u!114 &2058007751
 MonoBehaviour:

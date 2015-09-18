@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9104d85d8786abd41b52baf0dee4e731, type: 3}
-  m_Name: AkWwiseProjectData 6
+  m_Name: AkWwiseProjectData 8
   m_EditorClassIdentifier: 
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
@@ -1817,8 +1817,8 @@ MonoBehaviour:
       ID: -1133058374
       Guid: 13a8cb8be9ce1d40a1ae57d196fca6c9
   ExpandedItems: []
-  m_lastPopulateTimePsrt1: 1812053956
-  m_lastPopulateTimePart2: -1999454349
+  m_lastPopulateTimePsrt1: -545899510
+  m_lastPopulateTimePart2: -1999454204
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)
