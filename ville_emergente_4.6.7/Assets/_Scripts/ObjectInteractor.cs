@@ -13,8 +13,6 @@ public class ObjectInteractor : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Cm = GameObject.Find ("Canvas").GetComponentInChildren<CursorManager> ();
-
-			
 	}
 	
 	// Update is called once per frame
@@ -22,70 +20,66 @@ public class ObjectInteractor : MonoBehaviour {
 		hitObject = null;
 		
 		RaycastHit hit;
+		Cm.setNormalCursor();
 
-		if (Physics.Raycast(Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0)), out hit, range*10, 1 << 8))
-			
+		if (Input.GetButton ("Action")) 
+		{ 
+			Cm.setFailCursor ();
+		}
+
+		if (Physics.Raycast (Camera.main.ScreenPointToRay (new Vector3 (Screen.width / 2, Screen.height / 2, 0)), out hit, range * 10, 1 << 8)) 
 		{
-			Cm.setInteractibleCursor();
-
 			hitObject = hit.collider.gameObject; // on recupere l'objet vise
-			InteractibleObject interacObj = hitObject.GetComponent<InteractibleObject>(); // on recupere sa composante InteractibleObject
+			InteractibleObject interacObj = hitObject.GetComponent<InteractibleObject> (); // on recupere sa composante InteractibleObject
 
 
-
-			if (handsFull && interacObj.type == InteractibleType.SettingPiece || interacObj.type == InteractibleType.NPC)
-			{
-				Cm.setFragmentCursor();
+			if (handsFull && !interacObj.GetComponent<ConvolutionObject> ().HasFragment () && (interacObj.type == InteractibleType.SettingPiece || interacObj.type == InteractibleType.NPC)) {
+				Cm.setFragmentCursor ();
+			} else if (!handsFull && (interacObj.type == InteractibleType.Fragment || (interacObj.type == InteractibleType.SettingPiece && interacObj.GetComponent<ConvolutionObject> ().HasFragment ()))) {
+				Cm.setInteractibleCursor ();
 			}
 
-			if (hit.distance < range && Input.GetButtonDown ("Action"))
-			{ 
 
-				if (!handsFull // si on a rien en main et qu'on vise un objet rammassable
-				    )
-				{
-					print("PickUpObject");
-					PickUpObject(interacObj.GetComponent<InteractibleObject>().OnTouch());
-				}
-				
-				else
+			if (Input.GetButtonDown ("Action")) {
+				Cm.setFailCursor ();
+
+				if (hit.distance < range) { 
+
+
+					if (!handsFull && interacObj.type != InteractibleType.NPC) { // si on a rien en main et qu'on vise un objet rammassable
+						print ("try PickUpObject");
+						PickUpObject (interacObj.OnTouch ());
+					} else
 					if (interacObj.type == InteractibleType.NPC // si on a un objet en main et qu'on vise un NPC
-					    || ( interacObj.type == InteractibleType.SettingPiece)) // ou un batiment vide
-				{
-					ConvolutionObject convolObj = interacObj.GetComponent<ConvolutionObject>();
+						|| (interacObj.type == InteractibleType.SettingPiece)) { // ou un batiment vide
+						ConvolutionObject convolObj = interacObj.GetComponent<ConvolutionObject> ();
 
-					if (!convolObj.HasFragment()){
+						if (!convolObj.HasFragment ()) {
 						
-						//ajout de l'objet en main a l'objet vise
-						print("ajout de l'objet en main a l'objet vise");
-						// WwiseAudioManager.instance.PlayFiniteEvent("linker_morceau", this.gameObject);
-						Fragment fragment= inHandObject.GetComponent<Fragment>();
-						AddingFragment();
-						convolObj.OnAddingFragment(fragment);
-						fragment.gameObject.SetActive(false);
-					} 
-				}
-				
-				else  // sinon, si on a juste un objet en main et qu'on ne vise pas un NPC
-				{
+							//ajout de l'objet en main a l'objet vise
+							print ("ajout de l'objet en main a l'objet vise");
+							// WwiseAudioManager.instance.PlayFiniteEvent("linker_morceau", this.gameObject);
+							Fragment fragment = inHandObject.GetComponent<Fragment> ();
+							AddingFragment ();
+							convolObj.OnAddingFragment (fragment);
+							fragment.gameObject.SetActive (false);
+						} 
+					} else {  // sinon, si on a juste un objet en main et qu'on ne vise pas un NPC
 					
-					//on laisse tomber l'objet en main
-					DropInHandObject();
+						//on laisse tomber l'objet en main
+						DropInHandObject ();
+					}
 				}
 			}
 		}
 		else
 		{
-
-			if (Input.GetButton ("Action") && !handsFull) { 
-				Cm.setFailCursor();
-
-			}	else if (Input.GetButtonDown("Action")) 
+			if (Input.GetButtonDown("Action")) 
 			{
 				DropInHandObject();
 
 				
-			}else Cm.setNormalCursor();
+			}else if (handsFull)  Cm.setNormalCursor();
 		}
 
 

@@ -1,0 +1,1828 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9104d85d8786abd41b52baf0dee4e731, type: 3}
+  m_Name: AkWwiseProjectData 5
+  m_EditorClassIdentifier: 
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{7F93A25F-2979-462E-8B53-8DECAD100DFF}'
+    List:
+    - Name: busyStreet_convolver_play
+      Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\busyStreet_convolver_play"
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: "Abandonn\xE9s"
+        ObjectType: 4
+      - ElementName: busyStreet_convolver_play
+        ObjectType: 3
+      ID: 289850157
+      Guid: 9cc141fd574f65408cd4e550e25bc4cd
+      maxAttenuation: 0
+    - Name: busyStreet_convolver_stop
+      Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\busyStreet_convolver_stop"
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: "Abandonn\xE9s"
+        ObjectType: 4
+      - ElementName: busyStreet_convolver_stop
+        ObjectType: 3
+      ID: 1407044475
+      Guid: a311c2bd45f785429313c75918214067
+      maxAttenuation: 0
+    - Name: busyStreet_play
+      Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\busyStreet_play"
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: "Abandonn\xE9s"
+        ObjectType: 4
+      - ElementName: busyStreet_play
+        ObjectType: 3
+      ID: -297376980
+      Guid: 4762f2e5f4ed634d9ac498b587c5d947
+      maxAttenuation: 0
+    - Name: busyStreet_stop
+      Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\busyStreet_stop"
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: "Abandonn\xE9s"
+        ObjectType: 4
+      - ElementName: busyStreet_stop
+        ObjectType: 3
+      ID: 1672407606
+      Guid: 4b8e53719b17fb42a43254679c2b72bd
+      maxAttenuation: 0
+    - Name: convolution_wet_to0
+      Path: Default Work Unit\Batiments\Set Convolver\convolution_wet_to0
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Set Convolver
+        ObjectType: 4
+      - ElementName: convolution_wet_to0
+        ObjectType: 3
+      ID: 2013603504
+      Guid: 6cc2612c23aa6d4e9922996f88c3d078
+      maxAttenuation: 0
+    - Name: convolution_wet_to100
+      Path: Default Work Unit\Batiments\Set Convolver\convolution_wet_to100
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Set Convolver
+        ObjectType: 4
+      - ElementName: convolution_wet_to100
+        ObjectType: 3
+      ID: 837754713
+      Guid: 8be218d74468db45927907c6ad0bcacf
+      maxAttenuation: 0
+    - Name: dropsCardboard_convolver_play
+      Path: Default Work Unit\Fragments\Liquide\dropsCardboard_convolver_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Liquide
+        ObjectType: 4
+      - ElementName: dropsCardboard_convolver_play
+        ObjectType: 3
+      ID: -1282923457
+      Guid: 585324df86f9734da0b7dd36238ac25f
+      maxAttenuation: 0
+    - Name: dropsCardboard_convolver_stop
+      Path: Default Work Unit\Fragments\Liquide\dropsCardboard_convolver_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Liquide
+        ObjectType: 4
+      - ElementName: dropsCardboard_convolver_stop
+        ObjectType: 3
+      ID: -1750241699
+      Guid: a6020d7767276d419580366f76a46f0a
+      maxAttenuation: 0
+    - Name: dropsCardboard_play
+      Path: Default Work Unit\Fragments\Liquide\dropsCardboard_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Liquide
+        ObjectType: 4
+      - ElementName: dropsCardboard_play
+        ObjectType: 3
+      ID: 1374189182
+      Guid: d06c9440cdf4f24da2d4350ab8080ef0
+      maxAttenuation: 0
+    - Name: dropsCardboard_stop
+      Path: Default Work Unit\Fragments\Liquide\dropsCardboard_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Liquide
+        ObjectType: 4
+      - ElementName: dropsCardboard_stop
+        ObjectType: 3
+      ID: -1882885312
+      Guid: 81c3c30be1b93f47a4b1422199d66cbc
+      maxAttenuation: 0
+    - Name: electricBuzz_convolver_play
+      Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\electricBuzz_convolver_play"
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: "Abandonn\xE9s"
+        ObjectType: 4
+      - ElementName: electricBuzz_convolver_play
+        ObjectType: 3
+      ID: 558637385
+      Guid: 67483b8120948449ac8c30b90e264a26
+      maxAttenuation: 0
+    - Name: electricBuzz_convolver_stop
+      Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\electricBuzz_convolver_stop"
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: "Abandonn\xE9s"
+        ObjectType: 4
+      - ElementName: electricBuzz_convolver_stop
+        ObjectType: 3
+      ID: 2081157487
+      Guid: 0175283787228f4481fa1db97c8ab498
+      maxAttenuation: 0
+    - Name: electricBuzz_play
+      Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\electricBuzz_play"
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: "Abandonn\xE9s"
+        ObjectType: 4
+      - ElementName: electricBuzz_play
+        ObjectType: 3
+      ID: -1518687768
+      Guid: d286b7e26f627849b38d7f784a6d0868
+      maxAttenuation: 0
+    - Name: electricBuzz_stop
+      Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\electricBuzz_stop"
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: "Abandonn\xE9s"
+        ObjectType: 4
+      - ElementName: electricBuzz_stop
+        ObjectType: 3
+      ID: 817405786
+      Guid: 91f73d9157436f479e44619adc4b40f0
+      maxAttenuation: 0
+    - Name: electricityArcing_convolver_play
+      Path: Default Work Unit\Fragments\Electricite\electricityArcing_convolver_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Electricite
+        ObjectType: 4
+      - ElementName: electricityArcing_convolver_play
+        ObjectType: 3
+      ID: -497515076
+      Guid: 01da943569790a4da769b5c95f5d5748
+      maxAttenuation: 0
+    - Name: electricityArcing_convolver_stop
+      Path: Default Work Unit\Fragments\Electricite\electricityArcing_convolver_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Electricite
+        ObjectType: 4
+      - ElementName: electricityArcing_convolver_stop
+        ObjectType: 3
+      ID: -1743810522
+      Guid: d58a596b4a04ea4d904173b88dd034cb
+      maxAttenuation: 0
+    - Name: electricityArcing_play
+      Path: Default Work Unit\Fragments\Electricite\electricityArcing_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Electricite
+        ObjectType: 4
+      - ElementName: electricityArcing_play
+        ObjectType: 3
+      ID: 2107924217
+      Guid: a071783b1fe4ce4a84f6ee90f2bd989c
+      maxAttenuation: 0
+    - Name: electricityArcing_stop
+      Path: Default Work Unit\Fragments\Electricite\electricityArcing_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Electricite
+        ObjectType: 4
+      - ElementName: electricityArcing_stop
+        ObjectType: 3
+      ID: 404021567
+      Guid: dba951bbe3618c4e9e09114169730a51
+      maxAttenuation: 0
+    - Name: electricityStatic_convolver_play
+      Path: Default Work Unit\Fragments\Electricite\electricityStatic_convolver_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Electricite
+        ObjectType: 4
+      - ElementName: electricityStatic_convolver_play
+        ObjectType: 3
+      ID: 2137081894
+      Guid: 1319b3a194a1dd4ebf4580fc209d1e15
+      maxAttenuation: 0
+    - Name: electricityStatic_convolver_stop
+      Path: Default Work Unit\Fragments\Electricite\electricityStatic_convolver_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Electricite
+        ObjectType: 4
+      - ElementName: electricityStatic_convolver_stop
+        ObjectType: 3
+      ID: -306780904
+      Guid: cd96f3231b61ba40b58aaf51be648f5e
+      maxAttenuation: 0
+    - Name: electricityStatic_play
+      Path: Default Work Unit\Fragments\Electricite\electricityStatic_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Electricite
+        ObjectType: 4
+      - ElementName: electricityStatic_play
+        ObjectType: 3
+      ID: 512634819
+      Guid: f78028092dcede49a0a90677073e9929
+      maxAttenuation: 0
+    - Name: electricityStatic_stop
+      Path: Default Work Unit\Fragments\Electricite\electricityStatic_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Electricite
+        ObjectType: 4
+      - ElementName: electricityStatic_stop
+        ObjectType: 3
+      ID: -1467364727
+      Guid: e4168a75206b64499330b4d8d8887f11
+      maxAttenuation: 0
+    - Name: footsteps_play
+      Path: Default Work Unit\Joueur\footsteps_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Joueur
+        ObjectType: 4
+      - ElementName: footsteps_play
+        ObjectType: 3
+      ID: 1198733287
+      Guid: db4cfddc114e164080e21adcd1cc4389
+      maxAttenuation: 0
+    - Name: footsteps_stop
+      Path: Default Work Unit\Joueur\footsteps_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Joueur
+        ObjectType: 4
+      - ElementName: footsteps_stop
+        ObjectType: 3
+      ID: -107601611
+      Guid: 525d0e49c9c33d489038053e1f03d1a6
+      maxAttenuation: 0
+    - Name: fragment_call_electricity_play
+      Path: Default Work Unit\Fragments\Call\fragment_call_electricity_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Call
+        ObjectType: 4
+      - ElementName: fragment_call_electricity_play
+        ObjectType: 3
+      ID: -409328677
+      Guid: e5ec422b88108f4dad232df88a36edb1
+      maxAttenuation: 0
+    - Name: fragment_call_electricity_stop
+      Path: Default Work Unit\Fragments\Call\fragment_call_electricity_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Call
+        ObjectType: 4
+      - ElementName: fragment_call_electricity_stop
+        ObjectType: 3
+      ID: -1539865967
+      Guid: 813f7cd2440d3e4ca14a749eb4ccfa3a
+      maxAttenuation: 0
+    - Name: fragment_call_liquid_play
+      Path: Default Work Unit\Fragments\Call\fragment_call_liquid_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Call
+        ObjectType: 4
+      - ElementName: fragment_call_liquid_play
+        ObjectType: 3
+      ID: -1153374928
+      Guid: ebd7a6b3afd1734884ff7192bb7b9017
+      maxAttenuation: 0
+    - Name: fragment_call_liquid_stop
+      Path: Default Work Unit\Fragments\Call\fragment_call_liquid_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Call
+        ObjectType: 4
+      - ElementName: fragment_call_liquid_stop
+        ObjectType: 3
+      ID: 1490074322
+      Guid: d80f97137ce0cc46b6e877241aef93a6
+      maxAttenuation: 0
+    - Name: fragment_call_metal_play
+      Path: Default Work Unit\Fragments\Call\fragment_call_metal_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Call
+        ObjectType: 4
+      - ElementName: fragment_call_metal_play
+        ObjectType: 3
+      ID: 933666621
+      Guid: e191af76ffd05543a16759bbb10537cf
+      maxAttenuation: 0
+    - Name: fragment_call_metal_stop
+      Path: Default Work Unit\Fragments\Call\fragment_call_metal_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Call
+        ObjectType: 4
+      - ElementName: fragment_call_metal_stop
+        ObjectType: 3
+      ID: -1133985109
+      Guid: 6435234af5b82f498056ed69cc6dbbcb
+      maxAttenuation: 0
+    - Name: fragment_call_pitch_0
+      Path: Default Work Unit\Fragments\Call\fragment_call_pitch_0
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Call
+        ObjectType: 4
+      - ElementName: fragment_call_pitch_0
+        ObjectType: 3
+      ID: -778313006
+      Guid: 1f09857917fa6a4db1f1c8327289921b
+      maxAttenuation: 0
+    - Name: fragment_call_pitch_100
+      Path: Default Work Unit\Fragments\Call\fragment_call_pitch_100
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Call
+        ObjectType: 4
+      - ElementName: fragment_call_pitch_100
+        ObjectType: 3
+      ID: 1252949355
+      Guid: 66aa85a6eeae364b938264880f86be95
+      maxAttenuation: 0
+    - Name: fragment_call_urban_play
+      Path: Default Work Unit\Fragments\Call\fragment_call_urban_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Call
+        ObjectType: 4
+      - ElementName: fragment_call_urban_play
+        ObjectType: 3
+      ID: -1663044310
+      Guid: c5d0211e55c74d44a86c494eff0d3bc3
+      maxAttenuation: 0
+    - Name: fragment_call_urban_stop
+      Path: Default Work Unit\Fragments\Call\fragment_call_urban_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Call
+        ObjectType: 4
+      - ElementName: fragment_call_urban_stop
+        ObjectType: 3
+      ID: -258842284
+      Guid: 081e0b4aab59b74c84fbfdd7cc930132
+      maxAttenuation: 0
+    - Name: fragment_call_wood_play
+      Path: Default Work Unit\Fragments\Call\fragment_call_wood_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Call
+        ObjectType: 4
+      - ElementName: fragment_call_wood_play
+        ObjectType: 3
+      ID: 1375190009
+      Guid: 092402d7fad41c438124175398bf26d0
+      maxAttenuation: 0
+    - Name: fragment_call_wood_stop
+      Path: Default Work Unit\Fragments\Call\fragment_call_wood_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Call
+        ObjectType: 4
+      - ElementName: fragment_call_wood_stop
+        ObjectType: 3
+      ID: -328712641
+      Guid: 6cda44f45c354045b87819c76d947c09
+      maxAttenuation: 0
+    - Name: guide_idle_play
+      Path: Default Work Unit\PNJs\Guide\guide_idle_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Guide
+        ObjectType: 4
+      - ElementName: guide_idle_play
+        ObjectType: 3
+      ID: 1128982233
+      Guid: 13f50f5affcad6469e640830a23440c6
+      maxAttenuation: 0
+    - Name: guide_idle_stop
+      Path: Default Work Unit\PNJs\Guide\guide_idle_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Guide
+        ObjectType: 4
+      - ElementName: guide_idle_stop
+        ObjectType: 3
+      ID: -533446881
+      Guid: 8502ab20ee442348bd7eccf501b57103
+      maxAttenuation: 0
+    - Name: guide_nouveau_son
+      Path: Default Work Unit\PNJs\Guide\guide_nouveau_son
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Guide
+        ObjectType: 4
+      - ElementName: guide_nouveau_son
+        ObjectType: 3
+      ID: -214441400
+      Guid: 428bf4d55a85d140a322340340d26ca4
+      maxAttenuation: 0
+    - Name: guide_ordre
+      Path: Default Work Unit\PNJs\Guide\guide_ordre
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Guide
+        ObjectType: 4
+      - ElementName: guide_ordre
+        ObjectType: 3
+      ID: 1735048872
+      Guid: a2d29b96a773f842804041bac38deb39
+      maxAttenuation: 0
+    - Name: guide_son
+      Path: Default Work Unit\PNJs\Guide\guide_son
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Guide
+        ObjectType: 4
+      - ElementName: guide_son
+        ObjectType: 3
+      ID: -2090891314
+      Guid: 79b074e55129b448b7d0a17079f2b8fb
+      maxAttenuation: 0
+    - Name: interactions_simples_motion
+      Path: Default Work Unit\Joueur\interactions_simples_motion
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Joueur
+        ObjectType: 4
+      - ElementName: interactions_simples_motion
+        ObjectType: 3
+      ID: -535888257
+      Guid: b996d6a067384f41a3e433d2daecf486
+      maxAttenuation: 0
+    - Name: lacher_morceau
+      Path: Default Work Unit\Joueur\lacher_morceau
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Joueur
+        ObjectType: 4
+      - ElementName: lacher_morceau
+        ObjectType: 3
+      ID: -1759500647
+      Guid: 0829f1ece930964faa3bd51c90e42f61
+      maxAttenuation: 0
+    - Name: linker_morceau
+      Path: Default Work Unit\Joueur\linker_morceau
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Joueur
+        ObjectType: 4
+      - ElementName: linker_morceau
+        ObjectType: 3
+      ID: -615097439
+      Guid: fe6a447c6ea03542a46bc95890394549
+      maxAttenuation: 0
+    - Name: musicien_idle_play
+      Path: Default Work Unit\PNJs\Musicien\musicien_idle_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Musicien
+        ObjectType: 4
+      - ElementName: musicien_idle_play
+        ObjectType: 3
+      ID: -1967625524
+      Guid: 504f6093d1404049b72f8e1ca0fc8b65
+      maxAttenuation: 0
+    - Name: musicien_idle_stop
+      Path: Default Work Unit\PNJs\Musicien\musicien_idle_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Musicien
+        ObjectType: 4
+      - ElementName: musicien_idle_stop
+        ObjectType: 3
+      ID: 2159062
+      Guid: 4867641a5418554ea63354b4d538a60c
+      maxAttenuation: 0
+    - Name: musicien_joie
+      Path: Default Work Unit\PNJs\Musicien\musicien_joie
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Musicien
+        ObjectType: 4
+      - ElementName: musicien_joie
+        ObjectType: 3
+      ID: -2074790238
+      Guid: 3fb1ee88470db94f8b0bc2a4e040d57d
+      maxAttenuation: 0
+    - Name: musicien_ouverture
+      Path: Default Work Unit\PNJs\Musicien\musicien_ouverture
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Musicien
+        ObjectType: 4
+      - ElementName: musicien_ouverture
+        ObjectType: 3
+      ID: 161018858
+      Guid: caec0875a72f2f47ad38b009620b4bf1
+      maxAttenuation: 0
+    - Name: musicien_son
+      Path: Default Work Unit\PNJs\Musicien\musicien_son
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Musicien
+        ObjectType: 4
+      - ElementName: musicien_son
+        ObjectType: 3
+      ID: 916635435
+      Guid: cbef3af6119fbb488b6b27647dcea2dd
+      maxAttenuation: 0
+    - Name: musicien_tourne
+      Path: Default Work Unit\PNJs\Musicien\musicien_tourne
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Musicien
+        ObjectType: 4
+      - ElementName: musicien_tourne
+        ObjectType: 3
+      ID: -1665857576
+      Guid: 63d4d636884fd945935c8ccb3e8a399b
+      maxAttenuation: 0
+    - Name: paddle_convolver_play
+      Path: Default Work Unit\Fragments\Liquide\paddle_convolver_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Liquide
+        ObjectType: 4
+      - ElementName: paddle_convolver_play
+        ObjectType: 3
+      ID: -1732680073
+      Guid: c79642e6c126f14991b888a3782ebe3f
+      maxAttenuation: 0
+    - Name: paddle_convolver_stop
+      Path: Default Work Unit\Fragments\Liquide\paddle_convolver_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Liquide
+        ObjectType: 4
+      - ElementName: paddle_convolver_stop
+        ObjectType: 3
+      ID: 1250729381
+      Guid: f2ae240459cdf2449fc15cc9d7638edf
+      maxAttenuation: 0
+    - Name: paddle_play
+      Path: Default Work Unit\Fragments\Liquide\paddle_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Liquide
+        ObjectType: 4
+      - ElementName: paddle_play
+        ObjectType: 3
+      ID: -1792524826
+      Guid: 72433668a3907a4e9104f9ac5ef5b719
+      maxAttenuation: 0
+    - Name: paddle_stop
+      Path: Default Work Unit\Fragments\Liquide\paddle_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Liquide
+        ObjectType: 4
+      - ElementName: paddle_stop
+        ObjectType: 3
+      ID: 16899800
+      Guid: dc069281db0c5e4aab52254b0288cf28
+      maxAttenuation: 0
+    - Name: passant_danse
+      Path: Default Work Unit\PNJs\Passants\passant_danse
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Passants
+        ObjectType: 4
+      - ElementName: passant_danse
+        ObjectType: 3
+      ID: -1172639847
+      Guid: 025bd1a7d0600448999f5618b14182de
+      maxAttenuation: 0
+    - Name: passant_idle_play
+      Path: Default Work Unit\PNJs\Passants\passant_idle_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Passants
+        ObjectType: 4
+      - ElementName: passant_idle_play
+        ObjectType: 3
+      ID: -327527933
+      Guid: f40029d0dc990048b0c7f0eadad30478
+      maxAttenuation: 0
+    - Name: passant_idle_stop
+      Path: Default Work Unit\PNJs\Passants\passant_idle_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Passants
+        ObjectType: 4
+      - ElementName: passant_idle_stop
+        ObjectType: 3
+      ID: 2028913609
+      Guid: 3ae7e4a17dc3e240b4b5984a4a8fe054
+      maxAttenuation: 0
+    - Name: passant_son
+      Path: Default Work Unit\PNJs\Passants\passant_son
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Passants
+        ObjectType: 4
+      - ElementName: passant_son
+        ObjectType: 3
+      ID: 1195210688
+      Guid: e9ef0c432d649345ad6c12277b8d44b8
+      maxAttenuation: 0
+    - Name: passant_tourne
+      Path: Default Work Unit\PNJs\Passants\passant_tourne
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Passants
+        ObjectType: 4
+      - ElementName: passant_tourne
+        ObjectType: 3
+      ID: -19451419
+      Guid: 8477855032c9a24d92e7f06f8c8a830e
+      maxAttenuation: 0
+    - Name: prendre_morceau
+      Path: Default Work Unit\Joueur\prendre_morceau
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Joueur
+        ObjectType: 4
+      - ElementName: prendre_morceau
+        ObjectType: 3
+      ID: 2138522384
+      Guid: c36c4d293c1a974f84c14d54963c81bb
+      maxAttenuation: 0
+    - Name: rain_2DObject_play
+      Path: Default Work Unit\Tests Wwise Pierre & Guillermo\rain_2DObject_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Tests Wwise Pierre & Guillermo
+        ObjectType: 4
+      - ElementName: rain_2DObject_play
+        ObjectType: 3
+      ID: 812837510
+      Guid: 111b8e11007f614393ff063409b548aa
+      maxAttenuation: 0
+    - Name: rain_2DObject_stop
+      Path: Default Work Unit\Tests Wwise Pierre & Guillermo\rain_2DObject_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Tests Wwise Pierre & Guillermo
+        ObjectType: 4
+      - ElementName: rain_2DObject_stop
+        ObjectType: 3
+      ID: -1672704904
+      Guid: cb13d3b763c61a4e9e6fe84937b1b5ca
+      maxAttenuation: 0
+    - Name: Sfx_RI
+      Path: Default Work Unit\Batiments\Sfx RI\Sfx_RI
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Sfx RI
+        ObjectType: 4
+      - ElementName: Sfx_RI
+        ObjectType: 3
+      ID: -381897218
+      Guid: 20a8635762adc949b48b5ff499250205
+      maxAttenuation: 0
+    - Name: softRain_convolver_play
+      Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\softRain_convolver_play"
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: "Abandonn\xE9s"
+        ObjectType: 4
+      - ElementName: softRain_convolver_play
+        ObjectType: 3
+      ID: -1482423419
+      Guid: 34399be502e9cc4ea45d59949fd95179
+      maxAttenuation: 0
+    - Name: softRain_convolver_stop
+      Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\softRain_convolver_stop"
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: "Abandonn\xE9s"
+        ObjectType: 4
+      - ElementName: softRain_convolver_stop
+        ObjectType: 3
+      ID: -99347197
+      Guid: 85016cbc02c26943aba27438a5f9eb08
+      maxAttenuation: 0
+    - Name: softRain_play
+      Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\softRain_play"
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: "Abandonn\xE9s"
+        ObjectType: 4
+      - ElementName: softRain_play
+        ObjectType: 3
+      ID: 30806100
+      Guid: 37fc7a33ee45194ba3ab319423a680ba
+      maxAttenuation: 0
+    - Name: softRain_stop
+      Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\softRain_stop"
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: "Abandonn\xE9s"
+        ObjectType: 4
+      - ElementName: softRain_stop
+        ObjectType: 3
+      ID: 1693234990
+      Guid: 11e9a5aff682874f908ed3629cabe440
+      maxAttenuation: 0
+    - Name: switch_atmo_mood
+      Path: Default Work Unit\PNJs\Switches Mood\switch_atmo_mood
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Switches Mood
+        ObjectType: 4
+      - ElementName: switch_atmo_mood
+        ObjectType: 3
+      ID: 1340877891
+      Guid: 7e0ff53da1ac4a46a708959c42cbb2d8
+      maxAttenuation: 0
+    - Name: switch_atmo1
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_atmo1
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
+        ObjectType: 4
+      - ElementName: switch_atmo1
+        ObjectType: 3
+      ID: -1852514780
+      Guid: f684ab60dda73d4d8896cbb1fda57298
+      maxAttenuation: 0
+    - Name: switch_atmo2
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_atmo2
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
+        ObjectType: 4
+      - ElementName: switch_atmo2
+        ObjectType: 3
+      ID: -1852514777
+      Guid: f617b6d945d4ba41859cd6001f927507
+      maxAttenuation: 0
+    - Name: switch_atmo3
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_atmo3
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
+        ObjectType: 4
+      - ElementName: switch_atmo3
+        ObjectType: 3
+      ID: -1852514778
+      Guid: 9a3903579d3dcc459d5c91060aa1d684
+      maxAttenuation: 0
+    - Name: switch_atmo4
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_atmo4
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
+        ObjectType: 4
+      - ElementName: switch_atmo4
+        ObjectType: 3
+      ID: -1852514783
+      Guid: 5c8c711417b36542890589400edbab53
+      maxAttenuation: 0
+    - Name: switch_atmo5
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_atmo5
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
+        ObjectType: 4
+      - ElementName: switch_atmo5
+        ObjectType: 3
+      ID: -1852514784
+      Guid: b7be160e13b4554ba33a8e7551bd81f3
+      maxAttenuation: 0
+    - Name: switch_atmo6
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_atmo6
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
+        ObjectType: 4
+      - ElementName: switch_atmo6
+        ObjectType: 3
+      ID: -1852514781
+      Guid: 1d327f8d2353ee4f9f8d5e14a3d2ccbb
+      maxAttenuation: 0
+    - Name: switch_atmo7
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_atmo7
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
+        ObjectType: 4
+      - ElementName: switch_atmo7
+        ObjectType: 3
+      ID: -1852514782
+      Guid: b5d72531e064584c8347fa17e7576771
+      maxAttenuation: 0
+    - Name: switch_atmoMus
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_atmoMus
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
+        ObjectType: 4
+      - ElementName: switch_atmoMus
+        ObjectType: 3
+      ID: -368838316
+      Guid: bd073e72dcd8374087c3cf8f6b04d15e
+      maxAttenuation: 0
+    - Name: switch_atmoRI1
+      Path: Default Work Unit\Batiments\Switches RI\switch_atmoRI1
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_atmoRI1
+        ObjectType: 3
+      ID: -707097707
+      Guid: 37d39b412c28964985738aa85adbde09
+      maxAttenuation: 0
+    - Name: switch_atmoRI2
+      Path: Default Work Unit\Batiments\Switches RI\switch_atmoRI2
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_atmoRI2
+        ObjectType: 3
+      ID: -707097706
+      Guid: b47105fbf3e7594fa954471a79861d00
+      maxAttenuation: 0
+    - Name: switch_atmoRI3
+      Path: Default Work Unit\Batiments\Switches RI\switch_atmoRI3
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_atmoRI3
+        ObjectType: 3
+      ID: -707097705
+      Guid: ebf407bc18d46a4db910c8b831e7d722
+      maxAttenuation: 0
+    - Name: switch_atmoRI4
+      Path: Default Work Unit\Batiments\Switches RI\switch_atmoRI4
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_atmoRI4
+        ObjectType: 3
+      ID: -707097712
+      Guid: ee81d5703f53d342aca04489ea7f31a5
+      maxAttenuation: 0
+    - Name: switch_atmoRI5
+      Path: Default Work Unit\Batiments\Switches RI\switch_atmoRI5
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_atmoRI5
+        ObjectType: 3
+      ID: -707097711
+      Guid: 8d73603d2d1af2478a1d63165010fd78
+      maxAttenuation: 0
+    - Name: switch_atmoRI6
+      Path: Default Work Unit\Batiments\Switches RI\switch_atmoRI6
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_atmoRI6
+        ObjectType: 3
+      ID: -707097710
+      Guid: de9bcddb1d4e38408986efa8a02b0f5b
+      maxAttenuation: 0
+    - Name: switch_atmoRI7
+      Path: Default Work Unit\Batiments\Switches RI\switch_atmoRI7
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_atmoRI7
+        ObjectType: 3
+      ID: -707097709
+      Guid: f05ad4829e331b4ba3e3f7591315112d
+      maxAttenuation: 0
+    - Name: switch_dark_mood
+      Path: Default Work Unit\PNJs\Switches Mood\switch_dark_mood
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Switches Mood
+        ObjectType: 4
+      - ElementName: switch_dark_mood
+        ObjectType: 3
+      ID: -1548816330
+      Guid: af1a07aaacadec49b36420c6ba30e86d
+      maxAttenuation: 0
+    - Name: switch_dark1
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_dark1
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
+        ObjectType: 4
+      - ElementName: switch_dark1
+        ObjectType: 3
+      ID: -677068659
+      Guid: 209094ea51c862408848924e493df4c2
+      maxAttenuation: 0
+    - Name: switch_dark2
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_dark2
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
+        ObjectType: 4
+      - ElementName: switch_dark2
+        ObjectType: 3
+      ID: -677068658
+      Guid: 1538685cf1eab74aaff54573ff9c9d29
+      maxAttenuation: 0
+    - Name: switch_dark3
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_dark3
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
+        ObjectType: 4
+      - ElementName: switch_dark3
+        ObjectType: 3
+      ID: -677068657
+      Guid: b86f89b37f66504f95a3ceed647b2592
+      maxAttenuation: 0
+    - Name: switch_dark4
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_dark4
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
+        ObjectType: 4
+      - ElementName: switch_dark4
+        ObjectType: 3
+      ID: -677068664
+      Guid: 6dcbd95de80f9940ab722caa4d932226
+      maxAttenuation: 0
+    - Name: switch_dark5
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_dark5
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
+        ObjectType: 4
+      - ElementName: switch_dark5
+        ObjectType: 3
+      ID: -677068663
+      Guid: f39edddf9555ad468639aea68de25210
+      maxAttenuation: 0
+    - Name: switch_dark6
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_dark6
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
+        ObjectType: 4
+      - ElementName: switch_dark6
+        ObjectType: 3
+      ID: -677068662
+      Guid: 28f9767758fb4342990da6688fdc0691
+      maxAttenuation: 0
+    - Name: switch_dark7
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_dark7
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
+        ObjectType: 4
+      - ElementName: switch_dark7
+        ObjectType: 3
+      ID: -677068661
+      Guid: 49e9cb68dff16a478b668896234cc87a
+      maxAttenuation: 0
+    - Name: switch_darkMus
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_darkMus
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
+        ObjectType: 4
+      - ElementName: switch_darkMus
+        ObjectType: 3
+      ID: -249994063
+      Guid: 0085256154bad747818ddf3acf1fa219
+      maxAttenuation: 0
+    - Name: switch_darkRI1
+      Path: Default Work Unit\Batiments\Switches RI\switch_darkRI1
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_darkRI1
+        ObjectType: 3
+      ID: -451869912
+      Guid: a9cbdf2eab1c9a41b3aeab3588ddf3df
+      maxAttenuation: 0
+    - Name: switch_darkRI2
+      Path: Default Work Unit\Batiments\Switches RI\switch_darkRI2
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_darkRI2
+        ObjectType: 3
+      ID: -451869909
+      Guid: daa39e1f84a0084dba413bb0736c39d9
+      maxAttenuation: 0
+    - Name: switch_darkRI3
+      Path: Default Work Unit\Batiments\Switches RI\switch_darkRI3
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_darkRI3
+        ObjectType: 3
+      ID: -451869910
+      Guid: f43e45f197b0df4990c8bf7449e6c8ba
+      maxAttenuation: 0
+    - Name: switch_darkRI4
+      Path: Default Work Unit\Batiments\Switches RI\switch_darkRI4
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_darkRI4
+        ObjectType: 3
+      ID: -451869907
+      Guid: 87d4ef1e92d9c04b8cde0b373ca4c72f
+      maxAttenuation: 0
+    - Name: switch_darkRI5
+      Path: Default Work Unit\Batiments\Switches RI\switch_darkRI5
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_darkRI5
+        ObjectType: 3
+      ID: -451869908
+      Guid: 8a1d27be483c764ca64d4eaebcfa7f53
+      maxAttenuation: 0
+    - Name: switch_darkRI6
+      Path: Default Work Unit\Batiments\Switches RI\switch_darkRI6
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_darkRI6
+        ObjectType: 3
+      ID: -451869905
+      Guid: 14285acf1bf69442ad68ff1398b68f48
+      maxAttenuation: 0
+    - Name: switch_darkRI7
+      Path: Default Work Unit\Batiments\Switches RI\switch_darkRI7
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches RI
+        ObjectType: 4
+      - ElementName: switch_darkRI7
+        ObjectType: 3
+      ID: -451869906
+      Guid: 79252bd3fe4764448a7bcacadcf840f6
+      maxAttenuation: 0
+    - Name: switch_default
+      Path: Default Work Unit\Batiments\Switches Convolver\switch_default
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Batiments
+        ObjectType: 4
+      - ElementName: Switches Convolver
+        ObjectType: 4
+      - ElementName: switch_default
+        ObjectType: 3
+      ID: -1888409073
+      Guid: 399fb27cd01d00409526374d0527bbdd
+      maxAttenuation: 0
+    - Name: thunder_convolver_play
+      Path: Default Work Unit\Fragments\Electricite\thunder_convolver_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Electricite
+        ObjectType: 4
+      - ElementName: thunder_convolver_play
+        ObjectType: 3
+      ID: -801903337
+      Guid: 6d14ccc5d3b2f34281b57e0e0795a1e1
+      maxAttenuation: 0
+    - Name: thunder_convolver_stop
+      Path: Default Work Unit\Fragments\Electricite\thunder_convolver_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Electricite
+        ObjectType: 4
+      - ElementName: thunder_convolver_stop
+        ObjectType: 3
+      ID: -2113460923
+      Guid: 18a965de2ed0db4793a43f5b18031aa3
+      maxAttenuation: 0
+    - Name: thunder_play
+      Path: Default Work Unit\Fragments\Electricite\thunder_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Electricite
+        ObjectType: 4
+      - ElementName: thunder_play
+        ObjectType: 3
+      ID: -1587975354
+      Guid: 11fab9475c406147b06e560368b5f9de
+      maxAttenuation: 0
+    - Name: thunder_stop
+      Path: Default Work Unit\Fragments\Electricite\thunder_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Electricite
+        ObjectType: 4
+      - ElementName: thunder_stop
+        ObjectType: 3
+      ID: 221449272
+      Guid: 3e2c33b821c286408802874f57ea412b
+      maxAttenuation: 0
+    - Name: toucher_element
+      Path: Default Work Unit\Joueur\toucher_element
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Joueur
+        ObjectType: 4
+      - ElementName: toucher_element
+        ObjectType: 3
+      ID: -1398099514
+      Guid: a64fd120264ccf4d92ea696661c9a73c
+      maxAttenuation: 0
+    - Name: trafficBy_convolver_play
+      Path: Default Work Unit\Fragments\Urban\trafficBy_convolver_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Urban
+        ObjectType: 4
+      - ElementName: trafficBy_convolver_play
+        ObjectType: 3
+      ID: -1602528571
+      Guid: 949beb3df7a47042ba96002467e77453
+      maxAttenuation: 0
+    - Name: trafficBy_convolver_stop
+      Path: Default Work Unit\Fragments\Urban\trafficBy_convolver_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Urban
+        ObjectType: 4
+      - ElementName: trafficBy_convolver_stop
+        ObjectType: 3
+      ID: -177875645
+      Guid: 41e153827a8b074987ce86a0f4ae3c11
+      maxAttenuation: 0
+    - Name: trafficBy_play
+      Path: Default Work Unit\Fragments\Urban\trafficBy_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Urban
+        ObjectType: 4
+      - ElementName: trafficBy_play
+        ObjectType: 3
+      ID: -793597804
+      Guid: ebb777c6946d7948b90e60e8292f300a
+      maxAttenuation: 0
+    - Name: trafficBy_stop
+      Path: Default Work Unit\Fragments\Urban\trafficBy_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Urban
+        ObjectType: 4
+      - ElementName: trafficBy_stop
+        ObjectType: 3
+      ID: 910304878
+      Guid: d8810a7e961f074c974bfcda5284641c
+      maxAttenuation: 0
+    - Name: ville_calme
+      Path: Default Work Unit\Ambiances\ville_calme
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiances
+        ObjectType: 4
+      - ElementName: ville_calme
+        ObjectType: 3
+      ID: -1179572356
+      Guid: 46fe2dd25209e6458f793470d16b7937
+      maxAttenuation: 0
+    - Name: water_3DObject_play
+      Path: Default Work Unit\Tests Wwise Pierre & Guillermo\water_3DObject_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Tests Wwise Pierre & Guillermo
+        ObjectType: 4
+      - ElementName: water_3DObject_play
+        ObjectType: 3
+      ID: 193498114
+      Guid: 79abcf98f2eb31439fb6ce8aec825aa1
+      maxAttenuation: 0
+    - Name: water_3DObject_stop
+      Path: Default Work Unit\Tests Wwise Pierre & Guillermo\water_3DObject_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Tests Wwise Pierre & Guillermo
+        ObjectType: 4
+      - ElementName: water_3DObject_stop
+        ObjectType: 3
+      ID: 836511068
+      Guid: 435e056468d2584d95260ef4b79003c8
+      maxAttenuation: 0
+    - Name: waterSplash_convolver_play
+      Path: Default Work Unit\Fragments\Liquide\waterSplash_convolver_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Liquide
+        ObjectType: 4
+      - ElementName: waterSplash_convolver_play
+        ObjectType: 3
+      ID: 763713321
+      Guid: fbe265624b7d314db7319e3fc4e2e922
+      maxAttenuation: 0
+    - Name: waterSplash_convolver_stop
+      Path: Default Work Unit\Fragments\Liquide\waterSplash_convolver_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Liquide
+        ObjectType: 4
+      - ElementName: waterSplash_convolver_stop
+        ObjectType: 3
+      ID: -2008837041
+      Guid: 187959fb691a054cb9dcbfa1dab9474d
+      maxAttenuation: 0
+    - Name: waterSplash_play
+      Path: Default Work Unit\Fragments\Liquide\waterSplash_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Liquide
+        ObjectType: 4
+      - ElementName: waterSplash_play
+        ObjectType: 3
+      ID: -81945208
+      Guid: 65df1cfc206bc74baaa05497a3ece5ce
+      maxAttenuation: 0
+    - Name: waterSplash_stop
+      Path: Default Work Unit\Fragments\Liquide\waterSplash_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Liquide
+        ObjectType: 4
+      - ElementName: waterSplash_stop
+        ObjectType: 3
+      ID: -1999345158
+      Guid: 92391506eed7c84eb83cb5dd9b8b7142
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{F8645F3A-A46A-4E35-AA42-75DF67E675CA}'
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{FFB05BD3-AAA2-40B0-9242-9ACB18462C97}'
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{A220CD50-3E72-41A8-A6D6-6FCC60089A54}'
+    List:
+    - Name: Convolutions_Sfx
+      Path: Default Work Unit\Convolutions_Sfx
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Convolutions_Sfx
+        ObjectType: 11
+      ID: 980332272
+      Guid: 0fa86e12ff09f44fba28f9d78e97c415
+      values:
+      - AtmoRI_1
+      - AtmoRI_2
+      - AtmoRI_3
+      - AtmoRI_4
+      - AtmoRI_5
+      - AtmoRI_6
+      - AtmoRI_7
+      - DarkRI_1
+      - DarkRI_2
+      - DarkRI_3
+      - DarkRI_4
+      - DarkRI_5
+      - DarkRI_6
+      - DarkRI_7
+      ValueIcons:
+      - ElementName: AtmoRI_1
+        ObjectType: 10
+      - ElementName: AtmoRI_2
+        ObjectType: 10
+      - ElementName: AtmoRI_3
+        ObjectType: 10
+      - ElementName: AtmoRI_4
+        ObjectType: 10
+      - ElementName: AtmoRI_5
+        ObjectType: 10
+      - ElementName: AtmoRI_6
+        ObjectType: 10
+      - ElementName: AtmoRI_7
+        ObjectType: 10
+      - ElementName: DarkRI_1
+        ObjectType: 10
+      - ElementName: DarkRI_2
+        ObjectType: 10
+      - ElementName: DarkRI_3
+        ObjectType: 10
+      - ElementName: DarkRI_4
+        ObjectType: 10
+      - ElementName: DarkRI_5
+        ObjectType: 10
+      - ElementName: DarkRI_6
+        ObjectType: 10
+      - ElementName: DarkRI_7
+        ObjectType: 10
+      valueIDs: a9f443f5aaf443f5abf443f5acf443f5adf443f5aef443f5aff443f5061a8252051a8252041a8252031a8252021a8252011a8252001a8252
+      ValueGuids:
+      - bytes: 34b86dd695e85445925470b3fb3e760b
+      - bytes: 62425ef8ef98e249bcccc672d22c0849
+      - bytes: 0b3395e9d802bc4cae87182999beeeed
+      - bytes: cde98e8edc6e9646aee7dab4f5195b6f
+      - bytes: 131820e71cab6841b0e79235b11f3a9f
+      - bytes: 6c3542e9e15e944593fe64888964faaa
+      - bytes: 22c7a710901a974ba74beaf64f870e1b
+      - bytes: ebb2b66e86eecc4fbd451bcb95a9e4b7
+      - bytes: a424efa0018bb54dbc6eee10c6585481
+      - bytes: 5a9af5770eb7e84a93bafdf78be8804f
+      - bytes: 4d3d7fb050a66a4ca254c316c8a1a210
+      - bytes: 147f2b6415ed2a4cafc9577795e214dc
+      - bytes: d6c548f9c28ac74dbb07fc86c738db75
+      - bytes: 06e5e86cefd9024a9f88c8503f7e6bb0
+    - Name: Elements_decor
+      Path: Default Work Unit\Elements_decor
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Elements_decor
+        ObjectType: 11
+      ID: 575849320
+      Guid: 47a9ea0be6c5994e959b01a0baafcbe4
+      values:
+      - Atmo_1
+      - Atmo_2
+      - Atmo_3
+      - Atmo_4
+      - Atmo_5
+      - Atmo_6
+      - Atmo_7
+      - Atmo_mus
+      - Dark_1
+      - Dark_2
+      - Dark_3
+      - Dark_4
+      - Dark_5
+      - Dark_6
+      - Dark_7
+      - Dark_mus
+      - Default
+      ValueIcons:
+      - ElementName: Atmo_1
+        ObjectType: 10
+      - ElementName: Atmo_2
+        ObjectType: 10
+      - ElementName: Atmo_3
+        ObjectType: 10
+      - ElementName: Atmo_4
+        ObjectType: 10
+      - ElementName: Atmo_5
+        ObjectType: 10
+      - ElementName: Atmo_6
+        ObjectType: 10
+      - ElementName: Atmo_7
+        ObjectType: 10
+      - ElementName: Atmo_mus
+        ObjectType: 10
+      - ElementName: Dark_1
+        ObjectType: 10
+      - ElementName: Dark_2
+        ObjectType: 10
+      - ElementName: Dark_3
+        ObjectType: 10
+      - ElementName: Dark_4
+        ObjectType: 10
+      - ElementName: Dark_5
+        ObjectType: 10
+      - ElementName: Dark_6
+        ObjectType: 10
+      - ElementName: Dark_7
+        ObjectType: 10
+      - ElementName: Dark_mus
+        ObjectType: 10
+      - ElementName: Default
+        ObjectType: 10
+      valueIDs: 22b5b23e21b5b23e20b5b23e27b5b23e26b5b23e25b5b23e24b5b23e8e38c6d59982b3c39a82b3c39b82b3c39c82b3c39d82b3c39e82b3c39f82b3c3adfa7c5f98fba82e
+      ValueGuids:
+      - bytes: e6f816571ea47b40aab50050485a63a1
+      - bytes: 6e4be239e2fe3f4396a582a16453d5a2
+      - bytes: f19b4ac8155cf848877e8b808d95163b
+      - bytes: 9657f3ba05922f4aa26bceb00baa02a8
+      - bytes: 9eb509ba5136b449b96fae4211024c97
+      - bytes: 3aa490ddf4c81c4d88b4514b1e2b19e1
+      - bytes: 3e1573f98fca594fbc850fd246b7783f
+      - bytes: 9099fd070f46b143b8f79bdf1da9a2c8
+      - bytes: 1128f165287fb7468012c1165748be61
+      - bytes: d0349ac019f5cc40bf226acc7c538ee4
+      - bytes: a1c6524f6f7e1740af8ec12bfb9ca162
+      - bytes: 7c33f5310917e44b884fd600e12abc9c
+      - bytes: 6bcb3c97153d6a4a9eb9c6ec72eb6251
+      - bytes: 1dfd1192136cc84186c83b4b2c1475ca
+      - bytes: 566ed1a7545f8e4cbda02372329b19ea
+      - bytes: def7c939c765ec4d86bbacfe0bf4f364
+      - bytes: 9eb49eb95649a443aa90864549ee2fc7
+    - Name: PNJ_mood
+      Path: Default Work Unit\PNJ_mood
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJ_mood
+        ObjectType: 11
+      ID: -357904305
+      Guid: 53f50c09112dbe459c2177382d2ccf65
+      values:
+      - PNJ_atmo
+      - PNJ_dark
+      ValueIcons:
+      - ElementName: PNJ_atmo
+        ObjectType: 10
+      - ElementName: PNJ_dark
+        ObjectType: 10
+      valueIDs: 31cf89d1da234b2c
+      ValueGuids:
+      - bytes: 66db8365a56d65448339ce6734f36f63
+      - bytes: 049c8322c435d74388624d6aa0dae69c
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{CBFE8E6E-4D3A-4F4E-8007-3A330B030B6C}'
+    List:
+    - Name: Main
+      Path: Default Work Unit\Main
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      ID: -1133058374
+      Guid: 13a8cb8be9ce1d40a1ae57d196fca6c9
+  ExpandedItems: []
+  m_lastPopulateTimePsrt1: 1530808419
+  m_lastPopulateTimePart2: -1999454349
+  autoPopulateEnabled: 1
+  basePath: Audio\GeneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 16384
+  lowerPoolSize: 8192
+  streamingPoolSize: 4096
+  memoryCutoffThreshold: .949999988
