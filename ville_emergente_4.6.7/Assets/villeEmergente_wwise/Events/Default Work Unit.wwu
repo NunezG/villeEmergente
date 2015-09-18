@@ -1241,7 +1241,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="log_crack_convolver_play" ID="{C302FF12-0752-4527-A964-9229E00A4A6F}">
+								<Event Name="logCrack_convolver_play" ID="{C302FF12-0752-4527-A964-9229E00A4A6F}">
 									<ChildrenList>
 										<Action Name="Play" ID="{AE408390-CE01-40D6-AAEF-3E06D2E318C8}" ShortID="137270982" Type="Play" Scope="One" Global="false">
 											<PropertyList>
@@ -1256,7 +1256,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="log_crack_stop" ID="{F4ADE7C0-07AC-4BFD-AFFC-038CAD9B2380}">
+								<Event Name="logCrack_stop" ID="{F4ADE7C0-07AC-4BFD-AFFC-038CAD9B2380}">
 									<ChildrenList>
 										<Action Name="Stop" ID="{247E13DC-3E64-4D55-A1C5-802ACA798575}" ShortID="609321705" Type="Stop" Scope="One" Global="false">
 											<PropertyList>
@@ -1271,7 +1271,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="log_crack_play" ID="{7C718D15-1F19-4DE2-AF30-FB8C1697DD38}">
+								<Event Name="logCrack_play" ID="{7C718D15-1F19-4DE2-AF30-FB8C1697DD38}">
 									<ChildrenList>
 										<Action Name="Play" ID="{4BF62423-FF19-4D45-BFA6-271737A64BF5}" ShortID="20112416" Type="Play" Scope="One" Global="false">
 											<PropertyList>
@@ -1286,7 +1286,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="log_crack_convolver_stop" ID="{08C38DC5-4824-4F89-A4DA-03E8DAE98B5B}">
+								<Event Name="logCrack_convolver_stop" ID="{08C38DC5-4824-4F89-A4DA-03E8DAE98B5B}">
 									<ChildrenList>
 										<Action Name="Stop" ID="{E0E4EF2F-CDFE-45EB-BC6C-3C71C1885B5E}" ShortID="662326822" Type="Stop" Scope="One" Global="false">
 											<PropertyList>
@@ -1301,7 +1301,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="wood_fall_convolver_play" ID="{40042421-689C-41F0-BC26-C7CF3A404BCF}">
+								<Event Name="woodFall_convolver_play" ID="{40042421-689C-41F0-BC26-C7CF3A404BCF}">
 									<ChildrenList>
 										<Action Name="Play" ID="{48E38246-6490-46AD-ADB8-2F24513F4E3D}" ShortID="315403766" Type="Play" Scope="One" Global="false">
 											<PropertyList>
@@ -1316,7 +1316,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="wood_fall_stop" ID="{3F9ED1CE-BC3B-476B-B48F-C13A77868072}">
+								<Event Name="woodFall_stop" ID="{3F9ED1CE-BC3B-476B-B48F-C13A77868072}">
 									<ChildrenList>
 										<Action Name="Stop" ID="{EFF415EF-3960-4F1A-90EC-76B98EC14ACA}" ShortID="758584116" Type="Stop" Scope="One" Global="false">
 											<PropertyList>
@@ -1331,7 +1331,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="wood_fall_play" ID="{47DD09C3-6ECF-40B6-BC46-23B1DBB319D8}">
+								<Event Name="woodFall_play" ID="{47DD09C3-6ECF-40B6-BC46-23B1DBB319D8}">
 									<ChildrenList>
 										<Action Name="Play" ID="{F404633B-B27A-4E19-A51D-32BF5E206B9B}" ShortID="682072631" Type="Play" Scope="One" Global="false">
 											<PropertyList>
@@ -1346,7 +1346,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="wood_fall_convolver_stop" ID="{47FBD2D5-3A7D-4649-8B92-A5A9B198F6F8}">
+								<Event Name="woodFall_convolver_stop" ID="{47FBD2D5-3A7D-4649-8B92-A5A9B198F6F8}">
 									<ChildrenList>
 										<Action Name="Stop" ID="{22425AF7-5790-4B0D-9C8F-F58C7A7EED3F}" ShortID="158782700" Type="Stop" Scope="One" Global="false">
 											<PropertyList>

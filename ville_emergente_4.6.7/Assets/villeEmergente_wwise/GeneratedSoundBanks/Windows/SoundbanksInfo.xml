@@ -70,10 +70,10 @@
 				<Event Id="3759079039" Name="interactions_simples_motion" MaxAttenuation="50.000000"/>
 				<Event Id="2535466649" Name="lacher_morceau" MaxAttenuation="50.000000"/>
 				<Event Id="3679869857" Name="linker_morceau" MaxAttenuation="50.000000"/>
-				<Event Id="3974557966" Name="log_crack_convolver_play" MaxAttenuation="50.000000"/>
-				<Event Id="681129968" Name="log_crack_convolver_stop" MaxAttenuation="0.000000"/>
-				<Event Id="542386779" Name="log_crack_play" MaxAttenuation="50.000000"/>
-				<Event Id="3706816785" Name="log_crack_stop" MaxAttenuation="0.000000"/>
+				<Event Id="2747240135" Name="logCrack_convolver_play" MaxAttenuation="50.000000"/>
+				<Event Id="1440905237" Name="logCrack_convolver_stop" MaxAttenuation="0.000000"/>
+				<Event Id="1458620982" Name="logCrack_play" MaxAttenuation="50.000000"/>
+				<Event Id="2189158344" Name="logCrack_stop" MaxAttenuation="0.000000"/>
 				<Event Id="3510319782" Name="metalCreak_convolver_play" MaxAttenuation="50.000000"/>
 				<Event Id="1066456984" Name="metalCreak_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="3965185603" Name="metalCreak_play" MaxAttenuation="50.000000"/>
@@ -158,10 +158,10 @@
 				<Event Id="2286130255" Name="waterSplash_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="4213022088" Name="waterSplash_play" MaxAttenuation="50.000000"/>
 				<Event Id="2295622138" Name="waterSplash_stop" MaxAttenuation="0.000000"/>
-				<Event Id="1585537922" Name="wood_fall_convolver_play" MaxAttenuation="50.000000"/>
-				<Event Id="2228550876" Name="wood_fall_convolver_stop" MaxAttenuation="0.000000"/>
-				<Event Id="1894130911" Name="wood_fall_play" MaxAttenuation="50.000000"/>
-				<Event Id="1385339133" Name="wood_fall_stop" MaxAttenuation="0.000000"/>
+				<Event Id="4016804531" Name="woodFall_convolver_play" MaxAttenuation="50.000000"/>
+				<Event Id="3105246617" Name="woodFall_convolver_stop" MaxAttenuation="0.000000"/>
+				<Event Id="2459029218" Name="woodFall_play" MaxAttenuation="50.000000"/>
+				<Event Id="3060465212" Name="woodFall_stop" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="2796700" Language="SFX">
