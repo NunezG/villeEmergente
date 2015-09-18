@@ -10,6 +10,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	404021567	electricityArcing_stop			\Default Work Unit\Fragments\Electricite\electricityArcing_stop	
 	512634819	electricityStatic_play			\Default Work Unit\Fragments\Electricite\electricityStatic_play	
 	558637385	electricBuzz_convolver_play			\Default Work Unit\Fragments\Abandonnés\electricBuzz_convolver_play	
+	562249743	hammer_convolver_stop			\Default Work Unit\Fragments\Bois\hammer_convolver_stop	
 	763713321	waterSplash_convolver_play			\Default Work Unit\Fragments\Liquide\waterSplash_convolver_play	
 	767008978	anvil_play			\Default Work Unit\Fragments\Metal\anvil_play	
 	812837510	rain_2DObject_play			\Default Work Unit\Tests Wwise Pierre & Guillermo\rain_2DObject_play	
@@ -22,6 +23,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	933666621	fragment_call_metal_play			\Default Work Unit\Fragments\Call\fragment_call_metal_play	
 	1066456984	metalCreak_convolver_stop			\Default Work Unit\Fragments\Metal\metalCreak_convolver_stop	
 	1092919631	train_convolver_play			\Default Work Unit\Fragments\Urban\train_convolver_play	
+	1109396808	hammer_play			\Default Work Unit\Fragments\Bois\hammer_play	
 	1114702576	train_stop			\Default Work Unit\Fragments\Urban\train_stop	
 	1128982233	guide_idle_play			\Default Work Unit\PNJs\Guide\guide_idle_play	
 	1195210688	passant_son			\Default Work Unit\PNJs\Passants\passant_son	
@@ -32,6 +34,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	1374189182	dropsCardboard_play			\Default Work Unit\Fragments\Liquide\dropsCardboard_play	
 	1375190009	fragment_call_wood_play			\Default Work Unit\Fragments\Call\fragment_call_wood_play	
 	1407044475	busyStreet_convolver_stop			\Default Work Unit\Fragments\Abandonnés\busyStreet_convolver_stop	
+	1440905237	logCrack_convolver_stop			\Default Work Unit\Fragments\Bois\logCrack_convolver_stop	
+	1458620982	logCrack_play			\Default Work Unit\Fragments\Bois\logCrack_play	
 	1490074322	fragment_call_liquid_stop			\Default Work Unit\Fragments\Call\fragment_call_liquid_stop	
 	1535194403	anvil_convolver_play			\Default Work Unit\Fragments\Metal\anvil_convolver_play	
 	1672407606	busyStreet_stop			\Default Work Unit\Fragments\Abandonnés\busyStreet_stop	
@@ -46,6 +50,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2137081894	electricityStatic_convolver_play			\Default Work Unit\Fragments\Electricite\electricityStatic_convolver_play	
 	2138522384	prendre_morceau			\Default Work Unit\Joueur\prendre_morceau	
 	2181506373	thunder_convolver_stop			\Default Work Unit\Fragments\Electricite\thunder_convolver_stop	
+	2189158344	logCrack_stop			\Default Work Unit\Fragments\Bois\logCrack_stop	
 	2204075982	guide_son			\Default Work Unit\PNJs\Guide\guide_son	
 	2220177058	musicien_joie			\Default Work Unit\PNJs\Musicien\musicien_joie	
 	2286130255	waterSplash_convolver_stop			\Default Work Unit\Fragments\Liquide\waterSplash_convolver_stop	
@@ -61,6 +66,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2442452516	switch_atmo1			\Default Work Unit\Batiments\Switches Convolver\switch_atmo1	
 	2442452518	switch_atmo3			\Default Work Unit\Batiments\Switches Convolver\switch_atmo3	
 	2442452519	switch_atmo2			\Default Work Unit\Batiments\Switches Convolver\switch_atmo2	
+	2459029218	woodFall_play			\Default Work Unit\Fragments\Bois\woodFall_play	
 	2502442470	paddle_play			\Default Work Unit\Fragments\Liquide\paddle_play	
 	2535466649	lacher_morceau			\Default Work Unit\Joueur\lacher_morceau	
 	2544725597	dropsCardboard_convolver_stop			\Default Work Unit\Fragments\Liquide\dropsCardboard_convolver_stop	
@@ -72,18 +78,23 @@ Event	ID	Name			Wwise Object Path	Notes
 	2692438725	trafficBy_convolver_play			\Default Work Unit\Fragments\Urban\trafficBy_convolver_play	
 	2706991942	thunder_play			\Default Work Unit\Fragments\Electricite\thunder_play	
 	2746150966	switch_dark_mood			\Default Work Unit\PNJs\Switches Mood\switch_dark_mood	
+	2747240135	logCrack_convolver_play			\Default Work Unit\Fragments\Bois\logCrack_convolver_play	
 	2755101329	fragment_call_electricity_stop			\Default Work Unit\Fragments\Call\fragment_call_electricity_stop	
 	2776279528	electricBuzz_play			\Default Work Unit\Fragments\Abandonnés\electricBuzz_play	
 	2812543877	softRain_convolver_play			\Default Work Unit\Fragments\Abandonnés\softRain_convolver_play	
 	2827602569	electricityStatic_stop			\Default Work Unit\Fragments\Electricite\electricityStatic_stop	
 	2896867782	toucher_element			\Default Work Unit\Joueur\toucher_element	
 	3012043839	dropsCardboard_convolver_play			\Default Work Unit\Fragments\Liquide\dropsCardboard_convolver_play	
+	3060465212	woodFall_stop			\Default Work Unit\Fragments\Bois\woodFall_stop	
+	3105246617	woodFall_convolver_stop			\Default Work Unit\Fragments\Bois\woodFall_convolver_stop	
 	3115394940	ville_calme			\Default Work Unit\Ambiances\ville_calme	
 	3122327449	passant_danse			\Default Work Unit\PNJs\Passants\passant_danse	
 	3141592368	fragment_call_liquid_play			\Default Work Unit\Fragments\Call\fragment_call_liquid_play	
 	3160982187	fragment_call_metal_stop			\Default Work Unit\Fragments\Call\fragment_call_metal_stop	
 	3238220620	metalRattle_convolver_play			\Default Work Unit\Fragments\Metal\metalRattle_convolver_play	
 	3274206639	metalRattle_stop			\Default Work Unit\Fragments\Metal\metalRattle_stop	
+	3334697193	hammer_convolver_play			\Default Work Unit\Fragments\Bois\hammer_convolver_play	
+	3487067066	hammer_stop			\Default Work Unit\Fragments\Bois\hammer_stop	
 	3493063959	thunder_convolver_play			\Default Work Unit\Fragments\Electricite\thunder_convolver_play	
 	3501369492	trafficBy_play			\Default Work Unit\Fragments\Urban\trafficBy_play	
 	3510319782	metalCreak_convolver_play			\Default Work Unit\Fragments\Metal\metalCreak_convolver_play	
@@ -123,6 +134,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3967439363	passant_idle_play			\Default Work Unit\PNJs\Passants\passant_idle_play	
 	3988186392	electricityStatic_convolver_stop			\Default Work Unit\Fragments\Electricite\electricityStatic_convolver_stop	
 	3997590316	busyStreet_play			\Default Work Unit\Fragments\Abandonnés\busyStreet_play	
+	4016804531	woodFall_convolver_play			\Default Work Unit\Fragments\Bois\woodFall_convolver_play	
 	4036125012	fragment_call_urban_stop			\Default Work Unit\Fragments\Call\fragment_call_urban_stop	
 	4044973233	switch_darkMus			\Default Work Unit\Batiments\Switches Convolver\switch_darkMus	
 	4080525896	guide_nouveau_son			\Default Work Unit\PNJs\Guide\guide_nouveau_son	
@@ -188,21 +200,30 @@ Effect plug-ins	ID	Name	Type				Notes
 	7382982	RI_sylenth (Custom)	Wwise Convolution Reverb			
 	12755216	RI_sylenth (Custom)	Wwise Convolution Reverb			
 	14043991	RI_suriya (Custom)	Wwise Convolution Reverb			
+	14293565	RI_revdark (Custom)	Wwise Convolution Reverb			
+	32390788	RI_symphobia (Custom)	Wwise Convolution Reverb			
 	33615856	RI_watersplash (Custom)	Wwise Convolution Reverb			
 	38807574	RI_suriya (Custom)	Wwise Convolution Reverb			
+	47490728	RI_suriya (Custom)	Wwise Convolution Reverb			
 	55740286	RI_pipe (Custom)	Wwise Convolution Reverb			
 	55764511	RI_skanner_pad (Custom)	Wwise Convolution Reverb			
 	64565126	RI_skannermorph (Custom)	Wwise Convolution Reverb			
+	65204531	RI_revlight (Custom)	Wwise Convolution Reverb			
 	66597083	RI_revdark (Custom)	Wwise Convolution Reverb			
 	72045933	RI_marseilles (Custom)	Wwise Convolution Reverb			
 	72450182	RI_absynthdark (Custom)	Wwise Convolution Reverb			
 	75365246	RI_revdark (Custom)	Wwise Convolution Reverb			
 	75953107	RI_electric (Custom)	Wwise Convolution Reverb			
 	76703477	RI_pipe (Custom)	Wwise Convolution Reverb			
+	79796622	RI_musicien_atmo (Custom)	Wwise Convolution Reverb			
 	83587104	RI_symphobia (Custom)	Wwise Convolution Reverb			
+	89545323	RI_pipe (Custom)	Wwise Convolution Reverb			
 	91708864	RI_revlight (Custom)	Wwise Convolution Reverb			
+	96252759	RI_pipe (Custom)	Wwise Convolution Reverb			
 	98887611	RI_skannermorph (Custom)	Wwise Convolution Reverb			
 	99405304	RI_absynthdark (Custom)	Wwise Convolution Reverb			
+	111950587	RI_marseilles (Custom)	Wwise Convolution Reverb			
+	113026303	RI_revlight (Custom)	Wwise Convolution Reverb			
 	114054854	RI_revlight (Custom)	Wwise Convolution Reverb			
 	114925210	RI_suriya (Custom)	Wwise Convolution Reverb			
 	119438177	RI_pipe (Custom)	Wwise Convolution Reverb			
@@ -212,7 +233,9 @@ Effect plug-ins	ID	Name	Type				Notes
 	140322966	RI_revdark (Custom)	Wwise Convolution Reverb			
 	141020614	RI_sylenth (Custom)	Wwise Convolution Reverb			
 	145588677	RI_absynthdark (Custom)	Wwise Convolution Reverb			
+	147966859	RI_musicien_atmo (Custom)	Wwise Convolution Reverb			
 	152040434	RI_absynthdark (Custom)	Wwise Convolution Reverb			
+	157380975	RI_choirslike (Custom)	Wwise Convolution Reverb			
 	163629053	RI_choirslike (Custom)	Wwise Convolution Reverb			
 	167041326	RI_revdark (Custom)	Wwise Convolution Reverb			
 	169884533	RI_revdark (Custom)	Wwise Convolution Reverb			
@@ -228,12 +251,16 @@ Effect plug-ins	ID	Name	Type				Notes
 	199696633	RI_suriya (Custom)	Wwise Convolution Reverb			
 	203886520	RI_suriya (Custom)	Wwise Convolution Reverb			
 	204580557	RI_pipe (Custom)	Wwise Convolution Reverb			
+	218949120	RI_pipe (Custom)	Wwise Convolution Reverb			
 	220254779	RI_watersplash (Custom)	Wwise Convolution Reverb			
+	231395010	RI_skannermorph (Custom)	Wwise Convolution Reverb			
 	244726872	RI_marseilles (Custom)	Wwise Convolution Reverb			
 	246799603	RI_revlight (Custom)	Wwise Convolution Reverb			
 	248087299	RI_choirslike (Custom)	Wwise Convolution Reverb			
 	249313686	RI_revdark (Custom)	Wwise Convolution Reverb			
+	250474422	RI_musicien_atmo (Custom)	Wwise Convolution Reverb			
 	252181675	RI_musicien_atmo (Custom)	Wwise Convolution Reverb			
+	256257699	RI_choirslike (Custom)	Wwise Convolution Reverb			
 	266481021	RI_suriya (Custom)	Wwise Convolution Reverb			
 	268464486	RI_marseilles (Custom)	Wwise Convolution Reverb			
 	270567435	RI_pipe (Custom)	Wwise Convolution Reverb			
@@ -249,18 +276,26 @@ Effect plug-ins	ID	Name	Type				Notes
 	334825592	RI_choirslike (Custom)	Wwise Convolution Reverb			
 	336862091	RI_choirslike (Custom)	Wwise Convolution Reverb			
 	342419174	RI_suriya (Custom)	Wwise Convolution Reverb			
+	350929720	RI_watersplash (Custom)	Wwise Convolution Reverb			
+	351402970	RI_electric (Custom)	Wwise Convolution Reverb			
 	354461340	RI_skanner_pad (Custom)	Wwise Convolution Reverb			
 	355721447	RI_sylenth (Custom)	Wwise Convolution Reverb			
 	358101656	RI_pipe (Custom)	Wwise Convolution Reverb			
 	358899564	RI_revlight (Custom)	Wwise Convolution Reverb			
 	364187999	RI_marseilles (Custom)	Wwise Convolution Reverb			
+	368142029	RI_watersplash (Custom)	Wwise Convolution Reverb			
+	370922772	RI_shevannai (Custom)	Wwise Convolution Reverb			
 	372709131	RI_musicien_atmo (Custom)	Wwise Convolution Reverb			
 	373363385	RI_musicien_atmo (Custom)	Wwise Convolution Reverb			
 	376323029	RI_symphobia (Custom)	Wwise Convolution Reverb			
 	382952606	RI_electric (Custom)	Wwise Convolution Reverb			
 	384260761	RI_choirslike (Custom)	Wwise Convolution Reverb			
+	385735287	RI_skanner_pad (Custom)	Wwise Convolution Reverb			
+	398015400	RI_skanner_pad (Custom)	Wwise Convolution Reverb			
 	404946856	RI_electric (Custom)	Wwise Convolution Reverb			
+	413347779	RI_absynthdark (Custom)	Wwise Convolution Reverb			
 	414478617	RI_choirslike (Custom)	Wwise Convolution Reverb			
+	423493700	RI_electric (Custom)	Wwise Convolution Reverb			
 	423785730	RI_symphobia (Custom)	Wwise Convolution Reverb			
 	427764495	RI_revlight (Custom)	Wwise Convolution Reverb			
 	446231339	RI_shevannai (Custom)	Wwise Convolution Reverb			
@@ -272,23 +307,27 @@ Effect plug-ins	ID	Name	Type				Notes
 	459146338	RI_watersplash (Custom)	Wwise Convolution Reverb			
 	459148050	RI_skannermorph (Custom)	Wwise Convolution Reverb			
 	459660152	RI_watersplash (Custom)	Wwise Convolution Reverb			
+	464359979	RI_marseilles (Custom)	Wwise Convolution Reverb			
 	465356389	RI_musicien_atmo (Custom)	Wwise Convolution Reverb			
 	468182415	RI_revdark (Custom)	Wwise Convolution Reverb			
 	476778142	RI_sylenth (Custom)	Wwise Convolution Reverb			
 	481449360	RI_skannermorph (Custom)	Wwise Convolution Reverb			
 	487452727	RI_pipe (Custom)	Wwise Convolution Reverb			
 	487946442	RI_sylenth (Custom)	Wwise Convolution Reverb			
+	493587043	RI_symphobia (Custom)	Wwise Convolution Reverb			
 	494110567	RI_suriya (Custom)	Wwise Convolution Reverb			
 	495568183	RI_electric (Custom)	Wwise Convolution Reverb			
 	496105453	RI_musicien_atmo (Custom)	Wwise Convolution Reverb			
 	496494476	RI_watersplash (Custom)	Wwise Convolution Reverb			
 	501580913	RI_electric (Custom)	Wwise Convolution Reverb			
 	522146540	RI_sylenth (Custom)	Wwise Convolution Reverb			
+	523410625	RI_shevannai (Custom)	Wwise Convolution Reverb			
 	526282870	RI_skanner_pad (Custom)	Wwise Convolution Reverb			
 	529337622	RI_skanner_pad (Custom)	Wwise Convolution Reverb			
 	529984745	RI_choirslike (Custom)	Wwise Convolution Reverb			
 	532560561	RI_choirslike (Custom)	Wwise Convolution Reverb			
 	532583555	RI_revlight (Custom)	Wwise Convolution Reverb			
+	534505410	RI_sylenth (Custom)	Wwise Convolution Reverb			
 	536184522	RI_symphobia (Custom)	Wwise Convolution Reverb			
 	545857881	RI_sylenth (Custom)	Wwise Convolution Reverb			
 	550083169	RI_skanner_pad (Custom)	Wwise Convolution Reverb			
@@ -298,10 +337,13 @@ Effect plug-ins	ID	Name	Type				Notes
 	566585717	RI_skannermorph (Custom)	Wwise Convolution Reverb			
 	574325636	RI_choirslike (Custom)	Wwise Convolution Reverb			
 	581719927	RI_marseilles (Custom)	Wwise Convolution Reverb			
+	583190426	RI_shevannai (Custom)	Wwise Convolution Reverb			
+	589777107	RI_absynthdark (Custom)	Wwise Convolution Reverb			
 	590961300	RI_choirslike (Custom)	Wwise Convolution Reverb			
 	593423414	RI_skanner_pad (Custom)	Wwise Convolution Reverb			
 	593487060	RI_shevannai (Custom)	Wwise Convolution Reverb			
 	594956572	RI_choirslike (Custom)	Wwise Convolution Reverb			
+	599022211	RI_revdark (Custom)	Wwise Convolution Reverb			
 	601582957	RI_marseilles (Custom)	Wwise Convolution Reverb			
 	602292417	RI_watersplash (Custom)	Wwise Convolution Reverb			
 	604735450	RI_revdark (Custom)	Wwise Convolution Reverb			
@@ -312,6 +354,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	631987750	RI_watersplash (Custom)	Wwise Convolution Reverb			
 	635319144	RI_shevannai (Custom)	Wwise Convolution Reverb			
 	638372934	RI_symphobia (Custom)	Wwise Convolution Reverb			
+	646203759	RI_absynthdark (Custom)	Wwise Convolution Reverb			
 	648000053	Wwise Compressor (Custom)	Wwise Compressor			
 	648453178	RI_marseilles (Custom)	Wwise Convolution Reverb			
 	648817922	RI_sylenth (Custom)	Wwise Convolution Reverb			
@@ -319,17 +362,21 @@ Effect plug-ins	ID	Name	Type				Notes
 	651697629	RI_watersplash (Custom)	Wwise Convolution Reverb			
 	653585637	RI_marseilles (Custom)	Wwise Convolution Reverb			
 	655123002	RI_symphobia (Custom)	Wwise Convolution Reverb			
+	657223970	RI_suriya (Custom)	Wwise Convolution Reverb			
 	659346039	RI_shevannai (Custom)	Wwise Convolution Reverb			
 	660519502	RI_electric (Custom)	Wwise Convolution Reverb			
+	663614434	RI_symphobia (Custom)	Wwise Convolution Reverb			
 	663644163	RI_shevannai (Custom)	Wwise Convolution Reverb			
 	681707613	RI_shevannai (Custom)	Wwise Convolution Reverb			
 	681900412	RI_musicien_atmo (Custom)	Wwise Convolution Reverb			
 	682696117	RI_revdark (Custom)	Wwise Convolution Reverb			
+	683022215	RI_choirslike (Custom)	Wwise Convolution Reverb			
 	684628791	RI_skanner_pad (Custom)	Wwise Convolution Reverb			
 	687326229	RI_symphobia (Custom)	Wwise Convolution Reverb			
 	694498784	RI_shevannai (Custom)	Wwise Convolution Reverb			
 	697097808	RI_revlight (Custom)	Wwise Convolution Reverb			
 	699402417	RI_skanner_pad (Custom)	Wwise Convolution Reverb			
+	701739094	RI_sylenth (Custom)	Wwise Convolution Reverb			
 	705229173	RI_electric (Custom)	Wwise Convolution Reverb			
 	706650550	RI_choirslike (Custom)	Wwise Convolution Reverb			
 	709228663	RI_absynthdark (Custom)	Wwise Convolution Reverb			
@@ -343,11 +390,14 @@ Effect plug-ins	ID	Name	Type				Notes
 	733925726	RI_revlight (Custom)	Wwise Convolution Reverb			
 	734484321	RI_pipe (Custom)	Wwise Convolution Reverb			
 	737447017	RI_musicien_atmo (Custom)	Wwise Convolution Reverb			
+	742311742	RI_suriya (Custom)	Wwise Convolution Reverb			
 	760294475	RI_revlight (Custom)	Wwise Convolution Reverb			
 	761516531	Cymbal	Wwise Convolution Reverb			
+	762470730	RI_electric (Custom)	Wwise Convolution Reverb			
 	770013365	RI_musicien_atmo (Custom)	Wwise Convolution Reverb			
 	780165848	RI_revlight (Custom)	Wwise Convolution Reverb			
 	780565931	AstoundSound RTI (Custom)	AstoundSound RTI			
+	795457871	RI_revdark (Custom)	Wwise Convolution Reverb			
 	797179301	RI_musicien_atmo (Custom)	Wwise Convolution Reverb			
 	803508234	RI_absynthdark (Custom)	Wwise Convolution Reverb			
 	804811919	RI_sylenth (Custom)	Wwise Convolution Reverb			
@@ -379,6 +429,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	935416312	RI_absynthdark (Custom)	Wwise Convolution Reverb			
 	935549314	RI_shevannai (Custom)	Wwise Convolution Reverb			
 	938617154	RI_skanner_pad (Custom)	Wwise Convolution Reverb			
+	948124582	RI_marseilles (Custom)	Wwise Convolution Reverb			
 	953553123	RI_shevannai (Custom)	Wwise Convolution Reverb			
 	957523753	RI_electric (Custom)	Wwise Convolution Reverb			
 	962398668	RI_watersplash (Custom)	Wwise Convolution Reverb			
@@ -386,15 +437,21 @@ Effect plug-ins	ID	Name	Type				Notes
 	972026879	RI_symphobia (Custom)	Wwise Convolution Reverb			
 	972508952	RI_revlight (Custom)	Wwise Convolution Reverb			
 	975873238	RI_symphobia (Custom)	Wwise Convolution Reverb			
+	982619729	RI_skanner_pad (Custom)	Wwise Convolution Reverb			
 	989677643	RI_symphobia (Custom)	Wwise Convolution Reverb			
 	996202007	RI_skannermorph (Custom)	Wwise Convolution Reverb			
 	996705449	RI_suriya (Custom)	Wwise Convolution Reverb			
 	1001988538	RI_revlight (Custom)	Wwise Convolution Reverb			
 	1011028865	RI_absynthdark (Custom)	Wwise Convolution Reverb			
+	1013893863	RI_skannermorph (Custom)	Wwise Convolution Reverb			
 	1014517583	RI_shevannai (Custom)	Wwise Convolution Reverb			
 	1024323101	RI_suriya (Custom)	Wwise Convolution Reverb			
+	1025611368	RI_revlight (Custom)	Wwise Convolution Reverb			
+	1025620311	RI_sylenth (Custom)	Wwise Convolution Reverb			
 	1039953221	RI_skannermorph (Custom)	Wwise Convolution Reverb			
+	1042847835	RI_skannermorph (Custom)	Wwise Convolution Reverb			
 	1044722923	RI_watersplash (Custom)	Wwise Convolution Reverb			
+	1047742900	RI_watersplash (Custom)	Wwise Convolution Reverb			
 	1057172372	RI_musicien_atmo (Custom)	Wwise Convolution Reverb			
 	1059668555	RI_electric (Custom)	Wwise Convolution Reverb			
 	1059797160	RI_revdark (Custom)	Wwise Convolution Reverb			
@@ -405,17 +462,19 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	7039575	sfx_fragment_metal_call	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_fragment_metal_call_25E25C03.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Fragment Call\Fragment Call\sfx_fragment_metal_call		339518
 	7083372	sfx_electricity_static	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_electricity_static_9A4606FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Electricite\sfx_electricity_static		664691
-	32344818	sfx_train	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_train_2A70365C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Urban\sfx_train		2868742
+	32344818	sfx_train	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_train_337820B8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Urban\sfx_train		2868742
 	46964867	sfx_paddle	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_paddle_91A420B5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Liquide\sfx_paddle		933444
+	48800980	sfx_hammer	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_hammer_wood_2ACFBC15.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Bois\sfx_hammer		1342580
 	57806489	Sfx_ri_choirslike	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_choirslike_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_choirslike		157775
 	61270204	Sfx_ri_watersplash	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_watersplash_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_watersplash		289078
 	66416189	sfx_electricity_arcing	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_electricity_arcing_872E07DD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Electricite\sfx_electricity_arcing		351190
 	68116553	sfx_musicien_respiration_03	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_musicien_respiration_03_C64EAD28.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Musicien\Sfx_musicien_respiration\sfx_musicien_respiration\sfx_musicien_respiration_03		331939
 	74315757	sfx_thunder	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_thunder_91CACF2A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_thunder_switch\RI_marseilles\sfx_thunder		1808173
-	76700068	sfx_anvil	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_anvil_319C49A0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Metal\sfx_anvil		1973662
+	76700068	sfx_anvil	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_anvil_5090589F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Metal\sfx_anvil		1973662
 	77014115	Sfx_ri_skannermorph	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_skannermorph_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_skannermorph		270972
 	79795147	sfx_footsteps_01_v2	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_footsteps_01_v2_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Joueur\Footsteps\Defaut\sfx_footsteps_01_v2		35271
 	88545374	sfx_musicien_respiration_04	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_musicien_respiration_04_DA2EBEE8.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Musicien\Sfx_musicien_respiration\sfx_musicien_respiration\sfx_musicien_respiration_04		331786
+	111986403	sfx_log_crack	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_log_crack_96AE8446.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_log_crack_switch\RI_marseilles\sfx_log_crack		1379601
 	122963745	sfx_guide_dark_son	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_guide_dark_son_1D8380F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Guide\Sfx_guide_son\sfx_guide_dark_son		186830
 	123996682	sfx_musicien_dark_respiration_06	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_musicien_dark_respiration_06_C11388DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Musicien\Sfx_musicien_respiration\sfx_musicien_dark_respiration\sfx_musicien_dark_respiration_06		266168
 	159212132	sfx_guide_dark_respiration_02	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_guide_dark_respiration_02_B6559965.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Guide\Sfx_guide_respiration\sfx_guide_dark_respiration\sfx_guide_dark_respiration_02		169283
@@ -471,15 +530,16 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	711322153	sfx_passant_dark_respiration_02	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_passant_dark_respiration_02_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Passants\Sfx_passant_respiration\sfx_passant_dark_respiration\sfx_passant_dark_respiration_02		131373
 	727022421	sfx_musicien_respiration_01	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_musicien_respiration_01_144A93EB.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Musicien\Sfx_musicien_respiration\sfx_musicien_respiration\sfx_musicien_respiration_01		285644
 	735704915	sfx_musicien_dark_respiration_02	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_musicien_dark_respiration_02_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Musicien\Sfx_musicien_respiration\sfx_musicien_dark_respiration\sfx_musicien_dark_respiration_02		287329
+	738437857	sfx_wood_fall	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_wood_fall_D64AECDA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_wood_fall_switch\RI_marseilles\sfx_wood_fall		684734
 	771216038	sfx_guide_respiration_01	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_guide_respiration_01_6AB16D09.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Guide\Sfx_guide_respiration\sfx_guide_respiration\sfx_guide_respiration_01		142869
 	776156565	sfx_guide_respiration_06	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_guide_respiration_06_F266D78E.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Guide\Sfx_guide_respiration\sfx_guide_respiration\sfx_guide_respiration_06		161607
-	782147887	sfx_metal_creak	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_metal_creak_D9844389_78386D5A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_creak_switch\RI_revdark\sfx_metal_creak		2520920
+	782147887	sfx_metal_creak	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_metal_creak_9C67D7BD_78386D5A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_creak_switch\RI_revdark\sfx_metal_creak		2520920
 	784759727	sfx_guide_respiration_05	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_guide_respiration_05_74510568.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Guide\Sfx_guide_respiration\sfx_guide_respiration\sfx_guide_respiration_05		157254
 	788675832	sfx_musicien_tourne	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_musicien_tourne_7670D236.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Musicien\Sfx_musicien_tourne\sfx_musicien_tourne		215883
 	789123976	Sfx_ri_symphobia	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_symphobia_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_symphobia		159244
 	801096109	sfx_passant_son	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_passant_son_E60FF86F.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Passants\Sfx_passant_son\sfx_passant_son		176701
-	808410429	sfx_train	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_train_2A70365C_FD739E20.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_train_switch\RI_choirslike\sfx_train		2887970
-	855011190	sfx_metal_rattle	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_metal_rattle_587CA577.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_rattle_switch\RI_marseilles\sfx_metal_rattle		1026294
+	808410429	sfx_train	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_train_337820B8_FD739E20.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_train_switch\RI_choirslike\sfx_train		2887970
+	855011190	sfx_metal_rattle	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_metal_rattle_EE55DC61.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_rattle_switch\RI_marseilles\sfx_metal_rattle		1026294
 	856207129	sfx_passant_dark_danse	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_passant_dark_danse_9B59CE83_111F01D4.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Passants\Sfx_passant_danse\sfx_passant_dark_danse		281909
 	857643460	sfx_drops_carboard	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_drops_carboard_ABF82687.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Liquide\sfx_drops_carboard		959627
 	862717797	sfx_passant_danse	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_passant_danse_489326F1_111F01D4.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Passants\Sfx_passant_danse\sfx_passant_danse		191994
@@ -496,43 +556,50 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1037490087	Sfx_ri_rev_light	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_rev_light_950FF8F3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_rev_light		167665
 	1052472384	sfx_guide_respiration_02	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_guide_respiration_02_BDB50CC8.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Guide\Sfx_guide_respiration\sfx_guide_respiration\sfx_guide_respiration_02		157689
 	1058618159	sfx_guide_nouveau_son	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_guide_nouveau_son_417B9326.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Guide\Sfx_guide_son\sfx_guide_nouveau_son		239920
-	1066095528	sfx_metal_creak	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_metal_creak_D9844389.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_creak_switch\RI_marseilles\sfx_metal_creak		2502965
+	1066095528	sfx_metal_creak	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_metal_creak_9C67D7BD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_creak_switch\RI_marseilles\sfx_metal_creak		2502965
 	1070947063	sfx_guide_dark_respiration_03	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_guide_dark_respiration_03_076C3265.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Guide\Sfx_guide_respiration\sfx_guide_dark_respiration\sfx_guide_dark_respiration_03		161741
 
 Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
+	2796700	RI_absynthdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_absynth_dark_8BCB3669.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_wood_fall_switch\RI_absynthdark\RI_absynthdark (Custom)		98672
 	3521562	RI_marseilles (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_marseilles_48DDB435.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_anvil_switch\RI_marseilles\RI_marseilles (Custom)		154592
 	5649477	RI_marseilles (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_marseilles_589B3963.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Annulés\Sfx_busy_street_switch\RI_marseilles\RI_marseilles (Custom)		238720
 	9738449	RI_electric (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_electric_A6B2CDA0.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Annulés\Sfx_electric_buzz_switch\RI_electric\RI_electric (Custom)		112240
 	10547618	RI_musicien_atmo (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\sfx_musicien_son_C9D448BF.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Annulés\Sfx_electric_buzz_switch\RI_musicien_atmo\RI_musicien_atmo (Custom)		895472
 	15726684	RI_watersplash (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_watersplash_AFC1F920.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_rattle_switch\RI_watersplash\RI_watersplash (Custom)		564160
 	17459511	RI_shevannai (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_shevannai_58BA8221.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_anvil_switch\RI_shevannai\RI_shevannai (Custom)		34096
-	17974810	RI_musicien_atmo (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\sfx_musicien_son_5EF7D0CA.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_train_switch\RI_musicien_atmo\RI_musicien_atmo (Custom)		905648
+	17974810	RI_musicien_atmo (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\sfx_musicien_son_5EF7D0CA.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_traffic_by_switch\RI_musicien_atmo\RI_musicien_atmo (Custom)		905648
 	22131471	RI_watersplash (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_watersplash_01D8B5E7.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Annulés\Sfx_soft_rain_switch\RI_watersplash\RI_watersplash (Custom)		1191168
 	24656146	RI_electric (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_electric_8D4034EF.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_thunder_switch\RI_electric\RI_electric (Custom)		125344
+	25839266	RI_skannermorph (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skannermorph_5725BF4C.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_wood_fall_switch\RI_skannermorph\RI_skannermorph (Custom)		303216
 	27787804	RI_choirslike (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_choirslike_B903109D.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_electricity_arcing_switch\RI_choirslike\RI_choirslike (Custom)		104864
 	41809020	RI_revlight (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_rev_light_8E718BC5.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_traffic_by_switch\RI_revlight\RI_revlight (Custom)		515424
 	41934444	RI_symphobia (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_symphobia_7ED67175.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Annulés\Sfx_electric_buzz_switch\RI_symphobia\RI_symphobia (Custom)		272816
+	42113534	RI_sylenth (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_sylenth_C7C64756.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_traffic_by_switch\RI_sylenth\RI_sylenth (Custom)		27296
 	45333934	RI_symphobia (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_symphobia_82ABD766.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_drops_cardboard_switch\RI_symphobia\RI_symphobia (Custom)		133712
 	52127588	RI_choirslike (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_choirslike_8E476878.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_traffic_by_switch\RI_choirslike\RI_choirslike (Custom)		68848
 	55749257	RI_suriya (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_suriya_F375680F.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_drops_cardboard_switch\RI_suriya\RI_suriya (Custom)		322016
+	63781649	RI_symphobia (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_symphobia_87FE4D61.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_log_crack_switch\RI_symphobia\RI_symphobia (Custom)		40848
+	64348797	RI_marseilles (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_marseilles_F98FA24A.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_log_crack_switch\RI_marseilles\RI_marseilles (Custom)		60640
 	64397103	RI_musicien_atmo (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\sfx_musicien_son_172299DF.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_drops_cardboard_switch\RI_musicien_atmo\RI_musicien_atmo (Custom)		833984
 	65970661	RI_pipe (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_pipe_2E591F25.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_train_switch\RI_pipe\RI_pipe (Custom)		54720
 	73003083	RI_marseilles (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_marseilles_F06AD6DA.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_electricity_static_switch\RI_marseilles\RI_marseilles (Custom)		131568
-	80311516	RI_sylenth (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_sylenth_C7C64756.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_traffic_by_switch\RI_sylenth\RI_sylenth (Custom)		27296
 	80597723	RI_absynthdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_absynth_dark_A65B6B8A.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_drops_cardboard_switch\RI_absynthdark\RI_absynthdark (Custom)		65184
 	89833719	RI_skanner_pad (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skanner_pad_1129DA00.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_electricity_arcing_switch\RI_skanner_pad\RI_skanner_pad (Custom)		76480
 	89917018	RI_revdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_revdark_12C64036.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_drops_cardboard_switch\RI_revdark\RI_revdark (Custom)		91328
 	114593290	RI_electric (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_electric_B9A14C31.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_traffic_by_switch\RI_electric\RI_electric (Custom)		132800
 	118672614	RI_pipe (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_pipe_8A20CA90.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_electricity_arcing_switch\RI_pipe\RI_pipe (Custom)		76560
-	121343736	RI_revlight (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_rev_light_5B61295E.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_paddle_switch\RI_revlight\RI_revlight (Custom)		160880
+	121343736	RI_revlight (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_rev_light_B20CE29A.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_hammer_switch\RI_revlight\RI_revlight (Custom)		157392
 	124185746	RI_choirslike (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_choirslike_849931C1.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_paddle_switch\RI_choirslike\RI_choirslike (Custom)		111248
 	124983689	RI_electric (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_electric_7E9F2061.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_train_switch\RI_electric\RI_electric (Custom)		28352
+	134633180	RI_musicien_atmo (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\sfx_musicien_son_172299DF.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_log_crack_switch\RI_musicien_atmo\RI_musicien_atmo (Custom)		833984
 	138389321	RI_absynthdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_absynth_dark_EEDC3BAE.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_water_splash_switch\RI_absynthdark\RI_absynthdark (Custom)		333776
 	139738712	RI_sylenth (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_sylenth_27FB1D34.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_drops_cardboard_switch\RI_sylenth\RI_sylenth (Custom)		21248
 	141266967	RI_shevannai (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_shevannai_F1A59D96.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Annulés\Sfx_electric_buzz_switch\RI_shevannai\RI_shevannai (Custom)		230544
 	142176626	RI_pipe (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_pipe_D5549ACC.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_paddle_switch\RI_pipe\RI_pipe (Custom)		72016
 	143321588	RI_watersplash (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_watersplash_CD5C89D3.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_electricity_static_switch\RI_watersplash\RI_watersplash (Custom)		363856
 	150958348	RI_revdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_revdark_A65718F9.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_paddle_switch\RI_revdark\RI_revdark (Custom)		78784
+	162463159	RI_revdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_revdark_43AAAFB7.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_wood_fall_switch\RI_revdark\RI_revdark (Custom)		72896
+	164133065	RI_symphobia (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_symphobia_E7E5DF69.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_hammer_switch\RI_symphobia\RI_symphobia (Custom)		78272
 	168175220	RI_marseilles (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_marseilles_84FC682A.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_electricity_arcing_switch\RI_marseilles\RI_marseilles (Custom)		78464
 	170153132	RI_suriya (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_suriya_545B2686.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_train_switch\RI_suriya\RI_suriya (Custom)		96576
 	176876817	RI_revdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_revdark_25064B7F.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_traffic_by_switch\RI_revdark\RI_revdark (Custom)		79104
@@ -543,25 +610,33 @@ Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
 	205402196	RI_shevannai (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_shevannai_D0AC2311.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_drops_cardboard_switch\RI_shevannai\RI_shevannai (Custom)		27408
 	218684668	RI_shevannai (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_shevannai_5C9D0F63.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_electricity_static_switch\RI_shevannai\RI_shevannai (Custom)		65536
 	218791853	RI_pipe (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_pipe_5757CD80.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_traffic_by_switch\RI_pipe\RI_pipe (Custom)		100864
+	221494143	RI_revlight (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_rev_light_5B61295E.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_paddle_switch\RI_revlight\RI_revlight (Custom)		160880
 	221881774	RI_marseilles (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_marseilles_434B559E.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_traffic_by_switch\RI_marseilles\RI_marseilles (Custom)		84864
+	227346128	RI_revlight (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_rev_light_AFD53608.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_wood_fall_switch\RI_revlight\RI_revlight (Custom)		97136
+	227972535	RI_skanner_pad (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skanner_pad_78A3A57C.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_hammer_switch\RI_skanner_pad\RI_skanner_pad (Custom)		64352
 	240399465	RI_watersplash (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_watersplash_51175EC6.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Annulés\Sfx_electric_buzz_switch\RI_watersplash\RI_watersplash (Custom)		1195584
 	256183079	RI_revdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_revdark_D5D8A81A.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_creak_switch\RI_revdark\RI_revdark (Custom)		72576
 	266736448	RI_watersplash (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_watersplash_CD898ADD.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_water_splash_switch\RI_watersplash\RI_watersplash (Custom)		744736
 	272747740	RI_skanner_pad (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skanner_pad_A0F86656.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_train_switch\RI_skanner_pad\RI_skanner_pad (Custom)		46960
 	275831905	RI_musicien_atmo (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\sfx_musicien_son_A104AEB9.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_water_splash_switch\RI_musicien_atmo\RI_musicien_atmo (Custom)		819392
 	284381232	RI_choirslike (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_choirslike_72D56C54.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_train_switch\RI_choirslike\RI_choirslike (Custom)		27792
+	288853293	RI_suriya (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_suriya_D32D1434.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_hammer_switch\RI_suriya\RI_suriya (Custom)		246464
 	291496351	RI_symphobia (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_symphobia_56E7BF2A.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_water_splash_switch\RI_symphobia\RI_symphobia (Custom)		81328
+	293248322	RI_marseilles (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_marseilles_B4AA06FC.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_hammer_switch\RI_marseilles\RI_marseilles (Custom)		96176
 	296724181	RI_suriya (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_suriya_3EBBFED8.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_water_splash_switch\RI_suriya\RI_suriya (Custom)		322240
 	300328009	RI_sylenth (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_sylenth_CF891C4A.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_train_switch\RI_sylenth\RI_sylenth (Custom)		28304
+	307331539	RI_watersplash (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_watersplash_57EADE69.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_hammer_switch\RI_watersplash\RI_watersplash (Custom)		333552
 	310504727	RI_watersplash (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_watersplash_B343E6FB.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_anvil_switch\RI_watersplash\RI_watersplash (Custom)		561344
 	313612143	RI_skanner_pad (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skanner_pad_94EF9B2D.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_anvil_switch\RI_skanner_pad\RI_skanner_pad (Custom)		62240
 	326910390	RI_sylenth (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_sylenth_4C3D8557.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_creak_switch\RI_sylenth\RI_sylenth (Custom)		21600
 	330748523	RI_absynthdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_absynth_dark_049F591D.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_paddle_switch\RI_absynthdark\RI_absynthdark (Custom)		117392
-	331933552	RI_musicien_atmo (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\sfx_musicien_son_172299DF.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_rattle_switch\RI_musicien_atmo\RI_musicien_atmo (Custom)		833984
 	338076098	RI_watersplash (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_watersplash_F030DEA1.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_drops_cardboard_switch\RI_watersplash\RI_watersplash (Custom)		318080
 	340849640	RI_marseilles (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_marseilles_F9E38563.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_paddle_switch\RI_marseilles\RI_marseilles (Custom)		74080
+	343980729	RI_pipe (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_pipe_6939BCE2.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_hammer_switch\RI_pipe\RI_pipe (Custom)		60624
+	346925210	RI_skanner_pad (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skanner_pad_31D21368.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_wood_fall_switch\RI_skanner_pad\RI_skanner_pad (Custom)		81632
 	347537987	RI_marseilles (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_marseilles_E07A6218.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_rattle_switch\RI_marseilles\RI_marseilles (Custom)		156352
 	363840658	RI_absynthdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_absynth_dark_91F5F333.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_rattle_switch\RI_absynthdark\RI_absynthdark (Custom)		126832
+	365224507	RI_skannermorph (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skannermorph_BA054C25.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_hammer_switch\RI_skannermorph\RI_skannermorph (Custom)		379856
 	373358376	RI_shevannai (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_shevannai_D8CE845A.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_electricity_arcing_switch\RI_shevannai\RI_shevannai (Custom)		35056
 	377581139	RI_revdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_revdark_6885A595.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_thunder_switch\RI_revdark\RI_revdark (Custom)		26560
 	380222635	RI_electric (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_electric_E4DA21BC.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_creak_switch\RI_electric\RI_electric (Custom)		103584
@@ -572,21 +647,24 @@ Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
 	395400413	RI_revlight (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_rev_light_38BF7DF1.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_thunder_switch\RI_revlight\RI_revlight (Custom)		133616
 	396029556	RI_choirslike (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_choirslike_48D3F6A3.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Annulés\Sfx_soft_rain_switch\RI_choirslike\RI_choirslike (Custom)		307696
 	400869687	RI_revlight (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_rev_light_17CF2CA0.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_train_switch\RI_revlight\RI_revlight (Custom)		31728
+	403776113	RI_electric (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_electric_B1BAC88D.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_hammer_switch\RI_electric\RI_electric (Custom)		83296
 	420474650	RI_shevannai (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_shevannai_7B744463.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_traffic_by_switch\RI_shevannai\RI_shevannai (Custom)		50112
-	425693773	RI_skannermorph (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skannermorph_E33C38A7.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_train_switch\RI_skannermorph\RI_skannermorph (Custom)		59520
+	424282730	RI_choirslike (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_choirslike_9131B360.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_log_crack_switch\RI_choirslike\RI_choirslike (Custom)		66544
+	425693773	RI_skannermorph (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skannermorph_39E36BBC.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_train_switch\RI_skannermorph\RI_skannermorph (Custom)		59520
 	426513446	RI_skannermorph (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skannermorph_F9420164.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_anvil_switch\RI_skannermorph\RI_skannermorph (Custom)		284832
+	434038222	RI_absynthdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_absynth_dark_20E62348.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_hammer_switch\RI_absynthdark\RI_absynthdark (Custom)		87344
 	446688879	RI_absynthdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_absynth_dark_1683FDF7.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_traffic_by_switch\RI_absynthdark\RI_absynthdark (Custom)		130384
 	449513959	RI_watersplash (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_watersplash_CBB57613.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_traffic_by_switch\RI_watersplash\RI_watersplash (Custom)		695376
 	453527598	RI_absynthdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_absynth_dark_5068EFFB.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_electricity_arcing_switch\RI_absynthdark\RI_absynthdark (Custom)		73088
-	462620299	RI_sylenth (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_sylenth_C7C64756.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_rattle_switch\RI_sylenth\RI_sylenth (Custom)		27296
+	492051974	RI_revdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_revdark_6C7B9BBF.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_hammer_switch\RI_revdark\RI_revdark (Custom)		74208
 	500831021	RI_shevannai (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_shevannai_FD865421.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_paddle_switch\RI_shevannai\RI_shevannai (Custom)		75008
 	516255751	RI_shevannai (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_shevannai_AA2FF410.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_thunder_switch\RI_shevannai\RI_shevannai (Custom)		46112
 	524005021	RI_choirslike (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_choirslike_BE91918E.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_water_splash_switch\RI_choirslike\RI_choirslike (Custom)		114864
 	528881146	RI_skanner_pad (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skanner_pad_B8577540.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_drops_cardboard_switch\RI_skanner_pad\RI_skanner_pad (Custom)		66048
-	545592877	RI_shevannai (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_shevannai_422C22B7.wem	Wwise Convolution Reverb (Custom)	RI_shevannai (Custom)		105360
-	554279713	RI_symphobia (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_symphobia_52E165A0.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_anvil_switch\RI_symphobia\RI_symphobia (Custom)		40304
+	545592877	RI_shevannai (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_shevannai_422C22B7.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_rattle_switch\RI_shevannai\RI_shevannai (Custom)		105360
+	554279713	RI_symphobia (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_symphobia_33EE5DD5.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_anvil_switch\RI_symphobia\RI_symphobia (Custom)		40304
 	557974677	RI_choirslike (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_choirslike_C65E5DD0.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Annulés\Sfx_electric_buzz_switch\RI_choirslike\RI_choirslike (Custom)		318320
-	560725296	RI_skannermorph (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skannermorph_F9420164.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_creak_switch\RI_skannermorph\RI_skannermorph (Custom)		284832
+	561093996	RI_electric (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_electric_DEC8F020.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_wood_fall_switch\RI_electric\RI_electric (Custom)		85552
 	561119845	RI_revlight (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_rev_light_657D16A4.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_drops_cardboard_switch\RI_revlight\RI_revlight (Custom)		572160
 	567872274	RI_suriya (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_suriya_E007B2BD.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_electricity_arcing_switch\RI_suriya\RI_suriya (Custom)		266480
 	583677087	RI_skanner_pad (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skanner_pad_932EEAE1.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_traffic_by_switch\RI_skanner_pad\RI_skanner_pad (Custom)		54864
@@ -596,27 +674,36 @@ Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
 	615365372	RI_skanner_pad (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skanner_pad_86E3AD7D.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_electricity_static_switch\RI_skanner_pad\RI_skanner_pad (Custom)		70816
 	619864542	RI_skannermorph (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skannermorph_A4258BBC.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_rattle_switch\RI_skannermorph\RI_skannermorph (Custom)		539552
 	623494312	RI_suriya (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_suriya_98A57E2A.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_creak_switch\RI_suriya\RI_suriya (Custom)		241056
+	641459777	RI_pipe (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_pipe_C6B1A581.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_wood_fall_switch\RI_pipe\RI_pipe (Custom)		76592
 	641832316	RI_skannermorph (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skannermorph_7D9F37E6.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_traffic_by_switch\RI_skannermorph\RI_skannermorph (Custom)		725232
 	644644810	RI_watersplash (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_watersplash_169301CA.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_creak_switch\RI_watersplash\RI_watersplash (Custom)		561440
 	669191855	RI_revlight (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_rev_light_8A7F15E0.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_rattle_switch\RI_revlight\RI_revlight (Custom)		120560
 	670389319	RI_choirslike (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_choirslike_25C27E04.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_creak_switch\RI_choirslike\RI_choirslike (Custom)		72400
-	679969941	RI_musicien_atmo (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\sfx_musicien_son_5EF7D0CA.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_traffic_by_switch\RI_musicien_atmo\RI_musicien_atmo (Custom)		905648
+	671705003	RI_shevannai (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_shevannai_F12DB0DD.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_hammer_switch\RI_shevannai\RI_shevannai (Custom)		71232
+	678871571	RI_watersplash (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_watersplash_4E74B076.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_wood_fall_switch\RI_watersplash\RI_watersplash (Custom)		557152
+	690183283	RI_suriya (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_suriya_09A1D435.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_log_crack_switch\RI_suriya\RI_suriya (Custom)		223120
 	713635385	RI_pipe (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_pipe_28D43EC5.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_drops_cardboard_switch\RI_pipe\RI_pipe (Custom)		64400
 	717146645	RI_pipe (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_pipe_B7A07533.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_water_splash_switch\RI_pipe\RI_pipe (Custom)		84304
 	722123379	RI_electric (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_electric_BCAEE3E7.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_paddle_switch\RI_electric\RI_electric (Custom)		74784
-	726012872	RI_suriya (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_suriya_EDC8974A.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_rattle_switch\RI_suriya\RI_suriya (Custom)		247552
+	723659768	RI_watersplash (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_watersplash_6D8BD8EF.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_log_crack_switch\RI_watersplash\RI_watersplash (Custom)		170224
+	726012872	RI_suriya (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_suriya_EDC8974A.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_anvil_switch\RI_suriya\RI_suriya (Custom)		247552
 	732872411	RI_skanner_pad (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skanner_pad_F175E106.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_water_splash_switch\RI_skanner_pad\RI_skanner_pad (Custom)		61696
 	737536833	RI_suriya (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_suriya_B89E5F40.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_traffic_by_switch\RI_suriya\RI_suriya (Custom)		187696
-	752190460	RI_symphobia (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_symphobia_4B59CC71.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_creak_switch\RI_symphobia\RI_symphobia (Custom)		44112
+	744056424	RI_shevannai (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_shevannai_68B038B4.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_log_crack_switch\RI_shevannai\RI_shevannai (Custom)		42608
+	752190460	RI_symphobia (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_symphobia_DD5F8DB4.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_creak_switch\RI_symphobia\RI_symphobia (Custom)		44112
 	758536210	RI_skanner_pad (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skanner_pad_0308A06B.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Annulés\Sfx_electric_buzz_switch\RI_skanner_pad\RI_skanner_pad (Custom)		231520
 	764562858	RI_electric (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_electric_2DCEE0F6.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_anvil_switch\RI_electric\RI_electric (Custom)		94016
-	774319586	RI_musicien_atmo (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\sfx_musicien_son_172299DF.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_creak_switch\RI_musicien_atmo\RI_musicien_atmo (Custom)		833984
+	770082890	RI_absynthdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_absynth_dark_68382D70.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_log_crack_switch\RI_absynthdark\RI_absynthdark (Custom)		40352
+	775083911	RI_electric (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_electric_D711EB03.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_log_crack_switch\RI_electric\RI_electric (Custom)		48352
 	781764572	RI_watersplash (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_watersplash_8DD63A70.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_paddle_switch\RI_watersplash\RI_watersplash (Custom)		316960
-	793150995	RI_musicien_atmo (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\sfx_musicien_son_172299DF.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_anvil_switch\RI_musicien_atmo\RI_musicien_atmo (Custom)		833984
+	788259123	RI_musicien_atmo (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\sfx_musicien_son_172299DF.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_wood_fall_switch\RI_musicien_atmo\RI_musicien_atmo (Custom)		833984
+	802287252	RI_sylenth (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_sylenth_2C0D4CEE.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_wood_fall_switch\RI_sylenth\RI_sylenth (Custom)		20608
+	803390808	RI_marseilles (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_marseilles_32AB02C1.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_wood_fall_switch\RI_marseilles\RI_marseilles (Custom)		95536
 	803796088	RI_revlight (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_rev_light_B8D80FB7.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_anvil_switch\RI_revlight\RI_revlight (Custom)		183952
 	823416201	RI_marseilles (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_marseilles_AAEDFDB0.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_thunder_switch\RI_marseilles\RI_marseilles (Custom)		128400
 	825755414	RI_electric (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_electric_ACA91200.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_electricity_static_switch\RI_electric\RI_electric (Custom)		118864
 	830793965	RI_marseilles (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_marseilles_C8EAAB5F.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_drops_cardboard_switch\RI_marseilles\RI_marseilles (Custom)		88160
+	840120234	RI_revlight (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_rev_light_5C4D4896.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_log_crack_switch\RI_revlight\RI_revlight (Custom)		35008
 	853048477	RI_skanner_pad (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skanner_pad_C00FE26C.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_rattle_switch\RI_skanner_pad\RI_skanner_pad (Custom)		50048
 	853124947	RI_absynthdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_absynth_dark_250D07E0.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_train_switch\RI_absynthdark\RI_absynthdark (Custom)		46384
 	854746960	RI_suriya (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_suriya_F0D73493.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Annulés\Sfx_electric_buzz_switch\RI_suriya\RI_suriya (Custom)		561664
@@ -626,16 +713,19 @@ Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
 	887182027	RI_shevannai (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_shevannai_49FE401B.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_creak_switch\RI_shevannai\RI_shevannai (Custom)		39232
 	888676683	RI_choirslike (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_choirslike_581E23F7.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_drops_cardboard_switch\RI_choirslike\RI_choirslike (Custom)		109776
 	905647145	RI_revlight (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_rev_light_6AAA8C4F.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_water_splash_switch\RI_revlight\RI_revlight (Custom)		515424
-	908901912	RI_symphobia (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_symphobia_63FE11FC.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_rattle_switch\RI_symphobia\RI_symphobia (Custom)		60880
-	916804666	RI_suriya (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_suriya_EDC8974A.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_anvil_switch\RI_suriya\RI_suriya (Custom)		247552
+	908901912	RI_symphobia (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_symphobia_E878D195.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_rattle_switch\RI_symphobia\RI_symphobia (Custom)		60880
 	924113453	RI_marseilles (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_marseilles_B8E71086.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_water_splash_switch\RI_marseilles\RI_marseilles (Custom)		93296
 	930250921	RI_skanner_pad (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skanner_pad_B0CD5C9E.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_paddle_switch\RI_skanner_pad\RI_skanner_pad (Custom)		67424
 	932933361	RI_skannermorph (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skannermorph_01B3EE8B.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_water_splash_switch\RI_skannermorph\RI_skannermorph (Custom)		929840
 	932944951	RI_revlight (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_rev_light_DDACB54A.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_electricity_arcing_switch\RI_revlight\RI_revlight (Custom)		154400
+	933609642	RI_skanner_pad (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skanner_pad_D77E8C18.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_log_crack_switch\RI_skanner_pad\RI_skanner_pad (Custom)		47600
+	937428614	RI_skannermorph (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skannermorph_458BD1BF.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_log_crack_switch\RI_skannermorph\RI_skannermorph (Custom)		69376
 	940609291	RI_skanner_pad (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_skanner_pad_5EB94CE2.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_thunder_switch\RI_skanner_pad\RI_skanner_pad (Custom)		101664
 	958224983	RI_electric (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_electric_DD879EEE.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_water_splash_switch\RI_electric\RI_electric (Custom)		91424
 	970260383	RI_choirslike (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_choirslike_D8CEFB75.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_anvil_switch\RI_choirslike\RI_choirslike (Custom)		72624
+	980641113	RI_suriya (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_suriya_BB9D3E94.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_wood_fall_switch\RI_suriya\RI_suriya (Custom)		153760
 	981645410	RI_revdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_revdark_9AA47DB4.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_train_switch\RI_revdark\RI_revdark (Custom)		22304
+	989552503	RI_symphobia (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_symphobia_D5EF05BD.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Bois\Sfx_wood_fall_switch\RI_symphobia\RI_symphobia (Custom)		67376
 	1003377797	RI_marseilles (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_marseilles_6375C67D.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_train_switch\RI_marseilles\RI_marseilles (Custom)		60032
 	1010605349	RI_symphobia (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_symphobia_452CF8A3.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_thunder_switch\RI_symphobia\RI_symphobia (Custom)		100096
 	1010738510	RI_choirslike (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_choirslike_8BA1597A.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_electricity_static_switch\RI_choirslike\RI_choirslike (Custom)		90304
@@ -643,7 +733,7 @@ Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
 	1026803723	RI_shevannai (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_shevannai_57D4BE34.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_train_switch\RI_shevannai\RI_shevannai (Custom)		36368
 	1031649523	RI_shevannai (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_shevannai_826B071D.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Liquide\Sfx_water_splash_switch\RI_shevannai\RI_shevannai (Custom)		49920
 	1038465850	Cymbal	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\cymbal_reverb_ABED5F63.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\User Convolver\Cymbal		704656
-	1048083952	RI_watersplash (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_watersplash_A2FAC992.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_train_switch\RI_watersplash\RI_watersplash (Custom)		220960
+	1048083952	RI_watersplash (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_watersplash_67DFC16F.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_train_switch\RI_watersplash\RI_watersplash (Custom)		220960
 	1068454558	RI_symphobia (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_symphobia_FA74E293.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_traffic_by_switch\RI_symphobia\RI_symphobia (Custom)		67088
 	1069729487	RI_absynthdark (Custom)	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\Plugins\Wwise Convolution Reverb\ri_absynth_dark_A0034162.wem	Wwise Convolution Reverb (Custom)	\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Metal\Sfx_metal_creak_switch\RI_absynthdark\RI_absynthdark (Custom)		109904
 

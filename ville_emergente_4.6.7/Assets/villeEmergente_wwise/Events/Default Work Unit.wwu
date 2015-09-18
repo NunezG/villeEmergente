@@ -1179,6 +1179,190 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Bois" ID="{C5701935-80A6-4E68-95FB-9128C45AA068}" ShortID="996653247">
+							<ChildrenList>
+								<Event Name="hammer_play" ID="{9DA6CC2D-4E52-4DA2-8B78-E2AB99B8E3A3}">
+									<ChildrenList>
+										<Action Name="Play" ID="{2610DE78-BAE3-40D1-A7FE-3F8143C5560C}" ShortID="605392108" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{E36A917F-50D2-471A-B53B-976007097036}" Global="false">
+													<ObjectRef Name="sfx_hammer" ID="{AA5CABB7-2972-479A-BB6A-BC853664C3F5}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="hammer_convolver_play" ID="{8A18215F-3412-4EF6-ACB5-DBD3E999D65C}">
+									<ChildrenList>
+										<Action Name="Play" ID="{F3C0A3D6-49AC-43DD-BEA5-65641A746AA6}" ShortID="516169870" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{7D26D28E-B276-47F4-8847-65C0F5973904}" Global="false">
+													<ObjectRef Name="Sfx_hammer_switch" ID="{FC80FB16-DEA2-4B80-9739-248A1E4B4A30}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="hammer_stop" ID="{9C46B016-2884-4088-A16B-26B195676530}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{1498A736-BCED-4822-BE93-1E54C224299D}" ShortID="1069500061" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{BA0E49B5-809B-4F7E-B746-03F9E79ADDC8}" Global="false">
+													<ObjectRef Name="sfx_hammer" ID="{AA5CABB7-2972-479A-BB6A-BC853664C3F5}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="hammer_convolver_stop" ID="{9ECD4C17-0549-474F-8D84-459BDABD8F2F}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{F7478319-111C-4047-BD0E-185DFD60520E}" ShortID="226495911" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{1137C8C4-C6AD-4017-82CA-7CEBA562C950}" Global="false">
+													<ObjectRef Name="Sfx_hammer_switch" ID="{FC80FB16-DEA2-4B80-9739-248A1E4B4A30}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="logCrack_convolver_play" ID="{C302FF12-0752-4527-A964-9229E00A4A6F}">
+									<ChildrenList>
+										<Action Name="Play" ID="{AE408390-CE01-40D6-AAEF-3E06D2E318C8}" ShortID="137270982" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{138634D3-7B54-4060-88B0-CD482E63630A}" Global="false">
+													<ObjectRef Name="Sfx_log_crack_switch" ID="{2768C093-3819-4DF7-8663-61A2ED7942B7}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="logCrack_stop" ID="{F4ADE7C0-07AC-4BFD-AFFC-038CAD9B2380}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{247E13DC-3E64-4D55-A1C5-802ACA798575}" ShortID="609321705" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{8AE7E506-C26F-414B-8E03-521B07B5CC95}" Global="false">
+													<ObjectRef Name="sfx_log_crack" ID="{BBA101DB-CA34-48F7-88DD-D72BB2BCCB9C}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="logCrack_play" ID="{7C718D15-1F19-4DE2-AF30-FB8C1697DD38}">
+									<ChildrenList>
+										<Action Name="Play" ID="{4BF62423-FF19-4D45-BFA6-271737A64BF5}" ShortID="20112416" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{392AC1E3-AED6-46D8-9165-E5099A8448DA}" Global="false">
+													<ObjectRef Name="sfx_log_crack" ID="{BBA101DB-CA34-48F7-88DD-D72BB2BCCB9C}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="logCrack_convolver_stop" ID="{08C38DC5-4824-4F89-A4DA-03E8DAE98B5B}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{E0E4EF2F-CDFE-45EB-BC6C-3C71C1885B5E}" ShortID="662326822" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{45E27495-01E3-4DD9-A082-1DBD04BFB34D}" Global="false">
+													<ObjectRef Name="Sfx_log_crack_switch" ID="{2768C093-3819-4DF7-8663-61A2ED7942B7}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="woodFall_convolver_play" ID="{40042421-689C-41F0-BC26-C7CF3A404BCF}">
+									<ChildrenList>
+										<Action Name="Play" ID="{48E38246-6490-46AD-ADB8-2F24513F4E3D}" ShortID="315403766" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{5EC687AF-D0BC-4F82-AE82-62746B23CEF7}" Global="false">
+													<ObjectRef Name="Sfx_wood_fall_switch" ID="{D8FDC7B2-FBF4-46D0-804E-C13005AC5B24}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="woodFall_stop" ID="{3F9ED1CE-BC3B-476B-B48F-C13A77868072}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{EFF415EF-3960-4F1A-90EC-76B98EC14ACA}" ShortID="758584116" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{0F1BDC94-60D4-4875-BB5C-DDB2572A4087}" Global="false">
+													<ObjectRef Name="sfx_wood_fall" ID="{8DC8168D-7D0F-4DF8-B268-AFF9D846E80B}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="woodFall_play" ID="{47DD09C3-6ECF-40B6-BC46-23B1DBB319D8}">
+									<ChildrenList>
+										<Action Name="Play" ID="{F404633B-B27A-4E19-A51D-32BF5E206B9B}" ShortID="682072631" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{33FE0089-C0A7-448B-8645-5D5A0579BD4E}" Global="false">
+													<ObjectRef Name="sfx_wood_fall" ID="{8DC8168D-7D0F-4DF8-B268-AFF9D846E80B}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="woodFall_convolver_stop" ID="{47FBD2D5-3A7D-4649-8B92-A5A9B198F6F8}">
+									<ChildrenList>
+										<Action Name="Stop" ID="{22425AF7-5790-4B0D-9C8F-F58C7A7EED3F}" ShortID="158782700" Type="Stop" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="FadeCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ElementList>
+												<Element ID="{799AEFA2-D3CE-4FE7-8084-A05A78FAD68E}" Global="false">
+													<ObjectRef Name="Sfx_wood_fall_switch" ID="{D8FDC7B2-FBF4-46D0-804E-C13005AC5B24}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												</Element>
+											</ElementList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Batiments" ID="{C72A1693-157C-43BF-9288-9EA30BF1AE8A}" ShortID="872575501">
