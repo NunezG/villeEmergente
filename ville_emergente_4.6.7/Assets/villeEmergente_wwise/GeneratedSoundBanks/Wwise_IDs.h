@@ -13,6 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ANVIL_CONVOLVER_PLAY = 1535194403U;
+        static const AkUniqueID ANVIL_CONVOLVER_STOP = 3850059241U;
+        static const AkUniqueID ANVIL_PLAY = 767008978U;
+        static const AkUniqueID ANVIL_STOP = 2437092940U;
         static const AkUniqueID BUSYSTREET_CONVOLVER_PLAY = 289850157U;
         static const AkUniqueID BUSYSTREET_CONVOLVER_STOP = 1407044475U;
         static const AkUniqueID BUSYSTREET_PLAY = 3997590316U;
@@ -57,6 +61,14 @@ namespace AK
         static const AkUniqueID INTERACTIONS_SIMPLES_MOTION = 3759079039U;
         static const AkUniqueID LACHER_MORCEAU = 2535466649U;
         static const AkUniqueID LINKER_MORCEAU = 3679869857U;
+        static const AkUniqueID METALCREAK_CONVOLVER_PLAY = 3510319782U;
+        static const AkUniqueID METALCREAK_CONVOLVER_STOP = 1066456984U;
+        static const AkUniqueID METALCREAK_PLAY = 3965185603U;
+        static const AkUniqueID METALCREAK_STOP = 1985186057U;
+        static const AkUniqueID METALRATTLE_CONVOLVER_PLAY = 3238220620U;
+        static const AkUniqueID METALRATTLE_CONVOLVER_STOP = 913037910U;
+        static const AkUniqueID METALRATTLE_PLAY = 1751789705U;
+        static const AkUniqueID METALRATTLE_STOP = 3274206639U;
         static const AkUniqueID MUSICIEN_IDLE_PLAY = 2327341772U;
         static const AkUniqueID MUSICIEN_IDLE_STOP = 2159062U;
         static const AkUniqueID MUSICIEN_JOIE = 2220177058U;
@@ -122,6 +134,10 @@ namespace AK
         static const AkUniqueID TRAFFICBY_CONVOLVER_STOP = 4117091651U;
         static const AkUniqueID TRAFFICBY_PLAY = 3501369492U;
         static const AkUniqueID TRAFFICBY_STOP = 910304878U;
+        static const AkUniqueID TRAIN_CONVOLVER_PLAY = 1092919631U;
+        static const AkUniqueID TRAIN_CONVOLVER_STOP = 3810550349U;
+        static const AkUniqueID TRAIN_PLAY = 113163278U;
+        static const AkUniqueID TRAIN_STOP = 1114702576U;
         static const AkUniqueID VILLE_CALME = 3115394940U;
         static const AkUniqueID WATER_3DOBJECT_PLAY = 193498114U;
         static const AkUniqueID WATER_3DOBJECT_STOP = 836511068U;
