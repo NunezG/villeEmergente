@@ -19,7 +19,7 @@ public class Musicien : MonoBehaviour{
                 waitTimer=0,minEndWaitTimer=10, maxEndWaitTimer = 15, endWaitTimer,
                 
                 danceTimer=0,endDanceTimer=10;
-
+    public FragmentBubble fragmentBubble;
     public Material material;
     //public AudioSource audioSource;
     //public AudioClip defaultClip;
@@ -165,6 +165,9 @@ public class Musicien : MonoBehaviour{
     public void EmitSound()
     {
         //WwiseAudioManager.instance.PlayFiniteEvent(audioEventName, this.gameObject);
+
+        fragmentBubble.BubblingIn();
+
         print("Emit Sound");
     }
 

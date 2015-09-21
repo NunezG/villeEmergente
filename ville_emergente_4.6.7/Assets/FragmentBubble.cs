@@ -61,14 +61,14 @@ public class FragmentBubble : MonoBehaviour {
             }
         }
 
-        if (Input.GetKeyDown("space"))
+        /*if (Input.GetKeyDown("space"))
         {
-            FadeIn();
-        }
+            BubblingIn();
+        }*/
 	
 	}
 
-    public void FadeIn() {
+    public void BubblingIn() {
         int rdmIndex = Random.Range(0, sprites.Length);
         spriteRenderer.sprite = sprites[rdmIndex];
         timer = 0;
