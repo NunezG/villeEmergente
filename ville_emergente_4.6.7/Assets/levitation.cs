@@ -17,6 +17,7 @@ public class levitation : MonoBehaviour {
     private float ratio = 0.0f;
     private float length;
     private float time;
+    private bool hold = false;
     
 
 	// Use this for initialization
@@ -32,27 +33,44 @@ public class levitation : MonoBehaviour {
 
         time = (target - pos).magnitude / speed;
 	}
+
+    public void IsHeld( bool state )
+    {
+        hold = state;
+
+        if(hold == false)
+        {
+            transform.position += new Vector3(0, size, 0);
+
+            Start();
+
+            ratio = 0.0f;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () 
     {
-        ratio += Time.deltaTime / time;
-
-        if (ratio >= 1.0f)
+        if (!hold)
         {
-            ratio = 0.0f;
+            ratio += Time.deltaTime / time;
 
-            pos = target;
-            target = initial + new Vector3(Random.Range(-size, size), Random.Range(-size, size), Random.Range(-size, size));
+            if (ratio >= 1.0f)
+            {
+                ratio = 0.0f;
 
-            angle_current = angle_target;
-            angle_target = angle_initial.y + Random.Range(-angle, angle);
+                pos = target;
+                target = initial + new Vector3(Random.Range(-size, size), Random.Range(-size, size), Random.Range(-size, size));
 
-            time = (target - pos).magnitude / speed;
+                angle_current = angle_target;
+                angle_target = angle_initial.y + Random.Range(-angle, angle);
+
+                time = (target - pos).magnitude / speed;
+            }
+
+            transform.position = pos + ratio * (target - pos);
+            transform.localEulerAngles = new Vector3(angle_initial.x, angle_current + ratio * (angle_target - angle_current), angle_initial.z);
         }
-
-        transform.position = pos + ratio * (target - pos);
-        transform.localEulerAngles = new Vector3(angle_initial.x, angle_current + ratio * (angle_target - angle_current), angle_initial.z);
 	}
 
 }
