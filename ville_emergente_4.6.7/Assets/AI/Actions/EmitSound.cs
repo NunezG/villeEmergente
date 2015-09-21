@@ -14,12 +14,15 @@ public class EmitSound : RAINAction
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
+
 		if (ai.WorkingMemory.GetItem<bool> ("isFragmentComplete")) {
 			ai.Body.transform.FindChild ("mesh").GetComponent<AudioEventManager> ().soundJoie ();
 			ai.Body.transform.FindChild ("mesh").GetComponent<AnimationManager> ().Sautille ();
 		} else {
 			ai.Body.transform.FindChild ("mesh").GetComponent<AudioEventManager> ().soundSon();
 			ai.Body.transform.FindChild ("mesh").GetComponent<AnimationManager> ().CriErrance ();
+            if (ai.Body.GetComponent<Musicien>()!=null)
+                ai.Body.GetComponent<Musicien>().EmitSound();
 		}
 
         return ActionResult.SUCCESS;
