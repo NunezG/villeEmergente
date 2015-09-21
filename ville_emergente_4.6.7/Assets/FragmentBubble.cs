@@ -6,10 +6,6 @@ public class FragmentBubble : MonoBehaviour {
     public Sprite[] sprites;
     public SpriteRenderer spriteRenderer;
     public float timer = 0, fadeInTile = 2,waitTime=2,fadeOutTime=2;
-    public float minimum = 0.0f;
-    public float maximum = 1f;
-    public float duration = 2.0f;
-    private float startTime;
     public bool fadeIn =false,wait=false, fadeOut=false;
 	// Use this for initialization
 	void Start () {
@@ -29,6 +25,7 @@ public class FragmentBubble : MonoBehaviour {
             }
             else
             {
+                spriteRenderer.color = new Color(1, 1, 1, 1);
                 fadeIn = false;
                 wait = true;
                 timer = 0;
@@ -56,6 +53,7 @@ public class FragmentBubble : MonoBehaviour {
             }
             else
             {
+                spriteRenderer.color = new Color(1, 1, 1, 0);
                 fadeOut = false;
                 timer = 0;
             }

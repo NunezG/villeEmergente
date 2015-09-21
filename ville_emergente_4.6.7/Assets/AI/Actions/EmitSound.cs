@@ -21,7 +21,8 @@ public class EmitSound : RAINAction
 		} else {
 			ai.Body.transform.FindChild ("mesh").GetComponent<AudioEventManager> ().soundSon();
 			ai.Body.transform.FindChild ("mesh").GetComponent<AnimationManager> ().CriErrance ();
-            ai.Body.GetComponent<Musicien>().EmitSound();
+            if (ai.Body.GetComponent<Musicien>()!=null)
+                ai.Body.GetComponent<Musicien>().EmitSound();
 		}
 
         return ActionResult.SUCCESS;
