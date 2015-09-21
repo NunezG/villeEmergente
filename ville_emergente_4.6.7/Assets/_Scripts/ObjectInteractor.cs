@@ -27,7 +27,7 @@ public class ObjectInteractor : MonoBehaviour {
 			Cm.setFailCursor ();
 		}
 
-		if (Physics.Raycast (Camera.main.ScreenPointToRay (new Vector3 (Screen.width / 2, Screen.height / 2, 0)), out hit, range * 10, 1 << 8)) 
+		if (Physics.Raycast (Camera.main.ScreenPointToRay (new Vector3 (Screen.width / 2, Screen.height / 2, 0)), out hit, range, 1 << 8)) 
 		{
 			hitObject = hit.collider.gameObject; // on recupere l'objet vise
 			InteractibleObject interacObj = hitObject.GetComponent<InteractibleObject> (); // on recupere sa composante InteractibleObject
@@ -43,7 +43,7 @@ public class ObjectInteractor : MonoBehaviour {
 			if (Input.GetButtonDown ("Action")) {
 				Cm.setFailCursor ();
 
-				if (hit.distance < range) { 
+				//if (hit.distance < range) { 
 
 
 					if (!handsFull && interacObj.type != InteractibleType.NPC) { // si on a rien en main et qu'on vise un objet rammassable
@@ -69,7 +69,7 @@ public class ObjectInteractor : MonoBehaviour {
 						//on laisse tomber l'objet en main
 						DropInHandObject ();
 					}
-				}
+				//}
 			}
 		}
 		else
