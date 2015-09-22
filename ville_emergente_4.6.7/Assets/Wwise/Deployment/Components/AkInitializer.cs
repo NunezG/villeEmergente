@@ -40,11 +40,11 @@ public class AkInitializer : MonoBehaviour
 	///Default Pool size.  This contains the meta data for your audio project.  Default size is 4 MB, but you should adjust for your needs.
     public int defaultPoolSize = c_DefaultPoolSize; 
 	
-	public const int c_LowerPoolSize = 8192; 
+	public const int c_LowerPoolSize = 32768; 
 	///Lower Pool size.  This contains the audio processing buffers and DSP data.  Default size is 2 MB, but you should adjust for your needs.
     public int lowerPoolSize = c_LowerPoolSize; 
 	
-	public const int c_StreamingPoolSize = 4096; 
+	public const int c_StreamingPoolSize = 8192; 
 	///Streaming Pool size.  This contains the streaming buffers.  Default size is 1 MB, but you should adjust for your needs.
     public int streamingPoolSize = c_StreamingPoolSize; 
 	

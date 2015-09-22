@@ -77,7 +77,7 @@ public class Fragment : MonoBehaviour{
 
 		WwiseAudioManager.StopLoopEvent(GetComponent<InteractibleObject>().soundEvent, gameObject);
 
-
+        GetComponent<levitation>().IsHeld(false);
 		//AkSoundEngine.SetRTPCValue ("binaural_to_convolver", 0);
 		//AkSoundEngine.SetSwitch("Elements_decor", "Batiment_4", gameObject);
 		//WwiseAudioManager.instance.PlayFiniteEvent("switch_bat1", this.gameObject);
@@ -93,6 +93,10 @@ public class Fragment : MonoBehaviour{
     {		
 		print ("Fragment:OnPickUp");
 		this.gameObject.SetActive (true);
+
+        GetComponent<levitation>().enabled = true;
+
+        GetComponent<levitation>().IsHeld(true);
 
 		//if (justSpawn) 
 		//{
