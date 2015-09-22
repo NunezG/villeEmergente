@@ -4,6 +4,8 @@ using System.Collections;
 public class AudioEventManager : MonoBehaviour {
 
 	public NPCType audioName;
+	public bool idleSound = true;
+
 
     public void Start()
     {
@@ -15,7 +17,7 @@ public class AudioEventManager : MonoBehaviour {
     public void PlayFiniteEventWithCallBack(string eventName)
     {
 		//Stops previous event
-		SounStopdIdle();
+		if (idleSound) SounStopdIdle();
 		WwiseAudioManager.PlayFiniteEvent (eventName, this.transform.parent.gameObject, MyCallbackFunction);
 		//AkSoundEngine.PostEvent(eventName, this.gameObject, (uint)AkCallbackType.AK_EndOfEvent, MyCallbackFunction, this.gameObject);	
 	}
@@ -29,7 +31,7 @@ public class AudioEventManager : MonoBehaviour {
 			//AkSoundEngine.AkGameObjectID ID = info.gameObjID
 
 			//Restart the pervious event
-			SoundPlayIdle ();
+			if (idleSound) SoundPlayIdle ();
 		}	
 	}
 
