@@ -16,10 +16,6 @@ public class IfGuideIsOnPoV : RAINAction
     {
         if (ai.Body.GetComponent<Passant>().sceneLeader.GetComponent<Guide>().tMemory.GetItem<bool>("destinationReached"))
         {
-			ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Satisfait();
-			ai.Body.transform.FindChild("mesh").GetComponent<AudioEventManager> ().soundSon();
-
-
             ai.WorkingMemory.SetItem<bool>("guideIsOnPov", true);
             return ActionResult.SUCCESS;
         }
