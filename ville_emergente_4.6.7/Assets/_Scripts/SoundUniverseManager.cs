@@ -44,6 +44,9 @@ public class SoundUniverseManager : MonoBehaviour {
 
 		if (Input.GetKeyDown (KeyCode.Space))
 		{
+			AkSoundEngine.StopAll ();
+
+		//	AkSoundEngine.StopAll ();
 			//if (switchType != switchDark)
 			//{
 				//switchType = switchDark;
