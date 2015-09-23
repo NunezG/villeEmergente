@@ -75,8 +75,8 @@ public class Guide : MonoBehaviour
         {
             Fragment fragment = inHandObject.GetComponent<Fragment>();
             pdv.batimentAVisiter.OnAddingFragment(fragment);
-            fragment.gameObject.SetActive(false);
             AddingFragment();
+			fragment.gameObject.SetActive(false);
         }
         else
         {
