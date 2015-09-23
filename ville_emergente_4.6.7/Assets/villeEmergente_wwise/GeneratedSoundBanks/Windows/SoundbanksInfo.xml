@@ -66,11 +66,11 @@
 				<Event Id="4036125012" Name="fragment_call_urban_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1375190009" Name="fragment_call_wood_play" MaxAttenuation="25.000000"/>
 				<Event Id="3966254655" Name="fragment_call_wood_stop" MaxAttenuation="0.000000"/>
-				<Event Id="1128982233" Name="guide_idle_play" MaxAttenuation="50.000000"/>
+				<Event Id="1128982233" Name="guide_idle_play" MaxAttenuation="10.000000"/>
 				<Event Id="3761520415" Name="guide_idle_stop" MaxAttenuation="0.000000"/>
-				<Event Id="4080525896" Name="guide_nouveau_son" MaxAttenuation="50.000000"/>
-				<Event Id="1735048872" Name="guide_ordre" MaxAttenuation="50.000000"/>
-				<Event Id="2204075982" Name="guide_son" MaxAttenuation="50.000000"/>
+				<Event Id="4080525896" Name="guide_nouveau_son" MaxAttenuation="10.000000"/>
+				<Event Id="1735048872" Name="guide_ordre" MaxAttenuation="10.000000"/>
+				<Event Id="2204075982" Name="guide_son" MaxAttenuation="10.000000"/>
 				<Event Id="3334697193" Name="hammer_convolver_play" MaxAttenuation="50.000000"/>
 				<Event Id="562249743" Name="hammer_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1109396808" Name="hammer_play" MaxAttenuation="50.000000"/>
@@ -90,21 +90,21 @@
 				<Event Id="913037910" Name="metalRattle_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1751789705" Name="metalRattle_play" MaxAttenuation="50.000000"/>
 				<Event Id="3274206639" Name="metalRattle_stop" MaxAttenuation="0.000000"/>
-				<Event Id="2327341772" Name="musicien_idle_play" MaxAttenuation="50.000000"/>
+				<Event Id="2327341772" Name="musicien_idle_play" MaxAttenuation="10.000000"/>
 				<Event Id="2159062" Name="musicien_idle_stop" MaxAttenuation="0.000000"/>
-				<Event Id="2220177058" Name="musicien_joie" MaxAttenuation="50.000000"/>
-				<Event Id="161018858" Name="musicien_ouverture" MaxAttenuation="50.000000"/>
-				<Event Id="916635435" Name="musicien_son" MaxAttenuation="50.000000"/>
-				<Event Id="2629109720" Name="musicien_tourne" MaxAttenuation="50.000000"/>
+				<Event Id="2220177058" Name="musicien_joie" MaxAttenuation="10.000000"/>
+				<Event Id="161018858" Name="musicien_ouverture" MaxAttenuation="10.000000"/>
+				<Event Id="916635435" Name="musicien_son" MaxAttenuation="10.000000"/>
+				<Event Id="2629109720" Name="musicien_tourne" MaxAttenuation="10.000000"/>
 				<Event Id="2562287223" Name="paddle_convolver_play" MaxAttenuation="50.000000"/>
 				<Event Id="1250729381" Name="paddle_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="2502442470" Name="paddle_play" MaxAttenuation="50.000000"/>
 				<Event Id="16899800" Name="paddle_stop" MaxAttenuation="0.000000"/>
-				<Event Id="3122327449" Name="passant_danse" MaxAttenuation="50.000000"/>
-				<Event Id="3967439363" Name="passant_idle_play" MaxAttenuation="50.000000"/>
+				<Event Id="3122327449" Name="passant_danse" MaxAttenuation="10.000000"/>
+				<Event Id="3967439363" Name="passant_idle_play" MaxAttenuation="10.000000"/>
 				<Event Id="2028913609" Name="passant_idle_stop" MaxAttenuation="0.000000"/>
-				<Event Id="1195210688" Name="passant_son" MaxAttenuation="50.000000"/>
-				<Event Id="4275515877" Name="passant_tourne" MaxAttenuation="50.000000"/>
+				<Event Id="1195210688" Name="passant_son" MaxAttenuation="10.000000"/>
+				<Event Id="4275515877" Name="passant_tourne" MaxAttenuation="10.000000"/>
 				<Event Id="2138522384" Name="prendre_morceau" MaxAttenuation="50.000000"/>
 				<Event Id="812837510" Name="rain_2DObject_play"/>
 				<Event Id="2622262392" Name="rain_2DObject_stop" MaxAttenuation="0.000000"/>
@@ -185,11 +185,11 @@
 				</File>
 				<File Id="7039575" Language="SFX">
 					<ShortName>sfx_fragment_metal_call.wav</ShortName>
-					<Path>SFX\sfx_fragment_metal_call_25E25C03.wem</Path>
+					<Path>SFX\sfx_fragment_metal_call_FA982138.wem</Path>
 				</File>
 				<File Id="7083372" Language="SFX">
 					<ShortName>sfx_electricity_static.wav</ShortName>
-					<Path>SFX\sfx_electricity_static_9A4606FE.wem</Path>
+					<Path>SFX\sfx_electricity_static_16C919E9.wem</Path>
 				</File>
 				<File Id="8547829" Language="SFX">
 					<ShortName>ri_sylenth.wav</ShortName>
@@ -243,7 +243,7 @@
 				</File>
 				<File Id="32344818" Language="SFX">
 					<ShortName>sfx_train.wav</ShortName>
-					<Path>SFX\sfx_train_337820B8.wem</Path>
+					<Path>SFX\sfx_train_318C7D7F.wem</Path>
 				</File>
 				<File Id="41809020" Language="SFX">
 					<ShortName>ri_rev_light.wav</ShortName>
@@ -267,7 +267,7 @@
 				</File>
 				<File Id="46384889" Language="SFX">
 					<ShortName>sfx_electricity_arcing.wav</ShortName>
-					<Path>SFX\sfx_electricity_arcing_872E07DD_22B822D0.wem</Path>
+					<Path>SFX\sfx_electricity_arcing_D9D3BF12_22B822D0.wem</Path>
 				</File>
 				<File Id="46907607" Language="SFX">
 					<ShortName>ri_skanner_pad.wav</ShortName>
@@ -276,11 +276,11 @@
 				</File>
 				<File Id="46964867" Language="SFX">
 					<ShortName>sfx_paddle.wav</ShortName>
-					<Path>SFX\sfx_paddle_91A420B5.wem</Path>
+					<Path>SFX\sfx_paddle_95067BD2.wem</Path>
 				</File>
 				<File Id="48800980" Language="SFX">
 					<ShortName>sfx_hammer_wood.wav</ShortName>
-					<Path>SFX\sfx_hammer_wood_2ACFBC15.wem</Path>
+					<Path>SFX\sfx_hammer_wood_2C458626.wem</Path>
 				</File>
 				<File Id="55749257" Language="SFX">
 					<ShortName>ri_suriya.wav</ShortName>
@@ -289,7 +289,7 @@
 				</File>
 				<File Id="57806489" Language="SFX">
 					<ShortName>Sfx_ri_choirslike.wav</ShortName>
-					<Path>SFX\Sfx_ri_choirslike_950FF8F3.wem</Path>
+					<Path>SFX\Sfx_ri_choirslike_6602BDDC.wem</Path>
 				</File>
 				<File Id="59359522" Language="SFX">
 					<ShortName>ri_skannermorph.wav</ShortName>
@@ -298,7 +298,7 @@
 				</File>
 				<File Id="61270204" Language="SFX">
 					<ShortName>Sfx_ri_watersplash.wav</ShortName>
-					<Path>SFX\Sfx_ri_watersplash_950FF8F3.wem</Path>
+					<Path>SFX\Sfx_ri_watersplash_6602BDDC.wem</Path>
 				</File>
 				<File Id="63781649" Language="SFX">
 					<ShortName>ri_symphobia.wav</ShortName>
@@ -312,7 +312,7 @@
 				</File>
 				<File Id="64397103" Language="SFX">
 					<ShortName>sfx_musicien_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_F25CAB83.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_65860D9E.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="65970661" Language="SFX">
@@ -322,15 +322,15 @@
 				</File>
 				<File Id="66416189" Language="SFX">
 					<ShortName>sfx_electricity_arcing.wav</ShortName>
-					<Path>SFX\sfx_electricity_arcing_872E07DD.wem</Path>
+					<Path>SFX\sfx_electricity_arcing_D9D3BF12.wem</Path>
 				</File>
 				<File Id="68116553" Language="SFX">
 					<ShortName>sfx_musicien_respiration_03.wav</ShortName>
-					<Path>SFX\sfx_musicien_respiration_03_E3BEDD58.wem</Path>
+					<Path>SFX\sfx_musicien_respiration_03_B484AF53.wem</Path>
 				</File>
 				<File Id="69037644" Language="SFX">
 					<ShortName>sfx_building_site.wav</ShortName>
-					<Path>SFX\sfx_building_site_BA61E076.wem</Path>
+					<Path>SFX\sfx_building_site_4DA39D8D.wem</Path>
 				</File>
 				<File Id="73003083" Language="SFX">
 					<ShortName>ri_marseilles.wav</ShortName>
@@ -339,19 +339,19 @@
 				</File>
 				<File Id="74315757" Language="SFX">
 					<ShortName>sfx_thunder.wav</ShortName>
-					<Path>SFX\sfx_thunder_91CACF2A.wem</Path>
+					<Path>SFX\sfx_thunder_D7819071.wem</Path>
 				</File>
 				<File Id="76700068" Language="SFX">
 					<ShortName>sfx_anvil.wav</ShortName>
-					<Path>SFX\sfx_anvil_5090589F.wem</Path>
+					<Path>SFX\sfx_anvil_094B0F9C.wem</Path>
 				</File>
 				<File Id="77014115" Language="SFX">
 					<ShortName>Sfx_ri_skannermorph.wav</ShortName>
-					<Path>SFX\Sfx_ri_skannermorph_950FF8F3.wem</Path>
+					<Path>SFX\Sfx_ri_skannermorph_6602BDDC.wem</Path>
 				</File>
 				<File Id="79795147" Language="SFX">
 					<ShortName>sfx_footsteps_01_v2.wav</ShortName>
-					<Path>SFX\sfx_footsteps_01_v2_950FF8F3.wem</Path>
+					<Path>SFX\sfx_footsteps_01_v2_6602BDDC.wem</Path>
 				</File>
 				<File Id="80597723" Language="SFX">
 					<ShortName>ri_absynth_dark.wav</ShortName>
@@ -360,7 +360,7 @@
 				</File>
 				<File Id="88545374" Language="SFX">
 					<ShortName>sfx_musicien_respiration_04.wav</ShortName>
-					<Path>SFX\sfx_musicien_respiration_04_04B5E390.wem</Path>
+					<Path>SFX\sfx_musicien_respiration_04_86DAEE47.wem</Path>
 				</File>
 				<File Id="89833719" Language="SFX">
 					<ShortName>ri_skanner_pad.wav</ShortName>
@@ -379,7 +379,7 @@
 				</File>
 				<File Id="100846770" Language="SFX">
 					<ShortName>sfx_brewing.wav</ShortName>
-					<Path>SFX\sfx_brewing_C42C4D4B.wem</Path>
+					<Path>SFX\sfx_brewing_53B00E18.wem</Path>
 				</File>
 				<File Id="109973138" Language="SFX">
 					<ShortName>sfx_musicien_son.wav</ShortName>
@@ -388,7 +388,7 @@
 				</File>
 				<File Id="111986403" Language="SFX">
 					<ShortName>sfx_log_crack.wav</ShortName>
-					<Path>SFX\sfx_log_crack_EE2B7293.wem</Path>
+					<Path>SFX\sfx_log_crack_3F75B3F4.wem</Path>
 				</File>
 				<File Id="118672614" Language="SFX">
 					<ShortName>ri_pipe.wav</ShortName>
@@ -402,15 +402,15 @@
 				</File>
 				<File Id="122963745" Language="SFX">
 					<ShortName>sfx_guide_dark_son.wav</ShortName>
-					<Path>SFX\sfx_guide_dark_son_A811478E.wem</Path>
+					<Path>SFX\sfx_guide_dark_son_77E16501.wem</Path>
 				</File>
 				<File Id="123579301" Language="SFX">
 					<ShortName>sfx_building_site.wav</ShortName>
-					<Path>SFX\sfx_building_site_BA61E076_6A0AF135.wem</Path>
+					<Path>SFX\sfx_building_site_4DA39D8D_6A0AF135.wem</Path>
 				</File>
 				<File Id="123996682" Language="SFX">
 					<ShortName>sfx_musicien_dark_respiration_06.wav</ShortName>
-					<Path>SFX\sfx_musicien_dark_respiration_06_0A4A01CB.wem</Path>
+					<Path>SFX\sfx_musicien_dark_respiration_06_E8070240.wem</Path>
 				</File>
 				<File Id="124185746" Language="SFX">
 					<ShortName>ri_choirslike.wav</ShortName>
@@ -464,7 +464,7 @@
 				</File>
 				<File Id="159212132" Language="SFX">
 					<ShortName>sfx_guide_dark_respiration_02.wav</ShortName>
-					<Path>SFX\sfx_guide_dark_respiration_02_B6559965.wem</Path>
+					<Path>SFX\sfx_guide_dark_respiration_02_132C719E.wem</Path>
 				</File>
 				<File Id="162463159" Language="SFX">
 					<ShortName>ri_revdark.wav</ShortName>
@@ -473,7 +473,7 @@
 				</File>
 				<File Id="162478722" Language="SFX">
 					<ShortName>sfx_footsteps_08_v2.wav</ShortName>
-					<Path>SFX\sfx_footsteps_08_v2_950FF8F3.wem</Path>
+					<Path>SFX\sfx_footsteps_08_v2_6602BDDC.wem</Path>
 				</File>
 				<File Id="164133065" Language="SFX">
 					<ShortName>ri_symphobia.wav</ShortName>
@@ -482,7 +482,7 @@
 				</File>
 				<File Id="165344794" Language="SFX">
 					<ShortName>soft rain - brown noise - human activities - drops reverb - 02.wav</ShortName>
-					<Path>SFX\soft rain - brown noise - human activities - drops reverb - 02_8AC08B01.wem</Path>
+					<Path>SFX\soft rain - brown noise - human activities - drops reverb - 02_FA3C0666.wem</Path>
 				</File>
 				<File Id="168175220" Language="SFX">
 					<ShortName>ri_marseilles.wav</ShortName>
@@ -501,7 +501,7 @@
 				</File>
 				<File Id="177296733" Language="SFX">
 					<ShortName>sfx_musicien_dark_respiration_03.wav</ShortName>
-					<Path>SFX\sfx_musicien_dark_respiration_03_A5617EA2.wem</Path>
+					<Path>SFX\sfx_musicien_dark_respiration_03_EDCC66F1.wem</Path>
 				</File>
 				<File Id="178625608" Language="SFX">
 					<ShortName>ri_marseilles.wav</ShortName>
@@ -525,11 +525,11 @@
 				</File>
 				<File Id="184241894" Language="SFX">
 					<ShortName>Sfx_ri_suriya.wav</ShortName>
-					<Path>SFX\Sfx_ri_suriya_950FF8F3.wem</Path>
+					<Path>SFX\Sfx_ri_suriya_6602BDDC.wem</Path>
 				</File>
 				<File Id="186153398" Language="SFX">
 					<ShortName>sfx_musicien_ouverture.wav</ShortName>
-					<Path>SFX\sfx_musicien_ouverture_6A6C8F9E.wem</Path>
+					<Path>SFX\sfx_musicien_ouverture_9A2A4B3D.wem</Path>
 				</File>
 				<File Id="199168153" Language="SFX">
 					<ShortName>ri_pipe.wav</ShortName>
@@ -538,7 +538,7 @@
 				</File>
 				<File Id="200281006" Language="SFX">
 					<ShortName>sfx_passant_respiration_01.wav</ShortName>
-					<Path>SFX\sfx_passant_respiration_01_63C87E39.wem</Path>
+					<Path>SFX\sfx_passant_respiration_01_10F47B12.wem</Path>
 				</File>
 				<File Id="205402196" Language="SFX">
 					<ShortName>ri_shevannai.wav</ShortName>
@@ -547,15 +547,15 @@
 				</File>
 				<File Id="210743791" Language="SFX">
 					<ShortName>sfx_lacher_morceau.wav</ShortName>
-					<Path>SFX\sfx_lacher_morceau_950FF8F3.wem</Path>
+					<Path>SFX\sfx_lacher_morceau_6602BDDC.wem</Path>
 				</File>
 				<File Id="212568920" Language="SFX">
 					<ShortName>sfx_fragment_liquid_call.wav</ShortName>
-					<Path>SFX\sfx_fragment_liquid_call_53916142.wem</Path>
+					<Path>SFX\sfx_fragment_liquid_call_792AA93D.wem</Path>
 				</File>
 				<File Id="213439988" Language="SFX">
 					<ShortName>Sfx_ri_skanner_pad.wav</ShortName>
-					<Path>SFX\Sfx_ri_skanner_pad_950FF8F3.wem</Path>
+					<Path>SFX\Sfx_ri_skanner_pad_6602BDDC.wem</Path>
 				</File>
 				<File Id="218684668" Language="SFX">
 					<ShortName>ri_shevannai.wav</ShortName>
@@ -584,7 +584,7 @@
 				</File>
 				<File Id="235702269" Language="SFX">
 					<ShortName>sfx_guide_respiration_03.wav</ShortName>
-					<Path>SFX\sfx_guide_respiration_03_74D8955D.wem</Path>
+					<Path>SFX\sfx_guide_respiration_03_994FD3D6.wem</Path>
 				</File>
 				<File Id="240399465" Language="SFX">
 					<ShortName>ri_watersplash.wav</ShortName>
@@ -593,7 +593,7 @@
 				</File>
 				<File Id="254435697" Language="SFX">
 					<ShortName>sfx_passant_dark_tourne.wav</ShortName>
-					<Path>SFX\sfx_passant_dark_tourne_069235CF.wem</Path>
+					<Path>SFX\sfx_passant_dark_tourne_F88FB86C.wem</Path>
 				</File>
 				<File Id="256183079" Language="SFX">
 					<ShortName>ri_revdark.wav</ShortName>
@@ -607,7 +607,7 @@
 				</File>
 				<File Id="269898543" Language="SFX">
 					<ShortName>sfx_musicien_dark_respiration_04.wav</ShortName>
-					<Path>SFX\sfx_musicien_dark_respiration_04_F71583BA.wem</Path>
+					<Path>SFX\sfx_musicien_dark_respiration_04_F0B65601.wem</Path>
 				</File>
 				<File Id="275831905" Language="SFX">
 					<ShortName>sfx_musicien_son.wav</ShortName>
@@ -621,15 +621,15 @@
 				</File>
 				<File Id="279598686" Language="SFX">
 					<ShortName>Sfx_ri_pipe.wav</ShortName>
-					<Path>SFX\Sfx_ri_pipe_950FF8F3.wem</Path>
+					<Path>SFX\Sfx_ri_pipe_6602BDDC.wem</Path>
 				</File>
 				<File Id="281704168" Language="SFX">
 					<ShortName>sfx_guide_ordre.wav</ShortName>
-					<Path>SFX\sfx_guide_ordre_AAE28E24.wem</Path>
+					<Path>SFX\sfx_guide_ordre_15B68C1B.wem</Path>
 				</File>
 				<File Id="284134746" Language="SFX">
 					<ShortName>sfx_guide_dark_respiration_05.wav</ShortName>
-					<Path>SFX\sfx_guide_dark_respiration_05_F27F0D8E.wem</Path>
+					<Path>SFX\sfx_guide_dark_respiration_05_2DC4C8B9.wem</Path>
 				</File>
 				<File Id="284381232" Language="SFX">
 					<ShortName>ri_choirslike.wav</ShortName>
@@ -658,7 +658,7 @@
 				</File>
 				<File Id="297417493" Language="SFX">
 					<ShortName>sfx_footsteps_04_v2.wav</ShortName>
-					<Path>SFX\sfx_footsteps_04_v2_950FF8F3.wem</Path>
+					<Path>SFX\sfx_footsteps_04_v2_6602BDDC.wem</Path>
 				</File>
 				<File Id="307331539" Language="SFX">
 					<ShortName>ri_watersplash.wav</ShortName>
@@ -702,7 +702,7 @@
 				</File>
 				<File Id="334615060" Language="SFX">
 					<ShortName>sfx_footsteps_05_v2.wav</ShortName>
-					<Path>SFX\sfx_footsteps_05_v2_950FF8F3.wem</Path>
+					<Path>SFX\sfx_footsteps_05_v2_6602BDDC.wem</Path>
 				</File>
 				<File Id="338076098" Language="SFX">
 					<ShortName>ri_watersplash.wav</ShortName>
@@ -711,7 +711,7 @@
 				</File>
 				<File Id="338283210" Language="SFX">
 					<ShortName>sfx_soft_rain.wav</ShortName>
-					<Path>SFX\sfx_soft_rain_0D81CD0C.wem</Path>
+					<Path>SFX\sfx_soft_rain_C456159B.wem</Path>
 				</File>
 				<File Id="340849640" Language="SFX">
 					<ShortName>ri_marseilles.wav</ShortName>
@@ -725,7 +725,7 @@
 				</File>
 				<File Id="345389724" Language="SFX">
 					<ShortName>sfx_passant_respiration_02.wav</ShortName>
-					<Path>SFX\sfx_passant_respiration_02_299FCA36.wem</Path>
+					<Path>SFX\sfx_passant_respiration_02_52736B29.wem</Path>
 				</File>
 				<File Id="346925210" Language="SFX">
 					<ShortName>ri_skanner_pad.wav</ShortName>
@@ -739,7 +739,7 @@
 				</File>
 				<File Id="355509982" Language="SFX">
 					<ShortName>Sfx_ri_marseilles.wav</ShortName>
-					<Path>SFX\Sfx_ri_marseilles_950FF8F3.wem</Path>
+					<Path>SFX\Sfx_ri_marseilles_6602BDDC.wem</Path>
 				</File>
 				<File Id="363840658" Language="SFX">
 					<ShortName>ri_absynth_dark.wav</ShortName>
@@ -778,7 +778,7 @@
 				</File>
 				<File Id="387101083" Language="SFX">
 					<ShortName>sfx_ville_calme.wav</ShortName>
-					<Path>SFX\sfx_ville_calme_BA573D6E.wem</Path>
+					<Path>SFX\sfx_ville_calme_B364D211.wem</Path>
 				</File>
 				<File Id="389619589" Language="SFX">
 					<ShortName>ri_rev_light.wav</ShortName>
@@ -787,7 +787,7 @@
 				</File>
 				<File Id="392624030" Language="SFX">
 					<ShortName>sfx_linker_morceau.wav</ShortName>
-					<Path>SFX\sfx_linker_morceau_950FF8F3.wem</Path>
+					<Path>SFX\sfx_linker_morceau_6602BDDC.wem</Path>
 				</File>
 				<File Id="393441529" Language="SFX">
 					<ShortName>ri_absynth_dark.wav</ShortName>
@@ -801,11 +801,11 @@
 				</File>
 				<File Id="394458146" Language="SFX">
 					<ShortName>sfx_electric_buzz.wav</ShortName>
-					<Path>SFX\sfx_electric_buzz_2983C7FA.wem</Path>
+					<Path>SFX\sfx_electric_buzz_63F24E0D.wem</Path>
 				</File>
 				<File Id="394657154" Language="SFX">
 					<ShortName>sfx_guide_dark_ordre.wav</ShortName>
-					<Path>SFX\sfx_guide_dark_ordre_E87D48EC.wem</Path>
+					<Path>SFX\sfx_guide_dark_ordre_EAC77593.wem</Path>
 				</File>
 				<File Id="395400413" Language="SFX">
 					<ShortName>ri_rev_light.wav</ShortName>
@@ -824,7 +824,7 @@
 				</File>
 				<File Id="403341299" Language="SFX">
 					<ShortName>sfx_prendre_morceau.wav</ShortName>
-					<Path>SFX\sfx_prendre_morceau_950FF8F3.wem</Path>
+					<Path>SFX\sfx_prendre_morceau_6602BDDC.wem</Path>
 				</File>
 				<File Id="403776113" Language="SFX">
 					<ShortName>ri_electric.wav</ShortName>
@@ -833,7 +833,7 @@
 				</File>
 				<File Id="409979021" Language="SFX">
 					<ShortName>sfx_musicien_dark_joie.wav</ShortName>
-					<Path>SFX\sfx_musicien_dark_joie_F6FAD06C.wem</Path>
+					<Path>SFX\sfx_musicien_dark_joie_D126BC9B.wem</Path>
 				</File>
 				<File Id="424282730" Language="SFX">
 					<ShortName>ri_choirslike.wav</ShortName>
@@ -847,7 +847,7 @@
 				</File>
 				<File Id="426163079" Language="SFX">
 					<ShortName>sfx_fragment_bois_call.wav</ShortName>
-					<Path>SFX\sfx_fragment_bois_call_DD3F748E.wem</Path>
+					<Path>SFX\sfx_fragment_bois_call_3AAF8925.wem</Path>
 				</File>
 				<File Id="426513446" Language="SFX">
 					<ShortName>ri_skannermorph.wav</ShortName>
@@ -861,7 +861,7 @@
 				</File>
 				<File Id="432804772" Language="SFX">
 					<ShortName>sfx_musicien_dark_ouverture.wav</ShortName>
-					<Path>SFX\sfx_musicien_dark_ouverture_0FE6B242.wem</Path>
+					<Path>SFX\sfx_musicien_dark_ouverture_7C2BBB7D.wem</Path>
 				</File>
 				<File Id="434038222" Language="SFX">
 					<ShortName>ri_absynth_dark.wav</ShortName>
@@ -870,7 +870,7 @@
 				</File>
 				<File Id="441125095" Language="SFX">
 					<ShortName>sfx_fragment_electricity_call.wav</ShortName>
-					<Path>SFX\sfx_fragment_electricity_call_54C83338.wem</Path>
+					<Path>SFX\sfx_fragment_electricity_call_21763673.wem</Path>
 				</File>
 				<File Id="453527598" Language="SFX">
 					<ShortName>ri_absynth_dark.wav</ShortName>
@@ -879,19 +879,19 @@
 				</File>
 				<File Id="469843770" Language="SFX">
 					<ShortName>Sfx_ri_sylenth.wav</ShortName>
-					<Path>SFX\Sfx_ri_sylenth_950FF8F3.wem</Path>
+					<Path>SFX\Sfx_ri_sylenth_6602BDDC.wem</Path>
 				</File>
 				<File Id="475948589" Language="SFX">
 					<ShortName>sfx_musicien_respiration_06.wav</ShortName>
-					<Path>SFX\sfx_musicien_respiration_06_FECD1C45.wem</Path>
+					<Path>SFX\sfx_musicien_respiration_06_712464BE.wem</Path>
 				</File>
 				<File Id="480734998" Language="SFX">
 					<ShortName>sfx_passant_tourne.wav</ShortName>
-					<Path>SFX\sfx_passant_tourne_C4EA1711.wem</Path>
+					<Path>SFX\sfx_passant_tourne_F7084F92.wem</Path>
 				</File>
 				<File Id="482751310" Language="SFX">
 					<ShortName>sfx_footsteps_02_v2.wav</ShortName>
-					<Path>SFX\sfx_footsteps_02_v2_950FF8F3.wem</Path>
+					<Path>SFX\sfx_footsteps_02_v2_6602BDDC.wem</Path>
 				</File>
 				<File Id="484484462" Language="SFX">
 					<ShortName>ri_absynth_dark.wav</ShortName>
@@ -905,7 +905,7 @@
 				</File>
 				<File Id="496512953" Language="SFX">
 					<ShortName>sfx_passant_dark_son.wav</ShortName>
-					<Path>SFX\sfx_passant_dark_son_30461F63.wem</Path>
+					<Path>SFX\sfx_passant_dark_son_C2C2E274.wem</Path>
 				</File>
 				<File Id="500831021" Language="SFX">
 					<ShortName>ri_shevannai.wav</ShortName>
@@ -914,7 +914,7 @@
 				</File>
 				<File Id="502472035" Language="SFX">
 					<ShortName>sfx_guide_dark_respiration_06.wav</ShortName>
-					<Path>SFX\sfx_guide_dark_respiration_06_07038801.wem</Path>
+					<Path>SFX\sfx_guide_dark_respiration_06_B9243C22.wem</Path>
 				</File>
 				<File Id="510311939" Language="SFX">
 					<ShortName>ri_pipe.wav</ShortName>
@@ -923,7 +923,7 @@
 				</File>
 				<File Id="514825319" Language="SFX">
 					<ShortName>sfx_passant_dark_respiration_01.wav</ShortName>
-					<Path>SFX\sfx_passant_dark_respiration_01_950FF8F3.wem</Path>
+					<Path>SFX\sfx_passant_dark_respiration_01_6602BDDC.wem</Path>
 				</File>
 				<File Id="516255751" Language="SFX">
 					<ShortName>ri_shevannai.wav</ShortName>
@@ -932,7 +932,7 @@
 				</File>
 				<File Id="519760378" Language="SFX">
 					<ShortName>sfx_musicien_dark_tourne.wav</ShortName>
-					<Path>SFX\sfx_musicien_dark_tourne_263F4BC1.wem</Path>
+					<Path>SFX\sfx_musicien_dark_tourne_52BB200E.wem</Path>
 				</File>
 				<File Id="524005021" Language="SFX">
 					<ShortName>ri_choirslike.wav</ShortName>
@@ -941,7 +941,7 @@
 				</File>
 				<File Id="524736407" Language="SFX">
 					<ShortName>Sfx_ri_electric.wav</ShortName>
-					<Path>SFX\Sfx_ri_electric_950FF8F3.wem</Path>
+					<Path>SFX\Sfx_ri_electric_6602BDDC.wem</Path>
 				</File>
 				<File Id="528881146" Language="SFX">
 					<ShortName>ri_skanner_pad.wav</ShortName>
@@ -950,7 +950,7 @@
 				</File>
 				<File Id="544891264" Language="SFX">
 					<ShortName>sfx_footsteps_03_v2.wav</ShortName>
-					<Path>SFX\sfx_footsteps_03_v2_950FF8F3.wem</Path>
+					<Path>SFX\sfx_footsteps_03_v2_6602BDDC.wem</Path>
 				</File>
 				<File Id="545592877" Language="SFX">
 					<ShortName>ri_shevannai.wav</ShortName>
@@ -964,7 +964,7 @@
 				</File>
 				<File Id="557897535" Language="SFX">
 					<ShortName>sfx_busy_street.wav</ShortName>
-					<Path>SFX\sfx_busy_street_44686525.wem</Path>
+					<Path>SFX\sfx_busy_street_DD2C20A2.wem</Path>
 				</File>
 				<File Id="557974677" Language="SFX">
 					<ShortName>ri_choirslike.wav</ShortName>
@@ -983,7 +983,7 @@
 				</File>
 				<File Id="563338810" Language="SFX">
 					<ShortName>sfx_toucher_element.wav</ShortName>
-					<Path>SFX\sfx_toucher_element_950FF8F3.wem</Path>
+					<Path>SFX\sfx_toucher_element_6602BDDC.wem</Path>
 				</File>
 				<File Id="565443507" Language="SFX">
 					<ShortName>ri_electric.wav</ShortName>
@@ -997,11 +997,11 @@
 				</File>
 				<File Id="573450885" Language="SFX">
 					<ShortName>Sfx_ri_shevannai.wav</ShortName>
-					<Path>SFX\Sfx_ri_shevannai_950FF8F3.wem</Path>
+					<Path>SFX\Sfx_ri_shevannai_6602BDDC.wem</Path>
 				</File>
 				<File Id="578100575" Language="SFX">
 					<ShortName>sfx_musicien_dark_respiration_01.wav</ShortName>
-					<Path>SFX\sfx_musicien_dark_respiration_01_798B6D9B.wem</Path>
+					<Path>SFX\sfx_musicien_dark_respiration_01_AB6032A0.wem</Path>
 				</File>
 				<File Id="593711184" Language="SFX">
 					<ShortName>ri_pipe.wav</ShortName>
@@ -1025,7 +1025,7 @@
 				</File>
 				<File Id="601234390" Language="SFX">
 					<ShortName>sfx_guide_respiration_04.wav</ShortName>
-					<Path>SFX\sfx_guide_respiration_04_6136FBE9.wem</Path>
+					<Path>SFX\sfx_guide_respiration_04_6A145F66.wem</Path>
 				</File>
 				<File Id="608060956" Language="SFX">
 					<ShortName>ri_electric.wav</ShortName>
@@ -1034,11 +1034,11 @@
 				</File>
 				<File Id="608263982" Language="SFX">
 					<ShortName>Sfx_ri_revdark.wav</ShortName>
-					<Path>SFX\Sfx_ri_revdark_950FF8F3.wem</Path>
+					<Path>SFX\Sfx_ri_revdark_6602BDDC.wem</Path>
 				</File>
 				<File Id="609703478" Language="SFX">
 					<ShortName>sfx_brewing.wav</ShortName>
-					<Path>SFX\sfx_brewing_C42C4D4B_FD739E20.wem</Path>
+					<Path>SFX\sfx_brewing_53B00E18_FD739E20.wem</Path>
 				</File>
 				<File Id="615365372" Language="SFX">
 					<ShortName>ri_skanner_pad.wav</ShortName>
@@ -1067,7 +1067,7 @@
 				</File>
 				<File Id="649306740" Language="SFX">
 					<ShortName>sfx_musicien_respiration_02.wav</ShortName>
-					<Path>SFX\sfx_musicien_respiration_02_886CC5B5.wem</Path>
+					<Path>SFX\sfx_musicien_respiration_02_D1CCA882.wem</Path>
 				</File>
 				<File Id="669191855" Language="SFX">
 					<ShortName>ri_rev_light.wav</ShortName>
@@ -1091,12 +1091,12 @@
 				</File>
 				<File Id="679969941" Language="SFX">
 					<ShortName>sfx_musicien_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_00A58D01.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_9243BBA7.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="684188370" Language="SFX">
 					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>SFX\sfx_musicien_dark_son_259ADC27.wem</Path>
+					<Path>SFX\sfx_musicien_dark_son_BF1B089C.wem</Path>
 				</File>
 				<File Id="690183283" Language="SFX">
 					<ShortName>ri_suriya.wav</ShortName>
@@ -1110,11 +1110,11 @@
 				</File>
 				<File Id="711322153" Language="SFX">
 					<ShortName>sfx_passant_dark_respiration_02.wav</ShortName>
-					<Path>SFX\sfx_passant_dark_respiration_02_950FF8F3.wem</Path>
+					<Path>SFX\sfx_passant_dark_respiration_02_6602BDDC.wem</Path>
 				</File>
 				<File Id="712626117" Language="SFX">
 					<ShortName>sfx_musicien_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_0632679A.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_8A3D8945.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="713635385" Language="SFX">
@@ -1144,7 +1144,7 @@
 				</File>
 				<File Id="727022421" Language="SFX">
 					<ShortName>sfx_musicien_respiration_01.wav</ShortName>
-					<Path>SFX\sfx_musicien_respiration_01_02B4A130.wem</Path>
+					<Path>SFX\sfx_musicien_respiration_01_414F9B2B.wem</Path>
 				</File>
 				<File Id="732872411" Language="SFX">
 					<ShortName>ri_skanner_pad.wav</ShortName>
@@ -1153,11 +1153,11 @@
 				</File>
 				<File Id="735704915" Language="SFX">
 					<ShortName>sfx_musicien_dark_respiration_02.wav</ShortName>
-					<Path>SFX\sfx_musicien_dark_respiration_02_FA2FACD5.wem</Path>
+					<Path>SFX\sfx_musicien_dark_respiration_02_752B21F2.wem</Path>
 				</File>
 				<File Id="738437857" Language="SFX">
 					<ShortName>sfx_wood_fall.wav</ShortName>
-					<Path>SFX\sfx_wood_fall_D64AECDA.wem</Path>
+					<Path>SFX\sfx_wood_fall_6065CA5D.wem</Path>
 				</File>
 				<File Id="744056424" Language="SFX">
 					<ShortName>ri_shevannai.wav</ShortName>
@@ -1186,11 +1186,11 @@
 				</File>
 				<File Id="771216038" Language="SFX">
 					<ShortName>sfx_guide_respiration_01.wav</ShortName>
-					<Path>SFX\sfx_guide_respiration_01_6AB16D09.wem</Path>
+					<Path>SFX\sfx_guide_respiration_01_03A43786.wem</Path>
 				</File>
 				<File Id="774319586" Language="SFX">
 					<ShortName>sfx_musicien_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_4D7982E9.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_23222E2E.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="775083911" Language="SFX">
@@ -1200,7 +1200,7 @@
 				</File>
 				<File Id="776156565" Language="SFX">
 					<ShortName>sfx_guide_respiration_06.wav</ShortName>
-					<Path>SFX\sfx_guide_respiration_06_DF9D9B13.wem</Path>
+					<Path>SFX\sfx_guide_respiration_06_508A5EC8.wem</Path>
 				</File>
 				<File Id="781764572" Language="SFX">
 					<ShortName>ri_watersplash.wav</ShortName>
@@ -1209,11 +1209,11 @@
 				</File>
 				<File Id="782147887" Language="SFX">
 					<ShortName>sfx_metal_creak.wav</ShortName>
-					<Path>SFX\sfx_metal_creak_9C67D7BD_78386D5A.wem</Path>
+					<Path>SFX\sfx_metal_creak_BADD951A_78386D5A.wem</Path>
 				</File>
 				<File Id="784759727" Language="SFX">
 					<ShortName>sfx_guide_respiration_05.wav</ShortName>
-					<Path>SFX\sfx_guide_respiration_05_D4102484.wem</Path>
+					<Path>SFX\sfx_guide_respiration_05_2B20F97B.wem</Path>
 				</File>
 				<File Id="788259123" Language="SFX">
 					<ShortName>sfx_musicien_son.wav</ShortName>
@@ -1222,11 +1222,11 @@
 				</File>
 				<File Id="788675832" Language="SFX">
 					<ShortName>sfx_musicien_tourne.wav</ShortName>
-					<Path>SFX\sfx_musicien_tourne_B8E6B1D9.wem</Path>
+					<Path>SFX\sfx_musicien_tourne_3A1E8FAE.wem</Path>
 				</File>
 				<File Id="789123976" Language="SFX">
 					<ShortName>Sfx_ri_symphobia.wav</ShortName>
-					<Path>SFX\Sfx_ri_symphobia_950FF8F3.wem</Path>
+					<Path>SFX\Sfx_ri_symphobia_6602BDDC.wem</Path>
 				</File>
 				<File Id="793150995" Language="SFX">
 					<ShortName>sfx_musicien_son.wav</ShortName>
@@ -1235,7 +1235,7 @@
 				</File>
 				<File Id="801096109" Language="SFX">
 					<ShortName>sfx_passant_son.wav</ShortName>
-					<Path>SFX\sfx_passant_son_3864900C.wem</Path>
+					<Path>SFX\sfx_passant_son_0F20E967.wem</Path>
 				</File>
 				<File Id="802287252" Language="SFX">
 					<ShortName>ri_sylenth.wav</ShortName>
@@ -1274,7 +1274,7 @@
 				</File>
 				<File Id="835402146" Language="SFX">
 					<ShortName>sfx_musicien_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_90E2F81D.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_son_5BDECEB2.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="840120234" Language="SFX">
@@ -1304,19 +1304,19 @@
 				</File>
 				<File Id="855011190" Language="SFX">
 					<ShortName>sfx_metal_rattle.wav</ShortName>
-					<Path>SFX\sfx_metal_rattle_EE55DC61.wem</Path>
+					<Path>SFX\sfx_metal_rattle_B119F616.wem</Path>
 				</File>
 				<File Id="856207129" Language="SFX">
 					<ShortName>sfx_passant_dark_danse.wav</ShortName>
-					<Path>SFX\sfx_passant_dark_danse_1260AD2F_111F01D4.wem</Path>
+					<Path>SFX\sfx_passant_dark_danse_44E6C690_111F01D4.wem</Path>
 				</File>
 				<File Id="857643460" Language="SFX">
 					<ShortName>sfx_drops_carboard.wav</ShortName>
-					<Path>SFX\sfx_drops_carboard_ABF82687.wem</Path>
+					<Path>SFX\sfx_drops_carboard_3A2E0FCC.wem</Path>
 				</File>
 				<File Id="862717797" Language="SFX">
 					<ShortName>sfx_passant_danse.wav</ShortName>
-					<Path>SFX\sfx_passant_danse_FBB15E5C_111F01D4.wem</Path>
+					<Path>SFX\sfx_passant_danse_D98A235F_111F01D4.wem</Path>
 				</File>
 				<File Id="864104617" Language="SFX">
 					<ShortName>ri_suriya.wav</ShortName>
@@ -1340,7 +1340,7 @@
 				</File>
 				<File Id="888063290" Language="SFX">
 					<ShortName>sfx_water_splash.wav</ShortName>
-					<Path>SFX\sfx_water_splash_7AF3DED3.wem</Path>
+					<Path>SFX\sfx_water_splash_1B02A384.wem</Path>
 				</File>
 				<File Id="888676683" Language="SFX">
 					<ShortName>ri_choirslike.wav</ShortName>
@@ -1354,7 +1354,7 @@
 				</File>
 				<File Id="902295525" Language="SFX">
 					<ShortName>sfx_guide_dark_respiration_04.wav</ShortName>
-					<Path>SFX\sfx_guide_dark_respiration_04_BC96C98F.wem</Path>
+					<Path>SFX\sfx_guide_dark_respiration_04_F2EE9B68.wem</Path>
 				</File>
 				<File Id="905647145" Language="SFX">
 					<ShortName>ri_rev_light.wav</ShortName>
@@ -1408,11 +1408,11 @@
 				</File>
 				<File Id="943957025" Language="SFX">
 					<ShortName>paddle light freely 01.wav</ShortName>
-					<Path>SFX\paddle light freely 01_C7E637FB.wem</Path>
+					<Path>SFX\paddle light freely 01_85697578.wem</Path>
 				</File>
 				<File Id="946500758" Language="SFX">
 					<ShortName>sfx_musicien_joie.wav</ShortName>
-					<Path>SFX\sfx_musicien_joie_83E1F4C7.wem</Path>
+					<Path>SFX\sfx_musicien_joie_2C07C400.wem</Path>
 				</File>
 				<File Id="958224983" Language="SFX">
 					<ShortName>ri_electric.wav</ShortName>
@@ -1421,15 +1421,15 @@
 				</File>
 				<File Id="963062918" Language="SFX">
 					<ShortName>sfx_footsteps_06_v2.wav</ShortName>
-					<Path>SFX\sfx_footsteps_06_v2_950FF8F3.wem</Path>
+					<Path>SFX\sfx_footsteps_06_v2_6602BDDC.wem</Path>
 				</File>
 				<File Id="966743415" Language="SFX">
 					<ShortName>sfx_guide_dark_respiration_01.wav</ShortName>
-					<Path>SFX\sfx_guide_dark_respiration_01_611A8A58.wem</Path>
+					<Path>SFX\sfx_guide_dark_respiration_01_D203A327.wem</Path>
 				</File>
 				<File Id="969870296" Language="SFX">
 					<ShortName>sfx_fragment_urban_call.wav</ShortName>
-					<Path>SFX\sfx_fragment_urban_call_3050A85A.wem</Path>
+					<Path>SFX\sfx_fragment_urban_call_B207B225.wem</Path>
 				</File>
 				<File Id="970260383" Language="SFX">
 					<ShortName>ri_choirslike.wav</ShortName>
@@ -1448,7 +1448,7 @@
 				</File>
 				<File Id="983328808" Language="SFX">
 					<ShortName>sfx_musicien_son.wav</ShortName>
-					<Path>SFX\sfx_musicien_son_AC99D5AE.wem</Path>
+					<Path>SFX\sfx_musicien_son_5D66599D.wem</Path>
 				</File>
 				<File Id="989552503" Language="SFX">
 					<ShortName>ri_symphobia.wav</ShortName>
@@ -1472,7 +1472,7 @@
 				</File>
 				<File Id="1019937081" Language="SFX">
 					<ShortName>Sfx_ri_absynth_dark.wav</ShortName>
-					<Path>SFX\Sfx_ri_absynth_dark_950FF8F3.wem</Path>
+					<Path>SFX\Sfx_ri_absynth_dark_6602BDDC.wem</Path>
 				</File>
 				<File Id="1024036657" Language="SFX">
 					<ShortName>ri_skannermorph.wav</ShortName>
@@ -1491,7 +1491,7 @@
 				</File>
 				<File Id="1037490087" Language="SFX">
 					<ShortName>Sfx_ri_rev_light.wav</ShortName>
-					<Path>SFX\Sfx_ri_rev_light_950FF8F3.wem</Path>
+					<Path>SFX\Sfx_ri_rev_light_6602BDDC.wem</Path>
 				</File>
 				<File Id="1038465850" Language="SFX">
 					<ShortName>cymbal_reverb.wav</ShortName>
@@ -1505,15 +1505,15 @@
 				</File>
 				<File Id="1052472384" Language="SFX">
 					<ShortName>sfx_guide_respiration_02.wav</ShortName>
-					<Path>SFX\sfx_guide_respiration_02_6BFD10C0.wem</Path>
+					<Path>SFX\sfx_guide_respiration_02_70ED8A4F.wem</Path>
 				</File>
 				<File Id="1058618159" Language="SFX">
 					<ShortName>sfx_guide_nouveau_son.wav</ShortName>
-					<Path>SFX\sfx_guide_nouveau_son_B1BD6A0A.wem</Path>
+					<Path>SFX\sfx_guide_nouveau_son_E7BD0FDD.wem</Path>
 				</File>
 				<File Id="1066095528" Language="SFX">
 					<ShortName>sfx_metal_creak.wav</ShortName>
-					<Path>SFX\sfx_metal_creak_9C67D7BD.wem</Path>
+					<Path>SFX\sfx_metal_creak_BADD951A.wem</Path>
 				</File>
 				<File Id="1068454558" Language="SFX">
 					<ShortName>ri_symphobia.wav</ShortName>
@@ -1527,13 +1527,13 @@
 				</File>
 				<File Id="1070947063" Language="SFX">
 					<ShortName>sfx_guide_dark_respiration_03.wav</ShortName>
-					<Path>SFX\sfx_guide_dark_respiration_03_076C3265.wem</Path>
+					<Path>SFX\sfx_guide_dark_respiration_03_F2FFA4AA.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 			<ExcludedMemoryFiles>
 				<File Id="25644424" Language="SFX">
 					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_427DBE1F.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_F6D05544.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="109234697" Language="SFX">
@@ -1573,17 +1573,17 @@
 				</File>
 				<File Id="454858103" Language="SFX">
 					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_D3AD1FB0.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_8F3083F7.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="485845248" Language="SFX">
 					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_2AC1E610.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_3D273D6C.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="552141386" Language="SFX">
 					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_BAF8A9C5.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_953B3C19.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="625516522" Language="SFX">
@@ -1593,7 +1593,7 @@
 				</File>
 				<File Id="693766727" Language="SFX">
 					<ShortName>sfx_metal_creak.wav</ShortName>
-					<Path>SFX\sfx_metal_creak_9C67D7BD_432913F2.wem</Path>
+					<Path>SFX\sfx_metal_creak_BADD951A_432913F2.wem</Path>
 				</File>
 				<File Id="707385814" Language="SFX">
 					<ShortName>sfx_musicien_dark_son.wav</ShortName>
@@ -1607,12 +1607,12 @@
 				</File>
 				<File Id="1004987277" Language="SFX">
 					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_C67FE2F3.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_0F8BB3F4.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="1010572178" Language="SFX">
 					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_1819370C.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_FAA71438.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 			</ExcludedMemoryFiles>

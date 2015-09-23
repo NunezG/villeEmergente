@@ -7,5 +7,5 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Effect plug-ins	ID	Name	Type				Notes
-	780565931	AstoundSound RTI (Custom)	AstoundSound RTI			
+	813685460	AstoundSound RTI (Custom)	AstoundSound RTI			
 

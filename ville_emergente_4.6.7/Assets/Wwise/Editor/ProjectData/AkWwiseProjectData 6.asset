@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9104d85d8786abd41b52baf0dee4e731, type: 3}
-  m_Name: AkWwiseProjectData 36
+  m_Name: AkWwiseProjectData 6
   m_EditorClassIdentifier: 
   EventWwu: []
   AuxBusWwu: []
@@ -22,7 +22,7 @@ MonoBehaviour:
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)
-  defaultPoolSize: 16384
-  lowerPoolSize: 8192
-  streamingPoolSize: 4096
-  memoryCutoffThreshold: .949999988
+  defaultPoolSize: 131072
+  lowerPoolSize: 262144
+  streamingPoolSize: 131072
+  memoryCutoffThreshold: .899999976
