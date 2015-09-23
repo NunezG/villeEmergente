@@ -101,10 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c336472b3d96a74bbc38a518b234833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  switchNumber: 5
   fragment: {fileID: 0}
-  defaultMaterial: {fileID: 2100000, guid: ac85b2bed7f1cb34c8537b3626a4936c, type: 2}
-  activatedMaterial: {fileID: 2100000, guid: fc56dd6b8d19fc342b7c6c17af78eb5b, type: 2}
+  switchName: 1
 --- !u!114 &11473008
 MonoBehaviour:
   m_ObjectHideFlags: 1

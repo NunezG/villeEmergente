@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<ActorMixer Name="Joueur" ID="{CFB662AF-C053-4B86-BF35-67DD3452BC2E}" ShortID="550476142">
 					<PropertyList>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="Priority" Type="int16">
 							<ValueList>
@@ -1109,7 +1110,6 @@
 								<Value>100</Value>
 							</ValueList>
 						</Property>
-						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="2"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1198,12 +1198,6 @@
 								<Value>70</Value>
 							</ValueList>
 						</Property>
-						<Property Name="UseMaxSoundPerInstance" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
-						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="2"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -71547,12 +71541,6 @@
 								<Value>65</Value>
 							</ValueList>
 						</Property>
-						<Property Name="UseMaxSoundPerInstance" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
-						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="2"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -72082,12 +72070,6 @@
 						</Property>
 						<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 						<Property Name="PositioningType" Type="int16" Value="1"/>
-						<Property Name="UseMaxSoundPerInstance" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
-						<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="2"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">

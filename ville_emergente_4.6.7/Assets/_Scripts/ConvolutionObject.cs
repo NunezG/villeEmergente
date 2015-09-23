@@ -19,6 +19,10 @@ public class ConvolutionObject : MonoBehaviour {
 		//this.renderer.material = defaultMaterial;
 		this.gameObject.layer = 8; // mis dans la layer InteractibleObject pour limiter les raycast avec un layermask
 		defaultMaterial = this.GetComponentInChildren<Renderer> ().material;
+        if (fragment != null)
+        {
+            OnAddingFragment(fragment);
+        }
 	}
 	
 	// Update is called once per frame

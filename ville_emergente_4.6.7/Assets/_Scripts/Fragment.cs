@@ -10,7 +10,8 @@ public class Fragment : MonoBehaviour{
 	// Use this for initialization
 	//public FragmentType family;
 	public FragmentType family;
-	private bool justSpawn = true; 
+	private bool justSpawn = true;
+    public bool desactivateOnStart = false;
 
 	public string[][] soundString = new string[5][] ;
 
@@ -55,6 +56,10 @@ public class Fragment : MonoBehaviour{
 		WwiseAudioManager.PlayLoopEvent ("fragment_call_"+family.ToString(), this.gameObject, false);
         //audioSource.clip = defaultClip;
        // this.renderer.material = material;
+        if (desactivateOnStart)
+        {
+            this.gameObject.SetActive(false);
+        }
 	}
 	
 	// Update is called once per frame
