@@ -19,7 +19,7 @@ public class AiPrint : RAINAction
         {
             string toPrint = toPrintExp.Evaluate<string>(ai.DeltaTime, ai.WorkingMemory);
             //Debug.Log("print : " + toPrint + "");
-            Debug.Log(ai.Body.name + " : Print : " + toPrint);
+            //Debug.Log(ai.Body.name + " : Print : " + toPrint);
         }
 
 

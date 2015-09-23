@@ -38,10 +38,10 @@ public class Fragment : MonoBehaviour{
 
     public void Start()
     {
-		print("FragmentStart: "+ family.ToString()+ " /// "+ family.GetHashCode() +  " /// " + (int)family);
+		//print("FragmentStart: "+ family.ToString()+ " /// "+ family.GetHashCode() +  " /// " + (int)family);
 		//randomSoundFromFamily ();
 		
-		print ("THELENGHT "+ soundString[(int)family].Length);
+		//print ("THELENGHT "+ soundString[(int)family].Length);
 
 	//	print ("THELENGHT "+ soundString[0,]);
 
@@ -85,13 +85,13 @@ public class Fragment : MonoBehaviour{
 		
 	public void AnswerTheCall()
     {
-        print("Fragment:AnswerTheCall");
+        //print("Fragment:AnswerTheCall");
        // Play();
     }
 
 	public GameObject OnTouch()
     {		
-		print ("Fragment:OnPickUp");
+		//print ("Fragment:OnPickUp");
 		this.gameObject.SetActive (true);
 
         GetComponent<levitation>().enabled = true;

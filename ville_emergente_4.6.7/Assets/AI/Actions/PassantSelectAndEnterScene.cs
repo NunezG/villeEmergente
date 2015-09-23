@@ -10,7 +10,7 @@ public class PassantSelectAndEnterScene : RAINAction
     public override void Start(RAIN.Core.AI ai)
     {
         base.Start(ai);
-        Debug.Log(ai.Body.name + " : PassantSelectAndEnterScene");
+        //Debug.Log(ai.Body.name + " : PassantSelectAndEnterScene");
     }
 
     public override ActionResult Execute(RAIN.Core.AI ai)

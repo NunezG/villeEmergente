@@ -12,7 +12,7 @@ public class PassantSelectTarget : RAINAction
     {
         base.Start(ai);
         target = ai.WorkingMemory.GetItem<GameObject>("target");
-        Debug.Log(ai.Body.name + " : SELECT TARGET ");
+        //Debug.Log(ai.Body.name + " : SELECT TARGET ");
     }
 
     public override ActionResult Execute(RAIN.Core.AI ai)
@@ -22,7 +22,7 @@ public class PassantSelectTarget : RAINAction
         {
             //Debut de la partie
             int targetIndex = Random.Range(0, ai.Body.GetComponent<Passant>().targets.Count);
-            Debug.Log(ai.Body.name + " : targetIndex : " + targetIndex);
+            //Debug.Log(ai.Body.name + " : targetIndex : " + targetIndex);
             target = ai.Body.GetComponent<Passant>().targets[targetIndex];
 
         }

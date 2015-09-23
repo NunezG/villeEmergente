@@ -10,7 +10,7 @@ public class LookForFreeSpot : RAINAction
     public override void Start(RAIN.Core.AI ai)
     {
         base.Start(ai);
-        Debug.Log(ai.Body.name + " : LookForFreeSpot  ");
+        //Debug.Log(ai.Body.name + " : LookForFreeSpot  ");
     }
 
     public override ActionResult Execute(RAIN.Core.AI ai)

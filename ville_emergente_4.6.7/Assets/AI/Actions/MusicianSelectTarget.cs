@@ -12,7 +12,7 @@ public class MusicianSelectTarget : RAINAction
     {
         base.Start(ai);
         target = ai.WorkingMemory.GetItem<GameObject>("target");
-        Debug.Log(ai.Body.name + " : SELECT TARGET ");
+        //Debug.Log(ai.Body.name + " : SELECT TARGET ");
 
 		if ( ai.WorkingMemory.GetItem<bool>("isFragmentComplete"))
 			ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Marche ();
@@ -29,7 +29,7 @@ public class MusicianSelectTarget : RAINAction
         {
             //Debut de la partie
             int targetIndex = Random.Range(0, ai.Body.GetComponent<Musicien>().targets.Count);
-            Debug.Log(ai.Body.name + " : targetIndex : " + targetIndex);
+            //Debug.Log(ai.Body.name + " : targetIndex : " + targetIndex);
             target = ai.Body.GetComponent<Musicien>().targets[targetIndex];
 
         }
