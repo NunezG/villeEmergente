@@ -9,6 +9,7 @@ public class PointDeVue : MonoBehaviour {
     public ConvolutionObject batimentAVisiter;
     public List<GameObject> spots = new List<GameObject>();
     public List<bool> availablesSpots = new List<bool>();
+    public bool isBeingVisited = false;
 
 	// Use this for initialization
 	void Start () {
