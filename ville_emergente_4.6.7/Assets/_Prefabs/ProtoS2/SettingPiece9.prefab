@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fragment: {fileID: 0}
-  switchName: 1
+  switchName: 6
 --- !u!114 &11415874
 MonoBehaviour:
   m_ObjectHideFlags: 1
