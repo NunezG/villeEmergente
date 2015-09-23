@@ -35,6 +35,10 @@ public class Fragment : MonoBehaviour{
 		soundString [4] = new string[]{"buildingSite", "train", "brewing"}; // Urban
 
         this.tag = "Fragment";
+        int familyInt = (int)family;
+
+        //Choose random family
+        GetComponent<InteractibleObject>().soundEvent = soundString[familyInt][Random.Range(0, soundString[familyInt].Length)];
     }
 
     public void Start()
@@ -47,10 +51,6 @@ public class Fragment : MonoBehaviour{
 	//	print ("THELENGHT "+ soundString[0,]);
 
 		
-		int familyInt = (int)family;
-
-		//Choose random family
-		GetComponent<InteractibleObject>().soundEvent =soundString [familyInt][Random.Range (0,soundString[familyInt].Length)];
 
 
 		WwiseAudioManager.PlayLoopEvent ("fragment_call_"+family.ToString(), this.gameObject, false);
