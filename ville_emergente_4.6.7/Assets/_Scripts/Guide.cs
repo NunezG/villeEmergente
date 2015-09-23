@@ -115,6 +115,8 @@ public class Guide : MonoBehaviour
     public void AddingFragment()
     {
         print("Interactor:AddingFragment");
+
+        tMemory.SetItem<bool>("hasFragment", false);
         inHandObject.rigidbody.isKinematic = false;
         inHandObject.transform.parent = null;
         SettingPiece.fragmentsOfZeWorld.Remove(inHandObject.GetComponent<Fragment>());
