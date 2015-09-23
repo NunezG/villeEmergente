@@ -115,8 +115,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13c25487bbf84e146982cc98dacdcfd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: f5fb818fbd8ad46408fc7e422a50723c, type: 2}
+  material: {fileID: 2100000, guid: 9421e753066038b4aba57791d8a56642, type: 2}
   family: 2
+  desactivateOnStart: 0
 --- !u!114 &11423040
 MonoBehaviour:
   m_ObjectHideFlags: 1
