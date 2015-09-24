@@ -33,7 +33,8 @@ public class ObjectInteractor : MonoBehaviour {
 			InteractibleObject interacObj = hitObject.GetComponent<InteractibleObject> (); // on recupere sa composante InteractibleObject
 
 
-			if (handsFull && !interacObj.GetComponent<ConvolutionObject> ().HasFragment () && (interacObj.type == InteractibleType.SettingPiece || interacObj.type == InteractibleType.NPC)) {
+            if (handsFull && (interacObj.type == InteractibleType.SettingPiece || interacObj.type == InteractibleType.NPC) && !interacObj.GetComponent<ConvolutionObject>().HasFragment())
+            {
 				Cm.setFragmentCursor ();
 			} else if (!handsFull && (interacObj.type == InteractibleType.Fragment || (interacObj.type == InteractibleType.SettingPiece && interacObj.GetComponent<ConvolutionObject> ().HasFragment ()))) {
 				Cm.setInteractibleCursor ();
