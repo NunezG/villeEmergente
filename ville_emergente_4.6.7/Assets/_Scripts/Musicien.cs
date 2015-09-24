@@ -20,7 +20,7 @@ public class Musicien : MonoBehaviour{
                 
                 danceTimer=0,endDanceTimer=10;
     public FragmentBubble fragmentBubble;
-    public Material material;
+    public Material defaultMaterial, elecMaterial, liquidMaterial, metalMaterial, urbanMaterial, woodMaterial;
     //public AudioSource audioSource;
     //public AudioClip defaultClip;
    // private string audioEventName = "";
@@ -69,7 +69,7 @@ public class Musicien : MonoBehaviour{
         endSoundTimer = (int)Random.Range(minEndSoundTimer, maxEndSoundTimer);
         endWaitTimer = (int)Random.Range(minEndWaitTimer, maxEndWaitTimer);
 
-		this.transform.FindChild("mesh").GetChild(1).renderer.material = material;
+		//this.transform.FindChild("mesh").GetChild(1).renderer.material = material;
 
 		//WwiseAudioManager.instance.soundPlayIdle ("musicien", this.gameObject);
 	}
@@ -137,6 +137,7 @@ public class Musicien : MonoBehaviour{
 
     public void OpenTheWay()
     {
+
         for (int i = 0; i < buildings.Length; i++)
         {
             buildings[i].GetComponent<Building>().Down();
@@ -153,8 +154,29 @@ public class Musicien : MonoBehaviour{
 
         //SetIsFragmentComplete(true);
         SetJustReceivedFragmentComplete(true);
+        Material addedMaterial;
+        switch(fragment.family){
+            case FragmentType.electricity:
+                addedMaterial = elecMaterial;
+                break;
+            case FragmentType.liquid:
+                addedMaterial = liquidMaterial;
+                break;
+            case FragmentType.metal:
+                addedMaterial = metalMaterial;
+                break;
+            case FragmentType.urban:
+                addedMaterial = urbanMaterial;
+                break;
+            case FragmentType.wood:
+                addedMaterial = woodMaterial;
+                break;
+            default:
+                addedMaterial = defaultMaterial;
+                break;
+        }
        // this.Getcomp   fragment = fragment;
-        
+        this.transform.FindChild("mesh").GetChild(1).renderer.material = addedMaterial;
      //   this.renderer.material = fragment.material;
         //this.audioSource.clip = fragment.GetClip();
 	//	this.audioEventName = fragment.GetComponent<InteractibleObject>().soundEvent;

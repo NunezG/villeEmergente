@@ -90,9 +90,9 @@
 				<Event Id="913037910" Name="metalRattle_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1751789705" Name="metalRattle_play" MaxAttenuation="50.000000"/>
 				<Event Id="3274206639" Name="metalRattle_stop" MaxAttenuation="0.000000"/>
+				<Event Id="59174050" Name="musicien_danse" MaxAttenuation="10.000000"/>
 				<Event Id="2327341772" Name="musicien_idle_play" MaxAttenuation="10.000000"/>
 				<Event Id="2159062" Name="musicien_idle_stop" MaxAttenuation="0.000000"/>
-				<Event Id="2220177058" Name="musicien_joie" MaxAttenuation="10.000000"/>
 				<Event Id="161018858" Name="musicien_ouverture" MaxAttenuation="10.000000"/>
 				<Event Id="916635435" Name="musicien_son" MaxAttenuation="10.000000"/>
 				<Event Id="2629109720" Name="musicien_tourne" MaxAttenuation="10.000000"/>

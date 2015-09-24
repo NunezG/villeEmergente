@@ -46,6 +46,7 @@ public class Guide : MonoBehaviour
     {
         AIRig aiRig = GetComponentInChildren<AIRig>();
         tMemory = aiRig.AI.WorkingMemory as RAIN.Memory.BasicMemory;
+        startingFragment.GetComponent<levitation>().IsHeld(true);
         PickUpObject(startingFragment);
     }
 
@@ -84,6 +85,35 @@ public class Guide : MonoBehaviour
         }
     }
 
+    public void InteractWithBuildingBis()
+    {
+        if (inHandObject == null)
+        {
+            PickUpObject(pdv.batimentAVisiter.OnTouch());
+        }
+        else
+        {
+            if (pdv.batimentAVisiter.fragment!=null)
+            {
+                Fragment inHandFragment = inHandObject.GetComponent<Fragment>(); // recuperer le fragment en main
+                GameObject inBuildingFragment = pdv.batimentAVisiter.OnPickUp(); // recuperer le fragment du building
+                pdv.batimentAVisiter.OnAddingFragment(inHandFragment); // ajouter le fragment tenu par le guide au batiment
+                AddingFragment(); // détacher le fragment du guide
+                inHandFragment.gameObject.SetActive(false); // désactiver le fragment
+                PickUpObject(inBuildingFragment); // ramasser le fragment du batiment
+
+            }
+            else
+            {
+                Fragment fragment = inHandObject.GetComponent<Fragment>();
+                pdv.batimentAVisiter.OnAddingFragment(fragment);
+                AddingFragment();
+                fragment.gameObject.SetActive(false);
+            }
+
+        }
+    }
+
     public void EmitSound()
     {
 
@@ -112,6 +142,7 @@ public class Guide : MonoBehaviour
         inHandObject.rigidbody.isKinematic = true;
         handsFull = true;
     }
+
     public void AddingFragment()
     {
         //print("Interactor:AddingFragment");

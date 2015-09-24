@@ -85,9 +85,9 @@ namespace AK
         static const AkUniqueID METALRATTLE_CONVOLVER_STOP = 913037910U;
         static const AkUniqueID METALRATTLE_PLAY = 1751789705U;
         static const AkUniqueID METALRATTLE_STOP = 3274206639U;
+        static const AkUniqueID MUSICIEN_DANSE = 59174050U;
         static const AkUniqueID MUSICIEN_IDLE_PLAY = 2327341772U;
         static const AkUniqueID MUSICIEN_IDLE_STOP = 2159062U;
-        static const AkUniqueID MUSICIEN_JOIE = 2220177058U;
         static const AkUniqueID MUSICIEN_OUVERTURE = 161018858U;
         static const AkUniqueID MUSICIEN_SON = 916635435U;
         static const AkUniqueID MUSICIEN_TOURNE = 2629109720U;
