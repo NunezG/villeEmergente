@@ -5128,6 +5128,12 @@
 														</ItemList>
 													</Grouping>
 													<Grouping>
+														<SwitchRef Name="Dark_mus" ID="{39C9F7DE-65C7-4DEC-86BB-ACFE0BF4F364}"/>
+														<ItemList>
+															<ItemRef Name="RI_musicien_dark" ID="{2D561D52-CBAC-43AE-B9C5-37F73468E4D1}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
 														<SwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
 														<ItemList>
 															<ItemRef Name="RI_marseilles" ID="{255FA83C-E757-4AC7-84AA-13CDC6C428CF}"/>
@@ -8874,6 +8880,12 @@
 														<SwitchRef Name="Dark_2" ID="{C09A34D0-F519-40CC-BF22-6ACC7C538EE4}"/>
 														<ItemList>
 															<ItemRef Name="RI_choirslike" ID="{289EFDD7-F573-4B74-868B-4D622596FC59}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dark_mus" ID="{39C9F7DE-65C7-4DEC-86BB-ACFE0BF4F364}"/>
+														<ItemList>
+															<ItemRef Name="RI_musicien_dark" ID="{8B830546-999F-48C4-AF82-31F23D38F192}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
@@ -12633,6 +12645,12 @@
 														<SwitchRef Name="Dark_2" ID="{C09A34D0-F519-40CC-BF22-6ACC7C538EE4}"/>
 														<ItemList>
 															<ItemRef Name="RI_choirslike" ID="{27D728A3-0676-4E02-B369-523FAF00A209}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dark_mus" ID="{39C9F7DE-65C7-4DEC-86BB-ACFE0BF4F364}"/>
+														<ItemList>
+															<ItemRef Name="RI_musicien_dark" ID="{95B5AB8C-E64C-4F62-BF98-C39D932B23A8}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
@@ -16454,6 +16472,12 @@
 														</ItemList>
 													</Grouping>
 													<Grouping>
+														<SwitchRef Name="Dark_mus" ID="{39C9F7DE-65C7-4DEC-86BB-ACFE0BF4F364}"/>
+														<ItemList>
+															<ItemRef Name="RI_musicien_dark" ID="{E88625C2-B41C-430F-BD2F-334CC463E73A}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
 														<SwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
 														<ItemList>
 															<ItemRef Name="RI_marseilles" ID="{3A467265-8697-485F-AC78-3B7EC9C3B071}"/>
@@ -20164,6 +20188,12 @@
 														<SwitchRef Name="Dark_2" ID="{C09A34D0-F519-40CC-BF22-6ACC7C538EE4}"/>
 														<ItemList>
 															<ItemRef Name="RI_choirslike" ID="{021E8E37-9DF9-4E76-A8DC-91E0FAFB217C}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dark_mus" ID="{39C9F7DE-65C7-4DEC-86BB-ACFE0BF4F364}"/>
+														<ItemList>
+															<ItemRef Name="RI_musicien_dark" ID="{66C42986-44A0-4349-BAC6-8CEA9052946E}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
@@ -23969,6 +23999,12 @@
 														</ItemList>
 													</Grouping>
 													<Grouping>
+														<SwitchRef Name="Dark_mus" ID="{39C9F7DE-65C7-4DEC-86BB-ACFE0BF4F364}"/>
+														<ItemList>
+															<ItemRef Name="RI_musicien_dark" ID="{42D6427E-CB0E-4194-804B-81B2688A9809}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
 														<SwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
 														<ItemList>
 															<ItemRef Name="RI_marseilles" ID="{D8A10FF9-2266-42F8-AE37-54B99DB71A0B}"/>
@@ -27756,6 +27792,12 @@
 														</ItemList>
 													</Grouping>
 													<Grouping>
+														<SwitchRef Name="Dark_mus" ID="{39C9F7DE-65C7-4DEC-86BB-ACFE0BF4F364}"/>
+														<ItemList>
+															<ItemRef Name="RI_musicien_dark" ID="{9435A6EF-7BB3-4A07-83C3-40293F92562C}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
 														<SwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
 														<ItemList>
 															<ItemRef Name="RI_marseilles" ID="{FC0F7F12-54E0-4F3F-8CBA-5BE0F373CD98}"/>
@@ -31487,6 +31529,12 @@
 														<SwitchRef Name="Dark_2" ID="{C09A34D0-F519-40CC-BF22-6ACC7C538EE4}"/>
 														<ItemList>
 															<ItemRef Name="RI_choirslike" ID="{4DCC659E-905E-4DC4-8560-A2729FB76CC4}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dark_mus" ID="{39C9F7DE-65C7-4DEC-86BB-ACFE0BF4F364}"/>
+														<ItemList>
+															<ItemRef Name="RI_musicien_dark" ID="{82766C77-659C-49D9-A096-0A20790C2A52}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
@@ -35231,6 +35279,12 @@
 														<SwitchRef Name="Dark_2" ID="{C09A34D0-F519-40CC-BF22-6ACC7C538EE4}"/>
 														<ItemList>
 															<ItemRef Name="RI_choirslike" ID="{F8F4EC3A-E0F4-4B1C-8A46-0A509D2F7E6F}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dark_mus" ID="{39C9F7DE-65C7-4DEC-86BB-ACFE0BF4F364}"/>
+														<ItemList>
+															<ItemRef Name="RI_musicien_dark" ID="{281C2144-3900-41E9-99BC-F2C280FA7D71}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
@@ -51933,6 +51987,12 @@
 														</ItemList>
 													</Grouping>
 													<Grouping>
+														<SwitchRef Name="Dark_mus" ID="{39C9F7DE-65C7-4DEC-86BB-ACFE0BF4F364}"/>
+														<ItemList>
+															<ItemRef Name="RI_musicien_dark" ID="{76E427E2-62E8-469F-BC8E-E03EA894279F}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
 														<SwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
 														<ItemList>
 															<ItemRef Name="RI_marseilles" ID="{11C5AD98-2916-4A86-9D09-558588136C48}"/>
@@ -55691,6 +55751,12 @@
 														<SwitchRef Name="Dark_2" ID="{C09A34D0-F519-40CC-BF22-6ACC7C538EE4}"/>
 														<ItemList>
 															<ItemRef Name="RI_choirslike" ID="{70F0252D-6F51-41B9-BB6F-063325E5078A}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dark_mus" ID="{39C9F7DE-65C7-4DEC-86BB-ACFE0BF4F364}"/>
+														<ItemList>
+															<ItemRef Name="RI_musicien_dark" ID="{59933877-90D3-4B12-9113-D11C47E51E1E}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
@@ -59503,6 +59569,12 @@
 														</ItemList>
 													</Grouping>
 													<Grouping>
+														<SwitchRef Name="Dark_mus" ID="{39C9F7DE-65C7-4DEC-86BB-ACFE0BF4F364}"/>
+														<ItemList>
+															<ItemRef Name="RI_musicien_dark" ID="{007311F6-6D13-4090-8782-E9140267F5A8}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
 														<SwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
 														<ItemList>
 															<ItemRef Name="RI_marseilles" ID="{CBBF7AC3-DD94-4718-8044-ADD1CFAC952E}"/>
@@ -63188,6 +63260,12 @@
 														<SwitchRef Name="Dark_2" ID="{C09A34D0-F519-40CC-BF22-6ACC7C538EE4}"/>
 														<ItemList>
 															<ItemRef Name="RI_choirslike" ID="{2613E052-F3D8-4B38-9D0E-C6B290B7651C}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dark_mus" ID="{39C9F7DE-65C7-4DEC-86BB-ACFE0BF4F364}"/>
+														<ItemList>
+															<ItemRef Name="RI_musicien_dark" ID="{5013D7AA-B812-4074-AB92-CDBBDD70EE7F}"/>
 														</ItemList>
 													</Grouping>
 													<Grouping>
@@ -66940,6 +67018,12 @@
 														</ItemList>
 													</Grouping>
 													<Grouping>
+														<SwitchRef Name="Dark_mus" ID="{39C9F7DE-65C7-4DEC-86BB-ACFE0BF4F364}"/>
+														<ItemList>
+															<ItemRef Name="RI_musicien_dark" ID="{77EC0F27-96C9-48A8-A899-D668E043C17F}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
 														<SwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
 														<ItemList>
 															<ItemRef Name="RI_marseilles" ID="{4FC065DA-47F6-4D06-8E94-3FB7C9AC7E8E}"/>
@@ -70625,6 +70709,12 @@
 														</ItemList>
 													</Grouping>
 													<Grouping>
+														<SwitchRef Name="Dark_mus" ID="{39C9F7DE-65C7-4DEC-86BB-ACFE0BF4F364}"/>
+														<ItemList>
+															<ItemRef Name="RI_musicien_dark" ID="{DD84436F-AB66-4E5D-B484-48F135551D2D}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
 														<SwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
 														<ItemList>
 															<ItemRef Name="RI_marseilles" ID="{22A982C2-BE6C-4D98-821C-632368403E8A}"/>
@@ -70976,6 +71066,11 @@
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 												<Property Name="PositioningType" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -70996,7 +71091,7 @@
 														<Property Name="PositioningType" Type="int16" Value="1"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>5</Value>
+																<Value>7</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -71978,13 +72073,13 @@
 									<Grouping>
 										<SwitchRef Name="AtmoRI_3" ID="{E995330B-02D8-4CBC-AE87-182999BEEEED}"/>
 										<ItemList>
-											<ItemRef Name="Sfx_ri_shevannai" ID="{7CE7AF98-D5C4-45B7-9E1C-3FAA88FF937A}"/>
+											<ItemRef Name="Sfx_ri_skanner_pad" ID="{E85107B6-DC94-4A9E-B281-A3407CD6D417}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="AtmoRI_5" ID="{E7201813-AB1C-4168-B0E7-9235B11F3A9F}"/>
 										<ItemList>
-											<ItemRef Name="Sfx_ri_suriya" ID="{72C7F3B1-BF7C-40E9-B44A-86EBDA36E591}"/>
+											<ItemRef Name="Sfx_ri_sylenth" ID="{8C05DE50-1C51-4F84-B021-E4FFA5C85D92}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
@@ -71996,7 +72091,7 @@
 									<Grouping>
 										<SwitchRef Name="AtmoRI_7" ID="{10A7C722-1A90-4B97-A74B-EAF64F870E1B}"/>
 										<ItemList>
-											<ItemRef Name="Sfx_ri_symphobia" ID="{F621F747-0D0C-40AA-9F0C-29E825DD7F9A}"/>
+											<ItemRef Name="Sfx_ri_rev_light" ID="{677A83FE-C824-47D2-98DE-87BB9BFE1E5E}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
@@ -72020,13 +72115,13 @@
 									<Grouping>
 										<SwitchRef Name="AtmoRI_2" ID="{F85E4262-98EF-49E2-BCCC-C672D22C0849}"/>
 										<ItemList>
-											<ItemRef Name="Sfx_ri_rev_light" ID="{677A83FE-C824-47D2-98DE-87BB9BFE1E5E}"/>
+											<ItemRef Name="Sfx_ri_shevannai" ID="{7CE7AF98-D5C4-45B7-9E1C-3FAA88FF937A}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
 										<SwitchRef Name="AtmoRI_6" ID="{E942356C-5EE1-4594-93FE-64888964FAAA}"/>
 										<ItemList>
-											<ItemRef Name="Sfx_ri_sylenth" ID="{8C05DE50-1C51-4F84-B021-E4FFA5C85D92}"/>
+											<ItemRef Name="Sfx_ri_symphobia" ID="{F621F747-0D0C-40AA-9F0C-29E825DD7F9A}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
@@ -72038,7 +72133,7 @@
 									<Grouping>
 										<SwitchRef Name="AtmoRI_4" ID="{8E8EE9CD-6EDC-4696-AEE7-DAB4F5195B6F}"/>
 										<ItemList>
-											<ItemRef Name="Sfx_ri_skanner_pad" ID="{E85107B6-DC94-4A9E-B281-A3407CD6D417}"/>
+											<ItemRef Name="Sfx_ri_suriya" ID="{72C7F3B1-BF7C-40E9-B44A-86EBDA36E591}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
