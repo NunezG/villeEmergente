@@ -44,6 +44,8 @@ public class SoundUniverseManager : MonoBehaviour {
 
 		if (Input.GetKeyDown (KeyCode.Space))
 		{
+		//	AkSoundEngine.StopAll ();
+
 			//if (switchType != switchDark)
 			//{
 				//switchType = switchDark;
@@ -58,7 +60,7 @@ public class SoundUniverseManager : MonoBehaviour {
 			if((switchType == switchAtmo) && moveTimer >=6.0f)
 			{
 				switchType = switchDark;
-				switchSounds();
+				//switchSounds();
 			}
 
 			//resetTimer ();
@@ -72,7 +74,7 @@ public class SoundUniverseManager : MonoBehaviour {
 			if ((switchType == switchDark) && (stopTimer >= 8.0f || stopCounter >= 5))
 			{
 				switchType = switchAtmo;
-				switchSounds();
+				//switchSounds();
 			}
 
 			if (stopTimer >= 3.0f)

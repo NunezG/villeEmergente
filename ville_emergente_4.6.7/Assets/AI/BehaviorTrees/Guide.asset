@@ -35,20 +35,21 @@ MonoBehaviour:
       repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;je quitte le point
       de vue&quot; expression=&quot;destinationReached=false&quot; debugbreak=&quot;False&quot;
       /&gt;&lt;/sequencer&gt;&lt;expression returnvalue=&quot;evaluate&quot; repeatuntil=&quot;&quot;
-      priority=&quot;&quot; name=&quot;ai-je touch\xE9 ?&quot; expression=&quot;hasInteracted==true&quot;
-      debugbreak=&quot;False&quot; /&gt;&lt;sequencer usepriorities=&quot;False&quot;
-      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;comme je n'ai pas
-      encore touch\xE9&quot; debugbreak=&quot;False&quot;&gt;&lt;action repeatuntil=&quot;&quot;
-      priority=&quot;&quot; parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;&quot;
-      name=&quot;je touche&quot; debugbreak=&quot;False&quot; classname=&quot;GuideBuildingInteraction&quot;
-      /&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
-      parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;je fais mon son&quot;
-      debugbreak=&quot;False&quot; classname=&quot;GuideEmitSound&quot; /&gt;&lt;/sequencer&gt;&lt;/selector&gt;&lt;/sequencer&gt;&lt;sequencer
+      priority=&quot;&quot; name=&quot;ai je interagit avec le b\xE2timent ?&quot;
+      expression=&quot;hasInteracted==true&quot; debugbreak=&quot;False&quot; /&gt;&lt;sequencer
       usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
-      name=&quot;d\xE9placement&quot; debugbreak=&quot;False&quot;&gt;&lt;selector
-      usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
-      name=&quot;destination&quot; debugbreak=&quot;False&quot;&gt;&lt;action repeatuntil=&quot;&quot;
+      name=&quot;comme je n'ai pas encore interagit&quot; debugbreak=&quot;False&quot;&gt;&lt;action
+      repeatuntil=&quot;&quot; priority=&quot;&quot; parametervalues=&quot;&quot;
+      parameters=&quot;&quot; namespace=&quot;&quot; name=&quot;je touche&quot; debugbreak=&quot;False&quot;
+      classname=&quot;GuideBuildingInteraction&quot; /&gt;&lt;action repeatuntil=&quot;&quot;
       priority=&quot;&quot; parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;&quot;
+      name=&quot;je fais mon son&quot; debugbreak=&quot;False&quot; classname=&quot;GuideEmitSound&quot;
+      /&gt;&lt;/sequencer&gt;&lt;/selector&gt;&lt;/sequencer&gt;&lt;sequencer usepriorities=&quot;False&quot;
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;d\xE9placement&quot;
+      debugbreak=&quot;False&quot;&gt;&lt;selector usepriorities=&quot;False&quot;
+      repeatuntil=&quot;&quot; priority=&quot;&quot; name=&quot;destination&quot;
+      debugbreak=&quot;False&quot;&gt;&lt;action repeatuntil=&quot;&quot; priority=&quot;&quot;
+      parametervalues=&quot;&quot; parameters=&quot;&quot; namespace=&quot;&quot;
       name=&quot;ai-je une destination ?&quot; debugbreak=&quot;False&quot; classname=&quot;IfHasTarget&quot;
       /&gt;&lt;selector usepriorities=&quot;False&quot; repeatuntil=&quot;&quot; priority=&quot;&quot;
       name=&quot;d\xE9finir destination&quot; debugbreak=&quot;False&quot;&gt;&lt;sequencer

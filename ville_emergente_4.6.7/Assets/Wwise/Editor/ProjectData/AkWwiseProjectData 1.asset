@@ -22,7 +22,7 @@ MonoBehaviour:
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)
-  defaultPoolSize: 16384
-  lowerPoolSize: 8192
-  streamingPoolSize: 4096
-  memoryCutoffThreshold: .949999988
+  defaultPoolSize: 131072
+  lowerPoolSize: 262144
+  streamingPoolSize: 131072
+  memoryCutoffThreshold: .899999976

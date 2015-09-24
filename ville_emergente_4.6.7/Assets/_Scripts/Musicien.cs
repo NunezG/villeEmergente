@@ -168,7 +168,7 @@ public class Musicien : MonoBehaviour{
 
         fragmentBubble.BubblingIn();
 
-        print("Emit Sound");
+        //print("Emit Sound");
     }
 
 

@@ -75,8 +75,8 @@ public class Guide : MonoBehaviour
         {
             Fragment fragment = inHandObject.GetComponent<Fragment>();
             pdv.batimentAVisiter.OnAddingFragment(fragment);
-            fragment.gameObject.SetActive(false);
             AddingFragment();
+			fragment.gameObject.SetActive(false);
         }
         else
         {
@@ -93,7 +93,7 @@ public class Guide : MonoBehaviour
     {
         if (inHandObject != null)
         {
-            print("Interactor:DropInHandObject");
+            //print("Interactor:DropInHandObject");
             inHandObject.GetComponent<Fragment>().Drop();
             handsFull = false;
             inHandObject = null;
@@ -104,7 +104,7 @@ public class Guide : MonoBehaviour
     public void PickUpObject(GameObject toPickUp)
     {
         tMemory.SetItem<bool>("hasFragment", true);
-        print("Interactor:PickUpObject");
+        //print("Interactor:PickUpObject");
         inHandObject = toPickUp;
         inHandObject.transform.parent = inHandPosition.transform;
         inHandObject.transform.position = inHandPosition.transform.position;
@@ -114,7 +114,9 @@ public class Guide : MonoBehaviour
     }
     public void AddingFragment()
     {
-        print("Interactor:AddingFragment");
+        //print("Interactor:AddingFragment");
+
+        tMemory.SetItem<bool>("hasFragment", false);
         inHandObject.rigidbody.isKinematic = false;
         inHandObject.transform.parent = null;
         SettingPiece.fragmentsOfZeWorld.Remove(inHandObject.GetComponent<Fragment>());

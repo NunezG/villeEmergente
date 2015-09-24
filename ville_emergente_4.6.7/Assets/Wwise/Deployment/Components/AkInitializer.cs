@@ -36,19 +36,19 @@ public class AkInitializer : MonoBehaviour
 	/// Language sub-folder. 
     public string language = c_Language;	
 	
-	public const int c_DefaultPoolSize = 16384; 
+	public const int c_DefaultPoolSize = 131072; 
 	///Default Pool size.  This contains the meta data for your audio project.  Default size is 4 MB, but you should adjust for your needs.
     public int defaultPoolSize = c_DefaultPoolSize; 
 	
-	public const int c_LowerPoolSize = 32768; 
+	public const int c_LowerPoolSize = 262144; 
 	///Lower Pool size.  This contains the audio processing buffers and DSP data.  Default size is 2 MB, but you should adjust for your needs.
     public int lowerPoolSize = c_LowerPoolSize; 
 	
-	public const int c_StreamingPoolSize = 8192; 
+	public const int c_StreamingPoolSize = 131072; 
 	///Streaming Pool size.  This contains the streaming buffers.  Default size is 1 MB, but you should adjust for your needs.
     public int streamingPoolSize = c_StreamingPoolSize; 
 	
-	public const float c_MemoryCutoffThreshold = 0.95f;   
+	public const float c_MemoryCutoffThreshold = 0.9f;   
 	///This setting will trigger the killing of sounds when the memory is reaching 95% of capacity.  Lowest priority sounds are killed.
     public float memoryCutoffThreshold = c_MemoryCutoffThreshold;   
     

@@ -185,7 +185,7 @@
 						<Value Platform="WindowsPhone">-80</Value>
 						<Value Platform="XboxOne">-80</Value>
 						<Value Platform="VitaSW">-80</Value>
-						<Value Platform="Windows">-80</Value>
+						<Value Platform="Windows">-50</Value>
 						<Value Platform="Wii">-80</Value>
 						<Value Platform="WiiUSW">-80</Value>
 						<Value Platform="Xbox360">-80</Value>

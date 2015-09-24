@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using RAIN.Action;
@@ -13,13 +13,13 @@ public class AiPrint : RAINAction
 
     public override void Start(RAIN.Core.AI ai)
     {
-		ai.Body.transform.FindChild("mesh").GetComponent<AudioEventManager> ().soundTourne ();
+		//ai.Body.transform.FindChild("mesh").GetComponent<AudioEventManager> ().soundTourne ();
 		
         if ((toPrintExp != null) && (toPrintExp.IsValid))
         {
             string toPrint = toPrintExp.Evaluate<string>(ai.DeltaTime, ai.WorkingMemory);
             //Debug.Log("print : " + toPrint + "");
-            Debug.Log(ai.Body.name + " : Print : " + toPrint);
+            //Debug.Log(ai.Body.name + " : Print : " + toPrint);
         }
 
 

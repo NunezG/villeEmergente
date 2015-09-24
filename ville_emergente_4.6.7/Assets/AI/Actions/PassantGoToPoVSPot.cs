@@ -17,7 +17,7 @@ public class PassantGoToPoVSpot : RAINAction
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
         NavMeshAgent agent = ai.Body.GetComponent<NavMeshAgent>(); 
-        if (ai.Body.GetComponent<Passant>().sceneLeader.GetComponent<Guide>().pdv != null)        {
+        if (ai.Body.GetComponent<Passant>().sceneLeader!= null)        {
             GameObject povSpot = ai.Body.GetComponent<Passant>().sceneLeader.GetComponent<Guide>().pdv.spots[ai.Body.GetComponent<Passant>().selectedSpotIndex];
         
             agent.SetDestination(povSpot.transform.position);

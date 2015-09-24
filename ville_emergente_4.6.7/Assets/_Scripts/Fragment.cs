@@ -10,7 +10,8 @@ public class Fragment : MonoBehaviour{
 	// Use this for initialization
 	//public FragmentType family;
 	public FragmentType family;
-	private bool justSpawn = true; 
+	private bool justSpawn = true;
+    public bool desactivateOnStart = false;
 
 	public string[][] soundString = new string[5][] ;
 
@@ -34,27 +35,31 @@ public class Fragment : MonoBehaviour{
 		soundString [4] = new string[]{"buildingSite", "train", "brewing"}; // Urban
 
         this.tag = "Fragment";
+        int familyInt = (int)family;
+
+        //Choose random family
+        GetComponent<InteractibleObject>().soundEvent = soundString[familyInt][Random.Range(0, soundString[familyInt].Length)];
     }
 
     public void Start()
     {
-		print("FragmentStart: "+ family.ToString()+ " /// "+ family.GetHashCode() +  " /// " + (int)family);
+		//print("FragmentStart: "+ family.ToString()+ " /// "+ family.GetHashCode() +  " /// " + (int)family);
 		//randomSoundFromFamily ();
 		
-		print ("THELENGHT "+ soundString[(int)family].Length);
+		//print ("THELENGHT "+ soundString[(int)family].Length);
 
 	//	print ("THELENGHT "+ soundString[0,]);
 
 		
-		int familyInt = (int)family;
-
-		//Choose random family
-		GetComponent<InteractibleObject>().soundEvent =soundString [familyInt][Random.Range (0,soundString[familyInt].Length)];
 
 
 		WwiseAudioManager.PlayLoopEvent ("fragment_call_"+family.ToString(), this.gameObject, false);
         //audioSource.clip = defaultClip;
        // this.renderer.material = material;
+        if (desactivateOnStart)
+        {
+            this.gameObject.SetActive(false);
+        }
 	}
 	
 	// Update is called once per frame
@@ -85,13 +90,13 @@ public class Fragment : MonoBehaviour{
 		
 	public void AnswerTheCall()
     {
-        print("Fragment:AnswerTheCall");
+        //print("Fragment:AnswerTheCall");
        // Play();
     }
 
 	public GameObject OnTouch()
     {		
-		print ("Fragment:OnPickUp");
+		//print ("Fragment:OnPickUp");
 		this.gameObject.SetActive (true);
 
         GetComponent<levitation>().enabled = true;

@@ -9,11 +9,11 @@
 							<ReferenceList>
 								<Reference Name="Mixer">
 									<Custom>
-										<Effect Name="AstoundSound RTI (Custom)" ID="{C512BDA1-5FE2-40F3-B2B1-E667887265C8}" ShortID="780565931" PluginName="AstoundSound RTI" CompanyID="260" PluginID="3" PluginType="6">
+										<Effect Name="AstoundSound RTI (Custom)" ID="{C15B2601-8A2A-44DD-9279-D9FAD706F035}" ShortID="813685460" PluginName="AstoundSound RTI" CompanyID="260" PluginID="3" PluginType="6">
 											<PropertyList>
+												<Property Name="Apply attenuation" Type="bool" Value="False"/>
 												<Property Name="Enable reverb" Type="bool" Value="False"/>
 												<Property Name="Get direction from game object" Type="bool" Value="True"/>
-												<Property Name="Get distance from game object" Type="bool" Value="True"/>
 											</PropertyList>
 										</Effect>
 									</Custom>

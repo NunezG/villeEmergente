@@ -1478,6 +1478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioName: 0
+  idleSound: 1
 --- !u!114 &11456162
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1528,7 +1529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fragment: {fileID: 0}
-  switchName: 
+  switchName: mus
 --- !u!114 &11456170
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1673,6 +1674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioName: 0
+  idleSound: 1
 --- !u!114 &11491994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1717,9 +1719,6 @@ MonoBehaviour:
   fadeInTile: 2
   waitTime: 2
   fadeOutTime: 2
-  minimum: 0
-  maximum: 1
-  duration: 2
   fadeIn: 0
   wait: 0
   fadeOut: 0
