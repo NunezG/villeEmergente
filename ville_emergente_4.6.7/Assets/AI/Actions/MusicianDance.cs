@@ -18,8 +18,8 @@ public class MusicianDance : RAINAction
 
         ai.WorkingMemory.SetItem<bool>("isDancing", true);
 
-		ai.Body.GetComponent<AnimationManager> ().Sautille();
-		ai.Body.GetComponent<AudioEventManager> ().soundDanse ();
+		ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Sautille();
+		ai.Body.transform.FindChild("mesh").GetComponent<AudioEventManager> ().soundDanse ();
         return ActionResult.SUCCESS;
     }
 
