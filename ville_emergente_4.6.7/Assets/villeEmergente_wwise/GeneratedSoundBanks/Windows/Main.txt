@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2159062	musicien_idle_stop			\Default Work Unit\PNJs\Musicien\musicien_idle_stop	
 	16899800	paddle_stop			\Default Work Unit\Fragments\Liquide\paddle_stop	
 	30806100	softRain_play			\Default Work Unit\Fragments\Abandonnés\softRain_play	
+	59174050	musicien_danse			\Default Work Unit\PNJs\Musicien\musicien_danse	
 	113163278	train_play			\Default Work Unit\Fragments\Urban\train_play	
 	161018858	musicien_ouverture			\Default Work Unit\PNJs\Musicien\musicien_ouverture	
 	193498114	water_3DObject_play			\Default Work Unit\Tests Wwise Pierre & Guillermo\water_3DObject_play	
@@ -56,7 +57,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	2181506373	thunder_convolver_stop			\Default Work Unit\Fragments\Electricite\thunder_convolver_stop	
 	2189158344	logCrack_stop			\Default Work Unit\Fragments\Bois\logCrack_stop	
 	2204075982	guide_son			\Default Work Unit\PNJs\Guide\guide_son	
-	2220177058	musicien_joie			\Default Work Unit\PNJs\Musicien\musicien_joie	
 	2227770454	buildingSite_convolver_stop			\Default Work Unit\Fragments\Urban\buildingSite_convolver_stop	
 	2286130255	waterSplash_convolver_stop			\Default Work Unit\Fragments\Liquide\waterSplash_convolver_stop	
 	2295622138	waterSplash_stop			\Default Work Unit\Fragments\Liquide\waterSplash_stop	
