@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 9421e753066038b4aba57791d8a56642, type: 2}
-  family: 2
+  family: 0
   desactivateOnStart: 0
 --- !u!114 &11423040
 MonoBehaviour:
