@@ -6,7 +6,7 @@ public class SoundUniverseManager : MonoBehaviour {
 	
 	private string switchAtmo = "switch_atmo";
 	public static string switchType;
-	private string switchDark = "switch_dark";
+	private string switchDark = "switch_atmo";
 
 	public static float timer;
 	public static float moveTimer;
@@ -60,7 +60,7 @@ public class SoundUniverseManager : MonoBehaviour {
 			if((switchType == switchAtmo) && moveTimer >=6.0f)
 			{
 				switchType = switchDark;
-				//switchSounds();
+				switchSounds();
 			}
 
 			//resetTimer ();
@@ -74,7 +74,7 @@ public class SoundUniverseManager : MonoBehaviour {
 			if ((switchType == switchDark) && (stopTimer >= 8.0f || stopCounter >= 5))
 			{
 				switchType = switchAtmo;
-				//switchSounds();
+				switchSounds();
 			}
 
 			if (stopTimer >= 3.0f)
