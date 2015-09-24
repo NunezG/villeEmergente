@@ -24,7 +24,7 @@ public class EmitSound : RAINAction
 		{
 			
 			if (ai.WorkingMemory.GetItem<bool> ("isFragmentComplete")) {
-				ai.Body.transform.FindChild ("mesh").GetComponent<AudioEventManager> ().soundJoie ();
+				ai.Body.transform.FindChild ("mesh").GetComponent<AudioEventManager> ().soundDanse ();
 				ai.Body.transform.FindChild ("mesh").GetComponent<AnimationManager> ().Sautille ();
 			} else {
 				ai.Body.transform.FindChild ("mesh").GetComponent<AudioEventManager> ().soundSon();
