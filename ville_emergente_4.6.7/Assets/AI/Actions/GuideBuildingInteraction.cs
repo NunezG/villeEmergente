@@ -19,7 +19,7 @@ public class GuideBuildingInteraction : RAINAction
 		ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().MontreDeux ();
 		ai.Body.transform.FindChild ("mesh").GetComponent<AudioEventManager> ().soundNouveauSon ();
 
-        ai.Body.GetComponent<Guide>().InteractWithBuilding();
+        ai.Body.GetComponent<Guide>().InteractWithBuildingBis();
         ai.WorkingMemory.SetItem<bool>("hasInteracted", true);
         return ActionResult.SUCCESS;
     }
