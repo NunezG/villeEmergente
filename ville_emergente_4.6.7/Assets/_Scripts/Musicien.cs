@@ -137,6 +137,7 @@ public class Musicien : MonoBehaviour{
 
     public void OpenTheWay()
     {
+
         for (int i = 0; i < buildings.Length; i++)
         {
             buildings[i].GetComponent<Building>().Down();
