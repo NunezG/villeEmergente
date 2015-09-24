@@ -93,7 +93,7 @@ public class AudioEventManager : MonoBehaviour {
 
 	public void soundDanse()
 	{
-		PlayFiniteEventWithCallBack (audioName.ToString()+"_danse");	
+		PlayFiniteEventWithCallBack (audioName.ToString()+"_joie");	
 	}
 
     
