@@ -55,12 +55,6 @@ public class AudioEventManager : MonoBehaviour {
 	/*
 	*SFX Events
 	*/
-	public void soundJoie()
-	{
-		PlayFiniteEventWithCallBack (audioName.ToString()+"_joie");	
-		//gObject.GetComponentInChildren<Animator> ().SetBool ("",true);
-	}
-
 	public void soundSon()
 	{
 		PlayFiniteEventWithCallBack (audioName.ToString()+"_son");	
