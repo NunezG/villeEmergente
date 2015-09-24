@@ -13,6 +13,7 @@
 											<PropertyList>
 												<Property Name="Apply attenuation" Type="bool" Value="False"/>
 												<Property Name="Enable reverb" Type="bool" Value="False"/>
+												<Property Name="Get direction from game object" Type="bool" Value="True"/>
 											</PropertyList>
 										</Effect>
 									</Custom>
