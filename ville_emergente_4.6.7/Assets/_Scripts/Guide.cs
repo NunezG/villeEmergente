@@ -47,6 +47,7 @@ public class Guide : MonoBehaviour
         AIRig aiRig = GetComponentInChildren<AIRig>();
         tMemory = aiRig.AI.WorkingMemory as RAIN.Memory.BasicMemory;
         startingFragment.GetComponent<levitation>().IsHeld(true);
+		startingFragment.GetComponent<InteractibleObject> ().OnTouch ();
         PickUpObject(startingFragment);
     }
 

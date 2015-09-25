@@ -159,7 +159,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="fragment_call" ID="{01907384-92A1-4475-BF60-07203E37C654}"/>
-							<Value>100</Value>
+							<Value>97.7011494252874</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>

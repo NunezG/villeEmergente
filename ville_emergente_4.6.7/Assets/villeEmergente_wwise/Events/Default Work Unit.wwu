@@ -244,8 +244,8 @@
 												<Property Name="FadeTime" Type="Real64" Value="1"/>
 											</PropertyList>
 											<ElementList>
-												<Element ID="{D75EA608-5F15-4078-80EB-F38061633886}" Global="false">
-													<ObjectRef Name="Sfx_brewing_switch" ID="{D70227B2-E745-4146-9B83-03C2BA864310}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{67F2BE5C-02C7-44AF-844C-3A0B0495BD10}" Global="false">
+													<ObjectRef Name="Sfx_train_switch" ID="{7CEA67A3-D057-4BA2-B94B-F76F48BBBFDF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -274,8 +274,8 @@
 												<Property Name="FadeTime" Type="Real64" Value="1"/>
 											</PropertyList>
 											<ElementList>
-												<Element ID="{FB73E1F5-0500-4132-B224-26E0626697B3}" Global="false">
-													<ObjectRef Name="Sfx_brewing_switch" ID="{D70227B2-E745-4146-9B83-03C2BA864310}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{6C0066A4-AE87-4B7B-9584-B3BF7E0FD24C}" Global="false">
+													<ObjectRef Name="Sfx_train_switch" ID="{7CEA67A3-D057-4BA2-B94B-F76F48BBBFDF}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>
@@ -1804,6 +1804,21 @@
 								<Event Name="passant_idle_play" ID="{D02900F4-99DC-4800-B0C7-F0EADAD30478}">
 									<ChildrenList>
 										<Action Name="Play" ID="{C8655CDE-EA7C-4182-A1EB-D63710D2AFC6}" ShortID="95594137" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="3">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A8505A9F-8CF8-4DB4-AC43-F903E1E498F9}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ElementList>
 												<Element ID="{4C93B7ED-A426-4951-A953-DAF3CB659CCF}" Global="false">
 													<ObjectRef Name="Sfx_passant_respiration" ID="{C731AB71-D8CE-4C85-8D5A-AA39408487D4}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
