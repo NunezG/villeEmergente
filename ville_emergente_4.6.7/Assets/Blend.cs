@@ -5,6 +5,7 @@ public class Blend : MonoBehaviour
 {
     public float startTime;
     public float endTime;
+    public bool inverse = false;
 
     private MeshRenderer rend;
     private Color[] colors;
@@ -27,6 +28,9 @@ public class Blend : MonoBehaviour
         currentTime = Time.time;
 
         float ratio = ( currentTime - startTime ) / ( endTime - startTime );
+
+        if( inverse )
+            ratio = 1.0f - ratio;
 
         if( ratio < 0.0f )
             ratio = 0.0f;
