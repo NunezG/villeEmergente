@@ -80,6 +80,7 @@ public class ConvolutionObject : MonoBehaviour {
 */
     public void OnAddingFragment(Fragment fragment)
     {
+        this.GetComponent<Blend>().enabled = false;
 		this.GetComponent<InteractibleObject> ().soundEvent = fragment.GetComponent<InteractibleObject> ().soundEvent;
 
 		//fragment.transform.parent = this.transform;
