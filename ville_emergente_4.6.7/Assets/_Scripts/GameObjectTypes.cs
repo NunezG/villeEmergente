@@ -4,4 +4,5 @@ public enum NPCType { musicien, guide, passant };
 
 public enum FragmentType { liquid, wood, electricity, metal, urban };
 
+public enum CursorType { normal, interactible, fail, fragment };
 
