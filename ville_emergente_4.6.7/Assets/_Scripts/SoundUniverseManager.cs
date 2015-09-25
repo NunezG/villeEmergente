@@ -19,8 +19,7 @@ public class SoundUniverseManager : MonoBehaviour {
 	public float stopTimeToCount = 3.0f; //temps d'arret pur compter comme pause
 	public float maxStopTime = 8.0f; //Temps mis en arret pour passer a l'atmo
 
-	public string switchTypeTest;
-	
+
 	public static List<GameObject> playingObjects;
 
 	public Color ambientLight;
@@ -39,12 +38,13 @@ public class SoundUniverseManager : MonoBehaviour {
 	private bool stopCounted = false;
 //	public float mainTimer;
 	//public float mainTimer;
+	public string switchTypeTest;
 
 
-	//public Color ambientTest;
-	//public Color upLightTest;
-	//public Color downLighTest;
-	//public Color skyBoxTest;
+	public Color ambientTest;
+	public Color upLightTest;
+	public Color downLighTest;
+	public Color skyBoxTest;
 	//public List<GameObject> testplayingObjects;
 
 
@@ -75,10 +75,10 @@ public class SoundUniverseManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//testplayingObjects = playingObjects;
-		//ambientTest = RenderSettings.ambientLight;
-		//upLightTest = GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color;
-		//downLighTest = GameObject.Find("Lumières").transform.FindChild("Directional_light_down").GetComponent<Light>().color;
-		//skyBoxTest = RenderSettings.skybox.GetColor ("_Tint");
+		ambientTest = RenderSettings.ambientLight;
+		upLightTest = GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color;
+		downLighTest = GameObject.Find("Lumières").transform.FindChild("Directional_light_down").GetComponent<Light>().color;
+		skyBoxTest = RenderSettings.skybox.GetColor ("_Tint");
 
 		switchTypeTest = switchType;
 
@@ -102,6 +102,7 @@ public class SoundUniverseManager : MonoBehaviour {
 		} else
 		if (Input.GetKey (KeyCode.Z) || Input.GetKey (KeyCode.Q) || Input.GetKey (KeyCode.S) || Input.GetKey (KeyCode.D)) 
 		{
+			stopCounted = false;
 			moveTimer += Time.deltaTime;
 			stopTimer = 0;
 
@@ -142,7 +143,7 @@ public class SoundUniverseManager : MonoBehaviour {
 
 	void resetTimers()
 	{
-		timer = 0;
+		resetTimer = 0;
 		stopTimer = 0;
 		stopCounter = 0;
 		moveTimer = 0;
