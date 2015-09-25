@@ -17,7 +17,8 @@ public class GuideDesactivateScene : RAINAction
 		ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Marche ();
 		ai.Body.transform.FindChild ("mesh").GetComponent<AudioEventManager> ().soundSon ();
 
-        ai.Body.GetComponent<Guide>().scene.gameObject.SetActive(false);
+        //ai.Body.GetComponent<Guide>().scene.gameObject.SetActive(false);
+        ai.Body.GetComponent<Guide>().scene.DeactivateScene();
         ai.WorkingMemory.SetItem<bool>("followMe", false);
 
         return ActionResult.SUCCESS;
