@@ -1804,6 +1804,21 @@
 								<Event Name="passant_idle_play" ID="{D02900F4-99DC-4800-B0C7-F0EADAD30478}">
 									<ChildrenList>
 										<Action Name="Play" ID="{C8655CDE-EA7C-4182-A1EB-D63710D2AFC6}" ShortID="95594137" Type="Play" Scope="One" Global="false">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="3">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A8505A9F-8CF8-4DB4-AC43-F903E1E498F9}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ElementList>
 												<Element ID="{4C93B7ED-A426-4951-A953-DAF3CB659CCF}" Global="false">
 													<ObjectRef Name="Sfx_passant_respiration" ID="{C731AB71-D8CE-4C85-8D5A-AA39408487D4}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
