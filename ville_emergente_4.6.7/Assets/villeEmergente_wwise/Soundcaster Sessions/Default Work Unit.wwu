@@ -233,6 +233,62 @@
 						<CurrentSwitchRef Name="PNJ_atmo" ID="{6583DB66-6DA5-4465-8339-CE6734F36F63}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
+				<SoundcasterSession Name="Accorder" ID="{343E9383-8D0E-4FE8-B65D-752275AB83B8}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="RI_marseilles" ID="{11C5AD98-2916-4A86-9D09-558588136C48}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RI_skanner_pad" ID="{DC398FA5-4351-4187-B7DE-35F72FDC4CE6}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RI_musicien_atmo" ID="{2530A9EC-E8C1-4318-A58B-D14B7A5DD7C1}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RI_suriya" ID="{CBCE289F-93E8-4822-8DE3-1EC1E16048DE}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RI_revlight" ID="{BEDE772D-0CF1-40D9-BBD0-4A0E1C4D904D}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RI_sylenth" ID="{8A345D10-4C5A-4E53-8E2C-C059B38A8650}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RI_shevannai" ID="{E3E27766-BE82-48AE-8FA9-59F5015B7A27}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RI_symphobia" ID="{DBE3479F-B724-47DA-A5C4-989314707ADA}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="binaural_to_convolver" ID="{4771F142-4D7B-451E-8786-58DE18DAFCFA}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="convolution_wet" ID="{32619B59-4A3B-4418-9FE9-7109DF27FC16}"/>
+							<Value>99.211356466877</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="fragment_call" ID="{01907384-92A1-4475-BF60-07203E37C654}"/>
+							<Value>97.7011494252874</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="AtmoRI_1" ID="{D66DB834-E895-4554-9254-70B3FB3E760B}"/>
+						<CurrentSwitchRef Name="Atmo_1" ID="{5716F8E6-A41E-407B-AAB5-0050485A63A1}"/>
+						<CurrentSwitchRef Name="PNJ_atmo" ID="{6583DB66-6DA5-4465-8339-CE6734F36F63}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>
