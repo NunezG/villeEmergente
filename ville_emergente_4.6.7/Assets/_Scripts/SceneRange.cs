@@ -52,14 +52,8 @@ public class SceneRange : MonoBehaviour {
             passantsInRange.Remove(passant);
             if (passant != null)
             {
-                if (passant.availableScenes.Remove(this))
-                {
-                    print("patate");
-                }
-                else
-                {
-                    print("carotte");
-                }
+                passant.availableScenes.Remove(this);
+
                 passant.SetInRangeOfScene(false);
             }
         }
