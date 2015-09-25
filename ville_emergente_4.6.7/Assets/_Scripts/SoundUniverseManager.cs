@@ -8,14 +8,19 @@ public class SoundUniverseManager : MonoBehaviour {
 	public static string switchType;
 	private string switchDark = "switch_dark";
 
-	public static float timer;
-	public static float moveTimer;
-	public static float stopTimer;
-	public static int stopCounter;
+	public float resetTimer;
+	public float moveTimer;
+	public float stopTimer;
+	public int stopCounter;
+
+	public float ResetTime = 120.0f; //Temps mis pour reset de tous les timer et counter
+	public float maxMoveTime = 6.0f; //Temps mis en mouvement pour passer au dark
+	public int maxStopCounter = 5; //compteur de pauses
+	public float stopTimeToCount = 3.0f; //temps d'arret pur compter comme pause
+	public float maxStopTime = 8.0f; //Temps mis en arret pour passer a l'atmo
 
 	public string switchTypeTest;
-
-
+	
 	public static List<GameObject> playingObjects;
 
 	public Color ambientLight;
@@ -23,19 +28,25 @@ public class SoundUniverseManager : MonoBehaviour {
 	public Color downLightLight;
 	public Color skyBoxLight;
 
+	public float speed = 5f;
+
 	public Color ambientDark;
 	public Color upLightDark;
 	public Color downLightDark;
 	public Color skyBoxDark;
 
 
+	private bool stopCounted = false;
+//	public float mainTimer;
+	//public float mainTimer;
+
+
 	//public Color ambientTest;
 	//public Color upLightTest;
 	//public Color downLighTest;
 	//public Color skyBoxTest;
+	//public List<GameObject> testplayingObjects;
 
-
-	public float speed = 5f;
 
 	void Awake () {
 		playingObjects = new List<GameObject>();
@@ -63,7 +74,7 @@ public class SoundUniverseManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		//testplayingObjects = playingObjects;
 		//ambientTest = RenderSettings.ambientLight;
 		//upLightTest = GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color;
 		//downLighTest = GameObject.Find("Lumières").transform.FindChild("Directional_light_down").GetComponent<Light>().color;
@@ -71,9 +82,9 @@ public class SoundUniverseManager : MonoBehaviour {
 
 		switchTypeTest = switchType;
 
-		timer += Time.deltaTime;
+		resetTimer += Time.deltaTime;
 
-		if (timer >= 120.0f) {
+		if (resetTimer >= ResetTime) {
 			//stopCounter = 0;
 			//timer = 0.0f;
 			resetTimers();
@@ -94,7 +105,7 @@ public class SoundUniverseManager : MonoBehaviour {
 			moveTimer += Time.deltaTime;
 			stopTimer = 0;
 
-			if((switchType == switchAtmo) && moveTimer >=6.0f)
+			if((switchType == switchAtmo) && moveTimer >= maxMoveTime)
 			{
 				switchType = switchDark;
 				switchSounds();
@@ -109,27 +120,33 @@ public class SoundUniverseManager : MonoBehaviour {
 			stopTimer += Time.deltaTime;
 
 
-			if ((switchType == switchDark) && (stopTimer >= 8.0f || stopCounter >= 5))
+			if ((switchType == switchDark) && (stopTimer >= maxStopTime || stopCounter >= maxStopCounter))
 			{
 				switchType = switchAtmo;
 				switchSounds();
 				StartCoroutine("changeColors");
-			}
-
-			if (stopTimer >= 3.0f)
+			}else if (!stopCounted && stopTimer >= stopTimeToCount)
 			{
+				stopCounted = true;
 				stopCounter++;
+				//stopTimer = 0;
+			}else if (stopTimer >= maxStopTime)
+			{
 				stopTimer = 0;
+			}else if (stopCounter >= maxStopCounter)
+			{
+				stopCounter = 0;
 			}
 		}
 	}
 
-	static void resetTimers()
+	void resetTimers()
 	{
 		timer = 0;
 		stopTimer = 0;
 		stopCounter = 0;
 		moveTimer = 0;
+		stopCounted = false;
 	}
 
 	public static void addSoundEvent(GameObject target)
@@ -182,7 +199,7 @@ public class SoundUniverseManager : MonoBehaviour {
 	}
 
 	
-	static void switchSounds()
+	void switchSounds()
 	{
 
 	//	bool convolve = true;
@@ -195,7 +212,7 @@ public class SoundUniverseManager : MonoBehaviour {
 
 			if (playingObjects[i].GetComponent<ConvolutionObject>() != null && playingObjects[i].GetComponent<InteractibleObject>().soundEvent != "")
 			{
-				          //Stoppe son du convolver avec switch précédent
+				//Stoppe son du convolver avec switch précédent
 				WwiseAudioManager.StopLoopEvent (playingObjects[i].GetComponent<InteractibleObject>().soundEvent, playingObjects[i], true);
 
 				//Lance switch du convolver
@@ -205,9 +222,13 @@ public class SoundUniverseManager : MonoBehaviour {
 				WwiseAudioManager.PlayLoopEvent (playingObjects[i].GetComponent<InteractibleObject>().soundEvent, playingObjects[i], true);
 			}
 
-			if (playingObjects[i].GetComponent<AudioEventManager>() != null)
+			if (playingObjects[i].GetComponent<AudioEventManager>() != null && playingObjects[i].GetComponentInChildren<AudioEventManager>().idleSound)
 			{
+				//Stoppe son Idle (PNJ)
 				playingObjects[i].GetComponent<AudioEventManager>().SounStopdIdle();
+
+				//Lance switch
+				WwiseAudioManager.PlayFiniteEvent(switchType+playingObjects[i].GetComponent<ConvolutionObject>().switchName, playingObjects[i]);
 				
 				playingObjects[i].GetComponent<AudioEventManager>().SoundPlayIdle();
 
