@@ -87,31 +87,34 @@ public class Guide : MonoBehaviour
 
     public void InteractWithBuildingBis()
     {
-        if (inHandObject == null)
+        if (inHandObject == null ) //  interaction du guide au main vide avec un batiment
         {
             PickUpObject(pdv.batimentAVisiter.OnTouch());
+
+            //tMemory.SetItem<bool>("hasFragment", false);
         }
-        else
+        else if (inHandObject != null && pdv.batimentAVisiter.fragment != null) // echange de fragments entre le guide et le batiment
         {
-            if (pdv.batimentAVisiter.fragment!=null)
-            {
-                Fragment inHandFragment = inHandObject.GetComponent<Fragment>(); // recuperer le fragment en main
-                GameObject inBuildingFragment = pdv.batimentAVisiter.OnPickUp(); // recuperer le fragment du building
-                pdv.batimentAVisiter.OnAddingFragment(inHandFragment); // ajouter le fragment tenu par le guide au batiment
-                AddingFragment(); // détacher le fragment du guide
-                inHandFragment.gameObject.SetActive(false); // désactiver le fragment
-                PickUpObject(inBuildingFragment); // ramasser le fragment du batiment
+            Fragment inHandFragment = inHandObject.GetComponent<Fragment>(); // recuperer le fragment en main
+            GameObject inBuildingFragment = pdv.batimentAVisiter.OnPickUp(); // recuperer le fragment du building
+            pdv.batimentAVisiter.OnAddingFragment(inHandFragment); // ajouter le fragment tenu par le guide au batiment
+            AddingFragment(); // détacher le fragment du guide
+            inHandFragment.gameObject.SetActive(false); // désactiver le fragment
+            PickUpObject(inBuildingFragment); // ramasser le fragment du batiment
 
-            }
-            else
-            {
-                Fragment fragment = inHandObject.GetComponent<Fragment>();
-                pdv.batimentAVisiter.OnAddingFragment(fragment);
-                AddingFragment();
-                fragment.gameObject.SetActive(false);
-            }
+            tMemory.SetItem<bool>("hasFragment", true);
 
         }
+        else if (inHandObject != null && pdv.batimentAVisiter.fragment == null) // ajout de fragment au batiment
+        {
+            Fragment fragment = inHandObject.GetComponent<Fragment>();
+            pdv.batimentAVisiter.OnAddingFragment(fragment);
+            AddingFragment();
+            fragment.gameObject.SetActive(false);
+
+            tMemory.SetItem<bool>("hasFragment", false);
+        }
+
     }
 
     public void EmitSound()
@@ -123,24 +126,27 @@ public class Guide : MonoBehaviour
     {
         if (inHandObject != null)
         {
-            //print("Interactor:DropInHandObject");
+            print("Interactor:DropInHandObject");
             inHandObject.GetComponent<Fragment>().Drop();
             handsFull = false;
             inHandObject = null;
-            tMemory.SetItem<bool>("hasFragment", false);
+            //tMemory.SetItem<bool>("hasFragment", false);
         }
     }
 
     public void PickUpObject(GameObject toPickUp)
     {
-        tMemory.SetItem<bool>("hasFragment", true);
-        //print("Interactor:PickUpObject");
-        inHandObject = toPickUp;
-        inHandObject.transform.parent = inHandPosition.transform;
-        inHandObject.transform.position = inHandPosition.transform.position;
-        inHandObject.transform.rotation = inHandPosition.transform.rotation;
-        inHandObject.rigidbody.isKinematic = true;
-        handsFull = true;
+        if (toPickUp != null)
+        {
+            tMemory.SetItem<bool>("hasFragment", true);
+            //print("Interactor:PickUpObject");
+            inHandObject = toPickUp;
+            inHandObject.transform.parent = inHandPosition.transform;
+            inHandObject.transform.position = inHandPosition.transform.position;
+            inHandObject.transform.rotation = inHandPosition.transform.rotation;
+            inHandObject.rigidbody.isKinematic = true;
+            handsFull = true;
+        }
     }
 
     public void AddingFragment()
