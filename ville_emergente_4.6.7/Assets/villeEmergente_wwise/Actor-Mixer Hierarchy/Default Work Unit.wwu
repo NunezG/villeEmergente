@@ -48525,6 +48525,7 @@
 																		<Property Name="IRConvolutionStop" Type="Real64" Value="4.6194375"/>
 																		<Property Name="IRConvolutionThreshold" Type="Real32" Value="-50"/>
 																		<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+																		<Property Name="IRStretch" Type="Real32" Value="89"/>
 																		<Property Name="WetLevel" Type="Real32" Value="-25">
 																			<RTPCList>
 																				<RTPC Name="" ID="{6FC14194-1745-4066-8C9F-D5E04E717208}" ShortID="549404556">
