@@ -231,6 +231,11 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_electric_8D4034EF.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="25644424" Language="SFX">
+					<ShortName>sfx_musicien_dark_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_F6D05544.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="25839266" Language="SFX">
 					<ShortName>ri_skannermorph.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_skannermorph_717A082F.wem</Path>
@@ -531,6 +536,11 @@
 					<ShortName>sfx_musicien_ouverture.wav</ShortName>
 					<Path>SFX\sfx_musicien_ouverture_9A2A4B3D.wem</Path>
 				</File>
+				<File Id="190779305" Language="SFX">
+					<ShortName>sfx_musicien_dark_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_45BB17F9.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="199168153" Language="SFX">
 					<ShortName>ri_pipe.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_pipe_7DDC8601.wem</Path>
@@ -552,6 +562,11 @@
 				<File Id="212568920" Language="SFX">
 					<ShortName>sfx_fragment_liquid_call.wav</ShortName>
 					<Path>SFX\sfx_fragment_liquid_call_792AA93D.wem</Path>
+				</File>
+				<File Id="213378079" Language="SFX">
+					<ShortName>sfx_musicien_dark_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_F0169173.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="213439988" Language="SFX">
 					<ShortName>Sfx_ri_skanner_pad.wav</ShortName>
@@ -591,6 +606,11 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_watersplash_51175EC6.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="251945985" Language="SFX">
+					<ShortName>sfx_musicien_dark_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_6E3B4E45.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="254435697" Language="SFX">
 					<ShortName>sfx_passant_dark_tourne.wav</ShortName>
 					<Path>SFX\sfx_passant_dark_tourne_F88FB86C.wem</Path>
@@ -598,6 +618,11 @@
 				<File Id="256183079" Language="SFX">
 					<ShortName>ri_revdark.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_revdark_D5D8A81A.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="264919257" Language="SFX">
+					<ShortName>sfx_musicien_dark_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_A32A90E5.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="266736448" Language="SFX">
@@ -634,6 +659,11 @@
 				<File Id="284381232" Language="SFX">
 					<ShortName>ri_choirslike.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_choirslike_33010DDB.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="287729982" Language="SFX">
+					<ShortName>sfx_musicien_dark_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_82D1C65A.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="288853293" Language="SFX">
@@ -877,6 +907,11 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_absynth_dark_5068EFFB.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="454858103" Language="SFX">
+					<ShortName>sfx_musicien_dark_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_8F3083F7.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="469843770" Language="SFX">
 					<ShortName>Sfx_ri_sylenth.wav</ShortName>
 					<Path>SFX\Sfx_ri_sylenth_6602BDDC.wem</Path>
@@ -896,6 +931,11 @@
 				<File Id="484484462" Language="SFX">
 					<ShortName>ri_absynth_dark.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_absynth_dark_CC809EB6.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="485845248" Language="SFX">
+					<ShortName>sfx_musicien_dark_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_3D273D6C.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="492051974" Language="SFX">
@@ -955,6 +995,11 @@
 				<File Id="545592877" Language="SFX">
 					<ShortName>ri_shevannai.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_shevannai_422C22B7.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="552141386" Language="SFX">
+					<ShortName>sfx_musicien_dark_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_953B3C19.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="554279713" Language="SFX">
@@ -1055,6 +1100,11 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_suriya_98A57E2A.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="625516522" Language="SFX">
+					<ShortName>sfx_musicien_dark_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_0370A4F5.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="641459777" Language="SFX">
 					<ShortName>ri_pipe.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_pipe_C6B1A581.wem</Path>
@@ -1103,9 +1153,18 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_suriya_09A1D435.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="693766727" Language="SFX">
+					<ShortName>sfx_metal_creak.wav</ShortName>
+					<Path>SFX\sfx_metal_creak_BADD951A_432913F2.wem</Path>
+				</File>
 				<File Id="698353598" Language="SFX">
 					<ShortName>ri_suriya.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_suriya_7E831385.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="707385814" Language="SFX">
+					<ShortName>sfx_musicien_dark_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_4D14AE2F.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="711322153" Language="SFX">
@@ -1455,9 +1514,24 @@
 					<Path>Plugins\Wwise Convolution Reverb\ri_symphobia_166F43DE.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
+				<File Id="993464400" Language="SFX">
+					<ShortName>sfx_musicien_dark_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_2CA7F755.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
 				<File Id="1003377797" Language="SFX">
 					<ShortName>ri_marseilles.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_marseilles_AC3170D9.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="1004987277" Language="SFX">
+					<ShortName>sfx_musicien_dark_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_0F8BB3F4.wem</Path>
+					<PrefetchSize>0</PrefetchSize>
+				</File>
+				<File Id="1010572178" Language="SFX">
+					<ShortName>sfx_musicien_dark_son.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_FAA71438.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="1010605349" Language="SFX">
@@ -1531,88 +1605,14 @@
 				</File>
 			</IncludedMemoryFiles>
 			<ExcludedMemoryFiles>
-				<File Id="25644424" Language="SFX">
-					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_F6D05544.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
 				<File Id="109234697" Language="SFX">
 					<ShortName>sfx_musicien_dark_son.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_D4B37BBA.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
-				<File Id="190779305" Language="SFX">
-					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_45BB17F9.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="213378079" Language="SFX">
-					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_F0169173.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="251945985" Language="SFX">
-					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_6E3B4E45.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="264919257" Language="SFX">
-					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_A32A90E5.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
 				<File Id="276110766" Language="SFX">
 					<ShortName>sfx_musicien_dark_son.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_1CF291D9.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="287729982" Language="SFX">
-					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_82D1C65A.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="454858103" Language="SFX">
-					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_8F3083F7.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="485845248" Language="SFX">
-					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_3D273D6C.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="552141386" Language="SFX">
-					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_953B3C19.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="625516522" Language="SFX">
-					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_0370A4F5.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="693766727" Language="SFX">
-					<ShortName>sfx_metal_creak.wav</ShortName>
-					<Path>SFX\sfx_metal_creak_BADD951A_432913F2.wem</Path>
-				</File>
-				<File Id="707385814" Language="SFX">
-					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_4D14AE2F.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="993464400" Language="SFX">
-					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_2CA7F755.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="1004987277" Language="SFX">
-					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_0F8BB3F4.wem</Path>
-					<PrefetchSize>0</PrefetchSize>
-				</File>
-				<File Id="1010572178" Language="SFX">
-					<ShortName>sfx_musicien_dark_son.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\sfx_musicien_dark_son_FAA71438.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 			</ExcludedMemoryFiles>

@@ -1960,7 +1960,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="musicien_joie" ID="{88EEB13F-0D47-4FB9-8B0B-C2A4E040D57D}">
+								<Event Name="musicien_danse" ID="{88EEB13F-0D47-4FB9-8B0B-C2A4E040D57D}">
 									<ChildrenList>
 										<Action Name="Play" ID="{3609C07B-B500-45DA-80BD-C7C0012E3C5D}" ShortID="690267374" Type="Play" Scope="One" Global="false">
 											<ElementList>
