@@ -169,17 +169,17 @@ public class SoundUniverseManager : MonoBehaviour {
 
 	IEnumerator changeColors()
 	{
-
+		float timerChange = 0.0f;
 		if (switchType != switchDark) {
 
-			while (GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color != upLightLight) {
-				
+			while (timerChange <= 4.0f) {
+				timerChange+=Time.deltaTime;
 				RenderSettings.ambientLight = Color.Lerp (RenderSettings.ambientLight, ambientLight, Time.deltaTime * speed);
 				GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color = Color.Lerp (GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color, upLightLight, Time.deltaTime * speed);
 				GameObject.Find ("Lumières").transform.FindChild ("Directional_light_down").GetComponent<Light> ().color = Color.Lerp (GameObject.Find ("Lumières").transform.FindChild ("Directional_light_down").GetComponent<Light> ().color, downLightLight, Time.deltaTime * speed);
 				RenderSettings.skybox.SetColor ("_Tint", Color.Lerp (RenderSettings.skybox.GetColor ("_Tint"), skyBoxLight, Time.deltaTime * speed));
 				
-				yield return new WaitForSeconds (.1f);
+				yield return null;
 			}
 
 
@@ -187,14 +187,14 @@ public class SoundUniverseManager : MonoBehaviour {
 		} else {
 
 
-			while (GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color != upLightDark) {
-
+			while (timerChange <= 4.0f) {
+				timerChange+=Time.deltaTime;
 				RenderSettings.ambientLight = Color.Lerp (RenderSettings.ambientLight, ambientDark, Time.deltaTime * speed);
 				GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color = Color.Lerp (GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color, upLightDark, Time.deltaTime * speed);
 				GameObject.Find ("Lumières").transform.FindChild ("Directional_light_down").GetComponent<Light> ().color = Color.Lerp (GameObject.Find ("Lumières").transform.FindChild ("Directional_light_down").GetComponent<Light> ().color, downLightDark, Time.deltaTime * speed);
 				RenderSettings.skybox.SetColor ("_Tint", Color.Lerp (RenderSettings.skybox.GetColor ("_Tint"), skyBoxDark, Time.deltaTime * speed));
 			
-				yield return new WaitForSeconds (.1f);
+				yield return null;
 			}
 		}
 	}
