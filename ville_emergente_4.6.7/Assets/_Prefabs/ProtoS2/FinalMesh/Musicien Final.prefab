@@ -1115,7 +1115,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 156212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15, y: 2.5999999, z: 6}
+  m_LocalPosition: {x: 159.770004, y: 140.929993, z: -127.110001}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 494900}
@@ -1552,7 +1552,12 @@ MonoBehaviour:
   danceTimer: 0
   endDanceTimer: 10
   fragmentBubble: {fileID: 11494900}
-  material: {fileID: 0}
+  defaultMaterial: {fileID: 2100000, guid: 98f8dadebf879154b83095b8a28f133f, type: 2}
+  elecMaterial: {fileID: 2100000, guid: 83cf46ab03485824ea3ce7b547f4e0fe, type: 2}
+  liquidMaterial: {fileID: 2100000, guid: 70653af5573a1004da09e3017a8588a7, type: 2}
+  metalMaterial: {fileID: 2100000, guid: 3def0c79b90e1bb4c94bc09168cf9785, type: 2}
+  urbanMaterial: {fileID: 2100000, guid: 975e908b9dba3104bae96667055122d6, type: 2}
+  woodMaterial: {fileID: 2100000, guid: 0edef5274a4966743acb12077a8c444e, type: 2}
   targets: []
   previousTarget: {fileID: 0}
   buildings:
