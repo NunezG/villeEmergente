@@ -72189,9 +72189,6 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
-						<Reference Name="Attenuation">
-							<ObjectRef Name="PNJ_Attenuation" ID="{74A29457-25DC-4BF0-98CE-4A616073B4E0}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
-						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 						</Reference>
@@ -72211,8 +72208,10 @@
 								</Property>
 								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 								<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="OverridePriority" Type="bool" Value="True"/>
 								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Priority" Type="int16">
 									<ValueList>
 										<Value>70</Value>
@@ -72231,6 +72230,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Musicien &amp; Guide" ID="{6066094F-54FD-4DA0-9C7B-4C43784046F8}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 								</Reference>
@@ -73279,6 +73281,7 @@
 								</Property>
 								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 								<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="OverridePriority" Type="bool" Value="True"/>
 								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
@@ -73296,7 +73299,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="PNJ_Attenuation" ID="{74A29457-25DC-4BF0-98CE-4A616073B4E0}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+									<ObjectRef Name="Passant" ID="{74A29457-25DC-4BF0-98CE-4A616073B4E0}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -74041,8 +74044,10 @@
 								</Property>
 								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 								<Property Name="OverrideMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="OverridePriority" Type="bool" Value="True"/>
 								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Priority" Type="int16">
 									<ValueList>
 										<Value>70</Value>
@@ -74061,6 +74066,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Musicien &amp; Guide" ID="{6066094F-54FD-4DA0-9C7B-4C43784046F8}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 								</Reference>
