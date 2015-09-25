@@ -40,8 +40,7 @@ public class ObjectInteractor : MonoBehaviour {
 				(!handsFull
 				&& ((interacObj.type == InteractibleType.Fragment 
 				&& (interacObj.transform.parent == null || interacObj.transform.parent.name != "inHandPosition"))
-				|| (interacObj.type == InteractibleType.SettingPiece 
-				&& interacObj.GetComponent<ConvolutionObject> ().HasFragment ()))) { //µRamassable
+				|| (interacObj.type == InteractibleType.SettingPiece ))) { // Touchable
 				Cm.setInteractibleCursor ();
 			}
 		}

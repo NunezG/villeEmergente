@@ -16,6 +16,7 @@ public class PassantLeaveScene : RAINAction
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
 
+        ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager>().Marche();
         ai.Body.GetComponent<Passant>().LeaveSelectedScene();
         return ActionResult.SUCCESS;
     }
