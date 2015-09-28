@@ -16,6 +16,7 @@ GameObject:
   - 114: {fileID: 11479858}
   - 114: {fileID: 11473008}
   - 114: {fileID: 11402972}
+  - 114: {fileID: 11443706}
   m_Layer: 0
   m_Name: SettingPiece7
   m_TagString: Untagged
@@ -116,6 +117,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fragment: {fileID: 0}
   switchName: 4
+--- !u!114 &11443706
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80c2d4aa6a56b1479abcad91f2d610e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTime: 1
+  endTime: 60
+  inverse: 0
 --- !u!114 &11473008
 MonoBehaviour:
   m_ObjectHideFlags: 1

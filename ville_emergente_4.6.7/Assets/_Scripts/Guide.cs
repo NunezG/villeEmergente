@@ -127,7 +127,6 @@ public class Guide : MonoBehaviour
     {
         if (inHandObject != null)
         {
-            print("Interactor:DropInHandObject");
             inHandObject.GetComponent<Fragment>().Drop();
             handsFull = false;
             inHandObject = null;

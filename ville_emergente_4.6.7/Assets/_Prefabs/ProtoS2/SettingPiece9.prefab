@@ -16,6 +16,7 @@ GameObject:
   - 114: {fileID: 11421174}
   - 114: {fileID: 11473008}
   - 114: {fileID: 11402972}
+  - 114: {fileID: 11431628}
   m_Layer: 0
   m_Name: SettingPiece9
   m_TagString: Untagged
@@ -128,6 +129,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collapsingSpeed: 10
+--- !u!114 &11431628
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f80c2d4aa6a56b1479abcad91f2d610e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTime: 1
+  endTime: 60
+  inverse: 0
 --- !u!114 &11473008
 MonoBehaviour:
   m_ObjectHideFlags: 1
