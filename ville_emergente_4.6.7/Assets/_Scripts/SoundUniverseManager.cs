@@ -223,18 +223,17 @@ public class SoundUniverseManager : MonoBehaviour {
 				WwiseAudioManager.PlayLoopEvent (playingObjects[i].GetComponent<InteractibleObject>().soundEvent, playingObjects[i], true);
 			}
 
-			if (playingObjects[i].GetComponent<AudioEventManager>() != null && playingObjects[i].GetComponentInChildren<AudioEventManager>().idleSound)
+			else if (playingObjects[i].GetComponentInChildren<AudioEventManager>() != null && playingObjects[i].GetComponentInChildren<AudioEventManager>().idleSound)
 			{
-				//Stoppe son Idle (PNJ)
-				playingObjects[i].GetComponent<AudioEventManager>().SounStopdIdle();
+				GameObject playingNPC = playingObjects[i];
 
-				//Lance switch
-				WwiseAudioManager.PlayFiniteEvent(switchType+playingObjects[i].GetComponent<ConvolutionObject>().switchName, playingObjects[i]);
-				
-				playingObjects[i].GetComponent<AudioEventManager>().SoundPlayIdle();
+				//Stoppe son Idle (PNJ)
+				playingNPC.GetComponentInChildren<AudioEventManager>().SounStopdIdle();
+
+				//play son Idle (PNJ)
+				playingNPC.GetComponentInChildren<AudioEventManager>().SoundPlayIdle();
 
 				//WwiseAudioManager.PlayLoopEvent (playingObjects[i].GetComponent<InteractibleObject>().soundEvent, playingObjects[i], true);
-
 			}
 		}
 	}

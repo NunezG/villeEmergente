@@ -9,6 +9,8 @@ public class AudioEventManager : MonoBehaviour {
 
     public void Start()
     {
+		//Ajoute idle dans la liste des switch
+		SoundUniverseManager.addSoundEvent (this.transform.parent.gameObject); 
 		SoundPlayIdle ();
 		//if (audioName=="")
 		//audioName = gameObject.name;
@@ -40,15 +42,22 @@ public class AudioEventManager : MonoBehaviour {
 	*/
 	public void SoundPlayIdle()
 	{		
-		SoundUniverseManager.addSoundEvent (this.transform.parent.gameObject); 
 		WwiseAudioManager.PlayFiniteEvent(SoundUniverseManager.switchType+"_mood", this.transform.parent.gameObject);
 		WwiseAudioManager.PlayLoopEvent (audioName.ToString()+"_idle", this.transform.parent.gameObject);
 	}
 
 	public void SounStopdIdle()
 	{
-		SoundUniverseManager.removeSoundEvent (this.transform.parent.gameObject);
+		//SoundUniverseManager.removeSoundEvent (this.transform.parent.gameObject);
 		WwiseAudioManager.StopLoopEvent (audioName.ToString()+"_idle", this.transform.parent.gameObject);
+	}
+
+	public void SoundRemovedIdle()
+	{
+		//Debug.Log ("STOP NAME : "+ this.transform.parent.gameObject.name);
+		
+		SoundUniverseManager.removeSoundEvent (this.transform.parent.gameObject);
+		SounStopdIdle ();
 	}
 
 
