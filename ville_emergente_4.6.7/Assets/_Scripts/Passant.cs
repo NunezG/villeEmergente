@@ -12,37 +12,32 @@ public class Passant : MonoBehaviour {
 
 
     public RAIN.Memory.BasicMemory tMemory;
+    
+    public float waitTimer = 0, minEndWaitTimer = 10, maxEndWaitTimer = 15, endWaitTimer, // timer pour l'attente des pnj à chacune des NT_Passant
+        povTimer = 0,endPovTimer =5; // timer pour l'attente à l'arrivée sur le point de vue
 
-
-
-    public float waitTimer = 0, minEndWaitTimer = 10, maxEndWaitTimer = 15, endWaitTimer,povTimer = 0,endPovTimer =5;
-
-    public Material material;
     private string audioEventName = "";
     public string defaultAudioEventName = "";
 
-    public static GameObject[] allNavTargets = null;
-    public List<GameObject> targets = new List<GameObject>();
-    public GameObject previousTarget = null;
+    public static GameObject[] allNavTargets = null; // l'ensemble des navigations targets pour tous les passants  
+    public List<GameObject> targets = new List<GameObject>(); // l'ensemble des navigations target de ce passant
+    public GameObject previousTarget = null; // la dernière navigation target visitée par le passant
 
 
-    public List<SceneRange> availableScenes = new List<SceneRange>();
+    public List<SceneRange> availableScenes = new List<SceneRange>(); // scènes à portée du passant
 
-    public SceneRange selectedScene;
-    public GameObject sceneLeader,sceneSpot;
-    public int selectedSpotIndex = -1;
+    public SceneRange selectedScene; // la scène actuelle sélectionnée par le passant
+    public GameObject sceneLeader,sceneSpot; // le musicien ou guide qui dirige la scène en question, et la place du passant dans cette scène
+    public int selectedSpotIndex = -1; // index de la place du passant dans la liste des places de la scène
 
     public void Awake()
     {
         tag = "NPC";
-        // if(targets==null)
-        //Debug.Log ("START MUSICIENN");
-        int matriculePassant = int.Parse(this.gameObject.name.Substring(7));
-        //print("matriculePassant " + matriculePassant);
+        int matriculePassant = int.Parse(this.gameObject.name.Substring(7)); // on récupère le matricule du passant dans son nom : "PassantX" X est le matricule
 
-        if (allNavTargets == null)
+        if (allNavTargets == null) // récupération de toutes les navigations targets si elles n'ont pas déjà été récupérée
             allNavTargets = GameObject.FindGameObjectsWithTag("NavigationTarget");
-        foreach (GameObject gObject in allNavTargets)
+        foreach (GameObject gObject in allNavTargets) // récupération des navigations target ayant le même matricule que le passant
         {
             if (gObject.name == "NT_Passant_" + matriculePassant)
             {
@@ -56,13 +51,13 @@ public class Passant : MonoBehaviour {
     {
         audioEventName = defaultAudioEventName;
         AIRig aiRig = GetComponentInChildren<AIRig>();
-        tMemory = aiRig.AI.WorkingMemory as RAIN.Memory.BasicMemory;
-        endWaitTimer = (int)Random.Range(minEndWaitTimer, maxEndWaitTimer);
+        tMemory = aiRig.AI.WorkingMemory as RAIN.Memory.BasicMemory; // récupération des composants RAIN
+        endWaitTimer = (int)Random.Range(minEndWaitTimer, maxEndWaitTimer); // séléction aléatoire de la fin du timer d'attente
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (tMemory.GetItem<bool>("destinationReached") && !tMemory.GetItem<bool>("inLifeScene"))
+        if (tMemory.GetItem<bool>("destinationReached") && !tMemory.GetItem<bool>("inLifeScene")) // gestion du timer d'attente sur les NT
         {
             if (waitTimer < endWaitTimer && !tMemory.GetItem<bool>("waitTimerHasEnded"))
             {
@@ -78,7 +73,7 @@ public class Passant : MonoBehaviour {
                 endWaitTimer = (int)Random.Range(minEndWaitTimer, maxEndWaitTimer);
             }
         }
-        if (tMemory.GetItem<bool>("guideIsOnPov") )
+        if (tMemory.GetItem<bool>("guideIsOnPov") )// gestion du timer d'attente sur les points de vue
         {
             if (povTimer < endPovTimer && !tMemory.GetItem<bool>("povTimerHasEnded"))
             {
@@ -97,17 +92,18 @@ public class Passant : MonoBehaviour {
 
 	}
 
-    public void EmitSound()
+    public void EmitSound()// émission du son du passant
     {
         WwiseAudioManager.PlayFiniteEvent(audioEventName, this.gameObject);
         print("Emit Sound");
     }
-
-    public void SetInRangeOfScene(bool boolean)
+    // remet à false la variable RAIN de portée de scène, si il n'y a plus de scènes à portée
+    // ( utilisé quand le passant sort du trigger des scènes ) 
+    public void SetInRangeOfScene(bool boolean) 
     {
-        if (!boolean)
+        if (!boolean) 
         {
-            if (availableScenes.Count == 0)
+            if (availableScenes.Count == 0) // si c'était la dernière scène on remet à 0 
             {
                 tMemory.SetItem<bool>("inRangeOfScene", boolean);
             }
@@ -117,15 +113,19 @@ public class Passant : MonoBehaviour {
             tMemory.SetItem<bool>("inRangeOfScene", boolean);
         }
     }
+    // assignation du booleen de la variable RAIN 
     public void SetInLifeScene(bool boolean)
     {
         tMemory.SetItem<bool>("inLifeScene", boolean);
     }
+
+    // assignation de la cible dans RAIN
     public void SetTarget(GameObject gObject)
     {
         tMemory.SetItem<GameObject>("target", gObject);
     }
 
+    // renvoie vrai si il y a au moins une place de libre dans l'une des scènes à portée
     public bool IsThereAtLeastOneFreeSpot()
     {
         for (int i = 0; i < availableScenes.Count; i++)// parcours des scenes
@@ -141,6 +141,7 @@ public class Passant : MonoBehaviour {
         return false;
     }
 
+    // accesseur pour savoir si le musicien est en train de danser
     public bool IsTheMusicianDancing()
     {
         AIRig aiRig = sceneLeader.GetComponentInChildren<AIRig>();
@@ -149,6 +150,7 @@ public class Passant : MonoBehaviour {
 
     } 
 
+    // choisit l'une des scènes disponibles à portée et s'inscrit dedans
     public void SelectAndEnterScene()
     {
 
@@ -185,6 +187,7 @@ public class Passant : MonoBehaviour {
         }
     }
 
+    // quitte la scèe
     public void LeaveSelectedScene()
     {
         selectedScene.availablesSpots[selectedSpotIndex] = true;
@@ -194,7 +197,7 @@ public class Passant : MonoBehaviour {
         SetTarget(null); 
         selectedSpotIndex = -1;
     }
-
+    // assignateur RAIN pour la proximité 
     public void SetPlayerIsInRange(bool boolean)
     {
         tMemory.SetItem<bool>("playerIsInRange", boolean);

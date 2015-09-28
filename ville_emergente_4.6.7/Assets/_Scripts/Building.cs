@@ -44,6 +44,10 @@ public class Building : MonoBehaviour {
 			yield return true;
 		}
 
+        GetComponent<Blend>().inverse = true;
+        GetComponent<Blend>().startTime = Time.time;
+        GetComponent<Blend>().endTime = Time.time + collapsingSpeed;
+        GetComponent<Blend>().enabled = true;
 
 
 	}
