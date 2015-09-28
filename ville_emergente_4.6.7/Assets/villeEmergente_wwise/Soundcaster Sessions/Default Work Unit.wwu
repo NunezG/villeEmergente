@@ -286,7 +286,7 @@
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="AtmoRI_1" ID="{D66DB834-E895-4554-9254-70B3FB3E760B}"/>
 						<CurrentSwitchRef Name="Atmo_7" ID="{F973153E-CA8F-4F59-BC85-0FD246B7783F}"/>
-						<CurrentSwitchRef Name="PNJ_atmo" ID="{6583DB66-6DA5-4465-8339-CE6734F36F63}"/>
+						<CurrentSwitchRef Name="PNJ_dark" ID="{22839C04-35C4-43D7-8862-4D6AA0DAE69C}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
