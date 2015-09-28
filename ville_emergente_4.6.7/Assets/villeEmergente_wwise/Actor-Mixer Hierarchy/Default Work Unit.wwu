@@ -2590,7 +2590,10 @@
 													<PropertyList>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-1</Value>
@@ -2598,6 +2601,9 @@
 														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 														</Reference>
@@ -4290,7 +4296,9 @@
 													<PropertyList>
 														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-7</Value>
@@ -4299,7 +4307,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
-															<ObjectRef Name="Basic" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
 														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -6459,7 +6467,10 @@
 													<PropertyList>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>1</Value>
@@ -6467,6 +6478,9 @@
 														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 														</Reference>
@@ -8063,7 +8077,9 @@
 													<PropertyList>
 														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-5</Value>
@@ -8072,7 +8088,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
-															<ObjectRef Name="Basic" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
 														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -10233,9 +10249,15 @@
 													<PropertyList>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 														</Reference>
@@ -11828,7 +11850,9 @@
 													<PropertyList>
 														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-7</Value>
@@ -11837,7 +11861,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
-															<ObjectRef Name="Basic" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
 														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -14048,9 +14072,15 @@
 													<PropertyList>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 														</Reference>
@@ -15647,7 +15677,9 @@
 													<PropertyList>
 														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-2</Value>
@@ -15656,7 +15688,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
-															<ObjectRef Name="Basic" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
 														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -17845,7 +17877,10 @@
 													<PropertyList>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-5</Value>
@@ -17853,6 +17888,9 @@
 														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 														</Reference>
@@ -19370,7 +19408,9 @@
 													<PropertyList>
 														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-3</Value>
@@ -19379,7 +19419,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
-															<ObjectRef Name="Basic" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
 														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -21565,9 +21605,15 @@
 													<PropertyList>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 														</Reference>
@@ -23180,7 +23226,9 @@
 													<PropertyList>
 														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-3</Value>
@@ -23189,7 +23237,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
-															<ObjectRef Name="Basic" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
 														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -25413,7 +25461,10 @@
 													<PropertyList>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>7</Value>
@@ -25421,6 +25472,9 @@
 														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 														</Reference>
@@ -26964,7 +27018,9 @@
 													<PropertyList>
 														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-7</Value>
@@ -26973,7 +27029,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
-															<ObjectRef Name="Basic" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
 														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -29156,7 +29212,10 @@
 													<PropertyList>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>2</Value>
@@ -29164,6 +29223,9 @@
 														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 														</Reference>
@@ -30726,7 +30788,9 @@
 													<PropertyList>
 														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-13</Value>
@@ -30735,7 +30799,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
-															<ObjectRef Name="Basic" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
 														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -32883,7 +32947,10 @@
 													<PropertyList>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-1</Value>
@@ -32891,6 +32958,9 @@
 														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 														</Reference>
@@ -34473,7 +34543,9 @@
 													<PropertyList>
 														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-14</Value>
@@ -34482,7 +34554,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
-															<ObjectRef Name="Basic" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
 														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -49597,7 +49669,10 @@
 													<PropertyList>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-4</Value>
@@ -49605,6 +49680,9 @@
 														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 														</Reference>
@@ -51173,7 +51251,9 @@
 													<PropertyList>
 														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-2</Value>
@@ -51182,7 +51262,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
-															<ObjectRef Name="Basic" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
 														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -53376,7 +53456,10 @@
 													<PropertyList>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-1</Value>
@@ -53384,6 +53467,9 @@
 														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 														</Reference>
@@ -54941,11 +55027,13 @@
 													<PropertyList>
 														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
-															<ObjectRef Name="Basic" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
 														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -57165,7 +57253,10 @@
 													<PropertyList>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-2</Value>
@@ -57173,6 +57264,9 @@
 														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 														</Reference>
@@ -58755,7 +58849,9 @@
 													<PropertyList>
 														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-4</Value>
@@ -58764,7 +58860,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
-															<ObjectRef Name="Basic" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
 														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -60916,7 +61012,10 @@
 													<PropertyList>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>7</Value>
@@ -60924,6 +61023,9 @@
 														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 														</Reference>
@@ -62424,7 +62526,9 @@
 													<PropertyList>
 														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-13</Value>
@@ -62433,7 +62537,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
-															<ObjectRef Name="Basic" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
 														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -64663,7 +64767,10 @@
 													<PropertyList>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>4</Value>
@@ -64671,6 +64778,9 @@
 														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 														</Reference>
@@ -66184,7 +66294,9 @@
 													<PropertyList>
 														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-16</Value>
@@ -66193,7 +66305,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
-															<ObjectRef Name="Basic" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
 														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -68389,7 +68501,10 @@
 													<PropertyList>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>8</Value>
@@ -68397,6 +68512,9 @@
 														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
 														</Reference>
@@ -69890,7 +70008,9 @@
 													<PropertyList>
 														<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
 														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PositioningType" Type="int16" Value="1"/>
+														<Property Name="Spatialization" Type="bool" Value="False"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-14</Value>
@@ -69899,7 +70019,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
-															<ObjectRef Name="Basic" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+															<ObjectRef Name="Pantheon" ID="{3DE0C40B-BB97-400D-AD93-90D0B77F666A}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
 														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -71214,7 +71334,7 @@
 														<Property Name="PositioningType" Type="int16" Value="1"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>4</Value>
+																<Value>3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
