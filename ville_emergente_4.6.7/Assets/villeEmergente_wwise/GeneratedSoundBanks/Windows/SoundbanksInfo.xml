@@ -75,9 +75,9 @@
 				<Event Id="562249743" Name="hammer_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1109396808" Name="hammer_play" MaxAttenuation="25.000000"/>
 				<Event Id="3487067066" Name="hammer_stop" MaxAttenuation="0.000000"/>
-				<Event Id="3759079039" Name="interactions_simples_motion" MaxAttenuation="50.000000"/>
-				<Event Id="2535466649" Name="lacher_morceau" MaxAttenuation="50.000000"/>
-				<Event Id="3679869857" Name="linker_morceau" MaxAttenuation="50.000000"/>
+				<Event Id="3759079039" Name="interactions_simples_motion" MaxAttenuation="40.000000"/>
+				<Event Id="2535466649" Name="lacher_morceau" MaxAttenuation="40.000000"/>
+				<Event Id="3679869857" Name="linker_morceau" MaxAttenuation="40.000000"/>
 				<Event Id="2747240135" Name="logCrack_convolver_play" MaxAttenuation="100.000000"/>
 				<Event Id="1440905237" Name="logCrack_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1458620982" Name="logCrack_play" MaxAttenuation="25.000000"/>
@@ -105,7 +105,7 @@
 				<Event Id="2028913609" Name="passant_idle_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1195210688" Name="passant_son" MaxAttenuation="10.000000"/>
 				<Event Id="4275515877" Name="passant_tourne" MaxAttenuation="10.000000"/>
-				<Event Id="2138522384" Name="prendre_morceau" MaxAttenuation="50.000000"/>
+				<Event Id="2138522384" Name="prendre_morceau" MaxAttenuation="40.000000"/>
 				<Event Id="812837510" Name="rain_2DObject_play"/>
 				<Event Id="2622262392" Name="rain_2DObject_stop" MaxAttenuation="0.000000"/>
 				<Event Id="3913070078" Name="Sfx_RI" MaxAttenuation="50.000000"/>
@@ -254,6 +254,10 @@
 				<File Id="32344818" Language="SFX">
 					<ShortName>sfx_train.wav</ShortName>
 					<Path>SFX\sfx_train_318C7D7F.wem</Path>
+				</File>
+				<File Id="37420485" Language="SFX">
+					<ShortName>sfx_building_site.wav</ShortName>
+					<Path>SFX\sfx_building_site_66B984FD.wem</Path>
 				</File>
 				<File Id="41809020" Language="SFX">
 					<ShortName>ri_rev_light.wav</ShortName>
@@ -1156,7 +1160,7 @@
 				</File>
 				<File Id="671705003" Language="SFX">
 					<ShortName>ri_shevannai.wav</ShortName>
-					<Path>Plugins\Wwise Convolution Reverb\ri_shevannai_1ABE110B.wem</Path>
+					<Path>Plugins\Wwise Convolution Reverb\ri_shevannai_F12DB0DD.wem</Path>
 					<PrefetchSize>0</PrefetchSize>
 				</File>
 				<File Id="678871571" Language="SFX">
