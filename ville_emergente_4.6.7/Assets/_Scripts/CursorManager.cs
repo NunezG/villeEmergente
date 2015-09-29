@@ -9,19 +9,9 @@ public class CursorManager : MonoBehaviour {
 	public Sprite fragmentCursor;
 	public CursorType cursorT = CursorType.normal;
 
-
-	// Use this for initialization
-	void Start () {
-	
-
-
-		//GetComponent<UnityEngine.UI.Image> ().sprite = NPCCursor;
-
-
-
-
-	}
-
+	/*
+	 * Setters pour le curseur intéractif
+	 */
 	public void setNormalCursor()
 	{
 		cursorT = CursorType.normal;
@@ -33,7 +23,6 @@ public class CursorManager : MonoBehaviour {
 	{
 		cursorT = CursorType.interactible;
 		GetComponent<UnityEngine.UI.Image> ().sprite = interactibleCursor;
-		
 	}
 
 	public void setFailCursor()
@@ -49,12 +38,4 @@ public class CursorManager : MonoBehaviour {
 		GetComponent<UnityEngine.UI.Image> ().sprite = fragmentCursor;
 	}
 
-
-	// Update is called once per frame
-	void Update () {
-
-
-
-	
-	}
 }

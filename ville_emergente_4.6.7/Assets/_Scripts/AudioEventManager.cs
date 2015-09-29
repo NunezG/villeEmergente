@@ -21,7 +21,6 @@ public class AudioEventManager : MonoBehaviour {
 		//Stops previous event
 		if (idleSound) SounStopdIdle();
 		WwiseAudioManager.PlayFiniteEvent (eventName, this.transform.parent.gameObject, MyCallbackFunction);
-		//AkSoundEngine.PostEvent(eventName, this.gameObject, (uint)AkCallbackType.AK_EndOfEvent, MyCallbackFunction, this.gameObject);	
 	}
 
 	void MyCallbackFunction(object in_cookie, AkCallbackType in_type, object in_info)	
@@ -48,14 +47,11 @@ public class AudioEventManager : MonoBehaviour {
 
 	public void SounStopdIdle()
 	{
-		//SoundUniverseManager.removeSoundEvent (this.transform.parent.gameObject);
 		WwiseAudioManager.StopLoopEvent (audioName.ToString()+"_idle", this.transform.parent.gameObject);
 	}
 
 	public void SoundRemovedIdle()
 	{
-		//Debug.Log ("STOP NAME : "+ this.transform.parent.gameObject.name);
-		
 		SoundUniverseManager.removeSoundEvent (this.transform.parent.gameObject);
 		SounStopdIdle ();
 	}
