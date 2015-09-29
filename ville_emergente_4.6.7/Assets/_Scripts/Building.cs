@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+// Classe pour les bâtiments qui doivent s'abaisser quand un musicien est complété
 public class Building : MonoBehaviour {
 
 	private float lastPos = 0;
@@ -10,15 +12,6 @@ public class Building : MonoBehaviour {
 	public void Start()
 	{
 	}
-
-    /*
-	void OnMouseDown()
-	{
-		if (lastPos == 0)
-			Down ();
-		else
-			Up ();
-	}*/
 
 
 	public void Down()

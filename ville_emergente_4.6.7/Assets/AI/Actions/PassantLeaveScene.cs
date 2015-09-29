@@ -12,12 +12,12 @@ public class PassantLeaveScene : RAINAction
         base.Start(ai);
         Debug.Log(ai.Body.name + " : PassantLeaveScene");
     }
-
+    // action RAIN correspondant  la sortie d'une scène des passants 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
 
-        ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager>().Marche();
-        ai.Body.GetComponent<Passant>().LeaveSelectedScene();
+        ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager>().Marche(); // retour à l'animation de marche
+        ai.Body.GetComponent<Passant>().LeaveSelectedScene(); // et sortie de la scène
         return ActionResult.SUCCESS;
     }
 

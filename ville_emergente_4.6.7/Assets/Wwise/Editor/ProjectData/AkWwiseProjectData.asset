@@ -16,6 +16,174 @@ MonoBehaviour:
     ParentPhysicalPath: 
     Guid: '{7F93A25F-2979-462E-8B53-8DECAD100DFF}'
     List:
+    - Name: anvil_convolver_play
+      Path: Default Work Unit\Fragments\Metal\anvil_convolver_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Metal
+        ObjectType: 4
+      - ElementName: anvil_convolver_play
+        ObjectType: 3
+      ID: 1535194403
+      Guid: fb6220af2b07964ca951737e206ad15d
+      maxAttenuation: 0
+    - Name: anvil_convolver_stop
+      Path: Default Work Unit\Fragments\Metal\anvil_convolver_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Metal
+        ObjectType: 4
+      - ElementName: anvil_convolver_stop
+        ObjectType: 3
+      ID: -444908055
+      Guid: c08a71b6f7d69843abb5bcfd34a3c391
+      maxAttenuation: 0
+    - Name: anvil_play
+      Path: Default Work Unit\Fragments\Metal\anvil_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Metal
+        ObjectType: 4
+      - ElementName: anvil_play
+        ObjectType: 3
+      ID: 767008978
+      Guid: 69adbdc151537648a8f4377e866a6976
+      maxAttenuation: 0
+    - Name: anvil_stop
+      Path: Default Work Unit\Fragments\Metal\anvil_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Metal
+        ObjectType: 4
+      - ElementName: anvil_stop
+        ObjectType: 3
+      ID: -1857874356
+      Guid: c643aac50a902d49a47bae211b7ebe6b
+      maxAttenuation: 0
+    - Name: brewing_convolver_play
+      Path: Default Work Unit\Fragments\Urban\brewing_convolver_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Urban
+        ObjectType: 4
+      - ElementName: brewing_convolver_play
+        ObjectType: 3
+      ID: -547603687
+      Guid: 949beb3df7a47042ba96002467e77453
+      maxAttenuation: 0
+    - Name: brewing_convolver_stop
+      Path: Default Work Unit\Fragments\Urban\brewing_convolver_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Urban
+        ObjectType: 4
+      - ElementName: brewing_convolver_stop
+        ObjectType: 3
+      ID: 2043461215
+      Guid: 41e153827a8b074987ce86a0f4ae3c11
+      maxAttenuation: 0
+    - Name: brewing_play
+      Path: Default Work Unit\Fragments\Urban\brewing_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Urban
+        ObjectType: 4
+      - ElementName: brewing_play
+        ObjectType: 3
+      ID: 610603704
+      Guid: ebb777c6946d7948b90e60e8292f300a
+      maxAttenuation: 0
+    - Name: brewing_stop
+      Path: Default Work Unit\Fragments\Urban\brewing_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Urban
+        ObjectType: 4
+      - ElementName: brewing_stop
+        ObjectType: 3
+      ID: -1311916278
+      Guid: d8810a7e961f074c974bfcda5284641c
+      maxAttenuation: 0
+    - Name: buildingSite_convolver_play
+      Path: Default Work Unit\Fragments\Urban\buildingSite_convolver_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Urban
+        ObjectType: 4
+      - ElementName: buildingSite_convolver_play
+        ObjectType: 3
+      ID: 257985868
+      Guid: 403afb22a030f241a10f4a5f45d1574d
+      maxAttenuation: 0
+    - Name: buildingSite_convolver_stop
+      Path: Default Work Unit\Fragments\Urban\buildingSite_convolver_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Urban
+        ObjectType: 4
+      - ElementName: buildingSite_convolver_stop
+        ObjectType: 3
+      ID: -2067196842
+      Guid: 7c232b93cbfba743aef95f6adb282132
+      maxAttenuation: 0
+    - Name: buildingSite_play
+      Path: Default Work Unit\Fragments\Urban\buildingSite_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Urban
+        ObjectType: 4
+      - ElementName: buildingSite_play
+        ObjectType: 3
+      ID: 603921033
+      Guid: af5ab7dc52f42940bf4cbe2b9e0c048c
+      maxAttenuation: 0
+    - Name: buildingSite_stop
+      Path: Default Work Unit\Fragments\Urban\buildingSite_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Urban
+        ObjectType: 4
+      - ElementName: buildingSite_stop
+        ObjectType: 3
+      ID: 2126337967
+      Guid: bb5edcbb2e5c914ebd83169b882cd693
+      maxAttenuation: 0
     - Name: busyStreet_convolver_play
       Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\busyStreet_convolver_play"
       PathAndIcons:
@@ -29,7 +197,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 289850157
       Guid: 9cc141fd574f65408cd4e550e25bc4cd
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: busyStreet_convolver_stop
       Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\busyStreet_convolver_stop"
       PathAndIcons:
@@ -57,7 +225,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -297376980
       Guid: 4762f2e5f4ed634d9ac498b587c5d947
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: busyStreet_stop
       Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\busyStreet_stop"
       PathAndIcons:
@@ -113,7 +281,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1282923457
       Guid: 585324df86f9734da0b7dd36238ac25f
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: dropsCardboard_convolver_stop
       Path: Default Work Unit\Fragments\Liquide\dropsCardboard_convolver_stop
       PathAndIcons:
@@ -141,7 +309,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1374189182
       Guid: d06c9440cdf4f24da2d4350ab8080ef0
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: dropsCardboard_stop
       Path: Default Work Unit\Fragments\Liquide\dropsCardboard_stop
       PathAndIcons:
@@ -169,7 +337,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 558637385
       Guid: 67483b8120948449ac8c30b90e264a26
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: electricBuzz_convolver_stop
       Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\electricBuzz_convolver_stop"
       PathAndIcons:
@@ -197,7 +365,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1518687768
       Guid: d286b7e26f627849b38d7f784a6d0868
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: electricBuzz_stop
       Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\electricBuzz_stop"
       PathAndIcons:
@@ -225,7 +393,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -497515076
       Guid: 01da943569790a4da769b5c95f5d5748
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: electricityArcing_convolver_stop
       Path: Default Work Unit\Fragments\Electricite\electricityArcing_convolver_stop
       PathAndIcons:
@@ -253,7 +421,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 2107924217
       Guid: a071783b1fe4ce4a84f6ee90f2bd989c
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: electricityArcing_stop
       Path: Default Work Unit\Fragments\Electricite\electricityArcing_stop
       PathAndIcons:
@@ -281,7 +449,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 2137081894
       Guid: 1319b3a194a1dd4ebf4580fc209d1e15
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: electricityStatic_convolver_stop
       Path: Default Work Unit\Fragments\Electricite\electricityStatic_convolver_stop
       PathAndIcons:
@@ -309,7 +477,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 512634819
       Guid: f78028092dcede49a0a90677073e9929
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: electricityStatic_stop
       Path: Default Work Unit\Fragments\Electricite\electricityStatic_stop
       PathAndIcons:
@@ -361,8 +529,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -409328677
       Guid: e5ec422b88108f4dad232df88a36edb1
-<<<<<<< HEAD
-      maxAttenuation: 25
+      maxAttenuation: 0
     - Name: fragment_call_electricity_stop
       Path: Default Work Unit\Fragments\Call\fragment_call_electricity_stop
       PathAndIcons:
@@ -390,14 +557,9 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1153374928
       Guid: ebd7a6b3afd1734884ff7192bb7b9017
-      maxAttenuation: 25
+      maxAttenuation: 0
     - Name: fragment_call_liquid_stop
       Path: Default Work Unit\Fragments\Call\fragment_call_liquid_stop
-=======
-      maxAttenuation: 0
-    - Name: fragment_call_electricity_stop
-      Path: Default Work Unit\Fragments\Call\fragment_call_electricity_stop
->>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -405,7 +567,6 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Call
         ObjectType: 4
-<<<<<<< HEAD
       - ElementName: fragment_call_liquid_stop
         ObjectType: 3
       ID: 1490074322
@@ -413,15 +574,6 @@ MonoBehaviour:
       maxAttenuation: 0
     - Name: fragment_call_metal_play
       Path: Default Work Unit\Fragments\Call\fragment_call_metal_play
-=======
-      - ElementName: fragment_call_electricity_stop
-        ObjectType: 3
-      ID: -1539865967
-      Guid: 813f7cd2440d3e4ca14a749eb4ccfa3a
-      maxAttenuation: 0
-    - Name: fragment_call_liquid_play
-      Path: Default Work Unit\Fragments\Call\fragment_call_liquid_play
->>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -429,23 +581,13 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Call
         ObjectType: 4
-<<<<<<< HEAD
       - ElementName: fragment_call_metal_play
         ObjectType: 3
       ID: 933666621
       Guid: e191af76ffd05543a16759bbb10537cf
-      maxAttenuation: 25
+      maxAttenuation: 0
     - Name: fragment_call_metal_stop
       Path: Default Work Unit\Fragments\Call\fragment_call_metal_stop
-=======
-      - ElementName: fragment_call_liquid_play
-        ObjectType: 3
-      ID: -1153374928
-      Guid: ebd7a6b3afd1734884ff7192bb7b9017
-      maxAttenuation: 0
-    - Name: fragment_call_liquid_stop
-      Path: Default Work Unit\Fragments\Call\fragment_call_liquid_stop
->>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -453,7 +595,6 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Call
         ObjectType: 4
-<<<<<<< HEAD
       - ElementName: fragment_call_metal_stop
         ObjectType: 3
       ID: -1133985109
@@ -461,15 +602,6 @@ MonoBehaviour:
       maxAttenuation: 0
     - Name: fragment_call_pitch_0
       Path: Default Work Unit\Fragments\Call\fragment_call_pitch_0
-=======
-      - ElementName: fragment_call_liquid_stop
-        ObjectType: 3
-      ID: 1490074322
-      Guid: d80f97137ce0cc46b6e877241aef93a6
-      maxAttenuation: 0
-    - Name: fragment_call_metal_play
-      Path: Default Work Unit\Fragments\Call\fragment_call_metal_play
->>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -477,7 +609,6 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Call
         ObjectType: 4
-<<<<<<< HEAD
       - ElementName: fragment_call_pitch_0
         ObjectType: 3
       ID: -778313006
@@ -485,15 +616,6 @@ MonoBehaviour:
       maxAttenuation: 0
     - Name: fragment_call_pitch_100
       Path: Default Work Unit\Fragments\Call\fragment_call_pitch_100
-=======
-      - ElementName: fragment_call_metal_play
-        ObjectType: 3
-      ID: 933666621
-      Guid: e191af76ffd05543a16759bbb10537cf
-      maxAttenuation: 0
-    - Name: fragment_call_metal_stop
-      Path: Default Work Unit\Fragments\Call\fragment_call_metal_stop
->>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -501,17 +623,10 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Call
         ObjectType: 4
-<<<<<<< HEAD
       - ElementName: fragment_call_pitch_100
         ObjectType: 3
       ID: 1252949355
       Guid: 66aa85a6eeae364b938264880f86be95
-=======
-      - ElementName: fragment_call_metal_stop
-        ObjectType: 3
-      ID: -1133985109
-      Guid: 6435234af5b82f498056ed69cc6dbbcb
->>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
       maxAttenuation: 0
     - Name: fragment_call_urban_play
       Path: Default Work Unit\Fragments\Call\fragment_call_urban_play
@@ -526,11 +641,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1663044310
       Guid: c5d0211e55c74d44a86c494eff0d3bc3
-<<<<<<< HEAD
-      maxAttenuation: 25
-=======
       maxAttenuation: 0
->>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
     - Name: fragment_call_urban_stop
       Path: Default Work Unit\Fragments\Call\fragment_call_urban_stop
       PathAndIcons:
@@ -558,11 +669,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1375190009
       Guid: 092402d7fad41c438124175398bf26d0
-<<<<<<< HEAD
-      maxAttenuation: 25
-=======
       maxAttenuation: 0
->>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
     - Name: fragment_call_wood_stop
       Path: Default Work Unit\Fragments\Call\fragment_call_wood_stop
       PathAndIcons:
@@ -590,7 +697,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1128982233
       Guid: 13f50f5affcad6469e640830a23440c6
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: guide_idle_stop
       Path: Default Work Unit\PNJs\Guide\guide_idle_stop
       PathAndIcons:
@@ -618,7 +725,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -214441400
       Guid: 428bf4d55a85d140a322340340d26ca4
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: guide_ordre
       Path: Default Work Unit\PNJs\Guide\guide_ordre
       PathAndIcons:
@@ -632,7 +739,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1735048872
       Guid: a2d29b96a773f842804041bac38deb39
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: guide_son
       Path: Default Work Unit\PNJs\Guide\guide_son
       PathAndIcons:
@@ -646,7 +753,63 @@ MonoBehaviour:
         ObjectType: 3
       ID: -2090891314
       Guid: 79b074e55129b448b7d0a17079f2b8fb
-      maxAttenuation: 50
+      maxAttenuation: 0
+    - Name: hammer_convolver_play
+      Path: Default Work Unit\Fragments\Bois\hammer_convolver_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Bois
+        ObjectType: 4
+      - ElementName: hammer_convolver_play
+        ObjectType: 3
+      ID: -960270103
+      Guid: 5f21188a1234f64eacb5dbd3e999d65c
+      maxAttenuation: 0
+    - Name: hammer_convolver_stop
+      Path: Default Work Unit\Fragments\Bois\hammer_convolver_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Bois
+        ObjectType: 4
+      - ElementName: hammer_convolver_stop
+        ObjectType: 3
+      ID: 562249743
+      Guid: 174ccd9e49054f478d84459bdabd8f2f
+      maxAttenuation: 0
+    - Name: hammer_play
+      Path: Default Work Unit\Fragments\Bois\hammer_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Bois
+        ObjectType: 4
+      - ElementName: hammer_play
+        ObjectType: 3
+      ID: 1109396808
+      Guid: 2dcca69d524ea24d8b78e2ab99b8e3a3
+      maxAttenuation: 0
+    - Name: hammer_stop
+      Path: Default Work Unit\Fragments\Bois\hammer_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Bois
+        ObjectType: 4
+      - ElementName: hammer_stop
+        ObjectType: 3
+      ID: -807900230
+      Guid: 16b0469c84288840a16b26b195676530
+      maxAttenuation: 0
     - Name: interactions_simples_motion
       Path: Default Work Unit\Joueur\interactions_simples_motion
       PathAndIcons:
@@ -658,7 +821,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -535888257
       Guid: b996d6a067384f41a3e433d2daecf486
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: lacher_morceau
       Path: Default Work Unit\Joueur\lacher_morceau
       PathAndIcons:
@@ -670,7 +833,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1759500647
       Guid: 0829f1ece930964faa3bd51c90e42f61
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: linker_morceau
       Path: Default Work Unit\Joueur\linker_morceau
       PathAndIcons:
@@ -682,7 +845,189 @@ MonoBehaviour:
         ObjectType: 3
       ID: -615097439
       Guid: fe6a447c6ea03542a46bc95890394549
-      maxAttenuation: 50
+      maxAttenuation: 0
+    - Name: logCrack_convolver_play
+      Path: Default Work Unit\Fragments\Bois\logCrack_convolver_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Bois
+        ObjectType: 4
+      - ElementName: logCrack_convolver_play
+        ObjectType: 3
+      ID: -1547727161
+      Guid: 12ff02c352072745a9649229e00a4a6f
+      maxAttenuation: 0
+    - Name: logCrack_convolver_stop
+      Path: Default Work Unit\Fragments\Bois\logCrack_convolver_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Bois
+        ObjectType: 4
+      - ElementName: logCrack_convolver_stop
+        ObjectType: 3
+      ID: 1440905237
+      Guid: c58dc3082448894fa4da03e8dae98b5b
+      maxAttenuation: 0
+    - Name: logCrack_play
+      Path: Default Work Unit\Fragments\Bois\logCrack_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Bois
+        ObjectType: 4
+      - ElementName: logCrack_play
+        ObjectType: 3
+      ID: 1458620982
+      Guid: 158d717c191fe24daf30fb8c1697dd38
+      maxAttenuation: 0
+    - Name: logCrack_stop
+      Path: Default Work Unit\Fragments\Bois\logCrack_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Bois
+        ObjectType: 4
+      - ElementName: logCrack_stop
+        ObjectType: 3
+      ID: -2105808952
+      Guid: c0e7adf4ac07fd4baffc038cad9b2380
+      maxAttenuation: 0
+    - Name: metalCreak_convolver_play
+      Path: Default Work Unit\Fragments\Metal\metalCreak_convolver_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Metal
+        ObjectType: 4
+      - ElementName: metalCreak_convolver_play
+        ObjectType: 3
+      ID: -784647514
+      Guid: 5cbb6e9eb7d569409d251b0975050e70
+      maxAttenuation: 0
+    - Name: metalCreak_convolver_stop
+      Path: Default Work Unit\Fragments\Metal\metalCreak_convolver_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Metal
+        ObjectType: 4
+      - ElementName: metalCreak_convolver_stop
+        ObjectType: 3
+      ID: 1066456984
+      Guid: edfd82c1d439d34badc7ad43c16e11ce
+      maxAttenuation: 0
+    - Name: metalCreak_play
+      Path: Default Work Unit\Fragments\Metal\metalCreak_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Metal
+        ObjectType: 4
+      - ElementName: metalCreak_play
+        ObjectType: 3
+      ID: -329781693
+      Guid: 69f483ef4a5c524da7012b7051a9cc69
+      maxAttenuation: 0
+    - Name: metalCreak_stop
+      Path: Default Work Unit\Fragments\Metal\metalCreak_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Metal
+        ObjectType: 4
+      - ElementName: metalCreak_stop
+        ObjectType: 3
+      ID: 1985186057
+      Guid: d7e29e4f720b9a44b3ccd178ec1e316e
+      maxAttenuation: 0
+    - Name: metalRattle_convolver_play
+      Path: Default Work Unit\Fragments\Metal\metalRattle_convolver_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Metal
+        ObjectType: 4
+      - ElementName: metalRattle_convolver_play
+        ObjectType: 3
+      ID: -1056746676
+      Guid: d0607803abf98d419c9c82276eab8c65
+      maxAttenuation: 0
+    - Name: metalRattle_convolver_stop
+      Path: Default Work Unit\Fragments\Metal\metalRattle_convolver_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Metal
+        ObjectType: 4
+      - ElementName: metalRattle_convolver_stop
+        ObjectType: 3
+      ID: 913037910
+      Guid: 0545907058dcd044b27fc138556f5d04
+      maxAttenuation: 0
+    - Name: metalRattle_play
+      Path: Default Work Unit\Fragments\Metal\metalRattle_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Metal
+        ObjectType: 4
+      - ElementName: metalRattle_play
+        ObjectType: 3
+      ID: 1751789705
+      Guid: 47a71a2e6346eb46ad8724664a9996ce
+      maxAttenuation: 0
+    - Name: metalRattle_stop
+      Path: Default Work Unit\Fragments\Metal\metalRattle_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Metal
+        ObjectType: 4
+      - ElementName: metalRattle_stop
+        ObjectType: 3
+      ID: -1020760657
+      Guid: ab3896aad29ee9428a915035b51a5df5
+      maxAttenuation: 0
+    - Name: musicien_danse
+      Path: Default Work Unit\PNJs\Musicien\musicien_danse
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PNJs
+        ObjectType: 4
+      - ElementName: Musicien
+        ObjectType: 4
+      - ElementName: musicien_danse
+        ObjectType: 3
+      ID: 59174050
+      Guid: 3fb1ee88470db94f8b0bc2a4e040d57d
+      maxAttenuation: 0
     - Name: musicien_idle_play
       Path: Default Work Unit\PNJs\Musicien\musicien_idle_play
       PathAndIcons:
@@ -696,7 +1041,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1967625524
       Guid: 504f6093d1404049b72f8e1ca0fc8b65
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: musicien_idle_stop
       Path: Default Work Unit\PNJs\Musicien\musicien_idle_stop
       PathAndIcons:
@@ -711,20 +1056,6 @@ MonoBehaviour:
       ID: 2159062
       Guid: 4867641a5418554ea63354b4d538a60c
       maxAttenuation: 0
-    - Name: musicien_joie
-      Path: Default Work Unit\PNJs\Musicien\musicien_joie
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: PNJs
-        ObjectType: 4
-      - ElementName: Musicien
-        ObjectType: 4
-      - ElementName: musicien_joie
-        ObjectType: 3
-      ID: -2074790238
-      Guid: 3fb1ee88470db94f8b0bc2a4e040d57d
-      maxAttenuation: 50
     - Name: musicien_ouverture
       Path: Default Work Unit\PNJs\Musicien\musicien_ouverture
       PathAndIcons:
@@ -738,7 +1069,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 161018858
       Guid: caec0875a72f2f47ad38b009620b4bf1
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: musicien_son
       Path: Default Work Unit\PNJs\Musicien\musicien_son
       PathAndIcons:
@@ -752,7 +1083,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 916635435
       Guid: cbef3af6119fbb488b6b27647dcea2dd
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: musicien_tourne
       Path: Default Work Unit\PNJs\Musicien\musicien_tourne
       PathAndIcons:
@@ -766,7 +1097,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1665857576
       Guid: 63d4d636884fd945935c8ccb3e8a399b
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: paddle_convolver_play
       Path: Default Work Unit\Fragments\Liquide\paddle_convolver_play
       PathAndIcons:
@@ -780,7 +1111,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1732680073
       Guid: c79642e6c126f14991b888a3782ebe3f
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: paddle_convolver_stop
       Path: Default Work Unit\Fragments\Liquide\paddle_convolver_stop
       PathAndIcons:
@@ -808,7 +1139,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1792524826
       Guid: 72433668a3907a4e9104f9ac5ef5b719
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: paddle_stop
       Path: Default Work Unit\Fragments\Liquide\paddle_stop
       PathAndIcons:
@@ -836,7 +1167,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1172639847
       Guid: 025bd1a7d0600448999f5618b14182de
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: passant_idle_play
       Path: Default Work Unit\PNJs\Passants\passant_idle_play
       PathAndIcons:
@@ -850,7 +1181,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -327527933
       Guid: f40029d0dc990048b0c7f0eadad30478
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: passant_idle_stop
       Path: Default Work Unit\PNJs\Passants\passant_idle_stop
       PathAndIcons:
@@ -878,7 +1209,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1195210688
       Guid: e9ef0c432d649345ad6c12277b8d44b8
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: passant_tourne
       Path: Default Work Unit\PNJs\Passants\passant_tourne
       PathAndIcons:
@@ -892,7 +1223,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -19451419
       Guid: 8477855032c9a24d92e7f06f8c8a830e
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: prendre_morceau
       Path: Default Work Unit\Joueur\prendre_morceau
       PathAndIcons:
@@ -904,7 +1235,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 2138522384
       Guid: c36c4d293c1a974f84c14d54963c81bb
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: rain_2DObject_play
       Path: Default Work Unit\Tests Wwise Pierre & Guillermo\rain_2DObject_play
       PathAndIcons:
@@ -942,7 +1273,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -381897218
       Guid: 20a8635762adc949b48b5ff499250205
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: softRain_convolver_play
       Path: "Default Work Unit\\Fragments\\Abandonn\xE9s\\softRain_convolver_play"
       PathAndIcons:
@@ -1474,7 +1805,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -801903337
       Guid: 6d14ccc5d3b2f34281b57e0e0795a1e1
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: thunder_convolver_stop
       Path: Default Work Unit\Fragments\Electricite\thunder_convolver_stop
       PathAndIcons:
@@ -1502,7 +1833,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1587975354
       Guid: 11fab9475c406147b06e560368b5f9de
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: thunder_stop
       Path: Default Work Unit\Fragments\Electricite\thunder_stop
       PathAndIcons:
@@ -1528,37 +1859,9 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1398099514
       Guid: a64fd120264ccf4d92ea696661c9a73c
-      maxAttenuation: 50
-    - Name: trafficBy_convolver_play
-      Path: Default Work Unit\Fragments\Urban\trafficBy_convolver_play
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Urban
-        ObjectType: 4
-      - ElementName: trafficBy_convolver_play
-        ObjectType: 3
-      ID: -1602528571
-      Guid: 949beb3df7a47042ba96002467e77453
-      maxAttenuation: 50
-    - Name: trafficBy_convolver_stop
-      Path: Default Work Unit\Fragments\Urban\trafficBy_convolver_stop
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Fragments
-        ObjectType: 4
-      - ElementName: Urban
-        ObjectType: 4
-      - ElementName: trafficBy_convolver_stop
-        ObjectType: 3
-      ID: -177875645
-      Guid: 41e153827a8b074987ce86a0f4ae3c11
       maxAttenuation: 0
-    - Name: trafficBy_play
-      Path: Default Work Unit\Fragments\Urban\trafficBy_play
+    - Name: train_convolver_play
+      Path: Default Work Unit\Fragments\Urban\train_convolver_play
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -1566,13 +1869,13 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Urban
         ObjectType: 4
-      - ElementName: trafficBy_play
+      - ElementName: train_convolver_play
         ObjectType: 3
-      ID: -793597804
-      Guid: ebb777c6946d7948b90e60e8292f300a
-      maxAttenuation: 50
-    - Name: trafficBy_stop
-      Path: Default Work Unit\Fragments\Urban\trafficBy_stop
+      ID: 1092919631
+      Guid: b0e8dbcc5de7a54a88ef53ade6e6f354
+      maxAttenuation: 0
+    - Name: train_convolver_stop
+      Path: Default Work Unit\Fragments\Urban\train_convolver_stop
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -1580,10 +1883,38 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Urban
         ObjectType: 4
-      - ElementName: trafficBy_stop
+      - ElementName: train_convolver_stop
         ObjectType: 3
-      ID: 910304878
-      Guid: d8810a7e961f074c974bfcda5284641c
+      ID: -484416947
+      Guid: 25dadf7854d14148800f3a9836b4347d
+      maxAttenuation: 0
+    - Name: train_play
+      Path: Default Work Unit\Fragments\Urban\train_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Urban
+        ObjectType: 4
+      - ElementName: train_play
+        ObjectType: 3
+      ID: 113163278
+      Guid: 805fee00957a524f91931a32d78a371d
+      maxAttenuation: 0
+    - Name: train_stop
+      Path: Default Work Unit\Fragments\Urban\train_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Urban
+        ObjectType: 4
+      - ElementName: train_stop
+        ObjectType: 3
+      ID: 1114702576
+      Guid: b88648bda4f9ef4da55dd12b92174d9a
       maxAttenuation: 0
     - Name: ville_calme
       Path: Default Work Unit\Ambiances\ville_calme
@@ -1608,7 +1939,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 193498114
       Guid: 79abcf98f2eb31439fb6ce8aec825aa1
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: water_3DObject_stop
       Path: Default Work Unit\Tests Wwise Pierre & Guillermo\water_3DObject_stop
       PathAndIcons:
@@ -1634,7 +1965,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: 763713321
       Guid: fbe265624b7d314db7319e3fc4e2e922
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: waterSplash_convolver_stop
       Path: Default Work Unit\Fragments\Liquide\waterSplash_convolver_stop
       PathAndIcons:
@@ -1662,7 +1993,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -81945208
       Guid: 65df1cfc206bc74baaa05497a3ece5ce
-      maxAttenuation: 50
+      maxAttenuation: 0
     - Name: waterSplash_stop
       Path: Default Work Unit\Fragments\Liquide\waterSplash_stop
       PathAndIcons:
@@ -1676,6 +2007,62 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1999345158
       Guid: 92391506eed7c84eb83cb5dd9b8b7142
+      maxAttenuation: 0
+    - Name: woodFall_convolver_play
+      Path: Default Work Unit\Fragments\Bois\woodFall_convolver_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Bois
+        ObjectType: 4
+      - ElementName: woodFall_convolver_play
+        ObjectType: 3
+      ID: -278162765
+      Guid: 212404409c68f041bc26c7cf3a404bcf
+      maxAttenuation: 0
+    - Name: woodFall_convolver_stop
+      Path: Default Work Unit\Fragments\Bois\woodFall_convolver_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Bois
+        ObjectType: 4
+      - ElementName: woodFall_convolver_stop
+        ObjectType: 3
+      ID: -1189720679
+      Guid: d5d2fb477d3a49468b92a5a9b198f6f8
+      maxAttenuation: 0
+    - Name: woodFall_play
+      Path: Default Work Unit\Fragments\Bois\woodFall_play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Bois
+        ObjectType: 4
+      - ElementName: woodFall_play
+        ObjectType: 3
+      ID: -1835938078
+      Guid: c309dd47cf6eb640bc4623b1dbb319d8
+      maxAttenuation: 0
+    - Name: woodFall_stop
+      Path: Default Work Unit\Fragments\Bois\woodFall_stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fragments
+        ObjectType: 4
+      - ElementName: Bois
+        ObjectType: 4
+      - ElementName: woodFall_stop
+        ObjectType: 3
+      ID: -1234502084
+      Guid: ced19e3f3bbc6b47b48fc13a77868072
       maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -1878,17 +2265,12 @@ MonoBehaviour:
       ID: -1133058374
       Guid: 13a8cb8be9ce1d40a1ae57d196fca6c9
   ExpandedItems: []
-<<<<<<< HEAD
-  m_lastPopulateTimePsrt1: -1173283472
-  m_lastPopulateTimePart2: -1999454553
-=======
-  m_lastPopulateTimePsrt1: 1914322183
-  m_lastPopulateTimePart2: -1999454767
->>>>>>> b218f9ed26d259fad2048481c60f6b67e5878593
+  m_lastPopulateTimePsrt1: 770419613
+  m_lastPopulateTimePart2: -1999451944
   autoPopulateEnabled: 1
   basePath: Audio\GeneratedSoundBanks
   language: English(US)
-  defaultPoolSize: 8192
-  lowerPoolSize: 4096
-  streamingPoolSize: 2048
-  memoryCutoffThreshold: .949999988
+  defaultPoolSize: 131072
+  lowerPoolSize: 262144
+  streamingPoolSize: 131072
+  memoryCutoffThreshold: .899999976

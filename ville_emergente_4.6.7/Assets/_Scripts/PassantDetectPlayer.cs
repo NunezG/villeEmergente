@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+// Détection du joueur
 public class PassantDetectPlayer : MonoBehaviour
 {
 
@@ -20,8 +22,6 @@ public class PassantDetectPlayer : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        //print("SOnTriggerEnterOnTriggerEnterOnTriggerEnter"+other.name);
-
         if (other.tag == "Player")
         {
             npc.SetPlayerIsInRange(true);

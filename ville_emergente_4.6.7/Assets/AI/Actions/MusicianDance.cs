@@ -11,14 +11,12 @@ public class MusicianDance : RAINAction
     {
         base.Start(ai);
     }
-
+    // action RAIN pour la danse du musicien
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
+        ai.WorkingMemory.SetItem<bool>("isDancing", true);// setting du booléen de danse  pour que les passants puissent se mettre à danser aussi
 
-
-        ai.WorkingMemory.SetItem<bool>("isDancing", true);
-
-		ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Sautille();
+		ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Sautille(); // lancement de l'animation de danse
 		//ai.Body.transform.FindChild("mesh").GetComponent<AudioEventManager> ().soundDanse ();
         return ActionResult.SUCCESS;
     }

@@ -10,23 +10,13 @@ public class CustomMoveTo : RAINAction
 {
     public override void Start(RAIN.Core.AI ai)
     {
-		//ai.WorkingMemory.SetItem<bool> ("moving", true);
         base.Start(ai);
-		//ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Marche ();
 
     }
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
 		NavMeshAgent agent = ai.Body.GetComponent<NavMeshAgent>();
-		//NavMeshPath navPath = new NavMeshPath();
-		//ai.Body.GetComponent<NavMeshAgent> ().Move
-		//ai.Body.GetComponent<NavMeshAgent> ().SamplePathPosition ();
-		//ai.Body.GetComponent<NavMeshAgent> ().CalculatePath (ai.WorkingMemory.GetItem<GameObject> ("target").transform.position, navPath);
-		
-		//navPath.corners[0];
-		//ai.Body.GetComponent<NavMeshAgent> ().Move (ai.Body.GetComponent<NavMeshAgent> ().nextPosition);
-		//ai.Body.GetComponent<NavMeshAgent> ().Resume ();
 
         //Debug.Log("MOVE TO");
         if (ai.WorkingMemory.GetItem<GameObject>("target") == null)
@@ -34,15 +24,16 @@ public class CustomMoveTo : RAINAction
             return ActionResult.FAILURE;
         }
         else if (!ai.WorkingMemory.GetItem<bool>("moving") && 
-            !ai.WorkingMemory.GetItem<bool>("destinationReached"))
+            !ai.WorkingMemory.GetItem<bool>("destinationReached"))// si on est pas déjà en mouvement, et qu'on a pas atteint notre destination
         {
+            // on se met en marche
             ai.WorkingMemory.SetItem<bool>("moving", true);
             agent.SetDestination(ai.WorkingMemory.GetItem<GameObject>("target").transform.position);
             return ActionResult.SUCCESS;
         }
         else if (ai.Body.transform.position.x == ai.WorkingMemory.GetItem<GameObject>("target").transform.position.x
                 && ai.Body.transform.position.z == ai.WorkingMemory.GetItem<GameObject>("target").transform.position.z)
-        {
+        {// si on atteint la destination
             Vector3 direction = (ai.WorkingMemory.GetItem<GameObject>("target").transform.position - ai.Body.transform.position).normalized;
             Quaternion lookRotation = Quaternion.LookRotation(direction);
             ai.Body.transform.rotation = Quaternion.Slerp(ai.Body.transform.rotation, lookRotation, Time.deltaTime * 5);

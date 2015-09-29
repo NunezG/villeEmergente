@@ -12,7 +12,7 @@ public class LookForFreeSpot : RAINAction
         base.Start(ai);
         //Debug.Log(ai.Body.name + " : LookForFreeSpot  ");
     }
-
+    // Action RAIN pour tester si il y a une place de libre dans une des scènes à portée du passant
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
         if (ai.Body.GetComponent<Passant>().IsThereAtLeastOneFreeSpot())

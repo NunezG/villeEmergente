@@ -11,7 +11,7 @@ public class StopDance : RAINAction
     {
         base.Start(ai);
     }
-
+    // action RAIN de fin de la danse pour les Passants
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
 		ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Marche ();

@@ -11,7 +11,7 @@ public class StartDance : RAINAction
     {
         base.Start(ai);
     }
-
+    // Action RAIN de début de la danse pour les passants
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
         Debug.Log(ai.Body.name + " : Passant dance !");

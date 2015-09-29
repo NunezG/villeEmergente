@@ -1,19 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Classe permettant au joueur d'intéragir avec l'environnement et les PNJs
 public class ObjectInteractor : MonoBehaviour {
 
-    public GameObject hitObject,inHandPosition,inHandObject;
-    public bool handsFull = false;
-    public float range;
+    public GameObject hitObject, // référence pour l'objet touché par le raycast
+                    inHandPosition,inHandObject; // position pour l'objet ramassé, référence pour l'objet ramassé 
+    public bool handsFull = false; // variable pour status main vide/pleine
+    public float range; // portée de l'interaction 
 
 
-	private CursorManager Cm;
+	private CursorManager Cm; // référence au gestionnaire de changement d'état du curseur
 
 	// Use this for initialization
 	void Start () 
 	{
-		Cm = GameObject.Find ("Canvas").GetComponentInChildren<CursorManager> ();
+		Cm = GameObject.Find ("Canvas").GetComponentInChildren<CursorManager> (); // récupération du composant
 	}
 	
 	// Update is called once per frame
@@ -25,22 +27,22 @@ public class ObjectInteractor : MonoBehaviour {
 
 		Cm.setNormalCursor();
 
-		InteractibleObject interacObj = null;
+		InteractibleObject interacObj = null;  
 
-		if (Physics.Raycast (Camera.main.ScreenPointToRay (new Vector3 (Screen.width / 2, Screen.height / 2, 0)), out hit, range, 1 << 8)) {
+		if (Physics.Raycast (Camera.main.ScreenPointToRay (new Vector3 (Screen.width / 2, Screen.height / 2, 0)), out hit, range, 1 << 8)) { // Raycast sur la layer des 
 			hitObject = hit.collider.gameObject; // on recupere l'objet vise
 			interacObj = hitObject.GetComponent<InteractibleObject> (); // on recupere sa composante InteractibleObject
 
 			if (handsFull
 				&& (interacObj.type == InteractibleType.SettingPiece 
 				|| interacObj.type == InteractibleType.NPC)
-				&& !interacObj.GetComponent<ConvolutionObject> ().HasFragment ()) {
-				Cm.setFragmentCursor ();
+				&& !interacObj.GetComponent<ConvolutionObject> ().HasFragment ()) { // si on a un fragment et qu'on clique sur un batiment ou un NPC qui n'en a pas
+				Cm.setFragmentCursor (); // on met le fragment correspondant
 			} else if 
 				(!handsFull
 				&& ((interacObj.type == InteractibleType.Fragment 
 				&& (interacObj.transform.parent == null || interacObj.transform.parent.name != "inHandPosition"))
-				|| (interacObj.type == InteractibleType.SettingPiece ))) { // Touchable
+				|| (interacObj.type == InteractibleType.SettingPiece ))) { // Si on a les mains vides et qu'on vise un fragment ou un batiment
 				Cm.setInteractibleCursor ();
 			}
 		}
@@ -74,36 +76,31 @@ public class ObjectInteractor : MonoBehaviour {
 					Cm.setFailCursor ();
 				}
 			}
-		
-
-
-	/*	else
-		{
-			if (handsFull)
-			{
-				Cm.setNormalCursor();
-
-				if (Input.GetButtonDown("Action")) 
-				{
-					DropInHandObject();
-				}
-			}
-		}*/
     }
-
+    // Ramasse l'objet toPickUp
     public void PickUpObject(GameObject toPickUp)
     {
-		if (toPickUp != null) {
+		if (toPickUp != null) { 
 			print("Interactor:PickUpObject");
-			inHandObject = toPickUp;
+            // on racrroche toPickUp a inHandPosition dans la hiérarchie
+			inHandObject = toPickUp; 
 			inHandObject.transform.parent = inHandPosition.transform;
 			inHandObject.transform.position = inHandPosition.transform.position;
 			inHandObject.transform.rotation = inHandPosition.transform.rotation;
 			inHandObject.rigidbody.isKinematic = true;
 			handsFull = true;   
-			WwiseAudioManager.PlayFiniteEvent("interactions_simples_motion", this.gameObject);
+			WwiseAudioManager.PlayFiniteEvent("interactions_simples_motion", this.gameObject);// on joue le son correspondant
 		}	
 	}
+
+
+    public void AddingFragment()
+    {
+        print("Interactor:AddingFragment");
+        inHandObject.rigidbody.isKinematic = false;
+        inHandObject.transform.parent = null;
+        DropInHandObject();
+    }
 
     public void DropInHandObject()
     { 
@@ -122,14 +119,4 @@ public class ObjectInteractor : MonoBehaviour {
         }
 	}
 
-    public void AddingFragment()
-    {
-		print("Interactor:AddingFragment");
-		inHandObject.rigidbody.isKinematic = false;
-       // handsFull = false;
-        inHandObject.transform.parent = null;
-        SettingPiece.fragmentsOfZeWorld.Remove(inHandObject.GetComponent<Fragment>());
-        //Destroy(inHandObject);
-		DropInHandObject ();
-    }
 }

@@ -1,16 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Classe pour les bulles s'affichant à intervalle régulier au dessus des musiciens non complet
 public class FragmentBubble : MonoBehaviour {
 
-    public Sprite[] sprites;
+    public Sprite[] sprites; // l'ensemble des sprites pouvant être sélectionnés aléatoirement
     public SpriteRenderer spriteRenderer;
-    public float timer = 0, fadeInTile = 2,waitTime=2,fadeOutTime=2;
+    public float timer = 0, fadeInTime = 2,waitTime=2,fadeOutTime=2; // timer et variables de durée du fadeIn,de la transition, et du fadeOut
     public bool fadeIn =false,wait=false, fadeOut=false;
+
 	// Use this for initialization
 	void Start () {
-
-        spriteRenderer.color = new Color(1, 1, 1, 0);
+        spriteRenderer.color = new Color(1, 1, 1, 0); // sprite complétement transparent initialement
 	}
 	
 	// Update is called once per frame
@@ -18,9 +19,9 @@ public class FragmentBubble : MonoBehaviour {
         if (fadeIn)
         {
             timer = timer + Time.deltaTime;
-            if (timer < fadeInTile)
+            if (timer < fadeInTime)
             {
-                float fadeValue = 0 + (timer / fadeInTile);
+                float fadeValue = 0 + (timer / fadeInTime);
                 spriteRenderer.color = new Color(1, 1, 1, fadeValue);
             }
             else
@@ -57,16 +58,10 @@ public class FragmentBubble : MonoBehaviour {
                 fadeOut = false;
                 timer = 0;
             }
-        }
-
-        /*if (Input.GetKeyDown("space"))
-        {
-            BubblingIn();
-        }*/
-	
+        }	
 	}
 
-    public void BubblingIn() {
+    public void BubblingIn() { // lance l'enchainement fadeIn/wait/fadeOut
         int rdmIndex = Random.Range(0, sprites.Length);
         spriteRenderer.sprite = sprites[rdmIndex];
         timer = 0;

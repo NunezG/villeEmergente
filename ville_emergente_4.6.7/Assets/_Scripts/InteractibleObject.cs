@@ -2,14 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 
+//Classe pour généraliser les interactions du joueur et de certains PNJ entre eux et avec le décor
 public class InteractibleObject : MonoBehaviour {
 
-   // public AudioSource audioSource;
-    public InteractibleType type; // par defaut un element du decor
+    public InteractibleType type; //type de l'objet interactible par defaut un element du decor
 	public string soundEvent = "";
 
 
-	//public string playingSound;
 
 	// Use this for initialization
 	public void Start () {
@@ -34,14 +33,5 @@ public class InteractibleObject : MonoBehaviour {
 
 		return null;
 	}
-	
-
-		
-		/*
-    public void OnInteract(){
-        print("Parent OnInteract");
-        this.GetComponent<SettingPiece>().OnInteract();
-    }
-*/
 
 }
