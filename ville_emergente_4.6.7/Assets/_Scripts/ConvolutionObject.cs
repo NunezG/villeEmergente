@@ -111,7 +111,7 @@ public class ConvolutionObject : MonoBehaviour {
 		if (GetComponent<InteractibleObject>().type == InteractibleType.NPC)
         {
 			this.GetComponent<Musicien>().OnAddingFragment(fragment);
-			GetComponentInChildren<AudioEventManager>().SounStopdIdle();
+			GetComponentInChildren<AudioEventManager>().SoundRemovedIdle();
 			GetComponentInChildren<AudioEventManager>().idleSound = false; 
 			
         }

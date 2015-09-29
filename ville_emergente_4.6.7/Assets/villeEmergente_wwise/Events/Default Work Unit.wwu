@@ -1574,7 +1574,7 @@
 										<Action Name="Set Switch" ID="{C2812BDE-2DDD-493C-8CBA-1CFABB273207}" ShortID="872415472" Type="SetSwitch" Scope="All" Global="false">
 											<SetItemParam>
 												<Group Name="Elements_decor" ID="{0BEAA947-C5E6-4E99-959B-01A0BAAFCBE4}"/>
-												<GroupItem Name="Default" ID="{B99EB49E-4956-43A4-AA90-864549EE2FC7}"/>
+												<GroupItem Name="Dark_7" ID="{A7D16E56-5F54-4C8E-BDA0-2372329B19EA}"/>
 											</SetItemParam>
 										</Action>
 									</ChildrenList>
@@ -1916,8 +1916,8 @@
 									<ChildrenList>
 										<Action Name="Play" ID="{AB5564E5-92F5-496E-8A65-F3DA44B2415E}" ShortID="174160687" Type="Play" Scope="One" Global="false">
 											<ElementList>
-												<Element ID="{AA634A38-AAE0-47B3-916A-C8416D2A2547}" Global="false">
-													<ObjectRef Name="sfx_guide_nouveau_son" ID="{C78881B2-0474-4E63-9C2F-529055FBD01F}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
+												<Element ID="{648994AC-3AD1-4CFC-ACFF-48919FA5A150}" Global="false">
+													<ObjectRef Name="Sfx_guide_son" ID="{91E240B5-2B3F-413F-BB6E-EB3249C2BEC0}" WorkUnitID="{CDD3F08A-5173-45B5-B121-6E12477068A8}"/>
 												</Element>
 											</ElementList>
 										</Action>

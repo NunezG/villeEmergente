@@ -18,15 +18,15 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1535194403" Name="anvil_convolver_play" MaxAttenuation="60.000000"/>
+				<Event Id="1535194403" Name="anvil_convolver_play" MaxAttenuation="100.000000"/>
 				<Event Id="3850059241" Name="anvil_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="767008978" Name="anvil_play" MaxAttenuation="25.000000"/>
 				<Event Id="2437092940" Name="anvil_stop" MaxAttenuation="0.000000"/>
-				<Event Id="3747363609" Name="brewing_convolver_play" MaxAttenuation="60.000000"/>
+				<Event Id="3747363609" Name="brewing_convolver_play" MaxAttenuation="100.000000"/>
 				<Event Id="2043461215" Name="brewing_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="610603704" Name="brewing_play" MaxAttenuation="25.000000"/>
 				<Event Id="2983051018" Name="brewing_stop" MaxAttenuation="0.000000"/>
-				<Event Id="257985868" Name="buildingSite_convolver_play" MaxAttenuation="60.000000"/>
+				<Event Id="257985868" Name="buildingSite_convolver_play" MaxAttenuation="100.000000"/>
 				<Event Id="2227770454" Name="buildingSite_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="603921033" Name="buildingSite_play" MaxAttenuation="25.000000"/>
 				<Event Id="2126337967" Name="buildingSite_stop" MaxAttenuation="0.000000"/>
@@ -36,7 +36,7 @@
 				<Event Id="1672407606" Name="busyStreet_stop" MaxAttenuation="0.000000"/>
 				<Event Id="2013603504" Name="convolution_wet_to0" MaxAttenuation="0.000000"/>
 				<Event Id="837754713" Name="convolution_wet_to100" MaxAttenuation="0.000000"/>
-				<Event Id="3012043839" Name="dropsCardboard_convolver_play" MaxAttenuation="60.000000"/>
+				<Event Id="3012043839" Name="dropsCardboard_convolver_play" MaxAttenuation="100.000000"/>
 				<Event Id="2544725597" Name="dropsCardboard_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1374189182" Name="dropsCardboard_play" MaxAttenuation="25.000000"/>
 				<Event Id="2412081984" Name="dropsCardboard_stop" MaxAttenuation="0.000000"/>
@@ -44,11 +44,11 @@
 				<Event Id="2081157487" Name="electricBuzz_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="2776279528" Name="electricBuzz_play" MaxAttenuation="25.000000"/>
 				<Event Id="817405786" Name="electricBuzz_stop" MaxAttenuation="0.000000"/>
-				<Event Id="3797452220" Name="electricityArcing_convolver_play" MaxAttenuation="60.000000"/>
+				<Event Id="3797452220" Name="electricityArcing_convolver_play" MaxAttenuation="100.000000"/>
 				<Event Id="2551156774" Name="electricityArcing_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="2107924217" Name="electricityArcing_play" MaxAttenuation="25.000000"/>
 				<Event Id="404021567" Name="electricityArcing_stop" MaxAttenuation="0.000000"/>
-				<Event Id="2137081894" Name="electricityStatic_convolver_play" MaxAttenuation="60.000000"/>
+				<Event Id="2137081894" Name="electricityStatic_convolver_play" MaxAttenuation="100.000000"/>
 				<Event Id="3988186392" Name="electricityStatic_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="512634819" Name="electricityStatic_play" MaxAttenuation="25.000000"/>
 				<Event Id="2827602569" Name="electricityStatic_stop" MaxAttenuation="0.000000"/>
@@ -66,37 +66,37 @@
 				<Event Id="4036125012" Name="fragment_call_urban_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1375190009" Name="fragment_call_wood_play" MaxAttenuation="25.000000"/>
 				<Event Id="3966254655" Name="fragment_call_wood_stop" MaxAttenuation="0.000000"/>
-				<Event Id="1128982233" Name="guide_idle_play" MaxAttenuation="20.000000"/>
+				<Event Id="1128982233" Name="guide_idle_play" MaxAttenuation="15.000000"/>
 				<Event Id="3761520415" Name="guide_idle_stop" MaxAttenuation="0.000000"/>
-				<Event Id="4080525896" Name="guide_nouveau_son" MaxAttenuation="20.000000"/>
-				<Event Id="1735048872" Name="guide_ordre" MaxAttenuation="20.000000"/>
-				<Event Id="2204075982" Name="guide_son" MaxAttenuation="20.000000"/>
-				<Event Id="3334697193" Name="hammer_convolver_play" MaxAttenuation="60.000000"/>
+				<Event Id="4080525896" Name="guide_nouveau_son" MaxAttenuation="15.000000"/>
+				<Event Id="1735048872" Name="guide_ordre" MaxAttenuation="15.000000"/>
+				<Event Id="2204075982" Name="guide_son" MaxAttenuation="15.000000"/>
+				<Event Id="3334697193" Name="hammer_convolver_play" MaxAttenuation="100.000000"/>
 				<Event Id="562249743" Name="hammer_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1109396808" Name="hammer_play" MaxAttenuation="25.000000"/>
 				<Event Id="3487067066" Name="hammer_stop" MaxAttenuation="0.000000"/>
-				<Event Id="3759079039" Name="interactions_simples_motion" MaxAttenuation="50.000000"/>
-				<Event Id="2535466649" Name="lacher_morceau" MaxAttenuation="50.000000"/>
-				<Event Id="3679869857" Name="linker_morceau" MaxAttenuation="50.000000"/>
-				<Event Id="2747240135" Name="logCrack_convolver_play" MaxAttenuation="60.000000"/>
+				<Event Id="3759079039" Name="interactions_simples_motion" MaxAttenuation="40.000000"/>
+				<Event Id="2535466649" Name="lacher_morceau" MaxAttenuation="40.000000"/>
+				<Event Id="3679869857" Name="linker_morceau" MaxAttenuation="40.000000"/>
+				<Event Id="2747240135" Name="logCrack_convolver_play" MaxAttenuation="100.000000"/>
 				<Event Id="1440905237" Name="logCrack_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1458620982" Name="logCrack_play" MaxAttenuation="25.000000"/>
 				<Event Id="2189158344" Name="logCrack_stop" MaxAttenuation="0.000000"/>
-				<Event Id="3510319782" Name="metalCreak_convolver_play" MaxAttenuation="60.000000"/>
+				<Event Id="3510319782" Name="metalCreak_convolver_play" MaxAttenuation="100.000000"/>
 				<Event Id="1066456984" Name="metalCreak_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="3965185603" Name="metalCreak_play" MaxAttenuation="25.000000"/>
 				<Event Id="1985186057" Name="metalCreak_stop" MaxAttenuation="0.000000"/>
-				<Event Id="3238220620" Name="metalRattle_convolver_play" MaxAttenuation="60.000000"/>
+				<Event Id="3238220620" Name="metalRattle_convolver_play" MaxAttenuation="100.000000"/>
 				<Event Id="913037910" Name="metalRattle_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1751789705" Name="metalRattle_play" MaxAttenuation="25.000000"/>
 				<Event Id="3274206639" Name="metalRattle_stop" MaxAttenuation="0.000000"/>
-				<Event Id="59174050" Name="musicien_danse" MaxAttenuation="20.000000"/>
-				<Event Id="2327341772" Name="musicien_idle_play" MaxAttenuation="20.000000"/>
+				<Event Id="59174050" Name="musicien_danse" MaxAttenuation="15.000000"/>
+				<Event Id="2327341772" Name="musicien_idle_play" MaxAttenuation="15.000000"/>
 				<Event Id="2159062" Name="musicien_idle_stop" MaxAttenuation="0.000000"/>
-				<Event Id="161018858" Name="musicien_ouverture" MaxAttenuation="20.000000"/>
-				<Event Id="916635435" Name="musicien_son" MaxAttenuation="20.000000"/>
-				<Event Id="2629109720" Name="musicien_tourne" MaxAttenuation="20.000000"/>
-				<Event Id="2562287223" Name="paddle_convolver_play" MaxAttenuation="60.000000"/>
+				<Event Id="161018858" Name="musicien_ouverture" MaxAttenuation="15.000000"/>
+				<Event Id="916635435" Name="musicien_son" MaxAttenuation="15.000000"/>
+				<Event Id="2629109720" Name="musicien_tourne" MaxAttenuation="15.000000"/>
+				<Event Id="2562287223" Name="paddle_convolver_play" MaxAttenuation="100.000000"/>
 				<Event Id="1250729381" Name="paddle_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="2502442470" Name="paddle_play" MaxAttenuation="25.000000"/>
 				<Event Id="16899800" Name="paddle_stop" MaxAttenuation="0.000000"/>
@@ -105,7 +105,7 @@
 				<Event Id="2028913609" Name="passant_idle_stop" MaxAttenuation="0.000000"/>
 				<Event Id="1195210688" Name="passant_son" MaxAttenuation="10.000000"/>
 				<Event Id="4275515877" Name="passant_tourne" MaxAttenuation="10.000000"/>
-				<Event Id="2138522384" Name="prendre_morceau" MaxAttenuation="50.000000"/>
+				<Event Id="2138522384" Name="prendre_morceau" MaxAttenuation="40.000000"/>
 				<Event Id="812837510" Name="rain_2DObject_play"/>
 				<Event Id="2622262392" Name="rain_2DObject_stop" MaxAttenuation="0.000000"/>
 				<Event Id="3913070078" Name="Sfx_RI" MaxAttenuation="50.000000"/>
@@ -146,12 +146,12 @@
 				<Event Id="3843097391" Name="switch_darkRI6" MaxAttenuation="0.000000"/>
 				<Event Id="3843097390" Name="switch_darkRI7" MaxAttenuation="0.000000"/>
 				<Event Id="2406558223" Name="switch_default" MaxAttenuation="0.000000"/>
-				<Event Id="3493063959" Name="thunder_convolver_play" MaxAttenuation="60.000000"/>
+				<Event Id="3493063959" Name="thunder_convolver_play" MaxAttenuation="100.000000"/>
 				<Event Id="2181506373" Name="thunder_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="2706991942" Name="thunder_play" MaxAttenuation="25.000000"/>
 				<Event Id="221449272" Name="thunder_stop" MaxAttenuation="0.000000"/>
 				<Event Id="2896867782" Name="toucher_element" MaxAttenuation="50.000000"/>
-				<Event Id="1092919631" Name="train_convolver_play" MaxAttenuation="60.000000"/>
+				<Event Id="1092919631" Name="train_convolver_play" MaxAttenuation="100.000000"/>
 				<Event Id="3810550349" Name="train_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="113163278" Name="train_play" MaxAttenuation="25.000000"/>
 				<Event Id="1114702576" Name="train_stop" MaxAttenuation="0.000000"/>
@@ -162,7 +162,7 @@
 				<Event Id="2286130255" Name="waterSplash_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="4213022088" Name="waterSplash_play" MaxAttenuation="50.000000"/>
 				<Event Id="2295622138" Name="waterSplash_stop" MaxAttenuation="0.000000"/>
-				<Event Id="4016804531" Name="woodFall_convolver_play" MaxAttenuation="60.000000"/>
+				<Event Id="4016804531" Name="woodFall_convolver_play" MaxAttenuation="100.000000"/>
 				<Event Id="3105246617" Name="woodFall_convolver_stop" MaxAttenuation="0.000000"/>
 				<Event Id="2459029218" Name="woodFall_play" MaxAttenuation="25.000000"/>
 				<Event Id="3060465212" Name="woodFall_stop" MaxAttenuation="0.000000"/>
@@ -254,6 +254,10 @@
 				<File Id="32344818" Language="SFX">
 					<ShortName>sfx_train.wav</ShortName>
 					<Path>SFX\sfx_train_318C7D7F.wem</Path>
+				</File>
+				<File Id="37420485" Language="SFX">
+					<ShortName>sfx_building_site.wav</ShortName>
+					<Path>SFX\sfx_building_site_66B984FD.wem</Path>
 				</File>
 				<File Id="41809020" Language="SFX">
 					<ShortName>ri_rev_light.wav</ShortName>

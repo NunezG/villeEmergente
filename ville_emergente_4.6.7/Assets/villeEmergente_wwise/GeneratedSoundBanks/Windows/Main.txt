@@ -189,6 +189,7 @@ Switch	ID	Name	Switch Group			Notes
 	3515469617	PNJ_atmo	PNJ_mood			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	296257622	binaural_to_convolver			\Default Work Unit\binaural_to_convolver	
 	1405780204	convolution_wet			\Default Work Unit\convolution_wet	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
@@ -496,6 +497,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	7039575	sfx_fragment_metal_call	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_fragment_metal_call_FA982138.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Fragment Call\Fragment Call\sfx_fragment_metal_call		340086
 	7083372	sfx_electricity_static	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_electricity_static_16C919E9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Electricite\sfx_electricity_static		665507
 	32344818	sfx_train	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_train_318C7D7F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Urban\sfx_train		2873174
+	37420485	sfx_building_site	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_building_site_66B984FD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Urban\sfx_building_site		2718352
 	46384889	sfx_electricity_arcing	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_electricity_arcing_D9D3BF12_22B822D0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_electricity_arcing_switch\RI_musicien_atmo\sfx_electricity_arcing		348132
 	46964867	sfx_paddle	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_paddle_95067BD2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Liquide\sfx_paddle		934640
 	48800980	sfx_hammer	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_hammer_wood_2C458626.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Bois\sfx_hammer		1345096
@@ -503,7 +505,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	61270204	Sfx_ri_watersplash	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_watersplash_6602BDDC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_watersplash		289450
 	66416189	sfx_electricity_arcing	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_electricity_arcing_D9D3BF12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Electricite\sfx_electricity_arcing		351790
 	68116553	sfx_musicien_respiration_03	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_musicien_respiration_03_B484AF53.wem		\Actor-Mixer Hierarchy\Default Work Unit\PNJs\Musicien\Sfx_musicien_respiration\sfx_musicien_respiration\sfx_musicien_respiration_03		190434
-	69037644	sfx_building_site	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_building_site_4DA39D8D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Urban\sfx_building_site		2715332
+	69037644	sfx_building_site	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_building_site_4DA39D8D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Urban\Sfx_building_site_switch\RI_marseilles\sfx_building_site		2715332
 	74315757	sfx_thunder	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_thunder_D7819071.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Convolutions\Electricite\Sfx_thunder_switch\RI_marseilles\sfx_thunder		1811169
 	76700068	sfx_anvil	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\sfx_anvil_094B0F9C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fragments\Dry\Metal\sfx_anvil		1976906
 	77014115	Sfx_ri_skannermorph	C:\Users\Adrien\Documents\GitHub\villeEmergente\ville_emergente_4.6.7\Assets\villeEmergente_wwise\.cache\Windows\SFX\Sfx_ri_skannermorph_6602BDDC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bâtiments\RI as Sfx\Sfx_ri_skannermorph		271424
