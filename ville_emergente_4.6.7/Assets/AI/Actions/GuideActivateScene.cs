@@ -11,16 +11,16 @@ public class GuideActivateScene : RAINAction
     {
         base.Start(ai);
     }
-
+    // action RAIN de réactivation de la scène
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
 
-        Debug.Log(ai.Body.name + " : follow me");
-		ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().MarcheFiere ();
-		ai.Body.transform.FindChild ("mesh").GetComponent<AudioEventManager> ().soundOrdre ();
+        //Debug.Log(ai.Body.name + " : follow me");
+		ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().MarcheFiere (); // animation
+		ai.Body.transform.FindChild ("mesh").GetComponent<AudioEventManager> ().soundOrdre ();// son
 
-        ai.Body.GetComponent<Guide>().scene.gameObject.SetActive(true);
-        ai.WorkingMemory.SetItem<bool>("followMe", true);
+        ai.Body.GetComponent<Guide>().scene.gameObject.SetActive(true); //activation de la scène
+        ai.WorkingMemory.SetItem<bool>("followMe", true);// booleen pour indiquer aux passants de suivre le guide
         return ActionResult.SUCCESS;
     }
 

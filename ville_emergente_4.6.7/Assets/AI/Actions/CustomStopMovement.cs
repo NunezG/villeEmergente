@@ -11,7 +11,7 @@ public class CustomStopMovement : RAINAction
     {
         base.Start(ai);
     }
-
+    //action RAIN pour arrêter le déplacement d'un PNJ
     public override ActionResult Execute(RAIN.Core.AI ai)
     {		
 		NavMeshAgent agent = ai.Body.GetComponent<NavMeshAgent>();

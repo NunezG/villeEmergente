@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Script simple pour qu'un objet fasse constamment face à la caméra
 public class Billboarding : MonoBehaviour {
 
 	// Use this for initialization

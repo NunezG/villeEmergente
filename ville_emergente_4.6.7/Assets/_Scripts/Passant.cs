@@ -8,6 +8,7 @@ using RAIN.Minds;
 using RAIN.Serialization;
 using RAIN.Motion;
 
+//Classe principale pour le PNJ Passant
 public class Passant : MonoBehaviour {
 
 
@@ -202,7 +203,7 @@ public class Passant : MonoBehaviour {
     {
         tMemory.SetItem<bool>("playerIsInRange", boolean);
     }
-
+    //assignateur RAIN pour la cible à regarder
     public void SetTargetLookAt(GameObject lookAtTarget)
     {
         tMemory.SetItem<GameObject>("lookAtTarget", lookAtTarget);

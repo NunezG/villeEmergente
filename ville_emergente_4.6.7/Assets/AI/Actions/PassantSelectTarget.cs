@@ -17,7 +17,6 @@ public class PassantSelectTarget : RAINAction
 
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
-        //Debug.Log ("SELECTTARG");
         if (target == null)
         {
             //Debut de la partie

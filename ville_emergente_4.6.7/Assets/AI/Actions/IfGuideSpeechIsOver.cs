@@ -12,7 +12,7 @@ public class IfGuideSpeechIsOver : RAINAction
         base.Start(ai);
         Debug.Log(ai.Body.name + " : ifGuide  ");
     }
-
+    // simple test fait par le passant, mais nécessite d'accéder indirectement à la mémoire du Guide
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
         if (ai.Body.GetComponent<Passant>().sceneLeader.GetComponent<Guide>().tMemory.GetItem<bool>("speechIsOver"))

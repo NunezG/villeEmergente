@@ -12,20 +12,21 @@ public class EmitSound : RAINAction
         base.Start(ai);
     }
 
+    //fonction RAIN d'appel du son commun à tous les PNJs
     public override ActionResult Execute(RAIN.Core.AI ai)
     {
-		if(ai.Body.transform.GetComponent<Passant>() != null)
+		if(ai.Body.transform.GetComponent<Passant>() != null)// si c'est le passant
 		{
-			ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Satisfait();
-			ai.Body.transform.FindChild("mesh").GetComponent<AudioEventManager> ().soundSon();
+			ai.Body.transform.FindChild("mesh").GetComponent<AnimationManager> ().Satisfait(); // appel de l'animation
+			ai.Body.transform.FindChild("mesh").GetComponent<AudioEventManager> ().soundSon(); // appel du son
 		}
 
-		if(ai.Body.transform.GetComponent<Musicien>() != null)
+		if(ai.Body.transform.GetComponent<Musicien>() != null)// si c'est le musicien
 		{
 			
 			if (ai.WorkingMemory.GetItem<bool> ("isFragmentComplete")) {
 				//ai.Body.transform.FindChild ("mesh").GetComponent<AudioEventManager> ().soundDanse ();
-				//ai.Body.transform.FindChild ("mesh").GetComponent<AnimationManager> ().Sautille ();
+				ai.Body.transform.FindChild ("mesh").GetComponent<AnimationManager> ().Sautille ();
 			} else {
 				ai.Body.transform.FindChild ("mesh").GetComponent<AudioEventManager> ().soundSon();
 				ai.Body.transform.FindChild ("mesh").GetComponent<AnimationManager> ().CriErrance ();
