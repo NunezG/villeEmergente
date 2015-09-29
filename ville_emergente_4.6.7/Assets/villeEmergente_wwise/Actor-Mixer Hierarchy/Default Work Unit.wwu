@@ -945,6 +945,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<MotionFX Name="Interactions simples motion" ID="{A561D55C-C4C9-48B8-AE2A-A17AC989F334}" ShortID="257167803">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -956,12 +963,13 @@
 									<ChildrenList>
 										<MotionSource Name="Wwise Motion Generator" ID="{F196539A-E009-4E7F-B4A4-7E9CC48108A8}" ShortID="1072845960" PluginName="Wwise Motion Generator" CompanyID="0" PluginID="405" DeviceCompanyID="0" DevicePluginID="406">
 											<PropertyList>
-												<Property Name="AttackTime" Type="Real32" Value="0.5"/>
+												<Property Name="AttackTime" Type="Real32" Value="0.1"/>
 												<Property Name="DurationType" Type="int16" Value="2"/>
-												<Property Name="Period" Type="Real32" Value="9.6"/>
+												<Property Name="Period" Type="Real32" Value="10"/>
 												<Property Name="PeriodMultiplier" Type="Real32" Value="10"/>
-												<Property Name="ReleaseTime" Type="Real32" Value="0.5"/>
+												<Property Name="ReleaseTime" Type="Real32" Value="0.2"/>
 												<Property Name="SustainLevel" Type="Real32" Value="0"/>
+												<Property Name="SustainTime" Type="Real32" Value="0.3"/>
 											</PropertyList>
 											<PluginData>
 	<CurveList Version="1">
@@ -977,7 +985,7 @@
 						<Flags>5</Flags>
 					</Point>
 					<Point>
-						<XPos>9.60000038146973</XPos>
+						<XPos>10</XPos>
 						<YPos>1</YPos>
 						<Flags>37</Flags>
 					</Point>
@@ -996,7 +1004,7 @@
 						<Flags>5</Flags>
 					</Point>
 					<Point>
-						<XPos>9.60000038146973</XPos>
+						<XPos>10</XPos>
 						<YPos>1</YPos>
 						<Flags>37</Flags>
 					</Point>
