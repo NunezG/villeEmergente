@@ -822,7 +822,9 @@
 							<ChildrenList>
 								<Sound Name="Toucher élément" ID="{8C0EE57C-46CC-4653-98D5-432112F38E4D}" ShortID="64762992" Type="SoundFX">
 									<PropertyList>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="PositioningType" Type="int16" Value="1"/>
+										<Property Name="Spatialization" Type="bool" Value="False"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-1</Value>
@@ -831,7 +833,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="Basic" ID="{B79E31EF-BB04-4B2A-ADA5-2BBEA98202AF}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
+											<ObjectRef Name="Feedback_toucher_batiment" ID="{86EC64E2-4A3F-426F-AA81-DFA76C7179C9}" WorkUnitID="{26C895DF-5207-445E-9D1A-F718EC57B7F4}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Ogg" ID="{1E3E35FE-4572-4851-80BB-E89F6707B04A}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -917,7 +919,7 @@
 										<Property Name="PositioningType" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1148,6 +1150,34 @@
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Spatialization" Type="bool" Value="False"/>
 								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{48DAD11C-1944-4A20-9380-DA318EA35079}" ShortID="105979714">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="binaural_to_convolver" ID="{4771F142-4D7B-451E-8786-58DE18DAFCFA}" WorkUnitID="{660AE240-F2B8-4826-ACE2-C8ABF515BEDB}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{3A09D5D6-0A67-41A8-9734-28FF29037E09}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-2</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -70865,6 +70895,9 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="sfx_building_site" ID="{81424E39-BB5A-46FD-928C-4ADF242BC9BE}" ShortID="754532007" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5002CB20-4CF5-4D0C-8F1F-B062028DC134}"/>
@@ -70884,6 +70917,9 @@
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>sfx_building_site.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="37420485"/>
+													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
@@ -72824,6 +72860,11 @@
 												<Sound Name="sfx_guide_dark_respiration_03" ID="{3A772494-1811-47E5-BFC0-CB128A6B3A4E}" ShortID="191592342" Type="SoundFX">
 													<PropertyList>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>12</Value>
+															</ValueList>
+														</Property>
 														<Property Name="MaxSoundPerInstance" Type="int16">
 															<ValueList>
 																<Value>2</Value>
@@ -72868,6 +72909,11 @@
 												<Sound Name="sfx_guide_dark_respiration_04" ID="{9BCFCE12-768A-421A-A9B3-5237B52A6802}" ShortID="73589244" Type="SoundFX">
 													<PropertyList>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>12</Value>
+															</ValueList>
+														</Property>
 														<Property Name="MaxSoundPerInstance" Type="int16">
 															<ValueList>
 																<Value>2</Value>
@@ -72913,6 +72959,11 @@
 												<Sound Name="sfx_guide_dark_respiration_05" ID="{9C026418-8C4B-4006-BF56-024DA9DBD177}" ShortID="1041136263" Type="SoundFX">
 													<PropertyList>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>12</Value>
+															</ValueList>
+														</Property>
 														<Property Name="MaxSoundPerInstance" Type="int16">
 															<ValueList>
 																<Value>2</Value>
@@ -72958,6 +73009,11 @@
 												<Sound Name="sfx_guide_dark_respiration_06" ID="{489FED1B-610E-4704-94E1-D450ADAEAEA9}" ShortID="30175098" Type="SoundFX">
 													<PropertyList>
 														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>12</Value>
+															</ValueList>
+														</Property>
 														<Property Name="MaxSoundPerInstance" Type="int16">
 															<ValueList>
 																<Value>2</Value>
@@ -73096,6 +73152,11 @@
 										<Sound Name="sfx_guide_dark_son" ID="{11FF4B69-DA5A-4372-8165-DCD16F2F961D}" ShortID="270861248" Type="SoundFX">
 											<PropertyList>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+												</Property>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
 														<Value>2</Value>
