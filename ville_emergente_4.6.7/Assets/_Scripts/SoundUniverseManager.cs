@@ -9,14 +9,14 @@ public class SoundUniverseManager : MonoBehaviour {
 	private string switchDark = "switch_dark";
 
 	public float resetTimer;
-	public float moveTimer;
+	float moveTimer;
 	public float stopTimer;
-	public int stopCounter;
+	int stopCounter;
 
 	public float ResetTime = 120.0f; //Temps mis pour reset de tous les timer et counter
-	public float maxMoveTime = 6.0f; //Temps mis en mouvement pour passer au dark
-	public int maxStopCounter = 5; //compteur de pauses
-	public float stopTimeToCount = 3.0f; //temps d'arret pur compter comme pause
+	float maxMoveTime = 6.0f; //Temps mis en mouvement pour passer au dark
+	int maxStopCounter = 5; //compteur de pauses
+	float stopTimeToCount = 3.0f; //temps d'arret pur compter comme pause
 	public float maxStopTime = 8.0f; //Temps mis en arret pour passer a l'atmo
 
 
@@ -27,7 +27,7 @@ public class SoundUniverseManager : MonoBehaviour {
 	public Color downLightLight;
 	public Color skyBoxLight;
 
-	public float speed = 5f;
+	//public float speed = 0.05f;
 
 	public Color ambientDark;
 	public Color upLightDark;
@@ -46,7 +46,7 @@ public class SoundUniverseManager : MonoBehaviour {
 	public Color downLighTest;
 	public Color skyBoxTest;
 	//public List<GameObject> testplayingObjects;
-
+	//private float timerChange= 0f;
 
 	void Awake () {
 		playingObjects = new List<GameObject>();
@@ -70,6 +70,9 @@ public class SoundUniverseManager : MonoBehaviour {
 		downLightDark = new Color(141.0f/255.0f, 189.0F/255.0f, 254.0F/255.0f, 0.5F);
 		skyBoxDark = new Color(91.0F/255.0f, 77.0F/255.0f, 105.0F/255.0f, 0.5F);
 
+
+		//StartCoroutine("changeColors");
+
 	}
 	
 	// Update is called once per frame
@@ -82,13 +85,63 @@ public class SoundUniverseManager : MonoBehaviour {
 
 		switchTypeTest = switchType;
 
-		resetTimer += Time.deltaTime;
+		//resetTimer += Time.deltaTime;
 
-		if (resetTimer >= ResetTime) {
+	//	if (resetTimer >= ResetTime) {
+		//	switchSounds();
+			//StartCoroutine("changeColors");
 			//stopCounter = 0;
 			//timer = 0.0f;
-			resetTimers();
+		//	resetTimers();
+	//	}
+
+		if (resetTimer >= ResetTime) {
+			stopTimer += Time.deltaTime;
+
+			if (stopTimer > maxStopTime) {
+				resetTimer = 0f;
+				stopTimer = 0f;
+
+			}
+
+		}else{
+
+			if (switchType != switchAtmo) {
+
+
+					resetTimer += Time.deltaTime;
+					RenderSettings.ambientLight = Color.Lerp (ambientDark, ambientLight, resetTimer / ResetTime);
+					GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color = Color.Lerp (upLightDark, upLightLight, resetTimer / ResetTime);
+					GameObject.Find ("Lumières").transform.FindChild ("Directional_light_down").GetComponent<Light> ().color = Color.Lerp (downLightDark, downLightLight, resetTimer / ResetTime);
+					RenderSettings.skybox.SetColor ("_Tint", Color.Lerp (skyBoxDark, skyBoxLight, resetTimer / ResetTime));
+				
+				if (resetTimer >= ResetTime) {
+
+					switchType = switchAtmo;
+					switchSounds ();
+
+				}
+	
+			} else {
+
+					resetTimer += Time.deltaTime;
+					RenderSettings.ambientLight = Color.Lerp (ambientLight, ambientDark, resetTimer / ResetTime);
+					GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color = Color.Lerp (upLightLight, upLightDark, resetTimer / ResetTime);
+					GameObject.Find ("Lumières").transform.FindChild ("Directional_light_down").GetComponent<Light> ().color = Color.Lerp (downLightLight, downLightDark, resetTimer / ResetTime);
+					RenderSettings.skybox.SetColor ("_Tint", Color.Lerp (skyBoxLight, skyBoxDark, resetTimer / ResetTime));
+				
+				if (resetTimer >= ResetTime) {
+				
+
+					switchType = switchDark;
+					switchSounds ();
+
+				}
+
+			}
 		}
+
+		/*
 
 		if (Input.GetKeyDown (KeyCode.Space))
 		{
@@ -139,6 +192,8 @@ public class SoundUniverseManager : MonoBehaviour {
 				stopCounter = 0;
 			}
 		}
+
+*/
 	}
 
 	void resetTimers()
@@ -169,33 +224,42 @@ public class SoundUniverseManager : MonoBehaviour {
 
 	IEnumerator changeColors()
 	{
+		//resetTimers();
+		//Time.deltaTime;
 		float timerChange = 0.0f;
-		if (switchType != switchDark) {
-
-			while (timerChange <= 4.0f) {
+		if (switchType != switchAtmo) {
+			Debug.Log ("SWITCH TYPE   ATMO");
+			while (RenderSettings.ambientLight!= ambientLight) {
 				timerChange+=Time.deltaTime;
-				RenderSettings.ambientLight = Color.Lerp (RenderSettings.ambientLight, ambientLight, Time.deltaTime * speed);
-				GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color = Color.Lerp (GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color, upLightLight, Time.deltaTime * speed);
-				GameObject.Find ("Lumières").transform.FindChild ("Directional_light_down").GetComponent<Light> ().color = Color.Lerp (GameObject.Find ("Lumières").transform.FindChild ("Directional_light_down").GetComponent<Light> ().color, downLightLight, Time.deltaTime * speed);
-				RenderSettings.skybox.SetColor ("_Tint", Color.Lerp (RenderSettings.skybox.GetColor ("_Tint"), skyBoxLight, Time.deltaTime * speed));
+				RenderSettings.ambientLight = Color.Lerp (ambientDark, ambientLight, timerChange/ResetTime);
+				GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color = Color.Lerp (upLightDark, upLightLight, timerChange/ResetTime);
+				GameObject.Find ("Lumières").transform.FindChild ("Directional_light_down").GetComponent<Light> ().color = Color.Lerp (downLightDark, downLightLight, timerChange/ResetTime);
+				RenderSettings.skybox.SetColor ("_Tint", Color.Lerp (skyBoxDark, skyBoxLight, timerChange/ResetTime));
 				
 				yield return null;
 			}
 
+			switchType = switchAtmo;
 
 
 		} else {
 
+			Debug.Log ("SWITCH TYPE DAAAAAAAAAARK: " + timerChange);
+			Debug.Log ("SWITCH TYPE DAAAAAAAAAARK: " + ResetTime);
 
-			while (timerChange <= 4.0f) {
+			while (RenderSettings.ambientLight!= ambientDark) {
 				timerChange+=Time.deltaTime;
-				RenderSettings.ambientLight = Color.Lerp (RenderSettings.ambientLight, ambientDark, Time.deltaTime * speed);
-				GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color = Color.Lerp (GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color, upLightDark, Time.deltaTime * speed);
-				GameObject.Find ("Lumières").transform.FindChild ("Directional_light_down").GetComponent<Light> ().color = Color.Lerp (GameObject.Find ("Lumières").transform.FindChild ("Directional_light_down").GetComponent<Light> ().color, downLightDark, Time.deltaTime * speed);
-				RenderSettings.skybox.SetColor ("_Tint", Color.Lerp (RenderSettings.skybox.GetColor ("_Tint"), skyBoxDark, Time.deltaTime * speed));
+				RenderSettings.ambientLight = Color.Lerp (ambientLight, ambientDark, timerChange/ResetTime);
+				GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color = Color.Lerp (upLightLight, upLightDark, timerChange/ResetTime);
+				GameObject.Find ("Lumières").transform.FindChild ("Directional_light_down").GetComponent<Light> ().color = Color.Lerp (downLightLight, downLightDark, timerChange/ResetTime);
+				RenderSettings.skybox.SetColor ("_Tint", Color.Lerp (skyBoxLight, skyBoxDark, timerChange/ResetTime));
 			
 				yield return null;
 			}
+			Debug.Log ("ENDWHILE: "+ timerChange);
+
+			switchType = switchDark;
+
 		}
 	}
 
@@ -206,7 +270,7 @@ public class SoundUniverseManager : MonoBehaviour {
 	//	bool convolve = true;
 		//if (switchType == switchAtmo)
 	//		convolve = false;
-		resetTimers ();
+		//resetTimers ();
 		//Tous les sons a switcher sont avec convolver
 		for (int i = 0; i < playingObjects.Count; i++)
 		{
