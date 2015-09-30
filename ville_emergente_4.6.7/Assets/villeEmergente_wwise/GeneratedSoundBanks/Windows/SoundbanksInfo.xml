@@ -342,10 +342,6 @@
 					<ShortName>sfx_musicien_respiration_03.wav</ShortName>
 					<Path>SFX\sfx_musicien_respiration_03_B484AF53.wem</Path>
 				</File>
-				<File Id="69037644" Language="SFX">
-					<ShortName>sfx_building_site.wav</ShortName>
-					<Path>SFX\sfx_building_site_4DA39D8D.wem</Path>
-				</File>
 				<File Id="73003083" Language="SFX">
 					<ShortName>ri_marseilles.wav</ShortName>
 					<Path>Plugins\Wwise Convolution Reverb\ri_marseilles_F06AD6DA.wem</Path>
@@ -420,7 +416,7 @@
 				</File>
 				<File Id="123579301" Language="SFX">
 					<ShortName>sfx_building_site.wav</ShortName>
-					<Path>SFX\sfx_building_site_4DA39D8D_6A0AF135.wem</Path>
+					<Path>SFX\sfx_building_site_66B984FD_6A0AF135.wem</Path>
 				</File>
 				<File Id="123996682" Language="SFX">
 					<ShortName>sfx_musicien_dark_respiration_06.wav</ShortName>
