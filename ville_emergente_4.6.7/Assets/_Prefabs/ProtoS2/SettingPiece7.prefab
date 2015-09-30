@@ -102,8 +102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf639b5b544970c4a9573561a39b8f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fragmentsCallRadius: 25
-  isPlayingInteract: 0
 --- !u!114 &11402972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -129,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startTime: 1
-  endTime: 60
+  endTime: 130
   inverse: 0
 --- !u!114 &11473008
 MonoBehaviour:
