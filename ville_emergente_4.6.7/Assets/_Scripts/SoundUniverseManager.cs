@@ -9,16 +9,10 @@ public class SoundUniverseManager : MonoBehaviour {
 	private string switchDark = "switch_dark";
 
 	public float resetTimer;
-	float moveTimer;
 	public float stopTimer;
-	int stopCounter;
 
-	public float ResetTime = 120.0f; //Temps mis pour reset de tous les timer et counter
-	float maxMoveTime = 6.0f; //Temps mis en mouvement pour passer au dark
-	int maxStopCounter = 5; //compteur de pauses
-	float stopTimeToCount = 3.0f; //temps d'arret pur compter comme pause
-	public float maxStopTime = 8.0f; //Temps mis en arret pour passer a l'atmo
-
+	public float ResetTime = 12.0f; //Temps mis pour reset de tous les timer et counter
+	public float maxStopTime = 6.0f; //Temps mis en arret pour passer a l'atmo
 
 	public static List<GameObject> playingObjects;
 
@@ -26,182 +20,167 @@ public class SoundUniverseManager : MonoBehaviour {
 	public Color upLightLight;
 	public Color downLightLight;
 	public Color skyBoxLight;
-
-	//public float speed = 0.05f;
+	public Color FogLight;
+	private float fogDensityLight;
 
 	public Color ambientDark;
 	public Color upLightDark;
 	public Color downLightDark;
 	public Color skyBoxDark;
-
+	public Color FogDark;
+	private float fogDensityDark;
 
 	private bool stopCounted = false;
-//	public float mainTimer;
-	//public float mainTimer;
-	public string switchTypeTest;
 
-
+	//juste pour affiche la valeur actuelle dans l'editeur
 	public Color ambientTest;
 	public Color upLightTest;
 	public Color downLighTest;
 	public Color skyBoxTest;
-	//public List<GameObject> testplayingObjects;
-	//private float timerChange= 0f;
+	public Color FogTest;
+	private float fogDensityTest;
+
+	private Color upLightStart;
+	private Color downLightStart;
+	private Color skyBoxStart;
+	private Color ambientStart;
+	private Color fogStart;
+	private float fogDensityStart;
+
+	private Color upLightEnd;
+	private Color downLightEnd;
+	private Color skyBoxEnd;
+	private Color ambientEnd;
+	private Color fogEnd;
+	private float fogDensityEnd;
 
 	void Awake () {
 		playingObjects = new List<GameObject>();
 		switchType = switchAtmo;
 	}
-
-
-
+	
 	// Use this for initialization
 	void Start () {
+
 		WwiseAudioManager.PlayFiniteEvent("ville_calme", this.gameObject);
 
-
+		//Prends les variables par défaut
 		ambientLight = RenderSettings.ambientLight;
 		upLightLight = GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color;
 		downLightLight = GameObject.Find("Lumières").transform.FindChild("Directional_light_down").GetComponent<Light>().color;
 		skyBoxLight = RenderSettings.skybox.GetColor ("_Tint");
+		FogLight =  RenderSettings.fogColor;
+		fogDensityLight = RenderSettings.fogDensity;
+
+		ambientDark = new Color(25.0f/255.0f, 32.0F/255.0f, 36.0F/255.0f, 0.5F);
+		upLightDark = new Color(8.0F/255.0f, 16.0F/255.0f, 66.0F/255.0f, 0.5F);
+		downLightDark = new Color(58.0f/255.0f, 0.0F/255.0f, 68.0F/255.0f, 0.5F);
+		skyBoxDark = new Color(0.0F/255.0f, 0.0F/255.0f, 0.0F/255.0f, 0.5F);
+		FogDark = new Color(57.0F/255.0f, 74.0F/255.0f, 112.0F/255.0f, 0.5F);
+		fogDensityDark = 0.004f;
+
+		upLightStart = upLightLight;
+		downLightStart = downLightLight;
+		skyBoxStart =skyBoxLight;
+		ambientStart = ambientLight;
+		fogStart = FogLight;
+
+		upLightEnd = upLightDark;
+		downLightEnd = downLightDark;
+		skyBoxEnd = skyBoxDark;
+		ambientEnd = ambientDark;
+		fogEnd = FogDark;
 		
-		ambientDark = new Color(64.0f/255.0f, 64.0F/255.0f, 64.0F/255.0f, 0.5F);
-		upLightDark = new Color(16.0F/255.0f, 30.0F/255.0f, 98.0F/255.0f, 0.5F);
-		downLightDark = new Color(141.0f/255.0f, 189.0F/255.0f, 254.0F/255.0f, 0.5F);
-		skyBoxDark = new Color(91.0F/255.0f, 77.0F/255.0f, 105.0F/255.0f, 0.5F);
-
-
-		//StartCoroutine("changeColors");
-
+		RenderSettings.fog = true;
+		
 	}
-	
+
+	void OnDestroy() {
+
+		RenderSettings.ambientLight = ambientLight;
+		GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color = upLightLight;
+		GameObject.Find ("Lumières").transform.FindChild ("Directional_light_down").GetComponent<Light> ().color = downLightLight;
+		RenderSettings.skybox.SetColor ("_Tint", skyBoxLight);
+		RenderSettings.fogColor = FogLight;
+		RenderSettings.fogDensity = fogDensityLight;		
+	}
+
 	// Update is called once per frame
-	void Update () {
-		//testplayingObjects = playingObjects;
+	void Update () 
+	{
+		//update variables de l'editeur
 		ambientTest = RenderSettings.ambientLight;
 		upLightTest = GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color;
 		downLighTest = GameObject.Find("Lumières").transform.FindChild("Directional_light_down").GetComponent<Light>().color;
 		skyBoxTest = RenderSettings.skybox.GetColor ("_Tint");
-
-		switchTypeTest = switchType;
-
-		//resetTimer += Time.deltaTime;
-
-	//	if (resetTimer >= ResetTime) {
-		//	switchSounds();
-			//StartCoroutine("changeColors");
-			//stopCounter = 0;
-			//timer = 0.0f;
-		//	resetTimers();
-	//	}
+		FogTest = RenderSettings.fogColor;
 
 		if (resetTimer >= ResetTime) {
+
 			stopTimer += Time.deltaTime;
 
-			if (stopTimer > maxStopTime) {
+			if (stopTimer >= maxStopTime) {
 				resetTimer = 0f;
 				stopTimer = 0f;
-
 			}
 
 		}else{
+			resetTimer += Time.deltaTime;
+			RenderSettings.ambientLight = Color.Lerp (ambientStart, ambientEnd, resetTimer / ResetTime);
+			GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color = Color.Lerp (upLightStart, upLightEnd, resetTimer / ResetTime);
+			GameObject.Find ("Lumières").transform.FindChild ("Directional_light_down").GetComponent<Light> ().color = Color.Lerp (downLightStart, downLightEnd, resetTimer / ResetTime);
+			RenderSettings.skybox.SetColor ("_Tint", Color.Lerp (skyBoxStart, skyBoxEnd, resetTimer / ResetTime));
+			RenderSettings.fogColor = Color.Lerp (fogStart, fogEnd, resetTimer / ResetTime);
+			RenderSettings.fogDensity = Mathf.Lerp (fogDensityStart, fogDensityEnd, resetTimer / ResetTime);
 
-			if (switchType != switchAtmo) {
 
+			if (resetTimer >= ResetTime) 
+			{
+				if (switchType != switchDark) {
+					
+					upLightStart = upLightDark;
+					downLightStart = downLightDark;
+					skyBoxStart =skyBoxDark;
+					ambientStart = ambientDark;
+					fogStart = FogDark;
+					fogDensityStart =  fogDensityDark;
 
-					resetTimer += Time.deltaTime;
-					RenderSettings.ambientLight = Color.Lerp (ambientDark, ambientLight, resetTimer / ResetTime);
-					GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color = Color.Lerp (upLightDark, upLightLight, resetTimer / ResetTime);
-					GameObject.Find ("Lumières").transform.FindChild ("Directional_light_down").GetComponent<Light> ().color = Color.Lerp (downLightDark, downLightLight, resetTimer / ResetTime);
-					RenderSettings.skybox.SetColor ("_Tint", Color.Lerp (skyBoxDark, skyBoxLight, resetTimer / ResetTime));
-				
-				if (resetTimer >= ResetTime) {
-
-					switchType = switchAtmo;
-					switchSounds ();
-
-				}
-	
-			} else {
-
-					resetTimer += Time.deltaTime;
-					RenderSettings.ambientLight = Color.Lerp (ambientLight, ambientDark, resetTimer / ResetTime);
-					GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color = Color.Lerp (upLightLight, upLightDark, resetTimer / ResetTime);
-					GameObject.Find ("Lumières").transform.FindChild ("Directional_light_down").GetComponent<Light> ().color = Color.Lerp (downLightLight, downLightDark, resetTimer / ResetTime);
-					RenderSettings.skybox.SetColor ("_Tint", Color.Lerp (skyBoxLight, skyBoxDark, resetTimer / ResetTime));
-				
-				if (resetTimer >= ResetTime) {
-				
+					upLightEnd = upLightLight;
+					downLightEnd = downLightLight;
+					skyBoxEnd = skyBoxLight;
+					ambientEnd = ambientLight;
+					fogEnd = FogLight;
+					fogDensityEnd = fogDensityLight;
 
 					switchType = switchDark;
-					switchSounds ();
+				}else {
+					
+					upLightStart = upLightLight;
+					downLightStart = downLightLight;
+					skyBoxStart =skyBoxLight;
+					ambientStart = ambientLight;
+					fogStart = FogLight;
+					fogDensityStart =  fogDensityLight;
 
+					upLightEnd = upLightDark;
+					downLightEnd = downLightDark;
+					skyBoxEnd = skyBoxDark;
+					ambientEnd = ambientDark;
+					fogEnd = FogDark;
+					fogDensityEnd = fogDensityDark;
+
+					switchType = switchAtmo;
 				}
 
+				switchSounds ();
 			}
-		}
-
-		/*
-
-		if (Input.GetKeyDown (KeyCode.Space))
-		{
-		//	AkSoundEngine.StopAll ();
-
-			//if (switchType != switchDark)
-			//{
-				//switchType = switchDark;
-				//switchSounds();
-			//}	
-		} else
-		if (Input.GetKey (KeyCode.Z) || Input.GetKey (KeyCode.Q) || Input.GetKey (KeyCode.S) || Input.GetKey (KeyCode.D)) 
-		{
-			stopCounted = false;
-			moveTimer += Time.deltaTime;
-			stopTimer = 0;
-
-			if((switchType == switchAtmo) && moveTimer >= maxMoveTime)
-			{
-				switchType = switchDark;
-				switchSounds();
-				StartCoroutine("changeColors");
-			}
-
-			//resetTimer ();
-			
-		} else 
-		{
-			moveTimer = 0;
-			stopTimer += Time.deltaTime;
-
-
-			if ((switchType == switchDark) && (stopTimer >= maxStopTime || stopCounter >= maxStopCounter))
-			{
-				switchType = switchAtmo;
-				switchSounds();
-				StartCoroutine("changeColors");
-			}else if (!stopCounted && stopTimer >= stopTimeToCount)
-			{
-				stopCounted = true;
-				stopCounter++;
-				//stopTimer = 0;
-			}else if (stopTimer >= maxStopTime)
-			{
-				stopTimer = 0;
-			}else if (stopCounter >= maxStopCounter)
-			{
-				stopCounter = 0;
-			}
-		}
-
-*/
+		}	
 	}
 
 	void resetTimers()
 	{
 		resetTimer = 0;
 		stopTimer = 0;
-		stopCounter = 0;
-		moveTimer = 0;
 		stopCounted = false;
 	}
 
@@ -215,62 +194,9 @@ public class SoundUniverseManager : MonoBehaviour {
 	{
 		playingObjects.Remove (target);	
 	}
-
-	//void getNextEvent()
-	//{
-		//soundsList.Remove (name, target);
-	//}
-
-
-	IEnumerator changeColors()
-	{
-		//resetTimers();
-		//Time.deltaTime;
-		float timerChange = 0.0f;
-		if (switchType != switchAtmo) {
-			Debug.Log ("SWITCH TYPE   ATMO");
-			while (RenderSettings.ambientLight!= ambientLight) {
-				timerChange+=Time.deltaTime;
-				RenderSettings.ambientLight = Color.Lerp (ambientDark, ambientLight, timerChange/ResetTime);
-				GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color = Color.Lerp (upLightDark, upLightLight, timerChange/ResetTime);
-				GameObject.Find ("Lumières").transform.FindChild ("Directional_light_down").GetComponent<Light> ().color = Color.Lerp (downLightDark, downLightLight, timerChange/ResetTime);
-				RenderSettings.skybox.SetColor ("_Tint", Color.Lerp (skyBoxDark, skyBoxLight, timerChange/ResetTime));
-				
-				yield return null;
-			}
-
-			switchType = switchAtmo;
-
-
-		} else {
-
-			Debug.Log ("SWITCH TYPE DAAAAAAAAAARK: " + timerChange);
-			Debug.Log ("SWITCH TYPE DAAAAAAAAAARK: " + ResetTime);
-
-			while (RenderSettings.ambientLight!= ambientDark) {
-				timerChange+=Time.deltaTime;
-				RenderSettings.ambientLight = Color.Lerp (ambientLight, ambientDark, timerChange/ResetTime);
-				GameObject.Find ("Lumières").transform.FindChild ("Directional_light_up").GetComponent<Light> ().color = Color.Lerp (upLightLight, upLightDark, timerChange/ResetTime);
-				GameObject.Find ("Lumières").transform.FindChild ("Directional_light_down").GetComponent<Light> ().color = Color.Lerp (downLightLight, downLightDark, timerChange/ResetTime);
-				RenderSettings.skybox.SetColor ("_Tint", Color.Lerp (skyBoxLight, skyBoxDark, timerChange/ResetTime));
-			
-				yield return null;
-			}
-			Debug.Log ("ENDWHILE: "+ timerChange);
-
-			switchType = switchDark;
-
-		}
-	}
-
 	
 	void switchSounds()
 	{
-
-	//	bool convolve = true;
-		//if (switchType == switchAtmo)
-	//		convolve = false;
-		//resetTimers ();
 		//Tous les sons a switcher sont avec convolver
 		for (int i = 0; i < playingObjects.Count; i++)
 		{
@@ -296,8 +222,6 @@ public class SoundUniverseManager : MonoBehaviour {
 
 				//play son Idle (PNJ)
 				playingNPC.GetComponentInChildren<AudioEventManager>().SoundPlayIdle();
-
-				//WwiseAudioManager.PlayLoopEvent (playingObjects[i].GetComponent<InteractibleObject>().soundEvent, playingObjects[i], true);
 			}
 		}
 	}
